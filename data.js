@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-06T21:17:12+08:00",
+  "generated_at": "2026-07-07T00:26:34+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-06",
+  "asof": "2026-07-07",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 393.45,
-    "chg": 4.89,
+    "price": 417.245,
+    "chg": 9.89,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-06",
+    "src": "Yahoo 2026-07-07",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 162.0,
-    "chg": 5.88,
+    "price": 160.93,
+    "chg": 5.03,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-06",
+    "src": "Yahoo 2026-07-07",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 61529.14,
-    "chg": 0.07,
-    "src": "Yahoo 2026-07-06",
+    "price": 63433.47,
+    "chg": 3.17,
+    "src": "Yahoo 2026-07-07",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0746,
-    "chg": 0.67,
-    "src": "Yahoo 2026-07-06",
+    "price": 0.0763,
+    "chg": 2.94,
+    "src": "Yahoo 2026-07-07",
     "status": "green"
    }
   ],
@@ -51,24 +51,40 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-06",
      "c": 393.45
+    },
+    {
+     "d": "2026-07-07",
+     "c": 417.245
     }
    ],
    "SPCX": [
     {
      "d": "2026-07-06",
      "c": 162.0
+    },
+    {
+     "d": "2026-07-07",
+     "c": 160.93
     }
    ],
    "BTC-USD": [
     {
      "d": "2026-07-06",
      "c": 61529.14
+    },
+    {
+     "d": "2026-07-07",
+     "c": 63433.47
     }
    ],
    "DOGE-USD": [
     {
      "d": "2026-07-06",
      "c": 0.0746
+    },
+    {
+     "d": "2026-07-07",
+     "c": 0.0763
     }
    ]
   }
@@ -841,6 +857,114 @@ window.MUSKINTEL_DATA = {
     ],
     "note": "R3 单源未交叉，C 级默认不进结论"
    }
+  },
+  {
+   "id": "NEWS-d648f8881775",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk Needs the Cultish Support of Everyday Investors to Pull off the Massive SpaceX IPO",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnlRY0pUNzcydjBCTmp6V3JoV3hIbzQxd1loek5pX1pCdVA3NkZtSC11X3NYMlYwbG1YMXNxYTFCaGFmSEF5U252WHFsRjduU053QlJDeGZRVWZfN1AyZldLZEdsQ1liN3lYRUhkaTZXcnJSX0N6WkJwZ1lHNGVlam85NHlzd2x1NVJjankwLXVYUDdvVi1GNnRUNHdwR2c?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-d64aa2c38f7e",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Chinese Solar Stocks Plunge as Firms Deny Musk Space Project Links",
+   "payload": {
+    "src": "一财全球Yicai Global",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT3Nia1dpRFFRYkVwQzZwalc3NTRFcUpvWFRjQWt6WDVrUkR5TnVwV1FobnNkMjNOckVmTnh6OURyaG9Vcmd5NVpORmJZUG9scjRDMThCemVXNkFWWkdJdVpLWWhTbVN3U3JRdVBITHV3dU40dE5NQ0oxbG5LYTk3dmdZWjY3X21Cc0c5RDBldmRCV3h1a2QwNHB6d0dMMDQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-a43a46af0b5b",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX 股价：埃隆·马斯克公司首次公开募股前市场三周内下跌27%",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcG1jbi0yeURLQW9RSDlMT3MtSTgwUmJ6Ynl0Y09XdTZSRVM1eWlhN0lxdVFQMUhzallPc0xzYnlDVkFuQXhEeVJyVk9uWVBvZnRQbkhKUXREdWxkdWlJTzJCS3NFV1diZHNuX2RNUmpPYlR3TTNlcFJUeHA0VDJXZjJmeTFDQkVTVnhxUjVrVlVyV3h0M2dQZF92VzFFdU4xZVk0cGhHdENhamJKN0FkMg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-d5748b092591",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "誰可以購買馬斯克旗下SpaceX首發股",
+   "payload": {
+    "src": "大纪元",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qSTBZMjBDbFNIZFkyamg3aFhfTEhOMFE5bWd4WjU2R1RUbVdmWDB0NW5ZY0NCeTh3czBHdUhxSXNJdmpNbFhVN2pnY2dlM3pwMnZOb1luQmkyMU9yN1lDddIBZkFVX3lxTFBOZmRCQWN2QW1MOFQwSHN3TDN1Q0lLdFpoYi12QVFnOUFXTVJXajJxb3JxeVZ0OFFscm9NdTFLZWN0Z1hLWUxmWTd2TTF0cnZEXzVVZ3A2dFB6dms0NWR3R2E3WG9sdw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-fe4d7ef10101",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "身价破1.1兆美元 马斯克成首位“兆万富翁”",
+   "payload": {
+    "src": "8world",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbGk0OFNLM09wTUIxejJCcWRWR1FYT3VZMU1hMUYtOXpjTWFaVnZGYmhPN3dST3RobDVadkV5NXd3WlNIcjFvMGVtR2ZyRFBqcDRqdUUxdjk2TEZ4NjU2bHJYNndhaThqRzIyaHNtb29nWjhaeGcxQXVBdXZjYlJtSWhNamxueGctYm5mbDZpOTZGcGFKenpGSg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-28b5ddf4a6b6",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克：SpaceX、特斯拉，将联手在德州建芯片厂，落实「Terafab」计划",
+   "payload": {
+    "src": "雪球",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRVVJSU0o0cXpjTVRSNmhkVzgzSUlzZENYUG1DbkdQS014bVVFMDR0emZwMUhmU2RWUExiSU9tRURDTzZHNl94ckJxcw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
   }
  ],
  "countdowns": [
@@ -943,7 +1067,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1831 · xAI 214 在招（2026-07-06；Tesla 无免费接口）",
+     "v": "SpaceX 1832 · xAI 213 在招（2026-07-07；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动"
     },
@@ -1018,7 +1142,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-06，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-07，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)"
     }
@@ -1373,10 +1497,10 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-06 21:17",
+  "last_run": "2026-07-07 00:26",
   "sources": {
    "yahoo": "green",
-   "edgar": "red",
+   "edgar": "fused",
    "launchlib": "green",
    "rss": "green",
    "greenhouse": "green",
@@ -1384,7 +1508,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 2,
+   "edgar": 3,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -1618,6 +1742,54 @@ window.MUSKINTEL_DATA = {
    "ev": "C",
    "title": "Leverage Shares将推出全球首只3倍做多SpaceX ETP，代码ELON/MUSK - TradingView",
    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BRHFKaEUyXzQ2QTlaMHlGN21OUmJMMHN0ZVN2b3dXQTBoLXlwU0xUX2t2MFM2T1hnOVpnQWlndFM4VWVydk9UM0NsVzRpNm0wQ2hRQkxUTFNUek9iUFlFcS0wMm9QM1U?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk Needs the Cultish Support of Everyday Investors to Pull off the Massiv",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnlRY0pUNzcydjBCTmp6V3JoV3hIbzQxd1loek5pX1pCdVA3NkZtSC11X3NYMlYwbG1YMXNxYTFCaGFmSEF5U252WHFsRjduU053QlJDeGZRVWZfN1AyZldLZEdsQ1liN3lYRUhkaTZXcnJSX0N6WkJwZ1lHNGVlam85NHlzd2x1NVJjankwLXVYUDdvVi1GNnRUNHdwR2c?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Chinese Solar Stocks Plunge as Firms Deny Musk Space Project Links - 一财全球Yicai G",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT3Nia1dpRFFRYkVwQzZwalc3NTRFcUpvWFRjQWt6WDVrUkR5TnVwV1FobnNkMjNOckVmTnh6OURyaG9Vcmd5NVpORmJZUG9scjRDMThCemVXNkFWWkdJdVpLWWhTbVN3U3JRdVBITHV3dU40dE5NQ0oxbG5LYTk3dmdZWjY3X21Cc0c5RDBldmRCV3h1a2QwNHB6d0dMMDQ?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX 股价：埃隆·马斯克公司首次公开募股前市场三周内下跌27% - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcG1jbi0yeURLQW9RSDlMT3MtSTgwUmJ6Ynl0Y09XdTZSRVM1eWlhN0lxdVFQMUhzallPc0xzYnlDVkFuQXhEeVJyVk9uWVBvZnRQbkhKUXREdWxkdWlJTzJCS3NFV1diZHNuX2RNUmpPYlR3TTNlcFJUeHA0VDJXZjJmeTFDQkVTVnhxUjVrVlVyV3h0M2dQZF92VzFFdU4xZVk0cGhHdENhamJKN0FkMg?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "誰可以購買馬斯克旗下SpaceX首發股 - 大纪元",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qSTBZMjBDbFNIZFkyamg3aFhfTEhOMFE5bWd4WjU2R1RUbVdmWDB0NW5ZY0NCeTh3czBHdUhxSXNJdmpNbFhVN2pnY2dlM3pwMnZOb1luQmkyMU9yN1lDddIBZkFVX3lxTFBOZmRCQWN2QW1MOFQwSHN3TDN1Q0lLdFpoYi12QVFnOUFXTVJXajJxb3JxeVZ0OFFscm9NdTFLZWN0Z1hLWUxmWTd2TTF0cnZEXzVVZ3A2dFB6dms0NWR3R2E3WG9sdw?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "身价破1.1兆美元 马斯克成首位“兆万富翁” - 8world",
+   "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbGk0OFNLM09wTUIxejJCcWRWR1FYT3VZMU1hMUYtOXpjTWFaVnZGYmhPN3dST3RobDVadkV5NXd3WlNIcjFvMGVtR2ZyRFBqcDRqdUUxdjk2TEZ4NjU2bHJYNndhaThqRzIyaHNtb29nWjhaeGcxQXVBdXZjYlJtSWhNamxueGctYm5mbDZpOTZGcGFKenpGSg?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克：SpaceX、特斯拉，将联手在德州建芯片厂，落实「Terafab」计划 - 雪球",
+   "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRVVJSU0o0cXpjTVRSNmhkVzgzSUlzZENYUG1DbkdQS014bVVFMDR0emZwMUhmU2RWUExiSU9tRURDTzZHNl94ckJxcw?oc=5"
   }
  ],
  "persons": [
