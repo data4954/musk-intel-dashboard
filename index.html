@@ -190,9 +190,39 @@ function guard(name, fn){
 /* ============ 视图 ============ */
 const Views = {
 
-feed(){ return guard('总览', () => {
+feed(){ return guard('纵览', () => {
   const rows = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
-  let h = '<div class="eyebrow">事件账本（只追加 · '+rows.length+' 条 · 含承诺类 · A/B 进结论，C 级仅记录）</div>';
+  const sc = D.scissors||[], pol=(D.political||{}).machine||[], phase=pol[pol.length-1]||{};
+  const dMid = daysTo('2026-11-03');
+  const nA=rows.filter(r=>r.ev==='A').length, nB=rows.filter(r=>r.ev==='B').length, nC=rows.filter(r=>r.ev==='C').length;
+  const fused=Object.entries((D.health||{}).sources||{}).filter(([k,v])=>v==='fused'||v==='red').map(([k])=>k);
+  const clean=sc.filter(x=>x.state.includes('★')).map(x=>x.line), risky=sc.filter(x=>/[✗⚠]/.test(x.state)).map(x=>x.line);
+  let h = '<div class="card" style="padding:22px 24px"><h3 style="font-size:17px">这个站是什么</h3>'
+    +'<div style="font-size:13.5px;line-height:1.9;color:#3a3d42">一台<b>自动核实的证据账本</b>加一套<b>第一性原理分析框架</b>，全自动追踪马斯克系资产。'
+    +'机器每天抓取行情、SEC 申报、发射日程、招聘、政治捐款与新闻，按 R1-R6 规则定级入库（官方源=A，多源交叉=B，单源=C 且不进结论）；'
+    +'六个分析视图从不同层面解剖同一本账；周/月/季/年自动产出研报；你的批注与冲正回流账本——数据到判断到复盘，闭环不出站。</div>'
+    +'<svg viewBox="0 0 920 92" style="width:100%;max-width:900px;margin:14px auto 2px;display:block" role="img" aria-label="系统闭环">'
+    +[['抓取','8 数据源'],['核实','R1-R6 定级'],['账本','只追加 A/B/C'],['分析','六视图解剖'],['研报','周月季年'],['决策','批注·冲正回流']].map((b,i)=>{
+      const x=8+i*154;
+      return '<rect x="'+x+'" y="16" width="120" height="52" rx="10" fill="'+(i===5?'#171a20':'#fff')+'" stroke="#d8dadb"/>'
+        +'<text x="'+(x+60)+'" y="38" text-anchor="middle" font-size="13" font-weight="700" fill="'+(i===5?'#fff':'#171a20')+'">'+b[0]+'</text>'
+        +'<text x="'+(x+60)+'" y="56" text-anchor="middle" font-size="9.5" fill="'+(i===5?'#c9cccf':'#8a8d91')+'">'+b[1]+'</text>'
+        +(i<5?'<path d="M '+(x+128)+' 42 l 18 0 m -6 -5 l 6 5 l -6 5" stroke="#b6bcc3" stroke-width="1.6" fill="none"/>':'');
+    }).join('')
+    +'<path d="M 778 74 Q 460 108 78 70" stroke="#b6bcc3" stroke-width="1.3" fill="none" stroke-dasharray="4 4"/>'
+    +'<text x="460" y="90" text-anchor="middle" font-size="9.5" fill="#8a8d91">冲正与人工判定回流账本</text></svg></div>';
+  h += '<div class="eyebrow">当前系统判定快照（各板块结论的交汇点，细节进对应页）</div><div class="grid3">'
+    +'<div class="metric"><div class="k">政治时钟（风险乘数）</div><div class="v">'+esc(phase.phase||'未核')+'</div><div class="s">距中期选举 '+dMid+' 天 · 头号二元事件</div></div>'
+    +'<div class="metric"><div class="k">最净主线（供给约束★）</div><div class="v" style="font-size:16px">'+esc(clean.join(' · ')||'—')+'</div><div class="s">扩产即增利，只盯产能节点</div></div>'
+    +'<div class="metric"><div class="k">头号证伪对象</div><div class="v" style="font-size:16px">'+esc(risky.join(' · ')||'—')+'</div><div class="s">供给缺口/需求约束线，证伪=先机</div></div>'
+    +'<div class="metric"><div class="k">证据账本</div><div class="v num">'+rows.length+'</div><div class="s">A '+nA+' · B '+nB+' · C '+nC+'（C 不进结论）</div></div>'
+    +'<div class="metric"><div class="k">主函数</div><div class="v" style="font-size:13px;line-height:1.5">Σ(学习率×TAM)+溢价−物理不可行</div><div class="s">政治=乘数 · 金融=择时</div></div>'
+    +'<div class="metric"><div class="k">数据健康</div><div class="v" style="font-size:16px;color:'+(fused.length?'var(--down)':'var(--up)')+'">'+(fused.length?fused.join('/')+' 异常':'全通道正常')+'</div><div class="s">R6 熔断纪律在岗</div></div></div>';
+  h += '<div class="eyebrow">怎么读（每页回答一个问题）</div><div class="card"><table>'
+    +'<tr><th>页</th><th>回答的问题</th><th>证据来源</th></tr>'
+    +[['关系图谱','钱和权在实体之间怎么流动？','账本边 · 每条带证据级'],['人物网络','谁的什么行为是高信息量信号？','EDGAR/13F/FEC + 信号分级'],['政治地缘','风险乘数现在几档？','状态机 · FEC · 公开记录'],['先行引擎','价格之前 6-18 个月能看到什么？','8 层先行指标'],['物理供需','每条产品线卡在什么约束上？','剪刀差 + 产品解剖'],['技术树','20 年尺度谁在赢？','六线中美对标'],['市场资本','当前价格里有多少是叙事？','估值锚 + 溢价分解'],['决策档案','我的判断兑现了吗？','决策日志 + 审计'],['报告','本期该改什么判定？','自动研报（判语=状态×模板）']].map(r=>'<tr><td><b>'+r[0]+'</b></td><td>'+r[1]+'</td><td class="mut" style="font-size:12px">'+r[2]+'</td></tr>').join('')
+    +'</table></div>';
+  h += '<div class="eyebrow">事件流（只追加 · '+rows.length+' 条 · A/B 进结论，C 级仅记录）</div>';
   h += rows.map(r=>{
     const p=r.payload||{};
     const imp = (p.impact!=null)?('<span class="'+(p.impact>0?'pos':p.impact<0?'neg':'mut')+' num"> 影响 '+(p.impact>0?'+':'')+p.impact+'</span>'):'';
@@ -332,9 +362,6 @@ decide(){ return guard('决策与档案', () => {
     '<div style="margin-top:8px"><button class="ghost" onclick="addDecision()">记录</button></div>'+
     (logs.length?('<table style="margin-top:10px"><tr><th>时间</th><th>决策</th><th>结果(事后补记)</th></tr>'+logs.map((l,i)=>'<tr><td class="num" style="white-space:nowrap">'+esc(l.ts)+'</td><td>'+esc(l.txt)+'</td><td><input data-i="'+i+'" class="dec-res" value="'+esc(l.result||'')+'" placeholder="兑现/证伪+复盘"></td></tr>').join('')+'</table>'):'<div class="mut" style="margin-top:8px">暂无记录。年报的校准曲线由此生成。</div>')+'</div>';
 
-  h += '<div class="eyebrow">即时报告（临时区间用 · 定期报告已自动生成，见【报告】页）</div><div class="card">'+
-    '<button class="ghost" onclick="genReport(7)">近7天</button> <button class="ghost" onclick="genReport(30)">近30天</button> <button class="ghost" onclick="genReport(92)">近92天</button> <button class="ghost" onclick="genReport(365)">近365天</button>'+
-    '<div id="report-out" style="margin-top:10px"></div></div>';
 
   h += '<div class="eyebrow">研究笔记</div><div class="card"><textarea id="f-notes" rows="5" placeholder="长期论点、待验证假设…">'+esc(notes)+'</textarea><div style="margin-top:8px"><button class="ghost" onclick="saveNotes()">保存笔记</button></div></div>';
 
@@ -445,9 +472,7 @@ async function openReport(path, title){
     const r = await fetch(path, {cache:'no-store'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const t = await r.text();
-    v.innerHTML = '<div class="eyebrow">'+esc(title)+'</div><pre class="report">'+esc(t)+'</pre>'+
-      '<div style="margin:8px 0 16px"><button class="ghost" onclick="dl(\''+esc(path.split('/').pop())+'\', window.__rptText)">下载 .md</button></div>';
-    window.__rptText = t;
+    v.innerHTML = '<div class="eyebrow">'+esc(title)+'</div><pre class="report" style="max-height:none">'+esc(t)+'</pre>';
     v.scrollIntoView({behavior:'smooth'});
   }catch(e){ v.innerHTML = '<div class="gray-card">报告加载失败：'+esc(e.message)+'</div>'; }
 }
@@ -476,19 +501,6 @@ document.addEventListener('change',e=>{
     const logs=Store.get('decisions',[]); logs[Number(e.target.dataset.i)].result=e.target.value; Store.set('decisions',logs);
   }
 });
-function genReport(days){
-  const since=new Date(Date.now()-days*86400000).toISOString().slice(0,10);
-  const rows=allLedger().filter(r=>r.ts>=since).sort((a,b)=>a.ts.localeCompare(b.ts));
-  const kind='近'+days+'天即时报告';
-  let md='# MuskIntel '+kind+' · '+new Date().toISOString().slice(0,10)+'\n\n## 区间事件（'+since+' 起 · '+rows.length+' 条）\n';
-  md+=rows.map(r=>'- '+r.ts+' ['+r.ev+'/'+r.scope+'] '+r.title+((r.payload&&r.payload.impact)?(' (影响'+(r.payload.impact>0?'+':'')+r.payload.impact+')'):'' )).join('\n');
-  md+='\n\n## 剪刀差状态\n'+D.scissors.map(s=>'- '+s.line+'：'+s.state+'（约束：'+s.constraint+'）').join('\n');
-  md+='\n\n## 倒计时\n'+D.countdowns.map(c=>'- '+c.label+'：'+daysTo(c.date)+' 天（'+c.date+'）').join('\n');
-  md+='\n\n---\n数据健康：'+JSON.stringify(D.health.sources)+'\n（对外发布版请手动删除原始行情数值）';
-  document.getElementById('report-out').innerHTML='<pre class="report">'+esc(md)+'</pre><div style="margin-top:8px"><button class="ghost" onclick="dlReport()">下载 .md</button></div>';
-  window.__lastReport={name:'Axiomake_即时_'+new Date().toISOString().slice(0,10)+'.md',text:md};
-}
-function dlReport(){ if(window.__lastReport) dl(window.__lastReport.name, window.__lastReport.text); }
 function exportUser(){
   const pack={exported:new Date().toISOString(),user_ledger:Store.get('user_ledger',[]),notes:Store.get('notes',''),scenarios:Store.get('scenarios',''),decisions:Store.get('decisions',[])};
   dl('Axiomake_备份_'+new Date().toISOString().slice(0,10)+'.json', JSON.stringify(pack,null,2));
@@ -508,7 +520,7 @@ function importUser(ev){
 }
 
 /* ============ 导航与右栏 ============ */
-const NAVS=[['feed','总览'],['graph','关系图谱'],['persons','人物网络'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
+const NAVS=[['feed','纵览'],['graph','关系图谱'],['persons','人物网络'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
 let ACTIVE='feed';
 function render(id){
   ACTIVE=id;
