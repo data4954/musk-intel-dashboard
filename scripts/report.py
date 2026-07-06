@@ -19,6 +19,33 @@ TODAY = NOW.strftime("%Y-%m-%d")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RPTS = os.path.join(ROOT, "reports")
 IDX  = os.path.join(RPTS, "index.json")
+STF  = os.path.join(RPTS, "state.json")
+
+def load_state():
+    try: return json.load(open(STF, encoding="utf-8"))
+    except Exception: return {}
+
+def snap(D):
+    return {"scissors": {x["line"]: x["state"] for x in D.get("scissors", [])},
+            "promises": {r["id"]: (r.get("payload") or {}).get("status","") for r in D["ledger"] if r.get("type")=="promise"},
+            "health": D.get("health",{}).get("sources",{}),
+            "ab_count_30d": len([r for r in D["ledger"] if r.get("ev") in ("A","B")
+                                 and r.get("ts","") >= (NOW - timedelta(days=30)).strftime("%Y-%m-%d")])}
+
+def series_stats(D, sym, since):
+    ser = [p for p in D.get("market",{}).get("series",{}).get(sym,[]) if p["d"] >= since and p.get("c")]
+    if len(ser) < 2: return None
+    cs = [p["c"] for p in ser]
+    moves = [abs(cs[i]-cs[i-1])/cs[i-1]*100 for i in range(1,len(cs)) if cs[i-1]]
+    return {"hi": max(cs), "lo": min(cs), "chg": round((cs[-1]-cs[0])/cs[0]*100,1),
+            "maxmove": round(max(moves),1) if moves else None, "n": len(cs)}
+
+def daily_chg(D, sym, day):
+    ser = D.get("market",{}).get("series",{}).get(sym,[])
+    for i,p in enumerate(ser):
+        if p["d"] == day and i > 0 and ser[i-1].get("c"):
+            return round((p["c"]-ser[i-1]["c"])/ser[i-1]["c"]*100,1)
+    return None
 
 def load_data():
     raw = open(os.path.join(ROOT, "data.js"), encoding="utf-8").read()
@@ -45,6 +72,39 @@ def build(D, kind, since, label):
         md += ["## ⚠ 头条：数据源异常（R6 熔断纪律）",
                "以下源失败或熔断，期间对应板块数据陈旧，结论可信度相应打折: " + ", ".join(fused), ""]
 
+    # —— 本期变化（对上一期同类报告的差分；深度=机制对比，非罗列）——
+    prev = load_state().get(kind, {})
+    cur = snap(D)
+    changes = []
+    for line, st_now in cur["scissors"].items():
+        st_old = prev.get("scissors", {}).get(line)
+        if st_old and st_old != st_now:
+            changes.append(f"**剪刀差翻转** {line}: {st_old} → {st_now}（供给/需求约束态翻转=定价逻辑换轨，触发重估）")
+    for pid, st_now in cur["promises"].items():
+        st_old = prev.get("promises", {}).get(pid)
+        if st_old and st_old != st_now:
+            title = next((r["title"] for r in D["ledger"] if r["id"]==pid), pid)
+            changes.append(f"**承诺状态变化** {title}: {st_old} → {st_now}")
+    for src_k, v_now in cur["health"].items():
+        v_old = prev.get("health", {}).get(src_k)
+        if v_old and v_old != v_now and ("fused" in (v_old, v_now) or "red" in (v_old, v_now)):
+            changes.append(f"**数据源状态** {src_k}: {v_old} → {v_now}")
+    if prev.get("ab_count_30d") is not None:
+        d_ab = cur["ab_count_30d"] - prev["ab_count_30d"]
+        if abs(d_ab) >= 3:
+            changes.append(f"**事件密度变化** 30天A/B级事件 {prev['ab_count_30d']} → {cur['ab_count_30d']}（{'升温' if d_ab>0 else '降温'}）")
+    md += ["## 〇、本期变化（与上期对比 · 变化才值得读）", ""]
+    md += [f"- {c}" for c in changes] if changes else (["- 无状态翻转。" if prev else "- 首期报告，无对比基线；下期起此处只列翻转项。"])
+    md += [""]
+
+    # —— 先行引擎预警（多层同红=系统级）——
+    red_layers = [f"L{L['layer']} {L['name']}（{sum(1 for i in L['items'] if i['st']=='red')}项红）"
+                  for L in D.get("leading", []) if any(i["st"]=="red" for i in L["items"])]
+    if len(red_layers) >= 2:
+        md += ["## ⚠ 先行引擎多层同红（系统级预警）", ""] + [f"- {x}" for x in red_layers] + [""]
+    elif red_layers:
+        md += [f"（先行引擎单层孤红：{red_layers[0]}，观察级）", ""]
+
     md += [f"## 一、区间事件（A/B 级 · 进结论 · {len(ab)} 条）", ""]
     for r in sorted(ab, key=lambda x: x["ts"]):
         p = r.get("payload", {})
@@ -56,13 +116,22 @@ def build(D, kind, since, label):
     md += ["", f"## 二、未核实区（C 级单源 · 不进结论 · {len(c)} 条）", ""]
     md += [f"- {r['ts']} {r['title']}" for r in sorted(c, key=lambda x: x["ts"])] or ["- （无）"]
 
-    md += ["", "## 三、行情区间变动（免费源延迟约15分钟，日频快照）", ""]
+    md += ["", "## 三、行情区间统计（日频快照，免费源延迟约15分钟）", ""]
     for q in D.get("market", {}).get("quotes", []):
-        ch = quote_change(D, q["sym"], since)
-        cur = f"${q['price']}" if q.get("price") is not None else (q.get("mcap") or "—")
-        md.append(f"- {q['name']}（{q['sym']}）: 现值 {cur}"
-                  + (f"，区间 {'+' if ch>=0 else ''}{ch}%" if ch is not None else "，区间数据不足")
-                  + (f"（{q.get('src','')}）" if q.get("src") else ""))
+        st = series_stats(D, q["sym"], since)
+        curp = f"${q['price']}" if q.get("price") is not None else (q.get("mcap") or "—")
+        if st:
+            md.append(f"- {q['name']}（{q['sym']}）: 现值 {curp}，区间 {'+' if st['chg']>=0 else ''}{st['chg']}%，"
+                      f"高 {st['hi']} / 低 {st['lo']}，最大单日波动 {st['maxmove']}%（{st['n']}个交易日样本）")
+        else:
+            md.append(f"- {q['name']}（{q['sym']}）: 现值 {curp}，区间样本不足（账本积累 <2 日）")
+
+    aligned = [(r, daily_chg(D, "TSLA", r["ts"])) for r in ab]
+    aligned = [(r, c) for r, c in aligned if c is not None]
+    if aligned:
+        md += ["", "### 事件-行情对齐（A/B 级事件当日 TSLA 变动；相关非因果，窗口污染自查）", "",
+               "| 日期 | 事件 | 当日TSLA |", "|---|---|---|"]
+        md += [f"| {r['ts']} | {r['title'][:40]} | {'+' if c>=0 else ''}{c}% |" for r, c in aligned]
 
     md += ["", "## 四、剪刀差状态（状态翻转触发头条）", ""]
     md += [f"- {s['line']}: {s['state']}（约束: {s['constraint']}；盯: {s['watch']}）" for s in D.get("scissors", [])]
@@ -125,6 +194,10 @@ def main():
     if made:
         os.makedirs(RPTS, exist_ok=True)
         json.dump(idx[:500], open(IDX, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if made:
+        st_all = load_state()
+        for kind, _ in due_kinds(): st_all[kind] = snap(D)
+        json.dump(st_all, open(STF, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"reports generated: {made}")
 
 if __name__ == "__main__":

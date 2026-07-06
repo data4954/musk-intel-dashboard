@@ -844,9 +844,9 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "待抓取",
+     "v": "待首轮自动更新",
      "st": "yellow",
-     "src": "careers JSON接口"
+     "src": "Greenhouse API·每日自动"
     },
     {
      "k": "关键人状态机",
@@ -856,9 +856,9 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "H-1B/PERM 新工作地",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "DOL公开库"
+     "src": "DOL公开库｜人工/季更（DOL 无免费结构化源）"
     }
    ]
   },
@@ -869,9 +869,9 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "USPTO发明人聚类",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "Google Patents API"
+     "src": "Google Patents API｜人工/季更（PatentsView 需密钥）"
     },
     {
      "k": "FCC频谱/星座申请",
@@ -888,9 +888,9 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "FAA星舰许可进度",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "FAA公示"
+     "src": "FAA公示｜人工/季更（仅网页公示）"
     },
     {
      "k": "州级Robotaxi备案",
@@ -915,13 +915,13 @@ window.MUSKINTEL_DATA = {
      "k": "LDA游说议题清单",
      "v": "待抓取(季度)",
      "st": "yellow",
-     "src": "参议院LDA库"
+     "src": "参议院LDA库｜人工/季更（季度披露）"
     },
     {
      "k": "FEC捐款流向",
      "v": "中期金援投放中",
      "st": "green",
-     "src": "A:FEC 48h"
+     "src": "FEC API·每日自动(试点)"
     }
    ]
   },
@@ -932,21 +932,21 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "Musk Form 4",
-     "v": "待抓取",
+     "v": "待首轮自动更新",
      "st": "yellow",
-     "src": "A:EDGAR"
+     "src": "EDGAR·每日自动"
     },
     {
      "k": "Kimbal Form 4",
-     "v": "待抓取(独立信号源)",
+     "v": "待首轮自动更新（独立信号源）",
      "st": "yellow",
-     "src": "A:EDGAR"
+     "src": "EDGAR·每日自动"
     },
     {
      "k": "质押率×股价强平距离",
      "v": "待Proxy更新",
      "st": "yellow",
-     "src": "A:Proxy"
+     "src": "A:Proxy｜人工/季更（Proxy 年更）"
     }
    ]
   },
@@ -959,19 +959,19 @@ window.MUSKINTEL_DATA = {
      "k": "宁德/松下产能指引",
      "v": "待财报季",
      "st": "yellow",
-     "src": "财报电话会"
+     "src": "财报电话会｜人工/季更（财报季）"
     },
     {
      "k": "锂期货远期曲线结构",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "期货行情"
+     "src": "期货行情｜人工/季更（付费行情）"
     },
     {
      "k": "三花/拓普执行器扩产公告",
      "v": "Optimus供给缺口的验证通道",
      "st": "yellow",
-     "src": "公司公告"
+     "src": "公司公告｜人工/季更（公司公告人工）"
     }
    ]
   },
@@ -982,21 +982,21 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "公务机ADS-B(仅本人)",
-     "v": "历史两次验证：北京→FSD进展、利雅得→主权资本",
-     "st": "green",
-     "src": "ADS-B Exchange"
+     "v": "自动通道暂停（免费公开源已收费）；历史两次验证：北京→FSD进展、利雅得→主权资本",
+     "st": "yellow",
+     "src": "ADS-B Exchange｜人工/季更（免费公开源已收费，自动通道暂停）"
     },
     {
      "k": "ERCOT/TVA互联队列",
      "v": "数据中心扩张最早物理承诺",
      "st": "yellow",
-     "src": "电网公示"
+     "src": "电网公示｜人工/季更（网页公示人工）"
     },
     {
      "k": "Giga/星舰基地社区影像",
      "v": "Fremont Optimus线改造中(Model S/X停产)",
      "st": "green",
-     "src": "B:社区+媒体"
+     "src": "B:社区+媒体｜人工/季更（人工）"
     }
    ]
   },
@@ -1007,15 +1007,15 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "发帖主题占比漂移",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "X公开帖"
+     "src": "X公开帖｜人工/季更（X API 收费，自动通道暂停）"
     },
     {
      "k": "凌晨发帖密度(危机探测)",
-     "v": "待抓取",
+     "v": "人工/季更项",
      "st": "yellow",
-     "src": "X公开帖"
+     "src": "X公开帖｜人工/季更（X API 收费）"
     },
     {
      "k": "数字化承诺自动提取",
@@ -1474,5 +1474,158 @@ window.MUSKINTEL_DATA = {
    "title": "Musk2011年火箭终局说|elon musk|spacex|波音|洛克希德|中国|猎鹰9号_新浪新闻 - 新浪网",
    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kalp1eC1kd3BoUXFDcmZ5Wnk5VUtzQkRiYlVkY2FMNUZSZkNUbk9Sc1ZscVBUcTZncEI5RXBLdV9jYUd2WU5oM1BnaHJtR0Y4bDE0Q1JzUWhrRndWYVQxaDhncw?oc=5"
   }
- ]
+ ],
+ "persons": [
+  {
+   "id": "musk",
+   "name": "Elon Musk",
+   "short": "Musk",
+   "role": "中心节点",
+   "org": "TSLA/SPCX",
+   "tier": "本人",
+   "x": 320,
+   "y": 195,
+   "rel": "—",
+   "aliases": []
+  },
+  {
+   "id": "birchall",
+   "name": "Jared Birchall",
+   "short": "Birchall",
+   "role": "家办管理人",
+   "org": "Excession LLC",
+   "tier": "家族执行",
+   "x": 165,
+   "y": 300,
+   "rel": "管理马斯克家族资产与信托事务（公开记录：Proxy/媒体多源）",
+   "aliases": [
+    "Birchall",
+    "伯奇尔"
+   ]
+  },
+  {
+   "id": "kimbal",
+   "name": "Kimbal Musk",
+   "short": "Kimbal",
+   "role": "胞弟/董事",
+   "org": "Tesla/SpaceX 董事会",
+   "tier": "家族",
+   "x": 135,
+   "y": 205,
+   "rel": "Form 4 独立信号源；董事持股（A：EDGAR）",
+   "aliases": [
+    "Kimbal",
+    "金博尔"
+   ]
+  },
+  {
+   "id": "ellison",
+   "name": "Larry Ellison",
+   "short": "Ellison",
+   "role": "Oracle 联创",
+   "org": "Oracle",
+   "tier": "盟友/商业",
+   "x": 150,
+   "y": 95,
+   "rel": "长期盟友、曾任 Tesla 董事（公开记录）",
+   "aliases": [
+    "Ellison",
+    "埃里森",
+    "甲骨文"
+   ]
+  },
+  {
+   "id": "sacks",
+   "name": "David Sacks",
+   "short": "Sacks",
+   "role": "白宫 AI/加密事务",
+   "org": "White House",
+   "tier": "政治盟友",
+   "x": 445,
+   "y": 285,
+   "rel": "PayPal 系；政策接口（公开记录）",
+   "aliases": [
+    "Sacks",
+    "萨克斯"
+   ]
+  },
+  {
+   "id": "thiel",
+   "name": "Peter Thiel",
+   "short": "Thiel",
+   "role": "投资人",
+   "org": "Founders Fund",
+   "tier": "盟友/资本",
+   "x": 465,
+   "y": 92,
+   "rel": "PayPal 系长期关系（公开记录）",
+   "aliases": [
+    "Thiel",
+    "蒂尔"
+   ]
+  },
+  {
+   "id": "andreessen",
+   "name": "Marc Andreessen",
+   "short": "a16z",
+   "role": "风投",
+   "org": "a16z",
+   "tier": "盟友/资本",
+   "x": 520,
+   "y": 195,
+   "rel": "xAI 投资人（B：多源）",
+   "aliases": [
+    "Andreessen",
+    "安德森"
+   ]
+  },
+  {
+   "id": "baron",
+   "name": "Ron Baron",
+   "short": "Baron",
+   "role": "机构多头",
+   "org": "Baron Capital",
+   "tier": "机构投资人",
+   "x": 410,
+   "y": 355,
+   "rel": "TSLA 长期持仓（A：13F）",
+   "aliases": [
+    "Baron",
+    "巴伦"
+   ]
+  },
+  {
+   "id": "wood",
+   "name": "Cathie Wood",
+   "short": "C.Wood",
+   "role": "机构多头",
+   "org": "ARK Invest",
+   "tier": "机构投资人",
+   "x": 265,
+   "y": 360,
+   "rel": "TSLA 持仓与公开目标价（A：13F/公开）",
+   "aliases": [
+    "Cathie",
+    "木头姐",
+    "ARK"
+   ]
+  },
+  {
+   "id": "griffin",
+   "name": "Ken Griffin",
+   "short": "Griffin",
+   "role": "对冲基金",
+   "org": "Citadel",
+   "tier": "对手方",
+   "x": 530,
+   "y": 330,
+   "rel": "公开分歧记录（B：媒体多源）",
+   "aliases": [
+    "Griffin",
+    "格里芬",
+    "Citadel"
+   ]
+  }
+ ],
+ "persons_note": "人物动向=账本自动联动（标题含人名别名）+人工入库；旧版无来源动向/心理指数/置信度已按纪律弃用，不迁移。关系描述均为公开记录定性，不给伪精度分值。"
 };

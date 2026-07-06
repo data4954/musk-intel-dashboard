@@ -196,11 +196,11 @@ feed(){ return guard('总览', () => {
   return h;
 });},
 
-graph(){ return guard('帝国图谱', () => {
+graph(){ return guard('关系图谱', () => {
   const et = D.entities, ed = D.edges;
   const byId = Object.fromEntries(et.map(e=>[e.id,e]));
   const typeName = {person:'人物',company:'商业实体',absorbed:'已并入',family:'家族资本与根基',capital:'主权资本',political:'政治节点',regulator:'监管机构'};
-  let h = '<div class="eyebrow">节点（商业帝国 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
+  let h = '<div class="eyebrow">节点（商业实体 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
   const groups = {};
   et.forEach(e=>{ (groups[e.type]=groups[e.type]||[]).push(e); });
   for(const t in groups){
@@ -237,7 +237,7 @@ leading(){ return guard('先行引擎', () => {
     h += L.items.map(i=>'<tr><td><span class="st '+esc(i.st)+'"></span>'+esc(i.k)+'</td><td>'+esc(i.v)+'</td><td class="mut" style="font-size:11.5px">'+esc(i.src)+'</td></tr>').join('');
     h += '</table></div>';
   });
-  h += '<div class="mut">边界规则：马斯克本人公开行程与公务机公开广播数据入库；私人家庭成员实时行踪无 A/B 级证据通道，按"无级不入库"规则出局。家族资本（家办/信托/990/教育/迁册）见【帝国图谱】家族节点。</div>';
+  h += '<div class="mut">边界规则：马斯克本人公开行程与公务机公开广播数据入库；私人家庭成员实时行踪无 A/B 级证据通道，按"无级不入库"规则出局。家族资本（家办/信托/990/教育/迁册）见【关系图谱】家族节点。</div>';
   return h;
 });},
 
@@ -263,10 +263,10 @@ physics(){ return guard('物理与供需', () => {
 techtree(){ return guard('技术树与趋势', () => {
   let h = '<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
   h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td>'+esc(t.carrier)+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
-  h += '</table></div><div class="eyebrow">收敛点分析（帝国的真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
+  h += '</table></div><div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
   h += D.convergence.map(c=>'<tr><td><b>'+esc(c.point)+'</b></td><td>'+esc(c.cross)+'</td><td>'+esc(c.gap)+'</td><td>'+esc(c.status)+'</td></tr>').join('');
   h += '</table></div>';
-  h += '<div class="card"><h3>能源总量账户（卡尔达肖夫视角）</h3><div class="mut" style="font-size:13px">帝国年度能量吞吐＝储能年部署 GWh ＋ 算力装机 GW ＋ 发射总能量 ＋ 超充吞吐。当前锚点：储能 8.8GWh/季 · Colossus 300MW+（目标 GW 级，受电力并网约束）。该曲线随季报更新——文明尺度唯一不撒谎的总指标。</div></div>';
+  h += '<div class="card"><h3>能源总量账户（卡尔达肖夫视角）</h3><div class="mut" style="font-size:13px">体系年度能量吞吐＝储能年部署 GWh ＋ 算力装机 GW ＋ 发射总能量 ＋ 超充吞吐。当前锚点：储能 8.8GWh/季 · Colossus 300MW+（目标 GW 级，受电力并网约束）。该曲线随季报更新——文明尺度唯一不撒谎的总指标。</div></div>';
   h += '<div class="card"><h3>Neuralink 专项</h3><div class="mut" style="font-size:13px">第一性约束：毫瓦级功耗（组织热损伤上限）↔ 带宽，物理死敌。追踪三件事：患者植入累计数、R1 手术机器人台数×单台节拍（产能天花板）、每代通道×带宽倍增节奏。不看发布会。</div></div>';
   h += '<div class="mut">尺度纪律：所有判断带 1y/5y/20y 标签；用 20 年愿景论证 1 年估值＝跨尺度违例，系统标红。</div>';
   return h;
@@ -334,6 +334,50 @@ decide(){ return guard('决策与档案', () => {
   return h;
 });},
 
+persons(){ return guard('人物网络', () => {
+  const ps = D.persons||[];
+  if(!ps.length) return '<div class="gray-card">persons 数据缺失（检查 data.js）</div>';
+  const musk = ps.find(p=>p.id==='musk')||{x:320,y:195};
+  let svg = '<svg viewBox="0 0 660 415" style="width:100%;max-width:780px;display:block;margin:0 auto" role="img" aria-label="人物关系图">';
+  ps.filter(p=>p.id!=='musk').forEach(p=>{
+    svg += '<line x1="'+musk.x+'" y1="'+musk.y+'" x2="'+p.x+'" y2="'+p.y+'" stroke="#dcdcdc" stroke-width="1.3"/>';
+  });
+  ps.forEach(p=>{
+    const r = p.id==='musk'?27:17, main = p.id==='musk';
+    svg += '<g class="pnode" data-pid="'+esc(p.id)+'" style="cursor:pointer">'
+      +'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+r+'" fill="'+(main?'#171a20':'#ffffff')+'" stroke="'+(main?'#171a20':(p.tier==='对手方'?'var(--down)':'#171a20'))+'" stroke-width="1.6"/>'
+      +'<text x="'+p.x+'" y="'+(p.y+r+13)+'" text-anchor="middle" font-size="11" fill="#171a20" font-weight="600">'+esc(p.short)+'</text>'
+      +(main?'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MUSK</text>':'')
+      +'</g>';
+  });
+  svg += '</svg>';
+  let h = '<div class="eyebrow">关系图（点节点跳转人物卡 · 连线=公开记录关系，不设伪精度强度分）</div><div class="card">'+svg+'</div>';
+  h += '<div class="card mut" style="font-size:12px">'+esc(D.persons_note||'')+'</div>';
+  const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
+  h += '<div class="eyebrow">人物卡（动向=账本自动联动，每条带证据等级；无匹配即如实显示空）</div>';
+  ps.filter(p=>p.id!=='musk').forEach(p=>{
+    let moves = [];
+    if(p.aliases && p.aliases.length){
+      moves = ledger.filter(r=>p.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).slice(0,5);
+    }
+    if(p.id==='kimbal'){
+      const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('kimbal'));
+      f4.forEach(x=>{ if(moves.indexOf(x)<0) moves.push(x); });
+      moves = moves.slice(0,5);
+    }
+    h += '<div class="card" id="pc-'+esc(p.id)+'"><h3>'+esc(p.name)+' <span class="mut" style="font-weight:400">· '+esc(p.role)+' · '+esc(p.org)+'</span> <span class="chip" style="background:rgba(23,26,32,.07);color:#171a20">'+esc(p.tier)+'</span></h3>'
+      +'<div class="mut" style="font-size:12.5px;margin-bottom:6px">'+esc(p.rel)+'</div>'
+      +(moves.length ? moves.map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('')
+                     : '<div class="mut" style="font-size:12px">账本中暂无关联动向（自动匹配别名: '+esc((p.aliases||[]).join('/'))+'）。可在【决策档案】手动入库标题含人名的事件。</div>')
+      +'</div>';
+  });
+  const muskF4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('musk')&&!((r.payload||{}).owner||'').toLowerCase().includes('kimbal'));
+  h += '<div class="card"><h3>Elon Musk 本人 · 申报流水</h3><div class="mut" style="font-size:12px;margin-bottom:4px">仅列 A 级申报（Form 4）。新闻类动向见【总览】——本人名字出现频率过高，自动匹配只会制造噪音，不做。</div>'
+    +(muskF4.length ? muskF4.slice(0,5).map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('') : '<div class="mut" style="font-size:12px">近90天无已识别申报人的 Form 4（申报人由每日更新自动回填）。</div>')
+    +'</div>';
+  return h;
+});},
+
 reports(){ return guard('报告', () => {
   return '<div class="eyebrow">定期报告归档（Actions 自动生成 · 周报每周日 · 月报每月1日 · 季报1/4/7/10月 · 年报1月1日）</div>'+
     '<div class="card" id="rpt-list"><div class="mut">加载中…</div></div>'+
@@ -384,6 +428,10 @@ function addDecision(){
   const logs=Store.get('decisions',[]); logs.push({ts:new Date().toISOString().slice(0,10),txt:v,result:''});
   Store.set('decisions',logs); render('decide');
 }
+document.addEventListener('click',e=>{
+  const g = e.target.closest && e.target.closest('.pnode');
+  if(g){ const el=document.getElementById('pc-'+g.dataset.pid); if(el) el.scrollIntoView({behavior:'smooth'}); }
+});
 document.addEventListener('change',e=>{
   if(e.target.classList && e.target.classList.contains('dec-res')){
     const logs=Store.get('decisions',[]); logs[Number(e.target.dataset.i)].result=e.target.value; Store.set('decisions',logs);
@@ -421,7 +469,7 @@ function importUser(ev){
 }
 
 /* ============ 导航与右栏 ============ */
-const NAVS=[['feed','总览'],['graph','帝国图谱'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
+const NAVS=[['feed','总览'],['graph','关系图谱'],['persons','人物网络'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
 let ACTIVE='feed';
 function render(id){
   ACTIVE=id;

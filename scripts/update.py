@@ -208,6 +208,74 @@ def main():
     else:
         bump("rss", False)
 
+
+    # ---------- 先行引擎自动项 ----------
+    def set_leading(key_sub, v, st):
+        for L in D.get("leading", []):
+            for it in L["items"]:
+                if key_sub in it["k"]:
+                    it["v"] = v; it["st"] = st; return True
+        return False
+
+    # L1 招聘: Greenhouse 公开接口（SpaceX/xAI；Tesla 无免费口，如实缺席）
+    gh = {}
+    for slug in ("spacex", "xai"):
+        t = get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", timeout=25)
+        if t:
+            try: gh[slug] = json.loads(t).get("meta", {}).get("total") or len(json.loads(t).get("jobs", []))
+            except Exception: pass
+    if gh:
+        set_leading("招聘岗位计数",
+                    f"SpaceX {gh.get('spacex','未核')} · xAI {gh.get('xai','未核')} 在招（{ASOF}；Tesla 无免费接口）",
+                    "green")
+        bump("greenhouse", True)
+    else:
+        bump("greenhouse", False)
+
+    # L4 FEC 捐款（试点 DEMO_KEY，限速共享，失败即降级）
+    t = get("https://api.open.fec.gov/v1/schedules/schedule_a/?contributor_name=musk%2C+elon&api_key=DEMO_KEY&sort=-contribution_receipt_date&per_page=20", timeout=25)
+    if t:
+        try:
+            rs = json.loads(t).get("results", [])
+            cutoff = (NOW - timedelta(days=90)).strftime("%Y-%m-%d")
+            recent = [r for r in rs if (r.get("contribution_receipt_date") or "")[:10] >= cutoff]
+            if recent:
+                total = sum(r.get("contribution_receipt_amount") or 0 for r in recent)
+                latest = recent[0]["contribution_receipt_date"][:10]
+                set_leading("FEC捐款流向", f"近90天 ${total:,.0f}／{len(recent)}笔，最新 {latest}（A:FEC）", "green")
+            else:
+                set_leading("FEC捐款流向", f"近90天无申报记录（截至 {ASOF}，A:FEC）", "green")
+            bump("fec", True)
+        except Exception:
+            bump("fec", False)
+    else:
+        bump("fec", False)
+
+    # L5 Form 4 申报人回填（每轮最多解析5份原文；只补 payload.owner，不改历史标题）
+    parsed = 0
+    owners_seen = {}
+    for r in D["ledger"]:
+        if not str(r.get("id","")).startswith("EDGAR-"): continue
+        if r.get("ts","") < (NOW - timedelta(days=90)).strftime("%Y-%m-%d"): continue
+        ow = (r.get("payload") or {}).get("owner")
+        if not ow and parsed < 5:
+            doc_url = (r.get("payload") or {}).get("src","")
+            raw_url = re.sub(r"xslF345X\d+/", "", doc_url)
+            t = get(raw_url, timeout=20)
+            if t:
+                mo = re.search(r"<rptOwnerName>(.*?)</rptOwnerName>", t) or re.search(r"(Musk\s+Kimbal|Kimbal\s+Musk|Musk\s+Elon|Elon\s+Musk)", t)
+                if mo:
+                    ow = mo.group(1).strip()
+                    r.setdefault("payload", {})["owner"] = ow
+            parsed += 1
+        if ow:
+            key = "kimbal" if "kimbal" in ow.lower() else ("musk" if "musk" in ow.lower() else "other")
+            if r["ts"] > owners_seen.get(key, ""): owners_seen[key] = r["ts"]
+    if owners_seen.get("musk"):
+        set_leading("Musk Form 4", f"最近申报 {owners_seen['musk']}（A:EDGAR，点开原文判方向）", "green")
+    if owners_seen.get("kimbal"):
+        set_leading("Kimbal Form 4", f"最近申报 {owners_seen['kimbal']}（A:EDGAR，独立信号源）", "green")
+
     # 5) 元信息 + 审计追加 + 验证闸门 + 原子替换
     D["meta"]["generated_at"] = NOW.isoformat(timespec="seconds")
     D["meta"]["generator"] = "GitHub Actions · scripts/update.py"
