@@ -3,8 +3,8 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-06T06:19:14+00:00",
-  "generator": "fetcher.py",
+  "generated_at": "2026-07-06T20:44:25+08:00",
+  "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
@@ -13,37 +13,37 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 379.0,
-    "chg": -1.2,
+    "price": 393.45,
+    "chg": 4.89,
     "mcap": "≈$1.26T",
-    "src": "seed/待更新",
-    "status": "yellow"
+    "src": "Yahoo 2026-07-06",
+    "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": null,
-    "chg": null,
+    "price": 162.0,
+    "chg": 5.88,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "B: TradingKey/Capital.com 2026-06",
-    "status": "yellow"
+    "src": "Yahoo 2026-07-06",
+    "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": null,
-    "chg": null,
-    "src": "待更新",
-    "status": "yellow"
+    "price": 61744.02,
+    "chg": 0.42,
+    "src": "Yahoo 2026-07-06",
+    "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": null,
-    "chg": null,
-    "src": "待更新",
-    "status": "yellow"
+    "price": 0.0755,
+    "chg": 1.96,
+    "src": "Yahoo 2026-07-06",
+    "status": "green"
    },
    {
     "sym": "LITHIUM",
@@ -56,8 +56,30 @@ window.MUSKINTEL_DATA = {
    }
   ],
   "series": {
-   "TSLA": [],
-   "SPCX": []
+   "TSLA": [
+    {
+     "d": "2026-07-06",
+     "c": 393.45
+    }
+   ],
+   "SPCX": [
+    {
+     "d": "2026-07-06",
+     "c": 162.0
+    }
+   ],
+   "BTC-USD": [
+    {
+     "d": "2026-07-06",
+     "c": 61744.02
+    }
+   ],
+   "DOGE-USD": [
+    {
+     "d": "2026-07-06",
+     "c": 0.0755
+    }
+   ]
   }
  },
  "entities": [
@@ -612,6 +634,114 @@ window.MUSKINTEL_DATA = {
     "status": "物理紧张",
     "basis": "真空只剩辐射散热→质量惩罚；成本闸门=星舰$/kg<$150"
    }
+  },
+  {
+   "id": "NEWS-fdbcb1a34a83",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX IPO 令 Elon Musk 成为全球首位「兆美元富豪」",
+   "payload": {
+    "src": "Hypebeast CN",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSlFfSzh6M1ViblFSUXhQd1B3UmtNcV83NE1FekQzTVJ6dUR2NV9TWmtEMEJkRWUxNXp4RUI4R3Rydy1MSlF1VVhHZW9QcThtVjhGYWI5X3F3Vjk2Sk9WZFF6VnVYWG03SUU5eG1kb1JkWjhTQ1E2ZkhyamNYSjVfYTBidG9JUQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-d6493b601020",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX股票上市首日飙升，马斯克成为全球首位万亿富翁",
+   "payload": {
+    "src": "美国之音",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMF92TnVFcjRzcnVkUFZ3MWlCWDVaZFprUG9RTklFS05OX29ZU2FDUGNPbUw0NHhfbFZOOXRjY183UHdNS09VR0JqREhXU283NEltNHhSNWRQbXVadWZFVmJxRExlejRybDZnbFRuVlBwTjRzMFhVWVpWQ1ZlbC15MUVyVkxGb2IxSUZzOHpKbHlaZW5QOGpWeHIyRUlBbkZabW03TFRNUHlFelJTbEwtVHVQdkU4Q1BhWk0zTVJjS1ItTkZnbmdSMdIBywFBVV95cUxNT25FQU1nY0xyRjdLVmxndWtDOUdla1o3UzNTS0FFY3ZUVGdudVlfMDJObkpwQUhEdnJvWXhjRHBaTXVWSmU0TUF6Z2ItalNVREl2NG9NaDBYVGVDaE1nREdNYUs2SktzOEZma01kVl9DcFJVWjExbHppS2VRdHg4a3JGaG56c1RLZUptRk5hbmdZZGxFc2RIQnVBWE51LWQ1akpTbl95aHNXX1BSUjJ4NHZON3pvclFaYjQ2WHpNVkxvdXFsWWJyOWFWTQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-68cdde643ce1",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "$SpaceX(SPCX)$ $特斯拉(TSLA)$ Elon Musk，世界首富，身价超1.35万亿美元！见证历史！2...",
+   "payload": {
+    "src": "雪球",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tMUxUWFlESmhYNDBjTUd0WWpEUW9ZeE45VFFkemxybms0QkVXanMzZlZ2YVI1ZV95ZkpVUlJGWWowbGFSRXk5TkRrZEs5eVZC?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2ed5db8f37a7",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "🔥🚗 Elon Musk把Tesla的故事又往前推了一步：不是只有Robotaxi，也不是只有$TSLA的Optimus",
+   "payload": {
+    "src": "Moomoo",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR2lON1Mtb0Q2bVEwV21fcjdlYTkxdEthUWluYWpoMVZSVlg1M1Rub05iV2d3ZVl1Q2lON2dkM1kyOEhzamxPUENNbmh3NHhvekI3U2w2WDVZNVFaS2p2WS16RlFxdEpTa29FWVFxQmlMZnJyYlZxX2xlcHRqajVGRjJMenFJOHI0cjNPdzR6NnBuRVNxN1FoSGZ6R21xRFBlRDdCeFFLNDBQNnZ5czNj?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-df79bfe8193b",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克宣布解散xAI，把数据中心整租给了他讨厌的Anthropic",
+   "payload": {
+    "src": "麻省理工科技评论",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBCelFQQ1l5WkY5MFJ1OFZueXhoWDB5MXlXVmRVN2RjRlNHMWVLc3BNQ3RHdGlsSGw1STh3ME14ZFh4eGc1SjhvOU9yYVpMNjduNWlMeXNMZw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-f485869136fb",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Musk2011年火箭终局说|elon musk|spacex|波音|洛克希德|中国|猎鹰9号_新浪新闻",
+   "payload": {
+    "src": "新浪网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kalp1eC1kd3BoUXFDcmZ5Wnk5VUtzQkRiYlVkY2FMNUZSZkNUbk9Sc1ZscVBUcTZncEI5RXBLdV9jYUd2WU5oM1BnaHJtR0Y4bDE0Q1JzUWhrRndWYVQxaDhncw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
   }
  ],
  "countdowns": [
@@ -1150,22 +1280,21 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-06 06:19",
+  "last_run": "2026-07-06 20:44",
   "sources": {
-   "yahoo": "red",
-   "stooq": "yellow",
-   "edgar": "green",
+   "yahoo": "green",
+   "edgar": "red",
    "launchlib": "green",
    "rss": "green"
   },
-  "fail_counts": {}
+  "fail_counts": {
+   "yahoo": 0,
+   "edgar": 1,
+   "launchlib": 0,
+   "rss": 0
+  }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Starlink Group 10-50",
-   "net": "2026-07-05T10:50:00Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Transporter 17 (Dedicated SSO Rideshare)",
    "net": "2026-07-07T07:10:00Z",
@@ -1185,6 +1314,11 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Starlink Group 15-14",
    "net": "2026-07-13T22:38:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+   "net": "2026-07-31T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
@@ -1291,6 +1425,54 @@ window.MUSKINTEL_DATA = {
    "ev": "C",
    "title": "马斯克宣布解散xAI，把数据中心整租给了他讨厌的Anthropic - 麻省理工科技评论",
    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBCelFQQ1l5WkY5MFJ1OFZueXhoWDB5MXlXVmRVN2RjRlNHMWVLc3BNQ3RHdGlsSGw1STh3ME14ZFh4eGc1SjhvOU9yYVpMNjduNWlMeXNMZw?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX IPO 令 Elon Musk 成为全球首位「兆美元富豪」 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSlFfSzh6M1ViblFSUXhQd1B3UmtNcV83NE1FekQzTVJ6dUR2NV9TWmtEMEJkRWUxNXp4RUI4R3Rydy1MSlF1VVhHZW9QcThtVjhGYWI5X3F3Vjk2Sk9WZFF6VnVYWG03SUU5eG1kb1JkWjhTQ1E2ZkhyamNYSjVfYTBidG9JUQ?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX股票上市首日飙升，马斯克成为全球首位万亿富翁 - 美国之音",
+   "src": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMF92TnVFcjRzcnVkUFZ3MWlCWDVaZFprUG9RTklFS05OX29ZU2FDUGNPbUw0NHhfbFZOOXRjY183UHdNS09VR0JqREhXU283NEltNHhSNWRQbXVadWZFVmJxRExlejRybDZnbFRuVlBwTjRzMFhVWVpWQ1ZlbC15MUVyVkxGb2IxSUZzOHpKbHlaZW5QOGpWeHIyRUlBbkZabW03TFRNUHlFelJTbEwtVHVQdkU4Q1BhWk0zTVJjS1ItTkZnbmdSMdIBywFBVV95cUxNT25FQU1nY0xyRjdLVmxndWtDOUdla1o3UzNTS0FFY3ZUVGdudVlfMDJObkpwQUhEdnJvWXhjRHBaTXVWSmU0TUF6Z2ItalNVREl2NG9NaDBYVGVDaE1nREdNYUs2SktzOEZma01kVl9DcFJVWjExbHppS2VRdHg4a3JGaG56c1RLZUptRk5hbmdZZGxFc2RIQnVBWE51LWQ1akpTbl95aHNXX1BSUjJ4NHZON3pvclFaYjQ2WHpNVkxvdXFsWWJyOWFWTQ?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "$SpaceX(SPCX)$ $特斯拉(TSLA)$ Elon Musk，世界首富，身价超1.35万亿美元！见证历史！2... - 雪球",
+   "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tMUxUWFlESmhYNDBjTUd0WWpEUW9ZeE45VFFkemxybms0QkVXanMzZlZ2YVI1ZV95ZkpVUlJGWWowbGFSRXk5TkRrZEs5eVZC?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "🔥🚗 Elon Musk把Tesla的故事又往前推了一步：不是只有Robotaxi，也不是只有$TSLA的Optimus - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR2lON1Mtb0Q2bVEwV21fcjdlYTkxdEthUWluYWpoMVZSVlg1M1Rub05iV2d3ZVl1Q2lON2dkM1kyOEhzamxPUENNbmh3NHhvekI3U2w2WDVZNVFaS2p2WS16RlFxdEpTa29FWVFxQmlMZnJyYlZxX2xlcHRqajVGRjJMenFJOHI0cjNPdzR6NnBuRVNxN1FoSGZ6R21xRFBlRDdCeFFLNDBQNnZ5czNj?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克宣布解散xAI，把数据中心整租给了他讨厌的Anthropic - 麻省理工科技评论",
+   "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBCelFQQ1l5WkY5MFJ1OFZueXhoWDB5MXlXVmRVN2RjRlNHMWVLc3BNQ3RHdGlsSGw1STh3ME14ZFh4eGc1SjhvOU9yYVpMNjduNWlMeXNMZw?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Musk2011年火箭终局说|elon musk|spacex|波音|洛克希德|中国|猎鹰9号_新浪新闻 - 新浪网",
+   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kalp1eC1kd3BoUXFDcmZ5Wnk5VUtzQkRiYlVkY2FMNUZSZkNUbk9Sc1ZscVBUcTZncEI5RXBLdV9jYUd2WU5oM1BnaHJtR0Y4bDE0Q1JzUWhrRndWYVQxaDhncw?oc=5"
   }
  ]
 };
