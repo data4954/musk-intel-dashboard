@@ -310,16 +310,25 @@ graph(){ return guard('关系图谱', () => {
 political(){ return guard('政治与地缘', () => {
   const P = D.political;
   const phCol={'蜜月':'#0a8754','决裂':'#d3212c','冷战试探':'#a06a00','和解':'#3e6ae1','当前':'#171a20'};
-  let tl='<svg viewBox="0 0 700 74" style="width:100%;max-width:900px;display:block" role="img" aria-label="关系阶段时间轴">';
-  P.machine.forEach((m,i)=>{ const w=700/P.machine.length, x=i*w;
+  const machR = P.machine.slice().reverse();   // 最新在前
+  let tl='<svg viewBox="0 0 700 74" style="width:100%;max-width:900px;display:block" role="img" aria-label="关系阶段时间轴（最新在左）">';
+  machR.forEach((m,i)=>{ const w=700/machR.length, x=i*w;
     tl+='<rect x="'+(x+2)+'" y="26" width="'+(w-4)+'" height="14" rx="7" fill="'+(phCol[m.phase]||'#8a8d91')+'" fill-opacity="'+(i===P.machine.length-1?1:0.55)+'"/>'
       +'<text x="'+(x+w/2)+'" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#171a20">'+esc(m.phase)+'</text>'
-      +'<text x="'+(x+w/2)+'" y="56" text-anchor="middle" font-size="8.5" fill="#8a8d91">'+esc(m.span)+'</text>'; });
+      +'<text x="'+(x+w/2)+'" y="56" text-anchor="middle" font-size="8.5" fill="#8a8d91">'+esc(m.span)+'</text>'
+      +((i===0)?'<text x="'+(x+w/2)+'" y="70" text-anchor="middle" font-size="8" fill="#3e6ae1" font-weight="700">◀ 当前</text>':''); });
   tl+='</svg>';
-  let h = '<div class="eyebrow">特马关系状态机（完整周期可回测）</div><div class="card">'+tl+'</div><div class="card">';
-  h += P.machine.map(m=>'<div class="phase"><div class="ph">'+esc(m.phase)+'</div><div class="sp num">'+esc(m.span)+'</div><div class="fx"><b>'+esc(m.facts)+'</b><div class="mut">'+esc(m.implication)+'</div></div></div>').join('');
+  let h = '<div class="eyebrow">白宫—马斯克系关系周期（最新在前 · 完整周期可回测）</div><div class="card">'+tl+'</div><div class="card">';
+  h += machR.map(m=>'<div class="phase"><div class="ph">'+esc(m.phase)+'</div><div class="sp num">'+esc(m.span)+'</div><div class="fx"><b>'+esc(m.facts)+'</b><div class="mut">'+esc(m.implication)+'</div></div></div>').join('');
   h += '</div><div class="grid2"><div class="card"><h3>政治资本 · 资产端</h3>'+P.balance.assets.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div>';
   h += '<div class="card"><h3>政治资本 · 负债端</h3>'+P.balance.liabilities.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div></div>';
+  h += '<div class="eyebrow">五视角深析（宏观 · 微观 · 政治经济学 · 博弈论 · 投资学 —— 同一组事实的五套透镜）</div>';
+  (D.pol_lens||[]).forEach(x=>{
+    h += '<div class="card"><h3>'+esc(x.lens)+'</h3>'
+      +'<div style="font-size:13px;line-height:1.85;color:#25282d">'+esc(x.mech)+'</div>'
+      +'<div style="font-size:12.5px;margin-top:8px;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px"><b>当前判读：</b>'+esc(x.read)+'</div>'
+      +'<div class="mut" style="margin-top:6px">观测点：'+esc(x.watch)+'</div></div>';
+  });
   const stc={'顺风':'var(--up)','逆风':'var(--down)','中性':'#5c5e62','中性偏顺':'#3e6ae1','悬置':'#a06a00'};
   h += '<div class="eyebrow">政商联动传导矩阵（每条业务线吃哪根政治管道 · 断供状态 · 传导时滞 · 盯什么文件）</div><div class="card"><table>'
     +'<tr><th>业务线</th><th>政治通道</th><th>依赖结构</th><th>当前态</th><th>时滞</th><th>观测点</th><th>证据</th></tr>'
@@ -614,6 +623,66 @@ persons(){ return guard('人物网络', () => {
   return h;
 });},
 
+timeline(){ return guard('时间线', () => {
+  const cat = r => (r.tags||[]).includes('form4') ? ['资本流','#3e6ae1']
+    : (r.tags||[]).some(t=>String(t).startsWith('person:')) ? ['人物','#a06a00']
+    : r.type==='promise' ? ['承诺','#d9a514']
+    : (r.tags||[]).includes('news') ? ['消息','#8a8d91'] : ['事件','#171a20'];
+  const cutoff = new Date(Date.now()-365*86400000).toISOString().slice(0,10);
+  const rows = allLedger().filter(r=>r.ts>=cutoff).sort((a,b)=>b.ts.localeCompare(a.ts));
+  let h = '<div class="card mut" style="font-size:12.5px">全类别统一时序（近 12 个月 · '+rows.length+' 条 · 最新在前）。色点=类别：<span style="color:#171a20">●事件</span> <span style="color:#3e6ae1">●资本流</span> <span style="color:#a06a00">●人物</span> <span style="color:#d9a514">●承诺</span> <span style="color:#8a8d91">●消息</span>；证据等级照常标注。</div>';
+  let curMonth='';
+  h += '<div class="card" style="padding:8px 20px">';
+  rows.forEach(r=>{
+    const m = r.ts.slice(0,7);
+    if(m!==curMonth){ curMonth=m; h += '<div style="font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--dim);margin:16px 0 4px;padding-top:10px;border-top:1px solid var(--line)">'+m+'</div>'; }
+    const [cn,cc] = cat(r);
+    const p = r.payload||{}; const u = (p.srcs||[])[0] || (String(p.src||'').startsWith('http')?p.src:'');
+    h += '<div style="display:flex;gap:10px;padding:6px 0;align-items:baseline">'
+      +'<span class="num mut" style="min-width:44px;font-size:12px">'+esc(r.ts.slice(5))+'</span>'
+      +'<span style="width:8px;height:8px;border-radius:50%;background:'+cc+';flex-shrink:0;position:relative;top:0"></span>'
+      +'<span style="font-size:11px;color:'+cc+';min-width:40px;font-weight:600">'+cn+'</span>'
+      + evChip(r.ev)
+      +'<span style="font-size:13px;flex:1">'+esc(r.title)+(u?' <a href="'+esc(u)+'" target="_blank" rel="noopener" style="font-size:11px">原文↗</a>':'')+'</span>'
+      +'</div>';
+  });
+  h += '</div>';
+  return h;
+});},
+
+travel(){ return guard('出行轨迹', () => {
+  const T = D.travel||{verified:[],log:[]};
+  const manual = allLedger().filter(r=>String(r.title).startsWith('[出行]'))
+    .map(r=>({d:r.ts, dest:(r.title.match(/\[出行\]\s*([^ ：:，,]{2,12})/)||[])[1]||'未标注',
+              evt:r.title.replace(/\[出行\]\s*/,''), src:(r.payload||{}).note||(r.payload||{}).src||'人工入库', ev:r.ev}));
+  const rows = T.verified.map(x=>({...x, ev:'B'})).concat(T.log||[], manual)
+    .sort((a,b)=>String(b.d).localeCompare(String(a.d)));
+  let h = '<div class="card" style="border-left:3px solid #d9a514"><div style="font-size:12.5px;line-height:1.8"><b>通道状态：</b>'+esc(T.channel_note||'')+'</div></div>';
+  // 目的地频次
+  const freq={}; rows.forEach(r=>{ if(r.dest) freq[r.dest]=(freq[r.dest]||0)+1; });
+  const dests=Object.keys(freq).sort((a,b)=>freq[b]-freq[a]);
+  if(dests.length){
+    const mx=Math.max(...dests.map(d=>freq[d]));
+    let bar='<svg viewBox="0 0 700 '+(24+dests.length*28)+'" style="width:100%;max-width:900px;display:block" role="img" aria-label="目的地频次">';
+    dests.forEach((d,i)=>{ const y=20+i*28, w=freq[d]/mx*480;
+      bar+='<text x="108" y="'+(y+12)+'" text-anchor="end" font-size="11.5" font-weight="600" fill="#171a20">'+esc(d)+'</text>'
+        +'<rect x="116" y="'+y+'" width="'+w+'" height="16" rx="8" fill="#3e6ae1" fill-opacity=".8"/>'
+        +'<text x="'+(122+w)+'" y="'+(y+12.5)+'" font-size="10.5" fill="#171a20" font-weight="700">'+freq[d]+'</text>'; });
+    bar+='</svg>';
+    h += '<div class="eyebrow">目的地频次（在库记录累计）</div><div class="card">'+bar+'</div>';
+  }
+  h += '<div class="eyebrow">行程记录（最新在前 · 每条带来源与证据级）</div>';
+  if(rows.length){
+    h += '<div class="card"><table><tr><th>时间</th><th>目的地</th><th>关联事件/意义</th><th>证据</th><th>来源</th></tr>'
+      +rows.map(r=>'<tr><td class="num" style="white-space:nowrap">'+esc(r.d)+'</td><td><b>'+esc(r.dest||'—')+'</b></td><td style="font-size:12.5px">'+esc(r.evt||'')+'</td><td>'+evChip(r.ev||'C')+'</td><td class="mut" style="font-size:11.5px">'+esc(r.src||'')+'</td></tr>').join('')
+      +'</table></div>';
+  } else {
+    h += '<div class="gray-card">暂无在库行程。</div>';
+  }
+  h += '<div class="card mut" style="font-size:12px"><b>如何添加行程：</b>【决策档案】手动入库，标题以「[出行] 目的地」开头（例：[出行] 北京 出席FSD审批会谈），即自动汇入本页并计入频次。判读原则：本人到场=最高成本信号——一天只有24小时，行程比言论诚实。历史两次验证：北京之行→FSD进展公开化；利雅得之行→主权资本入局。</div>';
+  return h;
+});},
+
 reports(){ return guard('报告', () => {
   return '<div class="eyebrow">定期报告归档（Actions 自动生成 · 周报每周日 · 月报每月1日 · 季报1/4/7/10月 · 年报1月1日）</div>'+
     '<div class="card" id="rpt-list"><div class="mut">加载中…</div></div>'+
@@ -708,6 +777,8 @@ function importUser(ev){
 
 /* ============ 导航与右栏 ============ */
 const VIEW_META={
+ timeline:{cycle:'随账本每日更新',src:'全账本',guide:'一条时间轴看全部类别；色点分类，最新在前。'},
+ travel:{cycle:'人工入库+人物新闻通道（ADS-B自动通道暂停）',src:'公开报道',guide:'行程比言论诚实：到场=最高成本信号。'},
  feed:{cycle:'数据每日 06:30 自动 · 判定快照实时拼装',src:'全源汇聚',guide:'先看快照卡知道现在什么最重要，再往下翻近半年事件流。'},
  graph:{cycle:'边与节点=人工判定资产（报告检测翻转）',src:'8-K/Proxy/Form 4/多源财经',guide:'看钱和权在实体间怎么流动；边越深证据越硬。'},
  persons:{cycle:'人物动态每日自动 · 关系框架人工维护',src:'EDGAR/13F/FEC/新闻通道',guide:'看谁的什么行为值得当信号；动向每天自动挂卡。'},
@@ -718,7 +789,7 @@ const VIEW_META={
  market:{cycle:'行情/信号每日自动 · 锚与论据随账本',src:'全站汇聚',guide:'全站信息的决策出口：两张决策卡+日期明确的触发器。'},
  decide:{cycle:'你的操作实时存本机',src:'浏览器本地',guide:'审计可查、误判可冲正、决策可复盘。'},
  reports:{cycle:'周报周日 · 月报1日 · 季报季首 · 年报1月1日',src:'账本×判定自动拼装',guide:'只读「本期变化」也够——无翻转就是无翻转。'}};
-const NAVS=[['feed','纵览'],['graph','关系图谱'],['persons','人物网络'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
+const NAVS=[['feed','纵览'],['timeline','时间线'],['graph','关系图谱'],['persons','人物网络'],['travel','出行轨迹'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
 let ACTIVE='feed';
 function render(id){
   ACTIVE=id;

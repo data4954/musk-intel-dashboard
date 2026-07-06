@@ -90,7 +90,7 @@ def build(D, kind, since, label):
 
     # —— 一、执行摘要 ——
     md += ["## 一、执行摘要", ""]
-    md += [f"1. **政治时钟**：特马关系处于「{phase.get('phase','未核')}」段（{phase.get('span','')}）。距中期选举 **{d_mid} 天**——{phase.get('implication','')}。该二元事件是 TSLA 叙事溢价与 SPCX 政府线的共同主导变量。"]
+    md += [f"1. **政治时钟**：白宫—马斯克系关系处于「{phase.get('phase','未核')}」段（{phase.get('span','')}）。距中期选举 **{d_mid} 天**——{phase.get('implication','')}。该二元事件是 TSLA 叙事溢价与 SPCX 政府线的共同主导变量。"]
     if clean:
         md += [f"2. **最净主线**：{'、'.join(x['line'] for x in clean)}——供给约束+高毛利，扩产即增利，只盯产能节点（{'；'.join(x['watch'] for x in clean)}）。"]
     if risky:
