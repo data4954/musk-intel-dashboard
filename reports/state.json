@@ -1,0 +1,28 @@
+{
+ "周报": {
+  "scissors": {
+   "储能 Megapack": "供给约束 ★",
+   "算力 Colossus": "供给约束 ★",
+   "Starlink": "双增长",
+   "发射服务": "垄断+自造需求",
+   "电动车": "需求约束 ⚠",
+   "Robotaxi": "监管供给约束",
+   "Optimus": "供给缺口 ✗"
+  },
+  "promises": {
+   "P001": "物理紧张",
+   "P002": "物理不可行(现有供应链)",
+   "P003": "已兑现(反向)",
+   "P004": "物理紧张"
+  },
+  "health": {
+   "yahoo": "green",
+   "edgar": "fused",
+   "launchlib": "green",
+   "rss": "green",
+   "greenhouse": "green",
+   "fec": "green"
+  },
+  "ab_count_30d": 3
+ }
+}

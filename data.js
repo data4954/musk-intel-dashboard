@@ -3,7 +3,7 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-07T00:26:34+08:00",
+  "generated_at": "2026-07-07T00:48:14+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
@@ -13,8 +13,8 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 417.245,
-    "chg": 9.89,
+    "price": 417.115,
+    "chg": 9.85,
     "mcap": "≈$1.26T",
     "src": "Yahoo 2026-07-07",
     "status": "green"
@@ -22,8 +22,8 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 160.93,
-    "chg": 5.03,
+    "price": 162.11,
+    "chg": 5.8,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
     "src": "Yahoo 2026-07-07",
@@ -32,16 +32,16 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63433.47,
-    "chg": 3.17,
+    "price": 63675.82,
+    "chg": 3.56,
     "src": "Yahoo 2026-07-07",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0763,
-    "chg": 2.94,
+    "price": 0.0769,
+    "chg": 3.86,
     "src": "Yahoo 2026-07-07",
     "status": "green"
    }
@@ -54,7 +54,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 417.245
+     "c": 417.115
     }
    ],
    "SPCX": [
@@ -64,7 +64,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 160.93
+     "c": 162.11
     }
    ],
    "BTC-USD": [
@@ -74,7 +74,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 63433.47
+     "c": 63675.82
     }
    ],
    "DOGE-USD": [
@@ -84,7 +84,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 0.0763
+     "c": 0.0769
     }
    ]
   }
@@ -965,6 +965,114 @@ window.MUSKINTEL_DATA = {
     ],
     "note": "R3 单源未交叉，C 级默认不进结论"
    }
+  },
+  {
+   "id": "NEWS-4180d7ed1ddf",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "我觉得最讨厌SpaceX和Elon Musk的人一定是Rocket Lab的老板小胖子Peter Beck[吃瓜][吃瓜][吃瓜]​当年SpaceX推出Transport Rideshare拼车任务，小胖子的Electron小火箭的发射任务就大幅减少，而今天SpaceX强势上市，Rocket Lab的股价就应声跳水，整个美",
+   "payload": {
+    "src": "新浪网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Qa01Ha0ZmM0VIeENBdTVLWkVvc3FtVTd4eExGUnhQNE9MUHdrTzc0bnFnSzl3LWIwTkljM3hjZHdtdUVneFVTenRzZl8wcDljSXpYVzBNcTYwQlpPZFNtdWVUMA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-f28ac055ceda",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX員工財富或可買下聖安東尼奧40%住房",
+   "payload": {
+    "src": "大纪元",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9McXZHTlNiQjc3NFpXTGNaZ0Y3dHB5dXB4SlM1U3oycTNtMTM1UEp1NW42LTRLU1NUTGpLQU5tLTNNQlpmSk1hUzNfLWRuY29IVlJtcHJQdGhQRGVybFl5SdIBZkFVX3lxTFA0ZEI4MnFaM1gyRE5pUnVjTlN2N0RJSTBQTURlUU1uelZ1Z0R2OC01UGFTUHV5djBtTTg3YzI3TnB0SU9Qb3p0aF9LelU1VWZ2b2d4dU42RWhHb2YxOFUzdGM1THk5QQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6dc7a4250f27",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX IPO承销团队，至少包括21间投行，上市的内部代号为Project Apex",
+   "payload": {
+    "src": "雪球",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiS0FVX3lxTE02Z3BaRHJ5bVhpZUdTdFdlaE5zX3ZFamVYNXE2cVFUYjRYZ2VLRXFGSm9YdXd4RHg4SVl1RUZmVGxoOVM5VjI0TVRzOA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-8d78ec0b7a33",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克称脑机接口是“耶稣级别”的技术",
+   "payload": {
+    "src": "华尔街日报中文网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUEtONmZxNGVXX0ROWFNsS1VjdlAzMGp6LTZjNmdaczk0eDBYMW1ENV9leUwtOEVWSzJCVDZuLVRiY2I3RExST0RWa2tJMnpDc1loWFVPRVNDOEliUEZSWVlDZ0tlUEI1clM2NkhYMnI2QWN1dlotaFc4UU5tSUphc0xqSHVqa3VYcGZmMWl2UGZGLURE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-ce4cd1f47302",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克旗下SpaceX和xAI合并，估值将达1.25万亿美元",
+   "payload": {
+    "src": "华尔街日报中文网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMigAFBVV95cUxNY2xWQkFDVkw5YTV0WndURGVqeVdiamdxbmhmSlNNbDRJOTBzekl4VXFQaW12VndPVXMxUXM4U3V2MFROeWRRTng3aGNfenRLVVhjUzBrTmdiN0JUSDZoZ1kzNGF3UmtEYm15WU43UGZBVE9FQnZycV9NM2k1SERtMg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2975b3f7faac",
+   "type": "event",
+   "ts": "2026-07-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克访谈再放暴论",
+   "payload": {
+    "src": "风闻",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82dVlwUTBEVXZIQUNUc21CczhGZlg3aDUydTVJbkpLTGNGbnhXRGF5RlBfX0wyUEIwclItMnhuc1hWTlYwMmVkQnA5NHZrUUczLWljRHdpZUw4VWs?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
   }
  ],
  "countdowns": [
@@ -1497,7 +1605,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-07 00:26",
+  "last_run": "2026-07-07 00:48",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -1508,7 +1616,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 3,
+   "edgar": 4,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -1790,6 +1898,54 @@ window.MUSKINTEL_DATA = {
    "ev": "C",
    "title": "马斯克：SpaceX、特斯拉，将联手在德州建芯片厂，落实「Terafab」计划 - 雪球",
    "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRVVJSU0o0cXpjTVRSNmhkVzgzSUlzZENYUG1DbkdQS014bVVFMDR0emZwMUhmU2RWUExiSU9tRURDTzZHNl94ckJxcw?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "我觉得最讨厌SpaceX和Elon Musk的人一定是Rocket Lab的老板小胖子Peter Beck[吃瓜][吃瓜][吃瓜]​当年SpaceX推出Tran",
+   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Qa01Ha0ZmM0VIeENBdTVLWkVvc3FtVTd4eExGUnhQNE9MUHdrTzc0bnFnSzl3LWIwTkljM3hjZHdtdUVneFVTenRzZl8wcDljSXpYVzBNcTYwQlpPZFNtdWVUMA?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX員工財富或可買下聖安東尼奧40%住房 - 大纪元",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9McXZHTlNiQjc3NFpXTGNaZ0Y3dHB5dXB4SlM1U3oycTNtMTM1UEp1NW42LTRLU1NUTGpLQU5tLTNNQlpmSk1hUzNfLWRuY29IVlJtcHJQdGhQRGVybFl5SdIBZkFVX3lxTFA0ZEI4MnFaM1gyRE5pUnVjTlN2N0RJSTBQTURlUU1uelZ1Z0R2OC01UGFTUHV5djBtTTg3YzI3TnB0SU9Qb3p0aF9LelU1VWZ2b2d4dU42RWhHb2YxOFUzdGM1THk5QQ?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX IPO承销团队，至少包括21间投行，上市的内部代号为Project Apex - 雪球",
+   "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE02Z3BaRHJ5bVhpZUdTdFdlaE5zX3ZFamVYNXE2cVFUYjRYZ2VLRXFGSm9YdXd4RHg4SVl1RUZmVGxoOVM5VjI0TVRzOA?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克称脑机接口是“耶稣级别”的技术 - 华尔街日报中文网",
+   "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUEtONmZxNGVXX0ROWFNsS1VjdlAzMGp6LTZjNmdaczk0eDBYMW1ENV9leUwtOEVWSzJCVDZuLVRiY2I3RExST0RWa2tJMnpDc1loWFVPRVNDOEliUEZSWVlDZ0tlUEI1clM2NkhYMnI2QWN1dlotaFc4UU5tSUphc0xqSHVqa3VYcGZmMWl2UGZGLURE?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克旗下SpaceX和xAI合并，估值将达1.25万亿美元 - 华尔街日报中文网",
+   "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNY2xWQkFDVkw5YTV0WndURGVqeVdiamdxbmhmSlNNbDRJOTBzekl4VXFQaW12VndPVXMxUXM4U3V2MFROeWRRTng3aGNfenRLVVhjUzBrTmdiN0JUSDZoZ1kzNGF3UmtEYm15WU43UGZBVE9FQnZycV9NM2k1SERtMg?oc=5"
+  },
+  {
+   "ts": "2026-07-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克访谈再放暴论 - 风闻",
+   "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82dVlwUTBEVXZIQUNUc21CczhGZlg3aDUydTVJbkpLTGNGbnhXRGF5RlBfX0wyUEIwclItMnhuc1hWTlYwMmVkQnA5NHZrUUczLWljRHdpZUw4VWs?oc=5"
   }
  ],
  "persons": [
