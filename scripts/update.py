@@ -224,4 +224,16 @@ def main():
     data = out.encode("utf-8")                                       # 检3 编码
     if len(data) > MAXB:                                             # 检4 体积
         log("错误: 超过15MB预算，本次丢弃。建议: 年度归档分片"); return 1
-    open(NEW, "wb").writ
+    open(NEW, "wb").write(data)
+    os.replace(NEW, DATA)                                            # 原子替换（历史版本由 git 承担）
+    log(f"更新成功。账本 {len(D['ledger'])} 条，本轮审计 {len(audit)} 条")
+    return 0
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception as e:
+        log(f"错误: 更新器异常 {e}。影响: 本次未更新，旧数据保留")
+        raise
