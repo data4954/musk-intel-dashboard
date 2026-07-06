@@ -1573,19 +1573,29 @@ window.MUSKINTEL_DATA = {
      "k": "招聘岗位计数(按公司×职能)",
      "v": "SpaceX 1832 · xAI 213 在招（2026-07-07；Tesla 无免费接口）",
      "st": "green",
-     "src": "Greenhouse API·每日自动"
+     "src": "Greenhouse API·每日自动",
+     "feeds": [
+      "算力/xAI",
+      "发射/Starlink"
+     ]
     },
     {
      "k": "关键人状态机",
      "v": "xAI 12联创并购后仅剩马斯克1人；CFO Armstrong 离职；Starlink副总裁 Nicolls 接管xAI",
      "st": "red",
-     "src": "B:多源 2026"
+     "src": "B:多源 2026",
+     "feeds": [
+      "组织风险"
+     ]
     },
     {
      "k": "H-1B/PERM 新工作地",
      "v": "人工/季更项",
      "st": "yellow",
-     "src": "DOL公开库｜人工/季更（DOL 无免费结构化源）"
+     "src": "DOL公开库｜人工/季更（DOL 无免费结构化源）",
+     "feeds": [
+      "制造扩张"
+     ]
     }
    ]
   },
@@ -1598,13 +1608,20 @@ window.MUSKINTEL_DATA = {
      "k": "USPTO发明人聚类",
      "v": "人工/季更项",
      "st": "yellow",
-     "src": "Google Patents API｜人工/季更（PatentsView 需密钥）"
+     "src": "Google Patents API｜人工/季更（PatentsView 需密钥）",
+     "feeds": [
+      "Optimus",
+      "FSD"
+     ]
     },
     {
      "k": "FCC频谱/星座申请",
      "v": "direct-to-cell 扩容申请在途",
      "st": "green",
-     "src": "FCC IBFS"
+     "src": "FCC IBFS",
+     "feeds": [
+      "Starlink"
+     ]
     }
    ]
   },
@@ -1617,19 +1634,28 @@ window.MUSKINTEL_DATA = {
      "k": "FAA星舰许可进度",
      "v": "人工/季更项",
      "st": "yellow",
-     "src": "FAA公示｜人工/季更（仅网页公示）"
+     "src": "FAA公示｜人工/季更（仅网页公示）",
+     "feeds": [
+      "发射"
+     ]
     },
     {
      "k": "州级Robotaxi备案",
      "v": "内华达备案曝光(06-20)",
      "st": "green",
-     "src": "A:州文件"
+     "src": "A:州文件",
+     "feeds": [
+      "Robotaxi"
+     ]
     },
     {
      "k": "孟菲斯燃气轮机许可诉讼",
      "v": "进行中=Colossus电力约束的法律形态",
      "st": "red",
-     "src": "法院公开系统"
+     "src": "法院公开系统",
+     "feeds": [
+      "算力/xAI"
+     ]
     }
    ]
   },
@@ -1642,13 +1668,19 @@ window.MUSKINTEL_DATA = {
      "k": "LDA游说议题清单",
      "v": "待抓取(季度)",
      "st": "yellow",
-     "src": "参议院LDA库｜人工/季更（季度披露）"
+     "src": "参议院LDA库｜人工/季更（季度披露）",
+     "feeds": [
+      "政治通道"
+     ]
     },
     {
      "k": "FEC捐款流向",
      "v": "近90天无申报记录（截至 2026-07-07，A:FEC）",
      "st": "green",
-     "src": "FEC API·每日自动(试点)"
+     "src": "FEC API·每日自动(试点)",
+     "feeds": [
+      "政治通道"
+     ]
     }
    ]
   },
@@ -1661,19 +1693,28 @@ window.MUSKINTEL_DATA = {
      "k": "Musk Form 4",
      "v": "待首轮自动更新",
      "st": "yellow",
-     "src": "EDGAR·每日自动"
+     "src": "EDGAR·每日自动",
+     "feeds": [
+      "TSLA定价"
+     ]
     },
     {
      "k": "Kimbal Form 4",
      "v": "待首轮自动更新（独立信号源）",
      "st": "yellow",
-     "src": "EDGAR·每日自动"
+     "src": "EDGAR·每日自动",
+     "feeds": [
+      "TSLA定价"
+     ]
     },
     {
      "k": "质押率×股价强平距离",
      "v": "待Proxy更新",
      "st": "yellow",
-     "src": "A:Proxy｜人工/季更（Proxy 年更）"
+     "src": "A:Proxy｜人工/季更（Proxy 年更）",
+     "feeds": [
+      "TSLA定价"
+     ]
     }
    ]
   },
@@ -1686,13 +1727,20 @@ window.MUSKINTEL_DATA = {
      "k": "宁德/松下产能指引",
      "v": "待财报季",
      "st": "yellow",
-     "src": "财报电话会｜人工/季更（财报季）"
+     "src": "财报电话会｜人工/季更（财报季）",
+     "feeds": [
+      "储能",
+      "EV"
+     ]
     },
     {
      "k": "三花/拓普执行器扩产公告",
      "v": "Optimus供给缺口的验证通道",
      "st": "yellow",
-     "src": "公司公告｜人工/季更（公司公告人工）"
+     "src": "公司公告｜人工/季更（公司公告人工）",
+     "feeds": [
+      "Optimus"
+     ]
     }
    ]
   },
@@ -1705,19 +1753,30 @@ window.MUSKINTEL_DATA = {
      "k": "公务机ADS-B(仅本人)",
      "v": "自动通道暂停（免费公开源已收费）；历史两次验证：北京→FSD进展、利雅得→主权资本",
      "st": "yellow",
-     "src": "ADS-B Exchange｜人工/季更（免费公开源已收费，自动通道暂停）"
+     "src": "ADS-B Exchange｜人工/季更（免费公开源已收费，自动通道暂停）",
+     "feeds": [
+      "政治通道",
+      "EV"
+     ]
     },
     {
      "k": "ERCOT/TVA互联队列",
      "v": "数据中心扩张最早物理承诺",
      "st": "yellow",
-     "src": "电网公示｜人工/季更（网页公示人工）"
+     "src": "电网公示｜人工/季更（网页公示人工）",
+     "feeds": [
+      "算力/xAI"
+     ]
     },
     {
      "k": "Giga/星舰基地社区影像",
      "v": "Fremont Optimus线改造中(Model S/X停产)",
      "st": "green",
-     "src": "B:社区+媒体｜人工/季更（人工）"
+     "src": "B:社区+媒体｜人工/季更（人工）",
+     "feeds": [
+      "Optimus",
+      "发射"
+     ]
     }
    ]
   },
@@ -1730,19 +1789,28 @@ window.MUSKINTEL_DATA = {
      "k": "发帖主题占比漂移",
      "v": "人工/季更项",
      "st": "yellow",
-     "src": "X公开帖｜人工/季更（X API 收费，自动通道暂停）"
+     "src": "X公开帖｜人工/季更（X API 收费，自动通道暂停）",
+     "feeds": [
+      "组织风险"
+     ]
     },
     {
      "k": "凌晨发帖密度(危机探测)",
      "v": "人工/季更项",
      "st": "yellow",
-     "src": "X公开帖｜人工/季更（X API 收费）"
+     "src": "X公开帖｜人工/季更（X API 收费）",
+     "feeds": [
+      "组织风险"
+     ]
     },
     {
      "k": "数字化承诺自动提取",
      "v": "4条在库",
      "st": "green",
-     "src": "承诺库"
+     "src": "承诺库",
+     "feeds": [
+      "信用底账"
+     ]
     }
    ]
   }
