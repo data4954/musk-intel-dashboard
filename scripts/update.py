@@ -11,7 +11,7 @@
   R5  自动入库一律不填 impact（影响评分是分析判断，机器不越权）
   R6  源失败 → 沿用旧值并标注陈旧；连续 3 次失败熔断，写进周报头条
 """
-import json, re, os, time, hashlib, urllib.request, urllib.error
+import json, re, os, time, hashlib, urllib.request, urllib.error, urllib.parse
 from datetime import datetime, timezone, timedelta
 
 CST   = timezone(timedelta(hours=8))          # 报告与时间戳统一北京时间
@@ -206,6 +206,34 @@ def main():
     else:
         bump("rss", False)
 
+
+    # ---------- 人物动态追踪（每人独立新闻通道；C级默认，tag=person:<id>） ----------
+    PERSON_QUERIES = {
+        "birchall": "\"Jared Birchall\"", "kimbal": "\"Kimbal Musk\"",
+        "ellison": "\"Larry Ellison\"", "sacks": "\"David Sacks\"",
+        "thiel": "\"Peter Thiel\"", "andreessen": "\"Marc Andreessen\"",
+        "baron": "\"Ron Baron\" Tesla", "wood": "\"Cathie Wood\"",
+        "griffin": "\"Ken Griffin\" Citadel"}
+    p_in = 0
+    for pid, q in PERSON_QUERIES.items():
+        t = get(f"https://news.google.com/rss/search?q={urllib.parse.quote(q)}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", timeout=20)
+        if not t: continue
+        n_this = 0
+        for mm in re.finditer(r"<item><title>(.*?)</title><link>(.*?)</link>", t):
+            if n_this >= 2: break                                  # 每人每日上限2条，控噪
+            title = re.sub(r"<!\[CDATA\[|\]\]>", "", mm.group(1)).strip()
+            rid = "PNEWS-" + hashlib.md5((pid + norm_title(title)).encode()).hexdigest()[:12]
+            if rid in ledger_ids: continue
+            if any(sim(title, x) >= SIM_THRESHOLD for x in recent_titles): continue
+            D["ledger"].append({"id": rid, "type": "event", "ts": ASOF, "ev": "C", "scope": "1y",
+                "tags": ["news", "person:" + pid],
+                "title": re.sub(r"\s*[-–—]\s*[^-–—]{2,25}$", "", title),
+                "payload": {"src": mm.group(2), "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"}})
+            ledger_ids.add(rid); recent_titles.append(title); n_this += 1; p_in += 1
+    if p_in:
+        log(f"人物动态: 新入库 {p_in} 条（C级，按人物tag挂卡）")
+        audit.append({"ts": ASOF, "rule": "R3", "action": "入库", "ev": "C",
+                      "title": f"人物动态通道 {p_in} 条（明细见各人物卡）", "src": ""})
 
     # ---------- 先行引擎自动项 ----------
     def set_leading(key_sub, v, st):

@@ -111,6 +111,25 @@ aside{width:320px;flex-shrink:0;position:sticky;top:76px}
 .cd-row .d{font-weight:800}
 .hl{padding:9px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim)}
 
+
+/* 研报正文（md 渲染，读文档而非读代码） */
+.rpt{font-size:14px;line-height:1.85;color:#25282d}
+.rpt h1{font-size:22px;margin:6px 0 12px;letter-spacing:-.01em}
+.rpt h2{font-size:16.5px;margin:22px 0 10px;padding:8px 12px;background:rgba(23,26,32,.04);border-left:3px solid var(--text);border-radius:0 6px 6px 0}
+.rpt h3{font-size:14.5px;margin:16px 0 8px;color:#171a20}
+.rpt p{margin:6px 0}
+.rpt ul,.rpt ol{margin:6px 0 6px 22px}
+.rpt li{margin:4px 0}
+.rpt blockquote{border-left:3px solid #d9a514;background:#fdf6e3;padding:8px 12px;margin:10px 0;border-radius:0 6px 6px 0;color:#6b5900;font-size:13px}
+.rpt table{margin:10px 0;font-size:12.5px}
+.rpt hr{border:none;border-top:1px solid var(--line);margin:16px 0}
+.rpt strong{color:#171a20}
+/* 折叠块 */
+details{margin-bottom:14px}
+details summary{cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:10px 0;user-select:none}
+details summary:hover{color:var(--text)}
+/* 全局页脚 */
+.sitefoot{max-width:1280px;margin:0 auto;padding:26px 20px 46px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim);line-height:1.9}
 @media (max-width:1100px){aside{display:none}}
 @media (max-width:780px){
   .shell{padding:118px 14px 60px}
@@ -143,6 +162,8 @@ aside{width:320px;flex-shrink:0;position:sticky;top:76px}
   <div class="widget" id="w-health"><h4>数据健康</h4></div>
 </aside>
 </div>
+
+<div class="sitefoot"><b>免责声明</b> · 本站为非营利个人研究工具。全部信息来自公开渠道（SEC、FEC、公开行情接口与公开媒体报道），按证据等级（A/B/C）分级呈现，可能存在延迟、错误或遗漏，不保证准确性、完整性与时效性。本站内容不构成投资建议、法律建议、税务建议或对任何证券的买卖要约与招揽，据此操作风险自负。本站与 Tesla, Inc.、Space Exploration Technologies Corp. 及文中提及的任何公司、机构、个人均无关联、授权或背书关系；所涉商标与名称归各自权利人所有。对自然人的记录仅限其公开职务行为与依法公开的申报文件（如 SEC Form 4、FEC 申报），不追踪、不推断任何私人生活信息。行情数据来自免费公开接口，延迟约 15 分钟，仅供个人研究参考，禁止商用再分发。机器自动定级内容可能存在误判，均留有审计记录并可冲正。如认为本站内容侵犯您的合法权益，请通过本站 GitHub 仓库 Issues 提出，将及时处理删除。</div>
 
 <script src="data.js"></script>
 <script>
@@ -241,15 +262,33 @@ graph(){ return guard('关系图谱', () => {
   const et = D.entities, ed = D.edges;
   const byId = Object.fromEntries(et.map(e=>[e.id,e]));
   const typeName = {person:'人物',company:'商业实体',absorbed:'已并入',family:'家族资本与根基',capital:'主权资本',political:'政治节点',regulator:'监管机构'};
-  let h = '<div class="eyebrow">节点（商业实体 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
+  // 实体层 SVG：按类型分列布局，边=真实资金/股权/监管关系
+  const colOrder=['person','family','company','absorbed','capital','political','regulator'];
+  const colX={person:70,family:190,company:340,absorbed:340,capital:490,political:610,regulator:610};
+  const colName={person:'人物',family:'家族层',company:'商业实体',absorbed:'已并入',capital:'主权资本',political:'政治',regulator:'监管'};
+  const ys={}; const posE={};
+  et.forEach(e=>{ const x=colX[e.type]||340; ys[x]=(ys[x]||30)+52; posE[e.id]={x:x, y:ys[x]}; });
+  const H=Math.max(...Object.values(ys))+40;
+  const kcol=k=>/股权/.test(k)?'#3e6ae1':/资金/.test(k)?'#0a8754':/监管/.test(k)?'#d3212c':/政治|恩惠|人质/.test(k)?'#a06a00':'#b6bcc3';
+  let gsvg='<svg viewBox="0 0 700 '+H+'" style="width:100%;max-width:840px;display:block;margin:0 auto" role="img" aria-label="实体关系图">';
+  [...new Set(Object.values(colX))].forEach(x=>{ const t=Object.keys(colX).find(k=>colX[k]===x); gsvg+='<text x="'+x+'" y="18" text-anchor="middle" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(colName[t]||'')+'</text>'; });
+  ed.forEach(e=>{ const a=posE[e.from], b=posE[e.to]; if(!a||!b) return;
+    const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.y-a.y, dy=a.x-b.x, L2=Math.hypot(dx,dy)||1;
+    gsvg+='<path d="M '+a.x+' '+a.y+' Q '+(mx+dx/L2*14)+' '+(my+dy/L2*14)+' '+b.x+' '+b.y+'" fill="none" stroke="'+kcol(e.kind)+'" stroke-opacity="'+(e.ev==='A'?0.8:0.45)+'" stroke-width="'+(e.ev==='A'?1.7:1.2)+'"/>'; });
+  et.forEach(e=>{ const p=posE[e.id];
+    gsvg+='<g><rect x="'+(p.x-52)+'" y="'+(p.y-13)+'" width="104" height="26" rx="13" fill="#fff" stroke="#c9ccce"/>'
+      +'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="10" font-weight="600" fill="#171a20">'+esc(e.name.length>9?e.name.slice(0,9)+'…':e.name)+'</text></g>'; });
+  gsvg+='</svg>';
+  let h = '<div class="eyebrow">实体关系图（列=层级 · 边色：<span style="color:#3e6ae1">股权</span>/<span style="color:#0a8754">资金</span>/<span style="color:#d3212c">监管</span>/<span style="color:#a06a00">政治</span> · 深=A级）</div><div class="card">'+gsvg+'</div>';
+  h += '<div class="eyebrow">节点（商业实体 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
   const groups = {};
   et.forEach(e=>{ (groups[e.type]=groups[e.type]||[]).push(e); });
   for(const t in groups){
     h += '<div class="card"><h3>'+esc(typeName[t]||t)+'</h3>'+groups[t].map(e=>'<div style="font-size:13px;padding:3px 0"><b>'+esc(e.name)+'</b><div class="mut">'+esc(e.note||e.status||'')+'</div></div>').join('')+'</div>';
   }
-  h += '</div><div class="eyebrow">边（每条带类型/金额/日期/证据/来源 · '+ed.length+' 条）</div><div class="card"><table><tr><th>传导</th><th>类型</th><th>内容</th><th>证据</th></tr>';
+  h += '</div><details><summary>边明细（'+ed.length+' 条 · 类型/金额/日期/证据/来源）▾</summary><div class="card"><table><tr><th>传导</th><th>类型</th><th>内容</th><th>证据</th></tr>';
   h += ed.map(e=>'<tr class="edge-row"><td>'+esc((byId[e.from]||{}).name||e.from)+' → '+esc((byId[e.to]||{}).name||e.to)+'</td><td>'+esc(e.kind)+'</td><td>'+esc(e.label)+(e.date?(' <span class="mut num">('+esc(e.date)+')</span>'):'')+'</td><td>'+evChip(e.ev)+'<div class="mut" style="font-size:11px">'+esc(e.src||'')+'</div></td></tr>').join('');
-  h += '</table></div>';
+  h += '</table></div></details>';
   h += '<div class="card"><h3>核心传导链（点读版路径追踪）</h3><div style="font-size:13px;line-height:1.9">'+
     'Tesla —[$2B 优先股]→ xAI —[并入 0.1433 换股]→ SPCX ⇒ <b>TSLA 股东间接持有 SPCX 优先股权益</b><br>'+
     '中期选举(11-03) → 共和党保住 → FSD 联邦框架/合同扩张 → TSLA $350/股溢价支撑 · SPCX 政府线顺风<br>'+
@@ -260,7 +299,14 @@ graph(){ return guard('关系图谱', () => {
 
 political(){ return guard('政治与地缘', () => {
   const P = D.political;
-  let h = '<div class="eyebrow">特马关系状态机（完整周期可回测）</div><div class="card">';
+  const phCol={'蜜月':'#0a8754','决裂':'#d3212c','冷战试探':'#a06a00','和解':'#3e6ae1','当前':'#171a20'};
+  let tl='<svg viewBox="0 0 700 74" style="width:100%;max-width:840px;display:block" role="img" aria-label="关系阶段时间轴">';
+  P.machine.forEach((m,i)=>{ const w=700/P.machine.length, x=i*w;
+    tl+='<rect x="'+(x+2)+'" y="26" width="'+(w-4)+'" height="14" rx="7" fill="'+(phCol[m.phase]||'#8a8d91')+'" fill-opacity="'+(i===P.machine.length-1?1:0.55)+'"/>'
+      +'<text x="'+(x+w/2)+'" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#171a20">'+esc(m.phase)+'</text>'
+      +'<text x="'+(x+w/2)+'" y="56" text-anchor="middle" font-size="8.5" fill="#8a8d91">'+esc(m.span)+'</text>'; });
+  tl+='</svg>';
+  let h = '<div class="eyebrow">特马关系状态机（完整周期可回测）</div><div class="card">'+tl+'</div><div class="card">';
   h += P.machine.map(m=>'<div class="phase"><div class="ph">'+esc(m.phase)+'</div><div class="sp num">'+esc(m.span)+'</div><div class="fx"><b>'+esc(m.facts)+'</b><div class="mut">'+esc(m.implication)+'</div></div></div>').join('');
   h += '</div><div class="grid2"><div class="card"><h3>政治资本 · 资产端</h3>'+P.balance.assets.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div>';
   h += '<div class="card"><h3>政治资本 · 负债端</h3>'+P.balance.liabilities.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div></div>';
@@ -272,7 +318,19 @@ political(){ return guard('政治与地缘', () => {
 });},
 
 leading(){ return guard('先行引擎', () => {
-  let h = '<div class="card"><h3>传导链视图</h3><div class="mut" style="font-size:13px">L1-L3（因：人才/专利/监管文件）→ L5-L6（资本与供应链确认）→ L7-L8（临近触发）→ 价格。<b>多层同红＝系统级预警；单层孤红＝观察。</b>资本流信号权重 ×3。</div></div>';
+  let ch='<svg viewBox="0 0 760 96" style="width:100%;max-width:860px;display:block" role="img" aria-label="先行引擎传导链">';
+  D.leading.forEach((L,i)=>{ const x=6+i*88;
+    const ns={green:0,yellow:0,red:0}; L.items.forEach(it=>ns[it.st]=(ns[it.st]||0)+1);
+    const worst = ns.red?'#d3212c':ns.yellow?'#d9a514':'#0a8754';
+    ch+='<rect x="'+x+'" y="18" width="76" height="46" rx="9" fill="#fff" stroke="'+worst+'" stroke-width="1.6"/>'
+      +'<text x="'+(x+38)+'" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#171a20">L'+L.layer+' '+esc(L.name.slice(0,4))+'</text>'
+      +'<text x="'+(x+38)+'" y="50" text-anchor="middle" font-size="9" fill="#8a8d91">'+esc(L.lead)+'</text>'
+      +(ns.red?'<circle cx="'+(x+66)+'" cy="24" r="5" fill="#d3212c"/><text x="'+(x+66)+'" y="27" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">'+ns.red+'</text>':'')
+      +(i<D.leading.length-1?'<path d="M '+(x+78)+' 41 l 7 0 m -3 -3 l 3 3 l -3 3" stroke="#b6bcc3" stroke-width="1.4" fill="none"/>':'');
+  });
+  ch+='<text x="380" y="88" text-anchor="middle" font-size="9.5" fill="#8a8d91">红角标=该层红灯数 · 多层同红=系统级预警 → 传导终点：价格</text></svg>';
+  let h = '<div class="eyebrow">传导链（L1 远因 → L8 临近触发 · 边框色=该层最差状态）</div><div class="card">'+ch+'</div>'
+    +'<div class="card"><h3>传导链视图</h3><div class="mut" style="font-size:13px">L1-L3（因：人才/专利/监管文件）→ L5-L6（资本与供应链确认）→ L7-L8（临近触发）→ 价格。<b>多层同红＝系统级预警；单层孤红＝观察。</b>资本流信号权重 ×3。</div></div>';
   D.leading.forEach(L=>{
     h += '<div class="eyebrow">第 '+L.layer+' 层 · '+esc(L.name)+'（先行 '+esc(L.lead)+'）</div><div class="card"><table><tr><th style="width:34%">指标</th><th>当前</th><th style="width:24%">来源</th></tr>';
     h += L.items.map(i=>'<tr><td><span class="st '+esc(i.st)+'"></span>'+esc(i.k)+'</td><td>'+esc(i.v)+'</td><td class="mut" style="font-size:11.5px">'+esc(i.src)+'</td></tr>').join('');
@@ -283,7 +341,19 @@ leading(){ return guard('先行引擎', () => {
 });},
 
 physics(){ return guard('物理与供需', () => {
-  let h = '<div class="eyebrow">供需剪刀差总表（七产品线 · 状态翻转触发周报头条）</div><div class="card"><table><tr><th>产品线</th><th>状态</th><th>头号约束</th><th>解除时间表</th><th>投资含义</th></tr>';
+  const pos={'供给约束 ★':60,'双增长':185,'垄断+自造需求':310,'监管供给约束':435,'需求约束 ⚠':560,'供给缺口 ✗':630};
+  let sp='<svg viewBox="0 0 700 '+(46+D.scissors.length*26)+'" style="width:100%;max-width:840px;display:block" role="img" aria-label="约束态谱系">'
+    +'<line x1="40" y1="26" x2="660" y2="26" stroke="#d8dadb" stroke-width="1.4"/>'
+    +'<text x="40" y="14" font-size="9.5" fill="#0a8754" font-weight="700">供给约束（扩产即增利）</text>'
+    +'<text x="660" y="14" text-anchor="end" font-size="9.5" fill="#d3212c" font-weight="700">需求/缺口约束（看弹性与证伪）</text>';
+  D.scissors.forEach((x,i)=>{ const cx=pos[x.state]||350, cy=46+i*26;
+    const c=/★/.test(x.state)?'#0a8754':/[✗⚠]/.test(x.state)?'#d3212c':'#3e6ae1';
+    sp+='<line x1="'+cx+'" y1="26" x2="'+cx+'" y2="'+(cy-7)+'" stroke="#ececec"/>'
+      +'<circle cx="'+cx+'" cy="'+cy+'" r="5" fill="'+c+'"/>'
+      +'<text x="'+(cx+11)+'" y="'+(cy+4)+'" font-size="11" font-weight="600" fill="#171a20">'+esc(x.line)+' <tspan fill="#8a8d91" font-size="9.5">'+esc(x.state)+'</tspan></text>'; });
+  sp+='</svg>';
+  let h = '<div class="eyebrow">约束态谱系（左=供给约束·产能逻辑；右=需求/缺口·证伪逻辑）</div><div class="card">'+sp+'</div>'
+    +'<div class="eyebrow">供需剪刀差总表（七产品线 · 状态翻转触发周报头条）</div><div class="card"><table><tr><th>产品线</th><th>状态</th><th>头号约束</th><th>解除时间表</th><th>投资含义</th></tr>';
   h += D.scissors.map(s=>'<tr><td><b>'+esc(s.line)+'</b><div class="mut" style="font-size:11px">盯: '+esc(s.watch)+'</div></td><td>'+esc(s.state)+'</td><td>'+esc(s.constraint)+'</td><td>'+esc(s.unlock)+'</td><td style="font-size:12px">'+esc(s.meaning)+'</td></tr>').join('');
   h += '</table></div><div class="mut" style="margin-bottom:10px">判读规则：供给约束＋高毛利＝扩产即增利（只盯产能）；需求约束＝降价换量毛利承压（只盯价格弹性）。混淆两态是头号亏损原因。</div>';
   h += '<div class="eyebrow">产品解剖台（七大代表产品 · 第一性原理×供应链）</div>';
@@ -302,7 +372,16 @@ physics(){ return guard('物理与供需', () => {
 });},
 
 techtree(){ return guard('技术树与趋势', () => {
-  let h = '<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
+  let trl='<svg viewBox="0 0 700 '+(30+D.techtree.length*30)+'" style="width:100%;max-width:840px;display:block" role="img" aria-label="TRL成熟度">'
+    +'<text x="120" y="14" font-size="9.5" fill="#8a8d91">技术就绪度 TRL 1-9（条长=成熟度，9=规模商用）</text>';
+  D.techtree.forEach((t,i)=>{ const y=30+i*30, w=t.trl/9*520;
+    trl+='<text x="112" y="'+(y+11)+'" text-anchor="end" font-size="11" font-weight="600" fill="#171a20">'+esc(t.line)+'</text>'
+      +'<rect x="120" y="'+y+'" width="520" height="15" rx="7" fill="rgba(23,26,32,.05)"/>'
+      +'<rect x="120" y="'+y+'" width="'+w+'" height="15" rx="7" fill="'+(t.trl>=8?'#0a8754':t.trl>=6?'#3e6ae1':'#a06a00')+'" fill-opacity=".85"/>'
+      +'<text x="'+(126+w)+'" y="'+(y+11.5)+'" font-size="10" fill="#171a20" font-weight="700">'+t.trl+'</text>'; });
+  trl+='</svg>';
+  let h = '<div class="eyebrow">技术成熟度总览（TRL 越长越接近规模商用）</div><div class="card">'+trl+'</div>'
+    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
   h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td>'+esc(t.carrier)+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
   h += '</table></div><div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
   h += D.convergence.map(c=>'<tr><td><b>'+esc(c.point)+'</b></td><td>'+esc(c.cross)+'</td><td>'+esc(c.gap)+'</td><td>'+esc(c.status)+'</td></tr>').join('');
@@ -320,6 +399,15 @@ market(){ return guard('市场与资本', () => {
     '<div class="metric"><div class="k">TTM 收入</div><div class="v num">'+esc(V.spcx.rev_ttm)+'</div><div class="s">Q1 26 亏损 '+esc(V.spcx.q1_loss)+'</div></div>'+
     '<div class="metric"><div class="k">已签约算力收入</div><div class="v num">≈$26B/年</div><div class="s">'+esc(V.spcx.locked)+'</div></div></div>'+
     '<div class="card"><div style="font-size:13px"><b>可证伪锚：</b>'+esc(V.spcx.anchor)+'<br><b>头号核查叙事：</b>'+esc(V.spcx.claim)+' —— 见承诺库 P001（物理紧张）。</div></div>';
+  const px=(D.market.quotes.find(q=>q.sym==='TSLA')||{}).price;
+  if(px){ const anchor=28.5, aw=anchor/px*640, pw=640-aw;
+    h += '<div class="eyebrow">TSLA 价格构成分解（车业务锚 vs 叙事溢价 · 一图看懂93%押的是什么）</div><div class="card">'
+      +'<svg viewBox="0 0 700 84" style="width:100%;max-width:840px;display:block" role="img" aria-label="TSLA价格分解">'
+      +'<rect x="30" y="30" width="'+aw+'" height="24" fill="#0a8754" rx="4"/>'
+      +'<rect x="'+(30+aw)+'" y="30" width="'+pw+'" height="24" fill="#3e6ae1" fill-opacity=".8" rx="4"/>'
+      +'<text x="30" y="22" font-size="10.5" fill="#0a8754" font-weight="700">车业务锚 ≈$27-30（EPS×15x）</text>'
+      +'<text x="670" y="22" text-anchor="end" font-size="10.5" fill="#3e6ae1" font-weight="700">叙事溢价 ≈$'+Math.round(px-anchor)+'（Robotaxi/Optimus/FSD 事件期权）</text>'
+      +'<text x="30" y="72" font-size="9.5" fill="#8a8d91">现价 $'+fmtN(px)+' · 溢价占比 '+Math.round((px-anchor)/px*100)+'% · 兑现取决于 11-03 与 FSD 中国两个二元事件</text></svg></div>'; }
   h += '<div class="eyebrow">TSLA 两家公司问题</div><div class="grid3">'+
     '<div class="metric"><div class="k">现价</div><div class="v num">'+esc(V.tsla.price)+'</div><div class="s">每日 06:30 自动刷新</div></div>'+
     '<div class="metric"><div class="k">车业务锚</div><div class="v num">'+esc(V.tsla.auto_anchor)+'</div><div class="s">2026 EPS × 汽车业 15x</div></div>'+
@@ -341,13 +429,13 @@ decide(){ return guard('决策与档案', () => {
   '<div class="card"><div style="font-size:13px;line-height:1.8">主函数：<b>业务价值 = Σ(学习率外推成本优势 × TAM) + 叙事溢价(扣除物理不可行部分)</b>；政治层＝风险乘数；金融层＝择时修正。当前系统判定摘要：储能/算力＝供给约束扩产逻辑最净 ★；Optimus＝头号证伪对象(执行器10×缺口)；轨道数据中心＝物理紧张(闸门:星舰$/kg)；TSLA 溢价 93% 由 11-03 与 Q3 中国审批两个二元事件主导。</div></div>';
 
   const audit = (D.audit||[]).slice().reverse();
-  h += '<div class="eyebrow">自动核实审计（全自动模式 · 规则 R1-R6 · 最近 '+audit.length+' 条留痕）</div>';
+  h += '<details open><summary>自动核实审计（规则 R1-R6 · 最近 '+audit.length+' 条留痕）▾</summary>';
   h += '<div class="card"><div class="mut" style="margin-bottom:6px">R1 官方源→A自动入库 ｜ R2 ≥2家媒体交叉→B ｜ R3 单源→C（不进结论）｜ R4 60天同题去重 ｜ R5 机器不打影响分 ｜ R6 连续3次失败熔断。每条入库决定在此可查、可撤——发现误判，用下方"冲正"记录修正（账本只追加，不删改历史）。</div>';
   if(audit.length){
     h += audit.slice(0,40).map(a=>'<div class="audit-row"><span class="date num mut">'+esc(a.ts)+'</span> <b>['+esc(a.rule)+' '+esc(a.action)+']</b> '+evChip(a.ev)+' '+esc(a.title)+
       (a.src&&String(a.src).startsWith('http')?' <a href="'+esc(a.src)+'" target="_blank" rel="noopener">原文↗</a>':'')+'</div>').join('');
   } else { h += '<div class="mut">暂无审计记录。首次 Actions 运行后出现。</div>'; }
-  h += '</div>';
+  h += '</div></details>';
 
   h += '<div class="eyebrow">手动入库 / 冲正（你的分析性操作入口）</div><div class="card">'+
     '<div class="grid2"><div><label>日期</label><input id="f-ts" type="date"></div><div><label>证据等级</label><select id="f-ev"><option value="A">A · 官方文件</option><option value="B" selected>B · 主流财经多源</option><option value="C">C · 单源传闻</option></select></div></div>'+
@@ -387,9 +475,13 @@ persons(){ return guard('人物网络', () => {
     svg += '<rect x="'+z.x+'" y="'+z.y+'" width="'+z.w+'" height="'+z.h+'" rx="14" fill="rgba(23,26,32,.022)" stroke="#e3e3e3" stroke-dasharray="4 4"/>'
         +  '<text x="'+(z.x+10)+'" y="'+(z.y+16)+'" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(z.name)+'</text>';
   });
+  const kindColor = k => /家族/.test(k)?'#a06a00':/PayPal|风投|投资|算力|机构/.test(k)?'#3e6ae1':/政治|接口/.test(k)?'#0a8754':/分歧|对手/.test(k)?'#d3212c':'#b6bcc3';
   pe.forEach(e=>{
     const a=byId[e.a], b=byId[e.b]; if(!a||!b) return;
-    svg += '<line x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'" stroke="'+(e.ev==='A'?'#b6bcc3':'#dfe1e3')+'" stroke-width="'+(e.ev==='A'?1.7:1.2)+'"'+(e.ev==='推断'?' stroke-dasharray="3 3"':'')+'/>';
+    const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.y-a.y, dy=a.x-b.x, L=Math.hypot(dx,dy)||1, bow=18;
+    const cx=mx+dx/L*bow, cy=my+dy/L*bow, col=kindColor(e.kind);
+    svg += '<path d="M '+a.x+' '+a.y+' Q '+cx+' '+cy+' '+b.x+' '+b.y+'" fill="none" stroke="'+col+'" stroke-opacity="'+(e.ev==='A'?0.75:0.45)+'" stroke-width="'+(e.ev==='A'?1.8:1.3)+'"'+(e.ev==='推断'?' stroke-dasharray="4 3"':'')+'/>'
+        + (e.a!=='musk'&&e.b!=='musk' ? '<text x="'+cx+'" y="'+(cy-3)+'" text-anchor="middle" font-size="8.5" fill="'+col+'">'+esc(e.kind)+'</text>' : '');
   });
   ps.forEach(p=>{
     const main = p.id==='musk', r = main?28:17;
@@ -400,7 +492,8 @@ persons(){ return guard('人物网络', () => {
       +'</g>';
   });
   svg += '</svg>';
-  let h = '<div class="eyebrow">关系网络（分区=功能域 · 实线=A级记录 · 虚线=推断 · 点节点跳人物卡）</div><div class="card">'+svg+'</div>';
+  let h = '<div class="eyebrow">关系网络（分区=功能域 · 边色=关系性质 · 虚线=推断 · 点节点跳人物卡）</div><div class="card">'+svg
+    +'<div class="mut" style="font-size:11px;text-align:center;margin-top:4px"><span style="color:#a06a00">— 家族</span>　<span style="color:#3e6ae1">— 资本/风投</span>　<span style="color:#0a8754">— 政治</span>　<span style="color:#d3212c">— 对手/分歧</span>　— 灰=其他　虚线=推断</div></div>';
   h += '<div class="card mut" style="font-size:12px">'+esc(D.persons_note||'')+'</div>';
 
   h += '<div class="eyebrow">信号分级框架（行为学：信号成本越高，信息量越大）</div><div class="card"><table>'
@@ -414,10 +507,11 @@ persons(){ return guard('人物网络', () => {
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
   h += '<div class="eyebrow">人物卡（功能/信号/预警/通道 + 账本自动联动）</div>';
   ps.forEach(p=>{
-    let moves = [];
+    let moves = ledger.filter(r=>(r.tags||[]).includes('person:'+p.id));
     if(p.aliases && p.aliases.length){
-      moves = ledger.filter(r=>p.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).slice(0,5);
+      ledger.filter(r=>p.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).forEach(x=>{ if(moves.indexOf(x)<0) moves.push(x); });
     }
+    moves = moves.sort((a,b)=>b.ts.localeCompare(a.ts)).slice(0,5);
     if(p.id==='kimbal'||p.id==='musk'){
       const key = p.id;
       const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&(((r.payload||{}).owner||'').toLowerCase().includes(key==='kimbal'?'kimbal':'elon')));
@@ -430,10 +524,11 @@ persons(){ return guard('人物网络', () => {
       +'<tr><td class="mut">信号价值</td><td>'+esc(p.signal||'—')+'</td></tr>'
       +'<tr><td class="mut">预警指标</td><td><b>'+esc(p.watch||'—')+'</b></td></tr>'
       +'<tr><td class="mut">可观测通道</td><td>'+esc(p.channel||'—')+'</td></tr>'
+      +'<tr><td class="mut">关联人物</td><td>'+ (pe.filter(e=>e.a===p.id||e.b===p.id).map(e=>{const o=byId[e.a===p.id?e.b:e.a]||{};return '<span class="chip" style="background:rgba(23,26,32,.06);color:#171a20;cursor:pointer" onclick="var el=document.getElementById(\'pc-'+esc(o.id)+'\');if(el)el.scrollIntoView({behavior:\'smooth\'})">'+esc(o.short||'')+' · '+esc(e.kind)+'</span>';}).join(' ')||'—') +'</td></tr>'
       +'</table>'
       +(p.id!=='musk' ? ('<div class="mut" style="margin:8px 0 3px;font-size:11px;letter-spacing:.08em">账本联动</div>'
         +(moves.length ? moves.map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('')
-                       : '<div class="mut" style="font-size:12px">暂无关联条目（匹配别名: '+esc((p.aliases||[]).join('/'))+'）</div>')) : '')
+                       : '<div class="mut" style="font-size:12px">暂无动态（人物新闻通道每日自动抓取；匹配别名: '+esc((p.aliases||[]).join('/'))+'）</div>')) : '')
       +'</div>';
   });
 
@@ -453,16 +548,41 @@ reports(){ return guard('报告', () => {
 };
 
 /* ============ 报告页异步加载 ============ */
+function mdToHtml(md){
+  const lines = md.split('\n'); let out=[], inUl=false, inTable=false;
+  const inline = t => esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/`(.+?)`/g,'<code>$1</code>');
+  for(let i=0;i<lines.length;i++){
+    const L=lines[i];
+    if(/^\|/.test(L)){
+      if(/^\|[\s:-]+\|/.test(L)) continue;
+      if(!inTable){ out.push('<table>'); inTable=true; }
+      out.push('<tr>'+L.split('|').slice(1,-1).map(c=>'<td>'+inline(c.trim())+'</td>').join('')+'</tr>'); continue;
+    } else if(inTable){ out.push('</table>'); inTable=false; }
+    if(/^- /.test(L)){ if(!inUl){out.push('<ul>');inUl=true;} out.push('<li>'+inline(L.slice(2))+'</li>'); continue; }
+    else if(/^\d+\. /.test(L)){ if(!inUl){out.push('<ul>');inUl=true;} out.push('<li>'+inline(L.replace(/^\d+\. /,''))+'</li>'); continue; }
+    else if(inUl){ out.push('</ul>'); inUl=false; }
+    if(/^### /.test(L)) out.push('<h3>'+inline(L.slice(4))+'</h3>');
+    else if(/^## /.test(L)) out.push('<h2>'+inline(L.slice(3))+'</h2>');
+    else if(/^# /.test(L)) out.push('<h1>'+inline(L.slice(2))+'</h1>');
+    else if(/^> /.test(L)) out.push('<blockquote>'+inline(L.slice(2))+'</blockquote>');
+    else if(/^---/.test(L)) out.push('<hr>');
+    else if(L.trim()==='') {}
+    else out.push('<p>'+inline(L)+'</p>');
+  }
+  if(inUl) out.push('</ul>'); if(inTable) out.push('</table>');
+  return out.join('');
+}
 async function loadReports(){
   const box = document.getElementById('rpt-list'); if(!box) return;
   try{
     const r = await fetch('reports/index.json', {cache:'no-store'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const idx = await r.json();
-    if(!idx.length){ box.innerHTML='<div class="mut">暂无报告。首个周报将在下个周日 06:30 自动生成；也可在 GitHub Actions 页手动 Run workflow 并填 force_report=weekly 立即补发。</div>'; return; }
+    if(!idx.length){ box.innerHTML='<div class="mut">暂无报告。首期周报将在周日 06:30 自动生成。</div>'; return; }
     box.innerHTML = idx.map(e=>'<div class="rpt-row" onclick="openReport(\''+esc(e.path)+'\',\''+esc(e.title)+'\')"><span><b>'+esc(e.type)+'</b> · '+esc(e.date)+'</span><span class="mut">查看 →</span></div>').join('');
+    openReport(idx[0].path, idx[0].title);       // 最新一期直接展开，结论即刻可读
   }catch(e){
-    box.innerHTML='<div class="mut">报告列表加载失败（'+esc(e.message)+'）。本页需通过网站地址访问（GitHub Pages）；直接双击本地 index.html 时浏览器禁止 fetch，属预期行为。</div>';
+    box.innerHTML='<div class="mut">报告列表加载失败（'+esc(e.message)+'）。本页需通过网站地址访问；本地双击打开时浏览器禁止 fetch，属预期行为。</div>';
   }
 }
 async function openReport(path, title){
@@ -472,7 +592,7 @@ async function openReport(path, title){
     const r = await fetch(path, {cache:'no-store'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const t = await r.text();
-    v.innerHTML = '<div class="eyebrow">'+esc(title)+'</div><pre class="report" style="max-height:none">'+esc(t)+'</pre>';
+    v.innerHTML = '<div class="eyebrow">'+esc(title)+'</div><div class="card rpt">'+mdToHtml(t)+'</div>';
     v.scrollIntoView({behavior:'smooth'});
   }catch(e){ v.innerHTML = '<div class="gray-card">报告加载失败：'+esc(e.message)+'</div>'; }
 }
