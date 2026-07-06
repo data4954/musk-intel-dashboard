@@ -34,7 +34,7 @@ a:hover{text-decoration:underline}
 .asof{font-size:11px;color:var(--dim);white-space:nowrap}
 
 /* 主布局 */
-.shell{max-width:1280px;margin:0 auto;padding:76px 20px 80px;display:flex;gap:26px;align-items:flex-start}
+.shell{max-width:1680px;margin:0 auto;padding:76px 20px 80px;display:flex;gap:26px;align-items:flex-start}
 main{flex:1;min-width:0}
 .pagehead{margin:8px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .pagehead h2{font-size:30px;font-weight:700;letter-spacing:-.015em}
@@ -74,7 +74,8 @@ input,select,textarea{font-family:var(--font);font-size:13px;border:1px solid #c
   padding:8px 10px;background:#fff;color:var(--text);width:100%}
 label{font-size:11px;color:var(--dim);display:block;margin:8px 0 3px;letter-spacing:.08em;text-transform:uppercase}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(min-width:1500px){.grid3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}}
 .metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
   box-shadow:0 1px 3px rgba(23,26,32,.045);transition:transform .15s,box-shadow .2s}
 .metric:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(23,26,32,.08)}
@@ -101,7 +102,7 @@ pre.report{white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;font
 .audit-row{padding:8px 2px;border-bottom:1px solid var(--line);font-size:12.5px}
 
 /* 右栏 */
-aside{width:320px;flex-shrink:0;position:sticky;top:76px}
+aside{width:340px;flex-shrink:0;position:sticky;top:76px}
 .widget{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden;box-shadow:0 1px 3px rgba(23,26,32,.045)}
 .widget h4{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding:12px 16px 6px}
 .mrow{display:flex;justify-content:space-between;align-items:center;padding:9px 16px;border-top:1px solid var(--line)}
@@ -129,7 +130,7 @@ details{margin-bottom:14px}
 details summary{cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:10px 0;user-select:none}
 details summary:hover{color:var(--text)}
 /* 全局页脚 */
-.sitefoot{max-width:1280px;margin:0 auto;padding:26px 20px 46px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim);line-height:1.9}
+.sitefoot{max-width:1680px;margin:0 auto;padding:26px 20px 46px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim);line-height:1.9}
 @media (max-width:1100px){aside{display:none}}
 @media (max-width:780px){
   .shell{padding:118px 14px 60px}
@@ -166,6 +167,7 @@ details summary:hover{color:var(--text)}
 <div class="sitefoot"><b>免责声明</b> · 本站为非营利个人研究工具。全部信息来自公开渠道（SEC、FEC、公开行情接口与公开媒体报道），按证据等级（A/B/C）分级呈现，可能存在延迟、错误或遗漏，不保证准确性、完整性与时效性。本站内容不构成投资建议、法律建议、税务建议或对任何证券的买卖要约与招揽，据此操作风险自负。本站与 Tesla, Inc.、Space Exploration Technologies Corp. 及文中提及的任何公司、机构、个人均无关联、授权或背书关系；所涉商标与名称归各自权利人所有。对自然人的记录仅限其公开职务行为与依法公开的申报文件（如 SEC Form 4、FEC 申报），不追踪、不推断任何私人生活信息。行情数据来自免费公开接口，延迟约 15 分钟，仅供个人研究参考，禁止商用再分发。机器自动定级内容可能存在误判，均留有审计记录并可冲正。如认为本站内容侵犯您的合法权益，请通过本站 GitHub 仓库 Issues 提出，将及时处理删除。</div>
 
 <script src="data.js"></script>
+<script src="reports.js"></script>
 <script>
 'use strict';
 /* ============ 数据加载与自愈 ============ */
@@ -270,7 +272,7 @@ graph(){ return guard('关系图谱', () => {
   et.forEach(e=>{ const x=colX[e.type]||340; ys[x]=(ys[x]||30)+52; posE[e.id]={x:x, y:ys[x]}; });
   const H=Math.max(...Object.values(ys))+40;
   const kcol=k=>/股权/.test(k)?'#3e6ae1':/资金/.test(k)?'#0a8754':/监管/.test(k)?'#d3212c':/政治|恩惠|人质/.test(k)?'#a06a00':'#b6bcc3';
-  let gsvg='<svg viewBox="0 0 700 '+H+'" style="width:100%;max-width:840px;display:block;margin:0 auto" role="img" aria-label="实体关系图">';
+  let gsvg='<svg viewBox="0 0 700 '+H+'" style="width:100%;max-width:1200px;display:block;margin:0 auto" role="img" aria-label="实体关系图">';
   [...new Set(Object.values(colX))].forEach(x=>{ const t=Object.keys(colX).find(k=>colX[k]===x); gsvg+='<text x="'+x+'" y="18" text-anchor="middle" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(colName[t]||'')+'</text>'; });
   ed.forEach(e=>{ const a=posE[e.from], b=posE[e.to]; if(!a||!b) return;
     const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.y-a.y, dy=a.x-b.x, L2=Math.hypot(dx,dy)||1;
@@ -300,7 +302,7 @@ graph(){ return guard('关系图谱', () => {
 political(){ return guard('政治与地缘', () => {
   const P = D.political;
   const phCol={'蜜月':'#0a8754','决裂':'#d3212c','冷战试探':'#a06a00','和解':'#3e6ae1','当前':'#171a20'};
-  let tl='<svg viewBox="0 0 700 74" style="width:100%;max-width:840px;display:block" role="img" aria-label="关系阶段时间轴">';
+  let tl='<svg viewBox="0 0 700 74" style="width:100%;max-width:1200px;display:block" role="img" aria-label="关系阶段时间轴">';
   P.machine.forEach((m,i)=>{ const w=700/P.machine.length, x=i*w;
     tl+='<rect x="'+(x+2)+'" y="26" width="'+(w-4)+'" height="14" rx="7" fill="'+(phCol[m.phase]||'#8a8d91')+'" fill-opacity="'+(i===P.machine.length-1?1:0.55)+'"/>'
       +'<text x="'+(x+w/2)+'" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#171a20">'+esc(m.phase)+'</text>'
@@ -310,6 +312,13 @@ political(){ return guard('政治与地缘', () => {
   h += P.machine.map(m=>'<div class="phase"><div class="ph">'+esc(m.phase)+'</div><div class="sp num">'+esc(m.span)+'</div><div class="fx"><b>'+esc(m.facts)+'</b><div class="mut">'+esc(m.implication)+'</div></div></div>').join('');
   h += '</div><div class="grid2"><div class="card"><h3>政治资本 · 资产端</h3>'+P.balance.assets.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div>';
   h += '<div class="card"><h3>政治资本 · 负债端</h3>'+P.balance.liabilities.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div></div>';
+  const stc={'顺风':'var(--up)','逆风':'var(--down)','中性':'#5c5e62','中性偏顺':'#3e6ae1','悬置':'#a06a00'};
+  h += '<div class="eyebrow">政商联动传导矩阵（每条业务线吃哪根政治管道 · 断供状态 · 传导时滞 · 盯什么文件）</div><div class="card"><table>'
+    +'<tr><th>业务线</th><th>政治通道</th><th>依赖结构</th><th>当前态</th><th>时滞</th><th>观测点</th><th>证据</th></tr>'
+    +(D.pol_biz||[]).map(x=>'<tr><td style="white-space:nowrap"><b>'+esc(x.line)+'</b></td><td>'+esc(x.channel)+'</td><td style="font-size:12px">'+esc(x.dep)+'</td>'
+      +'<td><b style="color:'+(stc[x.state]||'#5c5e62')+'">'+esc(x.state)+'</b></td><td class="num" style="white-space:nowrap">'+esc(x.lag)+'</td>'
+      +'<td style="font-size:11.5px" class="mut">'+esc(x.watch)+'</td><td>'+evChip(x.ev.split('/')[0])+'</td></tr>').join('')
+    +'</table><div class="mut" style="margin-top:6px">读法：任一行状态翻转=对应业务线定价逻辑的政治分量变号；「悬置」行是尾部风险，事件驱动无时滞规律。</div></div>';
   h += '<div class="eyebrow">外部力量渗透与对冲</div><div class="card"><table><tr><th>力量</th><th>事实</th><th>风险</th></tr>'+
     P.external.map(x=>'<tr><td><b>'+esc(x.force)+'</b></td><td>'+esc(x.fact)+'</td><td>'+esc(x.risk)+'</td></tr>').join('')+'</table></div>';
   const dt = daysTo('2026-11-03');
@@ -318,7 +327,7 @@ political(){ return guard('政治与地缘', () => {
 });},
 
 leading(){ return guard('先行引擎', () => {
-  let ch='<svg viewBox="0 0 760 96" style="width:100%;max-width:860px;display:block" role="img" aria-label="先行引擎传导链">';
+  let ch='<svg viewBox="0 0 760 96" style="width:100%;max-width:1200px;display:block" role="img" aria-label="先行引擎传导链">';
   D.leading.forEach((L,i)=>{ const x=6+i*88;
     const ns={green:0,yellow:0,red:0}; L.items.forEach(it=>ns[it.st]=(ns[it.st]||0)+1);
     const worst = ns.red?'#d3212c':ns.yellow?'#d9a514':'#0a8754';
@@ -331,6 +340,17 @@ leading(){ return guard('先行引擎', () => {
   ch+='<text x="380" y="88" text-anchor="middle" font-size="9.5" fill="#8a8d91">红角标=该层红灯数 · 多层同红=系统级预警 → 传导终点：价格</text></svg>';
   let h = '<div class="eyebrow">传导链（L1 远因 → L8 临近触发 · 边框色=该层最差状态）</div><div class="card">'+ch+'</div>'
     +'<div class="card"><h3>传导链视图</h3><div class="mut" style="font-size:13px">L1-L3（因：人才/专利/监管文件）→ L5-L6（资本与供应链确认）→ L7-L8（临近触发）→ 价格。<b>多层同红＝系统级预警；单层孤红＝观察。</b>资本流信号权重 ×3。</div></div>';
+  // 当前触发扫描：把8层状态压成可读判读
+  const redItems=[], autoVals=[];
+  D.leading.forEach(L=>L.items.forEach(it=>{
+    if(it.st==='red') redItems.push('L'+L.layer+' '+it.k+'：'+it.v);
+    if(/自动/.test(it.src||'') && it.st==='green' && !/待首轮/.test(it.v)) autoVals.push('L'+L.layer+' '+it.k.split('(')[0]+' → '+it.v);
+  }));
+  h += '<div class="eyebrow">当前触发扫描（机器每日重算）</div><div class="card">'
+    +'<div style="font-size:13px;line-height:1.9">'
+    +(redItems.length?('<b style="color:var(--down)">红灯 '+redItems.length+' 项：</b>'+redItems.map(x=>'<div style="padding:2px 0">— '+esc(x)+'</div>').join('')):'<b style="color:var(--up)">无红灯项。</b>')
+    +(autoVals.length?('<div style="margin-top:8px"><b>自动通道最新读数：</b>'+autoVals.map(x=>'<div style="padding:2px 0">— '+esc(x)+'</div>').join('')+'</div>'):'')
+    +'<div class="mut" style="margin-top:8px">规则：≥2 层含红=系统级预警（进研报头条）；单层孤红=观察级。红灯的价值在指认「哪条链路的先行端出了事」，不在预测方向。</div></div></div>';
   D.leading.forEach(L=>{
     h += '<div class="eyebrow">第 '+L.layer+' 层 · '+esc(L.name)+'（先行 '+esc(L.lead)+'）</div><div class="card"><table><tr><th style="width:34%">指标</th><th>当前</th><th style="width:24%">来源</th></tr>';
     h += L.items.map(i=>'<tr><td><span class="st '+esc(i.st)+'"></span>'+esc(i.k)+'</td><td>'+esc(i.v)+'</td><td class="mut" style="font-size:11.5px">'+esc(i.src)+'</td></tr>').join('');
@@ -341,8 +361,22 @@ leading(){ return guard('先行引擎', () => {
 });},
 
 physics(){ return guard('物理与供需', () => {
+  // 板块归属总图：产品线挂到上市主体
+  const byOwn={}; D.scissors.forEach(x=>{(byOwn[x.owner||'—']=byOwn[x.owner||'—']||[]).push(x);});
+  const owners=Object.keys(byOwn);
+  let om='<svg viewBox="0 0 700 '+(70+Math.max(...owners.map(o=>byOwn[o].length))*30)+'" style="width:100%;max-width:1200px;display:block" role="img" aria-label="板块归属">';
+  owners.forEach((o,oi)=>{ const ox=90+oi*340;
+    om+='<rect x="'+(ox-60)+'" y="10" width="120" height="34" rx="8" fill="#171a20"/><text x="'+ox+'" y="32" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">'+esc(o)+'</text>';
+    byOwn[o].forEach((x,i)=>{ const y=72+i*30;
+      const c=/★/.test(x.state)?'#0a8754':/[✗⚠]/.test(x.state)?'#d3212c':'#3e6ae1';
+      om+='<line x1="'+ox+'" y1="44" x2="'+ox+'" y2="'+(y-8)+'" stroke="#e3e3e3"/>'
+        +'<circle cx="'+ox+'" cy="'+y+'" r="4.5" fill="'+c+'"/>'
+        +'<text x="'+(ox+12)+'" y="'+(y+4)+'" font-size="11.5" font-weight="600" fill="#171a20">'+esc(x.line)+' <tspan font-size="9.5" fill="#8a8d91">'+esc(x.state)+' · 解锁: '+esc(x.unlock)+'</tspan></text>'; });
+  });
+  om+='</svg>';
+  let hh0 = '<div class="eyebrow">板块归属（七产品线挂载到上市主体 · 点色=约束态 · 附解锁时间链条）</div><div class="card">'+om+'</div>';
   const pos={'供给约束 ★':60,'双增长':185,'垄断+自造需求':310,'监管供给约束':435,'需求约束 ⚠':560,'供给缺口 ✗':630};
-  let sp='<svg viewBox="0 0 700 '+(46+D.scissors.length*26)+'" style="width:100%;max-width:840px;display:block" role="img" aria-label="约束态谱系">'
+  let sp='<svg viewBox="0 0 700 '+(46+D.scissors.length*26)+'" style="width:100%;max-width:1200px;display:block" role="img" aria-label="约束态谱系">'
     +'<line x1="40" y1="26" x2="660" y2="26" stroke="#d8dadb" stroke-width="1.4"/>'
     +'<text x="40" y="14" font-size="9.5" fill="#0a8754" font-weight="700">供给约束（扩产即增利）</text>'
     +'<text x="660" y="14" text-anchor="end" font-size="9.5" fill="#d3212c" font-weight="700">需求/缺口约束（看弹性与证伪）</text>';
@@ -352,9 +386,9 @@ physics(){ return guard('物理与供需', () => {
       +'<circle cx="'+cx+'" cy="'+cy+'" r="5" fill="'+c+'"/>'
       +'<text x="'+(cx+11)+'" y="'+(cy+4)+'" font-size="11" font-weight="600" fill="#171a20">'+esc(x.line)+' <tspan fill="#8a8d91" font-size="9.5">'+esc(x.state)+'</tspan></text>'; });
   sp+='</svg>';
-  let h = '<div class="eyebrow">约束态谱系（左=供给约束·产能逻辑；右=需求/缺口·证伪逻辑）</div><div class="card">'+sp+'</div>'
+  let h = hh0 + '<div class="eyebrow">约束态谱系（左=供给约束·产能逻辑；右=需求/缺口·证伪逻辑）</div><div class="card">'+sp+'</div>'
     +'<div class="eyebrow">供需剪刀差总表（七产品线 · 状态翻转触发周报头条）</div><div class="card"><table><tr><th>产品线</th><th>状态</th><th>头号约束</th><th>解除时间表</th><th>投资含义</th></tr>';
-  h += D.scissors.map(s=>'<tr><td><b>'+esc(s.line)+'</b><div class="mut" style="font-size:11px">盯: '+esc(s.watch)+'</div></td><td>'+esc(s.state)+'</td><td>'+esc(s.constraint)+'</td><td>'+esc(s.unlock)+'</td><td style="font-size:12px">'+esc(s.meaning)+'</td></tr>').join('');
+  h += D.scissors.map(s=>'<tr><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(s.owner||'—')+'</span><b>'+esc(s.line)+'</b><div class="mut" style="font-size:11px">盯: '+esc(s.watch)+'</div></td><td>'+esc(s.state)+'</td><td>'+esc(s.constraint)+'</td><td>'+esc(s.unlock)+'</td><td style="font-size:12px">'+esc(s.meaning)+'</td></tr>').join('');
   h += '</table></div><div class="mut" style="margin-bottom:10px">判读规则：供给约束＋高毛利＝扩产即增利（只盯产能）；需求约束＝降价换量毛利承压（只盯价格弹性）。混淆两态是头号亏损原因。</div>';
   h += '<div class="eyebrow">产品解剖台（七大代表产品 · 第一性原理×供应链）</div>';
   D.teardowns.forEach(t=>{
@@ -372,17 +406,17 @@ physics(){ return guard('物理与供需', () => {
 });},
 
 techtree(){ return guard('技术树与趋势', () => {
-  let trl='<svg viewBox="0 0 700 '+(30+D.techtree.length*30)+'" style="width:100%;max-width:840px;display:block" role="img" aria-label="TRL成熟度">'
+  let trl='<svg viewBox="0 0 700 '+(30+D.techtree.length*30)+'" style="width:100%;max-width:1200px;display:block" role="img" aria-label="TRL成熟度">'
     +'<text x="120" y="14" font-size="9.5" fill="#8a8d91">技术就绪度 TRL 1-9（条长=成熟度，9=规模商用）</text>';
   D.techtree.forEach((t,i)=>{ const y=30+i*30, w=t.trl/9*520;
-    trl+='<text x="112" y="'+(y+11)+'" text-anchor="end" font-size="11" font-weight="600" fill="#171a20">'+esc(t.line)+'</text>'
+    trl+='<text x="112" y="'+(y+11)+'" text-anchor="end" font-size="11" font-weight="600" fill="#171a20">'+esc(t.line)+' <tspan font-size="8.5" fill="#8a8d91">'+esc(t.owner||'')+'</tspan></text>'
       +'<rect x="120" y="'+y+'" width="520" height="15" rx="7" fill="rgba(23,26,32,.05)"/>'
       +'<rect x="120" y="'+y+'" width="'+w+'" height="15" rx="7" fill="'+(t.trl>=8?'#0a8754':t.trl>=6?'#3e6ae1':'#a06a00')+'" fill-opacity=".85"/>'
       +'<text x="'+(126+w)+'" y="'+(y+11.5)+'" font-size="10" fill="#171a20" font-weight="700">'+t.trl+'</text>'; });
   trl+='</svg>';
   let h = '<div class="eyebrow">技术成熟度总览（TRL 越长越接近规模商用）</div><div class="card">'+trl+'</div>'
-    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
-  h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td>'+esc(t.carrier)+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
+    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>归属</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
+  h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(t.owner||'—')+'</span></td><td>'+esc(t.carrier)+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
   h += '</table></div><div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
   h += D.convergence.map(c=>'<tr><td><b>'+esc(c.point)+'</b></td><td>'+esc(c.cross)+'</td><td>'+esc(c.gap)+'</td><td>'+esc(c.status)+'</td></tr>').join('');
   h += '</table></div>';
@@ -393,32 +427,70 @@ techtree(){ return guard('技术树与趋势', () => {
 });},
 
 market(){ return guard('市场与资本', () => {
-  const V = D.valuation;
-  let h = '<div class="eyebrow">SPCX 估值解剖（2026-06-12 上市）</div><div class="grid3">'+
-    '<div class="metric"><div class="k">市值</div><div class="v num">'+esc(V.spcx.mcap)+'</div><div class="s">P/S '+esc(V.spcx.ps)+'</div></div>'+
-    '<div class="metric"><div class="k">TTM 收入</div><div class="v num">'+esc(V.spcx.rev_ttm)+'</div><div class="s">Q1 26 亏损 '+esc(V.spcx.q1_loss)+'</div></div>'+
-    '<div class="metric"><div class="k">已签约算力收入</div><div class="v num">≈$26B/年</div><div class="s">'+esc(V.spcx.locked)+'</div></div></div>'+
-    '<div class="card"><div style="font-size:13px"><b>可证伪锚：</b>'+esc(V.spcx.anchor)+'<br><b>头号核查叙事：</b>'+esc(V.spcx.claim)+' —— 见承诺库 P001（物理紧张）。</div></div>';
-  const px=(D.market.quotes.find(q=>q.sym==='TSLA')||{}).price;
+  const V = D.valuation, q = sym => D.market.quotes.find(x=>x.sym===sym)||{};
+  const stats = sym => { const ser=(D.market.series||{})[sym]||[]; const cs=ser.slice(-30).map(p=>p.c).filter(c=>c!=null);
+    if(cs.length<2) return null; const mv=cs.slice(1).map((c,i)=>Math.abs(c-cs[i])/cs[i]*100);
+    return {chg:((cs[cs.length-1]-cs[0])/cs[0]*100).toFixed(1), hi:Math.max(...cs), lo:Math.min(...cs), mx:Math.max(...mv).toFixed(1), n:cs.length}; };
+  const dot = st => '<span class="st '+st+'"></span>';
+  const dMid = daysTo('2026-11-03'), dCn = daysTo('2026-09-30'), dKui = daysTo('2026-07-30'), dEr = daysTo('2026-07-22'), dCme = daysTo('2026-07-27');
+  const scOf = line => (D.scissors||[]).find(x=>x.line.includes(line))||{};
+  const f4n = allLedger().filter(r=>(r.tags||[]).includes('form4') && r.ts >= new Date(Date.now()-90*86400000).toISOString().slice(0,10)).length;
+  const phase = ((D.political||{}).machine||[{}]).slice(-1)[0];
+
+  let h = '<div class="card" style="border-left:3px solid var(--text)"><div style="font-size:13px;line-height:1.8"><b>本页定位：全站信息的决策汇聚点。</b>政治页给风险乘数、物理页给约束态、先行引擎给预警、人物页给资本流信号、承诺库给信用扣减——全部折算到下面两张标的决策卡。判断权在你，卡片只保证：每个论据可溯源、每个触发器有日期。</div></div>';
+
+  const ts = stats('TSLA'), px = q('TSLA').price;
+  h += '<div class="eyebrow">TSLA 决策卡</div><div class="card">';
+  h += '<div class="grid3">'
+    +'<div class="metric"><div class="k">现价 / 30日区间</div><div class="v num">$'+fmtN(px)+'</div><div class="s">'+(ts?('区间 '+(ts.chg>=0?'+':'')+ts.chg+'% · 高 '+ts.hi+' / 低 '+ts.lo+' · 最大单日 '+ts.mx+'%'):'区间样本积累中')+'</div></div>'
+    +'<div class="metric"><div class="k">车业务锚（可证伪）</div><div class="v num">'+esc(V.tsla.auto_anchor)+'</div><div class="s">2026 EPS × 汽车业 15x</div></div>'
+    +'<div class="metric"><div class="k">叙事溢价</div><div class="v num neg">'+esc(V.tsla.premium)+'</div><div class="s">事件期权组合，非现金流贴现</div></div></div>';
   if(px){ const anchor=28.5, aw=anchor/px*640, pw=640-aw;
-    h += '<div class="eyebrow">TSLA 价格构成分解（车业务锚 vs 叙事溢价 · 一图看懂93%押的是什么）</div><div class="card">'
-      +'<svg viewBox="0 0 700 84" style="width:100%;max-width:840px;display:block" role="img" aria-label="TSLA价格分解">'
-      +'<rect x="30" y="30" width="'+aw+'" height="24" fill="#0a8754" rx="4"/>'
-      +'<rect x="'+(30+aw)+'" y="30" width="'+pw+'" height="24" fill="#3e6ae1" fill-opacity=".8" rx="4"/>'
-      +'<text x="30" y="22" font-size="10.5" fill="#0a8754" font-weight="700">车业务锚 ≈$27-30（EPS×15x）</text>'
-      +'<text x="670" y="22" text-anchor="end" font-size="10.5" fill="#3e6ae1" font-weight="700">叙事溢价 ≈$'+Math.round(px-anchor)+'（Robotaxi/Optimus/FSD 事件期权）</text>'
-      +'<text x="30" y="72" font-size="9.5" fill="#8a8d91">现价 $'+fmtN(px)+' · 溢价占比 '+Math.round((px-anchor)/px*100)+'% · 兑现取决于 11-03 与 FSD 中国两个二元事件</text></svg></div>'; }
-  h += '<div class="eyebrow">TSLA 两家公司问题</div><div class="grid3">'+
-    '<div class="metric"><div class="k">现价</div><div class="v num">'+esc(V.tsla.price)+'</div><div class="s">每日 06:30 自动刷新</div></div>'+
-    '<div class="metric"><div class="k">车业务锚</div><div class="v num">'+esc(V.tsla.auto_anchor)+'</div><div class="s">2026 EPS × 汽车业 15x</div></div>'+
-    '<div class="metric"><div class="k">叙事溢价</div><div class="v num neg">≈$350/股</div><div class="s">≈市值 93% 押注未来业务</div></div></div>'+
-    '<div class="card"><div style="font-size:13px"><b>现金流压力：</b>'+esc(V.tsla.cash)+'<br><b>被忽视的现金牛：</b>'+esc(V.tsla.hidden_gem)+'</div></div>';
-  h += '<div class="eyebrow">事件参考表（降级版事件研究 · 仅保留样本充足三类）</div><div class="card"><table><tr><th>事件类型</th><th>历史方向</th><th>纪律说明</th></tr>'+
-    '<tr><td>马斯克/内部人减持(Form 4)</td><td class="neg">负</td><td>历史最强负信号之一；样本充足；Kimbal 为独立信号源</td></tr>'+
-    '<tr><td>星舰试飞成/败</td><td>成＋ / 败−(短)</td><td>对 SPCX 直接；失败的负效应历史上衰减快（复用叙事有韧性）</td></tr>'+
-    '<tr><td>重大监管裁决</td><td>双向</td><td>方向取决于裁决本身；样本按辖区分层</td></tr></table>'+
-    '<div class="mut" style="margin-top:6px">其余事件类型因窗口污染与样本不足不提供系数——伪精度比无数据更危险。</div></div>';
-  h += '<div class="card"><h3>衍生与资金面</h3><div class="mut" style="font-size:13px">CME SPCX 单股期货 07-27 上线（倒计时见右栏）。</div></div>';
+    h += '<svg viewBox="0 0 700 66" style="width:100%;max-width:1200px;display:block;margin:10px 0" role="img"><rect x="30" y="24" width="'+aw+'" height="22" fill="#0a8754" rx="4"/><rect x="'+(30+aw)+'" y="24" width="'+pw+'" height="22" fill="#3e6ae1" fill-opacity=".8" rx="4"/><text x="30" y="16" font-size="10.5" fill="#0a8754" font-weight="700">车业务锚 ≈$27-30</text><text x="670" y="16" text-anchor="end" font-size="10.5" fill="#3e6ae1" font-weight="700">叙事溢价 ≈$'+Math.round(px-anchor)+'（'+Math.round((px-anchor)/px*100)+'%）</text><text x="30" y="60" font-size="9.5" fill="#8a8d91">溢价按驱动变量逐项拆解见下表——「两家公司问题」的量化形态</text></svg>'; }
+  h += '<table><tr><th>驱动变量</th><th>状态</th><th>方向</th><th>下一节点</th><th>依据来源</th></tr>'
+    +'<tr><td><b>中期选举（头号二元）</b></td><td>'+dot('yellow')+'临近 '+dMid+' 天</td><td>双向·权重最大</td><td class="num">2026-11-03</td><td class="mut">政治页状态机「'+esc(phase.phase||'')+'」段</td></tr>'
+    +'<tr><td><b>FSD 中国审批</b></td><td>'+dot('yellow')+'预期窗口内</td><td class="pos">看多期权</td><td class="num">'+dCn+' 天（Q3末）</td><td class="mut">政商矩阵·中国行 B级</td></tr>'
+    +'<tr><td><b>Robotaxi 监管</b></td><td>'+dot('red')+esc(scOf('Robotaxi').constraint||'')+'</td><td class="neg">压制项</td><td>逐州备案（事件驱动）</td><td class="mut">物理页剪刀差·NHTSA A级</td></tr>'
+    +'<tr><td><b>储能扩产（现金牛）</b></td><td>'+dot('green')+esc(scOf('储能').state||'')+'</td><td class="pos">最净支撑</td><td>'+esc(scOf('储能').unlock||'')+'</td><td class="mut">物理页 ★线</td></tr>'
+    +'<tr><td><b>Optimus 供给缺口</b></td><td>'+dot('red')+esc(scOf('Optimus').constraint||'')+'</td><td class="neg">头号证伪项</td><td>'+esc(scOf('Optimus').unlock||'')+'</td><td class="mut">承诺库 P002 物理不可行</td></tr>'
+    +'<tr><td><b>内部人资本流</b></td><td>'+(f4n?dot('yellow')+'近90天 '+f4n+' 条申报':dot('green')+'近90天无申报')+'</td><td>'+(f4n?'待判读（点开原文）':'无减持压力窗口')+'</td><td>事件驱动</td><td class="mut">人物页 Form 4 A级</td></tr>'
+    +'<tr><td><b>Q2 财报</b></td><td>'+dot('yellow')+'capex 高企周期内</td><td class="neg">FCF 压力验证点</td><td class="num">'+dEr+' 天（07-22）</td><td class="mut">'+esc(V.tsla.cash)+'</td></tr></table>';
+  h += '<div class="grid2" style="margin-top:10px"><div><div class="mut" style="font-size:11px;letter-spacing:.08em;margin-bottom:4px">多方论据（A/B级）</div>'
+    +'<div style="font-size:12.5px;line-height:1.8">— 储能 Q1 部署 8.8GWh · 毛利 39.5% 双纪录（唯一增长+利润双具业务线）<br>— 内华达 Robotaxi 备案曝光=最干净州级先行信号（账本 E012）<br>— FSD 中国若 Q3 落地：软件重定价需求（账本传导链）<br>— Tesla 经 xAI 优先股间接持有 SPCX 权益（8-K，A级）</div></div>'
+    +'<div><div class="mut" style="font-size:11px;letter-spacing:.08em;margin-bottom:4px">空方论据（A/B级）</div>'
+    +'<div style="font-size:12.5px;line-height:1.8">— 溢价 93% 押未来业务，其中 Optimus 承诺物理不可行（P002）<br>— capex 三倍于 2025，后三季 FCF 为负<br>— NHTSA 3 项联邦调查在身（A级）<br>— 民主党翻盘情景=监管反转+建党期权重启（2025-07 暴跌剧本实证）</div></div></div>';
+  h += '</div>';
+
+  const ss = stats('SPCX');
+  h += '<div class="eyebrow">SPCX 决策卡</div><div class="card">';
+  h += '<div class="grid3">'
+    +'<div class="metric"><div class="k">现价 / 30日区间</div><div class="v num">$'+fmtN(q('SPCX').price)+'</div><div class="s">'+(ss?('区间 '+(ss.chg>=0?'+':'')+ss.chg+'% · 高 '+ss.hi+' / 低 '+ss.lo):'区间样本积累中')+' · 市值 '+esc(V.spcx.mcap)+'</div></div>'
+    +'<div class="metric"><div class="k">估值负担</div><div class="v num">P/S '+esc(V.spcx.ps)+'</div><div class="s">TTM 收入 '+esc(V.spcx.rev_ttm)+' · Q1 亏损 '+esc(V.spcx.q1_loss)+'</div></div>'
+    +'<div class="metric"><div class="k">已锁定算力收入</div><div class="v num">≈$26B/年</div><div class="s">'+esc(V.spcx.locked)+'</div></div></div>'
+    +'<div class="card" style="background:rgba(62,106,225,.05);border-color:rgba(62,106,225,.25)"><div style="font-size:13px"><b>唯一可证伪锚：</b>'+esc(V.spcx.anchor)+'——每季对表一次，锚断则估值失去外部支点。收入承诺 '+esc(V.spcx.claim)+'（承诺库：物理紧张）。</div></div>';
+  h += '<table><tr><th>驱动变量</th><th>状态</th><th>方向</th><th>下一节点</th><th>依据来源</th></tr>'
+    +'<tr><td><b>Colossus 电力约束</b></td><td>'+dot('red')+esc(scOf('算力').constraint||'')+'</td><td class="neg">扩张瓶颈的法律形态</td><td>许可诉讼裁决（事件驱动）</td><td class="mut">政商矩阵·孟菲斯行 A级</td></tr>'
+    +'<tr><td><b>Kuiper FCC 死线</b></td><td>'+dot('yellow')+'竞争格局裁决点</td><td class="pos">对手约束</td><td class="num">'+dKui+' 天（07-30）</td><td class="mut">政商矩阵·频谱行 A级</td></tr>'
+    +'<tr><td><b>发射节奏</b></td><td>'+dot('green')+'近期 '+(D.launches||[]).length+' 次在册</td><td class="pos">垄断现金流</td><td>'+esc(((D.launches||[])[0]||{}).name||'—')+'</td><td class="mut">发射日程 A级</td></tr>'
+    +'<tr><td><b>CME 单股期货</b></td><td>'+dot('yellow')+'衍生品上线</td><td>波动放大器</td><td class="num">'+dCme+' 天（07-27）</td><td class="mut">倒计时库</td></tr>'
+    +'<tr><td><b>主权资本审查</b></td><td>'+dot('yellow')+'CFIUS 敞口悬置</td><td class="neg">尾部风险</td><td>事件驱动（随 11-03 摆动）</td><td class="mut">政商矩阵·股东行 B级</td></tr></table>';
+  h += '<div class="grid2" style="margin-top:10px"><div><div class="mut" style="font-size:11px;letter-spacing:.08em;margin-bottom:4px">多方论据</div>'
+    +'<div style="font-size:12.5px;line-height:1.8">— $26B/年算力合同已签约（Anthropic+Google，外部可证伪）<br>— 发射垄断+Starlink 在轨 2/3 份额=稳态复利底仓<br>— 政府线人质结构（NASA 无替代运力）</div></div>'
+    +'<div><div class="mut" style="font-size:11px;letter-spacing:.08em;margin-bottom:4px">空方论据</div>'
+    +'<div style="font-size:12.5px;line-height:1.8">— P/S 90x+ 由 2030 $1T 收入承诺支撑，承诺库判定物理紧张<br>— 算力扩张卡在电力许可诉讼（非技术、非需求约束）<br>— 轨道数据中心叙事属 20y 尺度（P004），不应进 1y 定价</div></div></div>';
+  h += '</div>';
+
+  h += '<div class="eyebrow">情景树（'+dMid+' 天后的头号分叉 · 两标的联动）</div><div class="card"><table>'
+    +'<tr><th>情景</th><th>TSLA 传导</th><th>SPCX 传导</th></tr>'
+    +'<tr><td><b>共和党保住</b></td><td>FSD 联邦框架预期→溢价支撑；NHTSA 压力缓和</td><td>政府线顺风延续；CFIUS 敞口收窄</td></tr>'
+    +'<tr><td><b>民主党翻盘</b></td><td>监管反转+「美国党」期权重启→溢价压缩（2025-07 剧本）</td><td>主权资本审查升温；合同线承压</td></tr></table>'
+    +'<div class="mut" style="margin-top:6px">纪律：赛前把动作写死在【决策档案】情景树栏，临场只执行。</div></div>';
+
+  h += '<div class="eyebrow">事件参考表（样本充足的三类）</div><div class="card"><table><tr><th>事件类型</th><th>历史方向</th><th>纪律说明</th></tr>'
+    +'<tr><td>马斯克/内部人减持(Form 4)</td><td class="neg">负</td><td>历史最强负信号之一；Kimbal 为独立信号源</td></tr>'
+    +'<tr><td>星舰试飞成/败</td><td>成＋ / 败−(短)</td><td>失败负效应历史上衰减快</td></tr>'
+    +'<tr><td>重大监管裁决</td><td>双向</td><td>方向取决于裁决本身，按辖区分层</td></tr></table>'
+    +'<div class="mut" style="margin-top:6px">其余事件类型样本不足不提供系数——伪精度比无数据更危险。</div></div>';
   return h;
 });},
 
@@ -470,7 +542,7 @@ persons(){ return guard('人物网络', () => {
     {name:'政治接口', x:200, y:350, w:140, h:85},
     {name:'对手方',   x:65,  y:380, w:120, h:75}
   ];
-  let svg = '<svg viewBox="0 0 700 470" style="width:100%;max-width:820px;display:block;margin:0 auto" role="img" aria-label="人物关系网络">';
+  let svg = '<svg viewBox="0 0 700 470" style="width:100%;max-width:1100px;display:block;margin:0 auto" role="img" aria-label="人物关系网络">';
   zones.forEach(z=>{
     svg += '<rect x="'+z.x+'" y="'+z.y+'" width="'+z.w+'" height="'+z.h+'" rx="14" fill="rgba(23,26,32,.022)" stroke="#e3e3e3" stroke-dasharray="4 4"/>'
         +  '<text x="'+(z.x+10)+'" y="'+(z.y+16)+'" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(z.name)+'</text>';
@@ -485,24 +557,17 @@ persons(){ return guard('人物网络', () => {
   });
   ps.forEach(p=>{
     const main = p.id==='musk', r = main?28:17;
+    const zc = {'家族':'#a06a00','资本':'#3e6ae1','政治':'#0a8754','对手':'#d3212c','中心':'#171a20'}[p.zone]||'#5c5e62';
+    const inits = (p.name.match(/\b[A-Z]/g)||[p.short[0]]).slice(0,2).join('');
     svg += '<g class="pnode" data-pid="'+esc(p.id)+'" style="cursor:pointer">'
-      +'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+r+'" fill="'+(main?'#171a20':'#ffffff')+'" stroke="'+(main?'#171a20':(p.zone==='对手'?'var(--down)':'#171a20'))+'" stroke-width="1.7"/>'
+      +'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+r+'" fill="'+(main?'#171a20':zc)+'" fill-opacity="'+(main?1:.14)+'" stroke="'+zc+'" stroke-width="1.8"/>'
+      +'<text x="'+p.x+'" y="'+(p.y+(main?5:4.5))+'" text-anchor="middle" font-size="'+(main?13:11.5)+'" fill="'+(main?'#fff':zc)+'" font-weight="800" letter-spacing=".5">'+esc(main?'EM':inits)+'</text>'
       +'<text x="'+p.x+'" y="'+(p.y+r+13)+'" text-anchor="middle" font-size="11" fill="#171a20" font-weight="600">'+esc(p.short)+'</text>'
-      +(main?'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MUSK</text>':'')
       +'</g>';
   });
   svg += '</svg>';
   let h = '<div class="eyebrow">关系网络（分区=功能域 · 边色=关系性质 · 虚线=推断 · 点节点跳人物卡）</div><div class="card">'+svg
     +'<div class="mut" style="font-size:11px;text-align:center;margin-top:4px"><span style="color:#a06a00">— 家族</span>　<span style="color:#3e6ae1">— 资本/风投</span>　<span style="color:#0a8754">— 政治</span>　<span style="color:#d3212c">— 对手/分歧</span>　— 灰=其他　虚线=推断</div></div>';
-  h += '<div class="card mut" style="font-size:12px">'+esc(D.persons_note||'')+'</div>';
-
-  h += '<div class="eyebrow">信号分级框架（行为学：信号成本越高，信息量越大）</div><div class="card"><table>'
-    +'<tr><th>级</th><th>信号类型</th><th>成本</th><th>信息量</th><th>证据级</th><th>自动通道</th><th>机制</th></tr>'
-    +(D.signal_hierarchy||[]).map(x=>'<tr><td class="num">'+x.lv+'</td><td><b>'+esc(x.name)+'</b></td><td>'+esc(x.cost)+'</td><td>'+esc(x.info)+'</td><td>'+evChip(x.ev)+'</td><td style="font-size:12px">'+esc(x.auto)+'</td><td style="font-size:12px">'+esc(x.logic)+'</td></tr>').join('')
-    +'</table></div>';
-
-  h += '<div class="eyebrow">网络判读（结构洞 · 独立信源 · 强弱连带 —— 机制而非结论）</div><div class="card">'
-    +(D.network_reading||[]).map(t=>'<div style="font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)">'+esc(t)+'</div>').join('')+'</div>';
 
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
   h += '<div class="eyebrow">人物卡（功能/信号/预警/通道 + 账本自动联动）</div>';
@@ -527,7 +592,7 @@ persons(){ return guard('人物网络', () => {
       +'<tr><td class="mut">关联人物</td><td>'+ (pe.filter(e=>e.a===p.id||e.b===p.id).map(e=>{const o=byId[e.a===p.id?e.b:e.a]||{};return '<span class="chip" style="background:rgba(23,26,32,.06);color:#171a20;cursor:pointer" onclick="var el=document.getElementById(\'pc-'+esc(o.id)+'\');if(el)el.scrollIntoView({behavior:\'smooth\'})">'+esc(o.short||'')+' · '+esc(e.kind)+'</span>';}).join(' ')||'—') +'</td></tr>'
       +'</table>'
       +(p.id!=='musk' ? ('<div class="mut" style="margin:8px 0 3px;font-size:11px;letter-spacing:.08em">账本联动</div>'
-        +(moves.length ? moves.map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('')
+        +(moves.length ? moves.map(m=>{const u=((m.payload||{}).srcs||[])[0]||((m.payload||{}).src||''); return '<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+(String(u).startsWith('http')?' <a href="'+esc(u)+'" target="_blank" rel="noopener">原文↗</a>':'')+'</div>';}).join('')
                        : '<div class="mut" style="font-size:12px">暂无动态（人物新闻通道每日自动抓取；匹配别名: '+esc((p.aliases||[]).join('/'))+'）</div>')) : '')
       +'</div>';
   });
@@ -572,29 +637,21 @@ function mdToHtml(md){
   if(inUl) out.push('</ul>'); if(inTable) out.push('</table>');
   return out.join('');
 }
-async function loadReports(){
-  const box = document.getElementById('rpt-list'); if(!box) return;
-  try{
-    const r = await fetch('reports/index.json', {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const idx = await r.json();
-    if(!idx.length){ box.innerHTML='<div class="mut">暂无报告。首期周报将在周日 06:30 自动生成。</div>'; return; }
-    box.innerHTML = idx.map(e=>'<div class="rpt-row" onclick="openReport(\''+esc(e.path)+'\',\''+esc(e.title)+'\')"><span><b>'+esc(e.type)+'</b> · '+esc(e.date)+'</span><span class="mut">查看 →</span></div>').join('');
-    openReport(idx[0].path, idx[0].title);       // 最新一期直接展开，结论即刻可读
-  }catch(e){
-    box.innerHTML='<div class="mut">报告列表加载失败（'+esc(e.message)+'）。本页需通过网站地址访问；本地双击打开时浏览器禁止 fetch，属预期行为。</div>';
+function loadReports(){
+  const box = document.getElementById('rpt-list'), v = document.getElementById('rpt-view');
+  const R = window.AXIOMAKE_REPORTS;
+  if(!R || !R.latest || !Object.keys(R.latest).length){
+    box.innerHTML = '<div class="mut">暂无报告。首期周报将在周日 06:30 自动生成后随数据一并发布。</div>'; return;
   }
+  const order = ['周报','月报','季报','年报'].filter(k=>R.latest[k]);
+  box.innerHTML = order.map(k=>'<span class="chip" style="background:rgba(23,26,32,.07);color:#171a20;cursor:pointer;padding:6px 14px;font-size:12px" onclick="showReport(\''+k+'\')">'+k+' · '+esc(R.latest[k].date)+'</span>').join(' ')
+    + (R.archive && R.archive.length>order.length ? '<div class="mut" style="margin-top:8px">历史归档 '+R.archive.length+' 期存于仓库 reports/ 目录</div>' : '');
+  showReport(order[0]);
 }
-async function openReport(path, title){
-  const v = document.getElementById('rpt-view');
-  v.innerHTML = '<div class="mut">加载中…</div>';
-  try{
-    const r = await fetch(path, {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const t = await r.text();
-    v.innerHTML = '<div class="eyebrow">'+esc(title)+'</div><div class="card rpt">'+mdToHtml(t)+'</div>';
-    v.scrollIntoView({behavior:'smooth'});
-  }catch(e){ v.innerHTML = '<div class="gray-card">报告加载失败：'+esc(e.message)+'</div>'; }
+function showReport(kind){
+  const R = window.AXIOMAKE_REPORTS, v = document.getElementById('rpt-view');
+  const it = R.latest[kind]; if(!it){ v.innerHTML=''; return; }
+  v.innerHTML = '<div class="eyebrow">'+esc(it.title)+'</div><div class="card rpt">'+mdToHtml(it.md)+'</div>';
 }
 
 /* ============ 交互动作 ============ */

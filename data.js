@@ -1754,7 +1754,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "LFP电芯产能",
    "unlock": "休斯顿Megapack 3厂投产",
    "meaning": "扩产=增利，全系最干净；Q1'26 部署8.8GWh、毛利39.5%双纪录",
-   "watch": "新厂节点/电芯自供比/backlog"
+   "watch": "新厂节点/电芯自供比/backlog",
+   "owner": "TSLA"
   },
   {
    "line": "算力 Colossus",
@@ -1762,7 +1763,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "电力并网+许可(非GPU)",
    "unlock": "燃气轮机许可裁决/互联队列",
    "meaning": "需求已锁($26B/年合同)，看电不看芯片",
-   "watch": "ERCOT/TVA队列、许可诉讼、自建fab里程碑"
+   "watch": "ERCOT/TVA队列、许可诉讼、自建fab里程碑",
+   "owner": "SPCX"
   },
   {
    "line": "Starlink",
@@ -1770,7 +1772,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "频谱/单星容量(香农极限)",
    "unlock": "V3卫星代际",
    "meaning": "稳态复利；在轨8000+颗=全球LEO 2/3",
-   "watch": "订户数、V3容量、Kuiper 07-30死线"
+   "watch": "订户数、V3容量、Kuiper 07-30死线",
+   "owner": "SPCX"
   },
   {
    "line": "发射服务",
@@ -1778,7 +1781,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "星舰复用经济性",
    "unlock": "试飞×复用周转×翻新成本三变量",
    "meaning": "高凸性期权；外部订单占比萎缩=封闭经济警报",
-   "watch": "复用曲线、外部商业订单占比"
+   "watch": "复用曲线、外部商业订单占比",
+   "owner": "SPCX"
   },
   {
    "line": "电动车",
@@ -1786,7 +1790,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "价格弹性/中国竞争",
    "unlock": "FSD中国Q3'26(软件变需求变量)",
    "meaning": "防守盘；降价史=需求约束自供状态证词",
-   "watch": "周度上险数、降价动作"
+   "watch": "周度上险数、降价动作",
+   "owner": "TSLA"
   },
   {
    "line": "Robotaxi",
@@ -1794,7 +1799,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "州牌照+3项NHTSA联邦调查",
    "unlock": "逐州备案",
    "meaning": "$350/股溢价主载体；42辆 vs Waymo 577辆",
-   "watch": "州备案(先行L3)、调查进展、车队周计数"
+   "watch": "州备案(先行L3)、调查进展、车队周计数",
+   "owner": "TSLA"
   },
   {
    "line": "Optimus",
@@ -1802,7 +1808,8 @@ window.MUSKINTEL_DATA = {
    "constraint": "谐波减速器全球产能(10倍+缺口)",
    "unlock": "自研执行器产线验证",
    "meaning": "头号证伪对象=头号先机，二者必居其一",
-   "watch": "执行器招聘/设备采购(L1/L3)、Tier-1订单(L6)"
+   "watch": "执行器招聘/设备采购(L1/L3)、Tier-1订单(L6)",
+   "owner": "TSLA"
   }
  ],
  "teardowns": [
@@ -1908,7 +1915,8 @@ window.MUSKINTEL_DATA = {
    "metric": "$/kWh 存储",
    "tipping": "储能+光伏度电 < 天然气峰值电 → 电网结构性替代",
    "cn": "宁德/比亚迪刀片",
-   "verdict": "中方产能领先，成本曲线两强并行"
+   "verdict": "中方产能领先，成本曲线两强并行",
+   "owner": "TSLA"
   },
   {
    "line": "地面运输",
@@ -1917,7 +1925,8 @@ window.MUSKINTEL_DATA = {
    "metric": "$/mile",
    "tipping": "无人出行 $/mile < 私家车持有成本",
    "cn": "比亚迪/华为系/萝卜快跑",
-   "verdict": "EV中方领先；无监督FSD美方领先，Q3中国审批=两树接触点"
+   "verdict": "EV中方领先；无监督FSD美方领先，Q3中国审批=两树接触点",
+   "owner": "TSLA"
   },
   {
    "line": "航天",
@@ -1926,7 +1935,8 @@ window.MUSKINTEL_DATA = {
    "metric": "$/kg 至 LEO",
    "tipping": "<$150/kg → 轨道工业化经济成立",
    "cn": "长征系/朱雀/天龙",
-   "verdict": "美方代差领先(复用)"
+   "verdict": "美方代差领先(复用)",
+   "owner": "SPCX"
   },
   {
    "line": "计算",
@@ -1935,7 +1945,8 @@ window.MUSKINTEL_DATA = {
    "metric": "$/GW、$/M token",
    "tipping": "轨道算力见三档物理判定(当前:物理紧张)",
    "cn": "DeepSeek/通义/字节",
-   "verdict": "算法差距收窄，算力(电力)是新战场"
+   "verdict": "算法差距收窄，算力(电力)是新战场",
+   "owner": "SPCX"
   },
   {
    "line": "机器人",
@@ -1944,7 +1955,8 @@ window.MUSKINTEL_DATA = {
    "metric": "$/工时",
    "tipping": "机器人$/工时 < 最低工资 → 劳动力经济学重写",
    "cn": "宇树/智元/傅利叶",
-   "verdict": "中方供应链(减速器)占先，集成度美方下注"
+   "verdict": "中方供应链(减速器)占先，集成度美方下注",
+   "owner": "TSLA"
   },
   {
    "line": "脑机",
@@ -1953,7 +1965,8 @@ window.MUSKINTEL_DATA = {
    "metric": "通道×带宽/$",
    "tipping": "患者数×带宽倍增节奏",
    "cn": "脑虎/中科院系",
-   "verdict": "美方临床进度领先"
+   "verdict": "美方临床进度领先",
+   "owner": "私营"
   }
  ],
  "convergence": [
@@ -2592,7 +2605,6 @@ window.MUSKINTEL_DATA = {
    "channel": "13F(A)/言论(C-)"
   }
  ],
- "persons_note": "框架：情报分析学（结构洞/独立信源/指标与预警）×行为学（成本信号分级/显示性偏好）×轨迹学（时间不可伪造）。所有关系为公开记录定性+机制推导，不设伪精度分值；无源旧数据已弃用。",
  "person_edges": [
   {
    "a": "thiel",
@@ -2679,58 +2691,78 @@ window.MUSKINTEL_DATA = {
    "note": "媒体多源"
   }
  ],
- "signal_hierarchy": [
+ "pol_biz": [
   {
-   "lv": 1,
-   "name": "言论/发帖",
-   "cost": "≈0",
-   "info": "最低",
-   "ev": "C",
-   "auto": "暂停（X API 收费）",
-   "logic": "零成本信号可随意发出，博弈论上不可信；仅用于注意力漂移统计"
+   "line": "SpaceX 载人/发射",
+   "channel": "NASA 预算与人事",
+   "dep": "CCP/HLS 合同收入；载人航天双向人质结构（NASA 无替代运力）",
+   "state": "顺风",
+   "lag": "0-6月",
+   "watch": "合同公告/NASA局长人事/预算案",
+   "ev": "A"
   },
   {
-   "lv": 2,
-   "name": "政治捐款",
-   "cost": "$（可核）",
-   "info": "中",
-   "ev": "A",
-   "auto": "FEC API 每日",
-   "logic": "真金白银但金额相对身家极小；方向信号>力度信号"
+   "line": "Starlink/Starshield",
+   "channel": "五角大楼+国务院",
+   "dep": "DoD 合同；地缘准入即时变现（委内瑞拉案例：和解→市场准入，账本E007）",
+   "state": "顺风",
+   "lag": "0-3月",
+   "watch": "合同披露/新市场开通公告",
+   "ev": "A/B"
   },
   {
-   "lv": 3,
-   "name": "内部人交易",
-   "cost": "$$$+法律责任",
-   "info": "高",
-   "ev": "A",
-   "auto": "EDGAR 每日",
-   "logic": "Form 4 造假=刑责；披露的是已发生行为，revealed preference（显示性偏好）的最纯形态"
+   "line": "Starlink 频谱",
+   "channel": "FCC 裁决",
+   "dep": "direct-to-cell 扩容申请在途；Kuiper 07-30 部署死线=竞争格局裁决点",
+   "state": "中性",
+   "lag": "0-6月",
+   "watch": "FCC IBFS 文件/07-30 倒计时",
+   "ev": "A"
   },
   {
-   "lv": 4,
-   "name": "物理行程",
-   "cost": "时间（不可伪造）",
-   "info": "最高",
-   "ev": "A(通道暂停)",
-   "auto": "暂停（免费 ADS-B 已收费）",
-   "logic": "轨迹学核心：一天只有24小时，本人到场=最高成本承诺。历史两次验证（北京→FSD、利雅得→主权资本）"
+   "line": "Tesla FSD/Robotaxi",
+   "channel": "NHTSA + 州监管",
+   "dep": "3 项联邦调查在身；州级备案是最干净先行信号（内华达实证，账本E012）",
+   "state": "逆风",
+   "lag": "1-12月",
+   "watch": "调查进展/逐州备案",
+   "ev": "A"
   },
   {
-   "lv": 5,
-   "name": "资本配置",
-   "cost": "$$$$（组织级）",
-   "info": "最高",
-   "ev": "A/B",
-   "auto": "部分（8-K/基金公告经新闻通道）",
-   "logic": "公司级资金流向=战略的不可逆形态；对外承诺可撤回，产线和合同不可"
+   "line": "Tesla 中国",
+   "channel": "中美双边+审批",
+   "dep": "FSD 全面审批预期 Q3'26；上海工厂+电池供应链=双向人质结构",
+   "state": "中性偏顺",
+   "lag": "0-6月",
+   "watch": "审批节点/关税动作",
+   "ev": "B"
+  },
+  {
+   "line": "Tesla 能源/制造",
+   "channel": "国会预算(IRA/关税)",
+   "dep": "补贴与关税结构影响储能/整车成本地板",
+   "state": "中性",
+   "lag": "6-18月",
+   "watch": "预算案/关税清单",
+   "ev": "B"
+  },
+  {
+   "line": "xAI Colossus 电力",
+   "channel": "环保监管+地方政府",
+   "dep": "孟菲斯燃气轮机许可诉讼=算力扩张的法律约束形态（先行引擎L3在库）",
+   "state": "逆风",
+   "lag": "1-12月",
+   "watch": "法院公开系统/ERCOT-TVA队列",
+   "ev": "A"
+  },
+  {
+   "line": "SPCX 股东结构",
+   "channel": "财政部 CFIUS",
+   "dep": "海湾主权资本(HUMAIN/QIA/MGX)持股，审查敞口随选举风向摆动",
+   "state": "悬置",
+   "lag": "事件驱动",
+   "watch": "国会听证/CFIUS 动作",
+   "ev": "B"
   }
- ],
- "network_reading": [
-  "超中心结构：全网以马斯克为超中心，图论上任何经他中介的路径都是单点故障——这就是「关键人风险」的结构形态，也是估值折价的网络学来源。",
-  "结构洞（Burt）：Birchall 独占「家族资产↔机构资本」的桥位，Sacks 独占「商业↔政制」的桥位。占洞者动向的信息量远高于网络平均——桥断裂比节点消失更早可观测。",
-  "强弱连带（Granovetter）：强连带（Birchall/Kimbal）传递事实性信息，弱连带（Wood/Baron/媒体）传播叙事。判读纪律：事实找强连带通道（申报文件），情绪找弱连带通道（持仓与言论背离度）。",
-  "独立信号源原则：Kimbal 与 Elon 共享信息集但独立决策——同窗口同方向交易时两信号相乘而非相加。这是本系统把 Kimbal Form 4 单列为独立指标的机制依据。",
-  "对手方折扣：做市商（Citadel）言论经对冲后无方向暴露，信息量按 C- 处理；只读其 13F 期权结构。"
  ]
 };

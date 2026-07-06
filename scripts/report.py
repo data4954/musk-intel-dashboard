@@ -204,6 +204,16 @@ def main():
         st = load_state()
         for kind,_ in due_kinds(): st[kind]=snap(load_data())
         json.dump(st,open(STF,"w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    # reports.js: 每类最新一期全文 + 归档索引，随页面 <script> 加载（本地双击也可读，不依赖 fetch）
+    latest = {}
+    for e in idx:
+        if e["type"] not in latest:
+            p = os.path.join(ROOT, e["path"])
+            if os.path.exists(p):
+                latest[e["type"]] = {"title": e["title"], "date": e["date"], "md": open(p, encoding="utf-8").read()}
+    open(os.path.join(ROOT, "reports.js"), "w", encoding="utf-8").write(
+        "// 由 report.py 维护\nwindow.AXIOMAKE_REPORTS = " +
+        json.dumps({"latest": latest, "archive": idx[:200]}, ensure_ascii=False) + ";\n")
     print(f"reports generated: {made}")
 
 if __name__ == "__main__":
