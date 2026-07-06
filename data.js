@@ -3,7 +3,7 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-07T06:34:08+08:00",
+  "generated_at": "2026-07-07T07:35:30+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
@@ -32,16 +32,16 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64161.18,
-    "chg": 4.35,
+    "price": 64097.81,
+    "chg": 4.25,
     "src": "Yahoo 2026-07-07",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.077,
-    "chg": 4.01,
+    "price": 0.0768,
+    "chg": 3.66,
     "src": "Yahoo 2026-07-07",
     "status": "green"
    }
@@ -74,7 +74,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 64161.18
+     "c": 64097.81
     }
    ],
    "DOGE-USD": [
@@ -84,7 +84,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-07",
-     "c": 0.077
+     "c": 0.0768
     }
    ]
   }
@@ -1967,7 +1967,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1836 · xAI 210 在招（2026-07-07；Tesla 无免费接口）",
+     "v": "SpaceX 1834 · xAI 212 在招（2026-07-07；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -2478,20 +2478,20 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-07 06:34",
+  "last_run": "2026-07-07 07:35",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
    "launchlib": "green",
-   "rss": "green",
+   "rss": "red",
    "greenhouse": "green",
    "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 6,
+   "edgar": 7,
    "launchlib": 0,
-   "rss": 0,
+   "rss": 1,
    "greenhouse": 0,
    "fec": 0
   }

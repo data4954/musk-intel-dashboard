@@ -22,3 +22,16 @@
 [2026-07-07 06:34] 新闻: 40 条原始 → 40 簇 → 入库 6 条（上限6）
 [2026-07-07 06:34] 人物动态: 新入库 18 条（C级，按人物tag挂卡）
 [2026-07-07 06:34] 更新成功。账本 89 条，本轮审计 7 条
+[2026-07-07 07:35] 抓取失败 https://data.sec.gov/submissions/CIK0001318605.json : HTTP Error 403: Forbidden
+[2026-07-07 07:35] 熔断: edgar 连续 7 次失败，进周报头条
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=SpaceX+OR+Tesla+OR+xAI+OR+Neuralink+%22Elon : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Jared%20Birchall%22&hl=zh-CN&gl=CN&ceid= : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Kimbal%20Musk%22&hl=zh-CN&gl=CN&ceid=CN: : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Larry%20Ellison%22&hl=zh-CN&gl=CN&ceid=C : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22David%20Sacks%22&hl=zh-CN&gl=CN&ceid=CN: : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Peter%20Thiel%22&hl=zh-CN&gl=CN&ceid=CN: : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Marc%20Andreessen%22&hl=zh-CN&gl=CN&ceid : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Ron%20Baron%22%20Tesla&hl=zh-CN&gl=CN&ce : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Cathie%20Wood%22&hl=zh-CN&gl=CN&ceid=CN: : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Ken%20Griffin%22%20Citadel&hl=zh-CN&gl=C : HTTP Error 503: Service Unavailable
+[2026-07-07 07:35] 更新成功。账本 89 条，本轮审计 0 条
