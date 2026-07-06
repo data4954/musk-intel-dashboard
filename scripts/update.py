@@ -92,8 +92,6 @@ def main():
     ok_quotes = 0
     for q in D["market"]["quotes"]:
         sym = q["sym"]
-        if sym == "LITHIUM":       # 无免费可编程源，保持人工/陈旧
-            continue
         txt = get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d")
         px = chg = None
         if txt:

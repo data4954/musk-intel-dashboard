@@ -44,15 +44,6 @@ window.MUSKINTEL_DATA = {
     "chg": 0.67,
     "src": "Yahoo 2026-07-06",
     "status": "green"
-   },
-   {
-    "sym": "LITHIUM",
-    "name": "碳酸锂(参考)",
-    "price": null,
-    "chg": null,
-    "unit": "CNY/T",
-    "src": "待更新",
-    "status": "yellow"
    }
   ],
   "series": {
@@ -1070,12 +1061,6 @@ window.MUSKINTEL_DATA = {
      "src": "财报电话会｜人工/季更（财报季）"
     },
     {
-     "k": "锂期货远期曲线结构",
-     "v": "人工/季更项",
-     "st": "yellow",
-     "src": "期货行情｜人工/季更（付费行情）"
-    },
-    {
      "k": "三花/拓普执行器扩产公告",
      "v": "Optimus供给缺口的验证通道",
      "st": "yellow",
@@ -1639,153 +1624,333 @@ window.MUSKINTEL_DATA = {
   {
    "id": "musk",
    "name": "Elon Musk",
-   "short": "Musk",
+   "short": "MUSK",
+   "zone": "中心",
    "role": "中心节点",
    "org": "TSLA/SPCX",
    "tier": "本人",
-   "x": 320,
-   "y": 195,
-   "rel": "—",
-   "aliases": []
+   "x": 330,
+   "y": 210,
+   "aliases": [],
+   "func": "整个网络的超中心节点——图论意义上的关键人风险：任何以他为中介的路径都是单点故障",
+   "signal": "本人言论成本≈0（低信息量），资金动作与法律申报成本高（高信息量）。判读一律用行为不用言论",
+   "watch": "Form 4 方向、健康/法律事件、注意力分配漂移（承诺库自动追踪）",
+   "channel": "EDGAR(A)/FEC(A)/承诺库"
   },
   {
    "id": "birchall",
    "name": "Jared Birchall",
    "short": "Birchall",
+   "zone": "家族",
    "role": "家办管理人",
    "org": "Excession LLC",
    "tier": "家族执行",
-   "x": 165,
-   "y": 300,
-   "rel": "管理马斯克家族资产与信托事务（公开记录：Proxy/媒体多源）",
+   "x": 150,
+   "y": 150,
    "aliases": [
     "Birchall",
     "伯奇尔"
-   ]
+   ],
+   "func": "家族资本唯一非血缘全权执行节点：家办+信托+私人事务一肩挑（公开记录：Proxy/多源）",
+   "signal": "高信息量：家办操作在公告之前发生——其动向≈资产结构变动的先行指标。结构洞位置：家族资产↔机构资本的唯一桥",
+   "watch": "离职/新设实体/信托重组/新增州注册——任一发生=家族资本重组预警",
+   "channel": "Proxy(A)/州注册文件(A)/媒体(B)"
   },
   {
    "id": "kimbal",
    "name": "Kimbal Musk",
    "short": "Kimbal",
+   "zone": "家族",
    "role": "胞弟/董事",
    "org": "Tesla/SpaceX 董事会",
    "tier": "家族",
-   "x": 135,
-   "y": 205,
-   "rel": "Form 4 独立信号源；董事持股（A：EDGAR）",
+   "x": 165,
+   "y": 300,
    "aliases": [
     "Kimbal",
     "金博尔"
-   ]
+   ],
+   "func": "家族+董事会双重身份，与本人共享信息集但独立决策",
+   "signal": "独立信号源机制：两个共享信息集的节点同窗口同方向交易，信息含量倍增（剥离个人流动性需求这一混杂变量）",
+   "watch": "与 Elon 同窗口 Form 4 同方向=强信号；单独减持=弱信号",
+   "channel": "EDGAR Form 4(A)"
   },
   {
    "id": "ellison",
    "name": "Larry Ellison",
    "short": "Ellison",
+   "zone": "资本",
    "role": "Oracle 联创",
    "org": "Oracle",
-   "tier": "盟友/商业",
-   "x": 150,
+   "tier": "盟友/算力资本",
+   "x": 470,
    "y": 95,
-   "rel": "长期盟友、曾任 Tesla 董事（公开记录）",
    "aliases": [
     "Ellison",
     "埃里森",
     "甲骨文"
-   ]
-  },
-  {
-   "id": "sacks",
-   "name": "David Sacks",
-   "short": "Sacks",
-   "role": "白宫 AI/加密事务",
-   "org": "White House",
-   "tier": "政治盟友",
-   "x": 445,
-   "y": 285,
-   "rel": "PayPal 系；政策接口（公开记录）",
-   "aliases": [
-    "Sacks",
-    "萨克斯"
-   ]
+   ],
+   "func": "传统企业 IT ↔ 马斯克系的桥接点；曾任 Tesla 董事（A:Proxy）",
+   "signal": "利益绑定判读：Oracle 云与 xAI/Colossus 存在算力商业关系时，其公开表态含仓位成分，按 B 级打折",
+   "watch": "Oracle 与马斯克系合同变动/13F 持仓变动",
+   "channel": "13F(A)/Oracle 财报(A)/言论(C)"
   },
   {
    "id": "thiel",
    "name": "Peter Thiel",
    "short": "Thiel",
+   "zone": "资本",
    "role": "投资人",
    "org": "Founders Fund",
-   "tier": "盟友/资本",
-   "x": 465,
-   "y": 92,
-   "rel": "PayPal 系长期关系（公开记录）",
+   "tier": "网络根节点",
+   "x": 580,
+   "y": 150,
    "aliases": [
     "Thiel",
     "蒂尔"
-   ]
+   ],
+   "func": "PayPal 网络根节点：不直接重仓马斯克系，但控制人脉拓扑（Sacks 等政治节点经此网络输送）",
+   "signal": "拓扑价值>资金价值：其公开与马斯克分歧=网络层裂缝，先于资金层出现",
+   "watch": "公开分歧言论/政治押注转向",
+   "channel": "FEC(A)/公开言论(C)"
   },
   {
    "id": "andreessen",
    "name": "Marc Andreessen",
    "short": "a16z",
+   "zone": "资本",
    "role": "风投",
    "org": "a16z",
    "tier": "盟友/资本",
-   "x": 520,
-   "y": 195,
-   "rel": "xAI 投资人（B：多源）",
+   "x": 610,
+   "y": 255,
    "aliases": [
     "Andreessen",
     "安德森"
-   ]
+   ],
+   "func": "风投侧盟友，xAI 投资人（B:多源）",
+   "signal": "基金配置动作=对叙事的付费投票；公开站台=低成本信号，按 C 级处理",
+   "watch": "后续轮跟投/停投",
+   "channel": "基金公告(B)/言论(C)"
   },
   {
    "id": "baron",
    "name": "Ron Baron",
    "short": "Baron",
+   "zone": "资本",
    "role": "机构多头",
    "org": "Baron Capital",
-   "tier": "机构投资人",
-   "x": 410,
-   "y": 355,
-   "rel": "TSLA 长期持仓（A：13F）",
+   "tier": "叙事传播层",
+   "x": 540,
+   "y": 350,
    "aliases": [
     "Baron",
     "巴伦"
-   ]
+   ],
+   "func": "长期机构多头。判读定位：叙事溢价的传播层而非信息层——影响散户资金流，不产生新信息",
+   "signal": "清仓/大幅减持=叙事层裂缝信号；加仓表态=无增量信息",
+   "watch": "13F 季度持仓变动",
+   "channel": "13F(A)/公开信(C)"
   },
   {
    "id": "wood",
    "name": "Cathie Wood",
    "short": "C.Wood",
+   "zone": "资本",
    "role": "机构多头",
    "org": "ARK Invest",
-   "tier": "机构投资人",
-   "x": 265,
-   "y": 360,
-   "rel": "TSLA 持仓与公开目标价（A：13F/公开）",
+   "tier": "叙事传播层",
+   "x": 430,
+   "y": 390,
    "aliases": [
     "Cathie",
     "木头姐",
     "ARK"
-   ]
+   ],
+   "func": "同 Baron：传播层节点，其目标价模型是叙事放大器",
+   "signal": "ARK 日频持仓公开=罕见的高频机构行为数据；连续卖出与公开唱多背离=行为>言论的经典判读场景",
+   "watch": "ARK 日频交易与言论的背离度",
+   "channel": "ARK 日频披露(A)/13F(A)"
+  },
+  {
+   "id": "sacks",
+   "name": "David Sacks",
+   "short": "Sacks",
+   "zone": "政治",
+   "role": "白宫 AI/加密事务",
+   "org": "White House",
+   "tier": "政治接口",
+   "x": 260,
+   "y": 390,
+   "aliases": [
+    "Sacks",
+    "萨克斯"
+   ],
+   "func": "马斯克政治资产的制度化形态：PayPal 网络成员进入政策岗位=私人关系转为制度通道",
+   "signal": "传导链：其政策文本→AI/自动驾驶监管环境→FSD/xAI 估值。岗位存续本身就是信号",
+   "watch": "去职=政治资产贬值预警；政策文本措辞变化",
+   "channel": "白宫公开记录(A)/LDA(A)/言论(C)"
   },
   {
    "id": "griffin",
    "name": "Ken Griffin",
    "short": "Griffin",
+   "zone": "对手",
    "role": "对冲基金",
    "org": "Citadel",
    "tier": "对手方",
-   "x": 530,
-   "y": 330,
-   "rel": "公开分歧记录（B：媒体多源）",
+   "x": 120,
+   "y": 420,
    "aliases": [
     "Griffin",
     "格里芬",
     "Citadel"
-   ]
+   ],
+   "func": "对手方+做市商双重角色：其公开表态与做市持仓可以反向（公开记录有分歧史）",
+   "signal": "做市商的言论信息量极低（对冲后无方向暴露）；13F 显示的期权结构才有内容",
+   "watch": "13F 期权持仓结构/公开做空表态",
+   "channel": "13F(A)/言论(C-)"
   }
  ],
- "persons_note": "人物动向=账本自动联动（标题含人名别名）+人工入库；旧版无来源动向/心理指数/置信度已按纪律弃用，不迁移。关系描述均为公开记录定性，不给伪精度分值。"
+ "persons_note": "框架：情报分析学（结构洞/独立信源/指标与预警）×行为学（成本信号分级/显示性偏好）×轨迹学（时间不可伪造）。所有关系为公开记录定性+机制推导，不设伪精度分值；无源旧数据已弃用。",
+ "person_edges": [
+  {
+   "a": "thiel",
+   "b": "sacks",
+   "kind": "PayPal 网络",
+   "ev": "A",
+   "note": "同源人脉，政治节点经此输送"
+  },
+  {
+   "a": "thiel",
+   "b": "musk",
+   "kind": "PayPal 网络(历史)",
+   "ev": "A",
+   "note": "合并造就，关系有分合史"
+  },
+  {
+   "a": "birchall",
+   "b": "kimbal",
+   "kind": "家族事务协调",
+   "ev": "推断",
+   "note": "家办与家族董事的职能重叠"
+  },
+  {
+   "a": "ellison",
+   "b": "musk",
+   "kind": "算力/董事会史",
+   "ev": "A",
+   "note": "曾任 Tesla 董事；算力商业关系"
+  },
+  {
+   "a": "sacks",
+   "b": "musk",
+   "kind": "政治接口",
+   "ev": "A",
+   "note": "公开岗位"
+  },
+  {
+   "a": "birchall",
+   "b": "musk",
+   "kind": "全权执行",
+   "ev": "A",
+   "note": "家办/信托"
+  },
+  {
+   "a": "kimbal",
+   "b": "musk",
+   "kind": "家族/董事",
+   "ev": "A",
+   "note": "Form 4 独立信号源"
+  },
+  {
+   "a": "thiel",
+   "b": "andreessen",
+   "kind": "风投同业",
+   "ev": "B",
+   "note": "联合参投史"
+  },
+  {
+   "a": "andreessen",
+   "b": "musk",
+   "kind": "xAI 投资",
+   "ev": "B",
+   "note": "基金公告"
+  },
+  {
+   "a": "baron",
+   "b": "musk",
+   "kind": "机构多头",
+   "ev": "A",
+   "note": "13F"
+  },
+  {
+   "a": "wood",
+   "b": "musk",
+   "kind": "机构多头",
+   "ev": "A",
+   "note": "13F/日频披露"
+  },
+  {
+   "a": "griffin",
+   "b": "musk",
+   "kind": "公开分歧",
+   "ev": "B",
+   "note": "媒体多源"
+  }
+ ],
+ "signal_hierarchy": [
+  {
+   "lv": 1,
+   "name": "言论/发帖",
+   "cost": "≈0",
+   "info": "最低",
+   "ev": "C",
+   "auto": "暂停（X API 收费）",
+   "logic": "零成本信号可随意发出，博弈论上不可信；仅用于注意力漂移统计"
+  },
+  {
+   "lv": 2,
+   "name": "政治捐款",
+   "cost": "$（可核）",
+   "info": "中",
+   "ev": "A",
+   "auto": "FEC API 每日",
+   "logic": "真金白银但金额相对身家极小；方向信号>力度信号"
+  },
+  {
+   "lv": 3,
+   "name": "内部人交易",
+   "cost": "$$$+法律责任",
+   "info": "高",
+   "ev": "A",
+   "auto": "EDGAR 每日",
+   "logic": "Form 4 造假=刑责；披露的是已发生行为，revealed preference（显示性偏好）的最纯形态"
+  },
+  {
+   "lv": 4,
+   "name": "物理行程",
+   "cost": "时间（不可伪造）",
+   "info": "最高",
+   "ev": "A(通道暂停)",
+   "auto": "暂停（免费 ADS-B 已收费）",
+   "logic": "轨迹学核心：一天只有24小时，本人到场=最高成本承诺。历史两次验证（北京→FSD、利雅得→主权资本）"
+  },
+  {
+   "lv": 5,
+   "name": "资本配置",
+   "cost": "$$$$（组织级）",
+   "info": "最高",
+   "ev": "A/B",
+   "auto": "部分（8-K/基金公告经新闻通道）",
+   "logic": "公司级资金流向=战略的不可逆形态；对外承诺可撤回，产线和合同不可"
+  }
+ ],
+ "network_reading": [
+  "超中心结构：全网以马斯克为超中心，图论上任何经他中介的路径都是单点故障——这就是「关键人风险」的结构形态，也是估值折价的网络学来源。",
+  "结构洞（Burt）：Birchall 独占「家族资产↔机构资本」的桥位，Sacks 独占「商业↔政制」的桥位。占洞者动向的信息量远高于网络平均——桥断裂比节点消失更早可观测。",
+  "强弱连带（Granovetter）：强连带（Birchall/Kimbal）传递事实性信息，弱连带（Wood/Baron/媒体）传播叙事。判读纪律：事实找强连带通道（申报文件），情绪找弱连带通道（持仓与言论背离度）。",
+  "独立信号源原则：Kimbal 与 Elon 共享信息集但独立决策——同窗口同方向交易时两信号相乘而非相加。这是本系统把 Kimbal Form 4 单列为独立指标的机制依据。",
+  "对手方折扣：做市商（Citadel）言论经对冲后无方向暴露，信息量按 C- 处理；只读其 13F 期权结构。"
+ ]
 };

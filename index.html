@@ -8,48 +8,53 @@
 <style>
 /* ===== 马斯克系商业网站浅色基调：白底 · 近黑文字 · 大写字距标签 · 极简几何 ===== */
 :root{
-  --bg:#ffffff; --panel:#f7f7f7; --line:#e6e6e6; --text:#171a20; --dim:#5c5e62;
+  --bg:#f7f8f8; --panel:#ffffff; --line:#e9eaeb; --text:#171a20; --dim:#5c5e62;
   --accent:#3e6ae1; --up:#0a8754; --down:#d3212c; --amber:#a06a00;
   --evA:#0a8754; --evB:#3e6ae1; --evC:#8a8d91;
   --font:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.55}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
 .num{font-variant-numeric:tabular-nums}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
 /* 顶部导航（Tesla/SpaceX 式：固定 · 白底 · 大写 · 字距） */
-.topbar{position:fixed;top:0;left:0;right:0;z-index:50;height:56px;background:rgba(255,255,255,.92);
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;height:58px;background:rgba(255,255,255,.94);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 20px;gap:18px}
 .brand{font-size:16px;font-weight:800;letter-spacing:.22em;white-space:nowrap}
 .brand small{display:block;font-size:9px;font-weight:400;letter-spacing:.12em;color:var(--dim)}
 .topnav{display:flex;gap:2px;overflow-x:auto;flex:1;scrollbar-width:none}
 .topnav::-webkit-scrollbar{display:none}
-.nav-item{padding:6px 12px;border-radius:4px;cursor:pointer;font-size:12.5px;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--text);white-space:nowrap;user-select:none;transition:background .15s}
-.nav-item:hover{background:rgba(23,26,32,.06)}
-.nav-item.active{background:rgba(23,26,32,.09)}
+.nav-item{padding:19px 12px 17px;cursor:pointer;font-size:12px;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--dim);white-space:nowrap;user-select:none;
+  border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.nav-item:hover{color:var(--text)}
+.nav-item.active{color:var(--text);border-bottom-color:var(--text);font-weight:700}
 .asof{font-size:11px;color:var(--dim);white-space:nowrap}
 
 /* 主布局 */
 .shell{max-width:1280px;margin:0 auto;padding:76px 20px 80px;display:flex;gap:26px;align-items:flex-start}
 main{flex:1;min-width:0}
-.pagehead{margin:6px 0 18px}
-.pagehead h2{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.pagehead{margin:8px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.pagehead h2{font-size:30px;font-weight:700;letter-spacing:-.015em}
 #stale-banner{display:none;background:#fdf6e3;border:1px solid #eadfae;color:#6b5900;font-size:12.5px;
   padding:8px 14px;border-radius:6px;margin-bottom:14px}
 
 /* 通用件 */
-.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin-bottom:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:14px;
+  box-shadow:0 1px 3px rgba(23,26,32,.045);transition:box-shadow .2s}
+.card:hover{box-shadow:0 3px 10px rgba(23,26,32,.07)}
 .card h3{font-size:15px;margin-bottom:8px;letter-spacing:.01em}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;margin:22px 0 8px}
 .eyebrow:first-child{margin-top:2px}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{color:var(--dim);font-weight:600;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap;
   font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
+table tr:nth-child(even) td{background:rgba(23,26,32,.014)}
+table tr:hover td{background:rgba(62,106,225,.03)}
 .chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:3px;margin-right:4px}
 .ev-A{background:rgba(10,135,84,.1);color:var(--evA)}
 .ev-B{background:rgba(62,106,225,.1);color:var(--evB)}
@@ -61,18 +66,23 @@ tr:last-child td{border-bottom:none}
 .mut{color:var(--dim);font-size:12.5px}
 button,.btn{font-family:var(--font);background:var(--text);color:#fff;border:none;border-radius:4px;
   padding:9px 20px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+button:hover{opacity:.86}
 button.ghost,.btn.ghost{background:transparent;color:var(--text);border:1px solid #c8c9cb}
+button.ghost:hover{opacity:1;background:rgba(23,26,32,.05)}
 button:focus-visible,.nav-item:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 input,select,textarea{font-family:var(--font);font-size:13px;border:1px solid #c8c9cb;border-radius:4px;
   padding:8px 10px;background:#fff;color:var(--text);width:100%}
 label{font-size:11px;color:var(--dim);display:block;margin:8px 0 3px;letter-spacing:.08em;text-transform:uppercase}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.metric{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+  box-shadow:0 1px 3px rgba(23,26,32,.045);transition:transform .15s,box-shadow .2s}
+.metric:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(23,26,32,.08)}
 .metric .k{font-size:10.5px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase}
-.metric .v{font-size:20px;font-weight:700;margin-top:3px}
+.metric .v{font-size:22px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
 .metric .s{font-size:11.5px;color:var(--dim);margin-top:3px}
-.feed-item{padding:14px 2px;border-bottom:1px solid var(--line)}
+.feed-item{padding:14px 8px;border-bottom:1px solid var(--line);border-radius:8px;transition:background .15s}
+.feed-item:hover{background:rgba(23,26,32,.02)}
 .feed-item .t1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .feed-item .date{font-size:12px;color:var(--dim)}
 .feed-item .title{font-weight:700;font-size:14.5px;margin:3px 0}
@@ -92,7 +102,7 @@ pre.report{white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;font
 
 /* 右栏 */
 aside{width:320px;flex-shrink:0;position:sticky;top:76px}
-.widget{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:14px;overflow:hidden}
+.widget{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden;box-shadow:0 1px 3px rgba(23,26,32,.045)}
 .widget h4{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding:12px 16px 6px}
 .mrow{display:flex;justify-content:space-between;align-items:center;padding:9px 16px;border-top:1px solid var(--line)}
 .mrow .nm{font-size:12px;color:var(--dim)}
@@ -104,6 +114,7 @@ aside{width:320px;flex-shrink:0;position:sticky;top:76px}
 @media (max-width:1100px){aside{display:none}}
 @media (max-width:780px){
   .shell{padding:118px 14px 60px}
+  .nav-item{padding:10px 10px 8px}
   .topbar{flex-wrap:wrap;height:auto;padding:8px 14px}
   .asof{display:none}
   .grid2,.grid3{grid-template-columns:1fr}
@@ -335,46 +346,74 @@ decide(){ return guard('决策与档案', () => {
 });},
 
 persons(){ return guard('人物网络', () => {
-  const ps = D.persons||[];
-  if(!ps.length) return '<div class="gray-card">persons 数据缺失（检查 data.js）</div>';
-  const musk = ps.find(p=>p.id==='musk')||{x:320,y:195};
-  let svg = '<svg viewBox="0 0 660 415" style="width:100%;max-width:780px;display:block;margin:0 auto" role="img" aria-label="人物关系图">';
-  ps.filter(p=>p.id!=='musk').forEach(p=>{
-    svg += '<line x1="'+musk.x+'" y1="'+musk.y+'" x2="'+p.x+'" y2="'+p.y+'" stroke="#dcdcdc" stroke-width="1.3"/>';
+  const ps = D.persons||[], pe = D.person_edges||[];
+  if(!ps.length) return '<div class="gray-card">persons 数据缺失</div>';
+  const byId = Object.fromEntries(ps.map(p=>[p.id,p]));
+  const zones = [
+    {name:'家族资本', x:95, y:105, w:150, h:255},
+    {name:'资本网络', x:395, y:55, w:285, h:360},
+    {name:'政治接口', x:200, y:350, w:140, h:85},
+    {name:'对手方',   x:65,  y:380, w:120, h:75}
+  ];
+  let svg = '<svg viewBox="0 0 700 470" style="width:100%;max-width:820px;display:block;margin:0 auto" role="img" aria-label="人物关系网络">';
+  zones.forEach(z=>{
+    svg += '<rect x="'+z.x+'" y="'+z.y+'" width="'+z.w+'" height="'+z.h+'" rx="14" fill="rgba(23,26,32,.022)" stroke="#e3e3e3" stroke-dasharray="4 4"/>'
+        +  '<text x="'+(z.x+10)+'" y="'+(z.y+16)+'" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(z.name)+'</text>';
+  });
+  pe.forEach(e=>{
+    const a=byId[e.a], b=byId[e.b]; if(!a||!b) return;
+    svg += '<line x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'" stroke="'+(e.ev==='A'?'#b6bcc3':'#dfe1e3')+'" stroke-width="'+(e.ev==='A'?1.7:1.2)+'"'+(e.ev==='推断'?' stroke-dasharray="3 3"':'')+'/>';
   });
   ps.forEach(p=>{
-    const r = p.id==='musk'?27:17, main = p.id==='musk';
+    const main = p.id==='musk', r = main?28:17;
     svg += '<g class="pnode" data-pid="'+esc(p.id)+'" style="cursor:pointer">'
-      +'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+r+'" fill="'+(main?'#171a20':'#ffffff')+'" stroke="'+(main?'#171a20':(p.tier==='对手方'?'var(--down)':'#171a20'))+'" stroke-width="1.6"/>'
+      +'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+r+'" fill="'+(main?'#171a20':'#ffffff')+'" stroke="'+(main?'#171a20':(p.zone==='对手'?'var(--down)':'#171a20'))+'" stroke-width="1.7"/>'
       +'<text x="'+p.x+'" y="'+(p.y+r+13)+'" text-anchor="middle" font-size="11" fill="#171a20" font-weight="600">'+esc(p.short)+'</text>'
       +(main?'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MUSK</text>':'')
       +'</g>';
   });
   svg += '</svg>';
-  let h = '<div class="eyebrow">关系图（点节点跳转人物卡 · 连线=公开记录关系，不设伪精度强度分）</div><div class="card">'+svg+'</div>';
+  let h = '<div class="eyebrow">关系网络（分区=功能域 · 实线=A级记录 · 虚线=推断 · 点节点跳人物卡）</div><div class="card">'+svg+'</div>';
   h += '<div class="card mut" style="font-size:12px">'+esc(D.persons_note||'')+'</div>';
+
+  h += '<div class="eyebrow">信号分级框架（行为学：信号成本越高，信息量越大）</div><div class="card"><table>'
+    +'<tr><th>级</th><th>信号类型</th><th>成本</th><th>信息量</th><th>证据级</th><th>自动通道</th><th>机制</th></tr>'
+    +(D.signal_hierarchy||[]).map(x=>'<tr><td class="num">'+x.lv+'</td><td><b>'+esc(x.name)+'</b></td><td>'+esc(x.cost)+'</td><td>'+esc(x.info)+'</td><td>'+evChip(x.ev)+'</td><td style="font-size:12px">'+esc(x.auto)+'</td><td style="font-size:12px">'+esc(x.logic)+'</td></tr>').join('')
+    +'</table></div>';
+
+  h += '<div class="eyebrow">网络判读（结构洞 · 独立信源 · 强弱连带 —— 机制而非结论）</div><div class="card">'
+    +(D.network_reading||[]).map(t=>'<div style="font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)">'+esc(t)+'</div>').join('')+'</div>';
+
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
-  h += '<div class="eyebrow">人物卡（动向=账本自动联动，每条带证据等级；无匹配即如实显示空）</div>';
-  ps.filter(p=>p.id!=='musk').forEach(p=>{
+  h += '<div class="eyebrow">人物卡（功能/信号/预警/通道 + 账本自动联动）</div>';
+  ps.forEach(p=>{
     let moves = [];
     if(p.aliases && p.aliases.length){
       moves = ledger.filter(r=>p.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).slice(0,5);
     }
-    if(p.id==='kimbal'){
-      const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('kimbal'));
+    if(p.id==='kimbal'||p.id==='musk'){
+      const key = p.id;
+      const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&(((r.payload||{}).owner||'').toLowerCase().includes(key==='kimbal'?'kimbal':'elon')));
       f4.forEach(x=>{ if(moves.indexOf(x)<0) moves.push(x); });
       moves = moves.slice(0,5);
     }
     h += '<div class="card" id="pc-'+esc(p.id)+'"><h3>'+esc(p.name)+' <span class="mut" style="font-weight:400">· '+esc(p.role)+' · '+esc(p.org)+'</span> <span class="chip" style="background:rgba(23,26,32,.07);color:#171a20">'+esc(p.tier)+'</span></h3>'
-      +'<div class="mut" style="font-size:12.5px;margin-bottom:6px">'+esc(p.rel)+'</div>'
-      +(moves.length ? moves.map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('')
-                     : '<div class="mut" style="font-size:12px">账本中暂无关联动向（自动匹配别名: '+esc((p.aliases||[]).join('/'))+'）。可在【决策档案】手动入库标题含人名的事件。</div>')
+      +'<table style="font-size:12.5px">'
+      +'<tr><td style="width:82px;white-space:nowrap" class="mut">功能角色</td><td>'+esc(p.func||'—')+'</td></tr>'
+      +'<tr><td class="mut">信号价值</td><td>'+esc(p.signal||'—')+'</td></tr>'
+      +'<tr><td class="mut">预警指标</td><td><b>'+esc(p.watch||'—')+'</b></td></tr>'
+      +'<tr><td class="mut">可观测通道</td><td>'+esc(p.channel||'—')+'</td></tr>'
+      +'</table>'
+      +(p.id!=='musk' ? ('<div class="mut" style="margin:8px 0 3px;font-size:11px;letter-spacing:.08em">账本联动</div>'
+        +(moves.length ? moves.map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('')
+                       : '<div class="mut" style="font-size:12px">暂无关联条目（匹配别名: '+esc((p.aliases||[]).join('/'))+'）</div>')) : '')
       +'</div>';
   });
-  const muskF4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('musk')&&!((r.payload||{}).owner||'').toLowerCase().includes('kimbal'));
-  h += '<div class="card"><h3>Elon Musk 本人 · 申报流水</h3><div class="mut" style="font-size:12px;margin-bottom:4px">仅列 A 级申报（Form 4）。新闻类动向见【总览】——本人名字出现频率过高，自动匹配只会制造噪音，不做。</div>'
-    +(muskF4.length ? muskF4.slice(0,5).map(m=>'<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+'</div>').join('') : '<div class="mut" style="font-size:12px">近90天无已识别申报人的 Form 4（申报人由每日更新自动回填）。</div>')
-    +'</div>';
+
+  h += '<div class="eyebrow">关系边明细（'+pe.length+' 条 · 每条带性质与证据）</div><div class="card"><table>'
+    +'<tr><th>关系</th><th>性质</th><th>证据</th><th>判读要点</th></tr>'
+    +pe.map(e=>'<tr><td style="white-space:nowrap"><b>'+esc((byId[e.a]||{}).short||e.a)+' ↔ '+esc((byId[e.b]||{}).short||e.b)+'</b></td><td>'+esc(e.kind)+'</td><td>'+(e.ev==='推断'?'<span class="chip ev-C">推断</span>':evChip(e.ev))+'</td><td style="font-size:12px">'+esc(e.note||'')+'</td></tr>').join('')
+    +'</table></div>';
   return h;
 });},
 
@@ -490,12 +529,20 @@ function render(id){
   });
 })();
 
+function spark(sym, up){
+  const ser=((D.market||{}).series||{})[sym]||[]; if(ser.length<2) return '';
+  const cs=ser.slice(-30).map(p=>p.c).filter(c=>c!=null); if(cs.length<2) return '';
+  const min=Math.min.apply(null,cs), max=Math.max.apply(null,cs), rng=(max-min)||1;
+  const pts=cs.map((c,i)=>((i/(cs.length-1))*62).toFixed(1)+','+(19-((c-min)/rng)*16).toFixed(1)).join(' ');
+  return '<svg width="62" height="22" viewBox="0 0 62 22" aria-hidden="true"><polyline points="'+pts+'" fill="none" stroke="'+(up?'var(--up)':'var(--down)')+'" stroke-width="1.6" stroke-linejoin="round"/></svg>';
+}
 (function buildAside(){
   if(!DATA_OK) return;
   const wm=document.getElementById('w-market');
   D.market.quotes.forEach(q=>{
     const chg=(q.chg==null)?'':'<span class="'+(q.chg>=0?'pos':'neg')+' num">'+(q.chg>=0?'+':'')+q.chg+'%</span>';
-    wm.insertAdjacentHTML('beforeend','<div class="mrow"><div><div class="nm">'+esc(q.name)+(q.status!=='green'?' <span class="sc">陈旧</span>':'')+'</div><div class="pr num">'+(q.price!=null?('$'+fmtN(q.price)):esc(q.mcap||'—'))+'</div></div><div>'+chg+'</div></div>');
+    const sp=spark(q.sym, q.chg==null||q.chg>=0);
+    wm.insertAdjacentHTML('beforeend','<div class="mrow"><div><div class="nm">'+esc(q.name)+(q.status!=='green'?' <span class="sc">陈旧</span>':'')+'</div><div class="pr num">'+(q.price!=null?('$'+fmtN(q.price)):esc(q.mcap||'—'))+'</div></div><div style="text-align:right">'+chg+'<div>'+sp+'</div></div></div>');
   });
   wm.insertAdjacentHTML('beforeend','<div class="hl num">快照 '+esc(D.market.asof)+' · 每日 06:30 自动更新 · 免费源延迟约15分钟</div>');
   const wc=document.getElementById('w-count');
