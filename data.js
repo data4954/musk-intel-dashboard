@@ -3,7 +3,7 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-06T20:44:25+08:00",
+  "generated_at": "2026-07-06T21:17:12+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
@@ -32,16 +32,16 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 61744.02,
-    "chg": 0.42,
+    "price": 61529.14,
+    "chg": 0.07,
     "src": "Yahoo 2026-07-06",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0755,
-    "chg": 1.96,
+    "price": 0.0746,
+    "chg": 0.67,
     "src": "Yahoo 2026-07-06",
     "status": "green"
    },
@@ -71,13 +71,13 @@ window.MUSKINTEL_DATA = {
    "BTC-USD": [
     {
      "d": "2026-07-06",
-     "c": 61744.02
+     "c": 61529.14
     }
    ],
    "DOGE-USD": [
     {
      "d": "2026-07-06",
-     "c": 0.0755
+     "c": 0.0746
     }
    ]
   }
@@ -742,6 +742,114 @@ window.MUSKINTEL_DATA = {
     ],
     "note": "R3 单源未交叉，C 级默认不进结论"
    }
+  },
+  {
+   "id": "NEWS-8f45bf034ee1",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 称全新 Tesla Roadster「大概率」将在 2026 年 4 月亮相",
+   "payload": {
+    "src": "Hypebeast CN",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMigwFBVV95cUxNM3ZRTDhuLXFzdE52QkFwRGk3VTlUekx5bkJubzAwb3AzeXRBX0ttbmtHNGFPOWp4dTV2QXhLN2w5TGhXczc3bU9vcFRUckJfbnpmcWF1VjNqNXpVMEhWdjlrcEp4eVhUczNHZURlYzFfZ3JXRHZzSExXWmVBYVRGTDhtOA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-5e3a68280d95",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX股东独家回应：合并突然且迅速，源于马斯克的巨大野心",
+   "payload": {
+    "src": "证券时报",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVYkxGdlhYeW9IYXNZbFZWUXJtZlg0MHZaRkk4aFgxdG9HY0lyVTYyRV94djFOYWxuMFdocXkwVnJLZ0ZJSWNTVzJHS1JqNkcwNUV1dmpFSVpQaVV0?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-32e3e54b67b2",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "电影音乐网站- 新闻 - Elon Musk Unveiled – The Tesla Experiment",
+   "payload": {
+    "src": "Film Music Site",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zcXNoZE12SFFfVVdfSngzQjJBc3BDa3BTRU14M210ZU1jbk1SYkRSZ1Uta19PSk1JOXlnaHNiNnlkcm1PRFI1RFVoOFFhZ2F6R2tlRVAzZktRQVlMSXFzczBHeXIxSkp6VVBGWFdCbjg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-b10f26f5b6b7",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克的SpaceX准备将100万颗AI算力卫星送入太空",
+   "payload": {
+    "src": "BBC",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5taks3eV9wUVE3N2V0dFF1UDFYb0dzRFc5X3BLR0R0WlpNSlJpWHVyeWlib2pHR3ZXT3NMU3BhcXM3ZmthTGhPdnlkTUJJWWpPTTV1M2xIYmlieFMzajFhYnZmSlhUd9IBa0FVX3lxTFB6aTJSUnRfVnVEaF96ZGxLeHZucVNMN1RPMFNMQmFnLWNHMmxJMHlXcG1OaERVRVA2TFU4RXRXRVhPdURaQVQtV3BZRlphTHFaeE5jd2V0U0FiNDV4MjU3RzVjWmZKU1VYajZR?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2f58be1606d5",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "尽管因 xAI 造成了 50 亿美元的损失，马斯克的 SpaceX 仍持有价值 6.03 亿美元的比特币",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcG1KRmNuMTNveHE1SlF4NUVRVzk5VzNzUlM4YlpyTExxaWh2NmxONTNsU2x1N2ZiaE5vR1JNMjlkeFVGeFlLNEo3cjluNTM4ZWs2NF9zNmlSRGRwdkdQMW1IS1RNRGJQd1JHYmFBaWNjdEctVVVlY1drODRwWUFtV0lpNHhIN0dveUVCdlNYSU1KNTJWcVZvOHNHUi1VbDhiQ0t1OTF1RjJiaGhyN3JIZHU1R25lVW5Zb3hPb0lQQ19Da1pzNWdJUFV2S3c5eW9BMGc?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-9ead97fbc3d1",
+   "type": "event",
+   "ts": "2026-07-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Leverage Shares将推出全球首只3倍做多SpaceX ETP，代码ELON/MUSK",
+   "payload": {
+    "src": "TradingView",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BRHFKaEUyXzQ2QTlaMHlGN21OUmJMMHN0ZVN2b3dXQTBoLXlwU0xUX2t2MFM2T1hnOVpnQWlndFM4VWVydk9UM0NsVzRpNm0wQ2hRQkxUTFNUek9iUFlFcS0wMm9QM1U?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
   }
  ],
  "countdowns": [
@@ -844,8 +952,8 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "待首轮自动更新",
-     "st": "yellow",
+     "v": "SpaceX 1831 · xAI 214 在招（2026-07-06；Tesla 无免费接口）",
+     "st": "green",
      "src": "Greenhouse API·每日自动"
     },
     {
@@ -919,7 +1027,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "中期金援投放中",
+     "v": "近90天无申报记录（截至 2026-07-06，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)"
     }
@@ -1280,18 +1388,22 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-06 20:44",
+  "last_run": "2026-07-06 21:17",
   "sources": {
    "yahoo": "green",
    "edgar": "red",
    "launchlib": "green",
-   "rss": "green"
+   "rss": "green",
+   "greenhouse": "green",
+   "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 1,
+   "edgar": 2,
    "launchlib": 0,
-   "rss": 0
+   "rss": 0,
+   "greenhouse": 0,
+   "fec": 0
   }
  },
  "launches": [
@@ -1473,6 +1585,54 @@ window.MUSKINTEL_DATA = {
    "ev": "C",
    "title": "Musk2011年火箭终局说|elon musk|spacex|波音|洛克希德|中国|猎鹰9号_新浪新闻 - 新浪网",
    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kalp1eC1kd3BoUXFDcmZ5Wnk5VUtzQkRiYlVkY2FMNUZSZkNUbk9Sc1ZscVBUcTZncEI5RXBLdV9jYUd2WU5oM1BnaHJtR0Y4bDE0Q1JzUWhrRndWYVQxaDhncw?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 称全新 Tesla Roadster「大概率」将在 2026 年 4 月亮相 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNM3ZRTDhuLXFzdE52QkFwRGk3VTlUekx5bkJubzAwb3AzeXRBX0ttbmtHNGFPOWp4dTV2QXhLN2w5TGhXczc3bU9vcFRUckJfbnpmcWF1VjNqNXpVMEhWdjlrcEp4eVhUczNHZURlYzFfZ3JXRHZzSExXWmVBYVRGTDhtOA?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX股东独家回应：合并突然且迅速，源于马斯克的巨大野心 - 证券时报",
+   "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVYkxGdlhYeW9IYXNZbFZWUXJtZlg0MHZaRkk4aFgxdG9HY0lyVTYyRV94djFOYWxuMFdocXkwVnJLZ0ZJSWNTVzJHS1JqNkcwNUV1dmpFSVpQaVV0?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "电影音乐网站- 新闻 - Elon Musk Unveiled – The Tesla Experiment - Film Music Site",
+   "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zcXNoZE12SFFfVVdfSngzQjJBc3BDa3BTRU14M210ZU1jbk1SYkRSZ1Uta19PSk1JOXlnaHNiNnlkcm1PRFI1RFVoOFFhZ2F6R2tlRVAzZktRQVlMSXFzczBHeXIxSkp6VVBGWFdCbjg?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克的SpaceX准备将100万颗AI算力卫星送入太空 - BBC",
+   "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5taks3eV9wUVE3N2V0dFF1UDFYb0dzRFc5X3BLR0R0WlpNSlJpWHVyeWlib2pHR3ZXT3NMU3BhcXM3ZmthTGhPdnlkTUJJWWpPTTV1M2xIYmlieFMzajFhYnZmSlhUd9IBa0FVX3lxTFB6aTJSUnRfVnVEaF96ZGxLeHZucVNMN1RPMFNMQmFnLWNHMmxJMHlXcG1OaERVRVA2TFU4RXRXRVhPdURaQVQtV3BZRlphTHFaeE5jd2V0U0FiNDV4MjU3RzVjWmZKU1VYajZR?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "尽管因 xAI 造成了 50 亿美元的损失，马斯克的 SpaceX 仍持有价值 6.03 亿美元的比特币 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcG1KRmNuMTNveHE1SlF4NUVRVzk5VzNzUlM4YlpyTExxaWh2NmxONTNsU2x1N2ZiaE5vR1JNMjlkeFVGeFlLNEo3cjluNTM4ZWs2NF9zNmlSRGRwdkdQMW1IS1RNRGJQd1JHYmFBaWNjdEctVVVlY1drODRwWUFtV0lpNHhIN0dveUVCdlNYSU1KNTJWcVZvOHNHUi1VbDhiQ0t1OTF1RjJiaGhyN3JIZHU1R25lVW5Zb3hPb0lQQ19Da1pzNWdJUFV2S3c5eW9BMGc?oc=5"
+  },
+  {
+   "ts": "2026-07-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Leverage Shares将推出全球首只3倍做多SpaceX ETP，代码ELON/MUSK - TradingView",
+   "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BRHFKaEUyXzQ2QTlaMHlGN21OUmJMMHN0ZVN2b3dXQTBoLXlwU0xUX2t2MFM2T1hnOVpnQWlndFM4VWVydk9UM0NsVzRpNm0wQ2hRQkxUTFNUek9iUFlFcS0wMm9QM1U?oc=5"
   }
  ],
  "persons": [
