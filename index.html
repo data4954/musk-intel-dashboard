@@ -331,14 +331,45 @@ political(){ return guard('政治与地缘', () => {
   tl+='</svg>';
   let h = '<div class="eyebrow">白宫—马斯克系关系周期（最新在前 · 完整周期可回测）</div><div class="card">'+tl+'</div><div class="card">';
   h += machR.map(m=>'<div class="phase"><div class="ph">'+esc(m.phase)+'</div><div class="sp num">'+esc(m.span)+'</div><div class="fx"><b>'+esc(m.facts)+'</b><div class="mut">'+esc(m.implication)+'</div></div></div>').join('');
-  h += '</div><div class="grid2"><div class="card"><h3>政治资本 · 资产端</h3>'+P.balance.assets.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div>';
-  h += '<div class="card"><h3>政治资本 · 负债端</h3>'+P.balance.liabilities.map(a=>'<div style="font-size:13px;padding:3px 0">· '+esc(a)+'</div>').join('')+'</div></div>';
-  h += '<div class="eyebrow">五视角深析（宏观 · 微观 · 政治经济学 · 博弈论 · 投资学 —— 同一组事实的五套透镜）</div>';
-  (D.pol_lens||[]).forEach(x=>{
-    h += '<div class="card"><h3>'+esc(x.lens)+'</h3>'
-      +'<div style="font-size:13px;line-height:1.85;color:#25282d">'+esc(x.mech)+'</div>'
+  h += '</div>';
+  h += '<div class="card" style="border-left:3px solid var(--text)"><div style="font-size:12.5px;line-height:1.7">'+esc(D.pol_note||'')+'</div></div>';
+  const clsColor={'制度性权力':'#171a20','关系性资本':'#3e6ae1','舆论性资本':'#a06a00','资本性杠杆':'#0a8754','地缘性筹码':'#d3212c'};
+  const cap=D.pol_capital||[]; const grp={}; cap.forEach(x=>{(grp[x.cls]=grp[x.cls]||[]).push(x);});
+  h += '<div class="eyebrow">政治资本存量表 · 资产端（五类 · 每项标来源事件/建立时间/可动用性/衰减时间常数）</div><div class="card"><table>'
+    +'<tr><th>类别</th><th>项目</th><th>来源(时间)</th><th>当前状态</th><th>可动用性</th><th>衰减</th><th>证据</th></tr>'
+    + Object.keys(grp).map(cls=>grp[cls].map((x,i)=>'<tr>'
+      +(i===0?'<td rowspan="'+grp[cls].length+'" style="vertical-align:top"><b style="color:'+(clsColor[cls]||'#333')+';font-size:12px">'+esc(cls)+'</b></td>':'')
+      +'<td style="font-size:12.5px"><b>'+esc(x.item)+'</b></td>'
+      +'<td style="font-size:11.5px" class="mut">'+esc(x.origin)+'<br><span class="num">'+esc(x.since)+'</span></td>'
+      +'<td style="font-size:12px">'+esc(x.state)+'</td>'
+      +'<td style="font-size:11.5px">'+esc(x.usable)+'</td>'
+      +'<td style="font-size:11px" class="mut">'+esc(x.decay)+'</td>'
+      +'<td>'+evChip(x.ev)+'</td></tr>').join('')).join('')
+    +'</table></div>';
+  h += '<div class="eyebrow">政治资本存量表 · 负债端（或有负债 · 触发条件 · 严重度）</div><div class="card"><table>'
+    +'<tr><th>负债项</th><th>触发条件</th><th>起始</th><th>严重度</th><th>机制</th></tr>'
+    +(D.pol_liab||[]).map(x=>'<tr><td style="white-space:nowrap"><b>'+esc(x.item)+'</b></td><td style="font-size:12px">'+esc(x.trigger)+'</td><td class="num mut">'+esc(x.since)+'</td>'
+      +'<td><b style="color:'+(x.sev==='高'?'var(--down)':x.sev==='中'?'var(--amber)':'#5c5e62')+'">'+esc(x.sev)+'</b></td><td style="font-size:12px">'+esc(x.note)+'</td></tr>').join('')
+    +'</table></div>';
+  h += '<div class="eyebrow">政治事件链（因果链 × 时间链 · 每链一条可回测传导路径）</div>';
+  (D.pol_chains||[]).forEach(ch=>{
+    h += '<div class="card"><h3>'+esc(ch.name)+'</h3>'
+      +'<div style="display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin:6px 0">'
+      + ch.nodes.map((n,i)=>'<div style="flex:1;min-width:120px;position:relative;padding:0 6px">'
+        +'<div class="num" style="font-size:11px;color:var(--accent);font-weight:700">'+esc(n.d)+'</div>'
+        +'<div style="font-size:12px;line-height:1.5;color:#25282d">'+esc(n.e)+'</div>'
+        +(i<ch.nodes.length-1?'<div style="position:absolute;top:6px;right:-4px;color:#c8c9cb">\u2192</div>':'')
+        +'</div>').join('')
+      +'</div>'
+      +'<div style="font-size:12.5px;margin-top:6px;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px"><b>链条启示：</b>'+esc(ch.read)+'</div></div>';
+  });
+  h += '<div class="eyebrow">专业分析五层（地缘政治风险 \u2192 委托代理 \u2192 重复博弈 \u2192 政治经济学 \u2192 政治风险定价 · 递进）</div>';
+  (D.pol_lens||[]).forEach((x,i)=>{
+    h += '<div class="card"><h3><span style="color:var(--accent)">'+(i+1)+'.</span> '+esc(x.lens)+'</h3>'
+      +'<div style="font-size:13px;margin-bottom:6px"><b>核心命题：</b>'+esc(x.claim)+'</div>'
+      +'<div style="font-size:12.5px;line-height:1.8;color:#25282d"><b>机制：</b>'+esc(x.mech)+'</div>'
       +'<div style="font-size:12.5px;margin-top:8px;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px"><b>当前判读：</b>'+esc(x.read)+'</div>'
-      +'<div class="mut" style="margin-top:6px">观测点：'+esc(x.watch)+'</div></div>';
+      +'<div class="mut" style="margin-top:6px;font-size:11.5px">依赖事件链：'+esc(x.chain)+' \uFF5C 阶段定位：<b style="color:var(--text)">'+esc(x.stage)+'</b></div></div>';
   });
   const stc={'顺风':'var(--up)','逆风':'var(--down)','中性':'#5c5e62','中性偏顺':'#3e6ae1','悬置':'#a06a00'};
   h += '<div class="eyebrow">政商联动传导矩阵（每条业务线吃哪根政治管道 · 断供状态 · 传导时滞 · 盯什么文件）</div><div class="card"><table>'
