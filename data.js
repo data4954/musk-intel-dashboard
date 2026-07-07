@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-07T07:35:30+08:00",
+  "generated_at": "2026-07-08T07:27:55+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-07",
+  "asof": "2026-07-08",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 419.77,
-    "chg": 10.55,
+    "price": 402.9,
+    "chg": -2.17,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-07",
+    "src": "Yahoo 2026-07-08",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 160.42,
-    "chg": 4.69,
+    "price": 149.47,
+    "chg": -8.97,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-07",
+    "src": "Yahoo 2026-07-08",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64097.81,
-    "chg": 4.25,
-    "src": "Yahoo 2026-07-07",
+    "price": 63601.24,
+    "chg": 1.69,
+    "src": "Yahoo 2026-07-08",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0768,
-    "chg": 3.66,
-    "src": "Yahoo 2026-07-07",
+    "price": 0.0744,
+    "chg": -3.99,
+    "src": "Yahoo 2026-07-08",
     "status": "green"
    }
   ],
@@ -55,6 +55,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-07",
      "c": 419.77
+    },
+    {
+     "d": "2026-07-08",
+     "c": 402.9
     }
    ],
    "SPCX": [
@@ -65,6 +69,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-07",
      "c": 160.42
+    },
+    {
+     "d": "2026-07-08",
+     "c": 149.47
     }
    ],
    "BTC-USD": [
@@ -75,6 +83,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-07",
      "c": 64097.81
+    },
+    {
+     "d": "2026-07-08",
+     "c": 63601.24
     }
    ],
    "DOGE-USD": [
@@ -85,6 +97,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-07",
      "c": 0.0768
+    },
+    {
+     "d": "2026-07-08",
+     "c": 0.0744
     }
    ]
   }
@@ -1865,6 +1881,386 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNV1Bfak5uazdqVGhnQmhqTzVTMnREazJxVjVJakkzZTRwakFBVFBZRFNRQ01mRzVwcDFXS2NwXzNLR1g2N2x0dVpSWjFPODUyMUJGRVk5NU85SlQtdExDVVVwZm5JMW1HNmZ5djdOZkJBYUQzWFYyUEdwWlRnaDMxaWhsZFJJeklSc0g4MUJhWDZxaWt6c1ZMeldnbVdhUTNMYUNsU085SUs1X1M4Q1lSX2Y1Q1RCMjRmVmQ2LWdQdUlXa0V5bTFERkRDclJNYnc1aXZqcGJwRzhHVG91M1Y2eWhkU2FOOHRZc3dJ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d4b79574a7ac",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX连跌三天 马斯克身家缩水逾3000亿美元",
+   "payload": {
+    "src": "联合早报",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wTWlkbUFoQU1BVU9XdXBpY3A1ZERJRVhhaTZPYTNwUTQ0WF96ZVFDdERBRmQwdWdfTER6U3d0R0xHUTZzVDJobWwwOFR3YU9uSllIM0RHLUx5X09waVN3dllLU0NMQWNmcHM4UUhB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-29cf05afe286",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Bitget在Solana平台上率先推出SpaceX的Pre-IPO代币，向大众开放",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ2U2R3JZY2Zyc3JTMjRyLXFfZTZIUlh5dU16NmxiWkYyZm5remQyQnhUQXd1YlNJLTlVU3FhS3ZvbkRhM2tFU1JtTlp2dnU2R3lEVlJ1Y2RIMVRiQ2hWOWJicWZoa1F6N3luX3lrQWZUM3ZseHJVVEVOTFFlc0FTenpkZGVzd3FyZ1V5THBwQ3cyZEREeXBObzZ2ZjFKcG85V0JhUUM3clFyanBSWEVGdkljVlBGTGYyOFVzd0o5VDdMUkxY?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-559ac1d1dbd7",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克集团化整合SpaceX、xAI大赚一笔 每年节省近10亿美元利息 - 人物 - Elon Musk",
+   "payload": {
+    "src": "cnBeta.COM",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4dzlqcXFuSlNPWUlwa3N2U1NVZk10N0NlUGRuRnlZQ0NxZDdEcktnd0pOY01fZTZhNF9fdkV2RWhqV2xXT2JQcWJ0cy00amx0WjVzRmNTTTgwWndicVRVNw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-0abafd42cc2d",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克（Elon Musk）将所有“X”合并，SpaceX收购xAI和X，估值突破10万亿印尼盾",
+   "payload": {
+    "src": "VOI.id",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlVjczhuMU42MFpzczB5ek5oNU0tSjQtZ2ZyUHlXRTVsZkt3M1dBTWpxRTd4UWV1VzV2OVN3emQwZ3FnZEVUOFNFamNmVHPSAUJBVV95cUxOaFE4VzIyaGJFOTVIX0xTMWlkYWtGdmtaS0dTclJvLU5lZ3FobEhQLTNpMHhKMVFrakhpcXhlXzJqQmc?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-198e820f040c",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力|SpaceX|Twitter|卫星|数据中心|在轨_手机新浪网",
+   "payload": {
+    "src": "新浪财经",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUmliWFlsQWZxLUN6b2ZUaG1maGZyVXUyTTl1Ynk2NnJaMWtuTjA1WkJ6X1lFdDZSanFfNVQtUlJlNzB0Z3B5LXVUZWpWWU1ZbmpRODBtajBIaGdHS2gyODRHZmEzTENwdkpGYmtxbktZNVJHQ29GMHBTWERCZUVfR0U5Zno1Z2M?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-7cdb81271b11",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "北卡罗来纳州财政部长放弃投资SpaceX，指其估值太贵",
+   "payload": {
+    "src": "TradingKey",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0Vya0FXSmpwZDF0bWc3NmZyZUtyNEt4VWNHSlVCOHUwbWJidnhfeTlYMzFCWnk5MV9kRjRfT3VvZjV0bi1aTDJJdmNOblluRV9nWUdITVU3WjFnREMtZDg5WjlncDIyeUxjcGYzSFdvWjJTcXo0LVVoa3haeTZTVmY3UTdHUEp2b2pPa20wSWFaMGEycnFyUkM4THVFX254dUFqRmo4NXlaZ1hpWXRYRW9XcGNUdTMwQTc1Vlo4c1MyTEg2?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-29c7f14eaad5",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克的“另类”慈善：2024年捐款创纪录 但大部分捐给了“自己”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBkUGdSN3dndmNQUndNTEo0bHpNQ3ExeEZROHIwVk9MelVlcHFsY2p2dmxuZ0tPalFIY09ONVhiejBacC0zOVJqOGEtZy1EeVdPWlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3d52d61d3cf8",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "1个孩子1500万美元封口费 美媒揭露马斯克的“宝宝军团”愿景",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82ZGFjaXl1QWQtOXpZYUd6eHJaUmZnX3AtVmgzSDkzVVBzdXRYN25wcXhCaVpFbkdxTDhkRjVxSFl3RjdFMEpOaQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-02e250e3c2b7",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "爱泼斯坦案│ 马斯克弟弟名字出现140次 已辞去火人节董事会职务",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcXhra1p1M09FQ3d1djhMWGlrdS14UEFxOGlrc0J5eS1SX3JPLVRxMnVyTFdnOEdkcTZGUTBES2p1cElIUGMyZTVPVDk0WlNqSTBjME5pM0pGRW1OZm05RlNjY2RmVFBCNC1WQTYxbnp6T05KdVhrLXBiZHp4bktPN1pMRjNZU1hfTDJyR285U0ItVjBJWFFyaUIwbUkycFJWM3Q0VlVYOFpkZjVpcWlpZmt0X2RrUzgxNm02VnFvLWhOYWNQemV6SllZVnEwY0pyX1UtYTE5enotU2hXMDF1R0FvRjI2Y0NpR3N1UXl4emRFQ0hIYzVLb3Z3NE41ZnRDNjRueGllNUdVU0JSZXFHSm5halNIbTNmSnR0MFlqbUxqNEt4bVprLVdxOHN1UnRHbTZtS1lTYVhfU0wxUzR0Uk9VRzVhZmxQVGpEeEZseW1pT1NmREJiTlFvVkNjaTRRcWhPaXlQX21UTS1IMHMybmZZZ3FSMzNnYnVDZDVqV180a0tHRzF6OEwzdG5XQlZ6MjBTRktLOUIwRS0xc3hTUWVvRWRWSEF1NDRaSHo0RWFCTV9FMzl0Xw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6b6deee332fd",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克的一家：妈妈、弟弟、妹妹埃隆·马斯克（Elon Musk）的弟弟金巴尔·马斯克（Kimbal Musk，1972年9月20日），妹妹Tosca Musk(1974年7月20日)。都是在南非德兰士瓦省比勒陀利亚出生长大，后来移民加拿大。妈妈Maye Musk金巴尔身兼餐馆老板、厨师和企业家，",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80SkNpSDRmc3FPMWpOLWVvUGMzUVY5VXRCWkV3S3lBZm9mQVQ0WkZPbUFvNlJ0LUgwbkZ0dHFKbEpOTmZTa2J0STQxWi14Z3VYeHFDNkVDRjZ3cEN4SU1OcE5lZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2fdd28d2fcfd",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文创始人净资产飙升至3000 亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirANBVV95cUxObDYyZl91Sng1YVVySTRqdFozU3h0VkxpclVVYnBGSXNDZnI0cjZnSVd1TzVZSS02Z2VuYnVlem9NNzhUYnl2b2VBOTl0UTcxVmdacHNMQWFGSnNSUW1QekhQZUNDem5pdUl0dHp4bW11NkVoNGJtS296Z2FjNi12OW5ja3FtQVp5a01MbkFvSlZRTC16ZGd4Rk51bi1YQVZxZFNJTUM3ZVRxenRGTTU2d012Z3JmUWVQZzNDWVZfTDdLR3pBcE5wd214SGhTUG1JdjF2MEhjNDZDQ0QxcVloSF9PRU9YSllIWGpmWFhJbWd5OFdXbWNkNmJTOVdxU2dxalVjXzlxLUZjeUlEMFRYNjJ3eDRPd1BlWGNYNXNwNi1YcFh3OEM0OHFtTC1GNTRqbEk4akZwNVh3QUlHMHUxTGNGMzE1RW9odWZpbXBaVGJUZWdEOUExNkJRT3NiY0lwSVYyeDFRbmhPbURVQ0ZfVjd0MXg3NnZ6cDJ3SUVGQmZvMks2MlpVWVNEb3lXNDVweHV5bDJkWDJGUkhUclBhelNsSTlnVTlQRmxLTQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-391bcfdc082f",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "好莱坞洗牌时刻？华纳兄弟探索董事会偏爱的奈飞，对上甲骨文埃里森“父子兵”……",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5aMzhrYlE2R1llQTVWMnotbXJvdjB5Sk5HNWpyYWxiMlFQN3FzRWJJZVEwOU9TZXlnZHBWOTA0T29LOHZycG5FU1FBMHQ1aGYyVkNFMElyTFF0eXQz?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-74ad7e854a36",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "郑丽文会见David Sacks_新浪新闻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5XZjl0WTRxVm9TZ2NFN1IxV1dMYkxONk1abURidkZTQlltQmVQdC1odm9wZU96QnBXT2tabUFIckdSanJSQ0hmRTk4cFVhYWdlbEVhNlZhdnBVZDF2YXEzNG5Pdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d4366797e9c7",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "OpenAI“大而不能倒”？，Altman“不寻求财政支持”，“AI沙皇”：AI公司倒了就倒了，美国政府不会救",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xZGltUW1VOVJlLWYyOHMtYl9vOTlva3JVbmhBUEpkVUJqeEtyQjhLeUk0S2duWGc5eFhuM3JFdVZ4SlZQbm9faTZKajQwb0djYXNV?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bce1eb808031",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "全文稿| Founders Fund 谈论探求真理、台湾以及你是否仍能跑赢标普 500 指数 | 第 53 期 ​",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9OOEdydW50RHM1MjhaWkZUazZVNGVEWEUzbVU3Uzh6R0xtbGhVNzRHam1XX3BFUmkzMG5yc0RuOFFLQ19EbXVsV2FXOXdrLVFiRk93dXZManRWckdIUWJWb3Nzaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-06efae456a1f",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "马斯克贵人投了，SpaceX一笔回报4000倍",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQWnZseHUyX2s3YkNLaFBtYlNiMGxZcXhONWJwUE54bUNobmRYWWYzb3RlaFNpSFNXVDhGR0JUbGFNVjFSNkM4cFliN3RhNDZ2S19lOXp4THBWbDQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-83131aa7a4f3",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "当一家名为a16z的VC，不再想继续成为VC（一）",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUFZwV3ExRWxndXFwZ1pwVWNqNy1oNE8zRmFwNnVRLTZ1cHJmbHVFX051a2xHUklKaFcwYnBDVUVGZjlKNXF6X1FuOUo5YVJpYWlmSUZNN1RFWFR0SFRxdWhJNUM5X180NzU4VnRNR1BJNC1KNF90N2NnZ3lUYWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab7e430dc432",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z联创发文讽刺回应美国AI监管：极端对立叙事中的“双重立场”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QYmJ2dlg1U3R0UG5VMUowMXcyamtOWVBsSlQ2eFI5RE0yY2NMaHl5M0txUXM2ZWlWdTRxYVB1djdfaV9kTTdsMXJqZ24zMlB6b2FnWUdNMUpxeVdYcVVKNDV6OVRNeU0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a10f99530134",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "BlackRock（贝莱德）：知耻而后勇，奋起直追。投资家Ronald Stephen Baron（罗纳德·斯蒂芬·巴伦...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQTktSTc3Z0xHMFpIQ2IzZl9ubDhUTGFSZlNteVpXQTBnVXhBWFhERDJwUnBjekJpU1QtMEhVUmI4LVV5eHNkSHNzRUdfZFVWeFJ0V0Zsb1hIXy1BU251ak80ZUpCaGlmSHQ3eUx1bHVjdkR1WjNMRHdnNWNZVUxnU0FnLV9UOWItTVdCUlVmTHB0eWVERmxhUUZvSGViQV9Sb3hyN3N4dlNwRkVpaXFDUGNSQmlFbDQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fdf898d5b3e0",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：大幅买入X-Energy与国防股Kratos，显著减持Strata关键医疗",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZ18zNXJzVG8wTURNa3RFdzVxZEphUVdEUnNUMy1VNlFjaGRGQVhSRWdTOXlsVHowTGdRUnJFQWxwaTVVMnNPZ2NBaFQ4T3NVMThCR1NvUGYtNjhZZVlUcTU5dGVkWU4wd0hpZlpJalAzRWVGWE9RRC1mMy12Uk54cUNYRk1vTlBjRmV3S3ZnLVZlQm5GRmE4YWZqczFHeVI3SHloY2JxZXlhVXlZV2pxMHJUV0NscUU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fab3ff988061",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood: Ark Invest təxminən 38,1 milyon dollar dəyərində “Tesla” səhmləri alıb",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vTFVCSU9peXprTGFMTm04bXZzT0pocFJ1d0xkTmpVaDdPQXQzV0ZLNUMtenJzbjZTZHczcWtSa2duZEJNVEVLUXhQSmcwczE0Ni04ZFZlbzlaaXB6VWYwSFZKa1lRcmxi?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a3ea82f779bc",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel创始人肯·格里芬：穿越当今黑天鹅的亿万富豪操盘手",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2S2cwQVVIVURjbEpiNTZGeFRaOWFhQXJhVUJuTEpGOVZhM0NDQzJzNl9ZTlMtNnZiQ1ItUThRMFJBWEJUa0JyckpUalE3ZzRSQlI5WklRVkIzdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ca6ee0373b5a",
+   "type": "event",
+   "ts": "2026-07-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel创始人Ken Griffin向哈佛大学捐赠3亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOOU0yZXNyNGduc2hkWFl4QkRlOTh2eTdCaS0teE1rNkdpZzAxWEJ2WVAyVUQ4TGJWaHR0VnBTLWpvU1JUdXpTdm5ZakkxMHFXanJsVUtMbmsxUUlHbE9aTW1rQW10RWI1a2VkaGNoaGY1VVhZUzRwY3RkQ1NDS0NXTFdZc2I0bVRxMHZRUjdzS0drd2VrdHZLLVZRMmtKY2QwUE5obnFveVR6cGlwRUhDeHhxWXI0bDJ3cWNXTzhORlVjVFJCZXJyYUJEUUhTYmk1NXdxd0xmbTF2bmhtdW56WWZMbnVBZjFVa2JpWG1SZDFuN3lUWWRPS3BGYW5SY0U1d0t0c3UxLTNzT2tLWWYtVi1Xcw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -1967,7 +2363,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1834 · xAI 212 在招（2026-07-07；Tesla 无免费接口）",
+     "v": "SpaceX 1840 · xAI 212 在招（2026-07-08；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -2071,7 +2467,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-07，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-08，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -2547,20 +2943,20 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-07 07:35",
+  "last_run": "2026-07-08 07:27",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
    "launchlib": "green",
-   "rss": "red",
+   "rss": "green",
    "greenhouse": "green",
    "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 7,
+   "edgar": 8,
    "launchlib": 0,
-   "rss": 1,
+   "rss": 0,
    "greenhouse": 0,
    "fec": 0
   }
@@ -2568,8 +2964,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Transporter 17 (Dedicated SSO Rideshare)",
-   "net": "2026-07-07T07:10:00Z",
-   "status": "Go for Launch"
+   "net": "2026-07-07T07:12:00Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 10-42",
@@ -2999,6 +3395,62 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 18 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX连跌三天 马斯克身家缩水逾3000亿美元 - 联合早报",
+   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wTWlkbUFoQU1BVU9XdXBpY3A1ZERJRVhhaTZPYTNwUTQ0WF96ZVFDdERBRmQwdWdfTER6U3d0R0xHUTZzVDJobWwwOFR3YU9uSllIM0RHLUx5X09waVN3dllLU0NMQWNmcHM4UUhB?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Bitget在Solana平台上率先推出SpaceX的Pre-IPO代币，向大众开放 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ2U2R3JZY2Zyc3JTMjRyLXFfZTZIUlh5dU16NmxiWkYyZm5remQyQnhUQXd1YlNJLTlVU3FhS3ZvbkRhM2tFU1JtTlp2dnU2R3lEVlJ1Y2RIMVRiQ2hWOWJicWZoa1F6N3luX3lrQWZUM3ZseHJVVEVOTFFlc0FTenpkZGVzd3FyZ1V5THBwQ3cyZEREeXBObzZ2ZjFKcG85V0JhUUM3clFyanBSWEVGdkljVlBGTGYyOFVzd0o5VDdMUkxY?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克集团化整合SpaceX、xAI大赚一笔 每年节省近10亿美元利息 - 人物 - Elon Musk - cnBeta.COM",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4dzlqcXFuSlNPWUlwa3N2U1NVZk10N0NlUGRuRnlZQ0NxZDdEcktnd0pOY01fZTZhNF9fdkV2RWhqV2xXT2JQcWJ0cy00amx0WjVzRmNTTTgwWndicVRVNw?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克（Elon Musk）将所有“X”合并，SpaceX收购xAI和X，估值突破10万亿印尼盾 - VOI.id",
+   "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlVjczhuMU42MFpzczB5ek5oNU0tSjQtZ2ZyUHlXRTVsZkt3M1dBTWpxRTd4UWV1VzV2OVN3emQwZ3FnZEVUOFNFamNmVHPSAUJBVV95cUxOaFE4VzIyaGJFOTVIX0xTMWlkYWtGdmtaS0dTclJvLU5lZ3FobEhQLTNpMHhKMVFrakhpcXhlXzJqQmc?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力|SpaceX|Twitter|卫星|数据中心|在轨_手机新浪网 - 新浪财经",
+   "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUmliWFlsQWZxLUN6b2ZUaG1maGZyVXUyTTl1Ynk2NnJaMWtuTjA1WkJ6X1lFdDZSanFfNVQtUlJlNzB0Z3B5LXVUZWpWWU1ZbmpRODBtajBIaGdHS2gyODRHZmEzTENwdkpGYmtxbktZNVJHQ29GMHBTWERCZUVfR0U5Zno1Z2M?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "北卡罗来纳州财政部长放弃投资SpaceX，指其估值太贵 - TradingKey",
+   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0Vya0FXSmpwZDF0bWc3NmZyZUtyNEt4VWNHSlVCOHUwbWJidnhfeTlYMzFCWnk5MV9kRjRfT3VvZjV0bi1aTDJJdmNOblluRV9nWUdITVU3WjFnREMtZDg5WjlncDIyeUxjcGYzSFdvWjJTcXo0LVVoa3haeTZTVmY3UTdHUEp2b2pPa20wSWFaMGEycnFyUkM4THVFX254dUFqRmo4NXlaZ1hpWXRYRW9XcGNUdTMwQTc1Vlo4c1MyTEg2?oc=5"
+  },
+  {
+   "ts": "2026-07-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 17 条（明细见各人物卡）",
    "src": ""
   }
  ],

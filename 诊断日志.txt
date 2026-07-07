@@ -35,3 +35,8 @@
 [2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Cathie%20Wood%22&hl=zh-CN&gl=CN&ceid=CN: : HTTP Error 503: Service Unavailable
 [2026-07-07 07:35] 抓取失败 https://news.google.com/rss/search?q=%22Ken%20Griffin%22%20Citadel&hl=zh-CN&gl=C : HTTP Error 503: Service Unavailable
 [2026-07-07 07:35] 更新成功。账本 89 条，本轮审计 0 条
+[2026-07-08 07:27] 抓取失败 https://data.sec.gov/submissions/CIK0001318605.json : HTTP Error 403: Forbidden
+[2026-07-08 07:27] 熔断: edgar 连续 8 次失败，进周报头条
+[2026-07-08 07:27] 新闻: 40 条原始 → 40 簇 → 入库 6 条（上限6）
+[2026-07-08 07:27] 人物动态: 新入库 17 条（C级，按人物tag挂卡）
+[2026-07-08 07:27] 更新成功。账本 112 条，本轮审计 7 条
