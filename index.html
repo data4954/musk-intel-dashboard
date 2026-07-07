@@ -239,6 +239,20 @@ feed(){ return guard('纵览', () => {
     }).join('')
     +'<path d="M 778 74 Q 460 108 78 70" stroke="#b6bcc3" stroke-width="1.3" fill="none" stroke-dasharray="4 4"/>'
     +'<text x="460" y="90" text-anchor="middle" font-size="9.5" fill="#8a8d91">冲正与人工判定回流账本</text></svg></div>';
+  // 主脉络地图：两上市主体 × 业务线 × 约束态——进站第一眼就能定位"这是谁家的什么"
+  const scByOwner={TSLA:[],SPCX:[]};
+  (D.scissors||[]).forEach(x=>{ if(scByOwner[x.owner]) scByOwner[x.owner].push(x); });
+  const stColor=st=>/★/.test(st)?'#0a8754':/[✗⚠]/.test(st)?'#d3212c':'#3e6ae1';
+  const compCard=(sym,name,color)=>'<div class="card" style="border-top:3px solid '+color+'">'
+    +'<div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="font-size:16px">'+sym+' <span class="mut" style="font-weight:400;font-size:12px">'+name+'</span></h3></div>'
+    +'<div style="display:flex;flex-direction:column;gap:5px;margin-top:6px">'
+    + scByOwner[sym].map(x=>'<div style="display:flex;align-items:center;gap:8px;font-size:12.5px;padding:4px 8px;background:rgba(23,26,32,.02);border-radius:6px">'
+        +'<span style="width:9px;height:9px;border-radius:50%;background:'+stColor(x.state)+';flex-shrink:0"></span>'
+        +'<b style="min-width:96px">'+esc(x.line)+'</b><span class="mut" style="font-size:11.5px">'+esc(x.state)+'</span></div>').join('')
+    +'</div></div>';
+  h += '<div class="eyebrow">主脉络地图（帝国=两家上市公司 · 每家几条业务线 · 灯色=当前约束态 · 一眼定位"这是谁家的什么"）</div>';
+  h += '<div class="grid2">'+compCard('TSLA','Tesla · 车/储能/FSD/Optimus','#cc0000')+compCard('SPCX','SpaceX · 发射/Starlink/算力xAI','#3e6ae1')+'</div>';
+  h += '<div class="mut" style="font-size:12px;margin:0 2px 6px">读法：<b style="color:#cc0000">红轴=TSLA</b>（消费+制造+自动驾驶主线）｜<b style="color:#3e6ae1">蓝轴=SPCX</b>（航天+卫星+算力主线）。●绿=供给约束(扩产即增利)｜●蓝=双增长/垄断｜●红=需求约束或供给缺口(证伪点)。下面每个板块的数据，都归到这两条主脉络之下。</div>';
   h += '<div class="eyebrow">当前系统判定快照（各板块结论的交汇点，细节进对应页）</div><div class="grid3">'
     +'<div class="metric"><div class="k">政治时钟（风险乘数）</div><div class="v">'+esc(phase.phase||'未核')+'</div><div class="s">距中期选举 '+dMid+' 天 · 头号二元事件</div></div>'
     +'<div class="metric"><div class="k">最净主线（供给约束★）</div><div class="v" style="font-size:16px">'+esc(clean.join(' · ')||'—')+'</div><div class="s">扩产即增利，只盯产能节点</div></div>'
@@ -256,10 +270,10 @@ feed(){ return guard('纵览', () => {
     : (r.tags||[]).includes('news') ? ['消息','#8a8d91'] : ['事件','#171a20'];
   const cutoff = new Date(Date.now()-182*86400000).toISOString().slice(0,10);
   const recent = rows.filter(r=>r.ts>=cutoff);
-  h += '<div class="eyebrow">事件时间线（近 6 个月 · '+recent.length+' 条 · 最新在前 · 色点分类 · A/B 进结论，C 仅记录）</div>';
+  const _ff = (window.__feedFilter=window.__feedFilter||{"事件":1,"资本流":1,"人物":1,"承诺":1,"消息":0});h += '<div class="eyebrow">事件时间线（近 6 个月 · 点分类标签筛选 · 最新在前）</div>';h += '<div class="card" style="padding:10px 12px 4px">'+[["事件","#171a20"],["资本流","#3e6ae1"],["人物","#a06a00"],["承诺","#d9a514"],["消息","#8a8d91"]].map(function(c){return '<span onclick="window.__feedFilter[\''+c[0]+'\']=window.__feedFilter[\''+c[0]+'\']?0:1;render(\'feed\')" style="cursor:pointer;user-select:none;display:inline-block;margin:0 6px 8px 0;padding:3px 11px;border-radius:14px;font-size:12px;font-weight:600;border:1px solid '+c[1]+';'+(_ff[c[0]]?('background:'+c[1]+';color:#fff'):('background:#fff;color:'+c[1]+';opacity:.55'))+'">'+(_ff[c[0]]?'\u25cf ':'\u25cb ')+c[0]+'</span>';}).join('')+'<span class="mut" style="font-size:11px;margin-left:4px">默认隐藏「消息」类噪音，点亮可显示</span></div>';
   h += '<div class="card" style="padding:6px 10px 4px"><div class="mut" style="font-size:11px;margin:4px 0 8px">分类：<span style="color:#171a20">●事件</span> <span style="color:#3e6ae1">●资本流</span> <span style="color:#a06a00">●人物</span> <span style="color:#d9a514">●承诺</span> <span style="color:#8a8d91">●消息</span>　更早 '+(rows.length-recent.length)+' 条存于账本</div>';
   let curM='';
-  recent.forEach(r=>{
+  recent.filter(r=>_ff[cat(r)[0]]).forEach(r=>{
     const m=r.ts.slice(0,7);
     if(m!==curM){ curM=m; h+='<div style="font-size:11.5px;font-weight:800;letter-spacing:.1em;color:var(--dim);margin:14px 0 4px;padding-top:8px;border-top:1px solid var(--line)">'+m+'</div>'; }
     const p=r.payload||{}; const [cn,cc]=cat(r);
@@ -285,9 +299,11 @@ graph(){ return guard('关系图谱', () => {
   const colOrder=['person','family','company','absorbed','capital','political','regulator'];
   const colX={person:70,family:190,company:340,absorbed:340,capital:490,political:610,regulator:610};
   const colName={person:'人物',family:'家族层',company:'商业实体',absorbed:'已并入',capital:'主权资本',political:'政治',regulator:'监管'};
-  const ys={}; const posE={};
-  et.forEach(e=>{ const x=colX[e.type]||340; ys[x]=(ys[x]||30)+52; posE[e.id]={x:x, y:ys[x]}; });
-  const H=Math.max(...Object.values(ys))+40;
+  const cols={}; et.forEach(e=>{ const x=colX[e.type]||340; (cols[x]=cols[x]||[]).push(e); });
+  const GAP=42, maxN=Math.max(...Object.values(cols).map(a=>a.length)); const H=36+maxN*GAP+16;
+  const posE={};
+  Object.keys(cols).forEach(x=>{ const arr=cols[x]; const startY=36+(maxN-arr.length)*GAP/2+GAP/2;
+    arr.forEach((e,i)=>{ posE[e.id]={x:+x, y:startY+i*GAP}; }); });
   const kcol=k=>/股权/.test(k)?'#3e6ae1':/资金/.test(k)?'#0a8754':/监管/.test(k)?'#d3212c':/政治|恩惠|人质/.test(k)?'#a06a00':'#b6bcc3';
   let gsvg='<svg viewBox="0 0 700 '+H+'" style="width:100%;max-width:900px;display:block;margin:0 auto" role="img" aria-label="实体关系图">';
   [...new Set(Object.values(colX))].forEach(x=>{ const t=Object.keys(colX).find(k=>colX[k]===x); gsvg+='<text x="'+x+'" y="18" text-anchor="middle" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(colName[t]||'')+'</text>'; });
@@ -295,8 +311,8 @@ graph(){ return guard('关系图谱', () => {
     const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.y-a.y, dy=a.x-b.x, L2=Math.hypot(dx,dy)||1;
     gsvg+='<path d="M '+a.x+' '+a.y+' Q '+(mx+dx/L2*14)+' '+(my+dy/L2*14)+' '+b.x+' '+b.y+'" fill="none" stroke="'+kcol(e.kind)+'" stroke-opacity="'+(e.ev==='A'?0.8:0.45)+'" stroke-width="'+(e.ev==='A'?1.7:1.2)+'"/>'; });
   et.forEach(e=>{ const p=posE[e.id];
-    gsvg+='<g><rect x="'+(p.x-52)+'" y="'+(p.y-13)+'" width="104" height="26" rx="13" fill="#fff" stroke="#c9ccce"/>'
-      +'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="10" font-weight="600" fill="#171a20">'+esc(e.name.length>9?e.name.slice(0,9)+'…':e.name)+'</text></g>'; });
+    gsvg+='<g><rect x="'+(p.x-48)+'" y="'+(p.y-11)+'" width="96" height="22" rx="11" fill="#fff" stroke="#c9ccce"/>'
+      +'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9.5" font-weight="600" fill="#171a20">'+esc(e.name.length>8?e.name.slice(0,8)+'…':e.name)+'</text></g>'; });
   gsvg+='</svg>';
   let h = '<div class="eyebrow">实体关系图（列=层级 · 边色：<span style="color:#3e6ae1">股权</span>/<span style="color:#0a8754">资金</span>/<span style="color:#d3212c">监管</span>/<span style="color:#a06a00">政治</span> · 深=A级）</div><div class="card">'+gsvg+'</div>';
   h += '<div class="eyebrow">节点（商业实体 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
@@ -305,10 +321,19 @@ graph(){ return guard('关系图谱', () => {
   for(const t in groups){
     h += '<div class="card"><h3>'+esc(typeName[t]||t)+'</h3>'+groups[t].map(e=>'<div style="font-size:13px;padding:3px 0"><b>'+esc(e.name)+'</b><div class="mut">'+esc(e.note||e.status||'')+'</div></div>').join('')+'</div>';
   }
-  h += '</div><div class="eyebrow">边明细（'+ed.length+' 条 · 按日期倒序 · 每条带时间/金额/证据/来源）</div><div class="card"><table><tr><th>日期</th><th>传导</th><th>类型</th><th>内容</th><th>证据</th></tr>';
-  const edSorted = ed.slice().sort((a,b)=>String(b.date||'0').localeCompare(String(a.date||'0')));
-  h += edSorted.map(e=>'<tr class="edge-row"><td class="num mut" style="white-space:nowrap">'+esc(e.date||'长期')+'</td><td>'+esc((byId[e.from]||{}).name||e.from)+' → '+esc((byId[e.to]||{}).name||e.to)+'</td><td>'+esc(e.kind)+'</td><td>'+esc(e.label)+'</td><td>'+evChip(e.ev)+'<div class="mut" style="font-size:11px">'+esc(e.src||'')+'</div></td></tr>').join('');
-  h += '</table></div>';
+  h += '</div><div class="eyebrow">关系边明细（'+ed.length+' 条 · 按类型分组 · 组内按日期倒序）</div>';
+  const EK=[['股权','#3e6ae1','股权穿透'],['资金流','#0a8754','资金流向'],['监管管辖','#d3212c','监管管辖'],['政治恩惠','#a06a00','政治'],['关联交易','#a06a00','关联交易'],['人质依赖','#a06a00','人质依赖'],['根基','#8a8d91','根基'],['股权','#8a8d91','其他']];
+  const seen={};
+  [['股权','#3e6ae1'],['资金流','#0a8754'],['监管管辖','#d3212c'],['政治恩惠','#a06a00'],['关联交易','#5c5e62'],['人质依赖','#5c5e62'],['根基','#8a8d91']].forEach(function(g){
+    const items=ed.filter(e=>e.kind===g[0]).sort((a,b)=>String(b.date||'0').localeCompare(String(a.date||'0')));
+    items.forEach(e=>seen[e.from+e.to+e.kind]=1);
+    if(!items.length) return;
+    h+='<div class="card"><h3 style="color:'+g[1]+'">'+esc(g[0])+' <span class="mut" style="font-weight:400;font-size:12px">'+items.length+' 条</span></h3><table>'
+      +items.map(e=>'<tr><td class="num mut" style="white-space:nowrap;width:66px">'+esc(e.date||'长期')+'</td><td style="white-space:nowrap"><b>'+esc((byId[e.from]||{}).name||e.from)+'</b> → <b>'+esc((byId[e.to]||{}).name||e.to)+'</b></td><td>'+esc(e.label)+'</td><td>'+evChip(e.ev)+'</td></tr>').join('')
+      +'</table></div>';
+  });
+  const rest=ed.filter(e=>!seen[e.from+e.to+e.kind]);
+  if(rest.length){ h+='<div class="card"><h3 class="mut">其他 '+rest.length+' 条</h3><table>'+rest.map(e=>'<tr><td class="num mut" style="white-space:nowrap;width:66px">'+esc(e.date||'长期')+'</td><td><b>'+esc((byId[e.from]||{}).name||e.from)+'</b> → <b>'+esc((byId[e.to]||{}).name||e.to)+'</b></td><td>'+esc(e.kind)+' · '+esc(e.label)+'</td><td>'+evChip(e.ev)+'</td></tr>').join('')+'</table></div>'; }
   h += '<div class="card"><h3>核心传导链（点读版路径追踪 · 每条标事件时间与状态）</h3>'+
     '<div class="mut" style="font-size:12px;margin-bottom:8px">⚠ 投资提示：链条是<b>结构关系</b>不是实时信号。数字（如 $2B、0.1433 换股）为对应事件<b>发生时</b>的历史值，非当前；据此决策前请回市场资本页看当日行情与承诺库最新状态。</div>'+
     '<div style="font-size:13px;line-height:1.95">'+
@@ -399,14 +424,16 @@ leading(){ return guard('先行引擎', () => {
       h+='<circle cx="'+x+'" cy="'+y+'" r="6" fill="'+c+'"/><text x="'+x+'" y="'+(y+3)+'" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">'+(j+1)+'</text>'
         +(j<7?'<line x1="'+(x+6)+'" y1="'+y+'" x2="'+(x+56)+'" y2="'+y+'" stroke="#e3e3e3"/>':''); });
   });
-  h += '</svg><div class="mut" style="font-size:11px;text-align:center;margin-top:4px">● 绿=正常 ● 黄=观察 ● 红=约束 ｜ 圈内数字=L1..L8 层 ｜ 一行=一条从物理约束到变现的完整供应链</div></div>';
+  h += '</svg>';
+  h += '<div class="mut" style="font-size:11px;text-align:center;margin-top:6px;line-height:1.9"><b>8层含义（从上游到下游，不必记数字）：</b><br>1物理约束 → 2上游原料 → 3核心部件 → 4制造工艺 → 5产能规模 → 6集成产品 → 7市场需求 → 8护城河<br>●绿=正常 ●黄=观察 ●红=约束 ｜ 一行=一条产业线完整供应链 ｜ 红点=当前最卡的环节</div></div>';
   // 逐产业线展开
   SUP.forEach(s=>{
     h += '<div class="eyebrow"><span style="color:'+owc(s.owner)+'">●</span> '+esc(s.ind)+' <span class="mut" style="text-transform:none;letter-spacing:0;font-weight:400">· '+esc(s.owner)+'</span></div>';
-    h += '<div class="card"><div style="font-size:12.5px;line-height:1.7;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px;margin-bottom:10px"><b>主线判定：</b>'+esc(s.thesis)+'</div>';
-    h += '<table><tr><th style="width:52px">层</th><th>环节</th><th>当前状态</th><th>观测点</th><th>证据</th></tr>';
+    h += '<div class="card"><div style="font-size:12.5px;line-height:1.7;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px;margin-bottom:6px"><b>主线判定：</b>'+esc(s.thesis)+'</div>';
+    h += '<div style="font-size:11.5px;color:var(--amber);margin-bottom:10px">⏳ 结论适用期：'+esc(s.valid||'—')+'（超出此期需重新评估，非永久成立）</div>';
+    h += '<table><tr><th style="width:100px">层 · 类型</th><th>环节</th><th>当前状态</th><th>观测点</th><th>证据</th></tr>';
     h += s.layers.map(l=>{ const c=l.st==='red'?'var(--down)':l.st==='yellow'?'var(--amber)':'var(--up)';
-      return '<tr><td><span style="display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:5px;background:'+c+';color:#fff;font-size:11px;font-weight:700">'+l.layer+'</span></td>'
+      return '<tr><td style="white-space:nowrap"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:4px;background:'+c+';color:#fff;font-size:10.5px;font-weight:700">'+l.layer+'</span> <span style="font-size:11px;color:#5c5e62">'+esc(l.lname||'')+'</span></td>'
         +'<td style="font-size:12.5px"><b>'+esc(l.node)+'</b></td>'
         +'<td style="font-size:12px">'+esc(l.state)+'</td>'
         +'<td style="font-size:11.5px" class="mut">'+esc(l.watch)+'</td>'
@@ -444,8 +471,8 @@ physics(){ return guard('物理与供需', () => {
       +'<text x="'+(cx+11)+'" y="'+(cy+4)+'" font-size="11" font-weight="600" fill="#171a20">'+esc(x.line)+' <tspan fill="#8a8d91" font-size="9.5">'+esc(x.state)+'</tspan></text>'; });
   sp+='</svg>';
   let h = hh0 + '<div class="eyebrow">约束态谱系（左=供给约束·产能逻辑；右=需求/缺口·证伪逻辑）</div><div class="card">'+sp+'</div>'
-    +'<div class="eyebrow">供需剪刀差总表（七产品线 · 状态翻转触发周报头条）</div><div class="card"><table><tr><th>产品线</th><th>状态</th><th>头号约束</th><th>解除时间表</th><th>投资含义</th></tr>';
-  h += D.scissors.map(s=>'<tr><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(s.owner||'—')+'</span><b>'+esc(s.line)+'</b><div class="mut" style="font-size:11px">盯: '+esc(s.watch)+'</div></td><td>'+esc(s.state)+'</td><td>'+esc(s.constraint)+'</td><td>'+esc(s.unlock)+'</td><td style="font-size:12px">'+esc(s.meaning)+'</td></tr>').join('');
+    +'<div class="eyebrow">供需剪刀差总表（七产品线 · 状态翻转触发周报头条 · 每条标结论适用期）</div><div class="card"><table><tr><th>产品线</th><th>状态</th><th>头号约束</th><th>解除时间表</th><th>结论适用期</th><th>投资含义</th></tr>';
+  h += D.scissors.map(s=>'<tr><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(s.owner||'—')+'</span><b>'+esc(s.line)+'</b><div class="mut" style="font-size:11px">盯: '+esc(s.watch)+'</div></td><td>'+esc(s.state)+'</td><td>'+esc(s.constraint)+'</td><td>'+esc(s.unlock)+'</td><td style="font-size:11.5px;color:var(--amber)">\u23f3 '+esc(s.valid||'1y')+'</td><td style="font-size:12px">'+esc(s.meaning)+'</td></tr>').join('');
   h += '</table></div><div class="mut" style="margin-bottom:10px">判读规则：供给约束＋高毛利＝扩产即增利（只盯产能）；需求约束＝降价换量毛利承压（只盯价格弹性）。混淆两态是头号亏损原因。</div>';
   h += '<div class="eyebrow">产品解剖台（七大代表产品 · 第一性原理×供应链）</div>';
   D.teardowns.forEach(t=>{
@@ -472,8 +499,8 @@ techtree(){ return guard('技术树与趋势', () => {
       +'<text x="'+(126+w)+'" y="'+(y+11.5)+'" font-size="10" fill="#171a20" font-weight="700">'+t.trl+'</text>'; });
   trl+='</svg>';
   let h = '<div class="eyebrow">技术成熟度总览（TRL 越长越接近规模商用）</div><div class="card">'+trl+'</div>'
-    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>归属</th><th>载体</th><th>TRL</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
-  h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(t.owner||'—')+'</span></td><td>'+esc(t.carrier)+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
+    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>归属</th><th>载体</th><th>TRL</th><th>判定时效</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
+  h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(t.owner||'—')+'</span></td><td>'+esc(t.carrier)+'</td><td style="font-size:11px;color:var(--amber)">'+esc(t.valid||'季判')+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
   h += '</table></div><div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
   h += D.convergence.map(c=>'<tr><td><b>'+esc(c.point)+'</b></td><td>'+esc(c.cross)+'</td><td>'+esc(c.gap)+'</td><td>'+esc(c.status)+'</td></tr>').join('');
   h += '</table></div>';
@@ -736,8 +763,8 @@ travel(){ return guard('出行轨迹', () => {
   return h;
 });},
 
-reports(){ return guard('报告', () => {
-  return '<div class="eyebrow">定期报告归档（Actions 自动生成 · 周报每周日 · 月报每月1日 · 季报1/4/7/10月 · 年报1月1日）</div>'+
+reports(){ return guard('趋势报告', () => {
+  return '<div class="eyebrow">趋势报告归档（Actions 自动生成 · 周报每周日 · 月报每月1日 · 季报1/4/7/10月 · 年报1月1日）</div>'+
     '<div class="card" id="rpt-list"><div class="mut">加载中…</div></div>'+
     '<div id="rpt-view"></div>'+
     '<div class="mut">对外发布前手动删除原始行情数值（规避数据源转发授权），观点、判定与自制图表可自由发布。</div>';
@@ -842,7 +869,7 @@ const VIEW_META={
  market:{cycle:'行情/信号每日自动 · 锚与论据随账本',src:'全站汇聚',guide:'全站信息的决策出口：两张决策卡+日期明确的触发器。'},
  decide:{cycle:'你的操作实时存本机',src:'浏览器本地',guide:'审计可查、误判可冲正、决策可复盘。'},
  reports:{cycle:'周报周日 · 月报1日 · 季报季首 · 年报1月1日',src:'账本×判定自动拼装',guide:'只读「本期变化」也够——无翻转就是无翻转。'}};
-const NAVS=[['feed','纵览'],['graph','关系图谱'],['persons','人物网络'],['travel','出行轨迹'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','报告']];
+const NAVS=[['feed','纵览'],['graph','关系图谱'],['persons','人物网络'],['political','政治地缘'],['leading','先行引擎'],['physics','物理供需'],['techtree','技术树'],['market','市场资本'],['decide','决策档案'],['reports','趋势报告']];
 let ACTIVE='feed';
 function render(id){
   ACTIVE=id;

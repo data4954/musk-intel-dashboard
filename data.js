@@ -2219,7 +2219,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "休斯顿Megapack 3厂投产",
    "meaning": "扩产=增利，全系最干净；Q1'26 部署8.8GWh、毛利39.5%双纪录",
    "watch": "新厂节点/电芯自供比/backlog",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "12–18个月"
   },
   {
    "line": "算力 Colossus",
@@ -2228,7 +2229,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "燃气轮机许可裁决/互联队列",
    "meaning": "需求已锁($26B/年合同)，看电不看芯片",
    "watch": "ERCOT/TVA队列、许可诉讼、自建fab里程碑",
-   "owner": "SPCX"
+   "owner": "SPCX",
+   "valid": "6–12个月（许可裁决前）"
   },
   {
    "line": "Starlink",
@@ -2237,7 +2239,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "V3卫星代际",
    "meaning": "稳态复利；在轨8000+颗=全球LEO 2/3",
    "watch": "订户数、V3容量、Kuiper 07-30死线",
-   "owner": "SPCX"
+   "owner": "SPCX",
+   "valid": "5年（稳态复利）"
   },
   {
    "line": "发射服务",
@@ -2246,7 +2249,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "试飞×复用周转×翻新成本三变量",
    "meaning": "高凸性期权；外部订单占比萎缩=封闭经济警报",
    "watch": "复用曲线、外部商业订单占比",
-   "owner": "SPCX"
+   "owner": "SPCX",
+   "valid": "5年（复用曲线主线）"
   },
   {
    "line": "电动车",
@@ -2255,7 +2259,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "FSD中国Q3'26(软件变需求变量)",
    "meaning": "防守盘；降价史=需求约束自供状态证词",
    "watch": "周度上险数、降价动作",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "至FSD中国审批（Q3'26）"
   },
   {
    "line": "Robotaxi",
@@ -2264,7 +2269,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "逐州备案",
    "meaning": "$350/股溢价主载体；42辆 vs Waymo 577辆",
    "watch": "州备案(先行L3)、调查进展、车队周计数",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "逐州备案推进期（1-2年）"
   },
   {
    "line": "Optimus",
@@ -2273,7 +2279,8 @@ window.MUSKINTEL_DATA = {
    "unlock": "自研执行器产线验证",
    "meaning": "头号证伪对象=头号先机，二者必居其一",
    "watch": "执行器招聘/设备采购(L1/L3)、Tier-1订单(L6)",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "5年（执行器验证前不翻转）"
   }
  ],
  "teardowns": [
@@ -2380,7 +2387,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "储能+光伏度电 < 天然气峰值电 → 电网结构性替代",
    "cn": "宁德/比亚迪刀片",
    "verdict": "中方产能领先，成本曲线两强并行",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "季判（成本曲线滚动）"
   },
   {
    "line": "地面运输",
@@ -2390,7 +2398,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "无人出行 $/mile < 私家车持有成本",
    "cn": "比亚迪/华为系/萝卜快跑",
    "verdict": "EV中方领先；无监督FSD美方领先，Q3中国审批=两树接触点",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "季判（Q3中国审批为近期变量）"
   },
   {
    "line": "航天",
@@ -2400,7 +2409,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "<$150/kg → 轨道工业化经济成立",
    "cn": "长征系/朱雀/天龙",
    "verdict": "美方代差领先(复用)",
-   "owner": "SPCX"
+   "owner": "SPCX",
+   "valid": "5年（复用代差）"
   },
   {
    "line": "计算",
@@ -2410,7 +2420,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "轨道算力见三档物理判定(当前:物理紧张)",
    "cn": "DeepSeek/通义/字节",
    "verdict": "算法差距收窄，算力(电力)是新战场",
-   "owner": "SPCX"
+   "owner": "SPCX",
+   "valid": "季判（算法收窄+电力战场）"
   },
   {
    "line": "机器人",
@@ -2420,7 +2431,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "机器人$/工时 < 最低工资 → 劳动力经济学重写",
    "cn": "宇树/智元/傅利叶",
    "verdict": "中方供应链(减速器)占先，集成度美方下注",
-   "owner": "TSLA"
+   "owner": "TSLA",
+   "valid": "5年（供应链卡位）"
   },
   {
    "line": "脑机",
@@ -2430,7 +2442,8 @@ window.MUSKINTEL_DATA = {
    "tipping": "患者数×带宽倍增节奏",
    "cn": "脑虎/中科院系",
    "verdict": "美方临床进度领先",
-   "owner": "私营"
+   "owner": "私营",
+   "valid": "20年（临床长周期）"
   }
  ],
  "convergence": [
@@ -3385,7 +3398,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "碳酸锂现货价（成本直接传导毛利）",
      "src": "A:公开大宗行情",
-     "ev": "A"
+     "ev": "A",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3394,7 +3408,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "盐湖/锂矿开工率、正极厂扩产",
      "src": "B:公司公告/行业协会",
-     "ev": "B"
+     "ev": "B",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3403,7 +3418,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "电芯自供比例（休斯顿厂爬坡）",
      "src": "A:财报电话会",
-     "ev": "A"
+     "ev": "A",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3412,7 +3428,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "良率里程碑、单线节拍",
      "src": "B:多源+专利",
-     "ev": "B"
+     "ev": "B",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3421,7 +3438,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "新厂投产节点、年化 GWh",
      "src": "A:财报/州建设文件",
-     "ev": "A"
+     "ev": "A",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3430,7 +3448,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "单柜出货、backlog 订单",
      "src": "A:财报",
-     "ev": "A"
+     "ev": "A",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3439,7 +3458,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "backlog、区域并网队列",
      "src": "B:公司+电网公示",
-     "ev": "B"
+     "ev": "B",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3448,9 +3468,11 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "毛利率分解、Q1'26 部署 8.8GWh 双纪录能否延续",
      "src": "A:财报",
-     "ev": "A"
+     "ev": "A",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "12–18个月（至休斯顿Megapack3满产前，供给约束逻辑成立）"
   },
   {
    "ind": "电动车 / FSD / Robotaxi",
@@ -3465,7 +3487,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "单车折旧+能耗+保险的每英里成本",
      "src": "B:测算",
-     "ev": "B"
+     "ev": "B",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3474,7 +3497,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "HW 迭代、稀土永磁供给",
      "src": "B:多源",
-     "ev": "B"
+     "ev": "B",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3483,7 +3507,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "压铸机采购、免热处理合金良率",
      "src": "A:供应链+专利",
-     "ev": "A"
+     "ev": "A",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3492,7 +3517,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "接管率(MPI)、版本迭代节奏",
      "src": "C:公司口径需打折",
-     "ev": "C"
+     "ev": "C",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3501,7 +3527,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "周度产量、降价动作",
      "src": "A:交付数据",
-     "ev": "A"
+     "ev": "A",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3510,7 +3537,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "车队周计数、单车日订单",
      "src": "B:州文件+媒体",
-     "ev": "B"
+     "ev": "B",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3519,7 +3547,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "逐州备案进度、调查裁决、FSD 中国 Q3 审批",
      "src": "A:州文件/NHTSA公示",
-     "ev": "A"
+     "ev": "A",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3528,9 +3557,11 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "溢价 vs 车队实际单位经济、11-03 与 Q3 两个二元事件",
      "src": "A:财报电话会",
-     "ev": "A"
+     "ev": "A",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "至2026-11-03与FSD中国审批两个二元事件落地前（溢价定价窗口）"
   },
   {
    "ind": "发射 / Starlink",
@@ -3545,7 +3576,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "星舰 $/kg 曲线（试飞×复用×翻新成本三变量）",
      "src": "A:公开+S-1",
-     "ev": "A"
+     "ev": "A",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3554,7 +3586,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "Raptor 单台成本(目标十万美元量级)",
      "src": "B:多源",
-     "ev": "B"
+     "ev": "B",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3563,7 +3596,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "单台工时、增材制造占比",
      "src": "B:公司+媒体",
-     "ev": "B"
+     "ev": "B",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3572,7 +3606,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "复用曲线、翻新成本",
      "src": "A:试飞记录",
-     "ev": "A"
+     "ev": "A",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3581,7 +3616,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "近期发射次数、外部商业订单占比",
      "src": "A:发射日程",
-     "ev": "A"
+     "ev": "A",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3590,7 +3626,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "订户数、V3 单星容量、终端 BOM",
      "src": "A/B:FCC+公司",
-     "ev": "A"
+     "ev": "A",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3599,7 +3636,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "FCC IBFS、Kuiper 07-30 死线、新市场开通",
      "src": "A:FCC IBFS",
-     "ev": "A"
+     "ev": "A",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3608,9 +3646,11 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "外部订单占比、频谱容量物理天花板",
      "src": "B:披露",
-     "ev": "B"
+     "ev": "B",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "5年尺度（星舰$/kg曲线与频谱容量的长周期主线）"
   },
   {
    "ind": "算力 Colossus / xAI",
@@ -3625,7 +3665,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "ERCOT/TVA 互联队列、变压器/开关柜 2-4 年交付队列",
      "src": "A:电网公示",
-     "ev": "A"
+     "ev": "A",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3634,7 +3675,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "许可诉讼裁决、自建电源里程碑",
      "src": "A:法院公开系统",
-     "ev": "A"
+     "ev": "A",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3643,7 +3685,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "自建 fab 里程碑、GPU 到货",
      "src": "B:多源",
-     "ev": "B"
+     "ev": "B",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3652,7 +3695,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "建造节拍、机架上电数",
      "src": "B:公司+媒体",
-     "ev": "B"
+     "ev": "B",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3661,7 +3705,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "装机 MW→GW 爬坡",
      "src": "B:公司",
-     "ev": "B"
+     "ev": "B",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3670,7 +3715,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "API 客户、模型代际",
      "src": "C:公司口径打折",
-     "ev": "C"
+     "ev": "C",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3679,7 +3725,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "续约、新增租户、实付对表",
      "src": "A:S-1/多源",
-     "ev": "A"
+     "ev": "A",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3688,9 +3735,11 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "单位算力毛利 vs 电价+折旧模型",
      "src": "A:S-1拆解",
-     "ev": "A"
+     "ev": "A",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "6–12个月（电力许可诉讼裁决前，瓶颈判定成立）"
   },
   {
    "ind": "Optimus 人形机器人",
@@ -3705,7 +3754,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "减速器全球产能 vs Optimus 目标",
      "src": "A:行业产能公开",
-     "ev": "A"
+     "ev": "A",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3714,7 +3764,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "稀土价格、磁材供给",
      "src": "B:行业",
-     "ev": "B"
+     "ev": "B",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3723,7 +3774,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "Tesla 自研执行器产线验证 vs Tier-1 订单",
      "src": "A:招聘/设备采购信号",
-     "ev": "A"
+     "ev": "A",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3732,7 +3784,8 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "执行器产线招聘与设备采购(L1/L3先行信号)",
      "src": "A:招聘公开库",
-     "ev": "A"
+     "ev": "A",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3741,7 +3794,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "整机下线数、产线改造进度",
      "src": "B:社区影像+媒体",
-     "ev": "B"
+     "ev": "B",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3750,7 +3804,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "灵巧手迭代、整机演示可信度",
      "src": "C:发布会需打折",
-     "ev": "C"
+     "ev": "C",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3759,7 +3814,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "自有工厂实际部署数",
      "src": "C:公司口径",
-     "ev": "C"
+     "ev": "C",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3768,9 +3824,11 @@ window.MUSKINTEL_DATA = {
      "st": "red",
      "watch": "执行器招聘/设备采购、Tier-1 订单",
      "src": "A:招聘+公告",
-     "ev": "A"
+     "ev": "A",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "5年尺度（执行器产线能否落地是分水岭，短期不证伪）"
   },
   {
    "ind": "Neuralink 脑机",
@@ -3785,7 +3843,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "每代通道数×带宽/功耗",
      "src": "B:论文/公司",
-     "ev": "B"
+     "ev": "B",
+     "lname": "物理约束"
     },
     {
      "layer": 2,
@@ -3794,7 +3853,8 @@ window.MUSKINTEL_DATA = {
      "st": "green",
      "watch": "电极工艺良率",
      "src": "B:公司",
-     "ev": "B"
+     "ev": "B",
+     "lname": "上游原料"
     },
     {
      "layer": 3,
@@ -3803,7 +3863,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "ASIC 迭代",
      "src": "C:公司",
-     "ev": "C"
+     "ev": "C",
+     "lname": "核心部件"
     },
     {
      "layer": 4,
@@ -3812,7 +3873,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "R1 台数×单台手术时长",
      "src": "B:公司+FDA",
-     "ev": "B"
+     "ev": "B",
+     "lname": "制造工艺"
     },
     {
      "layer": 5,
@@ -3821,7 +3883,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "累计植入患者数",
      "src": "B:FDA/临床登记",
-     "ev": "B"
+     "ev": "B",
+     "lname": "产能规模"
     },
     {
      "layer": 6,
@@ -3830,7 +3893,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "系统可靠性",
      "src": "C:公司",
-     "ev": "C"
+     "ev": "C",
+     "lname": "集成产品"
     },
     {
      "layer": 7,
@@ -3839,7 +3903,8 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "适应症审批、患者招募",
      "src": "A:FDA公开",
-     "ev": "A"
+     "ev": "A",
+     "lname": "市场需求"
     },
     {
      "layer": 8,
@@ -3848,9 +3913,11 @@ window.MUSKINTEL_DATA = {
      "st": "yellow",
      "watch": "患者数×带宽倍增节奏",
      "src": "B:多源",
-     "ev": "B"
+     "ev": "B",
+     "lname": "护城河"
     }
-   ]
+   ],
+   "valid": "20年尺度（TRL 4-5，长周期标的）"
   }
  ],
  "supply_layer_def": [
