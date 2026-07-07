@@ -416,17 +416,25 @@ leading(){ return guard('先行引擎', () => {
   const owc = o => o==='TSLA'?'#cc0000':o==='SPCX'?'#3e6ae1':'#5c5e62';
   // 全局重心概览：每条产业线的红灯层数=当前最卡环节
   let h = '<div class="eyebrow">产业供应链先行引擎（每条产业线一条 L1→L8 链 · 第一性原理→变现证伪点 · 红=当前最卡环节）</div>';
-  h += '<div class="card"><div class="mut" style="font-size:12.5px;margin-bottom:10px">'+esc(D.supply_note||'')+'</div>';
-  h += '<svg viewBox="0 0 720 '+(30+SUP.length*30)+'" style="width:100%;max-width:900px;display:block" role="img" aria-label="产业重心概览">';
-  SUP.forEach((s,i)=>{ const y=24+i*30; const reds=s.layers.filter(l=>l.st==='red').length, yel=s.layers.filter(l=>l.st==='yellow').length;
-    h+='<text x="150" y="'+(y+5)+'" text-anchor="end" font-size="11.5" font-weight="700" fill="#171a20">'+esc(s.ind)+'</text>'
-      +'<rect x="158" y="'+(y-8)+'" width="30" height="15" rx="4" fill="'+owc(s.owner)+'"/><text x="173" y="'+(y+3)+'" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="700">'+esc(s.owner)+'</text>';
-    s.layers.forEach((l,j)=>{ const x=200+j*62; const c=l.st==='red'?'#d3212c':l.st==='yellow'?'#e0a012':'#0a8754';
-      h+='<circle cx="'+x+'" cy="'+y+'" r="6" fill="'+c+'"/><text x="'+x+'" y="'+(y+3)+'" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="700">'+(j+1)+'</text>'
-        +(j<7?'<line x1="'+(x+6)+'" y1="'+y+'" x2="'+(x+56)+'" y2="'+y+'" stroke="#e3e3e3"/>':''); });
+  h += '<div class="card"><div class="mut" style="font-size:13px;margin-bottom:10px">'+esc(D.supply_note||'')+'</div>';
+  const LN=["物理约束","上游原料","核心部件","制造工艺","产能规模","集成产品","市场需求","护城河"];
+  const X0=210, DX=76, ROWH=46, TOP=64, VW=X0+8*DX+150;
+  h += '<svg viewBox="0 0 '+VW+' '+(TOP+SUP.length*ROWH+10)+'" style="width:100%;display:block" role="img" aria-label="产业供应链概览">';
+  for(let j=0;j<8;j++){ const x=X0+j*DX;
+    h+='<rect x="'+(x-22)+'" y="16" width="44" height="18" rx="4" fill="rgba(23,26,32,.05)"/>'
+      +'<text x="'+x+'" y="29" text-anchor="middle" font-size="11" font-weight="700" fill="#171a20">'+(j+1)+' '+LN[j]+'</text>'; }
+  h+='<text x="'+(X0-16)+'" y="29" text-anchor="end" font-size="11" fill="#8a8d91" font-weight="700">产业线</text>';
+  h+='<text x="'+(X0+8*DX+8)+'" y="29" font-size="11" fill="var(--amber)" font-weight="700">结论适用期</text>';
+  SUP.forEach((s,i)=>{ const y=TOP+i*ROWH+ROWH/2;
+    h+='<text x="'+(X0-42)+'" y="'+(y+5)+'" text-anchor="end" font-size="13" font-weight="700" fill="#171a20">'+esc(s.ind)+'</text>'
+      +'<rect x="'+(X0-34)+'" y="'+(y-9)+'" width="34" height="17" rx="4" fill="'+owc(s.owner)+'"/><text x="'+(X0-17)+'" y="'+(y+3)+'" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="700">'+esc(s.owner)+'</text>';
+    s.layers.forEach((l,j)=>{ const x=X0+j*DX; const c=l.st==='red'?'#d3212c':l.st==='yellow'?'#e0a012':'#0a8754';
+      h+=(j<7?'<line x1="'+(x+11)+'" y1="'+y+'" x2="'+(x+DX-11)+'" y2="'+y+'" stroke="#e3e3e3"/>':'')
+        +'<circle cx="'+x+'" cy="'+y+'" r="10" fill="'+c+'"/><text x="'+x+'" y="'+(y+4)+'" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">'+(j+1)+'</text>'; });
+    h+='<text x="'+(X0+8*DX+8)+'" y="'+(y+4)+'" font-size="10.5" fill="var(--amber)">⏳ '+esc((s.valid||'').split('（')[0].slice(0,16))+'</text>';
   });
   h += '</svg>';
-  h += '<div class="mut" style="font-size:11px;text-align:center;margin-top:6px;line-height:1.9"><b>8层含义（从上游到下游，不必记数字）：</b><br>1物理约束 → 2上游原料 → 3核心部件 → 4制造工艺 → 5产能规模 → 6集成产品 → 7市场需求 → 8护城河<br>●绿=正常 ●黄=观察 ●红=约束 ｜ 一行=一条产业线完整供应链 ｜ 红点=当前最卡的环节</div></div>';
+  h += '<div class="mut" style="font-size:12px;text-align:center;margin-top:8px;line-height:1.8">●绿=正常环节 ●黄=观察 ●红=当前最卡约束 ｜ 每行=一条产业线从①物理约束到⑧护城河的完整供应链 ｜ 序号含义见顶部列头，全站沿用</div></div>';
   // 逐产业线展开
   SUP.forEach(s=>{
     h += '<div class="eyebrow"><span style="color:'+owc(s.owner)+'">●</span> '+esc(s.ind)+' <span class="mut" style="text-transform:none;letter-spacing:0;font-weight:400">· '+esc(s.owner)+'</span></div>';
@@ -490,7 +498,7 @@ physics(){ return guard('物理与供需', () => {
   return h;
 });},
 
-techtree(){ return guard('技术树与趋势', () => {
+techtree(){ return guard('技术树', () => {
   let trl='<svg viewBox="0 0 700 '+(30+D.techtree.length*30)+'" style="width:100%;max-width:900px;display:block" role="img" aria-label="TRL成熟度">'
     +'<text x="120" y="14" font-size="9.5" fill="#8a8d91">技术就绪度 TRL 1-9（条长=成熟度，9=规模商用）</text>';
   D.techtree.forEach((t,i)=>{ const y=30+i*30, w=t.trl/9*520;
@@ -499,10 +507,28 @@ techtree(){ return guard('技术树与趋势', () => {
       +'<rect x="120" y="'+y+'" width="'+w+'" height="15" rx="7" fill="'+(t.trl>=8?'#0a8754':t.trl>=6?'#3e6ae1':'#a06a00')+'" fill-opacity=".85"/>'
       +'<text x="'+(126+w)+'" y="'+(y+11.5)+'" font-size="10" fill="#171a20" font-weight="700">'+t.trl+'</text>'; });
   trl+='</svg>';
-  let h = '<div class="eyebrow">技术成熟度总览（TRL 越长越接近规模商用）</div><div class="card">'+trl+'</div>'
-    +'<div class="eyebrow">六条文明级技术线（20 年尺度 · 中美双树季判）</div><div class="card"><table><tr><th>技术线</th><th>归属</th><th>载体</th><th>TRL</th><th>判定时效</th><th>核心度量</th><th>拐点判据</th><th>中方对标 / 季判</th></tr>';
-  h += D.techtree.map(t=>'<tr><td><b>'+esc(t.line)+'</b></td><td><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(t.owner||'—')+'</span></td><td>'+esc(t.carrier)+'</td><td style="font-size:11px;color:var(--amber)">'+esc(t.valid||'季判')+'</td><td class="num">'+t.trl+'</td><td>'+esc(t.metric)+'</td><td style="font-size:12px">'+esc(t.tipping)+'</td><td style="font-size:12px">'+esc(t.cn)+'<div class="mut">'+esc(t.verdict)+'</div></td></tr>').join('');
-  h += '</table></div><div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
+  const bnColor=b=>/产/.test(b)&&!/研|学|政/.test(b)?'#0a8754':/学/.test(b)?'#a06a00':/研/.test(b)&&!/产|学/.test(b)?'#3e6ae1':'#d3212c';
+  let h = '<div class="card mut" style="font-size:13px;line-height:1.7">'+esc(D.techtree_note||'')+'</div>';
+  h += '<div class="eyebrow">技术成熟度 TRL 总览（1基础研究…9规模商用 · 条越长越接近量产）</div><div class="card">'+trl+'</div>';
+  h += '<div class="eyebrow">六条文明级技术线 · 产学研供应链解剖（第一性原理 → 产/学/研三段卡点 → 拐点）</div>';
+  D.techtree.forEach(t=>{
+    h += '<div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px">'
+      +'<h3 style="font-size:16.5px">'+esc(t.line)+' <span class="mut" style="font-weight:400;font-size:12.5px">'+esc(t.carrier)+'</span></h3>'
+      +'<div><span class="chip" style="background:rgba(23,26,32,.08);color:#171a20">'+esc(t.owner)+'</span>'
+      +'<span class="chip" style="background:rgba(62,106,225,.1);color:var(--accent)">TRL '+t.trl+' · '+esc(t.stage)+'</span>'
+      +'<span class="chip" style="background:rgba(211,33,44,.1);color:'+bnColor(t.bottleneck)+'">瓶颈: '+esc(t.bottleneck)+'</span></div></div>';
+    h += '<div style="font-size:13px;line-height:1.7;margin:6px 0;padding:8px 12px;background:rgba(23,26,32,.03);border-radius:6px"><b>第一性原理约束：</b>'+esc(t.principle)+'</div>';
+    h += '<table style="margin:6px 0"><tr><th style="width:80px">供应链段</th><th>卡点定位</th></tr>'
+      +'<tr><td><b style="color:#a06a00">学 · 基础研究</b></td><td style="font-size:12.5px">'+esc(t.chain_edu)+'</td></tr>'
+      +'<tr><td><b style="color:#0a8754">产 · 制造供应</b></td><td style="font-size:12.5px">'+esc(t.chain_ind)+'</td></tr>'
+      +'<tr><td><b style="color:#3e6ae1">研 · 工程开发</b></td><td style="font-size:12.5px">'+esc(t.chain_dev)+'</td></tr></table>';
+    h += '<table><tr><th>核心度量</th><th>拐点判据</th><th>中美对标</th><th>判定时效</th></tr>'
+      +'<tr><td style="font-size:12.5px">'+esc(t.metric)+'</td><td style="font-size:12.5px">'+esc(t.tipping)+'</td>'
+      +'<td style="font-size:12.5px">'+esc(t.cn)+'<div class="mut">'+esc(t.cn_edge)+'</div></td>'
+      +'<td style="font-size:11.5px;color:var(--amber)">⏳ '+esc(t.valid)+'</td></tr></table>';
+    h += '<div class="mut" style="font-size:12.5px;margin-top:6px"><b>判定：</b>'+esc(t.verdict)+'</div></div>';
+  });
+  h += '<div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
   h += D.convergence.map(c=>'<tr><td><b>'+esc(c.point)+'</b></td><td>'+esc(c.cross)+'</td><td>'+esc(c.gap)+'</td><td>'+esc(c.status)+'</td></tr>').join('');
   h += '</table></div>';
   h += '<div class="card"><h3>能源总量账户（卡尔达肖夫视角）</h3><div class="mut" style="font-size:13px">体系年度能量吞吐＝储能年部署 GWh ＋ 算力装机 GW ＋ 发射总能量 ＋ 超充吞吐。当前锚点：储能 8.8GWh/季 · Colossus 300MW+（目标 GW 级，受电力并网约束）。该曲线随季报更新——文明尺度唯一不撒谎的总指标。</div></div>';
