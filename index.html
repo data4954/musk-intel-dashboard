@@ -50,6 +50,13 @@ main{width:100%;min-width:0}
 .sup-cell{background:#fff;display:flex;align-items:center;justify-content:center;padding:8px 0}
 .sup-dot{width:24px;height:24px;border-radius:50%;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .sup-valid{background:#fff;padding:11px 10px;font-size:12px;color:var(--amber);font-weight:600;display:flex;align-items:center}
+.struct-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:8px}
+.struct-col{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 0 8px;box-shadow:0 1px 3px rgba(23,26,32,.045)}
+.struct-h{font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:10px 12px 8px}
+.struct-node{padding:7px 12px;border-top:1px solid var(--line)}
+.struct-nm{font-size:13.5px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.struct-deg{background:rgba(62,106,225,.12);color:var(--accent);font-size:11px;font-weight:700;min-width:18px;height:18px;line-height:18px;text-align:center;border-radius:9px;padding:0 5px}
+.struct-note{font-size:12px;color:var(--dim);margin-top:2px;line-height:1.45}
 .pagehead h2{font-size:33px;font-weight:700;letter-spacing:-.015em}
 #stale-banner{display:none;background:#fdf6e3;border:1px solid #eadfae;color:#6b5900;font-size:12.5px;
   padding:8px 14px;border-radius:6px;margin-bottom:14px}
@@ -307,24 +314,19 @@ graph(){ return guard('关系图谱', () => {
   const posE={};
   Object.keys(cols).forEach(x=>{ const arr=cols[x]; const startY=36+(maxN-arr.length)*GAP/2+GAP/2;
     arr.forEach((e,i)=>{ posE[e.id]={x:+x, y:startY+i*GAP}; }); });
-  const kcol=k=>/股权/.test(k)?'#3e6ae1':/资金/.test(k)?'#0a8754':/监管/.test(k)?'#d3212c':/政治|恩惠|人质/.test(k)?'#a06a00':'#b6bcc3';
-  let gsvg='<svg viewBox="0 0 700 '+H+'" style="width:100%;max-width:900px;display:block;margin:0 auto" role="img" aria-label="实体关系图">';
-  [...new Set(Object.values(colX))].forEach(x=>{ const t=Object.keys(colX).find(k=>colX[k]===x); gsvg+='<text x="'+x+'" y="18" text-anchor="middle" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(colName[t]||'')+'</text>'; });
-  ed.forEach(e=>{ const a=posE[e.from], b=posE[e.to]; if(!a||!b) return;
-    const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.y-a.y, dy=a.x-b.x, L2=Math.hypot(dx,dy)||1;
-    gsvg+='<path d="M '+a.x+' '+a.y+' Q '+(mx+dx/L2*14)+' '+(my+dy/L2*14)+' '+b.x+' '+b.y+'" fill="none" stroke="'+kcol(e.kind)+'" stroke-opacity="'+(e.ev==='A'?0.8:0.45)+'" stroke-width="'+(e.ev==='A'?1.7:1.2)+'"/>'; });
-  et.forEach(e=>{ const p=posE[e.id];
-    gsvg+='<g><rect x="'+(p.x-48)+'" y="'+(p.y-11)+'" width="96" height="22" rx="11" fill="#fff" stroke="#c9ccce"/>'
-      +'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9.5" font-weight="600" fill="#171a20">'+esc(e.name.length>8?e.name.slice(0,8)+'…':e.name)+'</text></g>'; });
-  gsvg+='</svg>';
-  let h = '<div class="eyebrow">实体关系图（列=层级 · 边色：<span style="color:#3e6ae1">股权</span>/<span style="color:#0a8754">资金</span>/<span style="color:#d3212c">监管</span>/<span style="color:#a06a00">政治</span> · 深=A级）</div><div class="card">'+gsvg+'</div>';
-  h += '<div class="eyebrow">实体清单（商业主体 · 资本层 · 物理根基 · 共 '+et.length+' 个节点）</div>';
-  const groups = {};
-  et.forEach(e=>{ (groups[e.type]=groups[e.type]||[]).push(e); });
-  h += '<div style="column-count:3;column-gap:14px">';
-  for(const t in groups){
-    h += '<div class="card" style="break-inside:avoid;margin-bottom:14px"><h3>'+esc(typeName[t]||t)+' <span class="mut" style="font-weight:400;font-size:12px">'+groups[t].length+'</span></h3>'+groups[t].map(e=>'<div style="font-size:13.5px;padding:4px 0"><b>'+esc(e.name)+'</b><div class="mut">'+esc(e.note||e.status||'')+'</div></div>').join('')+'</div>';
-  }
+  const typeColor={person:'#171a20',company:'#cc0000',absorbed:'#8a8d91',family:'#a06a00',capital:'#3e6ae1',political:'#0a8754',regulator:'#d3212c'};
+  const order=['person','company','absorbed','family','capital','political','regulator'];
+  const grp={}; et.forEach(e=>{(grp[e.type]=grp[e.type]||[]).push(e);});
+  const outCount=id=>ed.filter(e=>e.from===id||e.to===id).length;
+  let h = '<div class="eyebrow">帝国结构板（实体按层归组 · 每个实体标注与连带数 · 即结构即清单）</div>';
+  h += '<div class="struct-board">';
+  order.forEach(t=>{ if(!grp[t]) return;
+    h += '<div class="struct-col" style="border-top:3px solid '+(typeColor[t]||'#888')+'"><div class="struct-h">'+esc(typeName[t]||t)+' <span class="mut" style="font-weight:400;font-size:11px">'+grp[t].length+'</span></div>'
+      + grp[t].map(e=>'<div class="struct-node"><div class="struct-nm">'+esc(e.name)+(outCount(e.id)?'<span class="struct-deg">'+outCount(e.id)+'</span>':'')+'</div><div class="struct-note">'+esc(e.note||e.status||'')+'</div></div>').join('')
+      + '</div>';
+  });
+  h += '</div>';
+  h += '<div class="mut" style="font-size:12.5px;margin:2px 2px 4px">右上角数字=该实体的连带数（资金/股权/监管/政治关系条数）；具体每条连带见下方「连带谱」。</div>';
   h += '</div><div class="eyebrow">资本与权力连带谱（Network Ties · '+ed.length+' 条边 · 按传导类型分组 · 组内按日期倒序）</div>';
   const EK=[['股权','#3e6ae1','股权穿透'],['资金流','#0a8754','资金流向'],['监管管辖','#d3212c','监管管辖'],['政治恩惠','#a06a00','政治'],['关联交易','#a06a00','关联交易'],['人质依赖','#a06a00','人质依赖'],['根基','#8a8d91','根基'],['股权','#8a8d91','其他']];
   const seen={};
@@ -676,7 +678,7 @@ persons(){ return guard('人物网络', () => {
   });
   svg += '</svg>';
   let h = '<div class="eyebrow">关系网络（分区=功能域 · 边色=关系性质 · 虚线=推断 · 点节点跳人物卡）</div><div class="card">'+svg
-    +'<div class="mut" style="font-size:11px;text-align:center;margin-top:4px"><span style="color:#a06a00">— 家族</span>　<span style="color:#3e6ae1">— 资本/风投</span>　<span style="color:#0a8754">— 政治</span>　<span style="color:#d3212c">— 对手/分歧</span>　— 灰=其他　虚线=推断</div></div>';
+    +'<div class="mut" style="font-size:11px;text-align:center;margin-top:4px"><span style="color:#a06a00">— 家族</span>　<span style="color:#3e6ae1">— 资本/风投</span>　<span style="color:#0a8754">— 政治</span>　<span style="color:#d3212c">— 对手/分歧</span>　— 灰=其他　虚线=推断<br>每条连线=一段公开记录关系；具体性质与证据见下方各人物卡「关联人物」行。</div></div>';
 
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
   const capMoves=[
@@ -722,10 +724,6 @@ persons(){ return guard('人物网络', () => {
       +'</div>';
   });
 
-  h += '<div class="eyebrow">人际连带谱（Interpersonal Ties · '+pe.length+' 条 · 性质与证据分级）</div><div class="card"><table>'
-    +'<tr><th>关系</th><th>性质</th><th>证据</th><th>判读要点</th></tr>'
-    +pe.map(e=>'<tr><td style="white-space:nowrap"><b>'+esc((byId[e.a]||{}).short||e.a)+' ↔ '+esc((byId[e.b]||{}).short||e.b)+'</b></td><td>'+esc(e.kind)+'</td><td>'+(e.ev==='推断'?'<span class="chip ev-C">推断</span>':evChip(e.ev))+'</td><td style="font-size:12px">'+esc(e.note||'')+'</td></tr>').join('')
-    +'</table></div>';
   return h;
 });},
 
