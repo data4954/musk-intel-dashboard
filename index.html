@@ -34,14 +34,22 @@ a:hover{text-decoration:underline}
 .asof{font-size:11px;color:var(--dim);white-space:nowrap}
 
 /* 主布局 */
-.shell{max-width:1760px;margin:0 auto;padding:76px 28px 80px;display:flex;gap:26px;align-items:flex-start}
-main{flex:1;min-width:0}
+.shell{max-width:1240px;margin:0 auto;padding:74px 24px 70px}
+main{width:100%;min-width:0}
 .pagehead{margin:8px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 #view-meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
 .vm-guide{font-size:13px;color:#3a3d42}
 .vm-tags{display:flex;gap:6px;flex-wrap:wrap}
 .vm-tag{font-size:10.5px;color:var(--dim);background:rgba(23,26,32,.045);border-radius:4px;padding:2px 8px;white-space:nowrap}
 .figure{max-width:900px;margin:0 auto;display:block}
+.sup-grid{display:grid;grid-template-columns:minmax(150px,1.6fr) repeat(8,minmax(52px,1fr)) minmax(120px,1.4fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:760px}
+.sup-h{background:#fafafa;font-size:12px;font-weight:700;color:#171a20;padding:9px 6px;text-align:center;line-height:1.3}
+.sup-num{display:inline-block;min-width:15px;color:var(--dim);margin-right:2px}
+.sup-name{background:#fff;padding:11px 12px;font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+.sup-own{color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:.02em}
+.sup-cell{background:#fff;display:flex;align-items:center;justify-content:center;padding:8px 0}
+.sup-dot{width:24px;height:24px;border-radius:50%;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.sup-valid{background:#fff;padding:11px 10px;font-size:12px;color:var(--amber);font-weight:600;display:flex;align-items:center}
 .pagehead h2{font-size:33px;font-weight:700;letter-spacing:-.015em}
 #stale-banner{display:none;background:#fdf6e3;border:1px solid #eadfae;color:#6b5900;font-size:12.5px;
   padding:8px 14px;border-radius:6px;margin-bottom:14px}
@@ -162,11 +170,6 @@ details summary:hover{color:var(--text)}
   <div id="view"></div>
 </main>
 
-<aside>
-  <div class="widget" id="w-market"><h4>市场脉搏</h4></div>
-  <div class="widget" id="w-count"><h4>事件倒计时</h4></div>
-  <div class="widget" id="w-health"><h4>数据健康</h4></div>
-</aside>
 </div>
 
 <div class="sitefoot"><b>免责声明</b> · 本站为非营利个人研究工具。全部信息来自公开渠道（SEC、FEC、公开行情接口与公开媒体报道），按证据等级（A/B/C）分级呈现，可能存在延迟、错误或遗漏，不保证准确性、完整性与时效性。本站内容不构成投资建议、法律建议、税务建议或对任何证券的买卖要约与招揽，据此操作风险自负。本站与 Tesla, Inc.、Space Exploration Technologies Corp. 及文中提及的任何公司、机构、个人均无关联、授权或背书关系；所涉商标与名称归各自权利人所有。对自然人的记录仅限其公开职务行为与依法公开的申报文件（如 SEC Form 4、FEC 申报），不追踪、不推断任何私人生活信息。行情数据来自免费公开接口，延迟约 15 分钟，仅供个人研究参考，禁止商用再分发。机器自动定级内容可能存在误判，均留有审计记录并可冲正。如认为本站内容侵犯您的合法权益，请通过本站 GitHub 仓库 Issues 提出，将及时处理删除。</div>
@@ -418,28 +421,23 @@ leading(){ return guard('先行引擎', () => {
   let h = '<div class="eyebrow">产业供应链先行引擎（每条产业线一条 L1→L8 链 · 第一性原理→变现证伪点 · 红=当前最卡环节）</div>';
   h += '<div class="card"><div class="mut" style="font-size:13px;margin-bottom:10px">'+esc(D.supply_note||'')+'</div>';
   const LN=["物理约束","上游原料","核心部件","制造工艺","产能规模","集成产品","市场需求","护城河"];
-  const X0=210, DX=76, ROWH=46, TOP=64, VW=X0+8*DX+150;
-  h += '<svg viewBox="0 0 '+VW+' '+(TOP+SUP.length*ROWH+10)+'" style="width:100%;display:block" role="img" aria-label="产业供应链概览">';
-  for(let j=0;j<8;j++){ const x=X0+j*DX;
-    h+='<rect x="'+(x-22)+'" y="16" width="44" height="18" rx="4" fill="rgba(23,26,32,.05)"/>'
-      +'<text x="'+x+'" y="29" text-anchor="middle" font-size="11" font-weight="700" fill="#171a20">'+(j+1)+' '+LN[j]+'</text>'; }
-  h+='<text x="'+(X0-16)+'" y="29" text-anchor="end" font-size="11" fill="#8a8d91" font-weight="700">产业线</text>';
-  h+='<text x="'+(X0+8*DX+8)+'" y="29" font-size="11" fill="var(--amber)" font-weight="700">结论适用期</text>';
-  SUP.forEach((s,i)=>{ const y=TOP+i*ROWH+ROWH/2;
-    h+='<text x="'+(X0-42)+'" y="'+(y+5)+'" text-anchor="end" font-size="13" font-weight="700" fill="#171a20">'+esc(s.ind)+'</text>'
-      +'<rect x="'+(X0-34)+'" y="'+(y-9)+'" width="34" height="17" rx="4" fill="'+owc(s.owner)+'"/><text x="'+(X0-17)+'" y="'+(y+3)+'" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="700">'+esc(s.owner)+'</text>';
-    s.layers.forEach((l,j)=>{ const x=X0+j*DX; const c=l.st==='red'?'#d3212c':l.st==='yellow'?'#e0a012':'#0a8754';
-      h+=(j<7?'<line x1="'+(x+11)+'" y1="'+y+'" x2="'+(x+DX-11)+'" y2="'+y+'" stroke="#e3e3e3"/>':'')
-        +'<circle cx="'+x+'" cy="'+y+'" r="10" fill="'+c+'"/><text x="'+x+'" y="'+(y+4)+'" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">'+(j+1)+'</text>'; });
-    h+='<text x="'+(X0+8*DX+8)+'" y="'+(y+4)+'" font-size="10.5" fill="var(--amber)">⏳ '+esc((s.valid||'').split('（')[0].slice(0,16))+'</text>';
+  const dotc=st=>st==='red'?'#d3212c':st==='yellow'?'#e0a012':'#0a8754';
+  h += '<div style="overflow-x:auto"><div class="sup-grid">';
+  h += '<div class="sup-h" style="text-align:left">产业线</div>';
+  for(let j=0;j<8;j++) h+='<div class="sup-h"><span class="sup-num">'+(j+1)+'</span>'+LN[j]+'</div>';
+  h += '<div class="sup-h" style="color:var(--amber)">结论适用期</div>';
+  SUP.forEach(s=>{
+    h += '<div class="sup-name"><span class="sup-own" style="background:'+owc(s.owner)+'">'+esc(s.owner)+'</span>'+esc(s.ind)+'</div>';
+    s.layers.forEach(l=>{ h+='<div class="sup-cell"><span class="sup-dot" style="background:'+dotc(l.st)+'">'+l.layer+'</span></div>'; });
+    h += '<div class="sup-valid">'+esc((s.valid||'').split('（')[0])+'</div>';
   });
-  h += '</svg>';
-  h += '<div class="mut" style="font-size:12px;text-align:center;margin-top:8px;line-height:1.8">●绿=正常环节 ●黄=观察 ●红=当前最卡约束 ｜ 每行=一条产业线从①物理约束到⑧护城河的完整供应链 ｜ 序号含义见顶部列头，全站沿用</div></div>';
+  h += '</div></div>';
+  h += '<div class="mut" style="font-size:12.5px;margin-top:10px;line-height:1.8"><b style="color:#0a8754">●</b> 正常环节　<b style="color:#e0a012">●</b> 观察　<b style="color:#d3212c">●</b> 当前最卡约束　｜　每行=一条产业线从①物理约束到⑧护城河的完整供应链，红点=瓶颈所在</div></div>';
   // 逐产业线展开
   SUP.forEach(s=>{
     h += '<div class="eyebrow"><span style="color:'+owc(s.owner)+'">●</span> '+esc(s.ind)+' <span class="mut" style="text-transform:none;letter-spacing:0;font-weight:400">· '+esc(s.owner)+'</span></div>';
     h += '<div class="card"><div style="font-size:12.5px;line-height:1.7;padding:8px 12px;background:rgba(62,106,225,.05);border-radius:6px;margin-bottom:6px"><b>主线判定：</b>'+esc(s.thesis)+'</div>';
-    h += '<div style="font-size:11.5px;color:var(--amber);margin-bottom:10px">⏳ 结论适用期：'+esc(s.valid||'—')+'（超出此期需重新评估，非永久成立）</div>';
+    h += '<div style="font-size:11.5px;color:var(--amber);margin-bottom:10px">时效 结论适用期：'+esc(s.valid||'—')+'（超出此期需重新评估，非永久成立）</div>';
     h += '<table><tr><th style="width:100px">层 · 类型</th><th>环节</th><th>当前状态</th><th>观测点</th><th>证据</th></tr>';
     h += s.layers.map(l=>{ const c=l.st==='red'?'var(--down)':l.st==='yellow'?'var(--amber)':'var(--up)';
       return '<tr><td style="white-space:nowrap"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:4px;background:'+c+';color:#fff;font-size:10.5px;font-weight:700">'+l.layer+'</span> <span style="font-size:11px;color:#5c5e62">'+esc(l.lname||'')+'</span></td>'
@@ -525,7 +523,7 @@ techtree(){ return guard('技术树', () => {
     h += '<table><tr><th>核心度量</th><th>拐点判据</th><th>中美对标</th><th>判定时效</th></tr>'
       +'<tr><td style="font-size:12.5px">'+esc(t.metric)+'</td><td style="font-size:12.5px">'+esc(t.tipping)+'</td>'
       +'<td style="font-size:12.5px">'+esc(t.cn)+'<div class="mut">'+esc(t.cn_edge)+'</div></td>'
-      +'<td style="font-size:11.5px;color:var(--amber)">⏳ '+esc(t.valid)+'</td></tr></table>';
+      +'<td style="font-size:11.5px;color:var(--amber)">时效 '+esc(t.valid)+'</td></tr></table>';
     h += '<div class="mut" style="font-size:12.5px;margin-top:6px"><b>判定：</b>'+esc(t.verdict)+'</div></div>';
   });
   h += '<div class="eyebrow">收敛点分析（真实结构＝技术线交叉处的下注）</div><div class="card"><table><tr><th>收敛点</th><th>交叉</th><th>当前缺口</th><th>尺度</th></tr>';
@@ -938,28 +936,6 @@ function spark(sym, up){
   const pts=cs.map((c,i)=>((i/(cs.length-1))*62).toFixed(1)+','+(19-((c-min)/rng)*16).toFixed(1)).join(' ');
   return '<svg width="62" height="22" viewBox="0 0 62 22" aria-hidden="true"><polyline points="'+pts+'" fill="none" stroke="'+(up?'var(--up)':'var(--down)')+'" stroke-width="1.6" stroke-linejoin="round"/></svg>';
 }
-(function buildAside(){
-  if(!DATA_OK) return;
-  const wm=document.getElementById('w-market');
-  D.market.quotes.forEach(q=>{
-    const chg=(q.chg==null)?'':'<span class="'+(q.chg>=0?'pos':'neg')+' num">'+(q.chg>=0?'+':'')+q.chg+'%</span>';
-    const sp=spark(q.sym, q.chg==null||q.chg>=0);
-    wm.insertAdjacentHTML('beforeend','<div class="mrow"><div><div class="nm">'+esc(q.name)+(q.status!=='green'?' <span class="sc">陈旧</span>':'')+'</div><div class="pr num">'+(q.price!=null?('$'+fmtN(q.price)):esc(q.mcap||'—'))+'</div></div><div style="text-align:right">'+chg+'<div>'+sp+'</div></div></div>');
-  });
-  wm.insertAdjacentHTML('beforeend','<div class="hl num">快照 '+esc(D.market.asof)+' · 每日 06:30 自动更新 · 免费源延迟约15分钟</div>');
-  const wc=document.getElementById('w-count');
-  D.countdowns.forEach(c=>{
-    const d=daysTo(c.date);
-    wc.insertAdjacentHTML('beforeend','<div class="cd-row"><span>'+esc(c.label)+'</span><span class="d num" style="color:'+(d<=14?'var(--down)':d<=45?'var(--amber)':'var(--text)')+'">'+(d>=0?d+' 天':'已过')+'</span></div>');
-  });
-  const wh=document.getElementById('w-health');
-  const names={yahoo:'Yahoo 行情',edgar:'SEC 文件',launchlib:'发射日程',rss:'新闻 RSS',stooq:'Stooq(退役)'};
-  for(const k in D.health.sources){
-    const v=D.health.sources[k];
-    wh.insertAdjacentHTML('beforeend','<div class="mrow"><div class="nm"><span class="st '+esc(v)+'"></span>'+esc(names[k]||k)+'</div><div class="mut" style="font-size:11px">'+({green:'正常',yellow:'陈旧/待抓',red:'失败',fused:'熔断'}[v]||v)+'</div></div>');
-  }
-  wh.insertAdjacentHTML('beforeend','<div class="hl">最后抓取：'+esc(D.health.last_run)+' · 记录 '+D.ledger.length+' 条 · 模式 v'+D.meta.schema_version+'<br>个人研究工具 · 非投资建议 · 纪律：无证据等级不入库 · 尺度强制标注 · 结论可审计</div>');
-})();
 
 (function boot(){
   if(!DATA_OK) return;
