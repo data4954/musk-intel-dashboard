@@ -14,7 +14,7 @@
   --font:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
 .num{font-variant-numeric:tabular-nums}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -34,7 +34,7 @@ a:hover{text-decoration:underline}
 .asof{font-size:11px;color:var(--dim);white-space:nowrap}
 
 /* 主布局 */
-.shell{max-width:1680px;margin:0 auto;padding:76px 20px 80px;display:flex;gap:26px;align-items:flex-start}
+.shell{max-width:1760px;margin:0 auto;padding:76px 28px 80px;display:flex;gap:26px;align-items:flex-start}
 main{flex:1;min-width:0}
 .pagehead{margin:8px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 #view-meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
@@ -42,7 +42,7 @@ main{flex:1;min-width:0}
 .vm-tags{display:flex;gap:6px;flex-wrap:wrap}
 .vm-tag{font-size:10.5px;color:var(--dim);background:rgba(23,26,32,.045);border-radius:4px;padding:2px 8px;white-space:nowrap}
 .figure{max-width:900px;margin:0 auto;display:block}
-.pagehead h2{font-size:30px;font-weight:700;letter-spacing:-.015em}
+.pagehead h2{font-size:33px;font-weight:700;letter-spacing:-.015em}
 #stale-banner{display:none;background:#fdf6e3;border:1px solid #eadfae;color:#6b5900;font-size:12.5px;
   padding:8px 14px;border-radius:6px;margin-bottom:14px}
 
@@ -50,11 +50,11 @@ main{flex:1;min-width:0}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:14px;
   box-shadow:0 1px 3px rgba(23,26,32,.045);transition:box-shadow .2s}
 .card:hover{box-shadow:0 3px 10px rgba(23,26,32,.07)}
-.card h3{font-size:15px;margin-bottom:8px;letter-spacing:.01em}
+.card h3{font-size:16.5px;margin-bottom:8px;letter-spacing:.01em}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;margin:24px 0 8px;display:flex;align-items:center;gap:7px}
 .eyebrow::before{content:'';width:3px;height:12px;background:var(--accent);border-radius:2px;flex-shrink:0}
 .eyebrow:first-child{margin-top:2px}
-table{width:100%;border-collapse:collapse;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}
 th{color:var(--dim);font-weight:600;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap;
   font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -69,7 +69,7 @@ table tr:hover td{background:rgba(62,106,225,.03)}
 .st{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
 .st.green{background:var(--up)}.st.yellow{background:#d9a514}.st.red,.st.fused{background:var(--down)}
 .pos{color:var(--up)}.neg{color:var(--down)}
-.mut{color:var(--dim);font-size:12.5px}
+.mut{color:var(--dim);font-size:13.5px}
 button,.btn{font-family:var(--font);background:var(--text);color:#fff;border:none;border-radius:4px;
   padding:9px 20px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
 button:hover{opacity:.86}
@@ -85,13 +85,13 @@ label{font-size:11px;color:var(--dim);display:block;margin:8px 0 3px;letter-spac
   box-shadow:0 1px 3px rgba(23,26,32,.045);transition:transform .15s,box-shadow .2s}
 .metric:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(23,26,32,.08)}
 .metric .k{font-size:10.5px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase}
-.metric .v{font-size:22px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.metric .v{font-size:24px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
 .metric .s{font-size:11.5px;color:var(--dim);margin-top:3px}
 .feed-item{padding:14px 8px;border-bottom:1px solid var(--line);border-radius:8px;transition:background .15s}
 .feed-item:hover{background:rgba(23,26,32,.02)}
 .feed-item .t1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .feed-item .date{font-size:12px;color:var(--dim)}
-.feed-item .title{font-weight:700;font-size:14.5px;margin:3px 0}
+.feed-item .title{font-weight:700;font-size:15.5px;margin:3px 0}
 .feed-item .body{font-size:13px;color:#3a3d42}
 .gray-card{background:var(--panel);border:1px dashed #c8c9cb;border-radius:8px;padding:18px;color:var(--dim);
   font-size:13px;text-align:center;margin-bottom:12px}
@@ -315,13 +315,14 @@ graph(){ return guard('关系图谱', () => {
       +'<text x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle" font-size="9.5" font-weight="600" fill="#171a20">'+esc(e.name.length>8?e.name.slice(0,8)+'…':e.name)+'</text></g>'; });
   gsvg+='</svg>';
   let h = '<div class="eyebrow">实体关系图（列=层级 · 边色：<span style="color:#3e6ae1">股权</span>/<span style="color:#0a8754">资金</span>/<span style="color:#d3212c">监管</span>/<span style="color:#a06a00">政治</span> · 深=A级）</div><div class="card">'+gsvg+'</div>';
-  h += '<div class="eyebrow">节点（商业实体 + 资本暗层 + 物理根基 三位一体 · '+et.length+' 个）</div><div class="grid3">';
+  h += '<div class="eyebrow">实体清单（商业主体 · 资本层 · 物理根基 · 共 '+et.length+' 个节点）</div>';
   const groups = {};
   et.forEach(e=>{ (groups[e.type]=groups[e.type]||[]).push(e); });
+  h += '<div style="column-count:3;column-gap:14px">';
   for(const t in groups){
-    h += '<div class="card"><h3>'+esc(typeName[t]||t)+'</h3>'+groups[t].map(e=>'<div style="font-size:13px;padding:3px 0"><b>'+esc(e.name)+'</b><div class="mut">'+esc(e.note||e.status||'')+'</div></div>').join('')+'</div>';
+    h += '<div class="card" style="break-inside:avoid;margin-bottom:14px"><h3>'+esc(typeName[t]||t)+' <span class="mut" style="font-weight:400;font-size:12px">'+groups[t].length+'</span></h3>'+groups[t].map(e=>'<div style="font-size:13.5px;padding:4px 0"><b>'+esc(e.name)+'</b><div class="mut">'+esc(e.note||e.status||'')+'</div></div>').join('')+'</div>';
   }
-  h += '</div><div class="eyebrow">关系边明细（'+ed.length+' 条 · 按类型分组 · 组内按日期倒序）</div>';
+  h += '</div><div class="eyebrow">资本与权力连带谱（Network Ties · '+ed.length+' 条边 · 按传导类型分组 · 组内按日期倒序）</div>';
   const EK=[['股权','#3e6ae1','股权穿透'],['资金流','#0a8754','资金流向'],['监管管辖','#d3212c','监管管辖'],['政治恩惠','#a06a00','政治'],['关联交易','#a06a00','关联交易'],['人质依赖','#a06a00','人质依赖'],['根基','#8a8d91','根基'],['股权','#8a8d91','其他']];
   const seen={};
   [['股权','#3e6ae1'],['资金流','#0a8754'],['监管管辖','#d3212c'],['政治恩惠','#a06a00'],['关联交易','#5c5e62'],['人质依赖','#5c5e62'],['根基','#8a8d91']].forEach(function(g){
@@ -626,7 +627,7 @@ persons(){ return guard('人物网络', () => {
     {name:'政治接口', x:200, y:350, w:140, h:85},
     {name:'对手方',   x:65,  y:380, w:120, h:75}
   ];
-  let svg = '<svg viewBox="0 0 700 470" style="width:100%;max-width:900px;display:block;margin:0 auto" role="img" aria-label="人物关系网络">';
+  let svg = '<svg viewBox="0 0 700 470" style="width:100%;max-width:660px;display:block;margin:0 auto" role="img" aria-label="人物关系网络">';
   zones.forEach(z=>{
     svg += '<rect x="'+z.x+'" y="'+z.y+'" width="'+z.w+'" height="'+z.h+'" rx="14" fill="rgba(23,26,32,.022)" stroke="#e3e3e3" stroke-dasharray="4 4"/>'
         +  '<text x="'+(z.x+10)+'" y="'+(z.y+16)+'" font-size="9.5" fill="#8a8d91" letter-spacing="2" font-weight="700">'+esc(z.name)+'</text>';
@@ -654,6 +655,18 @@ persons(){ return guard('人物网络', () => {
     +'<div class="mut" style="font-size:11px;text-align:center;margin-top:4px"><span style="color:#a06a00">— 家族</span>　<span style="color:#3e6ae1">— 资本/风投</span>　<span style="color:#0a8754">— 政治</span>　<span style="color:#d3212c">— 对手/分歧</span>　— 灰=其他　虚线=推断</div></div>';
 
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));
+  const capMoves=[
+    {who:'Elon Musk 本人',tone:'red',pts:'Form 4 是全网最强单一信号——本人减持历史上为最强负向指标。当前通道：EDGAR 每日回填；无申报窗口本身=无减持压力的正向读数。质押率×股价强平距离为尾部风险，待 Proxy 更新。'},
+    {who:'Kimbal Musk（独立信号源）',tone:'amber',pts:'与本人共享信息集但独立决策——二者同窗口同向交易时信号相乘。单独减持为弱信号，需与本人申报对照。'},
+    {who:'机构多头（ARK / Baron）',tone:'blue',pts:'属叙事传播层非信息层。关键研判点：ARK 日频持仓与其公开唱多的背离度——行为与言论背离=叙事层裂缝的先行信号。清仓/大幅减持才有增量信息，加仓表态无。'},
+    {who:'资本盟友（a16z / Thiel）',tone:'blue',pts:'基金后续轮跟投=对叙事的付费投票（高信息量）；公开站台=低成本信号（按 C 级处理）。停投或转向为负向拐点。'},
+    {who:'对手方（Citadel / Griffin）',tone:'gray',pts:'做市商言论经对冲后无方向暴露，信息量按 C- 处理；只读其 13F 期权结构，不读其公开表态。'},
+    {who:'主权资本（HUMAIN / QIA / MGX）',tone:'amber',pts:'已由 xAI 股东转为 SPCX 股东，持仓显性化。研判点：增减持动作牵动 CFIUS 审查敞口，是地缘风险的资本化温度计。'},
+  ];
+  const tc={red:'var(--down)',amber:'var(--amber)',blue:'var(--accent)',gray:'#5c5e62'};
+  h += '<div class="eyebrow">资金流向与持仓变动 · 当期研判（按信号成本分级 · 行为 > 言论）</div><div class="card">'
+    + capMoves.map(m=>'<div style="padding:8px 0;border-bottom:1px solid var(--line)"><div style="font-size:13.5px;font-weight:700;color:'+tc[m.tone]+'">'+esc(m.who)+'</div><div style="font-size:13px;line-height:1.7;color:#25282d;margin-top:2px">'+esc(m.pts)+'</div></div>').join('')
+    + '<div class="mut" style="font-size:12px;margin-top:8px">研判纪律：显示性偏好(revealed preference)>公开表态；申报文件(A级)>持仓推断(13F滞后)>言论(C级)。具体条目见各人物卡「账本联动」，随 EDGAR/新闻通道每日刷新。</div></div>';
   h += '<div class="eyebrow">人物卡（功能/信号/预警/通道 + 账本自动联动）</div>';
   ps.forEach(p=>{
     let moves = ledger.filter(r=>(r.tags||[]).includes('person:'+p.id));
@@ -685,7 +698,7 @@ persons(){ return guard('人物网络', () => {
       +'</div>';
   });
 
-  h += '<div class="eyebrow">关系边明细（'+pe.length+' 条 · 每条带性质与证据）</div><div class="card"><table>'
+  h += '<div class="eyebrow">人际连带谱（Interpersonal Ties · '+pe.length+' 条 · 性质与证据分级）</div><div class="card"><table>'
     +'<tr><th>关系</th><th>性质</th><th>证据</th><th>判读要点</th></tr>'
     +pe.map(e=>'<tr><td style="white-space:nowrap"><b>'+esc((byId[e.a]||{}).short||e.a)+' ↔ '+esc((byId[e.b]||{}).short||e.b)+'</b></td><td>'+esc(e.kind)+'</td><td>'+(e.ev==='推断'?'<span class="chip ev-C">推断</span>':evChip(e.ev))+'</td><td style="font-size:12px">'+esc(e.note||'')+'</td></tr>').join('')
     +'</table></div>';
