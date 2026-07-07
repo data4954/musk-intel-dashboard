@@ -2296,7 +2296,9 @@ window.MUSKINTEL_DATA = {
     "4680 干电极良率爬坡为成本主变量"
    ],
    "chain": "命门供应商：一体压铸机(意德拉/力劲—中国供应链强项)",
-   "verdict": "成本地板距离中等；学习率样本充足"
+   "verdict": "成本地板距离中等；学习率样本充足",
+   "valid": "量产成熟，季度滚动",
+   "asof": "一体压铸/4680 良率为季度变量"
   },
   {
    "id": "megapack",
@@ -2309,7 +2311,9 @@ window.MUSKINTEL_DATA = {
     "休斯顿厂 = Megapack 3 工艺代际(件数删减)"
    ],
    "chain": "电芯自产 vs 宁德外购比例演变",
-   "verdict": "扩产进度表=利润进度表"
+   "verdict": "扩产进度表=利润进度表",
+   "valid": "12-18个月(休斯顿厂满产前)",
+   "asof": "Q1'26 财报锚"
   },
   {
    "id": "raptor",
@@ -2322,7 +2326,9 @@ window.MUSKINTEL_DATA = {
     "全帝国 Idiot Index 收敛最狠单品"
    ],
    "chain": "增材制造占比/单台工时演进",
-   "verdict": "直接决定星舰$/kg与轨道数据中心叙事生死"
+   "verdict": "直接决定星舰$/kg与轨道数据中心叙事生死",
+   "valid": "5年(星舰复用主线)",
+   "asof": "Raptor 3 迭代公开信息"
   },
   {
    "id": "starlink",
@@ -2335,7 +2341,9 @@ window.MUSKINTEL_DATA = {
     "对照：Kuiper ~150颗 vs 8000+颗，FCC死线07-30"
    ],
    "chain": "砷化镓/氮化镓射频器件",
-   "verdict": "频谱容量是物理天花板，不是发射"
+   "verdict": "频谱容量是物理天花板，不是发射",
+   "valid": "持续(V3代际切换期)",
+   "asof": "在轨数与FCC文件"
   },
   {
    "id": "colossus",
@@ -2349,7 +2357,9 @@ window.MUSKINTEL_DATA = {
     "$/GPU-月成本堆栈可与 Anthropic $1.25B/月、Google $920M/月实付租金对表——外部可证伪"
    ],
    "chain": "VoltaGrid燃气轮机(许可诉讼中)",
-   "verdict": "SPCX估值中唯一可逐季证伪的部分"
+   "verdict": "SPCX估值中唯一可逐季证伪的部分",
+   "valid": "6-12个月(电力许可裁决前)",
+   "asof": "S-1拆解 2026-07"
   },
   {
    "id": "actuator",
@@ -2362,7 +2372,9 @@ window.MUSKINTEL_DATA = {
     "无框力矩电机磁钢=稀土暴露；灵巧手22自由度腱绳vs直驱成本差"
    ],
    "chain": "哈默纳科/绿的谐波产能 vs Tesla自研集成执行器",
-   "verdict": "分水岭指标：执行器产线的招聘与设备采购"
+   "verdict": "分水岭指标：执行器产线的招聘与设备采购",
+   "valid": "5年(执行器产线验证前)",
+   "asof": "产能推算+招聘信号"
   },
   {
    "id": "n1",
@@ -2375,7 +2387,9 @@ window.MUSKINTEL_DATA = {
     "评估规模化看R1台数×单台手术时长，不看发布会"
    ],
    "chain": "定制ASIC/感应充电",
-   "verdict": "TRL 4-5，20年尺度标的"
+   "verdict": "TRL 4-5，20年尺度标的",
+   "valid": "20年(临床长周期)",
+   "asof": "FDA/临床登记"
   }
  ],
  "techtree": [

@@ -14,7 +14,7 @@
   --font:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .num{font-variant-numeric:tabular-nums}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -50,8 +50,9 @@ main{width:100%;min-width:0}
 .sup-cell{background:#fff;display:flex;align-items:center;justify-content:center;padding:8px 0}
 .sup-dot{width:24px;height:24px;border-radius:50%;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .sup-valid{background:#fff;padding:11px 10px;font-size:12px;color:var(--amber);font-weight:600;display:flex;align-items:center}
-.struct-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:8px}
-.struct-col{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 0 8px;box-shadow:0 1px 3px rgba(23,26,32,.045)}
+.struct-board{column-count:4;column-gap:12px;margin-bottom:8px}
+@media(max-width:900px){.struct-board{column-count:2}}
+.struct-col{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 0 8px;box-shadow:0 1px 3px rgba(23,26,32,.045);break-inside:avoid;margin-bottom:12px;display:inline-block;width:100%}
 .struct-h{font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:10px 12px 8px}
 .struct-node{padding:7px 12px;border-top:1px solid var(--line)}
 .struct-nm{font-size:13.5px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:6px}
@@ -71,8 +72,8 @@ main{width:100%;min-width:0}
 .eyebrow:first-child{margin-top:2px}
 table{width:100%;border-collapse:collapse;font-size:14px}
 th{color:var(--dim);font-weight:600;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap;
-  font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  font-size:11px;letter-spacing:.08em;text-transform:uppercase;word-break:keep-all}
+td{padding:9px 9px;border-bottom:1px solid var(--line);vertical-align:top;word-break:keep-all}
 tr:last-child td{border-bottom:none}
 table tr:nth-child(even) td{background:rgba(23,26,32,.014)}
 table tr:hover td{background:rgba(62,106,225,.03)}
@@ -369,7 +370,7 @@ political(){ return guard('政治与地缘', () => {
   h += '<div class="eyebrow">政治资本存量表 · 资产端（五类 · 每项标来源事件/建立时间/可动用性/衰减时间常数）</div><div class="card"><table>'
     +'<tr><th>类别</th><th>项目</th><th>来源(时间)</th><th>当前状态</th><th>可动用性</th><th>衰减</th><th>证据</th></tr>'
     + Object.keys(grp).map(cls=>grp[cls].map((x,i)=>'<tr>'
-      +(i===0?'<td rowspan="'+grp[cls].length+'" style="vertical-align:top"><b style="color:'+(clsColor[cls]||'#333')+';font-size:12px">'+esc(cls)+'</b></td>':'')
+      +(i===0?'<td rowspan="'+grp[cls].length+'" style="vertical-align:top;white-space:nowrap;width:92px"><b style="color:'+(clsColor[cls]||'#333')+';font-size:12.5px">'+esc(cls)+'</b></td>':'')
       +'<td style="font-size:12.5px"><b>'+esc(x.item)+'</b></td>'
       +'<td style="font-size:11.5px" class="mut">'+esc(x.origin)+'<br><span class="num">'+esc(x.since)+'</span></td>'
       +'<td style="font-size:12px">'+esc(x.state)+'</td>'
@@ -487,6 +488,7 @@ physics(){ return guard('物理与供需', () => {
   D.teardowns.forEach(t=>{
     h += '<div class="card"><h3>'+esc(t.name)+' <span class="mut" style="font-weight:400">· '+esc(t.role)+'</span></h3>'+
       '<div style="font-size:13px;margin-bottom:6px"><b>命门：</b>'+esc(t.core)+'</div>'+
+      (t.valid?'<div style="font-size:11.5px;color:var(--amber);margin:4px 0">时效 '+esc(t.valid)+' ｜ 数据来源 '+esc(t.asof||'—')+'</div>':'')+
       t.facts.map(f=>'<div style="font-size:12.5px;padding:2px 0;color:#3a3d42">— '+esc(f)+'</div>').join('')+
       '<div class="mut" style="margin-top:6px">供应链命门：'+esc(t.chain)+' ｜ <b>判定：'+esc(t.verdict)+'</b></div></div>';
   });
