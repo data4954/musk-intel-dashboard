@@ -769,7 +769,7 @@ persons(){ return guard('人物网络', () => {
   ];
   const tierOf=p2=> p2.id==='musk'?0 : (p2.zone==='家族'?1 : (/HUMAIN|QIA|MGX/i.test((p2.name||'')+(p2.org||''))?2 : (/a16z|Thiel/i.test((p2.name||'')+(p2.org||''))?3 : (/ARK|Baron/i.test((p2.name||'')+(p2.org||''))?4 : (p2.zone==='对手'?5:-1)))));
   pnet+='<div id="pdetail" style="border-top:1px solid var(--line);margin-top:10px;padding-top:10px">'
-    +'<div class="pdhint mut" style="font-size:12.5px">点上方任一节点 → 此处显示该人物的信号层级、判读要点、预警指标与观察通道；点空白复位。信号层级=按造假成本从高到低分六层，越高越该当真。</div>'
+    +'<div class="pdhint mut" style="font-size:12.5px">下方默认展示中心节点 Elon Musk 的完整档案；点其他节点切换，点空白回到中心节点。信号层级=按造假成本从高到低分六层，越高越该当真。</div>'
     + ps.map(p2=>{ const ti=tierOf(p2), tt=ti>=0?tiers[ti]:null;
         const rel=pe.filter(e3=>e3.a===p2.id||e3.b===p2.id).map(e3=>{const o=byId[e3.a===p2.id?e3.b:e3.a]||{};return '<span class="chip" style="background:rgba(43,39,33,.06);color:#2b2721;cursor:pointer" onclick="__pjump(&quot;'+esc(o.id||'')+'&quot;)">'+esc(o.short||'')+' · '+esc(e3.kind)+'</span>';}).join(' ')||'—';
         const mv=(function(){ let m=ledger.filter(r=>(r.tags||[]).includes('person:'+p2.id));
@@ -778,7 +778,7 @@ persons(){ return guard('人物网络', () => {
           else if(p2.id==='kimbal'){ ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('kimbal')).forEach(x=>{ if(m.indexOf(x)<0) m.push(x); }); }
           return m.sort((a,b)=>b.ts.localeCompare(a.ts)).slice(0,6); })();
         const mvh=mv.length?mv.map(mm=>{const u=((mm.payload||{}).srcs||[])[0]||((mm.payload||{}).src||'');return '<div style="font-size:12px;padding:3px 0"><span class="date num mut">'+esc(mm.ts)+'</span> '+evChip(mm.ev)+' '+esc(mm.title)+(String(u).startsWith('http')?' <a href="'+esc(u)+'" target="_blank" rel="noopener">原文↗</a>':'')+'</div>';}).join(''):'<div class="mut" style="font-size:12px">暂无动态（通道每日自动抓取'+(p2.aliases&&p2.aliases.length?('；匹配别名: '+esc(p2.aliases.join('/'))):'')+'）</div>';
-        return '<div class="pdet" data-for="'+esc(p2.id)+'" style="display:none">'
+        return '<div class="pdet" data-for="'+esc(p2.id)+'" style="display:'+(p2.id==='musk'?'block':'none')+'">'
           +'<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px"><b style="font-size:15px">'+esc(p2.name)+'</b><span class="mut" style="font-size:12px">'+esc(p2.role||'')+' · '+esc(p2.org||'')+'</span><span class="chip" style="background:rgba(43,39,33,.07);color:#2b2721">'+esc(p2.tier||'')+'</span>'
           +(tt?'<span style="background:'+tt.c+'20;color:'+tt.c+';font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px">信号层级 第 '+(ti+1)+' 层 · '+esc(tt.lv)+'</span>':'<span style="background:rgba(62,138,104,.14);color:#3e8a68;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px">政治接口 · 风向标，不入信号分级</span>')+'</div>'
           +(tt?'<div style="font-size:12px;color:#3a3d42;line-height:1.75;margin-bottom:8px">'+esc(tt.pts)+'</div>':'')
@@ -994,7 +994,7 @@ document.addEventListener('click',e=>{
         host.querySelectorAll('.pdet').forEach(d=>d.style.display='none');
         if(t){ t.style.display='block'; if(hint) hint.style.display='none'; }
         else if(hint){ hint.style.display='block'; }
-      } else { host.querySelectorAll('.pdet').forEach(d=>d.style.display='none'); if(hint) hint.style.display='block'; }
+      } else { host.querySelectorAll('.pdet').forEach(d=>d.style.display='none'); const mk=host.querySelector('.pdet[data-for="musk"]'); if(mk){ mk.style.display='block'; if(hint) hint.style.display='block'; } else if(hint){ hint.style.display='block'; } }
     }
   }
 });document.addEventListener('change',e=>{
