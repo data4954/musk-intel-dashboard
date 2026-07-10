@@ -758,7 +758,7 @@ persons(){ return guard('人物网络', () => {
       +'<div style="font-size:10.5px;font-weight:600;color:#2b2721;background:rgba(255,253,249,.92);border-radius:4px;padding:0 4px;margin-top:2px;white-space:nowrap">'+esc(p2.short)+'</div></div>';
   });
   pnet+='</div>';
-  pnet+='<div class="mut" style="font-size:11px;margin-top:8px;line-height:1.8">节点色=功能域（<span style="color:#b07a2e">●家族</span> <span style="color:#5570bd">●资本</span> <span style="color:#3e8a68">●政治</span> <span style="color:#c0554a">●对手</span>）；线色=关系性质（琥珀家族 · 蓝资本/投资 · 绿政治 · 红对手/分歧），虚线=推断。具体证据与动态见下方人物档案卡。研判纪律：显示性偏好(revealed preference) &gt; 公开表态；申报文件(A级) &gt; 持仓推断(13F滞后) &gt; 言论(C级)。</div>';
+  pnet+='<div class="mut" style="font-size:11px;margin-top:8px;line-height:1.8">节点色=功能域（<span style="color:#b07a2e">●家族</span> <span style="color:#5570bd">●资本</span> <span style="color:#3e8a68">●政治</span> <span style="color:#c0554a">●对手</span>）；线色=关系性质（琥珀家族 · 蓝资本/投资 · 绿政治 · 红对手/分歧），虚线=推断。点选节点查看完整档案、关联人物与账本联动。研判纪律：显示性偏好(revealed preference) &gt; 公开表态；申报文件(A级) &gt; 持仓推断(13F滞后) &gt; 言论(C级)。</div>';
   const ledger = allLedger().slice().sort((a,b)=>b.ts.localeCompare(a.ts));  const tiers=[
     {lv:'最强信号 · 本人', c:'#c0554a', pts:'本人 Form 4 是全网最强单一信号——历史上本人减持=最强负向指标。当前通道 EDGAR 每日回填；无申报窗口本身=无减持压力的正向读数。'},
     {lv:'独立信号源 · 家族', c:'#b07a2e', pts:'与本人共享信息集但独立决策——同窗口同向交易时信号相乘；信托层减持=高信息量（Form 4 间接持有栏）。'},
@@ -771,45 +771,23 @@ persons(){ return guard('人物网络', () => {
   pnet+='<div id="pdetail" style="border-top:1px solid var(--line);margin-top:10px;padding-top:10px">'
     +'<div class="pdhint mut" style="font-size:12.5px">点上方任一节点 → 此处显示该人物的信号层级、判读要点、预警指标与观察通道；点空白复位。信号层级=按造假成本从高到低分六层，越高越该当真。</div>'
     + ps.map(p2=>{ const ti=tierOf(p2), tt=ti>=0?tiers[ti]:null;
+        const rel=pe.filter(e3=>e3.a===p2.id||e3.b===p2.id).map(e3=>{const o=byId[e3.a===p2.id?e3.b:e3.a]||{};return '<span class="chip" style="background:rgba(43,39,33,.06);color:#2b2721;cursor:pointer" onclick="__pjump(&quot;'+esc(o.id||'')+'&quot;)">'+esc(o.short||'')+' · '+esc(e3.kind)+'</span>';}).join(' ')||'—';
+        const mv=(function(){ let m=ledger.filter(r=>(r.tags||[]).includes('person:'+p2.id));
+          if(p2.aliases&&p2.aliases.length){ ledger.filter(r=>p2.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).forEach(x=>{ if(m.indexOf(x)<0) m.push(x); }); }
+          if(p2.id==='musk'){ const f4=ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('elon')); const tg=ledger.filter(r=>(r.tags||[]).includes('musk')&&(r.ev==='A'||r.ev==='B')); m=f4.concat(tg).filter((x,i,arr)=>arr.indexOf(x)===i); }
+          else if(p2.id==='kimbal'){ ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('kimbal')).forEach(x=>{ if(m.indexOf(x)<0) m.push(x); }); }
+          return m.sort((a,b)=>b.ts.localeCompare(a.ts)).slice(0,6); })();
+        const mvh=mv.length?mv.map(mm=>{const u=((mm.payload||{}).srcs||[])[0]||((mm.payload||{}).src||'');return '<div style="font-size:12px;padding:3px 0"><span class="date num mut">'+esc(mm.ts)+'</span> '+evChip(mm.ev)+' '+esc(mm.title)+(String(u).startsWith('http')?' <a href="'+esc(u)+'" target="_blank" rel="noopener">原文↗</a>':'')+'</div>';}).join(''):'<div class="mut" style="font-size:12px">暂无动态（通道每日自动抓取'+(p2.aliases&&p2.aliases.length?('；匹配别名: '+esc(p2.aliases.join('/'))):'')+'）</div>';
         return '<div class="pdet" data-for="'+esc(p2.id)+'" style="display:none">'
-          +'<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px"><b style="font-size:15px">'+esc(p2.name)+'</b><span class="mut" style="font-size:12px">'+esc(p2.role||'')+' · '+esc(p2.org||'')+'</span>'
+          +'<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px"><b style="font-size:15px">'+esc(p2.name)+'</b><span class="mut" style="font-size:12px">'+esc(p2.role||'')+' · '+esc(p2.org||'')+'</span><span class="chip" style="background:rgba(43,39,33,.07);color:#2b2721">'+esc(p2.tier||'')+'</span>'
           +(tt?'<span style="background:'+tt.c+'20;color:'+tt.c+';font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px">信号层级 第 '+(ti+1)+' 层 · '+esc(tt.lv)+'</span>':'<span style="background:rgba(62,138,104,.14);color:#3e8a68;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px">政治接口 · 风向标，不入信号分级</span>')+'</div>'
           +(tt?'<div style="font-size:12px;color:#3a3d42;line-height:1.75;margin-bottom:8px">'+esc(tt.pts)+'</div>':'')
-          +'<table style="font-size:12.5px"><tr><td style="width:86px;white-space:nowrap" class="mut">功能角色</td><td>'+esc(p2.func||'—')+'</td></tr><tr><td class="mut">信号价值</td><td>'+esc(p2.signal||'—')+'</td></tr><tr><td class="mut">预警指标</td><td><b>'+esc(p2.watch||'—')+'</b></td></tr><tr><td class="mut">可观测通道</td><td>'+esc(p2.channel||'—')+'</td></tr></table>'
-          +'<div class="mut" style="font-size:11px;margin-top:6px">完整档案与账本联动见下方人物卡。</div></div>';
+          +'<table style="font-size:12.5px"><tr><td style="width:86px;white-space:nowrap" class="mut">功能角色</td><td>'+esc(p2.func||'—')+'</td></tr><tr><td class="mut">信号价值</td><td>'+esc(p2.signal||'—')+'</td></tr><tr><td class="mut">预警指标</td><td><b>'+esc(p2.watch||'—')+'</b></td></tr><tr><td class="mut">可观测通道</td><td>'+esc(p2.channel||'—')+'</td></tr><tr><td class="mut">关联人物</td><td>'+rel+'</td></tr></table>'
+          +'<div class="mut" style="margin:9px 0 3px;font-size:10.5px;letter-spacing:.08em">账本联动'+(p2.id==='musk'?'（本人 Form 4 申报 + 主账本 A/B 级事件）':'（通道每日自动刷新）')+'</div>'+mvh
+          +'</div>';
       }).join('')
     +'</div></div>';
   let h = pnet;
-  h += '<div class="eyebrow">人物卡（功能/信号/预警/通道 + 账本自动联动）</div>';
-  ps.forEach(p=>{
-    let moves = ledger.filter(r=>(r.tags||[]).includes('person:'+p.id));
-    if(p.aliases && p.aliases.length){
-      ledger.filter(r=>p.aliases.some(a=>String(r.title).toLowerCase().includes(a.toLowerCase()))).forEach(x=>{ if(moves.indexOf(x)<0) moves.push(x); });
-    }
-    if(p.id==='musk'){
-      // 马斯克本人：Form4(A) + 主账本含 musk 标签的 A/B 事件（不拉全网新闻，避免噪音）
-      const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('elon'));
-      const tagged = ledger.filter(r=>(r.tags||[]).includes('musk')&&(r.ev==='A'||r.ev==='B'));
-      moves = f4.concat(tagged);
-      moves = moves.filter((x,i)=>moves.indexOf(x)===i);
-    } else if(p.id==='kimbal'){
-      const f4 = ledger.filter(r=>String(r.id).startsWith('EDGAR-')&&((r.payload||{}).owner||'').toLowerCase().includes('kimbal'));
-      f4.forEach(x=>{ if(moves.indexOf(x)<0) moves.push(x); });
-    }
-    moves = moves.sort((a,b)=>b.ts.localeCompare(a.ts)).slice(0,6);
-    h += '<div class="card" id="pc-'+esc(p.id)+'"><h3>'+esc(p.name)+' <span class="mut" style="font-weight:400">· '+esc(p.role)+' · '+esc(p.org)+'</span> <span class="chip" style="background:rgba(43,39,33,.07);color:#2b2721">'+esc(p.tier)+'</span></h3>'
-      +'<table style="font-size:12.5px">'
-      +'<tr><td style="width:82px;white-space:nowrap" class="mut">功能角色</td><td>'+esc(p.func||'—')+'</td></tr>'
-      +'<tr><td class="mut">信号价值</td><td>'+esc(p.signal||'—')+'</td></tr>'
-      +'<tr><td class="mut">预警指标</td><td><b>'+esc(p.watch||'—')+'</b></td></tr>'
-      +'<tr><td class="mut">可观测通道</td><td>'+esc(p.channel||'—')+'</td></tr>'
-      +'<tr><td class="mut">关联人物</td><td>'+ (pe.filter(e=>e.a===p.id||e.b===p.id).map(e=>{const o=byId[e.a===p.id?e.b:e.a]||{};return '<span class="chip" style="background:rgba(43,39,33,.06);color:#2b2721;cursor:pointer" onclick="var el=document.getElementById(\'pc-'+esc(o.id)+'\');if(el)el.scrollIntoView({behavior:\'smooth\'})">'+esc(o.short||'')+' · '+esc(e.kind)+'</span>';}).join(' ')||'—') +'</td></tr>'
-      +'</table>'
-      +'<div class="mut" style="margin:8px 0 3px;font-size:11px;letter-spacing:.08em">账本联动'+(p.id==='musk'?'（本人 Form 4 申报 + 主账本 A/B 级事件）':'')+'</div>'
-        +(moves.length ? moves.map(m=>{const u=((m.payload||{}).srcs||[])[0]||((m.payload||{}).src||''); return '<div style="font-size:12.5px;padding:3px 0"><span class="date num mut">'+esc(m.ts)+'</span> '+evChip(m.ev)+' '+esc(m.title)+(String(u).startsWith('http')?' <a href="'+esc(u)+'" target="_blank" rel="noopener">原文↗</a>':'')+'</div>';}).join('')
-                       : '<div class="mut" style="font-size:12px">暂无动态（'+(p.id==='musk'?'Form 4 申报随 EDGAR 每日回填':'人物新闻通道每日自动抓取；匹配别名: '+esc((p.aliases||[]).join('/')))+'）</div>')
-      +'</div>';
-  });
 
   return h;
 });},
@@ -996,6 +974,7 @@ function addDecision(){
   const logs=Store.get('decisions',[]); logs.push({ts:new Date().toISOString().slice(0,10),txt:v,result:''});
   Store.set('decisions',logs); render('decide');
 }
+window.__pjump=function(id){var nn=document.querySelector('#pnetbox .gnode[data-gid=\"'+id+'\"]');if(nn)nn.click();};
 document.addEventListener('click',e=>{
   const g = e.target.closest && e.target.closest('.pnode');
   if(g){ const el=document.getElementById('pc-'+g.dataset.pid); if(el) el.scrollIntoView({behavior:'smooth'}); }
@@ -1047,7 +1026,7 @@ const VIEW_META={
  travel:{cycle:'人工入库+人物新闻通道（ADS-B自动通道暂停）',src:'公开报道',guide:'行程比言论诚实：到场=最高成本信号。'},
  feed:{cycle:'数据每日 06:30 自动 · 判定快照实时拼装',src:'全源汇聚',guide:'先看快照卡知道现在什么最重要，再往下翻近半年事件流。'},
  graph:{cycle:'边与节点=人工判定资产（报告检测翻转）',src:'8-K/Proxy/Form 4/多源财经',guide:'看钱和权在实体间怎么流动；边越深证据越硬。'},
- persons:{cycle:'人物动态每日自动 · 关系框架人工维护',src:'EDGAR/13F/FEC/新闻通道',guide:'看谁的什么行为值得当信号；动向每天自动挂卡。'},
+ persons:{cycle:'人物动态每日自动 · 关系框架人工维护',src:'EDGAR/13F/FEC/新闻通道',guide:'看谁的什么行为值得当信号；点节点看档案与动向。'},
  political:{cycle:'联动矩阵人工判定 · FEC/事件每日自动',src:'FEC/公开记录/账本',guide:'先看时间轴知道现在处于哪段，再看矩阵知道哪条业务线的政治管道有变。'},
  leading:{cycle:'自动项每日 06:30 · 人工项事件驱动',src:'EDGAR/Greenhouse/FEC/公示文件',guide:'先看侧重点矩阵知道布控密度，再看触发扫描知道今天哪里亮灯。'},
  physics:{cycle:'约束态判定人工维护（报告检测翻转）',src:'财报/产能公告/监管文件',guide:'每条产品线只问一个问题：卡在供给还是需求？答案决定盯什么。'},
