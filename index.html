@@ -1083,6 +1083,13 @@ function spark(sym, up){
   if(lb){ const bd=(Date.now()-new Date(lb))/86400000; if(bd>7) msgs.push('批注备份已超过 7 天，请到【决策档案】导出备份'); }
   if(msgs.length){ const b=document.getElementById('stale-banner'); b.style.display='block'; b.textContent='⚠ '+msgs.join(' ｜ '); }
   render('feed');
+  // 英文访客提示条(非中文浏览器显示,可关闭)
+  if(!((navigator.language||'').toLowerCase().startsWith('zh')) && !localStorage.getItem('en_hint_off')){
+    const eb=document.createElement('div');
+    eb.style.cssText='position:fixed;bottom:0;left:0;right:0;z-index:70;background:#2b2721;color:#f6f4ef;font-size:13px;padding:10px 18px;text-align:center;line-height:1.6';
+    eb.innerHTML='EN &mdash; This terminal is written in Chinese (that&#39;s rather the point: built in the author&#39;s native language, with Claude). Browser translate works great. Architecture &amp; method: <a href="https://github.com/data4954/musk-intel-dashboard" style="color:#e0906c" target="_blank" rel="noopener">English README</a><span style="cursor:pointer;margin-left:16px;opacity:.65" onclick="localStorage.setItem(&#39;en_hint_off&#39;,1);this.parentElement.remove()">&#10005; dismiss</span>';
+    document.body.appendChild(eb);
+  }
 })();
 </script>
 </body>
