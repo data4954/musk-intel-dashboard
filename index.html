@@ -493,7 +493,7 @@ leading(){ return guard('先行引擎', () => {
     if(horiz){ const xm=x0+(x1-x0)*r; sliceLayout(left,x0,y0,xm,y1,false); sliceLayout(right,xm,y0,x1,y1,false); }
     else { const ym=y0+(y1-y0)*r; sliceLayout(left,x0,y0,x1,ym,true); sliceLayout(right,x0,ym,x1,y1,true); }
   }
-  const VW=1160, VH=600, P=(v,t)=>(v/t*100);
+  const VW=1160, VH=680, P=(v,t)=>(v/t*100);
   const lines=SUP.map(s=>({s,v:s.layers.reduce((a,l)=>a+wt(l),0)})).sort((a,b)=>b.v-a.v);
   sliceLayout(lines,0,0,VW,VH,true);
   let tm='<div style="position:relative;width:100%;height:'+VH+'px;margin:8px 0 2px">';
