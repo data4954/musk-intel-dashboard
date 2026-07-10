@@ -1,9 +1,7 @@
-// Axiomake 数据文件 —— 由 GitHub Actions scripts/update.py 维护，请勿手动编辑
-// 编码: UTF-8 | 模式版本: 2 | 账本模型: 只追加不覆盖 | 全自动核实规则 R1-R6 见 update.py 头注
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-10T07:43:45+08:00",
+  "generated_at": "2026-07-10T09:24:39+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
@@ -32,16 +30,16 @@ window.MUSKINTEL_DATA = {
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63238.74,
-    "chg": -0.49,
+    "price": 63268.86,
+    "chg": -1.13,
     "src": "Yahoo 2026-07-10",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0728,
-    "chg": -6.3,
+    "price": 0.0731,
+    "chg": -4.51,
     "src": "Yahoo 2026-07-10",
     "status": "green"
    }
@@ -57,14 +55,6 @@ window.MUSKINTEL_DATA = {
      "c": 419.77
     },
     {
-     "d": "2026-07-08",
-     "c": 402.9
-    },
-    {
-     "d": "2026-07-09",
-     "c": 394.06
-    },
-    {
      "d": "2026-07-10",
      "c": 406.55
     }
@@ -72,19 +62,11 @@ window.MUSKINTEL_DATA = {
    "SPCX": [
     {
      "d": "2026-07-06",
-     "c": 162.0
+     "c": 162
     },
     {
      "d": "2026-07-07",
      "c": 160.42
-    },
-    {
-     "d": "2026-07-08",
-     "c": 149.47
-    },
-    {
-     "d": "2026-07-09",
-     "c": 148.3
     },
     {
      "d": "2026-07-10",
@@ -101,16 +83,8 @@ window.MUSKINTEL_DATA = {
      "c": 64097.81
     },
     {
-     "d": "2026-07-08",
-     "c": 63601.24
-    },
-    {
-     "d": "2026-07-09",
-     "c": 62185.31
-    },
-    {
      "d": "2026-07-10",
-     "c": 63238.74
+     "c": 63268.86
     }
    ],
    "DOGE-USD": [
@@ -123,16 +97,8 @@ window.MUSKINTEL_DATA = {
      "c": 0.0768
     },
     {
-     "d": "2026-07-08",
-     "c": 0.0744
-    },
-    {
-     "d": "2026-07-09",
-     "c": 0.0723
-    },
-    {
      "d": "2026-07-10",
-     "c": 0.0728
+     "c": 0.0731
     }
    ]
   }
@@ -1915,9 +1881,27 @@ window.MUSKINTEL_DATA = {
    }
   },
   {
+   "id": "NEWS-bcdb03cd3663",
+   "type": "event",
+   "ts": "2026-07-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX 首次公开募股纽约时代广场上出现Elon Musk 形象的裸身充气人偶，美国。6月12日，SpaceX 正式在纳斯达克挂牌上市，以每股135美元价格发行5.555亿股，共募资750亿美元，创下全球有史以来规模最大的首次公开募股纪录。SpaceX 上市首日收涨19.22%，",
+   "payload": {
+    "src": "新浪网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93NTd4a0Y3VjdXdU05S0J4TWhOcDdSYmF6cFFfdV9XcmZnNmRtbDFiSTR0SjFiR2ZiXzIxOXVYWGJjN28wV1NXMVVJNF94Tm1ZRTg2RFRZa3ltXzV6NGJRc1pmaw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
    "id": "NEWS-d4b79574a7ac",
    "type": "event",
-   "ts": "2026-07-08",
+   "ts": "2026-07-10",
    "ev": "C",
    "scope": "1y",
    "tags": [
@@ -1933,371 +1917,27 @@ window.MUSKINTEL_DATA = {
    }
   },
   {
-   "id": "NEWS-29cf05afe286",
+   "id": "NEWS-83b7978967c9",
    "type": "event",
-   "ts": "2026-07-08",
+   "ts": "2026-07-10",
    "ev": "C",
    "scope": "1y",
    "tags": [
     "news"
    ],
-   "title": "Bitget在Solana平台上率先推出SpaceX的Pre-IPO代币，向大众开放",
-   "payload": {
-    "src": "CoinDesk",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ2U2R3JZY2Zyc3JTMjRyLXFfZTZIUlh5dU16NmxiWkYyZm5remQyQnhUQXd1YlNJLTlVU3FhS3ZvbkRhM2tFU1JtTlp2dnU2R3lEVlJ1Y2RIMVRiQ2hWOWJicWZoa1F6N3luX3lrQWZUM3ZseHJVVEVOTFFlc0FTenpkZGVzd3FyZ1V5THBwQ3cyZEREeXBObzZ2ZjFKcG85V0JhUUM3clFyanBSWEVGdkljVlBGTGYyOFVzd0o5VDdMUkxY?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-559ac1d1dbd7",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "马斯克集团化整合SpaceX、xAI大赚一笔 每年节省近10亿美元利息 - 人物 - Elon Musk",
-   "payload": {
-    "src": "cnBeta.COM",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4dzlqcXFuSlNPWUlwa3N2U1NVZk10N0NlUGRuRnlZQ0NxZDdEcktnd0pOY01fZTZhNF9fdkV2RWhqV2xXT2JQcWJ0cy00amx0WjVzRmNTTTgwWndicVRVNw?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-0abafd42cc2d",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "埃隆·马斯克（Elon Musk）将所有“X”合并，SpaceX收购xAI和X，估值突破10万亿印尼盾",
+   "title": "五角大楼透露，伊隆·马斯克（Elon Musk）的Grok在伊朗战争行动中使用",
    "payload": {
     "src": "VOI.id",
     "srcs": [
-     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlVjczhuMU42MFpzczB5ek5oNU0tSjQtZ2ZyUHlXRTVsZkt3M1dBTWpxRTd4UWV1VzV2OVN3emQwZ3FnZEVUOFNFamNmVHPSAUJBVV95cUxOaFE4VzIyaGJFOTVIX0xTMWlkYWtGdmtaS0dTclJvLU5lZ3FobEhQLTNpMHhKMVFrakhpcXhlXzJqQmc?oc=5"
+     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NaHJ0aFd6OGI2c2dnRTluc3pTZW9KZzBfX3VSU3AwRUNCd09sbEZZN1otYmtaTGphRllHS1ltSGxhM3RKVk9oSjhiMDRYNUHSAUJBVV95cUxOYnlUSGVrMmpselRPM290eDVrZTcyU1BNSTFhQXBKNkltWmNRNGo5c3RNZUtLT2dzV0QzUTZVZUtsTHc?oc=5"
     ],
     "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-198e820f040c",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力|SpaceX|Twitter|卫星|数据中心|在轨_手机新浪网",
-   "payload": {
-    "src": "新浪财经",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUmliWFlsQWZxLUN6b2ZUaG1maGZyVXUyTTl1Ynk2NnJaMWtuTjA1WkJ6X1lFdDZSanFfNVQtUlJlNzB0Z3B5LXVUZWpWWU1ZbmpRODBtajBIaGdHS2gyODRHZmEzTENwdkpGYmtxbktZNVJHQ29GMHBTWERCZUVfR0U5Zno1Z2M?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-7cdb81271b11",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "北卡罗来纳州财政部长放弃投资SpaceX，指其估值太贵",
-   "payload": {
-    "src": "TradingKey",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0Vya0FXSmpwZDF0bWc3NmZyZUtyNEt4VWNHSlVCOHUwbWJidnhfeTlYMzFCWnk5MV9kRjRfT3VvZjV0bi1aTDJJdmNOblluRV9nWUdITVU3WjFnREMtZDg5WjlncDIyeUxjcGYzSFdvWjJTcXo0LVVoa3haeTZTVmY3UTdHUEp2b2pPa20wSWFaMGEycnFyUkM4THVFX254dUFqRmo4NXlaZ1hpWXRYRW9XcGNUdTMwQTc1Vlo4c1MyTEg2?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "PNEWS-29c7f14eaad5",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:birchall"
-   ],
-   "title": "马斯克的“另类”慈善：2024年捐款创纪录 但大部分捐给了“自己”",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBkUGdSN3dndmNQUndNTEo0bHpNQ3ExeEZROHIwVk9MelVlcHFsY2p2dmxuZ0tPalFIY09ONVhiejBacC0zOVJqOGEtZy1EeVdPWlE?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-3d52d61d3cf8",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:birchall"
-   ],
-   "title": "1个孩子1500万美元封口费 美媒揭露马斯克的“宝宝军团”愿景",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82ZGFjaXl1QWQtOXpZYUd6eHJaUmZnX3AtVmgzSDkzVVBzdXRYN25wcXhCaVpFbkdxTDhkRjVxSFl3RjdFMEpOaQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-02e250e3c2b7",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:kimbal"
-   ],
-   "title": "爱泼斯坦案│ 马斯克弟弟名字出现140次 已辞去火人节董事会职务",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcXhra1p1M09FQ3d1djhMWGlrdS14UEFxOGlrc0J5eS1SX3JPLVRxMnVyTFdnOEdkcTZGUTBES2p1cElIUGMyZTVPVDk0WlNqSTBjME5pM0pGRW1OZm05RlNjY2RmVFBCNC1WQTYxbnp6T05KdVhrLXBiZHp4bktPN1pMRjNZU1hfTDJyR285U0ItVjBJWFFyaUIwbUkycFJWM3Q0VlVYOFpkZjVpcWlpZmt0X2RrUzgxNm02VnFvLWhOYWNQemV6SllZVnEwY0pyX1UtYTE5enotU2hXMDF1R0FvRjI2Y0NpR3N1UXl4emRFQ0hIYzVLb3Z3NE41ZnRDNjRueGllNUdVU0JSZXFHSm5halNIbTNmSnR0MFlqbUxqNEt4bVprLVdxOHN1UnRHbTZtS1lTYVhfU0wxUzR0Uk9VRzVhZmxQVGpEeEZseW1pT1NmREJiTlFvVkNjaTRRcWhPaXlQX21UTS1IMHMybmZZZ3FSMzNnYnVDZDVqV180a0tHRzF6OEwzdG5XQlZ6MjBTRktLOUIwRS0xc3hTUWVvRWRWSEF1NDRaSHo0RWFCTV9FMzl0Xw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-6b6deee332fd",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:kimbal"
-   ],
-   "title": "马斯克的一家：妈妈、弟弟、妹妹埃隆·马斯克（Elon Musk）的弟弟金巴尔·马斯克（Kimbal Musk，1972年9月20日），妹妹Tosca Musk(1974年7月20日)。都是在南非德兰士瓦省比勒陀利亚出生长大，后来移民加拿大。妈妈Maye Musk金巴尔身兼餐馆老板、厨师和企业家，",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80SkNpSDRmc3FPMWpOLWVvUGMzUVY5VXRCWkV3S3lBZm9mQVQ0WkZPbUFvNlJ0LUgwbkZ0dHFKbEpOTmZTa2J0STQxWi14Z3VYeHFDNkVDRjZ3cEN4SU1OcE5lZw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-2fdd28d2fcfd",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:ellison"
-   ],
-   "title": "甲骨文创始人净资产飙升至3000 亿美元",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMirANBVV95cUxObDYyZl91Sng1YVVySTRqdFozU3h0VkxpclVVYnBGSXNDZnI0cjZnSVd1TzVZSS02Z2VuYnVlem9NNzhUYnl2b2VBOTl0UTcxVmdacHNMQWFGSnNSUW1QekhQZUNDem5pdUl0dHp4bW11NkVoNGJtS296Z2FjNi12OW5ja3FtQVp5a01MbkFvSlZRTC16ZGd4Rk51bi1YQVZxZFNJTUM3ZVRxenRGTTU2d012Z3JmUWVQZzNDWVZfTDdLR3pBcE5wd214SGhTUG1JdjF2MEhjNDZDQ0QxcVloSF9PRU9YSllIWGpmWFhJbWd5OFdXbWNkNmJTOVdxU2dxalVjXzlxLUZjeUlEMFRYNjJ3eDRPd1BlWGNYNXNwNi1YcFh3OEM0OHFtTC1GNTRqbEk4akZwNVh3QUlHMHUxTGNGMzE1RW9odWZpbXBaVGJUZWdEOUExNkJRT3NiY0lwSVYyeDFRbmhPbURVQ0ZfVjd0MXg3NnZ6cDJ3SUVGQmZvMks2MlpVWVNEb3lXNDVweHV5bDJkWDJGUkhUclBhelNsSTlnVTlQRmxLTQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-391bcfdc082f",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:ellison"
-   ],
-   "title": "好莱坞洗牌时刻？华纳兄弟探索董事会偏爱的奈飞，对上甲骨文埃里森“父子兵”……",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5aMzhrYlE2R1llQTVWMnotbXJvdjB5Sk5HNWpyYWxiMlFQN3FzRWJJZVEwOU9TZXlnZHBWOTA0T29LOHZycG5FU1FBMHQ1aGYyVkNFMElyTFF0eXQz?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-74ad7e854a36",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:sacks"
-   ],
-   "title": "郑丽文会见David Sacks_新浪新闻",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5XZjl0WTRxVm9TZ2NFN1IxV1dMYkxONk1abURidkZTQlltQmVQdC1odm9wZU96QnBXT2tabUFIckdSanJSQ0hmRTk4cFVhYWdlbEVhNlZhdnBVZDF2YXEzNG5Pdw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-d4366797e9c7",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:sacks"
-   ],
-   "title": "OpenAI“大而不能倒”？，Altman“不寻求财政支持”，“AI沙皇”：AI公司倒了就倒了，美国政府不会救",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xZGltUW1VOVJlLWYyOHMtYl9vOTlva3JVbmhBUEpkVUJqeEtyQjhLeUk0S2duWGc5eFhuM3JFdVZ4SlZQbm9faTZKajQwb0djYXNV?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-bce1eb808031",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:thiel"
-   ],
-   "title": "全文稿| Founders Fund 谈论探求真理、台湾以及你是否仍能跑赢标普 500 指数 | 第 53 期 ​",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9OOEdydW50RHM1MjhaWkZUazZVNGVEWEUzbVU3Uzh6R0xtbGhVNzRHam1XX3BFUmkzMG5yc0RuOFFLQ19EbXVsV2FXOXdrLVFiRk93dXZManRWckdIUWJWb3Nzaw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-06efae456a1f",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:thiel"
-   ],
-   "title": "马斯克贵人投了，SpaceX一笔回报4000倍",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQWnZseHUyX2s3YkNLaFBtYlNiMGxZcXhONWJwUE54bUNobmRYWWYzb3RlaFNpSFNXVDhGR0JUbGFNVjFSNkM4cFliN3RhNDZ2S19lOXp4THBWbDQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-83131aa7a4f3",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:andreessen"
-   ],
-   "title": "当一家名为a16z的VC，不再想继续成为VC（一）",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUFZwV3ExRWxndXFwZ1pwVWNqNy1oNE8zRmFwNnVRLTZ1cHJmbHVFX051a2xHUklKaFcwYnBDVUVGZjlKNXF6X1FuOUo5YVJpYWlmSUZNN1RFWFR0SFRxdWhJNUM5X180NzU4VnRNR1BJNC1KNF90N2NnZ3lUYWc?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-ab7e430dc432",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:andreessen"
-   ],
-   "title": "a16z联创发文讽刺回应美国AI监管：极端对立叙事中的“双重立场”",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QYmJ2dlg1U3R0UG5VMUowMXcyamtOWVBsSlQ2eFI5RE0yY2NMaHl5M0txUXM2ZWlWdTRxYVB1djdfaV9kTTdsMXJqZ24zMlB6b2FnWUdNMUpxeVdYcVVKNDV6OVRNeU0?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-a10f99530134",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:baron"
-   ],
-   "title": "BlackRock（贝莱德）：知耻而后勇，奋起直追。投资家Ronald Stephen Baron（罗纳德·斯蒂芬·巴伦...",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQTktSTc3Z0xHMFpIQ2IzZl9ubDhUTGFSZlNteVpXQTBnVXhBWFhERDJwUnBjekJpU1QtMEhVUmI4LVV5eHNkSHNzRUdfZFVWeFJ0V0Zsb1hIXy1BU251ak80ZUpCaGlmSHQ3eUx1bHVjdkR1WjNMRHdnNWNZVUxnU0FnLV9UOWItTVdCUlVmTHB0eWVERmxhUUZvSGViQV9Sb3hyN3N4dlNwRkVpaXFDUGNSQmlFbDQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-fdf898d5b3e0",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:wood"
-   ],
-   "title": "追踪Cathie Wood：大幅买入X-Energy与国防股Kratos，显著减持Strata关键医疗",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZ18zNXJzVG8wTURNa3RFdzVxZEphUVdEUnNUMy1VNlFjaGRGQVhSRWdTOXlsVHowTGdRUnJFQWxwaTVVMnNPZ2NBaFQ4T3NVMThCR1NvUGYtNjhZZVlUcTU5dGVkWU4wd0hpZlpJalAzRWVGWE9RRC1mMy12Uk54cUNYRk1vTlBjRmV3S3ZnLVZlQm5GRmE4YWZqczFHeVI3SHloY2JxZXlhVXlZV2pxMHJUV0NscUU?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-fab3ff988061",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:wood"
-   ],
-   "title": "Cathie Wood: Ark Invest təxminən 38,1 milyon dollar dəyərində “Tesla” səhmləri alıb",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vTFVCSU9peXprTGFMTm04bXZzT0pocFJ1d0xkTmpVaDdPQXQzV0ZLNUMtenJzbjZTZHczcWtSa2duZEJNVEVLUXhQSmcwczE0Ni04ZFZlbzlaaXB6VWYwSFZKa1lRcmxi?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-a3ea82f779bc",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:griffin"
-   ],
-   "title": "Citadel创始人肯·格里芬：穿越当今黑天鹅的亿万富豪操盘手",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2S2cwQVVIVURjbEpiNTZGeFRaOWFhQXJhVUJuTEpGOVZhM0NDQzJzNl9ZTlMtNnZiQ1ItUThRMFJBWEJUa0JyckpUalE3ZzRSQlI5WklRVkIzdw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-ca6ee0373b5a",
-   "type": "event",
-   "ts": "2026-07-08",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:griffin"
-   ],
-   "title": "Citadel创始人Ken Griffin向哈佛大学捐赠3亿美元",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOOU0yZXNyNGduc2hkWFl4QkRlOTh2eTdCaS0teE1rNkdpZzAxWEJ2WVAyVUQ4TGJWaHR0VnBTLWpvU1JUdXpTdm5ZakkxMHFXanJsVUtMbmsxUUlHbE9aTW1rQW10RWI1a2VkaGNoaGY1VVhZUzRwY3RkQ1NDS0NXTFdZc2I0bVRxMHZRUjdzS0drd2VrdHZLLVZRMmtKY2QwUE5obnFveVR6cGlwRUhDeHhxWXI0bDJ3cWNXTzhORlVjVFJCZXJyYUJEUUhTYmk1NXdxd0xmbTF2bmhtdW56WWZMbnVBZjFVa2JpWG1SZDFuN3lUWWRPS3BGYW5SY0U1d0t0c3UxLTNzT2tLWWYtVi1Xcw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
    "id": "NEWS-ab941d7c4398",
    "type": "event",
-   "ts": "2026-07-09",
+   "ts": "2026-07-10",
    "ev": "C",
    "scope": "1y",
    "tags": [
@@ -2307,317 +1947,8 @@ window.MUSKINTEL_DATA = {
    "payload": {
     "src": "新浪网",
     "srcs": [
-     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aNkwtMVpIaXgwZEdQQ19Qd2Q4dGRNcWUzaW5hdVg2OXNTa1FvSGEyOVNlbkdlYmlzUElVU28wREdURTFmYXhTckhJUmxmYVE5ZEt6X0pOVUl4eE1vMk0zNzZUOA?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-8f7fd63e5453",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "SpaceX在星空中书写特斯拉的未来",
-   "payload": {
-    "src": "The Business Times",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSDN1VVdoQ2FPN21VWW4wRlhiekJlOVJoMUxNX3NGcmJ5UXF3a0pESG15Q1d5V052R3E0dmkxc1JWWHVXRlkzbF81cEp0NGs1alMzRXdIcWhkWDE1N3MtczRKS0ljT2I1NFNxSlRJV3ZaTkRjVXRNNkRURkkyOWg1eGVWeFZ4a3FrNFhJZV9lN29rNzNLLWc?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "NEWS-86a70072efdc",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "埃隆·马斯克的SpaceX收购埃隆·马斯克的xAI，合并后的首次公开募股估值预计达到1.25万亿美元",
-   "payload": {
-    "src": "CoinDesk",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLU1HMmcySS1DWWNYMVBHd3NVM3phZW90TjczSWRwb1RYYXhwZzVvNGRvcGRhQTF3TV8yczNHN3ZwWjNaS0NObTFySlNiN1FLbnVhdU5Tb3l1bWRfS1JtV0JmenhIQlJWU1FpeGt3d3ZIS3UyYThTSzBqZlNQZWZJYjIyVzZydEdxOGVHeF90MUtjeXZkZ1E?oc=5"
-    ],
-    "note": "R3 单源未交叉，C 级默认不进结论"
-   }
-  },
-  {
-   "id": "PNEWS-e9a322542ccd",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:birchall"
-   ],
-   "title": "马斯克被曝用亲信管理AI公司引发冲突、多位高管离职 - 人物 - Elon Musk",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wUEw5QVpkSEw5Mm5OVUZvN1pUS3VZcmZJVFJGVUE0Wm5HWnBhZEVMcDMwT3lPWHRPN3JDak9aQjZGdGRjNG5tNWp4NU5fU1dUanhnSjBSeWg1NFkxWGlvbQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-7a3872315bfa",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:birchall"
-   ],
-   "title": "美媒深度：马斯克管理“大批”宝宝及庞大“后宫”的策略",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5SWHpCMmExeTFHWlE3NTVoVTQ2WVZJQ1c4alVzcG9xQjhWX1FwR3N2RGN6NWl6cTB4VkswMjIwT3c5ajY3OEx6RlNXVW1wZ19VbHJOTFNPbFEtdktYdTd2ZHB1em81YklzZkNRbWk4dDJ1TFhkREE?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-3ffc2bbf5d5a",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:kimbal"
-   ],
-   "title": "13亿美元身家，马斯克的“躺赢”厨师弟弟",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qY2JSbDdMeWlROWw1b05FRDZpb2MwOXAyeDl0M2FZZVZCd0tzOGJZYndVWmszX0RDbm9idXZNY0doNG45RUVVNm4zVGxoQQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-ed6579c5db02",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:kimbal"
-   ],
-   "title": "哥哥是世界首富，是怎样的体验？马斯克的亲弟在家躺赚500亿美元",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43dWJZem5xU2lfc2dUdjJyWlEwS0ZkY3pkbTJ3TVNKOXp0MWZBbWtxUzJlR3M4OVpNSm0xck9xUG9oRVd3ZTB4djBPdUJueURudndUdFR3?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-27593404e365",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:ellison"
-   ],
-   "title": "甲骨文股价涨近40%！联合创始人埃里森身家超越马斯克成为新首富",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9NU29YQWdiZVdXRDJLY0xEMWFzLW1sNkYyQjVPd1NUNExhSkwwZFlIQ0tXOTNXaVkyQkFKeDJSRmZLTEd6WHc?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-d5d412a1a555",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:ellison"
-   ],
-   "title": "甲骨文创始人带娃出游_新浪新闻",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Qc3BZbnFVVUNrY19EYkdsNkFrYUtITnl3N29jY3M3UmpKZHhCZnJ4NVIwb2t6R3RBQ0kzU3h4OEhJQ1dnU2xtNlI2SUlyMGF4alA0bjI5SXgyekpfeEp5TV9ldw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-1d670dc3f443",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:sacks"
-   ],
-   "title": "大反转！Anthropic CEO拒修漏洞才被封，举报Claude新模型是自家大股东",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVnk1M0J0bndfN29UTnNWOFR3dmV0NVladkcyenVTTU1PRVZyNHB2b1RadGRLWXZoUXFkaTlzNkNVUEJBWG5PaFVsdnYyUUNIZFE?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-95062439a01f",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:sacks"
-   ],
-   "title": "David Sacks：CLARITY 法案审议是美国成为“全球加密之都”的关键一步",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lYklQaF9CalM3aE10SEVYVG9KWDNVSzBLVG9PSlRLbDNJZVVhZFV0dmdQYktJcUtWOWlQYlktOWlpTzk3UV8wTlBqc0FvS2NXY0NaSWdOR2JuVE95Sk8tckxqc3d4Z9IBa0FVX3lxTE1GYk5UMWE4dnBVTWJRLU1laHBQTWM1ZEQtUUZ5M2lDRUpYVFNfT09fcjVKQU9zYjFhSGwwLVBBSjJzYWJJTVFtSTRTZURFSWotRE1wSWJzQXExa2VCa2ZzU2pHYzJVdHBJN3A4?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-45f7badfddcd",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:thiel"
-   ],
-   "title": "彼得·蒂尔Peter Thiel：竞争是留给失败者的。世界上最有价值的公司都是以创新方式来解决实际问题的，而不是拥挤在陈...",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9BYm1IeVB0TmJhQVB4T1E5d0t1ellKcjlDM1h2YUIwMzBVREtwODVLeWV6NW1GOVB0V1dsaWxZdUhRLWZiclY0a0FmRHZob0Ro?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-db8776917f1b",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:thiel"
-   ],
-   "title": "彼得·蒂尔的美国顶级权贵地下俱乐部被曝光，222人深度隐私泄漏",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwZy0tWDctbHI2eERzZThYMHdSSzFnbTZTZ3I0UFZBaWZpZWs1NmNzbVBvbWNVUFU5ZEplbXowdGw5ZHhWR0ZTc0QwTzk3Zw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-344bb212930b",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:andreessen"
-   ],
-   "title": "a16z 联创 Marc Andreessen：我们像穿纸巾一样穿过了图灵测试",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMM21TUmxOdVhEbFJpLWJ1WENuN2J0TmRuXzRkY2I4RGY1RnRpNFR0TGtsTzAtMWQ2UFdac0psTjBBNVo2TmZJSHlldDZqcWxzWVNoY1dVYWpzV3NWM1FaWG5QOGtvSzJ3LThOUG5FTnkyQnNHRjRGbmxzVVNUc0E?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-845d2fc93180",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:andreessen"
-   ],
-   "title": "a16z（Andreessen Horowitz）联合创始人马克·安德森：AI革命才刚开始，智能的价格正在崩塌",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KOENoUmZkZ040c2RSaXgzc0dORk9pYjNvRFZybWtpbG1TQWdvaC1uYzdMN0FYT0ZwRUp1MUFrMVUtUHM0QTdZSkxmMWdWX09GSHlWZnc3ZXE0LUI4NGU4UQ?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-b4937314ce74",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:wood"
-   ],
-   "title": "追踪Cathie Wood：重仓核能先锋X-Energy，大幅减持基因检测龙头",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT3JhYzJoTGZJT1ZVWXpJbTdrQXdPZDhRclJ6YmY2Tm9EcXdXazdpdm1ZRUtObTBBUHBVdEJfSGtCSXYtZTRZSUZUQ2VkamFDVkpDTmI1QWs2YlJvOXVSZ1VNRTdETFl4T1NQcFZYTXpLR1o0WWdVUm9neW9zR21ia1dTeDlIYUFNMEpnZm96dE9WQzdxZ0lrbFFqN3gyaGhtdEN3Z0JSeXhoQjV6VlZkM0p2d1YzQk1xRm1OeXBkZzdCdw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-7d516383cac0",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:wood"
-   ],
-   "title": "Cathie Wood ：多国资本外流将推升比特币等数字资产",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1fS0hZMDZ0Y3hkQWNlNjhLSVRPd2JIMjgwYlpJN3EteDhlMlVvd0NtYnlPbEphWlRoUlFCMVVjV3ZMTVRLaThtMTBEWUdDRFVCeWVCdWFfOURoVnZzNDVGNWhoekJKdw?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-4b1292d89b78",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:griffin"
-   ],
-   "title": "Citadel 终止美国 Portofino 诉讼，转而在英国破产案件中追讨创始人",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONDZTSUZQeXdYQ2hkMXA2LXVicTlwa1hOMW5MU3RaT3ZGNnFhMEEwQV9ReG83X29pYnJZLUlrR2FtdXRlWDVlcjdSRHcxTHhHZzluc0tYTlpLZVFnZnJpZkFLNDU2WW5Sd1pZd0tpbExGUEZpek54OXFmSjZsSmc3ODJFMUdXaTEyZ2s1b0FhN3FoYVpFLVZtNHNjc1ZrUlp4aXMtVWkwR2FDR0Zocks3VUcweUhPOWROeFBGb09lcUtnenpCM1F0SnVR?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "PNEWS-db9cdc43a95c",
-   "type": "event",
-   "ts": "2026-07-09",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news",
-    "person:griffin"
-   ],
-   "title": "Citadel CEO Ken Griffin: AI has not been proven to boost productivity",
-   "payload": {
-    "src": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTFA4R3B0ZVJaYy0xVGpFTm1hZmZkUTE5TFNxYmN6eUw5TUFENGdjeENodU5OT2xYTmMwNlViUHlhWnhLQV8weE96bHU1VE1MR2JCWTVFRTVEZTJNNUUwc19HUGdvNUR2c240VGdUektMODB0NzJnWkd6WHM0YVZRSkUyWWFlcEx2MTlFOU1KTEFuSWhwSTE4VGQyQkFiVzVBT1NkQS1ONjRhLUoydDkyT2Vn?oc=5",
-    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
-   }
-  },
-  {
-   "id": "NEWS-bcdb03cd3663",
-   "type": "event",
-   "ts": "2026-07-10",
-   "ev": "C",
-   "scope": "1y",
-   "tags": [
-    "news"
-   ],
-   "title": "SpaceX 首次公开募股纽约时代广场上出现Elon Musk 形象的裸身充气人偶，美国。6月12日，SpaceX 正式在纳斯达克挂牌上市，以每股135美元价格发行5.555亿股，共募资750亿美元，创下全球有史以来规模最大的首次公开募股纪录。SpaceX 上市首日收涨19.22%，",
-   "payload": {
-    "src": "新浪网",
-    "srcs": [
-     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93NTd4a0Y3VjdXdU05S0J4TWhOcDdSYmF6cFFfdV9XcmZnNmRtbDFiSTR0SjFiR2ZiXzIxOXVYWGJjN28wV1NXMVVJNF94Tm1ZRTg2RFRZa3ltXzV6NGJRc1pmaw?oc=5"
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aNkwtMVpIaXgwZEdQQ19Qd2Q4dGRNcWUzaW5hdVg2OXNTa1FvSGEyOVNlbkdlYmlzUElVU28wREdURTFmYXhTckhJUmxmYVE5ZEt6X0pOVUl4eE1vMk0zNzZUOA?oc=5",
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KS3l2bk8wSm11Q3BGRGlFRTlwS08tU0R2Y1h2bk1UdUlsSHg2WUNQUXF0b3FhT1ZuZkhaVjh0a1ZWYnhGZ0xTczRWSDN1UklKOGpiRW9LTVkxTkZtUXBqWi1Ecw?oc=5"
     ],
     "note": "R3 单源未交叉，C 级默认不进结论"
    }
@@ -2641,7 +1972,25 @@ window.MUSKINTEL_DATA = {
    }
   },
   {
-   "id": "PNEWS-2d84c8f90647",
+   "id": "NEWS-3f874aef0017",
+   "type": "event",
+   "ts": "2026-07-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Jim Cramer：SpaceX高估值背后是市场对Elon Musk的押注",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTC1YRkU1ZkpvdjFRMUJwMkZyZ2Y3SFFNbXVoek9EMFMzOUMzZTBEY0NzRlhNdUVqNFNkMVJHd0VMMGdHVnE4QkNXZktuM2psRlZLdWVQSXkwcnYtNW9rb0pVd2s2eUVHeEpEbnZzZFFEZ2c4M0ZXNktsWHU1UDJCZ21PRF9yU0gtVUpNVlZ4RHpOcWthbVJjX0lqOXViQXJzbTM5QmFhTQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-e9a322542ccd",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2650,14 +1999,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:birchall"
    ],
-   "title": "埃隆·马斯克创建X.AI Corp人工智能公司",
+   "title": "马斯克被曝用亲信管理AI公司引发冲突、多位高管离职 - 人物 - Elon Musk",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9SdDUtOV94NGJrcUpuY1dJVldVdS1VRkMxWTNuM0Y0TFFkOVI3SUVuNmtFNEJyc0VzRVJLaEJzWm5wbW9pNnRxTQ?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wUEw5QVpkSEw5Mm5OVUZvN1pUS3VZcmZJVFJGVUE0Wm5HWnBhZEVMcDMwT3lPWHRPN3JDak9aQjZGdGRjNG5tNWp4NU5fU1dUanhnSjBSeWg1NFkxWGlvbQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-e0b96bb0a1a9",
+   "id": "PNEWS-3d52d61d3cf8",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2666,9 +2015,9 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:birchall"
    ],
-   "title": "马斯克是如何管理众多孩子及其母亲的？",
+   "title": "1个孩子1500万美元封口费 美媒揭露马斯克的“宝宝军团”愿景",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1PTF9DRTJoUDNEQnRadlF1a0ZHVTZwZnFSMGozMEwwQlFEek9HalN6ZmN3djhLcDM5Nl93b1RmVlA2TTRZYTd1cHlESlZJcFExb2Uw?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82ZGFjaXl1QWQtOXpZYUd6eHJaUmZnX3AtVmgzSDkzVVBzdXRYN25wcXhCaVpFbkdxTDhkRjVxSFl3RjdFMEpOaQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
@@ -2689,7 +2038,7 @@ window.MUSKINTEL_DATA = {
    }
   },
   {
-   "id": "PNEWS-edb2492f6bfe",
+   "id": "PNEWS-3ffc2bbf5d5a",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2698,14 +2047,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:kimbal"
    ],
-   "title": "马斯克一身白皮放光芒 父亲：他该吃减肥药了",
+   "title": "13亿美元身家，马斯克的“躺赢”厨师弟弟",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1LbzZLcFNockJ6bkxYOWFfLTZBMHRBVXFOYl9GOEVCY2FXQkVYNGRMdEkxVndyNC1fVmhnTHVkUTlabWVNcGEzZQ?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qY2JSbDdMeWlROWw1b05FRDZpb2MwOXAyeDl0M2FZZVZCd0tzOGJZYndVWmszX0RDbm9idXZNY0doNG45RUVVNm4zVGxoQQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-9164aabccc1d",
+   "id": "PNEWS-2fdd28d2fcfd",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2714,14 +2063,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:ellison"
    ],
-   "title": "CNN这笔交易背后是特朗普势力？编辑部越来越慌了",
+   "title": "甲骨文创始人净资产飙升至3000 亿美元",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1RY3JvMmZFSkFsaHVsT2ZaTlAwY240ZHRuRnFFVlB5Y1NJOEZEbmpCLXU3RjFuVExpbXg2c2M3dTRmaF9RY19IMnBETlZxVHEzMzlhSGlUUDFGbzNycVBic0hJSmdQM29LNVdvMWhKckNzWG5ZbGFPaw?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMirgNBVV95cUxOODY5ZVpDR2wybEdHakk1ZFVnMnF0U3NyR28tcmtQUEZjVHpKc1YzVWw4cW9kYV9hWDlXREtGUWNOa2VmVDVkbFRGTV9XNXd5UkZPTXYxSm4xdldWdVJLMkppYjgzREFVdlV4elFJNzZCSUh3V2hBVmVvNWFPZHA0Y2xmb3VkNmI5ai1jdFpVczZFSTlsUkZTY3llb1ROVUVUdllHejFxTEdBZmQxR25vemhkRU1xTDJseEU1bV9URVBtaExKdTMzQzdaSFJEVmxsbXNfSHc0YVNfVkdtai1DMHdpcldySHZzQW9wMnh4a3ZsMURGQ1lqTldzVHkzZnhKLVNsb2J2aXZGX1ZvMktLVUQ2eG93cF85aGgyUEgxTXBxamlvTTdUN3R6OGloZUJsWkZ2dmFiZU54RHpraXltWVAxTTBxREJVbVlUeUJFUkRydk0xTmFCeHlSN1RRd1NfYlBTYXpYU0QxdEhmcjdrbjF2blhLRFdBUUNGemlnVWw5M0JrcWtUaUdnNC01LVdQcU9wVi1xSmNHbDhQQUtzV0pEbFlFSXBTY28xY0dB?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-b66ce90f34c4",
+   "id": "PNEWS-27593404e365",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2730,14 +2079,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:ellison"
    ],
-   "title": "从天空到好莱坞，揭秘甲骨文埃里森父子的媒体帝国豪赌",
+   "title": "甲骨文股价涨近40%！联合创始人埃里森身家超越马斯克成为新首富",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13Y0o0U21EV3QzVUJpdUFidXRKU05sSmk3TWc1bW5uOVBneDlXVC1JcnV6XzZnckh0Q00tTmRub0dPaXF6ZkdPMU4zN2o?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9NU29YQWdiZVdXRDJLY0xEMWFzLW1sNkYyQjVPd1NUNExhSkwwZFlIQ0tXOTNXaVkyQkFKeDJSRmZLTEd6WHc?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-b51b6cb422af",
+   "id": "PNEWS-1d670dc3f443",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2746,14 +2095,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:sacks"
    ],
-   "title": "大卫·萨克斯称：Anthropic 拒绝修补 Claude Fable 越狱漏洞， 美国因此对其实施禁令",
+   "title": "大反转！Anthropic CEO拒修漏洞才被封，举报Claude新模型是自家大股东",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiogNBVV95cUxQcERtaTlRdXdpRzZrc050QmZWTFZXZG9JZjhKOGVMYXIxWkQzaDV6elBBYWctTXBJM0VsZzF3M2hCbWxKcXlveGZFRnBmeGU2UDhfUXBWZElDS3NXYUh2UjNYdXJKNWxKTldRRmgwQkJ4Rld4SVZUM1RnNnN1dEhBY0RJVzNpQTJscHlMUWRMbVVsRnB3N2dJeHgzTWNqbW9pRzEyQjg3LVpkeEVTbllUcm1QdmFFOTlNUW9sTVl5SXQ1cTliaTM3QTNVZzZ2OWdycURZTkZsNFZzTExXOU50UzZNaktFZnprNnBocGZfUE1pNlJ2bmluOGNvT1k3UjBZak5ZZldzajZ3NEUtZV82emVzSzZzZlJsbEJKUHF3Y2kxYUFFUElRMHlqMjlJYmRiTmY2XzBfV0hreWIxczg3NnJ4Q2RtSmVFb29jenhzZzN3a0dLLThXejdNeUFfc3RFajAwX2ZfRUFfZkZIZ1NEb0JOZE41eno3S1BybVo0N05MSFZJNjB1bkh5OElQbHlsVjktcWlrS1VpUFQ1NTdIOEFn?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVnk1M0J0bndfN29UTnNWOFR3dmV0NVladkcyenVTTU1PRVZyNHB2b1RadGRLWXZoUXFkaTlzNkNVUEJBWG5PaFVsdnYyUUNIZFE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-e362b60191d6",
+   "id": "PNEWS-74ad7e854a36",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2762,14 +2111,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:sacks"
    ],
-   "title": "特朗普将任命黄仁勋、扎克伯格等为科技顾问 为AI政策提供建议",
+   "title": "郑丽文会见David Sacks_新浪新闻",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9rNzJqMFktVEg5VEo5T0pEMTFBclZ5YVA2UjdxenI3WEZJeUI1NWZfaTgyV2FjdS1jcWZiM3NkX0x4RUlHTEtfbGNScGczUHpGLTJPeXh3ME52YWExVzE2V1o4ZWpQSkRaeWRwSURGQ3NOX1pBZ0NjRw?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5XZjl0WTRxVm9TZ2NFN1IxV1dMYkxONk1abURidkZTQlltQmVQdC1odm9wZU96QnBXT2tabUFIckdSanJSQ0hmRTk4cFVhYWdlbEVhNlZhdnBVZDF2YXEzNG5Pdw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-e371e497d976",
+   "id": "PNEWS-45f7badfddcd",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2778,14 +2127,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:thiel"
    ],
-   "title": "英伟达又遭清仓！继软银后 “硅谷风投教父”也出手了",
+   "title": "彼得·蒂尔Peter Thiel：竞争是留给失败者的。世界上最有价值的公司都是以创新方式来解决实际问题的，而不是拥挤在陈...",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9qTndkaTJNUG8zdjl0eG9yVE9kempHVVZRWmRKRzh6dnNFQnUzYzFwbldFdUhRUGtjWG9FUTV6blFHdzZHdk1tZA?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9BYm1IeVB0TmJhQVB4T1E5d0t1ellKcjlDM1h2YUIwMzBVREtwODVLeWV6NW1GOVB0V1dsaWxZdUhRLWZiclY0a0FmRHZob0Ro?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-35f5cf3579b4",
+   "id": "PNEWS-db8776917f1b",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2794,14 +2143,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:thiel"
    ],
-   "title": "Peter Thiel，也清仓了英伟达",
+   "title": "彼得·蒂尔的美国顶级权贵地下俱乐部被曝光，222人深度隐私泄漏",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9RTzN1VlpDYjdvQ3A0NldfV25ZY1AxeHQxOEJkTno0WlZMWnZOa2tYNnlqcXlOVm9IdWNGdjVlOXd6QXpWMzZCcjZLejhfZw?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwZy0tWDctbHI2eERzZThYMHdSSzFnbTZTZ3I0UFZBaWZpZWs1NmNzbVBvbWNVUFU5ZEplbXowdGw5ZHhWR0ZTc0QwTzk3Zw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-10953710f945",
+   "id": "PNEWS-ab7e430dc432",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2810,14 +2159,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:andreessen"
    ],
-   "title": "Marc Andreessen信息方式_新浪新闻",
+   "title": "a16z联创发文讽刺回应美国AI监管：极端对立叙事中的“双重立场”",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE90aUVyTDJ3QzlmOWdkTmJsS1dTV0EyOF9VdGpEa3g0UWVUclJ2ZjEyZ0t4QngyUzFVR1d6dVZXRHlWSTlVd3JSdVZ5OS10SUNrbGpCUURIY2czY1hLQUhmUFN0SQ?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QYmJ2dlg1U3R0UG5VMUowMXcyamtOWVBsSlQ2eFI5RE0yY2NMaHl5M0txUXM2ZWlWdTRxYVB1djdfaV9kTTdsMXJqZ24zMlB6b2FnWUdNMUpxeVdYcVVKNDV6OVRNeU0?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-aa2bef2e98c4",
+   "id": "PNEWS-344bb212930b",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2826,9 +2175,25 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:andreessen"
    ],
-   "title": "特朗普：TikTok投资人或包括默多克父子",
+   "title": "a16z 联创 Marc Andreessen：我们像穿纸巾一样穿过了图灵测试",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS191RmFLSUFzeEVBQUJ6ZVF4Zjk2OUJJV29XQVVRekFwT05mbE0yT3hOYnFqNGpTUVh0VTR3ejAwQlZUX193eldMd1pRLUJWb1V3YXh5Wm5nODR2RU81amV0RVBYSlc0ZExCa1V6Y19WRXIxQWducUx5YU9SS3JvdFZYa0swejAxOGNtcElQTHZEZGV1OXFZYlRSSjBvVUppdF92Z0MyTUpLUW9jaEZR0gGyAUFVX3lxTFBZQi1RSS1sdERWckdIdzBlVGlrZ0luTEx3MU1saVZQdC13WWhjWUl0STZ1RWo5V2NiZ0FOOHR3emRpc25sWjlURlNlUklvb0pKNjNFLU1oRHIyNklCS3VfUkduNmhTRHlidENrczJFRHgtQmhNSjBuUkdiUkxYVHFXamg4ekNPNVdBUGpxRGVlUXA3NXJHclI3MFFmTDJoQ1F3dFlnTUFnZVpwZmF1bVhqX2c?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMM21TUmxOdVhEbFJpLWJ1WENuN2J0TmRuXzRkY2I4RGY1RnRpNFR0TGtsTzAtMWQ2UFdac0psTjBBNVo2TmZJSHlldDZqcWxzWVNoY1dVYWpzV3NWM1FaWG5QOGtvSzJ3LThOUG5FTnkyQnNHRjRGbmxzVVNUc0E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a10f99530134",
+   "type": "event",
+   "ts": "2026-07-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "BlackRock（贝莱德）：知耻而后勇，奋起直追。投资家Ronald Stephen Baron（罗纳德·斯蒂芬·巴伦...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQTktSTc3Z0xHMFpIQ2IzZl9ubDhUTGFSZlNteVpXQTBnVXhBWFhERDJwUnBjekJpU1QtMEhVUmI4LVV5eHNkSHNzRUdfZFVWeFJ0V0Zsb1hIXy1BU251ak80ZUpCaGlmSHQ3eUx1bHVjdkR1WjNMRHdnNWNZVUxnU0FnLV9UOWItTVdCUlVmTHB0eWVERmxhUUZvSGViQV9Sb3hyN3N4dlNwRkVpaXFDUGNSQmlFbDQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
@@ -2865,7 +2230,7 @@ window.MUSKINTEL_DATA = {
    }
   },
   {
-   "id": "PNEWS-7b0c96c126d9",
+   "id": "PNEWS-4b1292d89b78",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2874,14 +2239,14 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:griffin"
    ],
-   "title": "格里芬回击马姆达尼“富人税”视频，Citadel或取消在纽约的投资项目",
+   "title": "Citadel 终止美国 Portofino 诉讼，转而在英国破产案件中追讨创始人",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUEZqNGp1Uzd2MWZnbTRhTTRhbXRDVDM2TDkzYWR5Y1I1aEx2a25sXzdsdTFLai1tVU84YkNaNG11UUcwWTAwYVhPMlYwNHcyeWJxUy0wYVlvYlJNQjVOMk1lLWhDNzJzOE1yVXIwbU1fSXlVbC1tVnlYb0lRMV9QMXVrbWZtbzRrcEROVEJQY1BzYkJPUlB3U2ZiMWNfdE5xcmFqY251XzliS3ZvdjhPZU1UZ3ZBOV9jVXIxME42cS1SRXpfTzNjdmhncw?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONDZTSUZQeXdYQ2hkMXA2LXVicTlwa1hOMW5MU3RaT3ZGNnFhMEEwQV9ReG83X29pYnJZLUlrR2FtdXRlWDVlcjdSRHcxTHhHZzluc0tYTlpLZVFnZnJpZkFLNDU2WW5Sd1pZd0tpbExGUEZpek54OXFmSjZsSmc3ODJFMUdXaTEyZ2s1b0FhN3FoYVpFLVZtNHNjc1ZrUlp4aXMtVWkwR2FDR0Zocks3VUcweUhPOWROeFBGb09lcUtnenpCM1F0SnVR?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   },
   {
-   "id": "PNEWS-8953bb352301",
+   "id": "PNEWS-db9cdc43a95c",
    "type": "event",
    "ts": "2026-07-10",
    "ev": "C",
@@ -2890,9 +2255,9 @@ window.MUSKINTEL_DATA = {
     "news",
     "person:griffin"
    ],
-   "title": "只买最贵豪宅和顶级艺术品!Citadel创始人的奢华人生",
+   "title": "Citadel CEO Ken Griffin: AI has not been proven to boost productivity",
    "payload": {
-    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE04TDRYVDZyanlhbGJHUmdkUDM5WFd3eTRJY1FIa0hvSy1uekNqTVdvNHhrandfVUtXeXk1ZE9KYWlNSFhvWnF5QlA5LWZWd01RLXVsTm1KZTBTT2NhUVRQMjZ5T1VYaDJfdDg2UVBPTzZKZ21NTFo2VA?oc=5",
+    "src": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTFA4R3B0ZVJaYy0xVGpFTm1hZmZkUTE5TFNxYmN6eUw5TUFENGdjeENodU5OT2xYTmMwNlViUHlhWnhLQV8weE96bHU1VE1MR2JCWTVFRTVEZTJNNUUwc19HUGdvNUR2c240VGdUektMODB0NzJnWkd6WHM0YVZRSkUyWWFlcEx2MTlFOU1KTEFuSWhwSTE4VGQyQkFiVzVBT1NkQS1ONjRhLUoydDkyT2Vn?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
   }
@@ -2997,7 +2362,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1872 · xAI 212 在招（2026-07-10；Tesla 无免费接口）",
+     "v": "SpaceX 1876 · xAI 212 在招（2026-07-10；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -3316,7 +2681,7 @@ window.MUSKINTEL_DATA = {
  "teardowns": [
   {
    "id": "modely",
-   "name": "① Model Y",
+   "name": "Model Y",
    "role": "制造物理学旗舰",
    "core": "一体化压铸+结构化电池包",
    "facts": [
@@ -3327,12 +2692,12 @@ window.MUSKINTEL_DATA = {
    ],
    "chain": "命门供应商：一体压铸机(意德拉/力劲—中国供应链强项)",
    "verdict": "成本地板距离中等；学习率样本充足",
-   "valid": "量产成熟，季度滚动",
+   "valid": "量产成熟，月度滚动",
    "asof": "一体压铸/4680 良率为季度变量"
   },
   {
    "id": "megapack",
-   "name": "② Megapack 3",
+   "name": "Megapack 3",
    "role": "唯一供不应求产品线",
    "core": "集装箱形状的电池价格期货",
    "facts": [
@@ -3347,13 +2712,13 @@ window.MUSKINTEL_DATA = {
   },
   {
    "id": "raptor",
-   "name": "③ Raptor 3",
+   "name": "Raptor 3",
    "role": "$/kg 地板所在地",
    "core": "暴力简化：管线/隔热层集成进主体",
    "facts": [
     "目标单台成本十万美元量级(传统氢氧机数千万量级)",
     "全流量分级燃烧=更低涡轮温度=更长寿命=更多复用",
-    "全帝国 Idiot Index 收敛最狠单品"
+    "全系 Idiot Index 收敛最狠单品"
    ],
    "chain": "增材制造占比/单台工时演进",
    "verdict": "直接决定星舰$/kg与轨道数据中心叙事生死",
@@ -3362,7 +2727,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "id": "starlink",
-   "name": "④ Starlink V3+终端",
+   "name": "Starlink V3+终端",
    "role": "最干净莱特定律实证",
    "core": "卫星=会飞的路由器，$/Gbps 唯一正确度量",
    "facts": [
@@ -3377,7 +2742,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "id": "colossus",
-   "name": "⑤ Colossus 机架",
+   "name": "Colossus 机架",
    "role": "算力最小可拆单元",
    "core": "瓶颈是电力链不是芯片",
    "facts": [
@@ -3393,7 +2758,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "id": "actuator",
-   "name": "⑥ Optimus 旋转执行器",
+   "name": "Optimus 旋转执行器",
    "role": "不拆整机拆命门件",
    "core": "整机是叙事，执行器是物理",
    "facts": [
@@ -3408,7 +2773,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "id": "n1",
-   "name": "⑦ Neuralink N1+R1",
+   "name": "Neuralink N1+R1",
    "role": "脑机第一性约束",
    "core": "功耗(毫瓦级热损伤上限)与带宽是物理死敌",
    "facts": [
@@ -3429,16 +2794,16 @@ window.MUSKINTEL_DATA = {
    "carrier": "电池 / Megapack / 光伏",
    "trl": 9,
    "stage": "规模量产",
-   "principle": "能量密度与循环寿命受电化学体系热力学上限约束；成本随累计产量沿莱特定律(经验学习曲线)下行",
-   "chain_edu": "电化学基础研究（固态/富锂锰基）美中并行",
-   "chain_ind": "正负极/隔膜/电解液——中方(宁德/比亚迪)全球产能与成本双领先",
-   "chain_dev": "4680干电极工艺良率爬坡为当前工程瓶颈",
-   "metric": "$/kWh 存储成本",
-   "tipping": "储能+光伏度电成本 < 天然气调峰电 → 电网结构性替代",
-   "cn": "宁德时代/比亚迪刀片",
-   "cn_edge": "中方产能领先，成本曲线两强并行",
-   "verdict": "最成熟线，卡点在制造工艺良率非基础科学",
-   "valid": "季判（成本曲线滚动更新）",
+   "principle": "LFP 电芯级比能量 ~160-200 Wh/kg，已逼近该化学体系上限——再降成本只能靠制造，不能靠化学。成本沿莱特定律下行：历史学习率 ~18-20%/累计产量翻番，电芯 $/kWh 从 2010 年 ~$1,100 降至 ~$60；下一段下降来自干电极工艺（删除湿法涂布与干燥环节，制造能耗 -30%+），不来自新体系。",
+   "chain_edu": "固态（硫化物电解质界面阻抗）与富锂锰基（电压衰减）两大方向均未解——10 年内不改变成本曲线主线。投研处理：监控、不定价。",
+   "chain_ind": "正极/隔膜/电解液全球产能 70%+ 在中国；宁德/比亚迪电芯成本领先第二梯队约 15%。Tesla 的真实筹码不是电芯化学，是 Megapack 系统级溢价 + 干电极工艺代际。",
+   "chain_dev": "4680 干电极良率是唯一工程变量：良率每 +10pct ≈ 电芯成本 -3~4%。休斯顿厂满产 = 电芯自供比翻越 50% 的分水岭，直接改写毛利结构。",
+   "metric": "系统级 $/kWh（Megapack 售价 ~$180-200/kWh，电芯 ~$60）；真正该盯的是毛利三分解，不是售价",
+   "tipping": "4h 储能 LCOS < $0.05/kWh（≈天然气调峰含容量费）→ 电网侧替代从经济选择变强制。当前 ~$0.06-0.08，距拐点约 1-2 个学习周期",
+   "cn": "宁德时代 / 比亚迪刀片",
+   "cn_edge": "中方产能与成本双领先；Tesla 赌的是系统集成与工艺代际，不与中方拼电芯",
+   "verdict": "马斯克系唯一确定性复利线：供给约束下扩产=利润，应按公用事业成长股（EV/EBITDA）估值而非期权逻辑。证伪信号：毛利三分解中『供需溢价』占比 > 1/3 —— 那意味着毛利是周期性的，复利叙事作废。",
+   "valid": "月度（成本曲线滚动更新）",
    "bottleneck": "制造(产)"
   },
   {
@@ -3447,15 +2812,15 @@ window.MUSKINTEL_DATA = {
    "carrier": "EV / FSD / Robotaxi",
    "trl": 7,
    "stage": "中试→限定商用",
-   "principle": "自动驾驶=感知-决策-控制闭环；端到端神经网络的泛化能力受真实里程数据量与长尾场景覆盖约束",
-   "chain_edu": "端到端大模型/世界模型——学界美方领先",
-   "chain_ind": "车规芯片(自研SoC)+传感器；一体压铸制造中方供应链强",
-   "chain_dev": "无监督FSD泛化与监管验证是双瓶颈",
-   "metric": "$/mile 与接管率(MPI)",
-   "tipping": "无人出行 $/mile < 私家车持有成本 且 通过监管验证",
-   "cn": "比亚迪/华为ADS/萝卜快跑",
-   "cn_edge": "EV硬件中方领先；无监督FSD美方领先，Q3中国审批=两树接触点",
-   "verdict": "技术拐点已近，监管拐点未到——瓶颈从'学'转向'研+政'",
+   "principle": "端到端网络性能随数据量呈幂律提升，但长尾场景覆盖只有对数收益——接管率(MPI)每降一个数量级，所需真实里程约 ×10。安全验证需 10⁹ 英里级统计置信，纯实测物理上不可达，仿真占比是隐藏的关键工程变量。",
+   "chain_edu": "端到端/世界模型范式美方领先。但学术领先不构成商业壁垒——模型权重会扩散，数据飞轮不会。壁垒在里程，不在论文。",
+   "chain_ind": "车端 HW5 自研 SoC + 一体压铸（中方压铸机供应链）。单车自动驾驶增量 BOM 须 <$1,500，这是 Robotaxi 单位经济成立的硬前提。",
+   "chain_dev": "双瓶颈：无监督 FSD 的 MPI 还需再 ×10；监管是硬时钟——内华达备案（06-20）验证州级路径可走，联邦 NHTSA 3 项调查是尾部风险。技术在收敛，时钟在政治手里。",
+   "metric": "$/mile 全成本（折旧+能耗+保险+远程监控）。盈亏线 ≈ 私家车持有成本 $0.60-0.70/mile；Waymo 当前估算 ~$1.5-2/mile——谁先穿越盈亏线，谁的数据飞轮才开始变现",
+   "tipping": "$/mile < $0.60 且单城车队 >1,000 辆无重大事故运行 12 个月 → 需求侧引爆，里程优势开始复利",
+   "cn": "比亚迪 / 华为ADS / 萝卜快跑",
+   "cn_edge": "EV 硬件与成本中方领先；无监督泛化美方领先。FSD 中国审批（Q3）= 两棵技术树的第一个商业接触点",
+   "verdict": "溢价主载体，但兑现顺序是『监管→车队→单位经济→估值』，市场定价顺序恰好相反。仓位纪律：只对监管里程碑定价，对演示视频计零。11-03 与中国审批落地前，这条线是事件期权，不是成长股。",
    "valid": "至FSD中国审批(Q3'26)与11-03",
    "bottleneck": "研发+监管(研+政)"
   },
@@ -3465,15 +2830,15 @@ window.MUSKINTEL_DATA = {
    "carrier": "Falcon / Starship / Starlink",
    "trl": 8,
    "stage": "迭代量产(Falcon)+中试(星舰)",
-   "principle": "入轨成本受齐奥尔科夫斯基火箭方程与复用次数约束；$/kg 随复用次数与翻新成本双曲下降",
-   "chain_edu": "全流量分级燃烧循环工程学美方独有",
-   "chain_ind": "不锈钢箭体+增材制造Raptor，垂直自制率极高",
-   "chain_dev": "星舰复用周转与翻新成本是量产瓶颈",
-   "metric": "$/kg 至 LEO",
-   "tipping": "星舰 $/kg < $150 → 轨道工业化经济成立",
-   "cn": "长征系/朱雀二号/天龙",
-   "cn_edge": "美方复用形成代差领先",
-   "verdict": "美方代差最大的一线，护城河=复用经济性的时间常数",
+   "principle": "火箭方程的指数惩罚使入轨天然昂贵；复用把 $/kg 的构成从『制造成本分摊』改写为『翻新成本+推进剂』。Falcon 9 复用 20+ 次后边际发射成本 ~$15-20M/次（$/kg ~$2,700）；星舰满复用的理论地板 <$100/kg（推进剂 ~$1M/次）——但前提是翻新 <$5M/次、单箭复用 >10 次、年发射 >100 次，三变量缺一不可。",
+   "chain_edu": "全流量分级燃烧（Raptor）工程学全球独有；甲烷+不锈钢是材料成本的暴力下压（箭体材料成本约为碳纤维方案的 1/50）。",
+   "chain_ind": "垂直自制率 >80%，Raptor 增材制造单台成本 $250K → 目标 $100K。全系供应链风险最低的一条线。",
+   "chain_dev": "量产瓶颈不是造箭是周转：复用节拍决定 $/kg 曲线斜率。盯试飞×复用×翻新成本三变量，其余都是噪音。",
+   "metric": "$/kg 至 LEO（F9 现值 ~$2,700 → 星舰闸门 $150）；外部商业订单占比（<30% = 封闭经济警报，自造需求撑发射量）",
+   "tipping": "$/kg < $150 → 轨道数据中心从叙事变可行性研究；< $50 → 行星际运输进入经济讨论范围",
+   "cn": "长征系 / 朱雀二号 / 天龙",
+   "cn_edge": "复用形成代差，美方领先最大的一线；中方追赶路径清晰但时间常数 5 年+",
+   "verdict": "现金流底仓+全系最大凸性期权的复合体。市场的定价错误在把两者混进一个倍数：应拆开——发射+Starlink 给基础设施倍数，星舰期权单独按实物期权估值。星舰 $/kg 每下一个台阶，轨道 DC 叙事的扣减系数就该重算一次。",
    "valid": "5年(星舰复用曲线主线)",
    "bottleneck": "工艺量产(研)"
   },
@@ -3483,15 +2848,15 @@ window.MUSKINTEL_DATA = {
    "carrier": "Colossus / 自建fab / Grok",
    "trl": 8,
    "stage": "规模部署",
-   "principle": "训练算力=芯片FLOPS×集群规模×电力供给；当前边际瓶颈已从芯片转移到电力并网(热力学+电网物理)",
-   "chain_edu": "大模型算法中美差距收窄(DeepSeek等追近)",
-   "chain_ind": "GPU非主约束；变压器/开关柜全球2-4年交付队列是真瓶颈",
-   "chain_dev": "122天建10万卡执行力已验证，可复制性取决于电力设备",
-   "metric": "$/GW 与 $/M token",
-   "tipping": "单位算力成本 < 云租赁价 且 电力并网解除",
-   "cn": "DeepSeek/通义/字节豆包",
-   "cn_edge": "算法差距收窄，算力(电力)是新战场",
-   "verdict": "卡点是电力工业与许可，非算法或芯片——'看电不看芯片'",
+   "principle": "训练算力 = FLOPS × 利用率 × 电力。芯片已非边际约束（GB200 产能爬坡中），约束移到电力物理：1GW 数据中心 = 一座中型城市的用电，大型变压器/开关柜交付队列 2-4 年、电网互联队列 3-5 年——热力学与官僚程序的双重瓶颈，后者更慢。",
+   "chain_edu": "算法差距收窄（DeepSeek 级训练成本压到 1/10 量级）→ 算法不再是壁垒。新壁垒 = 每 token 全成本，这是电力工程问题。",
+   "chain_ind": "电力设备是新『光刻机』：全球大型变压器产能被 GE Vernova / 西门子能源 / 日立锁死，扩产周期 3 年+。谁先锁定电力设备产能，谁锁定下一轮算力供给。",
+   "chain_dev": "122 天建成 10 万卡 = 执行力已验证；VoltaGrid 燃气轮机自建电源是绕过电网队列的私路，孟菲斯许可诉讼就是这条私路的法律定价。",
+   "metric": "$/GPU-月 全成本（电力+折旧+运维）vs 实付租金（Anthropic $1.25B/月、Google $920M/月）——spread 即毛利，第三方可完全反推，全系唯一逐季可证伪的大数字",
+   "tipping": "自建电源许可通过 + 装机上 GW → 成本地板低于云厂 30%+，算力租赁从生意变垄断",
+   "cn": "DeepSeek / 通义 / 字节豆包",
+   "cn_edge": "算法差距已收窄；下一战场是电力与设备供应链，中方电网扩建速度是结构性优势",
+   "verdict": "SPCX 估值中唯一该给『公用事业+』倍数的部分。纪律：每月对表一次——毛利显著高于电价+折旧推算则上修，反之信仰层同步减记。孟菲斯裁决是未来 6-12 个月最重要的单一催化剂。",
    "valid": "6-12个月(电力许可裁决前)",
    "bottleneck": "电力基建+许可(产+政)"
   },
@@ -3501,15 +2866,15 @@ window.MUSKINTEL_DATA = {
    "carrier": "Optimus",
    "trl": 5,
    "stage": "原型→中试",
-   "principle": "人形机器人经济性受执行器(谐波减速器)单位成本与全球产能约束；灵巧操作受自由度×控制算法约束",
-   "chain_edu": "具身智能/模仿学习——学界爆发期，中美并行",
-   "chain_ind": "谐波减速器全球产能千万级 vs 需求上亿级=10倍缺口，中方(绿的/哈默纳科)占先",
-   "chain_dev": "Tesla自研集成执行器产线能否复制4680剧本是分水岭",
-   "metric": "$/工时",
-   "tipping": "机器人 $/工时 < 最低工资 → 劳动力经济学重写",
-   "cn": "宇树/智元/傅利叶",
-   "cn_edge": "中方减速器供应链占先，集成度美方下注",
-   "verdict": "头号证伪线——瓶颈在'产'(执行器产能)，5年内不证伪不证实",
+   "principle": "人形机器人 BOM 中执行器占 40-50%（单台 14-40 个），谐波减速器+行星滚柱丝杠是成本与产能双瓶颈。全球谐波减速器产能 ~千万台/年（哈默纳科+绿的占 ~70%），千万台机器人 ⇒ 上亿执行器/年 = 10 倍+缺口。这是产业物理，不是观点。",
+   "chain_edu": "具身智能（模仿学习/VLA）中美并行爆发。但算法进度不影响 5 年内的产能瓶颈判定——算法领先无法替代关节产能。",
+   "chain_ind": "稀土永磁（无框力矩电机磁钢）+精密减速器，中方供应链占先。外购路径下单台执行器压不进 $200，$25K 整机 BOM 不成立——外购在经济上是死路。",
+   "chain_dev": "分水岭 = 自研集成执行器产线（4680 剧本重演）。三个公开先行信号：执行器产线招聘量级、设备采购公告、Fremont 改线进度。信号未亮，产能承诺按零计。",
+   "metric": "$/工时（全成本折旧）。盈亏线 = 最低工资 ~$15/时 → 双班折算单台年成本须 <$30K，即整机 BOM <$25K 且寿命 >5 年",
+   "tipping": "执行器产线落地 + 单台 BOM <$25K → 劳动力经济学重写。这是 5 年尺度上全系最大的正尾部",
+   "cn": "宇树 / 智元 / 傅利叶",
+   "cn_edge": "中方握着减速器与磁材供应链；美方赌的是集成度与自研产线——两边赌的不是同一个瓶颈",
+   "verdict": "全系唯一对称赌注：证伪即先机。市场把它按『免费期权』计价，但 TSLA 溢价里含着可观的 Optimus 份额——免费的东西被定了价，这本身就是错价。纪律：对发布会计零，只对招聘/设备采购信号定价；哈默纳科/绿的若接到 Tesla 巨额订单 = 外购复活，本判定框架作废。",
    "valid": "5年(执行器产线验证前不翻转)",
    "bottleneck": "核心部件产能(产)"
   },
@@ -3519,15 +2884,15 @@ window.MUSKINTEL_DATA = {
    "carrier": "Neuralink N1/R1",
    "trl": 5,
    "stage": "临床早期",
-   "principle": "植入式脑机受毫瓦级功耗(组织热损伤上限)与通道带宽的物理对立约束；产能受R1手术机器人节拍约束",
-   "chain_edu": "神经科学+柔性电极材料学——学界前沿，美方临床领先",
-   "chain_ind": "定制ASIC+柔性电极+手术机器人，垂直自研",
-   "chain_dev": "R1手术节拍=产能天花板，临床样本积累慢",
-   "metric": "通道数×带宽/功耗",
-   "tipping": "患者数×带宽进入指数倍增",
-   "cn": "脑虎科技/中科院微系统",
-   "cn_edge": "美方临床进度领先",
-   "verdict": "20年尺度标的，瓶颈同时在'学'(科学)与'研'(手术产能)",
+   "principle": "植入功耗上限 ~10mW（组织温升 <1°C 的热损伤线），带宽 ∝ 通道数 × 采样率 ∝ 功耗——物理死敌。N1 当前 1,024 通道；语言级解码估计需 10⁴-10⁵ 通道，还差 1-2 个数量级，且每提一个数量级都要在同一个功耗预算内完成。",
+   "chain_edu": "柔性电极材料学（聚合物+铂铱，细于发丝）+ 神经解码。科学风险未出清——这不是纯工程问题，是『学』的问题。",
+   "chain_ind": "定制 ASIC + 电极丝 + 手术机器人全部垂直自研，无外部供应链可依赖，也因此无可对标、无法外部验证成本曲线。",
+   "chain_dev": "R1 手术机器人节拍 = 产能天花板（单台手术小时级，人手不可替代）。患者累计数是唯一诚实的进度条——发布会不是。",
+   "metric": "通道数 × 带宽 / mW（物理效率）；患者累计植入数（当前数十例级）× R1 台数 × 单台节拍（产能）",
+   "tipping": "通道数再 ×10 且患者数进入指数倍增 → 从临床珍品变平台。两个条件缺一都只是医疗器械公司",
+   "cn": "脑虎科技 / 中科院微系统",
+   "cn_edge": "美方临床进度领先；中方跟随路径在柔性电极材料，差距主要在监管与临床样本",
+   "verdict": "20 年尺度、无法折现的深度期权。正确仓位 = 观察名单，不是持仓。对任何『脑机+AI』叙事溢价计零——它连可证伪的中间商业指标都还没有。监控成本极低：R1 台数 × 节拍，一年看两次就够。",
    "valid": "20年(临床长周期)",
    "bottleneck": "基础科学+临床产能(学+研)"
   }
@@ -3577,7 +2942,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-10 07:43",
+  "last_run": "2026-07-10 09:24",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -3588,7 +2953,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 10,
+   "edgar": 8,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -4032,7 +3397,15 @@ window.MUSKINTEL_DATA = {
    "src": ""
   },
   {
-   "ts": "2026-07-08",
+   "ts": "2026-07-10",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX 首次公开募股纽约时代广场上出现Elon Musk 形象的裸身充气人偶，美国。6月12日，SpaceX 正式在纳斯达克挂牌上市，以每股135美元价格",
+   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93NTd4a0Y3VjdXdU05S0J4TWhOcDdSYmF6cFFfdV9XcmZnNmRtbDFiSTR0SjFiR2ZiXzIxOXVYWGJjN28wV1NXMVVJNF94Tm1ZRTg2RFRZa3ltXzV6NGJRc1pmaw?oc=5"
+  },
+  {
+   "ts": "2026-07-10",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
@@ -4040,92 +3413,20 @@ window.MUSKINTEL_DATA = {
    "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wTWlkbUFoQU1BVU9XdXBpY3A1ZERJRVhhaTZPYTNwUTQ0WF96ZVFDdERBRmQwdWdfTER6U3d0R0xHUTZzVDJobWwwOFR3YU9uSllIM0RHLUx5X09waVN3dllLU0NMQWNmcHM4UUhB?oc=5"
   },
   {
-   "ts": "2026-07-08",
+   "ts": "2026-07-10",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
-   "title": "Bitget在Solana平台上率先推出SpaceX的Pre-IPO代币，向大众开放 - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ2U2R3JZY2Zyc3JTMjRyLXFfZTZIUlh5dU16NmxiWkYyZm5remQyQnhUQXd1YlNJLTlVU3FhS3ZvbkRhM2tFU1JtTlp2dnU2R3lEVlJ1Y2RIMVRiQ2hWOWJicWZoa1F6N3luX3lrQWZUM3ZseHJVVEVOTFFlc0FTenpkZGVzd3FyZ1V5THBwQ3cyZEREeXBObzZ2ZjFKcG85V0JhUUM3clFyanBSWEVGdkljVlBGTGYyOFVzd0o5VDdMUkxY?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克集团化整合SpaceX、xAI大赚一笔 每年节省近10亿美元利息 - 人物 - Elon Musk - cnBeta.COM",
-   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4dzlqcXFuSlNPWUlwa3N2U1NVZk10N0NlUGRuRnlZQ0NxZDdEcktnd0pOY01fZTZhNF9fdkV2RWhqV2xXT2JQcWJ0cy00amx0WjVzRmNTTTgwWndicVRVNw?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克（Elon Musk）将所有“X”合并，SpaceX收购xAI和X，估值突破10万亿印尼盾 - VOI.id",
-   "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlVjczhuMU42MFpzczB5ek5oNU0tSjQtZ2ZyUHlXRTVsZkt3M1dBTWpxRTd4UWV1VzV2OVN3emQwZ3FnZEVUOFNFamNmVHPSAUJBVV95cUxOaFE4VzIyaGJFOTVIX0xTMWlkYWtGdmtaS0dTclJvLU5lZ3FobEhQLTNpMHhKMVFrakhpcXhlXzJqQmc?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力|SpaceX|Twitter|卫星|数据中心|在轨_手机新浪网 - 新浪财经",
-   "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUmliWFlsQWZxLUN6b2ZUaG1maGZyVXUyTTl1Ynk2NnJaMWtuTjA1WkJ6X1lFdDZSanFfNVQtUlJlNzB0Z3B5LXVUZWpWWU1ZbmpRODBtajBIaGdHS2gyODRHZmEzTENwdkpGYmtxbktZNVJHQ29GMHBTWERCZUVfR0U5Zno1Z2M?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "北卡罗来纳州财政部长放弃投资SpaceX，指其估值太贵 - TradingKey",
-   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0Vya0FXSmpwZDF0bWc3NmZyZUtyNEt4VWNHSlVCOHUwbWJidnhfeTlYMzFCWnk5MV9kRjRfT3VvZjV0bi1aTDJJdmNOblluRV9nWUdITVU3WjFnREMtZDg5WjlncDIyeUxjcGYzSFdvWjJTcXo0LVVoa3haeTZTVmY3UTdHUEp2b2pPa20wSWFaMGEycnFyUkM4THVFX254dUFqRmo4NXlaZ1hpWXRYRW9XcGNUdTMwQTc1Vlo4c1MyTEg2?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 17 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "新浪网· - 新浪网",
-   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aNkwtMVpIaXgwZEdQQ19Qd2Q4dGRNcWUzaW5hdVg2OXNTa1FvSGEyOVNlbkdlYmlzUElVU28wREdURTFmYXhTckhJUmxmYVE5ZEt6X0pOVUl4eE1vMk0zNzZUOA?oc=5"
-  },
-  {
-   "ts": "2026-07-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX在星空中书写特斯拉的未来 - The Business Times",
-   "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSDN1VVdoQ2FPN21VWW4wRlhiekJlOVJoMUxNX3NGcmJ5UXF3a0pESG15Q1d5V052R3E0dmkxc1JWWHVXRlkzbF81cEp0NGs1alMzRXdIcWhkWDE1N3MtczRKS0ljT2I1NFNxSlRJV3ZaTkRjVXRNNkRURkkyOWg1eGVWeFZ4a3FrNFhJZV9lN29rNzNLLWc?oc=5"
-  },
-  {
-   "ts": "2026-07-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克的SpaceX收购埃隆·马斯克的xAI，合并后的首次公开募股估值预计达到1.25万亿美元 - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLU1HMmcySS1DWWNYMVBHd3NVM3phZW90TjczSWRwb1RYYXhwZzVvNGRvcGRhQTF3TV8yczNHN3ZwWjNaS0NObTFySlNiN1FLbnVhdU5Tb3l1bWRfS1JtV0JmenhIQlJWU1FpeGt3d3ZIS3UyYThTSzBqZlNQZWZJYjIyVzZydEdxOGVHeF90MUtjeXZkZ1E?oc=5"
-  },
-  {
-   "ts": "2026-07-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
-   "src": ""
+   "title": "五角大楼透露，伊隆·马斯克（Elon Musk）的Grok在伊朗战争行动中使用 - VOI.id",
+   "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1NaHJ0aFd6OGI2c2dnRTluc3pTZW9KZzBfX3VSU3AwRUNCd09sbEZZN1otYmtaTGphRllHS1ltSGxhM3RKVk9oSjhiMDRYNUHSAUJBVV95cUxOYnlUSGVrMmpselRPM290eDVrZTcyU1BNSTFhQXBKNkltWmNRNGo5c3RNZUtLT2dzV0QzUTZVZUtsTHc?oc=5"
   },
   {
    "ts": "2026-07-10",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
-   "title": "SpaceX 首次公开募股纽约时代广场上出现Elon Musk 形象的裸身充气人偶，美国。6月12日，SpaceX 正式在纳斯达克挂牌上市，以每股135美元价格",
-   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93NTd4a0Y3VjdXdU05S0J4TWhOcDdSYmF6cFFfdV9XcmZnNmRtbDFiSTR0SjFiR2ZiXzIxOXVYWGJjN28wV1NXMVVJNF94Tm1ZRTg2RFRZa3ltXzV6NGJRc1pmaw?oc=5"
+   "title": "新浪网· - 新浪网",
+   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aNkwtMVpIaXgwZEdQQ19Qd2Q4dGRNcWUzaW5hdVg2OXNTa1FvSGEyOVNlbkdlYmlzUElVU28wREdURTFmYXhTckhJUmxmYVE5ZEt6X0pOVUl4eE1vMk0zNzZUOA?oc=5"
   },
   {
    "ts": "2026-07-10",
@@ -4140,7 +3441,15 @@ window.MUSKINTEL_DATA = {
    "rule": "R3",
    "action": "入库",
    "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
+   "title": "Jim Cramer：SpaceX高估值背后是市场对Elon Musk的押注 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTC1YRkU1ZkpvdjFRMUJwMkZyZ2Y3SFFNbXVoek9EMFMzOUMzZTBEY0NzRlhNdUVqNFNkMVJHd0VMMGdHVnE4QkNXZktuM2psRlZLdWVQSXkwcnYtNW9rb0pVd2s2eUVHeEpEbnZzZFFEZ2c4M0ZXNktsWHU1UDJCZ21PRF9yU0gtVUpNVlZ4RHpOcWthbVJjX0lqOXViQXJzbTM5QmFhTQ?oc=5"
+  },
+  {
+   "ts": "2026-07-10",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 17 条（明细见各人物卡）",
    "src": ""
   }
  ],
@@ -4523,7 +3832,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "lens": "政治经济学与产业政策（Political Economy）",
-   "claim": "帝国的成本地板与需求基座被三条政策管道系统性决定，政治不是外生扰动而是内生变量。",
+   "claim": "马斯克系的成本地板与需求基座被三条政策管道系统性决定，政治不是外生扰动而是内生变量。",
    "mech": "① IRA 补贴/关税→储能与整车单位经济（补贴变动=成本曲线平移）；② 联邦采购周期→SPCX 收入的准财政基座；③ 监管个案(NHTSA/FAA/环保诉讼)→各产品线的行政成本段。这些成本记在监管账上而非损益表，但真实存在。",
    "read": "补贴中性、采购顺风、三案(NHTSA/FAA/孟菲斯)悬置压制资本开支回报确定性。",
    "chain": "（对应先行引擎 L3/L7 监管层）",
@@ -4790,7 +4099,7 @@ window.MUSKINTEL_DATA = {
     {
      "layer": 3,
      "node": "Raptor 3 发动机",
-     "state": "全流量分级燃烧=更低涡温=更长寿命=更多复用；帝国 Idiot Index 收敛最狠单品",
+     "state": "全流量分级燃烧=更低涡温=更长寿命=更多复用；马斯克系 Idiot Index 收敛最狠单品",
      "st": "green",
      "watch": "单台工时、增材制造占比",
      "src": "B:公司+媒体",
@@ -5152,7 +4461,7 @@ window.MUSKINTEL_DATA = {
    "d": "利润形态、护城河时间常数、最该被证伪的环节"
   }
  ],
- "supply_note": "读法：每条产业线从 L1(物理约束)到 L8(证伪点)是一条完整供应链；红灯层=该产业当前最卡的环节，也是投资该线最该盯的先行信号。灯色=环节状态(绿正常/黄观察/红约束)，非重要性。产能与合同数字标证据级，公司单方口径一律打折至 C。",
+ "supply_note": "读法：每条产业线是一条从物理约束到证伪点的完整供应链；红灯环节=该产业当前最卡处，也是投资该线最该盯的先行信号。灯色只表状态(绿正常 / 黄观察 / 红约束)，不表重要性。产能与合同数字标证据级，公司单方口径一律打折至 C。",
  "pol_capital": [
   {
    "cls": "制度性权力",
@@ -5359,5 +4668,195 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "pol_note": "本页为对构建情景(2026)的政治-地缘专业推演。方法：政治资本按存量表(五类资产/负债)编目、每项标来源事件与时间链、可动用性与衰减时间常数；五视角为地缘政治风险/委托代理/重复博弈/政治经济学/政治风险定价五层递进，各自绑定一条可回测事件链并标注所处阶段。随周报刷新的是'当前判读'与阶段定位，框架结构稳定。",
- "techtree_note": "框架：每条技术线按①第一性原理约束 ②产学研供应链三段(产=制造/学=基础研究/研=工程开发)卡点定位 ③研发阶段(TRL 1-9) ④核心度量与拐点判据 ⑤中美对标 ⑥判定时效。瓶颈标签指认该线当前卡在产/学/研/政哪一环——这决定它是成本问题、科学问题、工程问题还是政策问题。"
+ "techtree_note": "框架（供应链第一性五步）：物理极限（定律给出的性能与成本地板）→ 科学边界（还有没有未解科学 = 技术路线风险）→ 供应链瓶颈（关键设备、材料、产能卡在谁手里）→ 工程化（良率与量产工艺的时间常数）→ 单位经济拐点与政策闸门。瓶颈标签指认当前卡点归属（产/学/研/政）——它决定这条线是成本问题、科学问题、工程问题还是政策问题；判定一律落到估值方法、仓位纪律与翻转条件三件套。",
+ "analyst_calls": [
+  {
+   "id": "call-tsla-option",
+   "topic": "TSLA 定价结构",
+   "title": "TSLA：一支伪装成汽车股的二元事件期权组合",
+   "scale": "1y",
+   "conviction": "中高",
+   "review_by": "2026-11-04（中期选举次日）",
+   "written": "2026-07-07",
+   "thesis": "股价 $418 中约 93% 是期权金而非现金流。市场把一年内两个二元事件（11-03 中期选举 × FSD 中国审批）的联合兑现定价到约 83%，而客观拆解：选举顺风 ~55% × 审批落地 ~60% ≈ 33%。溢价隐含的乐观度接近客观值的 2.5 倍——风险不对称在下行。",
+   "chain": [
+    "莱特定律成本地板 → 整车是需求约束防守盘，撑不起估值",
+    "现金流锚 $27-30/股（2026E EPS ≈$1.85 × 成熟制造业 15x）",
+    "余下 ≈$350 无 DCF 支撑 → 性质是期权金，不是资产",
+    "期权标的 = 选举 × FSD 审批 → 可反解市场隐含胜率"
+   ],
+   "inversion": "反解出的 83% 隐含联合胜率，要么意味着市场掌握我没有的信息，要么意味着这是一笔拥挤的叙事多头——历史上拥挤叙事的出清方式从来不是缓慢修正。",
+   "bull": "Robotaxi 赢家通吃，TAM 是整个出行业，$500 都保守；Musk 有把「物理不可行」变可行的前科（4680、火箭复用）。",
+   "bull_hold": "即便反方全对，兑现也是 5 年尺度的现金流；当前价格用 1 年期权窗口 price in 了 5 年结果 = 跨尺度违例。我不否认终局，只指认 1y 定价过满、下行不对称。",
+   "falsifiers": [
+    {
+     "when": "2026-09-30",
+     "what": "FSD 中国获批 且 Robotaxi 车队周计数转入指数增长 → 本判断作废"
+    },
+    {
+     "when": "2026-11-03",
+     "what": "共和党保住多数 → 溢价获政治背书，时间价值延长，判断上修"
+    },
+    {
+     "when": "季度信号",
+     "what": "执行器产线招聘/设备采购起量 → Optimus 腿从证伪对象转先机，溢价结构重估"
+    }
+   ],
+   "evidence": [
+    {
+     "t": "SPCX S-1 trailing 收入 $18B",
+     "ev": "B"
+    },
+    {
+     "t": "Q1'26 储能 8.8GWh · 毛利 39.5%",
+     "ev": "A"
+    },
+    {
+     "t": "本人承认 Robotaxi 2027 前无有意义收入",
+     "ev": "A"
+    },
+    {
+     "t": "承诺 2030 收入 $1T → 判定物理紧张",
+     "ev": "B"
+    }
+   ]
+  },
+  {
+   "id": "call-spcx-colossus",
+   "topic": "SPCX 估值解剖",
+   "title": "SPCX：$2.6T 里只有一块可以被证伪，其余是信仰的价格",
+   "scale": "6-12 个月",
+   "conviction": "高",
+   "review_by": "财报/租金对表后强制重审（滚动）",
+   "written": "2026-07-07",
+   "thesis": "SPCX 估值中唯一逐季可证伪的资产是 Colossus 租赁毛利——$26B/年合同收入可用电价+GPU 折旧从外部反推，与 Anthropic $1.25B/月、Google $920M/月实付租金对表。发射与 Starlink 是真现金流但增速已充分定价；星舰期权与轨道数据中心叙事按「物理紧张」纪律计零。可证伪层若按公用事业类 20x 计，信仰层约占市值七成——买 SPCX 的边际一美元，大多数买的是「马斯克会再次做成不可能」这句话本身。",
+   "chain": [
+    "算力瓶颈在电力链（变压器/开关柜 2-4 年交付队列），不在芯片",
+    "需求端已锁死：$26B/年合同 = 收入可见性极高",
+    "成本端可外推：电价 + 折旧 → 毛利可被第三方计算",
+    "其余资产无对表通道 → 不可证伪 = 不可定价，只能计信仰"
+   ],
+   "inversion": "一家公司最值钱的部分恰恰是无法被打脸的部分——这不是护城河，是估值结构的脆弱性：不可证伪层越大，IPO 后的波动越接近 meme 资产而非公用事业。",
+   "bull": "星舰一旦把 $/kg 打到 $150 以下，轨道经济打开的是全新 TAM，不是折现率问题；Starlink 已证明他能把叙事变成现金流。",
+   "bull_hold": "接受——但那是 5 年后的证伪点。在它到来之前，唯一能逐季证伪本判断的数字是 Colossus 毛利，所以我只把判断锚在那里；这是纪律，不是悲观。",
+   "falsifiers": [
+    {
+     "when": "每季度",
+     "what": "Colossus 实付租金续约 且 毛利显著高于电价+折旧推算 → 信仰层上修"
+    },
+    {
+     "when": "2026-07-30",
+     "what": "Kuiper 错过 FCC 部署死线 → Starlink 垄断加固，现金流层上修"
+    },
+    {
+     "when": "事件驱动",
+     "what": "孟菲斯燃气轮机许可诉讼裁决 → 电力瓶颈判定松/紧直接翻转"
+    }
+   ],
+   "evidence": [
+    {
+     "t": "Anthropic $1.25B/月 + Google $920M/月租用 Colossus",
+     "ev": "B"
+    },
+    {
+     "t": "S-1 trailing 收入 $18B",
+     "ev": "B"
+    },
+    {
+     "t": "电力设备交付队列 2-4 年（行业公开）",
+     "ev": "A"
+    }
+   ]
+  },
+  {
+   "id": "call-optimus-symmetric",
+   "topic": "Optimus 证伪结构",
+   "title": "Optimus：全系唯一的对称赌注——证伪本身就是信息",
+   "scale": "5y 框架 · 每日信号驱动",
+   "conviction": "高",
+   "review_by": "随每日招聘通道自动扫描",
+   "written": "2026-07-07",
+   "thesis": "其余产品线的多空结构都不对称：储能只能赢多赢少，Robotaxi 只能输多输少。Optimus 是唯一两个方向都能大幅移动估值的标的——执行器产线落地 = 复制 4680 剧本，上亿执行器/年重写劳动力经济学；不落地 = 千万台承诺按物理不可行计零。且它的信号纯度全站最高：只看执行器产线的招聘与设备采购（公开可查），不看发布会。",
+   "chain": [
+    "千万台整机 ⇒ 上亿执行器/年 vs 全球谐波减速器产能千万级 = 10 倍+缺口",
+    "外购路径不存在：哈默纳科+绿的全部产能也只是零头",
+    "唯一破局 = 自研自产（4680 剧本重演）",
+    "自研自产有公开先行信号：产线招聘 + 设备采购，逐季可查"
+   ],
+   "inversion": "市场把 Optimus 当「免费期权」放进 TSLA 溢价——但免费的东西被定了价，说明市场在为故事的可选性付费；在执行器信号亮起之前，这部分是纯时间价值，每过一个季度衰减一次。",
+   "bull": "4680 从被全行业嘲笑到量产只用了四年；人形机器人的「树莓派时刻」可能比所有产能推算来得都早。",
+   "bull_hold": "4680 剧本恰恰是我的证伪条件而不是反驳——我不是说他做不到，是说「做到」有公开的证据链先行信号；信号未亮之前按零计是纪律。头号证伪对象 = 头号先机，二者必居其一，这正是本判断的全部内容。",
+   "falsifiers": [
+    {
+     "when": "季度信号",
+     "what": "执行器产线招聘量级跃升 + 设备采购公告 → 立即上修，转先机"
+    },
+    {
+     "when": "事件驱动",
+     "what": "哈默纳科/绿的接到 Tesla 巨额订单 → 外购路径复活，本判断框架作废"
+    },
+    {
+     "when": "2027 年内",
+     "what": "自有工厂真实部署（非演示）突破万台 → 需求端验证，上修"
+    }
+   ],
+   "evidence": [
+    {
+     "t": "承诺 Optimus 年产 1000 万台 → 判定物理不可行",
+     "ev": "B"
+    },
+    {
+     "t": "全球谐波减速器产能（行业公开）",
+     "ev": "A"
+    },
+    {
+     "t": "招聘信号通道 Greenhouse 每日抓取",
+     "ev": "A"
+    }
+   ]
+  },
+  {
+   "id": "call-pol-gate",
+   "topic": "政治风险结构",
+   "title": "11-03 不是一个事件，是全系的隐藏贝塔",
+   "scale": "至 2026-11-03",
+   "conviction": "高",
+   "review_by": "2026-11-04（选举结果落地即到期）",
+   "written": "2026-07-07",
+   "thesis": "中期选举在各板块被分开讨论（TSLA 溢价、SPCX 政府线、监管调查、主权持股审查），但它实际是同一个风险因子在四类资产上的重复暴露，且全部同向：民主党翻盘则四者同时恶化。这意味着组合层面无从对冲——11-03 之前，马斯克系资产之间的「分散」是幻觉，四条腿绑在同一只黑天鹅上。政治在这个体系里是乘数，不是加数。",
+   "chain": [
+    "TSLA $350 溢价的兑现依赖监管顺风（FSD 联邦框架/Robotaxi 发牌）",
+    "SPCX 政府合同与海湾主权股东过审依赖同一政治方向",
+    "NHTSA / FAA / DSA 调查强度随选举结果整体翻转",
+    "四个暴露同向 → 跨标的分散失效，风险应按单因子计"
+   ],
+   "inversion": "若市场真理解这层同向性，TSLA 与 SPCX 的隐含相关性应随选举临近趋向 1；当前任何「用一个对冲另一个」的定价都在低估共振——相关性在危机时刻从不站在分散那边。",
+   "bull": "政治风险被高估：马斯克与两党都有交易历史，2025-07 决裂后照样和解，输了选举也能重新做局。",
+   "bull_hold": "和解先例恰恰证明风险实在——先有暴跌才有和解。我不预测选举结果，只指认结构：这是乘数不是加数，仓位纪律应按单一二元事件管理，而非四个独立风险。",
+   "falsifiers": [
+    {
+     "when": "2026-11-03",
+     "what": "选举结果落地 → 本判断自然到期，转入新周期判断"
+    },
+    {
+     "when": "选前",
+     "what": "任一民主党州大规模给 Robotaxi 发牌 → 同向性假设减弱，下修"
+    }
+   ],
+   "evidence": [
+    {
+     "t": "2025-07「美国党」暴跌剧本（历史已发生）",
+     "ev": "A"
+    },
+    {
+     "t": "政治负债端：民主党系统性敌意（翻盘即清算）",
+     "ev": "B"
+    },
+    {
+     "t": "FEC 金援记录（全力金援共和党保中期）",
+     "ev": "A"
+    }
+   ]
+  }
+ ]
 };

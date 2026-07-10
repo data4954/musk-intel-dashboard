@@ -116,17 +116,17 @@ def build(D, kind, since, label):
     md += [f"- 情景树（赛前写死纪律）：共和党保住 → 顺风延续；民主党翻盘 → 监管反转 + 「美国党」期权重启（2025-07 暴跌剧本）。距离 {d_mid} 天。"]
     if pol.get("balance"):
         md += [f"- 资产端 {len(pol['balance'].get('assets',[]))} 项 vs 负债端 {len(pol['balance'].get('liabilities',[]))} 项；负债端首项：{(pol['balance'].get('liabilities') or ['—'])[0]}"]
-    md += ["", "### 3.2 物理与供需（约束态层）", ""]
+    md += ["", "### 3.2 物理与供需（约束态层）", "", "| 产品线 | 约束态 | 投资含义 | 盯什么 |", "|---|---|---|---|"]
     for x in sc:
-        md += [f"- **{x['line']}**［{x['state']}］：{x['meaning']} 盯：{x['watch']}"]
-    md += ["", "### 3.3 市场与资本（定价层）", ""]
+        md += [f"| **{x['line']}** | {x['state']} | {x['meaning']} | {x['watch']} |"]
+    md += ["", "### 3.3 市场与资本（定价层）", "", "| 标的 | 现值 | 区间涨跌 | 高 / 低 | 最大单日 | 样本 |", "|---|---|---|---|---|---|"]
     for q in D.get("market",{}).get("quotes",[]):
         st = series_stats(D, q["sym"], since)
         curp = f"${q['price']}" if q.get("price") is not None else (q.get("mcap") or "—")
         if st:
-            md += [f"- {q['name']}: 现值 {curp}，区间 {'+' if st['chg']>=0 else ''}{st['chg']}%（高 {st['hi']}/低 {st['lo']}，最大单日 {st['maxmove']}%，{st['n']} 样本）"]
+            md += [f"| {q['name']} | {curp} | {'+' if st['chg']>=0 else ''}{st['chg']}% | {st['hi']} / {st['lo']} | {st['maxmove']}% | {st['n']} |"]
         else:
-            md += [f"- {q['name']}: 现值 {curp}（区间样本不足，账本积累 <2 交易日）"]
+            md += [f"| {q['name']} | {curp} | 样本不足 | — | — | <2 |"]
     aligned = [(r, daily_chg(D,"TSLA",r["ts"])) for r in ab]
     aligned = [(r,cg) for r,cg in aligned if cg is not None]
     if aligned:
@@ -149,12 +149,9 @@ def build(D, kind, since, label):
     for r in bad_prom[:3]:
         md += [f"- 承诺风险：{r['title']}（{(r.get('payload') or {}).get('status','')}——{(r.get('payload') or {}).get('basis','')}）"]
     if fused: md += [f"- 数据风险：{', '.join(fused)} 通道异常，本期相关判定基于陈旧值"]
-    md += ["", f"## 五、未核实区（C 级单源 · {len(c)} 条 · 不进任何结论）", ""]
-    md += [f"- {r['ts']} {r['title'][:60]}" for r in c[:10]] or ["- （无）"]
-    if len(c) > 10: md += [f"- …另 {len(c)-10} 条见站内账本"]
 
     # —— 六、数据附录 ——
-    md += ["", "## 六、数据附录", "", "**倒计时**", ""]
+    md += ["", "## 五、数据附录", "", "**倒计时**", ""]
     md += [f"- {cd['label']}: {days_to(cd['date'])} 天（{cd['date']}）" for cd in D.get("countdowns",[]) if days_to(cd["date"])>=0]
     md += ["", "**承诺库全量**", ""]
     md += [f"- {r['ts']} [{r['ev']}/{r.get('scope','')}] {r['title']} → {(r.get('payload') or {}).get('status','未核')}" for r in D["ledger"] if r.get("type")=="promise"]
@@ -165,10 +162,18 @@ def build(D, kind, since, label):
         md += ["", "**主论点年审（人工填写——系统的灵魂条款）**", "", "- 去年核心判断证实/证伪清单：（待填）",
                "- 决策校准：从【决策档案】导出决策日志对照复盘"]
 
-    # —— 七、分析师判读（人工栏） ——
-    md += ["", "## 七、分析师判读（人工栏）", "",
-           "> 本节留白待填。机器判语到此为止——事件到论点的增量因果判读、仓位含义、下期关注清单，",
-           "> 由你在站内【决策档案】研究笔记中撰写后誊入，或接入 LLM API 自动生成（输出须标「AI生成未核」）。", ""]
+    # —— 七、分析师判读（AI 判断层，读 data.js analyst_calls） ——
+    calls = D.get("analyst_calls", [])
+    md += ["", "## 六、分析师判读（AI 分析师判断层 · 构建情景推演 · 非机器核实）", ""]
+    if calls:
+        for cc in calls:
+            md += [f"### {cc.get('title','')}", "",
+                   f"- **主论点**：{cc.get('thesis','')}",
+                   f"- **尺度 / 置信 / 复核到期**：{cc.get('scale','—')} ｜ {cc.get('conviction','—')} ｜ {cc.get('review_by','—')}",
+                   "- **证伪条件**：" + "；".join(f"{f.get('when','')} {f.get('what','')}" for f in cc.get('falsifiers', [])), ""]
+        md += ["> 判断由 AI 分析师层生成、挂账本 A/B 级依据；全文（推理链/隐含反解/多空对辩）见站内【趋势报告】页。", ""]
+    else:
+        md += ["- （判断层未启用：data.js 无 analyst_calls）", ""]
     h = D.get("health",{})
     md += ["---", f"数据健康 {json.dumps(h.get('sources',{}),ensure_ascii=False)} · 最后抓取 {h.get('last_run','未核')} · 核实规则 R1-R6 见 scripts/update.py",
            "判语生成方式：状态机×已入库机制模板（模板即账本内判定，无凭空观点）。对外发布删除原始行情数值。"]
