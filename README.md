@@ -1,64 +1,81 @@
-# Axiomake · 器象量化研究所（网站版 v4）
+# Axiomake · 器象量化研究所
 
-个人研究工具，非营利、非投资建议。由 GitHub Pages 托管网站、GitHub Actions 每日自动抓取数据、
-自动核实入库、按周期自动生成报告。本地不需要运行任何东西。
+**An auto-verifying evidence ledger + first-principles analysis terminal + AI analyst judgment layer — for a *simulated* 2026 Musk universe (TSLA / SpaceX).**
 
-## 与 v3（本地版）的差异
+> ⚠️ **Everything on this site is a constructed scenario (2026 simulation).** SPCX going public, xAI merging into SpaceX — none of it happened in reality. The *pipeline* is real; the *world* is fiction. Think of it as a flight simulator for investment research. Not investment advice.
 
-| | v3 本地版 | v4 网站版（本仓库） |
-|---|---|---|
-| 运行方式 | 双击 index.html + 本机定时任务 | 公网网址，Actions 每天 06:30（北京时间）自动跑 |
-| 抓取通道 | 本机 PowerShell/Python + 代理 | Actions 海外服务器直连，不再依赖你的代理 |
-| 入库闸门 | 人工待审队列 | **全自动**（规则 R1-R6），每条决定留审计可查 |
-| 报告 | 手动点按钮 | 周/月/季/年到期自动生成，站内归档页可浏览下载 |
-| 历史可审计 | backups/ 滚动10份 | git 提交历史，任意时刻可回滚 |
+**Live site:** https://data4954.github.io/musk-intel-dashboard/ *(content in Chinese — browser translate works fine; the charts speak for themselves)*
 
-## 自动核实规则（R1-R6，代码即纪律，见 scripts/update.py）
+---
 
-- **R1** 官方结构化源（SEC data.sec.gov Form 4）→ A 级自动入库
-- **R2** 同一事件 ≥2 家不同媒体报道 → B 级自动入库（存全部来源 URL）
-- **R3** 单源新闻 → C 级自动入库并标注"单源未交叉"；**C 级不进结论**（硬纪律）
-- **R4** 账本只追加不覆盖；60 天窗口同题去重；写错用"[冲正]"条目修正，不删改历史
-- **R5** 自动入库一律不填影响评分——影响是分析判断，机器不越权
-- **R6** 数据源连续 3 次失败熔断，写进周报头条；失败期间沿用旧值并标注陈旧
+## What it does
 
-**诚实边界（如实说明的已知弱点）**
-- 中文媒体同一事件措辞差异大，词面相似度聚簇经常聚不拢 → R2 触发偏少，多数新闻落 C 级。
-  这是**保守方向**的误差（漏升级、不会错升级），且被"C 不进结论"兜底。语义级聚簇需要付费模型，未引入。
-- 碳酸锂无免费可编程行情源，维持人工/陈旧状态。
-- 免费行情源延迟约 15 分钟，日频快照；对 T+2 决策周期足够。
-- Yahoo v8 chart 接口、Google News RSS 均为非官方保障接口，可能变更；变更时 R6 熔断 + 诊断日志留痕。
-- 决策日志/批注/情景树存在**浏览器本地**（localStorage），不上传仓库；换浏览器前必须导出备份。
-
-## 报告节奏（北京时间，reports/ 目录 + 站内【报告】页）
-
-周报每周日 · 月报每月 1 日 · 季报 1/4/7/10 月 1 日（含重计算清单）· 年报 1 月 1 日（含主论点年审）。
-补发：Actions 页 Run workflow，force_report 填 weekly/monthly/quarterly/yearly。
-
-## 文件清单
+Every morning at 06:30 (UTC+8), with zero human involvement:
 
 ```
-index.html                  网站本体（浅色 · 马斯克系商业站风格）
-data.js                     数据账本（Actions 维护，勿手动编辑；模式 v2）
-reports/                    定期报告归档 + index.json
-scripts/update.py           抓取 + 自动核实入库引擎
-scripts/report.py           定期报告生成器
-.github/workflows/update.yml  每日定时任务（UTC 22:30 = 北京 06:30）
-诊断日志.txt                人话故障记录（封顶500行）
-部署指南.md                 从零上线步骤（一次性，约15分钟）
+8 public sources          rules R1–R6              single data file         static site
+(quotes · SEC · launches  ──────────────►  grade &  ──────────────►  9 views + treemaps +   ──► GitHub Pages
+ jobs · FEC · news)          scrape           ingest    data.js ledger      network graphs
+                                                            │
+                                                            ▼
+                                              weekly / monthly / yearly reports
+                                              + AI analyst judgment layer
 ```
 
-## 数据源
+- **Scrape** — GitHub Actions runs `scripts/update.py` daily: market quotes, SEC Form 4 filings, rocket launch schedules, hiring feeds, FEC political donations, news.
+- **Grade** — every item gets an evidence grade on ingest:
 
-行情 Yahoo Finance（免延迟保障）· 一手文件 SEC data.sec.gov · 发射 Launch Library 2 ·
-新闻 Google News RSS（C 级默认）。种子数据校准至 2026-07-05，来源 URL 内嵌于各条目。
+  | Grade | Meaning | Treatment |
+  |---|---|---|
+  | **A** | official primary documents (EDGAR, courts, FCC, state filings) | auto-ingested, source attached |
+  | **B** | ≥ 2 independent mainstream financial outlets | enters conclusions |
+  | **C** | single-source, uncorroborated | **banned from every page** — kept in the ledger for audit only |
 
-## 对外发布
+- **Append-only ledger** — events are never edited or deleted; corrections are new entries.
+- **Auto reports** — weekly/monthly/yearly research reports assembled from ingested verdicts. The machine layer states facts and *never* invents opinions.
 
-报告 .md 即内容底稿。发布前手动删除原始行情数值（规避数据源转发授权），
-观点、判定与自制图表可自由发布。
+## The AI analyst layer (the interesting part)
 
-## 隐私说明
+On top of the machine layer, Claude (Fable 5) writes actual analyst calls. Every call must carry, by rule:
 
-GitHub 免费 Pages 要求仓库公开：账本、报告、抓取日志全网可见。
-个人批注/决策日志/情景树只存你的浏览器，**不会**进入仓库。介意账本公开则需 GitHub Pro（私有仓库 Pages）或改用 Cloudflare Pages。
+1. a **falsifiable thesis** (not a vibe)
+2. a **reasoning chain** from first principles
+3. an **inversion** — what the market's pricing implies, reverse-engineered
+4. the **strongest argument against itself**, and why the call still stands
+5. **kill-conditions with dates** — if the signal fires, the call dies publicly
+6. **evidence hooks** into the A/B ledger
+7. a **review deadline** — past it, the site automatically flags the call *expired, do not cite*
+
+That last one matters: when nobody maintains the judgment layer, it degrades honestly instead of impersonating fresh insight.
+
+## How it was built
+
+The owner writes zero code. The entire site — design system, treemap visualizations, network graphs, data pipeline, judgment layer, this README — was built by describing, arguing, and deciding, with Claude executing and explaining the professional vocabulary along the way ("that heatmap in your trading app is called a *treemap*; area = scarcity, shade = severity").
+
+Division of labor that emerged:
+
+- **Human**: every design decision, taste, priorities, vetoes, domain intuition
+- **Claude**: execution, professional translation of intuitions, discipline enforcement (evidence grades, falsifiability, honest expiry), and the unglamorous parts — git history scrubbing, repo security audits, merge-conflict reconciliation without losing a single ledger entry
+
+## Tech notes
+
+- **Zero backend, zero build step** — one `index.html` (inline CSS/JS), one `data.js` as the single source of truth, GitHub Actions as the only "server"
+- Charts with Chinese labels are **HTML/CSS, never SVG text** (CJK glyph alignment discipline, learned the hard way)
+- Warm flat design system (cream / ink / clay) — no gradients, no pure high-contrast colors
+- Treemaps: area × shade encode severity (square-root compressed so small tiles stay legible); network graphs: HTML-positioned nodes + SVG lines only
+
+## Repository map
+
+```
+index.html                  the whole site (views in Views = {...})
+data.js                     single source of truth (append-only ledger + all analysis data)
+scripts/update.py           daily scrape + verify + ingest (rules R1–R6 in header)
+scripts/report.py           report generator (+ auto-injects the judgment layer)
+.github/workflows/update.yml  daily 06:30 UTC+8 cron → auto-commit → Pages
+reports/                    generated research reports archive
+CLAUDE.md                   handover doc for AI collaboration sessions (in Chinese)
+```
+
+## Disclaimer
+
+Personal, non-commercial research experiment. Simulated scenario — not factual claims about real companies or persons. Records about natural persons are limited to public official conduct and legally public filings. Market data comes from free public endpoints, delayed, not for commercial redistribution. Nothing here is investment, legal, or tax advice.

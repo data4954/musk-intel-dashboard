@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 <title>Axiomake · 器象量化研究所</title>
+<meta name="description" content="Auto-verifying evidence ledger + first-principles analysis terminal + AI analyst judgment layer. Simulated 2026 Musk universe. Updates itself daily — zero backend.">
+<meta property="og:title" content="Axiomake — evidence ledger & first-principles research terminal">
+<meta property="og:description" content="A flight simulator for investment research: real pipeline, simulated 2026 scenario. Built by a non-coder with Claude. Auto-updates daily via GitHub Actions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://data4954.github.io/musk-intel-dashboard/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Axiomake — evidence ledger & first-principles research terminal">
+<meta name="twitter:description" content="Real pipeline, simulated 2026 scenario. Built by a non-coder with Claude. Auto-updates daily.">
 <style>
 /* ===== 马斯克系商业网站浅色基调：白底 · 近黑文字 · 大写字距标签 · 极简几何 ===== */
 :root{
@@ -237,7 +245,7 @@ feed(){ return guard('纵览', () => {
   const nA=rows.filter(r=>r.ev==='A').length, nB=rows.filter(r=>r.ev==='B').length, nC=rows.filter(r=>r.ev==='C').length;
   const fused=Object.entries((D.health||{}).sources||{}).filter(([k,v])=>v==='fused'||v==='red').map(([k])=>k);
   const clean=sc.filter(x=>x.state.includes('★')).map(x=>x.line), risky=sc.filter(x=>/[✗⚠]/.test(x.state)).map(x=>x.line);
-  let h = '<div class="card" style="padding:15px 20px"><div style="font-size:13px;line-height:1.8;color:#3a3d42"><b>系统定位：</b>一台自动核实的证据账本＋第一性原理分析框架——机器每日抓取 8 通道数据按 R1-R6 定级入库，六个视图解剖同一本账，周/月/季/年自动产出研报，批注与冲正回流账本。</div>'
+  let h = '<div class="card" style="padding:15px 20px"><div style="font-size:13px;line-height:1.8;color:#3a3d42"><b>系统定位：</b>一台自动核实的证据账本＋第一性原理分析框架——机器每日抓取 8 通道数据按 R1-R6 定级入库，六个视图解剖同一本账，周/月/季/年自动产出研报，批注与冲正回流账本。</div><div style="font-size:10.5px;color:var(--dim);margin-top:6px;letter-spacing:.02em;line-height:1.6">EN — Axiomake: an auto-verifying evidence ledger &amp; first-principles analysis terminal for a simulated 2026 scenario. Updates itself daily. English README in the <a href="https://github.com/data4954/musk-intel-dashboard" target="_blank" rel="noopener">repo</a>.</div>'
     +'<div style="display:flex;align-items:stretch;gap:4px;flex-wrap:wrap;margin:14px 0 2px">'
     +[['抓取','8 数据源'],['核实','R1-R6 定级'],['账本','只追加 A/B/C'],['分析','六视图解剖'],['研报','周月季年'],['决策','批注·冲正回流']].map((b,i,arr)=>{
        const last=i===arr.length-1;
