@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-11T07:26:37+08:00",
+  "generated_at": "2026-07-12T07:22:50+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-11",
+  "asof": "2026-07-12",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 407.76,
     "chg": 3.64,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-11",
+    "src": "Yahoo 2026-07-12",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -10.31,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-11",
+    "src": "Yahoo 2026-07-12",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64149.37,
-    "chg": 0.24,
-    "src": "Yahoo 2026-07-11",
+    "price": 63935.59,
+    "chg": 1.01,
+    "src": "Yahoo 2026-07-12",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0741,
-    "chg": -3.2,
-    "src": "Yahoo 2026-07-11",
+    "price": 0.0737,
+    "chg": -0.65,
+    "src": "Yahoo 2026-07-12",
     "status": "green"
    }
   ],
@@ -71,6 +71,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-11",
      "c": 407.76
+    },
+    {
+     "d": "2026-07-12",
+     "c": 407.76
     }
    ],
    "SPCX": [
@@ -96,6 +100,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-11",
+     "c": 145.3
+    },
+    {
+     "d": "2026-07-12",
      "c": 145.3
     }
    ],
@@ -123,6 +131,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-11",
      "c": 64149.37
+    },
+    {
+     "d": "2026-07-12",
+     "c": 63935.59
     }
    ],
    "DOGE-USD": [
@@ -149,6 +161,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-11",
      "c": 0.0741
+    },
+    {
+     "d": "2026-07-12",
+     "c": 0.0737
     }
    ]
   }
@@ -3310,6 +3326,298 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9KcDNBVGRJU2JIeVNfT1dVS0R0UXZON2lHWXFXVGhHRjM4OXpJVDE2ZExkUjdHTVBiMzREX2VXLUZKdThrXy1WdmlnV2Jfai0tQ3M4X3J3dFJZSFR4MkE0UnVrVTRZUWVJU1ktQVB1bi1fUi1ZQVlURw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-e718fc3dc319",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX 史上最大 IPO 落幕，马斯克身家破万亿美元，比特币持仓曝光",
+   "payload": {
+    "src": "区块周刊BlockWeeks",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5sMkMwekdxbWdwVE1MOXY1REgzT0Y5SEU5aDJEajNmanktYTIxZGh5UWJYYXllOVVNT19FSUlQRzRVYnhLRk13elFB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-004bd7306b3c",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克解散xAI，22万张GPU算力转给Anthropic：是退出模型竞争，还是改押“算力命门”",
+   "payload": {
+    "src": "虎嗅网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGNDFvYkN4cUFqQzdCa0ZBaXVPMk1EZXBVd1ktZVBxc21TNkFnUXVjSEhVOEJ1bEluZGtZZ1NtYnV3RFRsNE5BNEtaZ0tfbG5hM1R3SQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-5f87a7534a0e",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克有个“大总管”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13Z0JpS2lQb2pOcndvNExnVS1pdnR5b09oQU9Gb2RLOWZJMDdxdWJqRjkzbWY0MDFrX0FnRUVQcEtrMmtzN2xLQ0tsblJGU1ZveU1HMU9RTUxoeUxYdXFDWXlVXzhETXdsMGtaT3RISk1rVVFHMVFJOEQtWkc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-473e514f0567",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克xAI融资最新动态：据悉以2300亿美元估值筹资150亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE94UHNJOU5SQnE5cHhRcUhLcl9lUTFZTXZCVFM3R0QwZEtTNUh3TjBBcmcwWkxub3R1cVUzUUdsVFI2bWlRMzJ6RA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-87fbc2114d25",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "特斯拉高管Kimbal Musk申请出售6.05万股持股",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43RmU2NVVCbGIyMzcxY3FpYTJtLXhSdy1rQm81b1Fuc3MtQXFVcDdkenluOWxHdWxlMGZnNEdQb1V4MUNYdXlSd01HLV9JZWhDazJjZXB3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b7ffb8e08be5",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "特斯拉董事Kimbal Musk抛售股票套现近1.1亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNUlBPVUlLR1VCVlFoZ2w1cTVpdjctRzRZWDM5dk5JQURPckpEdGhtbWVMWmF6WExjSWo2S0VRQXpmeGI0NWcwYVU2SnRyRWFWU2FkSjN1RXRJbTZMck51aDgzOFlGUnRUdDEzMm9EZWxaa05td2pSeXptRlBVdDVWLW1Wd2I2dEdwdGlQbTY4RERuVml6UGhES3FpOG5DcHU1S1NwVWVzWlRkbFJ3bGxWaUo4OEZFZnN0UkstTWZhZmgtdWExNEwwbmpTMUZzUFlRSmYwejh3clJobFAwUm1PR3F2dzNVcEdxUU83TUlVZFhKRmswdy1Rc3dEZUh0MVJQRENnWWN4TzRDUExOczZSX1paUW1QUWZG?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-763603283120",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxPU2x2Sm9LazdMR2dtYkNaOS1LOURiNUNfY2VickYyRzFfMXRpZUpzcUVBT01rR3VaaHB2LXlNM3RCUEllV0prcTBiSU95NDhEd1pNTm9RWHZuVEVVbE9BQkhZd1gtXzhlOFpPU0t2SHJUQlMxMkJxOFhMZG9DS1RscHp2MWNkdlFhcGU3bWVDbE5OTlc2TTlROFJleFJCUE1rWTF1dUJGeDlMa3RZbTFvc3JxSXNNYWpJbE1ZMHhoMW81SWIwQzgyYWd2X0xiaHBJVGJoZWFySk5CT3lxWjNJMTRrT2R2d1otUnNJdjZnTnF2c240eGRBbWdMRk02MFhHS1ZIV1Rub2RpTE8wamRkRFVnNXo1LWpSNEE3ck43czJtLWY1Mjk3Vy1tVThnWUp3bW1mRmZ0a0M3M2pSaTlxbklhSndVT2NQNkZkQldJb1Z4dC1WYXZUMFQwV29OTURwQjJsYVRNMlRPMHE3UEYzQndSQWFpZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-48c4e77bd30e",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Oracle财报推动股价大涨42% 拉里·埃里森一度成为全球首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9feUowWUVxT2FYNlIwbGF1WEtGZGQyUnhYdF9tOGtUZjNid0x1MkJNT3pXYk05Yk9fMXdlSmtxYWNhUUZuRWFEX0Q3YjdiTnFwcnpTNQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8dca39179dc1",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫AI顾问警告：中国芯片设计仅落后美国1.5年 华为很快出口AI芯片",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mTjB3SVJpZVZIWVdOb2NTc2pPc0dvc04wVFhxRFZ6dTlYSEVwcTBOdmNkMlZzZ0pBaVZlb3VsWlQ1SUpZU2xlUHh5UGx5WWVhNkZPNC1mS3g?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b0b1b7c70c5f",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美国首任“AI和加密货币沙皇”！知名风投家、马斯克密友David Sacks获任",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Wc3V3aGVyS3VyR0JLdXdKdkp6T2RrS2dVaEV2MnJTUkNUdGhKaldaTnRURHE2WXhFUW53bFdsRUFZVFIzQTNQTmNDNVZ5RjUyWG5R?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e902b2da2c45",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel领投，美国初创公司探索“海洋数据中心”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yY2VteUpPREZRVUxKRWFMRS0yQnhQYXh4a3V3MlpONEQweHV3ekQ1X1diQmFUbWx4aU9sTzNBRUc4d3RCOWxUVkxTN1JfenV4aVVN?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9f183ff6891a",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Palantir 背后的 Peter Thiel，为何在阿根廷准备退路？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKbnUwOXNwdERkcUVjblluQklIYkFBWEtfU0VyU3hKcHh1MHVfcWJabjdIRFpBamNSMWowMFF0QjAyQmRFYW9YSHlQd2FzYTN1U3c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8ea53ca615cc",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z联创Marc Andreessen被任命为美联储AI任务小组联席组长",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QeWpZLTlQTWVEQ3Q1d3lZQjI2REktN051X0ZwVnoxUWFRSG1xS04wU21SeHZ4aVJCc0ZpZ0RkNUtyc2xEcTVXWkVYZ2d0NGlLTG1xMGR3ZTdjcnpKTzRBMFl3WmRfQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-caa45333c3b0",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "重磅！美联储任命a16z创始人安德森领导生产力与就业工作组",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE15MmVxUG5zMllEclpSNG1zUkVXX1NtSXJoOEdDSTFvTnU5Um1SbVZUM3VvbFFOS2o0WHVidXRvdTNDSUY4STIzcWN3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fe4a79d76877",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：ARK Invest在清晰法案投票前增持Coinbase和Circle股票",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kZm41ODBoM0hWT0plZ21nNlFORC1xamJOTkNTQTNCTkJUQUdXMmU0LVBjZzdSZTJZMHZZQ0prNGxKLUVlS0RWU0hoMTl0VndKdUpsMDNUSjBpVl9BN3lVQ2Y2QjVDeWYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3d952024f4bf",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood一天卖出800万美元AMD股票，是预警还是调仓？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1pLVBkeU1OcnpkMFJmcWIzVmkwU1ZaVFdfZ1kteWRpbHBsR1NMZTYxWmhiSW1lRDBhU28ybG9iZ2ZlUW90bGNXR3ZtRFNySTE5TTk3Z096OEw2M3N5SGNpMklR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-523bf5405289",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "不到四年 狂赚4100亿元！一家对冲基金突然刷屏了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84TkdyeElvX2ktQ3NtRWx1SzMwaFBIZHdadVpkZHBLYnQ0TWNWVE1PbmVaVGt3MnpjYVBGZS1CYVlycURJenJ2R29aSWE1Tl9oQngwLXRzWFRreUt6ZEdZdQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-25059d585486",
+   "type": "event",
+   "ts": "2026-07-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "US Tariff Hikes on Chinese EVs Will Slow Low-Carbon Shift, Citadel Founder Says",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZkdHdk5ueXlUYThpbFY3RjBpdkZLUkdnZE5PT0JvOS1tNkU3aXVlUGE5TTI2R0g5YmdwQ3VXSmJ4NjM5UzJMX2M5UWNCSjhMVjVpQURhLTJHLW1FWFhTT1M3aGM1eUF0dFMxeGpnaUhPczZpRDdaTy1tazRKcXJselhhVmlvZFZ5Z2VTMmtGbjN3V1NEclA3SV93N2luODh5bHhFZG9qemJUZFVuTVZXVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -3412,7 +3720,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1893 · xAI 211 在招（2026-07-11；Tesla 无免费接口）",
+     "v": "SpaceX 1897 · xAI 211 在招（2026-07-12；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -3516,7 +3824,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-11，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-12，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -3992,7 +4300,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-11 07:26",
+  "last_run": "2026-07-12 07:22",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -4003,7 +4311,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 9,
+   "edgar": 10,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -4014,7 +4322,7 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-48",
    "net": "2026-07-11T03:01:57Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-14",
@@ -4027,14 +4335,14 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Starship | Flight 13",
-   "net": "2026-07-15T22:45:00Z",
-   "status": "To Be Confirmed"
-  },
-  {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
    "net": "2026-07-16T20:22:00Z",
    "status": "To Be Confirmed"
+  },
+  {
+   "name": "Starship | Flight 13",
+   "net": "2026-07-16T22:45:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
@@ -4644,6 +4952,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 17 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX 史上最大 IPO 落幕，马斯克身家破万亿美元，比特币持仓曝光 - 区块周刊BlockWeeks",
+   "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5sMkMwekdxbWdwVE1MOXY1REgzT0Y5SEU5aDJEajNmanktYTIxZGh5UWJYYXllOVVNT19FSUlQRzRVYnhLRk13elFB?oc=5"
+  },
+  {
+   "ts": "2026-07-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克解散xAI，22万张GPU算力转给Anthropic：是退出模型竞争，还是改押“算力命门” - 虎嗅网",
+   "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGNDFvYkN4cUFqQzdCa0ZBaXVPMk1EZXBVd1ktZVBxc21TNkFnUXVjSEhVOEJ1bEluZGtZZ1NtYnV3RFRsNE5BNEtaZ0tfbG5hM1R3SQ?oc=5"
+  },
+  {
+   "ts": "2026-07-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 16 条（明细见各人物卡）",
    "src": ""
   }
  ],
