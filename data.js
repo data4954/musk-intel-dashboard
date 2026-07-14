@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-14T07:24:25+08:00",
+  "generated_at": "2026-07-15T07:23:32+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-14",
+  "asof": "2026-07-15",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 394.76,
-    "chg": -5.96,
+    "price": 396.18,
+    "chg": -1.67,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-14",
+    "src": "Yahoo 2026-07-15",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 139.14,
-    "chg": -13.27,
+    "price": 136.08,
+    "chg": -8.96,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-14",
+    "src": "Yahoo 2026-07-15",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 62113.21,
-    "chg": -1.71,
-    "src": "Yahoo 2026-07-14",
+    "price": 64857.15,
+    "chg": 1.14,
+    "src": "Yahoo 2026-07-15",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0716,
-    "chg": -1.7,
-    "src": "Yahoo 2026-07-14",
+    "price": 0.0743,
+    "chg": 0.29,
+    "src": "Yahoo 2026-07-15",
     "status": "green"
    }
   ],
@@ -83,6 +83,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-14",
      "c": 394.76
+    },
+    {
+     "d": "2026-07-15",
+     "c": 396.18
     }
    ],
    "SPCX": [
@@ -121,6 +125,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-14",
      "c": 139.14
+    },
+    {
+     "d": "2026-07-15",
+     "c": 136.08
     }
    ],
    "BTC-USD": [
@@ -159,6 +167,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-14",
      "c": 62113.21
+    },
+    {
+     "d": "2026-07-15",
+     "c": 64857.15
     }
    ],
    "DOGE-USD": [
@@ -197,6 +209,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-14",
      "c": 0.0716
+    },
+    {
+     "d": "2026-07-15",
+     "c": 0.0743
     }
    ]
   }
@@ -4270,6 +4286,298 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4yYWlheDBvakxzZXZpU3pDc2ZudEc2UE1OT3JZaE0xRldDZEZ4STN1aGFKYUx6WFBzWVRWVGd2LVowWmZBM1pQOV9CaEk5ZVNIbUFj?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-f702c5dc622c",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Sam Altman与Elon Musk隔空交锋，业内称“宇宙数据中心”短期内难商业化",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUy1SLTFySE1IT2ZZeWJrdFdSUkVNRVoyT0JGQzJxT1VXMkRuRnh4dnMtY0I4Y0RyclRDOG0zRE85ZzRsMnQ3Q0ZCMmxTMjBfVVlDenBSeE9qdE02YjFrM2FhVHpTeUxDSE9JYjJoYXB6QkZ4Qm56RmpvTUZocDNjWlhDdEdGQkRmVGRnQk1kZkRpNVZqTFdsSGtTVkhqX3F6b3hONW1oWXFGU0c5bVUydVBB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-cb4abf6798f6",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk: Tesla is ready to build an AI chip factory",
+   "payload": {
+    "src": "IDNFinancials.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTlNoSGc1dmhFZ1lRbkZFNFczaUhxMGEwa1k2QjhGblJ5eVIzNG1fOGhvRmdBMXVTMEpPUm1pU0JvOHJVWjVKeHZVMy1Mc1diR2E3ZUtYTXQteHlrcEJpUzRDN2w0UTZhb2lmSGdzbXJKOXA1V0lEY1RhYVBsSnJDU0xQbG1mQXJ1T3M5akYydVA2a1hrNk1jSUo1ZUdyXzdhSjBYSA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-838dcc7825b7",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "揭秘马斯克“后宫宇宙”：想让她们住一起，打造“宝宝军团”，在线求子",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94N182VXNEY2Nvb0kzbTZ4VU0xU3JITDZ6a1BGeENfRlNwMzliaW9keXdlbGJyUDJEUjQ4REpJZ25mUXp2YlZONDBSNG5XSHZtVXRVdXBpQmZRd2s?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ee8da1177ddc",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "解密文件曝光：马斯克私人管家如何给世界首富打工",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB2Z3VhNkljZmh1VzhGc0JiZG5oMkMtVG5vY1Y3Q0hVM2VqMngxdWtNaDF1WUZ5ek80X1VUVWlwXy14ZUdUeVVYcTBSaTZlZi1lcW5CY3B0MlNKaFNYelV2YlU1eFNoOERlX25zUjlWajNqdzFhUmlnZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b113a0b51773",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克兄弟看中的集装箱种菜 突然火了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA5eTZ1aVJaOVpiSm5wZUhPZDVDLUJUQnFEZktRSmdKcS05YmRoWDJhNU5sMjFWWThCYnNTUTdiR0JoSVZqeWxUbA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e96b136bf4b1",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克弟弟抛售股票套现近1.1亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9aSnBwSXdhMTZSWE1tZFJoaE1TdkswSGR1ZTltaDBNWktNc29oazVjV1JHR1pHS2lmZ2JiVGFGM294YmQtZ2x5aXFWcWQ4ZHFK?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9600bf68c320",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文与红帽同床异梦 &amp;nbspLinux市场战局混??",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUHRudWxFcGhLdFpYZWVndDFaTjRONkY0WFBqZnhUdkNoRWFMRmdibzEtb0ZSbThzZ1dGdlp4dXlhSmM3YzNVajZFZl9lZlRYcXpvLTBXTk51U0V3VVJfbmlpcXRDd3V4dm8waW9xdGJ5ams4UXFva2FlRFMwbkdQUHpibVFMZGotbjV4X2pUNHJIRm01YWJMbzNiTWRnYWRuSVlydndzRGM1Q2M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ffef1177c26f",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "刚刚！全球首富换人！现任妻子为中国姑娘",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvRVNsc0dGTm1Hc3YtTXNkQWhSYWozUXN6M1psWWRmektudERiQ0ZfSjlta2JYT1hXeWxNNW9kVzFhcUtjYkxiVnI1NUVnd1dneDUyNDdWdUJ5dEFiODFCZXhIMEJBUzZTTk8wdm5OX19ha0hhRko3Tg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-02fe4faeba51",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普：以色列绝不会对伊朗使用核武器",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5pOHZCZ1pwLV9VeFRudnoxMWJ6XzFtV3hNUktUZ2duaTZaSUloWnc4c01mc0V0bnVxVDVUb3JBZjFiaFhKSklQaDZYX1lSbWhZZmxLQjViYzRiLVBGYUhqamJBRVlSc2xVUWxiZFJld2dqSkRadnc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ed71f381831e",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫AI顾问焦虑：5年后，全球8成市场被中企占据，我们就输了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5EeGRUUS04Zk9SV041XzIyRHQ0VEtEbFJ1ZGhfaTNfVUV5c2t2eUlydDE5S3M5anE3SDhFX1F5N2xxTG9ELTRNNnREZUtjU2JoQklnOTltZFFXZzJTWDhORnJjZ3VHRmZtNFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8d302a4975f6",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel“变了”！Founders Fund从“谨慎”转向“集中押注”AI",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NU0JfV2tOb2U0RlVaNTZtTlhaNTc0OV9GVmR6V2ZlZHd5ZHdHdHZuSE5aVDBheVFlTjF4TUxyc0s1ak9yN0REWVNKNmNweDBtRnkw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d842ffbdf864",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔的Founders Fund抛售所有ETHZilla股份",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZjl6QlF5VThNYUdWdWwwdFdfVElVeHBqTUozdHozUGduOXNYS1l6RlVwUjNsTGxRZmxaaDBDSVhpak8zcUtRazJ2aTU0NEFSdmJWY3ZQTG5rRkw1OFBiOV9fb1hTeFZ3ZnRsczFxRkJqenI2N3pPSkdwbnQzS2o1bnJPSFFHNklNRmM5Yml2V0c3MjFvZ0R4NnFWdEhNcm5yVXVPc2gwRV9XTHJwYldz?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c0f3459d76f2",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreessen 访谈（下）：软件能否颠覆传统教育业",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBmcVlpdkVVZXp2VkRHSE0xZ1hwdTB6SW04b1NUdk4ybU5GOXhwQVpBS0RmMnR5Vll1SnF4N0ZFTXlORVNMVWZXT1pCbmVrY0lYWGF1dVp2ODI4SFNHdEVzbzBhXzlIaGtiRVRMbFJvamdKRXBw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ddfa16862c42",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "以后要怎么听a16z说话啊？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XUXJVbVhIV0ptUnluQWljaEgya3g3dkwwbzc2VlF1OEJGWnBBNFh0bUZCZFYxUV9BUmRORjBnNWU5ZjBtRy1leQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ddd002b5c78b",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：押注SpaceX及核能概念股X-Energy与Oklo，为投资组合再平衡减持AMD",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNT3JWVjlBOWxDM1M2ams0VWRWMmpqM255NE13WmlkcTMxRE96NlozSHBOM2VrWTVUWWM0WnZfQWxXNjZWR1N5TlI2S3JuLTM2TjNyS1pIMm9yX19NNFVHQ2czbDZTMFo2VVJxdEpSTTFLTTZsUnlERXl2Y3lvR2Z2UnFyOGJucDRUZkNfdmowMlExY0FUMHMyQjFpcENwLXRINEViWlBVNGQ4WkxUeHJPZ3JROGFhZ3M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0942ad5bc247",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：大举买入医药与加密资产，减持阿里巴巴17.6万股",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaVExcGE2SUJEZXMyZ0pDTy04R0NPYnhoY1BUZFFqMzhFVXFxMTNkcVBVX0Q5VzNPRFoxQk5RRHRNUjRGdHR2T0lNYXEtUmhNblk4Wm5HMnYwR3NrNFhKb1doTlVGaVMwUkJkTms0dy1zZnNmTVJSM0ZWODN3c2JoLU01QS14SkhncGdHYlNGUlZfXzd5azlucXFLaTczMkFDdzB0VmZVR2xYTlZFMGNZb1p1TllUMzV3X0dqM1ZTdlM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ee5ae3eec83b",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel CEO Ken Griffin: US economy experiencing ‘sugar high’",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUlpWZUdwTGVXSV9QYzZQaWpyQ0RzOE9uVVFoSHJZSzFwNXJMdVdhbndqTXNid2RUQUc4RTk4NXdVTUt5UzV0LWdzbzhycVhWWE5qeXRJSVZzSzVRUHRLeXg2M09vcUppakd6UGFVYjVrUm1tZkRkakVuemltQzFnaVA5cmFrd3dpZkMwd3VNeGZLUnIxRy0yZlRVYTF3QUJVdGlLc3N5TEc0NjhobjRBU0ZB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f3a6167e17cf",
+   "type": "event",
+   "ts": "2026-07-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "对冲基金Citadel在2026年上半年表现积极",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQRklZMlhIMkZlY0I0QWxlR21iaWU2UGI0QzBZYnNSZXVkcGNNQk5mX2NxY3lxbGx1TmVWdUxMS3J3R19WaHRTa0hvaV9SSGVqS1p3cmJLQ0ZVMU5vWDd6QjlWR0ppSkttX21tWjk2TURxLWtxNVpnTXp3a2lfRm5nMGt6TXNKZW1FeUVZdVQxUFVPdFpGSzF4X3VJYkI3TmFUdjVsOFdwS29sa3kxcUExdXBQeW12dHJGdmo2Sm9ZZkM4azVhVTRraldLbG9acXVsME5OS1NnQUN6c2kzVElKNWpJZS1JdWhNWF9EOUl4VjhPNFN4UzAyeS0xV1dCaW1TM3c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -4372,7 +4680,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1913 · xAI 210 在招（2026-07-14；Tesla 无免费接口）",
+     "v": "SpaceX 1916 · xAI 210 在招（2026-07-15；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -4476,7 +4784,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-14，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-15，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -4952,7 +5260,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-14 07:24",
+  "last_run": "2026-07-15 07:23",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -4963,7 +5271,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 12,
+   "edgar": 13,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -4973,13 +5281,13 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-14",
-   "net": "2026-07-14T01:17:14Z",
-   "status": "Go for Launch"
+   "net": "2026-07-14T01:28:17Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 10-45",
    "net": "2026-07-14T09:10:12Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
@@ -5688,6 +5996,30 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-07-14",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 16 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Sam Altman与Elon Musk隔空交锋，业内称“宇宙数据中心”短期内难商业化 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUy1SLTFySE1IT2ZZeWJrdFdSUkVNRVoyT0JGQzJxT1VXMkRuRnh4dnMtY0I4Y0RyclRDOG0zRE85ZzRsMnQ3Q0ZCMmxTMjBfVVlDenBSeE9qdE02YjFrM2FhVHpTeUxDSE9JYjJoYXB6QkZ4Qm56RmpvTUZocDNjWlhDdEdGQkRmVGRnQk1kZkRpNVZqTFdsSGtTVkhqX3F6b3hONW1oWXFGU0c5bVUydVBB?oc=5"
+  },
+  {
+   "ts": "2026-07-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk: Tesla is ready to build an AI chip factory - IDNFinancials.com",
+   "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTlNoSGc1dmhFZ1lRbkZFNFczaUhxMGEwa1k2QjhGblJ5eVIzNG1fOGhvRmdBMXVTMEpPUm1pU0JvOHJVWjVKeHZVMy1Mc1diR2E3ZUtYTXQteHlrcEJpUzRDN2w0UTZhb2lmSGdzbXJKOXA1V0lEY1RhYVBsSnJDU0xQbG1mQXJ1T3M5akYydVA2a1hrNk1jSUo1ZUdyXzdhSjBYSA?oc=5"
+  },
+  {
+   "ts": "2026-07-15",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
