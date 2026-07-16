@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-16T07:26:24+08:00",
+  "generated_at": "2026-07-17T07:23:05+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-16",
+  "asof": "2026-07-17",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 394.46,
-    "chg": 0.1,
+    "price": 391.06,
+    "chg": -3.81,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-16",
+    "src": "Yahoo 2026-07-17",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 135.27,
-    "chg": -8.79,
+    "price": 131.11,
+    "chg": -13.83,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-16",
+    "src": "Yahoo 2026-07-17",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64804.34,
-    "chg": 1.57,
-    "src": "Yahoo 2026-07-16",
+    "price": 63727.99,
+    "chg": -0.05,
+    "src": "Yahoo 2026-07-17",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0741,
-    "chg": 1.11,
-    "src": "Yahoo 2026-07-16",
+    "price": 0.0721,
+    "chg": -0.76,
+    "src": "Yahoo 2026-07-17",
     "status": "green"
    }
   ],
@@ -91,6 +91,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-16",
      "c": 394.46
+    },
+    {
+     "d": "2026-07-17",
+     "c": 391.06
     }
    ],
    "SPCX": [
@@ -137,6 +141,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-16",
      "c": 135.27
+    },
+    {
+     "d": "2026-07-17",
+     "c": 131.11
     }
    ],
    "BTC-USD": [
@@ -183,6 +191,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-16",
      "c": 64804.34
+    },
+    {
+     "d": "2026-07-17",
+     "c": 63727.99
     }
    ],
    "DOGE-USD": [
@@ -229,6 +241,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-16",
      "c": 0.0741
+    },
+    {
+     "d": "2026-07-17",
+     "c": 0.0721
     }
    ]
   }
@@ -4886,6 +4902,384 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DMDdJeEdfUEtnSi1hT25HUnNpQ2JGSWx4TTFaTHJObDREYzlFaTIwVmZXOTdNc3o2ZDgzQl9ZbDVMWVRFRS1JaHJuRGNvdGhlQVpB?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-0bea109d4c27",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "TSLA 新闻：随着比特币价格下跌，特斯拉一季度比特币资产损失1.73亿美元",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeXZpWmU5UlpYckp6Z0prS09LSTdyUGQ3RkRFVzNIb0pGdG5IMWZ6RFNUaVQ3NUJXNWlNVUFGNndmY2tsVVk3T1VZUFBFTGd2Zkhnek9kcWEtUVU0YzNubC1MLW5qUGhoVk1EN2dnWUJOLWRuaHFJd1FXT2JkVWsyTHJoeGM2ZFc0OGdFeDVxU3dqdnQ2NG0xNHdpVTdxTzM3UXByTlFZMXQ0ZlVXUGNha25ibUdHTkE3cVdaX3RsYTNQck53UUFIcmpBQVpNcHBKYm91cVJ3?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6281647e4d90",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla shareholders approve Elon Musk's US$1 trillion pay package",
+   "payload": {
+    "src": "IDNFinancials.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeVdpb0Z6dFZhM2xCaG1aOXFMR3g3bkZMNWFPSzNzdUpYVktfS1VpME1CbHZsYnNURy1sS3kyUlJEcDBnOThpdjluNVhDTWJndEV1THNjZTdCWTZtMU1MQ19LdFE0cndGdDZuTXFQQ1QxOTI5LTRGSklfZ01zb3dTRUlMX2N1UFRKUVVZWmJuLWpFZDIxeVdBdWk4Qlk5b01LbFkzYlpmbzRIZw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-650398b96fa2",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "英特尔加入埃隆-马斯克（Elon Musk）高大上的 Terafab 计划",
+   "payload": {
+    "src": "Notebookcheck CN",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ic1M0NDZ6aG12TUZPSUlMcDh6Zm5rSEVXSE9aTm5nWkZQdlFZSHI2VVhDbmNFOUtlUk8xcFZqekVFOHp4bEpndVBtRXNmOFg0WXFxNGpKNnkxQkJKUFRGOUZBNV9GOXA5S0hmZHVMTjM3NWM?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-53c0c9219b9d",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk旗下xAI将进军游戏领域",
+   "payload": {
+    "src": "games.gg",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTFl2TWx3QkxZSGV2dmpkbmNZd25ETVBTVHJyeWZaamZyTjQ5ZEUzaVF0c1FOeGFCaG9xb3dZdjdtYlRBLXBhWDV1d0lIMkp2bzYxdU5NUkNDN3BtTjFVNmYwMklXRVNkcDIwMVVYaFBFWEZzSTBnNFpMRWt1ZENvVHBfNjFWZkdQTWtoMXB4eHBDUTU0Vi1KQnpESW5naG1sZERaeURKQW1rUnhTQTdjREpkNGJ1bjA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6bb364837174",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk会晤阿联酋BRIDGE峰会领导层，探讨媒体、科技与AI的未来，并获邀出席2025年首届BRIDGE峰会",
+   "payload": {
+    "src": "Business Wire",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMia0FVX3lxTE00WUpzbWtSdXhGLVZabUFWNFBBaWZIekxMQzZjcFByYXJqT3NOQTU2ZDBaQ3VvOVI2Y21oQ3J0NEF1R0ctaV95c29sSVZNZ0doN1VTT0pTNFpPclo4YnNTWVFYbVRSOXhNbHlF?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-9d29194d217a",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "传马斯克旗下xAI洽谈150亿美元融资，估值或将达2300亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE41REdDSDNiaHo4cEFYRTRMZG9Pd1BsdWZMREUtcUhyVUJHLU5XN0dKNjAtM0FtcS1pLVhMdU5mSWxEV0hNWUY3TnFIaG4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b2ab7d2bb031",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克背后的神秘家族办公室",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1wOG92d0JUM0NHQkJLbnhLVlBRRFIxQXJhU05ZS3BWeEZZTzJocktYNEN0bG1iNkFtck5UZ0tHbVpHZ3R4TURvZXdR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-80a8fd27a6c2",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "Intel回归处理器重心 无人机业务卖给马斯克弟弟",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByMjdPY3J1TmJYNW1BdFZuRVhSaFVSdFVwWklyb1luc0ZpY3RGd2pDMGZlZWJCWkZQUWVmQUUzQjBmYWVESjA1QnVwWkpfTGxF?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4704d6dae308",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克弟弟在推特投票前一天卖出1.09亿美元特斯拉股票- Tesla 特斯拉",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBiMFdyRlhLYWZ4cUZYZ0s1RjdBMnhaaFZFUXNEcFBYV2FxUmdLLUNnejVvZVYwQmxLYXZsRzUzZUR3bnNBM3BzaU13aFBRYXRhLTZzTXNZWXFhS09Cdjl3dQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4f0111da831d",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81 岁埃里森才是甲骨文核心：直接管理 40% 员工，还抓着 AI 基建钱袋子",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRlhycGN0LTV0V2RVaHhIZzdFaFo1Rm1IMmVwcTVrUFlEcHJRQlktN0wtR2Exa1dKV0FuWjVqZ3E3ZXRjYjlIcmUyU09ncllkZWFodUxGdHNUNFQ4NXl3TmUyb0JyTVpuQXJDVTQyMnJiZTdoZDVjaUpiOHp4NXpBY20xWVNickR4MUVLVUc3al90dFJ2aVgtdktQaE5NVldfelJSMGJsRTNGVFd3RE81MjdWZTNaTE1ueHNmeC1KWmQ0akpsYkhnc29HaFYwTEFGSUpzZ3ZnWmhNaVNUa1JvaW5penM1QQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-24cef97567de",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文联合创始人Larry Ellison超越马斯克，成为全球首富- 老虎证券",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JTnNJa0NMRW5hRUR4cGhONlRSQi1sY0F0a0w5MmpMVjB2Q3Qycnk3eHFrNkEtNW9GdFE0YlBNLWMwelcwZzJlS2ZyRENVMjFMWVprZnRB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2f739b07ea71",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "知情人士：加密“沙皇”David Sacks职权范围从领导转变为一般顾问角色-腾讯新闻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MU0pZc05yNUlqMWhVbHJDTUVxWldQQzZPS0Zvd1JPUlEzT2RzWDdxQ2pRbVlTdy16YlpqQWFSOUNyX2JWWVR6LWRlV0d1WmtmVmphQ3FR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0f6bdfe37386",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫AI顾问急了：这正中华为下怀，居心何在？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56ajF3M1VwZk9SY01DQkdBY2k3NU9BREM0dE12VHV6TTAwNXEzM3lHSllhQS0ybFg5cUhTWS1WaFBtSnpPM0FJbzB3NlZRUVZxT01IYWFkcXBvT2w3b3JsSzJ3V1daT045VVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-48ca12bdbc4c",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "马斯克、小扎人设崩塌？爱泼斯坦合影流出，300万绝密文件撕开真相",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0wdEttNmF3WjRUVUNab0RqbVBrX0R5TXpuQ0FGQS1CZTFNai1DbUl3eElUb3E4NUVPTVNud2FIMmxVaFJuMmh3WA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-87ffa485a5cc",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel谈乐观与悲观_新浪新闻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRc0NiYWZxSmVib3RRbm9xcWlkajZEdEs3bktHVTlOaXNtblNsVERzTzhTTnJZVnZwanNiRDVqTFhPUnZ6RmF3ZU5RZzJPMmF1TnJzbWdJeFcwaWoydG9WWGFWNA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3914ac4e646a",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "2026 年硅谷书单：18 位硅谷创始人共同推荐的 56 本书",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hc3liTVY3UW94QktUQWtKbUdUVUhGZTZ3ZnFXcXlkWURtd0dFdi1DU2pIaGZHOFpJbDAyU1VGSHY2WnRTdDZleXQ1M1I3eXJINE1lT1RR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2177cbe9312b",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "风投大佬：“机器人革命”已经近在咫尺，中国供应链已经快速成型",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1b1p2VDEtdE1zNXNTS0F1NVhieUw2REI0T2tBazZWQmNnU1lBZWU5RmQ3R2htTDl0ajVsQ3FHakFRV01Bd3dzalBMZkdaSFBoLUlr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d1c22b6899c0",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "JC比Ron Baron还要有信心",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSVg1U3lIUHdTaVZZU2lnc1EtbGdtb0U3SWIwdUZkMU0weXEza241eFJvSG01VGNBSDR0WUlHUDVpZmJDZjVSSXRIeEhSMVJTb0V4ekZNbDhQUlBFV0lId1Y2bHFybkdwX0theEdmMGN2dGxyQmU0UDlvZ25sY0JwTUx0RHV5Q1l3RWJpdkNWdUw0Tks1WUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a39dc2eb605b",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "Ron Baron 预言特斯拉股价将翻6倍，飙升至1500美元！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMllraDVJWE11bERuejZYQl91ai0taVVwSnY4Y2JSYXhVY1VYRFdBYnpUNHRKdDBUWU8zSlFCZzhubG84ZzdTTktMWVRkZ1QwMXVMY0lRUFJrdWxnQzdiYVRVRzdJZV90Tk1sYk1HMUJETUZSaTUwNTF4eGg3aE83bTJsSjI5ellTa0R2YUtPeXBuY1hqU3FJTGxsQTUtRWZURGJXYUV1YndMRGZ2Mm1oakpjMWlOdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1ec61d9654d9",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：加码人工智能+生物科技与加密货币，减持基因组学和中国科技股",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXYtcEpMemkxZDBfUWtzWmhISTh4bEt4T09WZEdSaHNDeUlnNERxdDN3aW51cGdNNHUwS3RCTHM5NVA4c0JYbnB4QXNSdmFjT2J0OGxGTmc2c1FLUk9aUy1wT1ZFV0YwUUJqTExnNlNRN3RkZXBiSXhMTmxtRm1DRUF5bmxwczJDX1ZGV1lVd2lRRURBajhzRlRnUld6LWpVZzkxQjgwSU52UUxVZ215S3JvcmFBWGdI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0363aed7ac76",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：重仓押注Recursion的AI驱动生物医药重大发现，大幅减持Absci持仓",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQU9EenBoemdGbDNEbEd4bHNfbVNVa0lyMXU4MGprYkM1SmNqeTFMZk1La0JoXzNTOWlLeWkwcWs3RkFBd2FUclpXMUFxN3haUUJzV1hxV2hkMklpTmQ1dzZHZ0xUNlRsVUF4UDNBRWdQajZBdzVkTXE1Y3VDaVhuWGgtTW95Q19NMUsxSFJIdW9PSlozWjBTWkdfTzRUUEYxbDhJekh0SlI4M1RaUWJ0ZEt2WFJLQ2JWZHVmYjVCaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0a5431d09fc1",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel Securities向Crypto.com投资4亿美元，赋予该交易所200亿美元估值",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQajdDSEVac3k2YTU5MXprYTlSOTVRLWRCYklDcHdvYzBjdldzS0l4U3pOTWRZQ0hfcXpQUG1wWXNLbzFPUGNFaUhuRWt2N2dFSUZOZW84VEJfallWZHZmc1J3MzVtX0sxeTNCLWFDOFEyMlpZSmkxR3o2YjZpMXVybkFER2V2SENDSEFaYVUwWDlvc1daWnBaX3BZSERlTmkzNDhHSlVHcXRvcmpNVVZlaEM2QmpIR24yVDBTbl9NanhBUHc4WVBCVGw3VjZweGs1LVZR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-39fab1e478b5",
+   "type": "event",
+   "ts": "2026-07-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel’s Ken Griffin: Hormuz strait crisis may drive global recession",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUmxSWS1nNXJRcFJjTl8wb00weF9pRE8wYXJHUW1ZTHAtNHhVdDFQUjFremNCQk8zbjJaSEgtQ2RnSGlnNHV4TUI5TGtHWHI3UlRxcFJIN3VTVWxrZU4tNHMtdUNCTUJXaS1NQXU3M0dtUkpnSFBEeWcwZmc0dHNNbkJvdFJPaVZtNldqVGtJanpNVENVc2ZNclNkRVdKM2JxOENPMmk4YXc4aDYtWERRSFdVTTI3WXFGdEE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -4988,7 +5382,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1935 · xAI 211 在招（2026-07-16；Tesla 无免费接口）",
+     "v": "SpaceX 1934 · xAI 222 在招（2026-07-17；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -5092,7 +5486,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-16，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-17，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -5568,7 +5962,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-16 07:26",
+  "last_run": "2026-07-17 07:23",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -5579,7 +5973,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 14,
+   "edgar": 15,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -5589,13 +5983,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
-   "net": "2026-07-16T20:32:27Z",
-   "status": "Go for Launch"
-  },
-  {
-   "name": "Starship | Flight 13",
-   "net": "2026-07-16T22:45:00Z",
-   "status": "Go for Launch"
+   "net": "2026-07-16T20:32:36Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-39",
@@ -5610,6 +5999,11 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-51",
    "net": "2026-07-24T14:00:00Z",
+   "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 17-52",
+   "net": "2026-07-28T02:00:00Z",
    "status": "Go for Launch"
   }
  ],
@@ -6356,6 +6750,54 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 16 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "TSLA 新闻：随着比特币价格下跌，特斯拉一季度比特币资产损失1.73亿美元 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeXZpWmU5UlpYckp6Z0prS09LSTdyUGQ3RkRFVzNIb0pGdG5IMWZ6RFNUaVQ3NUJXNWlNVUFGNndmY2tsVVk3T1VZUFBFTGd2Zkhnek9kcWEtUVU0YzNubC1MLW5qUGhoVk1EN2dnWUJOLWRuaHFJd1FXT2JkVWsyTHJoeGM2ZFc0OGdFeDVxU3dqdnQ2NG0xNHdpVTdxTzM3UXByTlFZMXQ0ZlVXUGNha25ibUdHTkE3cVdaX3RsYTNQck53UUFIcmpBQVpNcHBKYm91cVJ3?oc=5"
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla shareholders approve Elon Musk's US$1 trillion pay package - IDNFinancials",
+   "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeVdpb0Z6dFZhM2xCaG1aOXFMR3g3bkZMNWFPSzNzdUpYVktfS1VpME1CbHZsYnNURy1sS3kyUlJEcDBnOThpdjluNVhDTWJndEV1THNjZTdCWTZtMU1MQ19LdFE0cndGdDZuTXFQQ1QxOTI5LTRGSklfZ01zb3dTRUlMX2N1UFRKUVVZWmJuLWpFZDIxeVdBdWk4Qlk5b01LbFkzYlpmbzRIZw?oc=5"
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "英特尔加入埃隆-马斯克（Elon Musk）高大上的 Terafab 计划 - Notebookcheck CN",
+   "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ic1M0NDZ6aG12TUZPSUlMcDh6Zm5rSEVXSE9aTm5nWkZQdlFZSHI2VVhDbmNFOUtlUk8xcFZqekVFOHp4bEpndVBtRXNmOFg0WXFxNGpKNnkxQkJKUFRGOUZBNV9GOXA5S0hmZHVMTjM3NWM?oc=5"
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk旗下xAI将进军游戏领域 - games.gg",
+   "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTFl2TWx3QkxZSGV2dmpkbmNZd25ETVBTVHJyeWZaamZyTjQ5ZEUzaVF0c1FOeGFCaG9xb3dZdjdtYlRBLXBhWDV1d0lIMkp2bzYxdU5NUkNDN3BtTjFVNmYwMklXRVNkcDIwMVVYaFBFWEZzSTBnNFpMRWt1ZENvVHBfNjFWZkdQTWtoMXB4eHBDUTU0Vi1KQnpESW5naG1sZERaeURKQW1rUnhTQTdjREpkNGJ1bjA?oc=5"
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk会晤阿联酋BRIDGE峰会领导层，探讨媒体、科技与AI的未来，并获邀出席2025年首届BRIDGE峰会 - Business Wire",
+   "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00WUpzbWtSdXhGLVZabUFWNFBBaWZIekxMQzZjcFByYXJqT3NOQTU2ZDBaQ3VvOVI2Y21oQ3J0NEF1R0ctaV95c29sSVZNZ0doN1VTT0pTNFpPclo4YnNTWVFYbVRSOXhNbHlF?oc=5"
+  },
+  {
+   "ts": "2026-07-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 18 条（明细见各人物卡）",
    "src": ""
   }
  ],
