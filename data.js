@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-20T10:56:57+08:00",
+  "generated_at": "2026-07-21T07:28:38+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-20",
+  "asof": "2026-07-21",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 380.84,
-    "chg": -6.6,
+    "price": 369.57,
+    "chg": -6.38,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-20",
+    "src": "Yahoo 2026-07-21",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 123.99,
-    "chg": -14.67,
+    "price": 119.85,
+    "chg": -13.86,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-20",
+    "src": "Yahoo 2026-07-21",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64834.24,
-    "chg": 1.64,
-    "src": "Yahoo 2026-07-20",
+    "price": 65186.81,
+    "chg": 2.19,
+    "src": "Yahoo 2026-07-21",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0727,
-    "chg": 0.45,
-    "src": "Yahoo 2026-07-20",
+    "price": 0.0721,
+    "chg": -0.37,
+    "src": "Yahoo 2026-07-21",
     "status": "green"
    }
   ],
@@ -107,6 +107,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-20",
      "c": 380.84
+    },
+    {
+     "d": "2026-07-21",
+     "c": 369.57
     }
    ],
    "SPCX": [
@@ -169,6 +173,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-20",
      "c": 123.99
+    },
+    {
+     "d": "2026-07-21",
+     "c": 119.85
     }
    ],
    "BTC-USD": [
@@ -231,6 +239,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-20",
      "c": 64834.24
+    },
+    {
+     "d": "2026-07-21",
+     "c": 65186.81
     }
    ],
    "DOGE-USD": [
@@ -293,6 +305,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-20",
      "c": 0.0727
+    },
+    {
+     "d": "2026-07-21",
+     "c": 0.0721
     }
    ]
   }
@@ -6218,6 +6234,298 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8xVGlNbFRMOGs0MVkxQVZWMFZBd2IwZ1l3UEhjWHZLTUF3eGcyMlZsOHJTVDdQYl96VW9qMml3MW1UMVZkaVdDdlFINU1wMUluenpZ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-776443903181",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Musk宣布Grok 4.5于SpaceX及Tesla启动内部测试",
+   "payload": {
+    "src": "品玩",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBVX0xaN0puaWV3cWJrOVJfSzlwdlUxX21aZTAtUW4zY3hqVUtiMi0wbC1EV3hVRUdhaEZPN1NZX29BUnlpcmhqMw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-dabb7e4eb01a",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Free Starlink in Iran, Musk opens access as 1,800 protesters killed",
+   "payload": {
+    "src": "IDNFinancials.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd3phbmVTYXNnQUctRE5UdVZSMF8tajhqcVktdmFBMFA1OVN1TF9qQnIzbUpXWWx1VDlCVUdxU0tLeGdUV1U5aDFQdjVYeTZrZjhJVmpwZDRPRkY3emVNTFR6N1cwaEZuUnBrNkk1eTBOVzJzZWUxZkk4RGlXeHZSSzhTLXQtTHVSaDFOcEZMZ0pNY1JJMGNtUFRDQVFrd2VZYjlWZEU1TFRqWndMdHVF?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-4c5d406d160c",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "惊现高管离职潮！马斯克亲信操盘xAI，千亿美元能填AGI野望？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxV0RwQjVNY0xmZlhaaFNhRHdmcHh5REdaUFhSNnhlcWRVT2hsQmdXTGJTS19Lbl9SQkJWMFYxSEhXaXFVQ0tzYQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cf34df419c6e",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "安抚市场？马斯克改口：推特已不再处于破产快车道上 港美股资讯",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE11UWxSRGtzMXk3czNldTFVNEdoMUdLdVQ0TGdRUjhMcFc4R3czN1FYVzJXNXNUSWY4WVhyb2gyQndKWHZsWlZwc29qQTB0cW91aVZDSDM0VFhYOTVTYWJGa2Vn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-048c51c8177c",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "杠上了，美国SEC调查马斯克和弟弟卖股票",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mU1EwekY5WnZ3R0hZd190VFBiZ3hlNHRQaXo3aHJ6V0VZSmNGejBrUlQ2djRqSk9adnpvbUwwdGdoOUpVbThPTDg4U2U2bUdiWWJ4SVQ3LXU1NzEyNEpkRQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c13ddbaeecda",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "抛售股票高位套现惹争议 世界首富及兄弟被美监管机构调查",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXMzV6SmNVUGJCMmpTVzQyNWhRSTVsaVVBZElycVFUeTlQdXFheXY4cUtCcndpclFIOU15VXhzSllfMjU3TFFBUno0Rnc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b8e55c596d1f",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "埃里森一度超马斯克登顶全球首富！甲骨文股价飙升推动财富暴增890亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1HVDdXdWg5RTM4UkdpN045aC1tbTByWURNeEhkNzVzQ3BvUUNOWVM3dDVhRWNWZHkzaDJkN1o3Z2tRLVdkTEx4azlGNmpwLU5TM2RR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab252f56ed02",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81岁“沈阳女婿”成全球首富，六任老婆全是年轻美女，网友：难怪和马斯克是好友",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NUk1BcDJLRFZzN0Rrd0xWSmwzQmYwM1VCRjZIQXFhOGV2UmlDY3hScEFyNXZvZEpOOEZ1Um96Tk1FWjdXT3RMblJpUG45ckRVOVg5MHZ5d1drMGI5ZWM2OQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-84353307fcd9",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫AI和Crypto负责人Sacks访谈：Paypal匪帮往事、中美AI竞争的逻辑、Crypto政策",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBaaFllUjlZSXMxZ1JDSnBGTUxkS3VyYkZmYTJ6eTM1MGVEXzM2TTVYM2o5dlpRb1UzLXBxVlE0UElJNFFFT0xrY2V4UDBxZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4b75b9185f12",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "奥特曼欲交投名状！白宫计划入股OpenAI",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9QSi1naWg3RTZsVmRqcU1wR0RMNUhkeFF0Wm16UkxxZmt5b2UzYVVhSVNBbmdMVVg2QWxLemp2blN5NE5oUER1SA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1d96757283d5",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "调查记者：Polymarket 官方创业叙事不实，与以色列利益及 Peter Thiel 深度关联",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RZFZTcUZGOENSelBUbHBkM2VnaWNQT1BEcmpsRnBkWmU3dG9Ma201MjltdTQxMkctNDNxSFJlVU1hYXBCSDI3aGxaM083N3hnVTlPWGR1UjM3VEhzb0xHQlJNdzBlQdIBa0FVX3lxTE0xVWNMcEZBbzhqcEI3ZzF0WFJjTEpGZGV5c3ZJYllZaFZJTld4dUtnMHZiZFZXOVg1dGduZHVabTZMM0ZBbWQ1ek56QXVZaUZEM3R3ckp2b1gwQjhmR0pqLXJZd0hVWGxGRVJj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f5f9d6c64bdb",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "造火箭辞职放牛！彼得·蒂尔砸20亿美元押注AI牛项圈项目",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3QXI4cm94M1NSVWlWYVNYcXAyVGRoVWRwNU9rUXozelhkbmtLT25OQTFsSTFHNkZNVUhTVUp5cElVU3VlWWRQZ2MyNEFrbGx4OGIw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d72d324bb611",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "“硅谷预言家”马克·安德森：这是三个非常有前途的科技领域",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jNURpbDhyc2ZsQTdpWDZMNWJ2eWZUZEt4YWdyc1pqM3hQcWxTcW5pOTBfMXU3MHZUT3lFS2xxZUpNY3F6cnQxdlJtZmdRYjJpaDF3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e32ea4583829",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z 创始人：AI 价格打下来了，机会才刚开始",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1lR2xBNUJYcmNIQlU0ZFRxUjgybjNuWnQwQW1HRHJ3TGFia1dhelI0djEwdnEyeXc4MkFsZ3A4ZVBZMDRPaXBGc1NfbmtSdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c6f24492dc84",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "ARK的Cathie Wood：“Elon正将数据中心送入太空——惊人的垂直整合”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb2kxY3E4MHkzUDZ1Z0tkelVvU0hYREdsTFpFMVFEeXZ0N25hN0FXSUtSQ1RjTFE4Wk8wVEFubkNVNHhwNEFKWE80UUZwWWt6S0VzN09SWE81c0gyYUozbmFOS1FmbXdzbjljMjhocG5YMEctZ1h3ckE2ay1wOHFMNGJoYjMwa2hfNmtjZGZhaGRMWjdFdGpsS0lOdE9lS3pLNnAtVHBiXzZoZ0h1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a3d7bab59537",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "🚖 每英里0.25美元——Cathie Wood说到2030 年没有人能在这个价格上和特斯拉竞争",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNR0RGZDdkX0c5VHRqUGZJY1dudFZ5bFpnOVlqT2lEck93QkNRUno0OUcwQnNNUjNEQjhFUW9rRjJWMkI3YW5UWkQ1UmxRT3EwbVBGRS16cGpIMlI3RXhBOXFybVpSd2FNSm5pQzM2eWRVVlhScDktNkZfVW11eElfNzd0QVd1Qml2dDByYzkwTVZpemEtQnJMcWppS0VMTmV1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c53278546711",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Ken Griffin捐建癌症中心_新浪新闻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YbkV5bkVld08yLWxRNlVhelMtSmxFaHpOTnI5T1JqUUdtMTI4dmJrSHZPUi1Fc1VlS09RZ25lVFlXUzFQcE0wbjVER2lPREhXQjFLblRaaU9ZWnMzT0JKMkFRaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ee0dba945a3c",
+   "type": "event",
+   "ts": "2026-07-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel Securities：美股巨无霸做市商的闪电崛起之路",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8xUHI0cG9ZYjdPam02TkN0TFZ1UjM5RDJyZG44NXZMb211aXY3NDlTV05ETEc3TVpFTE5SXzMwTUo5amp1REJFM0o3VDU1UEU1TmZr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -6320,7 +6628,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1953 · xAI 219 在招（2026-07-20；Tesla 无免费接口）",
+     "v": "SpaceX 1960 · xAI 216 在招（2026-07-21；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -6424,7 +6732,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-20，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-21，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -6900,7 +7208,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-20 10:56",
+  "last_run": "2026-07-21 07:28",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -6911,7 +7219,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 18,
+   "edgar": 19,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -6921,7 +7229,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-39",
-   "net": "2026-07-20T14:36:26Z",
+   "net": "2026-07-21T14:43:04Z",
    "status": "Go for Launch"
   },
   {
@@ -6936,12 +7244,12 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-51",
-   "net": "2026-07-24T14:00:00Z",
+   "net": "2026-07-25T14:00:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-52",
-   "net": "2026-07-28T02:00:00Z",
+   "net": "2026-07-29T02:00:00Z",
    "status": "Go for Launch"
   }
  ],
@@ -7804,6 +8112,38 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-07-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 16 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-21",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Musk宣布Grok 4.5于SpaceX及Tesla启动内部测试 - 品玩",
+   "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBVX0xaN0puaWV3cWJrOVJfSzlwdlUxX21aZTAtUW4zY3hqVUtiMi0wbC1EV3hVRUdhaEZPN1NZX29BUnlpcmhqMw?oc=5"
+  },
+  {
+   "ts": "2026-07-21",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Free Starlink in Iran, Musk opens access as 1,800 protesters killed - IDNFinanci",
+   "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd3phbmVTYXNnQUctRE5UdVZSMF8tajhqcVktdmFBMFA1OVN1TF9qQnIzbUpXWWx1VDlCVUdxU0tLeGdUV1U5aDFQdjVYeTZrZjhJVmpwZDRPRkY3emVNTFR6N1cwaEZuUnBrNkk1eTBOVzJzZWUxZkk4RGlXeHZSSzhTLXQtTHVSaDFOcEZMZ0pNY1JJMGNtUFRDQVFrd2VZYjlWZEU1TFRqWndMdHVF?oc=5"
+  },
+  {
+   "ts": "2026-07-21",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力 - 36 Kr",
+   "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOUXBoQkpsMGNJVEc2UVZTcFl1UUxRMEhISDFFUU4tZ2dVTkZpRHJsd2JOVURxTEZxQUpTX3MxVllSOUREX0JuOC0zNjIxZw?oc=5"
+  },
+  {
+   "ts": "2026-07-21",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
