@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-23T07:28:08+08:00",
+  "generated_at": "2026-07-24T07:25:56+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-23",
+  "asof": "2026-07-24",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 374.01,
-    "chg": -5.18,
+    "price": 319.69,
+    "chg": -18.25,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-23",
+    "src": "Yahoo 2026-07-24",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 115.26,
-    "chg": -14.79,
+    "price": 118.24,
+    "chg": -9.82,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-23",
+    "src": "Yahoo 2026-07-24",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 65962.01,
-    "chg": 1.8,
-    "src": "Yahoo 2026-07-23",
+    "price": 65129.93,
+    "chg": 0.68,
+    "src": "Yahoo 2026-07-24",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0727,
-    "chg": 0.36,
-    "src": "Yahoo 2026-07-23",
+    "price": 0.0694,
+    "chg": -4.0,
+    "src": "Yahoo 2026-07-24",
     "status": "green"
    }
   ],
@@ -119,6 +119,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-23",
      "c": 374.01
+    },
+    {
+     "d": "2026-07-24",
+     "c": 319.69
     }
    ],
    "SPCX": [
@@ -193,6 +197,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-23",
      "c": 115.26
+    },
+    {
+     "d": "2026-07-24",
+     "c": 118.24
     }
    ],
    "BTC-USD": [
@@ -267,6 +275,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-23",
      "c": 65962.01
+    },
+    {
+     "d": "2026-07-24",
+     "c": 65129.93
     }
    ],
    "DOGE-USD": [
@@ -341,6 +353,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-23",
      "c": 0.0727
+    },
+    {
+     "d": "2026-07-24",
+     "c": 0.0694
     }
    ]
   }
@@ -7106,6 +7122,284 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE40WmxGNDV3VzNhX2toRmgwbjVsemxvaGE3Umo2dkRibU1GWnZaNUxHd2JmeGhtVDJVVmxQdE9ka2tpdzFHOGZlT1pyM0xnc2VNZGw4?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-c58915aa9259",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克讨论了特斯拉与SpaceX之间的可能合并。随着SpaceX创下的记录IPO，传闻愈演愈烈。",
+   "payload": {
+    "src": "Informat.ro",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeXpYYWRoMzFpMkF0blJ4UWc1aHhVMFFGV3J2cVl1azYwSWFkOEZBV3hkby00eWZJYmJtMXlTWk01Vk5WNW81Q0gwMFkzUUJwQjNHZlJpY2JtRWdpQ1duTjRCYURNMU5SRUsxZDlnVkRydGk2X1BDNXQzS1VOLVVpdzNIY1pDSDZyMXpaS2hiNlJhVEV4d2RWeGlaYWlETVZwRm5RWnZBaWRUQQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2546235d5493",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk称Tesla与SpaceX合作重叠增多 未正面排除合并讨论",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZzFfbnZqbHd2dDRyaEk1Q3RYSkVfZFBYajZKTWZGcERHd1d5dWFxTDlFUk9oSU5VaW5ZSE9UNEx4dTZVcWhWZl9xRUY2Vi1QbXYwdEJPSXBNRVpiTEw3elhkZ3k2Y2lpSnZCSEpMa3J2LXBNelAyUHBmZVlnZF9rNnlsX2pVN19SeEZfXzZfSmgxdnNLRFJkQ1RPUW5HejJVR2ZnTkpNSzd6WHZJY3ZjWTd1YTBDTnR1d2pMODBmTkx0WUJk?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-26a4e7c72cdb",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "财经人语：特斯拉和SpaceX合体 促成Elon Inc？",
+   "payload": {
+    "src": "联合早报",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTE1HQ3JTeW83b1A5NHAwZzYtZUhIa0xBQzhmT09EUVNpeTJDck5GMWhVemRZeUlDc3h6bjZqOGdENHBqUGp3dEo0VTFreFdYVkxxZDJZN3NnNU93WWpyekZ3MEQzVHdlcjBaMUx2QVdn?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-36e1684ce3fd",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "吸毒传言后，埃隆·马斯克声称他体内连“微量”毒品都没发现",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PRUlScjVaUW16MmhFdDFvejE3b2h0Y2RxbUdqNXU4YUZyTVRTaTZQVnQwN2NSNjljblM1X1VzVXp2R2Z4SC1YcVRERktIYm8?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-03b8e3a64ed3",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "金巴尔·马斯克—— 马斯克家族的餐饮界大亨",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5WVnRRVTAyVzE0TnRMMXpaanpaX3RGZnBBMUNTMnVsN2VtbWtaWG5vRXdmc0FEMVlkWHF2SHR5SF9ZVDNGVzlKaUUzRU9wREtOdUJZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-885ddc1215b4",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁甲骨文创始人拉里·埃里森又结婚了！第五任妻子年仅33岁",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBtUHhQQ3pBbkFMak1sVTNuUnE5M0FYTnVKS1NXaHJmR3pydWVBMW1UNVdRQXJ0aXNRZTluQWpkMXFNZ3hDdWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-43e58a5266db",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文退出自研 AI 芯片赛道，董事长埃里森阐述背后原因",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JbWFjUnJHbTJkQ19nRmdHVWFTZ2g1UDZPVVdESmxzci1NY1JXR2dlblhDN0RTeGJuOHNibnFjQkgzeTJUMkNWSWtWbUppLWI2R1RUTnR0dEtsbFo4a3dmc1d1WnJZZFZWUlREZ0RIMFZzaUM4UXFrTFpNWHlUQUk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-550bc06ee628",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks 在 SEC 诉讼中支持Ripple，XRP 价格上涨| CoinGabbar发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByRHl2VjkwMzNqUFpLaGRSUURwa3lHbmw4Qms0VkF2OVpSZUE2Nlk1UVVEcnB6N254SlFmUkw0UzlDalBaMzY2TUFXcElNN1VuVWRGNFJteGxndFFQeVBYSFhhRHBmYTg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-67b44410cb2a",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks：ADA、SOL、XRP仅因市值排名前五被提及| PANews发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96eHdXcDdtS0d0VHNPRUlpTUNIczNrWGpULXZncUkzN09XMEVadG1xVkxEamVaRFZKaklzZ20xUW5nczZPeENpaUdnWjREbTV1ckFtcjR2WWk3Z3JYcmh1SGt3OWJpV1U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c3c481b6fc89",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "“AI先生”彼得·蒂尔在罗马谈“敌基督”，或与教宗立场相冲",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOTXVDUGJPcWN3d2g4ZXdzcHFiNHhkSU1TU0RnSHVpaVdnWjJyXzRGelZKNmFsTkZnRS1oMngwajVRSlZaWGMyeFR1Skdvb3pBbG5hcjE3aTI4enNidTVUUzRfTGtfekM1d1dtbWxPUzlpamRETndScFFTWF9hQ3pxazlXbXA4cmNmTnRtLU50ZGdrU0RlUEpvUnVvd1RaS1ZYMkhHNWhVekVZZnVrdmI4MlItV1dNcmxCVHhIQ2pJTnNwRElFdUptdm96SnpLbk9Kek5Ydzd3aWpoVEREZEV4RGdiM09DaXh4N1R4WXhudWRYelQ5RXQ4TnFWUXBwYVpuanZwcjl4UFk2dlVGdWxNN0dNWmE1bEVPTnlFc1R0Nmg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e4f76dff2c00",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "AI战争机器Palantir创始人彼得·蒂尔，今日举办绝密集会，反AI监管",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE01ZlVEOW1vQzh2SDRKWHJmaWR5UWFUYVd3cTdRVnBsbHRWcko1NWNWNFExTjFlYVVUb0I5VVFHR2VBczlwYlAxZg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1eb880f562a0",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "“推·马之战”再升级：马斯克的硅谷密友圈，推特挨个恶心了一遍",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIN29veW1JODRRNzNQdmVBZGxoOUlZM2VUeHA5T2FPcDE5VnB4bWR1bk44Y1pqeDJWZUU3N0VWTllNdmxtc091Tg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-81a2db1e7c51",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "风投大佬马克·安德森（下）：反思科技行业创始理念，年轻人不要追随激情",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5qR01ZSkoyTDdEcEU1dHFvRTlNRnptWTlGUXJlSmpBTFdxdW9wMXpSc1JmVzgwWTh0Z1RYVzNVSkwwdFBQVmxZYjRCdk9sZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f7e93b2cc604",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：SpaceX股价虽跌48%，仍可能成为“史上最重要公司”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xNjlwMlIzaFQ1N2I3REo0cEJ2TmNveG5pNHJNSWE2RWdIUktKdVBIQVYweGF4RXBkRldaYTNsaVRqbjU3eGxWUXRxLUtNcVBuTzZDVmNoVnU5QjRXY1NPSV9XZ25mZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab08ccaae85e",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "跟踪Cathie Wood：大幅增持飞行汽车龙头Archer，减持Robinhood",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdXlmSHNlWHZ6TjRJVGp0MGpNS3puelFNbmtOeDRFNHR1SlhCREFhS3VQUlMtYW0zTnJINmF3RXpRaFNIVkFNdk1XU0lwZ2doMEFTTWtidXZ3cXZucDhFSmJ0UEp5eXdvU015cVlqOURjd0tDMFowd1htVDVYQ19LTS1WVmxxUS0wU1kxOXZQU3VWb2ZmVEVQMXZZWTd3a01Vd1lwM05SNTNnQVFWUkp4TFlUZmxSdHUyOVE0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-70912c2ccf44",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "从MIT成长起来的大型高频基金Domeyard | 全球顶级量化交易机构巡礼",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uLWFYcnVuQWRZbmhycUtPaGNoVW91dzJoMUFTVERVZjVxbHJ0NXJpaFhTbUJERW0xZWZSUWZocjJrWjVZWmh4MDMxeGUzMnM0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a3148bab7e5e",
+   "type": "event",
+   "ts": "2026-07-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel获中国证监会批准为合格境外机构投资者",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNODAxbFl6R2RWcDdVZlJvajJlcGdDZkJ0cGE4cHJJb3lkMldJQUVEbi1mdDZuMjJjOGMxVVYyRGNXZjRfV0JkOUhfT1NySm52RXJjdDF6aFNwekk5V3lOelphZWo1ZzBmUFJrS0drWU9wMHB4dVhqc0UxaEFNWDBkMXNkQVhnQUx0YlZNQ2xLT2lQZ19jTFVKa3cxaVpiMUF1b3F0RlR0NHFvQk5BaHVWd3plVUFTaS00VTA1NHBoOV9Hb3huNEYwMGwyWjhpTjdyYm1UMFNoTFBtaXZSY2swd0staXhwWUVuVFBKTlN4eDVZZk4ybS1ValJjaVc2bU1ISXdsaldiVER4ZzMwWTk0MXFhTDJxd25MMi01b1c0Qm1oUHFteTVhN2x1Zzg0dlk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -7208,7 +7502,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 1989 · xAI 219 在招（2026-07-23；Tesla 无免费接口）",
+     "v": "SpaceX 2001 · xAI 220 在招（2026-07-24；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -7312,7 +7606,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-23，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-24，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -7788,7 +8082,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-23 07:28",
+  "last_run": "2026-07-24 07:25",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -7799,7 +8093,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 21,
+   "edgar": 22,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -7809,7 +8103,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Starship | Flight 13",
-   "net": "2026-07-23T22:45:00Z",
+   "net": "2026-07-24T22:45:00Z",
    "status": "Go for Launch"
   },
   {
@@ -7824,12 +8118,12 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | NROL-95",
-   "net": "2026-07-30T06:37:00Z",
-   "status": "To Be Confirmed"
+   "net": "2026-07-30T07:09:00Z",
+   "status": "Go for Launch"
   },
   {
-   "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-   "net": "2026-08-30T11:20:00Z",
+   "name": "Falcon 9 Block 5 | Starlink Group 17-53",
+   "net": "2026-08-01T14:00:00Z",
    "status": "Go for Launch"
   }
  ],
@@ -8760,6 +9054,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 16 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克讨论了特斯拉与SpaceX之间的可能合并。随着SpaceX创下的记录IPO，传闻愈演愈烈。 - Informat.ro",
+   "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeXpYYWRoMzFpMkF0blJ4UWc1aHhVMFFGV3J2cVl1azYwSWFkOEZBV3hkby00eWZJYmJtMXlTWk01Vk5WNW81Q0gwMFkzUUJwQjNHZlJpY2JtRWdpQ1duTjRCYURNMU5SRUsxZDlnVkRydGk2X1BDNXQzS1VOLVVpdzNIY1pDSDZyMXpaS2hiNlJhVEV4d2RWeGlaYWlETVZwRm5RWnZBaWRUQQ?oc=5"
+  },
+  {
+   "ts": "2026-07-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk称Tesla与SpaceX合作重叠增多 未正面排除合并讨论 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZzFfbnZqbHd2dDRyaEk1Q3RYSkVfZFBYajZKTWZGcERHd1d5dWFxTDlFUk9oSU5VaW5ZSE9UNEx4dTZVcWhWZl9xRUY2Vi1QbXYwdEJPSXBNRVpiTEw3elhkZ3k2Y2lpSnZCSEpMa3J2LXBNelAyUHBmZVlnZF9rNnlsX2pVN19SeEZfXzZfSmgxdnNLRFJkQ1RPUW5HejJVR2ZnTkpNSzd6WHZJY3ZjWTd1YTBDTnR1d2pMODBmTkx0WUJk?oc=5"
+  },
+  {
+   "ts": "2026-07-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "财经人语：特斯拉和SpaceX合体 促成Elon Inc？ - 联合早报",
+   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1HQ3JTeW83b1A5NHAwZzYtZUhIa0xBQzhmT09EUVNpeTJDck5GMWhVemRZeUlDc3h6bjZqOGdENHBqUGp3dEo0VTFreFdYVkxxZDJZN3NnNU93WWpyekZ3MEQzVHdlcjBaMUx2QVdn?oc=5"
+  },
+  {
+   "ts": "2026-07-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
    "src": ""
   }
  ],
