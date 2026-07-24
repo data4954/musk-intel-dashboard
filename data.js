@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-24T07:25:56+08:00",
+  "generated_at": "2026-07-25T07:30:35+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-24",
+  "asof": "2026-07-25",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 319.69,
-    "chg": -18.25,
+    "price": 313.03,
+    "chg": -17.81,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-24",
+    "src": "Yahoo 2026-07-25",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 118.24,
-    "chg": -9.82,
+    "price": 115.07,
+    "chg": -7.19,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-24",
+    "src": "Yahoo 2026-07-25",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 65129.93,
-    "chg": 0.68,
-    "src": "Yahoo 2026-07-24",
+    "price": 64113.33,
+    "chg": -1.71,
+    "src": "Yahoo 2026-07-25",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0694,
-    "chg": -4.0,
-    "src": "Yahoo 2026-07-24",
+    "price": 0.0695,
+    "chg": -3.71,
+    "src": "Yahoo 2026-07-25",
     "status": "green"
    }
   ],
@@ -123,6 +123,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-24",
      "c": 319.69
+    },
+    {
+     "d": "2026-07-25",
+     "c": 313.03
     }
    ],
    "SPCX": [
@@ -201,6 +205,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-24",
      "c": 118.24
+    },
+    {
+     "d": "2026-07-25",
+     "c": 115.07
     }
    ],
    "BTC-USD": [
@@ -279,6 +287,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-24",
      "c": 65129.93
+    },
+    {
+     "d": "2026-07-25",
+     "c": 64113.33
     }
    ],
    "DOGE-USD": [
@@ -357,6 +369,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-24",
      "c": 0.0694
+    },
+    {
+     "d": "2026-07-25",
+     "c": 0.0695
     }
    ]
   }
@@ -7502,7 +7518,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2001 · xAI 220 在招（2026-07-24；Tesla 无免费接口）",
+     "v": "SpaceX 2013 · xAI 221 在招（2026-07-25；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -7606,7 +7622,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-24，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-25，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -8082,20 +8098,20 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-24 07:25",
+  "last_run": "2026-07-25 07:30",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
    "launchlib": "green",
-   "rss": "green",
+   "rss": "red",
    "greenhouse": "green",
    "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 22,
+   "edgar": 23,
    "launchlib": 0,
-   "rss": 0,
+   "rss": 1,
    "greenhouse": 0,
    "fec": 0
   }
@@ -8103,12 +8119,12 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Starship | Flight 13",
-   "net": "2026-07-24T22:45:00Z",
-   "status": "Go for Launch"
+   "net": "2026-07-24T22:51:00Z",
+   "status": "Launch in Flight"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-51",
-   "net": "2026-07-25T14:00:00Z",
+   "net": "2026-07-25T15:51:21Z",
    "status": "Go for Launch"
   },
   {
