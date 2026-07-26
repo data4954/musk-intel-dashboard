@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-26T07:28:13+08:00",
+  "generated_at": "2026-07-27T07:26:52+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-26",
+  "asof": "2026-07-27",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 313.03,
     "chg": -17.81,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-26",
+    "src": "Yahoo 2026-07-27",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -7.19,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-26",
+    "src": "Yahoo 2026-07-27",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64342.22,
-    "chg": -3.25,
-    "src": "Yahoo 2026-07-26",
+    "price": 65264.83,
+    "chg": -1.26,
+    "src": "Yahoo 2026-07-27",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0717,
-    "chg": -2.19,
-    "src": "Yahoo 2026-07-26",
+    "price": 0.0731,
+    "chg": 0.2,
+    "src": "Yahoo 2026-07-27",
     "status": "green"
    }
   ],
@@ -131,6 +131,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-26",
      "c": 313.03
+    },
+    {
+     "d": "2026-07-27",
+     "c": 313.03
     }
    ],
    "SPCX": [
@@ -216,6 +220,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-07-26",
+     "c": 115.07
+    },
+    {
+     "d": "2026-07-27",
      "c": 115.07
     }
    ],
@@ -303,6 +311,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-26",
      "c": 64342.22
+    },
+    {
+     "d": "2026-07-27",
+     "c": 65264.83
     }
    ],
    "DOGE-USD": [
@@ -389,6 +401,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-26",
      "c": 0.0717
+    },
+    {
+     "d": "2026-07-27",
+     "c": 0.0731
     }
    ]
   }
@@ -7706,6 +7722,330 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0tNzVuZUNNdEY3eDlUZlRnZlBnbzlZOU1jRU55cFlESUhxRWtaVUxXOWpmblYzeERMek1YUktJeEN2NEZqZ05RR1ZSY084Mkt5TWNYVjdEZw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-eae755285dec",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "现实冲击马斯克及特斯拉、SpaceX的拥趸",
+   "payload": {
+    "src": "华尔街日报中文网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUFXUFByUkZBUTJCSDJfVUpMclJ5OGpRNTFwaVRjMDJqaE50eVhCd0ZTRmZtQ0ZmYm9QS285RTY2Q19hQTN4YzVnclRHUmdfcHRkUWxiSlViVGVIQ0ZkRjRsUEZvOTFNN29tdjhUZE81eXNPam8yeHFsRjFEQnREbzUxanVVeDJXbkc3eldXajZoMW1wY3c?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-4e7cac737724",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "🔥🚀 Elon Musk 刚刚抛出的，可能不只是“太空数据中心”这么简单。",
+   "payload": {
+    "src": "Moomoo",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUjAxaEdSWnVtUnFHM2Z0azRzeE5BWDQyTWp2QkFuaFU0WHkwSkc1OGsyRDZ0SXFvZDRfR0wwNTU3dHNhMS1TRXFpVTNQb2d6SE9oYmw4dmNNUVBzODdZVldYS2RGLXc5VmVUdWtpYkV0SlRHakhSU0phUi1kVk9HZklLNHJKUFAtcGFaQll6TUI3Y1NRZUJFTHZDN1E0RGhueUpWb3NiRkE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-83c96345812a",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "埃隆·马斯克(Elon Musk)要求法院驳回Twitter股东诉讼,这是原因",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ROUxFRk1tMnA1VVg2VWt5SVhZLUtJQnZGSmdtakdfbTFwTHRJXzZZYTdOc2J5SnV4QzNVaVczODdMSENkc1c3STBCeS1JVDjSAUJBVV95cUxOS3RhaHFYMXE3MUVmSktKUDhESEZuaXNmdGZHc2NEVm9idDQ1YUFTMjVfb0VFTUUzM0NNSnZMRUJpYkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-edc0c3901984",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "总能搞定一切：他是马斯克背后“操盘”的男人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9abFV1YjNqRERobk4tdVVwWDY1dV80TmRDTE54bVpuTzdFYzNQSEd3WUZJTlhCU3JDS0hVZ1BTWldKVThtZmxCUDl2cUY2MlZXOW8xczZZdkRaR0xUdnfSAWNBVV95cUxOaXdUYzJoWFBDV0N5OVFvX25ndlpRbndOQU9xZE9iWjRRVDVFV3kwSXRpSGpPVXFYcTRjdF9ZVERVUEdST2RMc3ZRUXFTeDc5b0tnWWJvSy1TYlBtWmtrbHhUMzQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e691e45bb8b1",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克高调宣布：560亿美元薪酬方案已获通过！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzNnRxcllpa0hsT21qX01LUE1BVVdNdDJzejFXWHQyLURNZDVEWW9HelJvS2xid185NEJ4RFFZeDR1dFZKLW5OczBoOEtqbFB0UU1j?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8b2899e991a0",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "世界首富马斯克亲弟弟：我们哥俩都不沉迷于财富 这很无聊",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGLURZRkhTX0V1UTdldGxjRHVIbkZJUENLaUdnajF0U3VrSXpHYktLLXdSbGE2V1dDMDhrZVo4dlpSUW92YUJkcE9KbGQ0akI2?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-88bab2a3c4ef",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "让一部分人先看到未来",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IeTA2aGZJbjA3VUFzd3FoYzdMZk5wYTZ0eGJ6OHRoUGN3QmRLVkMzUTZ1UWFfX3FEdEpMZUpqVWQ0Z0NNa2NwVEpaMjY1Qmx6R0hj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5ffe0be4daac",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球首富短暂易主，背后是AI技术的红利兑现",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5td095VHZRZUVFbC1fdHNYT2pPR2UweHI0WXIxdFphV3NfV2VtLW1JQ3FBREpUVWtmV21IZEhiQTJWSDM3RjJNNEgycURPMEdBV19ESnQ5TW12S09hYmtWbjVhcWU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1c9e0608bc97",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks 是人工智能和加密货币领域的权威——勇敢新币",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FdmY5a3VpRlMzVm95LWFFLVkwaGYyMFZ0bHY2T3NIUm5fTEpzVWVTcUY0REFBbXN0a3pTREhjZW00WEMzXzgycFpROTgtbHNCbTJwajYxN0RwN3Z2WTBzZ0tJbDhHdmFMcF8tY1JJZ0ZCdzNTQlpIRElvM0NuUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cab80b6b2359",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普：David Sacks 将致力于建立法律框架，为加密货币行业提供其一直寻求的明确性",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYcjFpU3JkdjBCVEo2d05ERXpzTE82MS1scllHMlMtSm5PY2F6WTVnUVZYOUh6cklhdk9Xd3pnVEhGczhONEVULXZ2bmVSenl2RGZjM0VWRGY?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-733cd9646ed4",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷最隐秘的万亿代码：彼得·蒂尔的导师吉拉尔，如何统治了顶级风投的底层版图？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1lbDFaQlBQa2ptMi1nNjVOaUR4S3luZGszaHF2T2NXQ1hTMjVKVWFwVm1vU2tHTDV3c01sLUlmT0tuTHhfYVpmN2dBOWVZajl1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c563361b3022",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔在人工智能炒作高峰时抛售英伟达：投资者应该知道什么",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZDR5ODJsVFpZaXlYUl9SSjhHcTJpLUFVRmhJUkl0V0RBbXY0RFFnSm5SUDViX0FJQnhWdjNPTnE3QnFGUEIwbGpmNk9NcFQyUk44blM1MWhNNmVqN0RaUDBkLTh6bUtKZlp0a1k0YzlBeHVMNmpWUnZDTFFCS3BNR1hvcjhmd1lrQXBJR3dBcXc1Z1RlWWIyYmNrdEY?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1a6fd1b1bd8c",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreessen 谈突破性的idea和勇敢的创业者",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1vXzVUc25KUGZqZzBOd3FlQm9DbW9nelZ1bkZmRjhRNzY5ZFR0QmVHUENxNHlvQ0RXNGkwSDdaTzZQSTBsWTJaVmNn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cbb6e4a1c8b9",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z 创始人：努力推动 AI 的人，都可以被归为英雄",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxNDVWeXJkajF4eTFzTUFMbjA2ZmhVTDJQMG1DRzdhVmpZVVJvRThwQkNlb3F4eHJ4UlJtUXp5ckhCb0ZSNWxnOFJmX1hKdVdyYkREaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-efc14f81ef35",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "投资人警告特斯拉：放弃低价车型并不明智- Tesla 特斯拉",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE95Tkd6TW42RE1SU2h5aFpQelpRQ3FEOU16RkdmS2N6N0xaVWZ6VWpMNEdkQjFHMlFHc19wY3ZUSjhaNWVFM0F2RHVZdDdkQmhwZTRKaXlaNjJWY2FFS2U2Sw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-afbe9d3a4d62",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "投资富豪巴伦：特斯拉市值10年内可升至5兆美元 - 财经 - 即时财经",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9yYVpQMDBvak8wZUpkaVhYYXRKMHdoMDExNEY0TDNtRVd5NzFHV29BN2doRGJidUU1MmlzSmY3c2hoZkQ5ZkhPQkR2ZXg2SVFLVV9sVTFFMmFDT0JvZTV5RlQ5OFNLTkk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-71bfb09aca47",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood 将特斯拉和 SpaceX 列为 AI 最佳标的",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4ybjhfNlJYcFJqVVhRbnEzY1lzZUlyZGFwdldNcUx2ZUFScWhfQmY2Z094OF9yN09welozZzVMaUtfOW5jN1A1ZTNHcFJqbUwzMWctOF9jVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b1a15be52509",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood旗下ARK逢低买入特斯拉股票- 老虎证券",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrb3lUckpRMEVoWGFUWkZqRmZ5azBkS1lJZTM2b19SZ1gyTm5vVWh0MEFiQUt2VXRXM1hUSExBMjhWZndsNTBVRXZvUFkyMzN3WFdCQXdn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-754953c2e2ce",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "顶级投资人·去现场丨Ken Griffin：对中国EV征收高关税 美国付出的成本更高",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1lcHlHRkl2UlZjX0Zhd0pGaTVCQUtLVmdaWXJNejFGdzVEOHVtS2RkaGhuQkI0ck80ZUhIbmxqOUlKZXNYYVY2UmtzN1VTWmFORHUwMQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6996be04c10a",
+   "type": "event",
+   "ts": "2026-07-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "现货黄金历史性突破4000美元大关，年内涨幅超50%",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wTUFpTG83MEEwbFVHRVEyMUNtclo0YUNqeHh1ZEZlWm9lUGt2Y2lfdUxpY3A3S2J0b2tEbTJOb21ob0V3TWg0SWRRZDlNQVFoelhn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -7808,7 +8148,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2018 · xAI 223 在招（2026-07-26；Tesla 无免费接口）",
+     "v": "SpaceX 2022 · xAI 222 在招（2026-07-27；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -7912,7 +8252,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-26，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-27，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -8388,7 +8728,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-26 07:28",
+  "last_run": "2026-07-27 07:26",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -8399,7 +8739,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 24,
+   "edgar": 25,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -8407,11 +8747,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Starlink Group 17-51",
-   "net": "2026-07-25T15:51:55Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-52",
    "net": "2026-07-29T02:00:00Z",
@@ -8431,33 +8766,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
    "net": "2026-08-30T11:20:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
+   "net": "2026-08-31T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-04-02",
-   "rule": "迁移",
-   "action": "旧待审队列迁入审计（未入库）",
-   "ev": "A",
-   "title": "TSLA Form 4: 4  - Statement of changes in beneficial ownership of securities",
-   "src": "https://www.sec.gov/Archives/edgar/data/1318605/000197292826000002/0001972928-26-000002-index.htm"
-  },
-  {
-   "ts": "2026-03-09",
-   "rule": "迁移",
-   "action": "旧待审队列迁入审计（未入库）",
-   "ev": "A",
-   "title": "TSLA Form 4: 4  - Statement of changes in beneficial ownership of securities",
-   "src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926025379/0001104659-26-025379-index.htm"
-  },
-  {
-   "ts": "2026-01-12",
-   "rule": "迁移",
-   "action": "旧待审队列迁入审计（未入库）",
-   "ev": "A",
-   "title": "TSLA Form 4: 4  - Statement of changes in beneficial ownership of securities",
-   "src": "https://www.sec.gov/Archives/edgar/data/1318605/000197292826000001/0001972928-26-000001-index.htm"
-  },
   {
    "ts": "2026-07-06",
    "rule": "迁移",
@@ -9392,6 +9708,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 16 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "现实冲击马斯克及特斯拉、SpaceX的拥趸 - 华尔街日报中文网",
+   "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUFXUFByUkZBUTJCSDJfVUpMclJ5OGpRNTFwaVRjMDJqaE50eVhCd0ZTRmZtQ0ZmYm9QS285RTY2Q19hQTN4YzVnclRHUmdfcHRkUWxiSlViVGVIQ0ZkRjRsUEZvOTFNN29tdjhUZE81eXNPam8yeHFsRjFEQnREbzUxanVVeDJXbkc3eldXajZoMW1wY3c?oc=5"
+  },
+  {
+   "ts": "2026-07-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "🔥🚀 Elon Musk 刚刚抛出的，可能不只是“太空数据中心”这么简单。 - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUjAxaEdSWnVtUnFHM2Z0azRzeE5BWDQyTWp2QkFuaFU0WHkwSkc1OGsyRDZ0SXFvZDRfR0wwNTU3dHNhMS1TRXFpVTNQb2d6SE9oYmw4dmNNUVBzODdZVldYS2RGLXc5VmVUdWtpYkV0SlRHakhSU0phUi1kVk9HZklLNHJKUFAtcGFaQll6TUI3Y1NRZUJFTHZDN1E0RGhueUpWb3NiRkE?oc=5"
+  },
+  {
+   "ts": "2026-07-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 18 条（明细见各人物卡）",
    "src": ""
   }
  ],
