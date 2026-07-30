@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-07-30T07:29:11+08:00",
+  "generated_at": "2026-07-31T07:30:09+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-07-30",
+  "asof": "2026-07-31",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 298.32,
-    "chg": -20.24,
+    "price": 308.85,
+    "chg": -3.39,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-07-30",
+    "src": "Yahoo 2026-07-31",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 112.55,
-    "chg": -2.35,
+    "price": 112.2,
+    "chg": -5.11,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-07-30",
+    "src": "Yahoo 2026-07-31",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63924.27,
-    "chg": -0.6,
-    "src": "Yahoo 2026-07-30",
+    "price": 64871.89,
+    "chg": -0.72,
+    "src": "Yahoo 2026-07-31",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0701,
-    "chg": -2.24,
-    "src": "Yahoo 2026-07-30",
+    "price": 0.0707,
+    "chg": -3.56,
+    "src": "Yahoo 2026-07-31",
     "status": "green"
    }
   ],
@@ -147,6 +147,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-30",
      "c": 298.32
+    },
+    {
+     "d": "2026-07-31",
+     "c": 308.85
     }
    ],
    "SPCX": [
@@ -249,6 +253,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-30",
      "c": 112.55
+    },
+    {
+     "d": "2026-07-31",
+     "c": 112.2
     }
    ],
    "BTC-USD": [
@@ -351,6 +359,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-30",
      "c": 63924.27
+    },
+    {
+     "d": "2026-07-31",
+     "c": 64871.89
     }
    ],
    "DOGE-USD": [
@@ -453,6 +465,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-07-30",
      "c": 0.0701
+    },
+    {
+     "d": "2026-07-31",
+     "c": 0.0707
     }
    ]
   }
@@ -9008,6 +9024,230 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYVE1R0NSMGVCTkJjcEJrQ2FpajVGN2ZxeTFGZ0k0azdNNl9IbWpyek80QlVJdWdaNVlsVmdVa0xoMGFjRTlUamFreUl3b1FQekFIaHZIaGh1NGdxUXZtOGhsb093amozWG94T0lFX2I5WE1LbTAxRktQLW5MdnlvTjF5NHBfMklSU3BFUTQ3Q3FpWVNSUVlrZmN0VU10STlsNFE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-1eab0193760c",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克弟弟：我们两兄弟都不痴迷于财富 - 人物 - Elon Musk",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PYWdRcXRfcmx3UkZ1a1hHXzhrbVlCTS01QW45M3NiaEFpNnNpYkpDNGtkZUwzd1AtaDhSLVZidTQ3VEhIeFRiY0lmQVFxbVJsa2RaVG92QVBHOF9nTGMxVw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f2ace1815abd",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "天才又古怪的马斯克将带领特斯拉走向何方？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9fNm5FaG1aNEd3a2ZXZlFucElUbkdIUThiTVVsVW81NDQwb0t5Y3QwbEdXdVk5MVVHM1NvaDZZNHVQYnZsTE5YOWpuM1kzT09xZUwteTMyZ3RmZUdWWVcyTWJUeEJaWjQ2?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fab3c03375b2",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "90后中国女孩征服全球首富，她凭什么？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5URXZPc1d1UjdPRnAzaGRZVEQxX1pvLXNnWVUzV0JuM1YxOTBDU1VsbDFrYW5PZWZjWHgwZ2toSk1RbzR0VGVDV2o3Zw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5c332a2cfdb9",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81岁前世界首富被债权人集体起诉",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJSGZfMTlfVXRIbjFBTzZnNVFoWExfTjd5NldGVE50NHQ1VmJCQWRkbjlaY3Rsc0d4cDVxOHZ1Q2Q2Uk80bmc4OGs2eDJDSDRGbnU0QUJOYXZWNGxMYVBaWkV5X2JpNkxkQVdUWEIxeVJFdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-51dbcb282962",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "马斯克要求不拆书扫描|马斯克|david sacks|anthropic_新浪新闻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14VE9NMkY3S1ZEb0pBZFBuQ2xLQklHajJacHFudEEzT1hvZlZtVV9qZnljVURxVVdRUHlXdXZKVkV3VzRhV3QwTmtLYTdiQThuYjNDMWFxM0h1UGJ0RFVxbEtXYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3d6a731e8243",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Mark Zuckerberg Says AI Should Be Open to Everyone, Not Controlled by a Few",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ1lNdktNWEl3QlR4eEk3WU1kMlNIYWNRN1YyR0NWSWR1SzNjX1ltYzJtSm5iT2NudVBjcVhyQ0RGWnFoNUJjQ2FsNnpyRU1WMzZEZDB0SDIyUGEyWTZNa0h2bElLMzg3NENNb1NhNXhTUHNIanBiODJWYUQ4TVc4U1VJUjZRcnJpVDBqWEd4QjQ0ZGxoelF5R1VydU85c0stV21PdGNiaHNWY0h5Y19hTm9FNVlrZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-19905cea663f",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Ramp 将启用稳定币支付通道 Plasma",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UUng3U05fM3hJdDJHclJkb0JldVdIRGQxZHdHZWNKVUV3ZUhSbzd0S1ctcVd2YVYzWGQ5WUVjandxOXlHOXpDWWE0aUNnLXpEREg5ZVltWE5UcXBRcWpaZi0zb3dabzg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8f2f9b18d308",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "十年复仇：硅谷天才与媒体帝国的战争",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1PaVgxYWV0VE0zQ05CQi1mMFNkMXI1U1JRTW1vR20yQkZmcThRRVotUHJLSlhzZTNFY1pyRVVzOTViOFg4bXI2Njh6LVZ5aWxLb3NUWGh3RmRrRV9MR3lMcFFpU0o?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c44b157f0fb6",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "DeepSeek获三大国产GPU力挺，给全世界上了重要一课",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Ma2ZUcHlpRF9zc2lwWHlteW1Da25rYW5zRElzQUpSM21kS2R0TVpEY3VXY0tfQ1drUkYzRmRjZ1dFMU9wdzhGbXFQMkJKUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dcab820854e1",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "扎克伯格的人生导师，投过Facebook的卤蛋投资人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9RRXZweEd5eGhnMFhQQ2lYajA5WnpsbVhNRnVTT2pqUjlNTElyQkE5NkNUOTlRdlFSbFV6UkIweWFoSHJjWVhlTTFxYlpCQzB2cmI1OWd3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-724c14e0cfe0",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood在抛售潮中购入加密货币股票；在财报发布前加仓亚马逊",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhhTWtIVXBFNXhBc2w1MTBLbXVoOFh4bTNSMDROVXZXWFVEVHFJX2Q0dGRybDhxQjRkWmlkZnNSamNYX0JFQ2dUdWZZRnE3emE3UWdibG5TbUEzbmRMazNMQTU0bkxLdE1pamdzaE9Sc2FPbE9WYlpDOWVnZ3dtdDlQSXFtS1RmY0dtalhpdW1oZ3Z5SDA1TWRUUWJHcEVLQlFidEtxU2FINXBBbDU1VmYwUGt1OVN3YTg4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-087ffa86f7ea",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "比特币 $7.5万 暴跌后：Cathie Wood和其他加密巨鲸的市场前景如何？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaUJoRGFMcVVXMzUwcWZ3TVRxaGhlM3hacEhtVU4zQWtITjlSVVFkQzF5RDJibzNkQXhQTGs5SFFqUEhmUHRLTkd5aVhnajFJSzVWYXBqbVNFZk52elNGOWRMMmtNcUt3cHIzOW9sRTkxaVIzOFFlak5hRDdlTHd1b0lxNkNSaHh5cDl6QUJkOXNoSzNWb0xUbjgwOHB6NHFUNEpPbkcydDd0UXB2dmt3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2d9ab3939640",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "比特币飙涨突破10.3万！美国对冲基金巨头后悔 纽约市长：2022年嘲讽我的人还在笑吗？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA1ajItWFYxaTdNWV96SzdickI2aDNDdXpjUjZORzg5Uk1HLUc5aTk0aEN3Z2dWSWVidjB3ZGg2OVpKVzRUcUVVVzlDX1VGaENLY0Z3Sm8xLVFWMTVvTGFFUU1NU1lWQU5NUXZ1M19jSkwyQWFsMXdB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c9ff09af86ee",
+   "type": "event",
+   "ts": "2026-07-31",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "全球最大对冲基金之一，Citadel的发迹史",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YUWd6TkYtNUFlQzVrX29UcUZCVm5XeEZUUDEyaWtJdDBlWFVHSm93N1QxVXo2ellKc1lGLW5zdnVRYncwRjZCS3VDckVfNFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -9110,7 +9350,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2062 · xAI 198 在招（2026-07-30；Tesla 无免费接口）",
+     "v": "SpaceX 2076 · xAI 194 在招（2026-07-31；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -9214,7 +9454,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-07-30，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-07-31，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -9690,7 +9930,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-07-30 07:29",
+  "last_run": "2026-07-31 07:30",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -9701,7 +9941,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 28,
+   "edgar": 29,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -9711,8 +9951,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | NROL-95",
-   "net": "2026-07-30T07:09:01Z",
-   "status": "Go for Launch"
+   "net": "2026-07-30T07:10:19Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-52",
@@ -9725,7 +9965,7 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
+   "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
    "net": "2026-08-05T07:42:00Z",
    "status": "Go for Launch"
   },
@@ -9736,14 +9976,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克宣布解散xAI，把数据中心整租给了他讨厌的Anthropic - 麻省理工科技评论",
-   "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBCelFQQ1l5WkY5MFJ1OFZueXhoWDB5MXlXVmRVN2RjRlNHMWVLc3BNQ3RHdGlsSGw1STh3ME14ZFh4eGc1SjhvOU9yYVpMNjduNWlMeXNMZw?oc=5"
-  },
   {
    "ts": "2026-07-06",
    "rule": "R3",
@@ -10690,6 +10922,14 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-07-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-07-31",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
