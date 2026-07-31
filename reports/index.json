@@ -1,5 +1,11 @@
 [
  {
+  "type": "月报",
+  "date": "2026-08-01",
+  "path": "reports/2026/Axiomake_月报_2026-08-01.md",
+  "title": "Axiomake 月报 2026-08-01"
+ },
+ {
   "type": "周报",
   "date": "2026-07-26",
   "path": "reports/2026/Axiomake_周报_2026-07-26.md",
