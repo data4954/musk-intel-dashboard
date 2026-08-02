@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-02T07:26:46+08:00",
+  "generated_at": "2026-08-03T07:27:36+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-02",
+  "asof": "2026-08-03",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 311.21,
     "chg": -0.58,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-02",
+    "src": "Yahoo 2026-08-03",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -5.82,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-02",
+    "src": "Yahoo 2026-08-03",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 62718.08,
-    "chg": -1.81,
-    "src": "Yahoo 2026-08-02",
+    "price": 63450.26,
+    "chg": -0.72,
+    "src": "Yahoo 2026-08-03",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0691,
-    "chg": -2.36,
-    "src": "Yahoo 2026-08-02",
+    "price": 0.0707,
+    "chg": 0.86,
+    "src": "Yahoo 2026-08-03",
     "status": "green"
    }
   ],
@@ -159,6 +159,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-02",
      "c": 311.21
+    },
+    {
+     "d": "2026-08-03",
+     "c": 311.21
     }
    ],
    "SPCX": [
@@ -272,6 +276,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-08-02",
+     "c": 108.37
+    },
+    {
+     "d": "2026-08-03",
      "c": 108.37
     }
    ],
@@ -387,6 +395,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-02",
      "c": 62718.08
+    },
+    {
+     "d": "2026-08-03",
+     "c": 63450.26
     }
    ],
    "DOGE-USD": [
@@ -501,6 +513,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-02",
      "c": 0.0691
+    },
+    {
+     "d": "2026-08-03",
+     "c": 0.0707
     }
    ]
   }
@@ -9866,6 +9882,230 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KYXpYaVlkTzJGM0xQR2w4VmhoMUo2dnFXaG1jZ1d3MzdiZ2dyeXc3VDRMXzZlQTJDdTVBSGZidGU4OTRkbU5yOXk3bFNLZUFoMnQ4?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-b0899c68f130",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克的新传记里提到他跟Amber Heard（德普前妻）交往时，曾让她cos守望先锋里的角色Mercy（天使），Amber花了两个月的时间设计和委托制作了一套制服，为他进行角色扮演。然后马斯克在推上直接发了她cos的照片[跪了]（🆘 Amber Heard知道他要发这张照片么",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5zdVYxbFB6R2dLdWcxRVlnOHFXLU5XV2dzajQySkZQOGlsRTdfaDUwSFo5d0oxTkRPbG5BWEJxWDFHSTQwNVBIc3JTVllLcVRDVTdaVGc4eFozZVpaVzZjeDFjaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-27d805fe5421",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "格拉斯·刘易斯公司：特斯拉股东应该拒绝马斯克的薪酬 - 人物 - Elon Musk",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxTjNJUEtCNmhESkpPUHRSaGoxWkNaNDFTWUU1TFk4cDBZYnBqQ3Y5OVZtRE5mZFRXRTBtT1pfX3ctanZzMDBZdnZ2S0docFNrWDZFZ1RVUDhCb3RxRXE4RQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-269cf4f9f214",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁顶级富豪再婚娶33岁华裔妻子 全球网友拼命吃瓜",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9XdXotc1NEcDUzLVJzc05vR3VKcDZUU095MFBFbmRLSWoxb0NSbVBZczBPVFNkLWRfRlo5MGpzcjI0QnNzV1VSTWlNNmlYZDNI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2aef48c6b9d9",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "中国互联网的下一场硬仗 | 衣公子",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDYjQyYXJiaHZNZ2pqWTdHQVUyamxDUkJZN25mOGViNGdCRExHWHlneS13ZEdjel9SZXc2WVVyNjB4NXJPRGtsVVg0ZU1GYjUy?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-aea8c91bacd3",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美国白宫发布AI行动计划",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBxeEJ0bER4N3lqc1FwMTB5Z0V1c0pFRHdLRHN1SzRBT1pwYkxKQy1jcW4yWDhpV0pScjJ4SjdIN0VpbzZBdFI3TWI3bl9ZQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7f7da1ae4409",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "贱！禁涉国安卖说无关！一直给华为做广告！美国为何解禁H20芯片对华销售?白宫回应",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MZThwd3JwZ0UyRlNDeTRMVnFPQUk0TVoxalkwT0puaDRRRkQ0UU96bmJ4WW9ZdC1qdHo5ZjhNZmNoQ3Z0TS1PWmZRU05EamJGLWxzVHJjS0lsZ2s?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-551a54ff3d4f",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "PayPal founder Peter Thiel: Capitalism is not suitable for millennials",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNjhLSmVhNHVlc25SREp0Y0tOcnVja2p2dUk1T1dPWDZsanluTjZBaUZnMEJiTE1fXzZnamM1R3RzWUxDNkN3ZFRUbVBKaENYckV2MkFRc3U3YWl6ajZNSzcwMG96Rm9weExCbHV0elFvWkN6VVIzMkdGU3VCZHk1WktYMG5ZTW9ycjRWNVBYMm81ZlNKY1NrWmZVdVBUSGJXRnN4amd5TTV5bG1CaVJoM2ZEMA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b3aaca7b6926",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔在罗马举行的秘密会议讨论了敌基督者，引起了天主教会的关注",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE94WkpndkZwbTVFMHhmU3JYTzhKX1FzUmVoc3BCQy1XdFIxODZhSW50WGpfU3ZwQTJJTU1EQ3dYSXNIWkHSAUJBVV95cUxPOGhVVVZVZkRCVjZjVEluTGJ4RlpwaFFYcHpwaFZtMXE2d3FkVUVobzFUVU5lcUsxaXAxZk5OaUpCaGc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b11b432b9be5",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "马克谈天下(513) 马克安德森谈美国新工业革命的蓝图",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBRNUU4aUQtVEE5ODNPc3pZSWlFTUw4a3YxeW10QW92V3lRSVJSX2NOY2tBQ3Y0a0RpYU45alI1dDBUa0g5TWtlNDhlOWJmVXMtMVg1ek9wa1k0aVY0N0gzVUY1LTM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-692b07821d62",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "在Marc Andreessen眼中，优秀创业者应具备三要素：产品创新者、企业家精神、具备CEO潜质",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAxTlE1cGxNRVZBN0xSTWh1SFZKQ25UejVWamJQVGs3TkV0N0hZVFhVTDlSYW94OHJFdkx5VGlPblVLZklucFRwSmxR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-108149ccab6b",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood 预测比特币在五年内可能达到 $1.25 百万",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xLW0yRFc3b0VHX1Z6VURUQ0JhNkFaVXJwZGJnRVhBVlFyY3pBdjJjbGFSWC1CSEtZM0s1OUlYYXZxaDRBdFc1ak4zZjQ4UWJFWk43RkNRLVJadGpyWUhxalk2aWJjNGh6?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1b6da7fcbe90",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood大举投资人工智能：加仓谷歌、Meta和CoreWeave",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVHFHZWpoY3hGWnUwNkZTczRzdnhETVRRN0N0OVRDVEpqT1pCQVJIVDBKcnpwT25mWHB6dEpiVTdoVkk2S1FJaXRWbmpFVlFoVGExQm9aNEEzMVJfX2NpakZTNWRTVE1TQVYtVUdobDI4dHRoOW5SYldlMURjQmhhSVBybDhiWmVmUVJWODhzZy1GNzVqbU9kOXh6V3RSdG5UcmJMRThCeTE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-be862d1772bc",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "前OpenAI研究员Leopold旗下对冲基金已亏损平仓，将大部分股票出售给投资公司Citadel",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4zaEx1dC1ndGRUVjlfbDdMUl9qZGRfNlpLUHpNSVVGQVVqLVRqUi1iQzFnTzVPSW9Lc0lGSnVDWWJlSFRJQXlSSWtPcFpNZS01bk9qTVdxUld2eDl4OVJaYk10QmlUdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a5ee1b65d46c",
+   "type": "event",
+   "ts": "2026-08-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "WSJ：Citadel 已收购 Situational Awareness 旗下基金大部分股票投资组合",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NM2k1VFZpYzUxeGRYUUpEbkVRaHVQSThUTWs1NVhRaTB3bnJaZURYQWswcElWOEprV1AzcjVpNFFKRFpRZE5OZmZqRENrZndxQkNXVzdWbmpQeERG?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -9968,7 +10208,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2102 · xAI 196 在招（2026-08-02；Tesla 无免费接口）",
+     "v": "SpaceX 2102 · xAI 196 在招（2026-08-03；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -10072,7 +10312,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-08-02，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-08-03，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -10548,7 +10788,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-02 07:26",
+  "last_run": "2026-08-03 07:27",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -10559,7 +10799,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 31,
+   "edgar": 32,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -10567,11 +10807,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Starlink Group 17-52",
-   "net": "2026-08-01T03:08:43Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-53",
    "net": "2026-08-04T14:00:00Z",
@@ -10591,17 +10826,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Starlink Group 10-19",
    "net": "2026-08-10T14:49:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 17-49",
+   "net": "2026-08-12T02:00:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk Needs the Cultish Support of Everyday Investors to Pull off the Massiv",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnlRY0pUNzcydjBCTmp6V3JoV3hIbzQxd1loek5pX1pCdVA3NkZtSC11X3NYMlYwbG1YMXNxYTFCaGFmSEF5U252WHFsRjduU053QlJDeGZRVWZfN1AyZldLZEdsQ1liN3lYRUhkaTZXcnJSX0N6WkJwZ1lHNGVlam85NHlzd2x1NVJjankwLXVYUDdvVi1GNnRUNHdwR2c?oc=5"
-  },
   {
    "ts": "2026-07-07",
    "rule": "R3",
@@ -11552,6 +11784,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 15 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-03",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
    "src": ""
   }
  ],
