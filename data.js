@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-03T07:27:36+08:00",
+  "generated_at": "2026-08-04T07:33:07+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-03",
+  "asof": "2026-08-04",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 311.21,
-    "chg": -0.58,
+    "price": 322.08,
+    "chg": 4.16,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-03",
+    "src": "Yahoo 2026-08-04",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 108.37,
-    "chg": -5.82,
+    "price": 114.53,
+    "chg": 0.91,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-03",
+    "src": "Yahoo 2026-08-04",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63450.26,
-    "chg": -0.72,
-    "src": "Yahoo 2026-08-03",
+    "price": 63467.67,
+    "chg": -1.94,
+    "src": "Yahoo 2026-08-04",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0707,
-    "chg": 0.86,
-    "src": "Yahoo 2026-08-03",
+    "price": 0.0702,
+    "chg": -0.54,
+    "src": "Yahoo 2026-08-04",
     "status": "green"
    }
   ],
@@ -163,6 +163,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-03",
      "c": 311.21
+    },
+    {
+     "d": "2026-08-04",
+     "c": 322.08
     }
    ],
    "SPCX": [
@@ -281,6 +285,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-03",
      "c": 108.37
+    },
+    {
+     "d": "2026-08-04",
+     "c": 114.53
     }
    ],
    "BTC-USD": [
@@ -399,6 +407,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-03",
      "c": 63450.26
+    },
+    {
+     "d": "2026-08-04",
+     "c": 63467.67
     }
    ],
    "DOGE-USD": [
@@ -517,6 +529,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-03",
      "c": 0.0707
+    },
+    {
+     "d": "2026-08-04",
+     "c": 0.0702
     }
    ]
   }
@@ -10106,6 +10122,246 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NM2k1VFZpYzUxeGRYUUpEbkVRaHVQSThUTWs1NVhRaTB3bnJaZURYQWswcElWOEprV1AzcjVpNFFKRFpRZE5OZmZqRENrZndxQkNXVzdWbmpQeERG?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-797b0c4da110",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "SEC对特斯拉CEO 马斯克及其兄弟近期股票抛售进行调查",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5FMU9ULVZSZ0N2NHFXYjJSZ0pGZlhpMGNOLXpWZ0xpdHQ3ZmUtbm5tT3BYVzFCSG5XbG82cmxKODJ1M09MRmdvZ0xXNU5zNFNWWng1TVllaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-54d41547a5bb",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克亲弟参与抛售20万股 特斯拉董事会多人套现 公司市值蒸发7000亿",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCRTh2UjlWUzFJVHRWdDQ0eDBDampLOTVHZ3JRVTVhMlpHU0ZGNGJQd0VpeS1ZY1JZLWlJaUY2MW11eWJYYlRreVRGWHB0OG1HWXFwYW9nM2ZramFaVGxJUw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f6847b19b189",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Warner要求埃里森亲自担保派拉蒙的收购交易",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMzBZMVFfRHRBU3JmMGZtS2IxVjFYRnlMbkpONnlMTGFIc3d2SG5vQ0FQcmtReC1XZ0xSSHVVM0l4VDZOQkx1U0xRcWdvbk5selZTZFBFdklUMkNDYVJpeUtvaHY1Z0h5VjVQRFBkQVNVQmktSGdXTmkxXzZRNXdHOHJ3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a7828de1646c",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "顶豪圈||娶小47岁的中国太太的甲骨文老板，到底是什么来头？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Kd0JwQUdhcmQ1elFEYllSajRCZnJlTG9tSUw3a1VwalVjbEkxNWsySkNWN21EVUI4ZDdmZHlyWEpqQUdEY0ZNb0lXSlUwMEdPMlZ4Zll3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1e5f369be01f",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "加密沙皇David Sacks：处置加密资产系因政府道德规范要求",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1naFJ6OTFJVDJ4LXQ1NVJZU19hWVFTd0pGX1Q3SVpvMmRvajdFRmkyc0lNdUh3RTl5N2toUVFFWk4zMGI3WEJaNko2ZXAtaENMdnN3bEZGQ2ZvUVlhaUpWeGRDZTNJQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ddc2e3b35a75",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "果然，他们又黑：中国“偷”来的",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9SN0p0M3NNMVRFRVNhZnNsSkhiODVuWmhORFIzVWtkblZuSjlVSjNlbEpsMnVvWlZDbDJleVdQVXE1YXY5RVZSaEk0dk93UGVjMFRTQ05GSVdremY2ZnhVTjRNdmlWTVFCSlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3be8f0eaa7e4",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "贺建奎的戏精前妻要在美国制造“基因编辑婴儿”：币圈加持下的闹剧",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rZUdDZHp4UGM0UDlXT1pNcVJ5dFdjS290YlVNLVVXM1NtQzcxNGVzVVFzN25GUXNmQ3ZHbWlXdWpkQ1RkbXRmQTVGakk0S3JjMV9tSFN3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8afca4f20312",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "王兴2012年推荐的一篇长文，现在读刚刚好",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBzcHVOQ3M0clNaRTRWZEx5aDhES3VMR1VpU01CelBqM1IwaXdta1VUN3BWSE15b3ZiRDd1NS1fR1pheEJHYjk2YTZBMWw1Slo2QnM4b1RFWQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-18efecc149c3",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "“硅谷严选”：美国科技风投圈正排队向特朗普捐款",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sWlRQZGZhWDN1UDR0eUFCcVk3ellCdEtDRmw0bGdINWdrWnMzaTF0VjJ6T2hNN2ZvZ0taT2NnazR0eFptb1lzOWViQ001ek9G?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a4b0967f0258",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "ai16z被a16z合伙人点名带火，背后发行平台dao.fun主打面向MEME市场的DAO风投",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE41eDNNblZJWWt4aXowYm5tU0xaNE53Ulhha3hsTHpyOUUzdlI3VllnVzNKdDJ6NTV1U2FPRjBpSUUyMkNkbE4ta0MzRUI5MmlMSjdDSzlB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d297fcb6aa04",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "Tesla真正饕餮盛宴意义上的暴涨还没有开始，眼光要看得远。及时抓住机会才是重点。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBwaGRWSVRxc1BydEo5R2hlMTNYYV9LeWZMd2RWVjNWemF0a3g3aDQ3QjRmajRRbV9PQU5mUXZIZTZQNGdwSzZmTlNTVTVXN01KSUtOX0R1enZWMXpLbTNscG01bGJ6ekdCT0JnbE5CeVg2ZlJOVEdzajJvbW0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a95962de0ae0",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood又在“高买低卖”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV3RobnVtZHdWMjNFNURpVzFGT3hldzYtc2R0cFBBRHh2Skk4NjdwU1hCZWVGWmpBWktmZkE2ZWQzQWhJWlhuUG12VUplUWdnMlV4SWVpYTV3Ri1BcFJPcTdJN0tGU1Vhc3FJczY5REZnSm9qMzRSb0VPS2RBblFHTVdWNVZNTnVTZFpqWENDR2hxbWpIZTlRbmdtQi1pdDRBTm9rMXd6ZGo?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-684e378eae51",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood Adds Circle Shares After New York Trust Approval",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTzJqNWNTSWtyU3Z6R3NFWFVkaUxoU1pyRnNpcEp0Yl9NWWxMTExTWGwtYTdnd0MyclJQU1FKamwxSGlaSDJib3gxVk1PcEFHRDE2Um1tUHJiLWRWZjJUVi1iRWZRLXYtaGNVaUdsM3h4Z2RoZkFlY1BIRlJqaW92eGFlMGlGZ252SDV0MU5qUUVwSHJxRHAyU2xfR3ozVlprVVNv?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f63f1f8dc3cb",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "华尔街对冲基金Citadel“有失水准” 2023年表现落后于大盘 2022年整体收益38%",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPM1R6djhsV095N080ZDhfbURIYkxrMlctTTg0RmFoZnFYek9yX3BXMHVvWHZTclIwYTVJbGtBU0ZCYzdUVHVLOWpiWi1VSFdMTHZvNGlwb3FPcEowNkg1UFBMaXRzcXZFRFBQTnpwX2JSVVJ3di0zUjR6eU5sTG1OSFVKYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-65e882f97915",
+   "type": "event",
+   "ts": "2026-08-04",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "疫情下的天价交易 巴斯基亚巨作逾RMB 7.1亿转手",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wcTd0QkRrSDR0cmRzQ0c3ZGdnVEloaWNZRmZHQTZ4aDB6eXhsNTYzd1N0cUs1cDZ1RmVnNjl3UFQxNjEzLXI1NmNsNHlnMFE5NHJQVFZnb0psY21HV2R5VHJPTjV1RGhZalNxTXY0b0M1ZjViSTZUZDlnVmF6Sk0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -10208,7 +10464,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2102 · xAI 196 在招（2026-08-03；Tesla 无免费接口）",
+     "v": "SpaceX 2091 · xAI 198 在招（2026-08-04；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -10312,7 +10568,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-08-03，A:FEC）",
+     "v": "近90天 $5,466,599／5笔，最新 2026-06-30（A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -10788,7 +11044,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-03 07:27",
+  "last_run": "2026-08-04 07:33",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -10799,7 +11055,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 32,
+   "edgar": 33,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -10809,7 +11065,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-53",
-   "net": "2026-08-04T14:00:00Z",
+   "net": "2026-08-04T16:24:46Z",
    "status": "Go for Launch"
   },
   {
@@ -10834,14 +11090,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Chinese Solar Stocks Plunge as Firms Deny Musk Space Project Links - 一财全球Yicai G",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT3Nia1dpRFFRYkVwQzZwalc3NTRFcUpvWFRjQWt6WDVrUkR5TnVwV1FobnNkMjNOckVmTnh6OURyaG9Vcmd5NVpORmJZUG9scjRDMThCemVXNkFWWkdJdVpLWWhTbVN3U3JRdVBITHV3dU40dE5NQ0oxbG5LYTk3dmdZWjY3X21Cc0c5RDBldmRCV3h1a2QwNHB6d0dMMDQ?oc=5"
-  },
   {
    "ts": "2026-07-07",
    "rule": "R3",
@@ -11792,6 +12040,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 14 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-04",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 15 条（明细见各人物卡）",
    "src": ""
   }
  ],
