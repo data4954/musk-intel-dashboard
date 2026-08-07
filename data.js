@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-07T09:35:56+08:00",
+  "generated_at": "2026-08-08T07:03:02+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-07",
+  "asof": "2026-08-08",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 319.53,
-    "chg": 3.46,
+    "price": 328.58,
+    "chg": 5.58,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-07",
+    "src": "Yahoo 2026-08-08",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 114.92,
-    "chg": 2.42,
+    "price": 133.11,
+    "chg": 22.83,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-07",
+    "src": "Yahoo 2026-08-08",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64370.66,
-    "chg": 1.43,
-    "src": "Yahoo 2026-08-07",
+    "price": 64852.21,
+    "chg": 2.19,
+    "src": "Yahoo 2026-08-08",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0692,
-    "chg": -1.32,
-    "src": "Yahoo 2026-08-07",
+    "price": 0.0696,
+    "chg": -0.72,
+    "src": "Yahoo 2026-08-08",
     "status": "green"
    }
   ],
@@ -179,6 +179,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-07",
      "c": 319.53
+    },
+    {
+     "d": "2026-08-08",
+     "c": 328.58
     }
    ],
    "SPCX": [
@@ -313,6 +317,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-07",
      "c": 114.92
+    },
+    {
+     "d": "2026-08-08",
+     "c": 133.11
     }
    ],
    "BTC-USD": [
@@ -447,6 +455,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-07",
      "c": 64370.66
+    },
+    {
+     "d": "2026-08-08",
+     "c": 64852.21
     }
    ],
    "DOGE-USD": [
@@ -581,6 +593,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-07",
      "c": 0.0692
+    },
+    {
+     "d": "2026-08-08",
+     "c": 0.0696
     }
    ]
   }
@@ -11314,6 +11330,230 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE94UnNuSTBick1zbFZoSklJd2NZME9sVnRrcHFTdHlKOHJJNW9MRXBtWWVBLWlFSnZ5dmhJYUtpbzFLZVhvaGRYQ01n?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-4ec4a5916d0e",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "你不知道的马斯克妹妹：制片人、单身妈妈 大哥有钱让我“痛苦”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA5QnJXeWFtenZQd3FidnNoUEl2ZkJvU254TDFucVVYRFh5STRFbnp4NHhTYlhfQk50cVk2R210Ry1xMXB3VnpUUC0tTHc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fbeb5d247053",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "【財經100秒】IMF總裁：不排除全球經濟明年可能衰退",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE16anFDVGFkOEd1MUNHWkd5c0Z1a1kzdHBSemNxX3pTUzVzNk1sbWthQm9XVDk5dlRhbWl1RHhraUFzM1ZldVlQZ0ROa2VvVTIyNHd4N2cyNXBSaFpFX0x3atIBZkFVX3lxTE1INkszTlNZbnJWdFUxZDQ3Nk0wNExRdmg0bF9ORDVadGZyQTJNNDVFOTJOUkJHNXl4WWRrV0Y2V0cwcEJSOTVvUlJxdUxEb3VMek42dnpEdFFoMTN3MmFSdW5pdlVHdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a34ae7c691d1",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文三季度机构分歧明显：Appaloosa和软银清仓，Rausing家族及Paul Allen机构加仓",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfYUlsSDNUUDdnbnMtZ3JJRUh3UUgxVklacmFBWmJrdlNrQ2pueV9vTW5URUwzc1JXSm40Rkg2SUZzUjRGbnFhMmZMeExCdEVMRGloWVVSQzRhSUUtdTZvQnFnSWZoQXItcGFYT2J2QnVscDVvajJZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d1aab54c56a5",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "WBD reject hostile bid from Paramount: Your revocable trust insuffient",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUmV4NHJua2Z5Z0stSGVrZkcybm5uRGNPRHA4MDhQbTVEZ1owcDdLenpjTmgxYzV1X2Z4U2xXNEVMSnJZbjBVRl9FbTFnVVViUFBwS1BKejd1aEJTaVBBX1hUdDNnbGw0QVBEVkZpdnlfNi1WS2p0UExVWTM1cEpzN0pUUU1GWUQ5c3BBQ1BGYm9ZT183OHNVR1E4akxRRmJySzdHenJIVm1XU2hMd1RRSV9LTQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-885f3071f5c8",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普顾问：中国半导体设计能力最多落后美国两年",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qVkdMMTdRQ3NSSkpqWlZBRmxEOTd0SUxIR1lLUl9wS0tvRDFYR1dUNURKT3lYeDhUU3Q1UW84djNNcXlHOVJDb2cwSE5VdGppN1U1TVFNV0JnWGhFNUZWTVVuQkswMFFSRHc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3c727f9a78cf",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫顾问预测银行将被迫参与稳定币游戏| DNT_Capital发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDRlV2RHdValhBcXpTTUhiZmNaTE9BdWw4aGRFU29BakhoRWlWZmpHOUZCdGVDTGtGenlBR2NycUVlSWRORWtFNnJLd0ZpRlRscTJjUzI5OVhqajYwOHFzc2NuSWtyLUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9b096c97b41e",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔秘密“邀约制”俱乐部内部：性、造神与第三次世界大战",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOSlhpR3d6enhpeF9oek03UC1salNTR3FxbllGdGlUckI1OXoyVjJXd0lzY1YxbTZyQWhxdEpISmJKMmpKUVM0NkxNUWY1Q0ZaY1ZLUFREM0tYek5kRXBXMUpuaGRhOUdhb2VYOHRtLTBZUGxSM2J4Z01vcDZWOUJkaUM1cllaU2pwOUhpQTBYQ2UyTlMzek5xajZIbzYxWEhjWVRfVDlWb050blEtS0Jpa2owZ1lJeXN5cTQtWVNSWDlmdmVVNkdFRGRvQ2xQR3k5dnpWeFliRktfVnAyLVBuQ1M5UjJZYlVKcTVPYUZNY0tHZlVrdjFsaXh3NExSTldqOXd3M2p2RE1FSE9zT213VHFqRlBqZWJGS1VjTmZ4MFl2V28zbF85b3RtVGp4cThZYTlPMGFR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8bfa047cf20c",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Founders Fund推出自制游戏节目《Mafia The Game》，Sam Altman、Palmer Luckey现身首期",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLW9GcUhYX1BwbnNqWmRmUzZjRlF4eEp1elpDVlR4WEN3MVV3bDN5aXg1S3FVd0QzZE84Z0pTQmFsV2FLc3F4TkJmajFveTlPdm9zcVJJNE1YTk00OWIzQWJGVFo3NjBHS0lvMUFMeFFQcWt4Vk96dFNmZXllbHBjbEJSYUo0RUQ4djNlRkFieEJJTzR2Q09tX2w2cEQxQU04aFJkRHlXRUJDS1VYaFN0WE9rNzVqX3NNQW5pVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3ef5be7ac348",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z Crypto：Marc Andreessen 与 Chris Dixon 解读《CLARITY 法案》为何刻不容缓",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZ2RDM2Ewc01KdmRzVUJmR3FOUHBrTGVDbmFMa1VxWWZCaVR2N0w0U19hQWUyV3pzdWpINV9uUjNJd3BFVDFiRjIzak5UeWt6eTUyb21LQ0RTbHU2ZGNUTXFoaFNvc1NDeVJYUHE0bVFxMEdKSzE0MFlaVC11c2l5aS1GQWVWX2hSQTcteEYyc0tkeGZ1bHpYa1FpdGZoQUh5UGc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7de85b429e0c",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreessen：加密行业扛过监管高压，正促使华盛顿转变看法",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOS0RsWklCMWpGT2gxZ2p0OTFyUXFoMm9HaF80YnozV2ZqdlR0dEJEc0R0M1VzSlNNZ1B1NVBwVGcyRnhYZUxpS2lieUkwOUpJX0FyaFhreWstSi0yNkQ3T0d2UWpGd2QxNmUyWU9pcGtscEt6dklpQjhMNFBfeGF6Tms0ejlWOURuUDJCa3dRc1VWT3d5ZkFrYUVqZ3dCcUYyUTVQWnZBRGU3UUpmTWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5fdbad593857",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：增持Intellia和SpaceX，减持AtaiBeckley和Palantir",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORFFSU3Z6d20ya2UxekZpR2UxMTJ1OU5WVjBKVk54OE53Z2lOcGNuQnZJeFhVdk1pbXYycEtycHdCc3R3WGE5MFdGc2xsTjdySktlZkcxQ2JZOGNYSVNHdnRoUGRSOVR2akFhMDVPRU50aTlpcGdHLThVYklKYmtHcWFuaFk1SGN1OHFwUG80d0ZhXy1vTEh1cE8wUng4TEF2bWN6Q2ZWWGdmSGQ4WU8yYUh2aWw5SWprS2trdkVKZEZURk8yZFdJQg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3ccea7b28b77",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "🤖🔥 Cathie Wood：人形机器人复杂度是Robotaxi的20万倍——Elon却说2027年就会改变一切？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPakRXZnV6NHkwNFJHY3EydmxxVXhMVEljQ1JwRE84cDFJZjNqcDVjNWdrY1NmaFlPN2pOWmhORmgwUWxXQmhuQ3I3WHFXRmEzV3ZBUm9QVHFSemdVZGhneHp2VnVUelNQMHAyU1E2ekJVSVUwLUhJaFZaMUt0eUpYcUQtbUFWUGNHYU42cDRCa2tZV0JIUXRQeTBhSzJKYllDZlBxLVZQcTJmam9sZnkydnh3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d1666260b439",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "開槓桿重押AI跌下神壇 明星避險基金光芒不再",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrNk1Hc0ZHWGJ3TldLZ2JudVFzQXBDVGtoNmI5LUtDUUFMTVNJTEUyU0FPTFB5X2pHUVhpckZfXzNuemNUVk9jWXp2eXB1aVloX0dfLTV3bWYwU1VENmdfYXZaT2pNR0xZWGfSAWdBVV95cUxQa20zdjdZbGlucHBIbVkwU0dzZWhsMjd3RGhWWmVrMDg3VVMzT09ZM2dEdnp3eGNIQWY4ZlN5ZDJoM2ZXLUlQeXd5V3Ria1lRSXVlRGJtQTB6Y3AxSWVKTG1UMF9pVE5r?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ffe5abcd6ac8",
+   "type": "event",
+   "ts": "2026-08-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Aschenbrenner的AI基金崩盘，Citadel逢低买入",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VVl8xb3lPdElFSFh3VzE2LTVyYk96TV92d1g2ZVZzVVJPZ2NUVVNTeGw0TU1TZl90MEdPblNvQ0lScVpZVkFYeHNSNnVYekZ1c2prOXViWGE0NlYwMXBYUkZxZ3BkM3lyejFNSVNraDB2SGM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -11416,7 +11656,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2144 · xAI 199 在招（2026-08-07；Tesla 无免费接口）",
+     "v": "SpaceX 2154 · xAI 201 在招（2026-08-08；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -11996,7 +12236,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-07 09:35",
+  "last_run": "2026-08-08 07:03",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -12007,7 +12247,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 36,
+   "edgar": 37,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -12017,7 +12257,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-   "net": "2026-08-08T14:00:00Z",
+   "net": "2026-08-08T16:24:49Z",
    "status": "Go for Launch"
   },
   {
@@ -12038,26 +12278,10 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
    "net": "2026-08-16T01:12:00Z",
-   "status": "To Be Confirmed"
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "xAI联合创始人相继出走，马斯克称须推倒重建 - 华尔街日报中文网",
-   "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNlduRlpGMy1BSEwzLTJ0YjZYaVMxbmtUd1lGc0xwdFZKQ2NKYUhyZll6VzctVDZnMnpwNWFjanVqeEVVSWRTZGd1cklZdGx1dVpWVG16UXlWaXl6b1dpOU8xcTRleERLWERNZ3IyNS1BNEw2X2JlVURuc3hQM2J6TUVNZGc4djdRUk85WGFNOA?oc=5"
-  },
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 18 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-07",
    "rule": "R3",
@@ -13000,6 +13224,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-08",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcTJ5bjE4VXAyUGQxQWU4QU0zQmhrcHpnS2cxaFRXRW1Ua0szMnJoU284bWlnclpfNUxIRkJiM2ozMFF3TEI4NnZtRTVNdzZaSHF5TG9WSFptSG5uU3lMaUd1aUNfMHdhb01TbVpyLXY5cDdTZU1nNWFmem91VDQ4LVZ3VGI4ME9yQWUzdGdtYnQyWFhpUW9aVExMUzhGZw?oc=5"
+  },
+  {
+   "ts": "2026-08-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
    "src": ""
   }
  ],
