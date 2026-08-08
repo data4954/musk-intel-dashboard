@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-08T07:03:02+08:00",
+  "generated_at": "2026-08-09T06:55:18+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-08",
+  "asof": "2026-08-09",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 328.58,
     "chg": 5.58,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-08",
+    "src": "Yahoo 2026-08-09",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 22.83,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-08",
+    "src": "Yahoo 2026-08-09",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64852.21,
-    "chg": 2.19,
-    "src": "Yahoo 2026-08-08",
+    "price": 64909.31,
+    "chg": 1.33,
+    "src": "Yahoo 2026-08-09",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0696,
-    "chg": -0.72,
-    "src": "Yahoo 2026-08-08",
+    "price": 0.0705,
+    "chg": 0.71,
+    "src": "Yahoo 2026-08-09",
     "status": "green"
    }
   ],
@@ -183,6 +183,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-08",
      "c": 328.58
+    },
+    {
+     "d": "2026-08-09",
+     "c": 328.58
     }
    ],
    "SPCX": [
@@ -320,6 +324,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-08-08",
+     "c": 133.11
+    },
+    {
+     "d": "2026-08-09",
      "c": 133.11
     }
    ],
@@ -459,6 +467,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-08",
      "c": 64852.21
+    },
+    {
+     "d": "2026-08-09",
+     "c": 64909.31
     }
    ],
    "DOGE-USD": [
@@ -597,6 +609,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-08",
      "c": 0.0696
+    },
+    {
+     "d": "2026-08-09",
+     "c": 0.0705
     }
    ]
   }
@@ -11554,6 +11570,232 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VVl8xb3lPdElFSFh3VzE2LTVyYk96TV92d1g2ZVZzVVJPZ2NUVVNTeGw0TU1TZl90MEdPblNvQ0lScVpZVkFYeHNSNnVYekZ1c2prOXViWGE0NlYwMXBYUkZxZ3BkM3lyejFNSVNraDB2SGM?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-b808154d12d7",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "这就是 SpaceX 公开募股（IPO）对其持有的 18,000 枚比特币（BTC） 的影响",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRVFkM2dldHJsVEN0OWI5eXR1bDZZR082MVdJWjEzWlQxaEtwbmJZeUtPVXNMLVNtZ3RTSnBBVDVZS2ZWcWFyMTBGQnNDM0hIQldvT3c5cy13bWxmaXpMUHBKNnR1bW1RVjdYV1FOTWh0Nm13N0ZISHRMSDgtenU2TFhIUFBaY1ZmaUVZX3EteXNHb3V2WjlyLV9vNG1YTXJRU0otV0pPOFd5LTBkc0EyaFlaQWlac241?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-e28c0f1059b0",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克过去3天售约50亿美元Tesla股份",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPSklOS2VkS1ZydmxmMVEweXdTQ2FBcGx4Qk5vdFVXejk3YjBQV0VrRUhfaWI5Y1NjeDh3Y21yWFFGRnFmTmdTU3JHX1hBNkhnWDYzS250cHdhN2FkS2NZd2pWVlZxTEhKY1lGQ3h5OVg4b05OYTd2MmNucUh1MkVId2NNQXQzOXFyeU5zMzlOcTRBOGJwZXgwVzBtbnFqRnd4TEN2RFlpeTF0eFFza3doQTFlRTR2cTdNc3VjYlBSZDR4ei1LVTY4QllYM0tjV0xlMGdFUV9DSW9GWjFkWE9QNlJ0aFd4RzZBZ2I1R3VKQWdaRW40T0ZyUGZwVWt1cm5STmI5dnltOFZDQWM3MURiM25rR1ZJMDQ4OHNwOE95TXNhc0REY0plbzF3WS1JZ2JQN0p5UzRjNnl2dUdiMXVyXzNIUEJSUllxNUpCQm1n?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2b725da99688",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "特斯拉股票大跌前夕 马斯克弟弟抢先套现4.5亿",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBheDAyS2dXYW1YYTRHUW5Cd051NWxwN3F4THFkOFVSVjZRWnhQQTVZUHdOWmlCVmlUWWFlMjVDNWhsNmpxRl92X0hmNEZSZEVUVHh5ZVNoczlHcWV5ZHVqNkdn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7304883f5b55",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "特朗普又赢了，全球第二富豪绝对掌控美国媒体巨头",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE83X0xWOC1oOXJJdlRxNmF6bGlvSzhJeXViUzBTd3RNYXhPTnZ4ZndBcXZlc0NCOHZmVVpOekdzWlk2d3lYRFRNNEln?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-966aee4da364",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文联合创始人埃里森一度超过马斯克，成为全球首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB3NTFXUUo1VWx0ZzNGaUhtbXE2bjJGa25CQ0FyZG9XYmliY0N5SGhreHVoQ3NqY1ZiNlIxOG83c29QTHB0UWp5ejhCbWpNaGZpRVVnV0djeGRBSHdFVFN3clZfWmE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c3ef778ffc38",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美国“加密沙皇”首次数字资产发布会要点：推进市场结构与稳定币法案，正在评估比特币储备",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMRzZzWW9YZjlSV2w2a280NklfQm05RElNTUJJa1VZXzF4NWZoX2V1R0dPbkZtSnQwMzJtZU9EdHFuNTc5TVdFZEN6cXpmZ2V1ZVo5VDc4bGtrUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-eec006cf6e3c",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "《财富》：AI竞赛已从“中美对抗”转向“开源与闭源之争”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1vVG1yOVJfR0JLZkdJTEEtaUVTVFBtX2xDZ3RLNEF5RF9kNnNyeWpPWXQ3NW1xUkFfeXhteUVFS1NBWWFjcGVWQnlCUF85ZXBaZ054NkdLclVpdU1s?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a4923c7db72c",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "《华尔街日报》丨彼得·蒂尔希望所有人都多思考“敌基督者”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1CS1lMZy1Ed0lDQmx2bHd3VXlaellBQVBjYmRsYXRKVlQwd0pVdmNxeXdNMDAwQ2Z5a3lOc3Nma2tMN1ZkSm9xWk5tV21Vb3BubFVJeDRR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1b38445f955d",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷银行遭挤兑倒闭3年后，Peter Thiel自己的孤山银行正式开业",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1zU0FRU3BUX0I3M3RuUXlKLVRNekdiUmoybER6bm82M2tyWHNmRDRDMUlFM28tNVRfR0V1NjRaMm80MmV0bXNKbGtucUl1QlVvZWN0TE5QcjNteUo2LThjOVRIR0xFUdIBa0FVX3lxTFBWTjBocjVqcWdQenBiN2QweEpqb3QzcDFVc3hoNTRBSGtRTU1SdzZJbWVlVVUwNFJ3OHR1cFpsVEJ3U09sTi1ZclBfZWxoR0VyUHJfSVNRZ3gtaExQWDZOZFV3N1VETUZ6NXQw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fe903a3a7165",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreessen：1999年大家热议的公司现在可以开始办了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4tTjd2SmRlUF9lT3VrNFFRd1k0WkNNcHRVdGZjV2YwUlp3UDdybWxCelpVeHNvcWJDZ0lGb3F6N1ZVcWNRNy0wLU5B?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-198e08cf6dd1",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreessen 在 Joe Rogan 节目上的爆炸性发言引发了“去银行化银行”讨论",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVDdCNUduZEF0ZnRCdTdhOXY0OE9GRTA0UmczTDJsbjl2ZWlzSW90Z0Y3bEQ0Z1ViNnV2b0duREhHNTI5bFo2ZURrODg4d1JlMERYMS1lN2ZIOW43M1VkT0d2SE05Uk1IQUtnMDY4VUItTEg1NmIzblpHRE5uZlFwVEMybHEyc200dF9jVThWcFlqQnM2c180TXBtNVZSTXRMUWd5ekNyV09pNHFpWWRWM0ZxV1Nfc3FOakJFQkNTMU4wNnpndGtJVnlZdEJrSTAwckJv?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7e7209a5ca56",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "“木头姐”年度重磅：ARK 2026 Big Idea",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mU1R6YnBYYXI1WGZuczlMSTRqQVdQSjFOZEdmaTNZem92VUFfSTNLYnNyaWVZMXRLMzN1SHJsRDNvdk5xc3J5VUJPNjB5d3RqdTEw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ffc324bd66b3",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "加密货币周报 |Cathie Wood的ARK逢低买入，押注美联储政策转向",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeHBNQ1BzVkRPaVRGSk9YWjJidVpWWVZQdkdZdHdfcjJWQlhva3RtWVBfNTJQRkNMa1BxYXlNSmZUazkwNHp6QUFMbUFiOWszQnJNRjNzay04NnZIcjlmNUFXTWg5TjQxMVhNZlJHNEhYQ25VRGdVZmlxbVR0Yzc5ekgxMkd0Sm01T3dCZjNTV09oTGtEZDBzc1RpdldYMC1LaGVvYVVNNFJ3MFNkaWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8ba45c6870c3",
+   "type": "event",
+   "ts": "2026-08-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel首席执行官：“白宫应与美联储保持距离” 强调政治独立性- 阿视亚经济",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE16UDhfSWpQdndMS2dFYUVkaS1xel8ybjlNeHZGZklvZTVjMnpHYjFCbGpBNF9iQk5ORml0V3R1RGhockxMb3pYUUdTeFJOU1RYdVVtY1o0WFRzRElfQVloZXNGN2Y?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -11656,7 +11898,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2154 · xAI 201 在招（2026-08-08；Tesla 无免费接口）",
+     "v": "SpaceX 2155 · xAI 218 在招（2026-08-09；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -12236,7 +12478,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-08 07:03",
+  "last_run": "2026-08-09 06:55",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -12247,7 +12489,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 37,
+   "edgar": 38,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -12257,8 +12499,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-   "net": "2026-08-08T16:24:49Z",
-   "status": "Go for Launch"
+   "net": "2026-08-08T16:35:02Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 10-19",
@@ -12282,30 +12524,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克1.25万亿美元并购案幕后：一场AI与太空的豪赌 - 华尔街日报中文网",
-   "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE1NNzBZTl8xVDVIZ0xSYlhzNEMwcXZtSXB4cUZFcGk2UmQxMXJvTEtxVTBEckdTc2JVb19abU9uZVNteDU1TUhKRGRBRUdmN2k1STBJd01tSm5SWHZFLXVFdVdMcnpKSXpjc1cyTWtBYmV2QQ?oc=5"
-  },
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX 与特斯拉若真合并，投资者该狂欢还是趁早离场？ - TradingKey",
-   "src": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN3NDQnRBeDhwclJ4WlZGVTlHT1lQbmVDMTQwQmxIRHRnS3NwRUZMLUpYMHBkVTlNUjVSVU9SLUxBczFNTjBTNG9YNVpWOWNiVU03WlB1WlliY1lhZ183Q19falJVams5bnR6R2RzbFJsZXk4bkhSNkh4VUtQcEw5UXZMRkQzVlptZWhVVjhEbTcxZnhyLUg5em9XUTNpRktWYVRoakJTcUxjaF9Yd1VEWnNVS1pOanlPWVBSdjktMW5fd1VPZDdHM2lnUQ?oc=5"
-  },
-  {
-   "ts": "2026-07-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "德国人为何不买Tesla？调查：因为Elon Musk的政治立场 - MyWheels 车天地",
-   "src": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOYzlENkFLR19rMElXX0xEV3E0M1pKN2I3b01DbUpXM0lzUVBmaWx2eDZUejJabUpFeV9XWWVGdkwtcHdtQmUwOE1nWVlqSGtVRGhjeFFwYXhxOHR5bWFCYzJHXzZ1YWpDSnVILU1fWEhpdFlQYWc3Ni14VDZuNGpIUmhGWVplN1RBanRiY0RWejU2YnpubVFNVUtVdkJtTlJpbm9ReEhWdXVjUEljT3FwckdDQV9ZTVF6S1BFU1lUbHprYVRDRERNVDNGMFpmLU16QURNT1FBRkJXWGJ2SmdvREtGdDc1MW9YLWtUR2NIcjZTc1h5eXFIUmduRWlReHdpRVQ2M0lER2ozVE5XcnQySmd4aUR0cVJ0Wm02MExRdmo0cFl0c0RLLWNPTEJUT1E?oc=5"
-  },
   {
    "ts": "2026-07-07",
    "rule": "R3",
@@ -13240,6 +13458,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 14 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-09",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcTJ5bjE4VXAyUGQxQWU4QU0zQmhrcHpnS2cxaFRXRW1Ua0szMnJoU284bWlnclpfNUxIRkJiM2ozMFF3TEI4NnZtRTVNdzZaSHF5TG9WSFptSG5uU3lMaUd1aUNfMHdhb01TbVpyLXY5cDdTZU1nNWFmem91VDQ4LVZ3VGI4ME9yQWUzdGdtYnQyWFhpUW9aVExMUzhGZw?oc=5"
+  },
+  {
+   "ts": "2026-08-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "这就是 SpaceX 公开募股（IPO）对其持有的 18,000 枚比特币（BTC） 的影响 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRVFkM2dldHJsVEN0OWI5eXR1bDZZR082MVdJWjEzWlQxaEtwbmJZeUtPVXNMLVNtZ3RTSnBBVDVZS2ZWcWFyMTBGQnNDM0hIQldvT3c5cy13bWxmaXpMUHBKNnR1bW1RVjdYV1FOTWh0Nm13N0ZISHRMSDgtenU2TFhIUFBaY1ZmaUVZX3EteXNHb3V2WjlyLV9vNG1YTXJRU0otV0pPOFd5LTBkc0EyaFlaQWlac241?oc=5"
+  },
+  {
+   "ts": "2026-08-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 13 条（明细见各人物卡）",
    "src": ""
   }
  ],
