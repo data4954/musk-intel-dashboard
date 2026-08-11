@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-11T07:04:39+08:00",
+  "generated_at": "2026-08-12T07:10:30+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-11",
+  "asof": "2026-08-12",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 330.88,
-    "chg": 2.73,
+    "price": 332.81,
+    "chg": 1.67,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-11",
+    "src": "Yahoo 2026-08-12",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 138.74,
-    "chg": 21.14,
+    "price": 133.29,
+    "chg": 6.35,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-11",
+    "src": "Yahoo 2026-08-12",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63935.99,
-    "chg": -0.51,
-    "src": "Yahoo 2026-08-11",
+    "price": 63524.09,
+    "chg": -2.09,
+    "src": "Yahoo 2026-08-12",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0697,
-    "chg": 1.09,
-    "src": "Yahoo 2026-08-11",
+    "price": 0.072,
+    "chg": 3.46,
+    "src": "Yahoo 2026-08-12",
     "status": "green"
    }
   ],
@@ -195,6 +195,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-11",
      "c": 330.88
+    },
+    {
+     "d": "2026-08-12",
+     "c": 332.81
     }
    ],
    "SPCX": [
@@ -345,6 +349,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-11",
      "c": 138.74
+    },
+    {
+     "d": "2026-08-12",
+     "c": 133.29
     }
    ],
    "BTC-USD": [
@@ -495,6 +503,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-11",
      "c": 63935.99
+    },
+    {
+     "d": "2026-08-12",
+     "c": 63524.09
     }
    ],
    "DOGE-USD": [
@@ -645,6 +657,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-11",
      "c": 0.0697
+    },
+    {
+     "d": "2026-08-12",
+     "c": 0.072
     }
    ]
   }
@@ -12250,6 +12266,232 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeU51c0FILWxpSDZaT1h3bFJIclFMYy0zZGpjN3hfRE45RmoySmlqVTM1WDAxMTJ4dUFPaG00MVJabEFXWUdDeUFGaXh5WTgzdUhGUGhLX3EzWHhra0s3UmJ1Q1Z3Rl80a3VkZmRNT21TcjRaQXRfUXMxaFd3ZF9WQ2tyVHhfbXRzdjFtN3F1RDZjVU4wWDI0d3gxS1pqdUV4Rk1Lcjc3bjBqZ00wMFpuTm9WYTUwZnpnVC1YMVFLT0h5NnNIWVE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-cadcf391571f",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "突发！600 亿美元！马斯克收购 Cursor",
+   "payload": {
+    "src": "新浪财经",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMidkFVX3lxTE02TEJUSVFMT185SVRraDZsYlp1X05UUjl6M3AtbENnUDY2SURWYk1aVERMZTcwR2pZM0VnblFxOWVuZ1YwSlRGYzl4WXpXTlNLRDlrQ2pzZHZJeFhRV3RJcmtJanFOc0NGbENRQTVaZkppN0VQdmc?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-889682995ed8",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "美媒曝马斯克“长期吸毒” 律师斥假：从未药检不合格",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40VEozNjV6OGpvbzZIX1MzNko0MWF3dV9tRlZZNU5DM1NuckhiemVuMWl1aThQT0VIcWU0dWhvQzNBdlBmZ1lWeUZJaV9tMm03QTRZcjh6RUktYkpKcGROUUR1MzFxR1doeHpYZg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b8ff85d0149f",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "深度揭秘马斯克的投资哲学",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTE42blFONTFjbEVzSEJGNjd6N0VreVF3ZGdRWnRiQmZVNExNZlp1dmlHN25ocDBjRnQ0eEFqRlRTRGFqVDRJYWFuZDQyWjgxVHFvQ1VBc2MyVzNIOHQzZzJLMktDRHppSWpTRjQxWE9TNnJUZ1pM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-22578947d120",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "没有随访也未出席晚宴，甲骨文埃里森为何仍能从特朗普身上获益？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSNU5zRVdhaDRYc3htdXFtMGZIU3FLYWNWQW85UThPMXNMVV9fcmJBdTQ1Q3JBSlpGVTBaVVFCZlowMlZReV83aU5wd1ZodUVvS0pMM25B?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8c85d30ae542",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "新全球首富，乔布斯生前好友，为什么是他？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDdVhqQWNIVUZBcnE2ZEpVWUdyTkVEdklmQVlYYm1mcmdvdldzajF5bnA2dzlIa19VeHctWHNETTNLVkJQbS1HYl84OFlxX2thRUVNUEtB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3c28f24e9956",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "DeepSeek被美国质疑“偷窃”，遭OpenAI微软调查， 论文曝突破英伟达护城河",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hdnhRWkppLUJESkZBaldhU2FFZEpuYjF1TTVPVVEtR3d1MV9pWjBkUExtSTVTTDdYMVpUUkE5cG5pY1FBR0FGYWdFZ2UzcnRQM0E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4a1b8b80ee9b",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "紐約智庫晤鄭麗文 美聚焦對中「硬嚇阻」",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZzQ4ckVsaktEM052TlZjaFNNdlczaHhMdEdIb3ZfRVByWjhsRTNoU09ZTFJOd3ZteGNLQ2c3LWNtVVEtalNhdEhpTm1NcUdnSG9WYS1XcWtKUXE1RWlWdWFTRU0wTjduN0cxOXMwQ2ViaWVVdGVvcDJIZFg1Vm5GZmN3b0k0Z9IBZ0FVX3lxTE84UmRBMXpBRWdDRjh1bmx1UlQ5Vk5wZW40Tjl4Q1ZydnJSVV9HZjYyNTN1NkRsV3pTcUFfRWxUbHN2WUZyNkxKXzEzcmtCNUhKUEx3WjZjdmloTTBSMU1IZHVGcnRHQkk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e16a2aae67e3",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "创投教父Peter Thiel 3小时访谈全纪录： 从科技巨头到世界格局",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA3SEEtWVUwaWh5UW9VckpKaUZvZ0tWV19qUnFHWXhNOW10a3ZSanE1VWJyMjUtSVE4Q3lxZUFTUjdHd25uSW00ODVyX0hFNzZ2OTdtWg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c7dd2926f84b",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel称沃伦·巴菲特为来自奥马哈的'反社会老爷爷'，比特币的'头号敌人'",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VQk1DdmM3cUJQNkNaaWUtbFBpc2pNTEU1d0VkeWZsa2ZuMHhidk9mX3VURmlhdjdRSTBJUWM1Q054NTg4X24tUEJtM1R3N1NyT0U4X0FZQmdmeFlEMWxwejk5bXNGbDh1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-07536849f1b9",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "WeWork创始人做“美版自如”，a16z叒砸3.5亿美金",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16b0FQVFAxNFg5eXJyWUtUWmV3RjhOQWJleHZLQkFuZl92S296NF9TWWV4TkMwcEt4ejhWTVBWSDN6OFhucWMzUkZ1cW4zdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-43c5a2fd8cd3",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z 创始人深度访谈：我们为何需要 CLARITY 法案",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE80V3RMYl94alN0OWVpcGhJNk0xdmphdWVmR3MzelJiemtuQTVDMWpIQjhteGpJLUFGRjJGeHhKamt5ajBuOFNkTThxeFlTSk5GS05zNw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9018993f0f1f",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "罗恩·巴伦表示，特斯拉在10年内将价值5万亿美元。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRVh5cVloUmJoVHQ5MUczOVg2T3YyWEtxZW9RQ2RsOVdUWFdFdTN5OWduTHRoMW0zMlhyeUVNSHBqTmdRTWtEMXROZlVQSzFEUEQ1Q21HdUREaE1pNXJPVDJGSnBtakQ2MWtGczhQMTJmZDRqN2I3bFFESDF2M253VFh0QUZITDJoOGZBVkZuZ21yaldUT2RkZnNjcV9jX3ZXNmtJVmRNNnpDc3M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7a3d992018da",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "特斯拉股价预测：Cathie Wood旗下ARK预计2026年将完成与SpaceX的合并，股价有望复苏吗？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWm9iOHFUNXNvMEpUZXRUMlZDem54S1lYa1Fpd0MzbUxfdE42NmpsbEMzUUN6amFhMk13RjU4YVZqVUhzQUpKbXZsMllXTXFxaDdRWGpIU1JVbUhuV3IybkI1ZFdZQ3J5amExR1Q5OGpnQ2E1WnUtY21aYXA2MWp1dEhPMjlQZk5JMnVIWlB1V0dFSVgtczJQcU9XY2lBRUFiLTM4R2FwVUpwZTZDNUdYcWlxSHZ1aXNkWW5NemQ5Z21paTR2MTIyY05Uc1FsVjFnajJaYlZValVHMUU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-727225464604",
+   "type": "event",
+   "ts": "2026-08-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Nvidia's New AI Plan Could Make the Stock Riskier. Cathie Wood Is Piling In. -- Barrons.com",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSFB1YXdldWlxNDJRVW16YndnOXlZLVlhM0dMUVN6Nk9xeG9QSnRLVnl2LWFXSS1QN2RpdlU4NEI0cnRzTkE4OC1GRm16NGlZT3FIdVBKSGxsNHhieDRybS1ER2tqNzVxcXVsYmx5YnczMGYxcHF1czB2OFFWOEZLMndENXlBbFJqWllOaXZNd2Q3bGtzaWdBZ0hGYjM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -12352,7 +12594,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2143 · xAI 220 在招（2026-08-11；Tesla 无免费接口）",
+     "v": "SpaceX 2139 · xAI 214 在招（2026-08-12；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -12932,7 +13174,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-11 07:04",
+  "last_run": "2026-08-12 07:10",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -12943,7 +13185,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 40,
+   "edgar": 41,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -12953,12 +13195,12 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 10-19",
-   "net": "2026-08-11T14:26:00Z",
-   "status": "Go for Launch"
+   "net": "2026-08-11T15:58:26Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-49",
-   "net": "2026-08-12T02:00:00Z",
+   "net": "2026-08-12T04:46:00Z",
    "status": "Go for Launch"
   },
   {
@@ -12978,22 +13220,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-10",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Jim Cramer：SpaceX高估值背后是市场对Elon Musk的押注 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTC1YRkU1ZkpvdjFRMUJwMkZyZ2Y3SFFNbXVoek9EMFMzOUMzZTBEY0NzRlhNdUVqNFNkMVJHd0VMMGdHVnE4QkNXZktuM2psRlZLdWVQSXkwcnYtNW9rb0pVd2s2eUVHeEpEbnZzZFFEZ2c4M0ZXNktsWHU1UDJCZ21PRF9yU0gtVUpNVlZ4RHpOcWthbVJjX0lqOXViQXJzbTM5QmFhTQ?oc=5"
-  },
-  {
-   "ts": "2026-07-10",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 17 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-08",
    "rule": "R3",
@@ -13936,6 +14162,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "突发！600 亿美元！马斯克收购 Cursor - 新浪财经",
+   "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE02TEJUSVFMT185SVRraDZsYlp1X05UUjl6M3AtbENnUDY2SURWYk1aVERMZTcwR2pZM0VnblFxOWVuZ1YwSlRGYzl4WXpXTlNLRDlrQ2pzZHZJeFhRV3RJcmtJanFOc0NGbENRQTVaZkppN0VQdmc?oc=5"
+  },
+  {
+   "ts": "2026-08-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 13 条（明细见各人物卡）",
    "src": ""
   }
  ],
