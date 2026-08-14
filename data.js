@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-14T07:10:19+08:00",
+  "generated_at": "2026-08-15T06:46:53+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-14",
+  "asof": "2026-08-15",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 339.96,
-    "chg": 6.39,
+    "price": 342.27,
+    "chg": 4.17,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-14",
+    "src": "Yahoo 2026-08-15",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 141.29,
-    "chg": 22.95,
+    "price": 140.0,
+    "chg": 5.18,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-14",
+    "src": "Yahoo 2026-08-15",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63420.39,
-    "chg": -2.2,
-    "src": "Yahoo 2026-08-14",
+    "price": 62816.36,
+    "chg": -1.71,
+    "src": "Yahoo 2026-08-15",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.07,
-    "chg": 1.09,
-    "src": "Yahoo 2026-08-14",
+    "price": 0.0698,
+    "chg": 0.09,
+    "src": "Yahoo 2026-08-15",
     "status": "green"
    }
   ],
@@ -207,6 +207,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-14",
      "c": 339.96
+    },
+    {
+     "d": "2026-08-15",
+     "c": 342.27
     }
    ],
    "SPCX": [
@@ -369,6 +373,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-14",
      "c": 141.29
+    },
+    {
+     "d": "2026-08-15",
+     "c": 140.0
     }
    ],
    "BTC-USD": [
@@ -531,6 +539,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-14",
      "c": 63420.39
+    },
+    {
+     "d": "2026-08-15",
+     "c": 62816.36
     }
    ],
    "DOGE-USD": [
@@ -693,6 +705,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-14",
      "c": 0.07
+    },
+    {
+     "d": "2026-08-15",
+     "c": 0.0698
     }
    ]
   }
@@ -13008,6 +13024,266 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE41OHpnR01xcllodjlLNjlvamRYcUtyWjZrOGloRk5QQUxBYVg3bGh4TXN4blNlTlB0czY4M01BdnczSTlWakJTU2RHSXhFX002dUFZ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-ad68c2d13650",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "报告：Elon Musk 2025年薪酬相当于Tesla员工平均工资252万倍",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZFZoYmRCaGtVeVpQaU5pUkdXdnJ2SHVJSGY0b3MzcS16ejF3SXRzdmF4RkVvcm1vellfdm9nRzJmRmNza2pIM01zN0Z2cmRyUk5pWXBBd25ENzdwWUFGUmc3Ny01WWR1RDFvTEpWaXE4T2ZFQm9IdVkzLUZQSmNqS3VJN3BDdDN2NDVUZnlSMVVYSGxJa1VjZzhtS3hZdE1ybW5mTUNUdw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-51ad3133a9b1",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk拼2027年xAI算力增 年营收上看5,000亿美元",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUd2ZnlSMW4zVncwRGxTRG5pRGhtdTV6WmxrU2lBQmR6amhXU2RXeFdBTmJSVjJGTnNoODdLQTl5SU53Y3ItZFpYOHpLYTdvbjRWbmlpNFVkbDFKeUxXdWROXzJncVBnTXNmNEhrLWxMVjBHaG9RTnZxbmdHNEhSWVBCME4wUS04M3BFMmVwYnV3WC1JdzNWcHBfRHM?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-603b7abb155f",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克遭控内线交易 出售特斯拉股票大赚141亿",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5MTG9RMWdqa09JdTNhTkctWlZyWXM2YncwbXRVd3ROUVdTSGdneUJvTU9PNUQ4LU9SSE5IZVpRYm5WRmhxbC13b0ppQVMtYkFCRUJ2MkctTkdKUGE0Qk1TSy1B?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4a32a638629d",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文联合创始人埃里森财富暴涨700亿美元 挑战马斯克全球首富地位",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE82YXVLVk8zRWVQRHYzSVc4enZaaUR3d3lZN296OUI4Sm1vOG9aUkZhUGE0eEZfamNiYWlZazFvQU1ZX0lPU0IyTnZGZktpT3djTHZIOWdaajgxeXNCa0lYYnFYdFRpNGhGNmVNWUl6MA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9f23a2303714",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "突然成为世界华人首富！ 33岁华女嫁81岁老外丈夫(美中報道）",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYjNMQUxtU1ZfMDBaSm85LU9TUTBlWllSWWdJZVJldDg3U2JmUE5EZjFkQ2pGdVFPWUk3TjZsdFdRaGpoZ3dCcHo2dEhENDNDaGVPRDh4WHRHQndjOVpYRFNJMGV3YS0yYjk5NEw1V2ZWQll4MVRhMHZyNHRmT3BXaEFEVWxHZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8f833239beab",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "币圈迎重磅利好！特朗普成立加密货币工作组 探索创建国家储备",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9hX2lrSU5FcU1pSW9jQ29CRmJ0Q0NOcEhsU3FodmdWbXlKdWk5U3ZjY1lFNjN1SF9vUmNNMTZTWUh0MXhIdFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2134a5853b62",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普将大卫·萨克斯(David Sacks)指定为“加密黑客和人工智能”,Ripple老板:他了解深度技术",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1semZmV3RHME9zUW1GcFhzcWJKbVY5X1NwVVRVOGwyYWhIcTY3cHBIR3VoZTZ4bE9JVHJBaEkySENUNDZ0ZmxtdGdoU1VpYWvSAUJBVV95cUxPTjlyV0h1R1JucVB6RW55MHl4NWQyeUo2SGFycXJOWTZ6R2dtZGp2b1ZXSXllQkhONklBOXJfakhzUHc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e2552dcb868a",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "4000倍回报 马斯克的贵人赚翻了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PekVBNEdNa3hoX1JGSzNDUmJpaWltdFNuUjE4UFZ3X3FfV3dBOTZhZkRnNnNJQTRLZFRGUTVEaHZjRWpKVXhXWWE1SS02dm9UNEhaazg3TWhUNnpxc0FnOENn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cd81029713fc",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "被誉为“硅谷教父”的彼得·蒂尔，致力构建影响世界运行规则的底层基础设施",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAxcks1SFpTTG83M3JNSll3UExpc25CSWFUVFlUNGNFLXd6U3hMbnhvVm9BZW9GRFBDWTBvQlU3MjMzdERkRk9lOVFTeFlFRE84bGFDTzJnaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9fa3c55064c2",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "A16Z推出史上最大的加密风险基金 规模达22亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiREFVX3lxTFAzUjdMR1VQNVljVlB0TVJsQWNIUFo2ZENPS2h3MEsxdTFfNlYtbVktTjBpSWZTLW5IcjZ0RkVsT1NmMjZu?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d894dd24426d",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "DeepSeek：震撼市场半年之后是否改变了整个人工智能产业",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFByTjZTSVoyTjVKX2VSZDhVTkt3TGFZTVFlX0QtbnJOUkhscEFUVlBQNTV5RmhPWldhZVpfYmJleGt1SzVneDFNa1lrbFdObDBmV3NhRTVNMVJSYmJlNTJiOFJROFdPUdIBa0FVX3lxTE80ZEFmNG91RTFfMDY0Y2Y4Rmc1NndqMjczeDFSRFJiSThuUXpvYjRyQVRkeXVER0RkOGxlZHdNOGo4cGJXano4M3Q3MjVYNFZGYTFjTzFscGtkbmRRbktHR3ZpM2pCOW9ZNExV?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-786ad60ed905",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "Baron Capital创始人：SpaceX未来10至15年或达40万亿美元估值",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BN2FoMGhkV0tLSi1Kc1JjYTZObEpub2FJREpINzBOcWxha3l1UFhwZ2hUTUhpZ3JVajhyODdFWnZpMnZrX2ZUdWlNM0xBRmVXczNzUFQxZnlPZmFBMWIzTl94S0dwZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-aae07a4fe314",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "凯茜·伍德（Cathie Wood）8月12日投资动向！加仓精准医疗与基因编辑，减持合成生物学及数据分析巨头",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ2M4dm9xcjFIS01jWjhpTk5CQzhMd2FPYTBLWE9LM3pCSEY5MUIydXFtNm9oZWNzbTRTNjJCNVp6bmZ4LVZBTnpVdndOd2xnYVVZdzlTS1hZdVp2THIxeWZrc2d3RnhvYTR0XzdILWVzVHM2SEd1Z3dTdnpWZnYwd3l0X0RVQTQyalRrR0xiUVVLVFMtUlRNdHdiLUFSQnA3alB4Z1BBYjhJT0NJNXoxNndZNy11WFNrUjNSMUlOM1U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5cbc4916e4d4",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "「木头姐」Cathie Wood 认为，最新就业报告表面上可能令人担...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB3X2MwVDVQeW5YRGRTVE9XMmtqWU5xMVlnNUhtdndTTFZlYTBfTjVmaUw3WmRSRGZBQnVVQ2locHJOWTctcF9naGtfVnBCT18ta3RIOWdTZU1qYU9XeWtrX2xMVlk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-67ec95d79a35",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "AI“神童”折戟华尔街：OpenAI前研究员旗下基金据称爆仓、Citadel接盘160亿美元股票资产",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fMUtLektNaVJ3ajNuLVhnNVZwazR0UVhUVEs3MVZCVU5nU2xXRktqRW1SV0JtSGRoVk1Kak1IWGNoaUk3MUNjbXZXaHdfMGhNdkRj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f089c2b99c15",
+   "type": "event",
+   "ts": "2026-08-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTVnVk9QSlJqMFNWMnJvdDZLT3MyQ21mamNZU0dfRGR4ZTZ4REh1YVVad3UtNlZIblc4aUxrN2hRUGl1SnMtQWphQzhCSVhiUldCb2JFN0g5ZFliajJydWhLdW9PLVo4cVk1djBYUGlTSk1vZTlKSFZuNFZHMjdMelhGNWw5cVdtdzdaU3BCWWpjcHJ4QlpybFpWa1ZjaUNLSFRJNDhXdHI4SkxUcTZyVg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -13110,7 +13386,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2169 · xAI 216 在招（2026-08-14；Tesla 无免费接口）",
+     "v": "SpaceX 2148 · xAI 219 在招（2026-08-15；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -13690,7 +13966,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-14 07:10",
+  "last_run": "2026-08-15 06:46",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -13701,7 +13977,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 43,
+   "edgar": 44,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -13732,34 +14008,10 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-20",
    "net": "2026-08-22T07:25:00Z",
-   "status": "To Be Confirmed"
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力|SpaceX|Twitter|卫星|数据中心|在轨_手机新浪网 - 新浪财经",
-   "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUmliWFlsQWZxLUN6b2ZUaG1maGZyVXUyTTl1Ynk2NnJaMWtuTjA1WkJ6X1lFdDZSanFfNVQtUlJlNzB0Z3B5LXVUZWpWWU1ZbmpRODBtajBIaGdHS2gyODRHZmEzTENwdkpGYmtxbktZNVJHQ29GMHBTWERCZUVfR0U5Zno1Z2M?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "北卡罗来纳州财政部长放弃投资SpaceX，指其估值太贵 - TradingKey",
-   "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0Vya0FXSmpwZDF0bWc3NmZyZUtyNEt4VWNHSlVCOHUwbWJidnhfeTlYMzFCWnk5MV9kRjRfT3VvZjV0bi1aTDJJdmNOblluRV9nWUdITVU3WjFnREMtZDg5WjlncDIyeUxjcGYzSFdvWjJTcXo0LVVoa3haeTZTVmY3UTdHUEp2b2pPa20wSWFaMGEycnFyUkM4THVFX254dUFqRmo4NXlaZ1hpWXRYRW9XcGNUdTMwQTc1Vlo4c1MyTEg2?oc=5"
-  },
-  {
-   "ts": "2026-07-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 17 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-09",
    "rule": "R3",
@@ -14694,6 +14946,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "报告：Elon Musk 2025年薪酬相当于Tesla员工平均工资252万倍 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZFZoYmRCaGtVeVpQaU5pUkdXdnJ2SHVJSGY0b3MzcS16ejF3SXRzdmF4RkVvcm1vellfdm9nRzJmRmNza2pIM01zN0Z2cmRyUk5pWXBBd25ENzdwWUFGUmc3Ny01WWR1RDFvTEpWaXE4T2ZFQm9IdVkzLUZQSmNqS3VJN3BDdDN2NDVUZnlSMVVYSGxJa1VjZzhtS3hZdE1ybW5mTUNUdw?oc=5"
+  },
+  {
+   "ts": "2026-08-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk拼2027年xAI算力增 年营收上看5,000亿美元 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUd2ZnlSMW4zVncwRGxTRG5pRGhtdTV6WmxrU2lBQmR6amhXU2RXeFdBTmJSVjJGTnNoODdLQTl5SU53Y3ItZFpYOHpLYTdvbjRWbmlpNFVkbDFKeUxXdWROXzJncVBnTXNmNEhrLWxMVjBHaG9RTnZxbmdHNEhSWVBCME4wUS04M3BFMmVwYnV3WC1JdzNWcHBfRHM?oc=5"
+  },
+  {
+   "ts": "2026-08-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
    "src": ""
   }
  ],
