@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-16T06:45:02+08:00",
+  "generated_at": "2026-08-17T06:44:03+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-16",
+  "asof": "2026-08-17",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 342.27,
     "chg": 4.17,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-16",
+    "src": "Yahoo 2026-08-17",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 5.18,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-16",
+    "src": "Yahoo 2026-08-17",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 63085.5,
-    "chg": -0.73,
-    "src": "Yahoo 2026-08-16",
+    "price": 62694.19,
+    "chg": -1.12,
+    "src": "Yahoo 2026-08-17",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0698,
-    "chg": -2.8,
-    "src": "Yahoo 2026-08-16",
+    "price": 0.0695,
+    "chg": -0.18,
+    "src": "Yahoo 2026-08-17",
     "status": "green"
    }
   ],
@@ -215,6 +215,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-16",
      "c": 342.27
+    },
+    {
+     "d": "2026-08-17",
+     "c": 342.27
     }
    ],
    "SPCX": [
@@ -384,6 +388,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-08-16",
+     "c": 140.0
+    },
+    {
+     "d": "2026-08-17",
      "c": 140.0
     }
    ],
@@ -555,6 +563,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-16",
      "c": 63085.5
+    },
+    {
+     "d": "2026-08-17",
+     "c": 62694.19
     }
    ],
    "DOGE-USD": [
@@ -725,6 +737,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-16",
      "c": 0.0698
+    },
+    {
+     "d": "2026-08-17",
+     "c": 0.0695
     }
    ]
   }
@@ -13560,6 +13576,216 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9DOGo4RkJKSTFZS3VycHpRQ2x0T3pEbmRQUUFIem9PblQ1T2NTckk3b2VQcy1vYnprX1lyTldlWGxBQkoyQURPdlEtVkV6dkMwV1QyS2RrNWI5dW5KQVJkTW4zRXdoQQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-efdfc184c74b",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX 新闻：最接近 SpaceX 交易方式的是加密货币交易所上的交易，目前下跌了 27%",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcG1jbi0yeURLQW9RSDlMT3MtSTgwUmJ6Ynl0Y09XdTZSRVM1eWlhN0lxdVFQMUhzallPc0xzYnlDVkFuQXhEeVJyVk9uWVBvZnRQbkhKUXREdWxkdWlJTzJCS3NFV1diZHNuX2RNUmpPYlR3TTNlcFJUeHA0VDJXZjJmeTFDQkVTVnhxUjVrVlVyV3h0M2dQZF92VzFFdU4xZVk0cGhHdENhamJKN0FkMg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-b2f801966c52",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文股价暴涨，创始人财富一夜飙升700亿美元，距马斯克全球首富之位仅一步之遥",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tT1JYSTRySWFYT3ZCd3hPS0VJV0JDWktRcC00R215QlBSVlpMWFpxUnZLOWcyZFJ5aEpKWUJ5bl91WHFqRWh2c3l2NEF1X1lnM2pB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e4a1b2090460",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文的埃里森与马斯克争当世界首富，二人身家对比如何",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaVBYRHhGV1I3SnRHQ1dfRVNMdVVnQzg0OU9TQ2xtczRpeXdQYnV1UGtfOXZFS1pTeFRHWWNvUTYxOUtfTXpBeHU0aFVqRk9jUktubGNZb1Y3T2RNQkU5T05DMlNSMkZzX3NfV0szQ01MSVRsTHAxUmUyRHRFT3UyLWoxcHJMY01sNzY5RG1iOUlmLWpjYllLTG52QTdndlZKY1lXWU9uYm1ZUjV5YkRCVExHTk82LURuTHM0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cc45ee282f33",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "英伟达5000亿AI融资计划暗藏隐忧，特朗普顾问警示“暗GPU”过剩风险",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OMmlyRC1rTmRWRXNRV1VIb3kxUVJmUTBSUktEdVlyWWhrZWhqeEdqQjRyQ3BKTTZkNm5NYmpvZjJDb21iVEM2X25BRlRFSWVad19F?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-292cedf93204",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普顾问 David Sacks 与议员讨论比特币及加密市场结构",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lWmZlaWMtNXhKUFhUSnFLYTltSDdqcmlwSFNzZWIxSDNFNTBQYzI1RFJvUFYzRjVJWnpvQUQ2bUNSdV82dk5HMm5sWUVBNW9PX3FWUTAtcF82VFpEc0ZHQS1feGFIQdIBa0FVX3lxTFBJVjdaSmtDNzlJQ0l2ZkVKampyYVJfQm02RGdwc0VWTFdlcXhTWFA0ZGhIVXBsVHhyZmF6Q2ZCT0liYUFmRVdhTXpCS1ZmaGdlV2pNQkp0c0I2QzZvWnRMV0VFdDY0T3JMT2Vr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0ad6b8766d9c",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔收购阿根廷Vista Energy约1%股权 提供者 Investing.com",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYSzlvZDBfUVMxeUZ1dmJLY2VyamVKRmpQNUlfc3Y4YkVOWG9JZ0VRa3ZkZUxyNjJXZERmdGQ1ZFZNX2NlanFCTlJIazZIVWlzeEdfZ1g0LXhLdDhzNmNGUk9Da0JOZy1nLUctRXJPSTQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bd5616f95918",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "科技公司高管淡化“大学必经论”，企业培养项目成另一种选择",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOem9rUFhaLUtEYUlWbUc2dV84dERlMG42eEg0X19HUkt3S1VRTDhWemtHVHFzRWkyaGNRMFNDcFhtMDRxT2Q1T01wU0IzVHk4TnZ6WlRSV3lza19Rc1VfZ2ZJcDU1UXNSMjl2QXlWVkdnX1lhT1lYVzFVVHB6bTlBZG5RUzFPYlJQWFlLVk12QTdzZGNzX1ZSMXBDU2FwNmltaExFUV9TYkhlampvZ2JkUktJdXBmejNuRUpxa2RHb04?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cdd7f61ba44a",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z联创：智谱GLM-5.2是首个全面对标美系头部大模型的中国AI系统",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1CRG5iZmR2V0R3bmZfOTl1aVBRQ1JnOUlVYVlSN1YtSk1hamxlemJDSkJ2Ti0tVy04QlVQOFR2dVBIa3dFemJ4Q042cUlNSHhsNkMySThFbDJKQWcxc2pjWW5BRGlVdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-87d025a4db1c",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "特朗普在美国中期选举前已囤积5.5亿美元竞选资金",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83LXR2VU9LSGp6NDR4RnEwS0dPQ2htUW5yaFlRVHdQNlY3bHZBQTRFSjlUbjNCZzJlTmtidGJhUVJyTE9CNlB2NVRHdEhLNzRZdllkbEhMUXQ3UnR0TzRDOFZoMDRFUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-31ab89b8f2ac",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "对话 “木头姐”Cathie Wood：下一轮牛市即将到来",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1qUXpkTllRUmxWWGJ3XzVyMkxuN0RxNTZqbkFyLTMzdEQ3amZSVDFjempDcWlMZWF5ZHNwRWRWU2x1a0pYRXVQWk45bw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c27162def50b",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "凯茜·伍德的方舟投资在SpaceX首日公开募股当天购买了330万股股票",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd093MzlnR3JUS19LM0puN2xfTWp4N2V5bEdjMktpZS1ROExrVWhLM3dfTXFWdXFFNDRKOUxEQUZRSmJQV0RQNlJyY1ptcU93RTNFNXhQd2FBN3BYc3dNUHdKUWpzRVliSVd6Z2F0X0Z2ZE4zWVNkY0ROOU9HWjZ0Q2JwTlZndW1VTVZIOHpKZGZGWS1hUUU2VHR5QjZsM3lYTlFJa0tydnZyMmM2Q2M3cXNZUGRMeTFEeDRPZktOX0Q?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-06ecec44065b",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "刷新「华尔街空神」记录，新对冲基金之王 Ken Griffin 的传奇人生",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wTEd4UWZDRkljY0RUanlQMWdncnJvS0s3amVfUTFndXZRZDdYSkI2MUVnWUN5OW4weHZyVXdOeTBPcnBwQnl6cExwdkZaeFUtZVpNREdEalVXUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d82c6e4a4694",
+   "type": "event",
+   "ts": "2026-08-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "“AI股神”Leopold Aschenbrenner时隔近一年发推现身并晒出结婚照",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tUzgzdHREQ0ExMVBXcUlaY01XQWNvZUN4bWF1QU10YmZrUS1vRTh6QW5wQWZSWG9Gc2Rab09vRGk0UW1iVk5acmJZU3VQdy1vM1hoam5UaHhabjY1OXVjV0VfZnNOUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -13662,7 +13888,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2115 · xAI 226 在招（2026-08-16；Tesla 无免费接口）",
+     "v": "SpaceX 2102 · xAI 226 在招（2026-08-17；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -14242,7 +14468,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-16 06:45",
+  "last_run": "2026-08-17 06:44",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -14253,7 +14479,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 45,
+   "edgar": 46,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -14262,14 +14488,14 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
-   "net": "2026-08-16T01:12:00Z",
-   "status": "Go for Launch"
+   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 8)",
+   "net": "2026-08-16T01:12:14Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-366",
    "net": "2026-08-16T01:50:45Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-50",
@@ -14288,22 +14514,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-10",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-11",
    "rule": "R3",
@@ -15246,6 +15456,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 14 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX 新闻：最接近 SpaceX 交易方式的是加密货币交易所上的交易，目前下跌了 27% - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcG1jbi0yeURLQW9RSDlMT3MtSTgwUmJ6Ynl0Y09XdTZSRVM1eWlhN0lxdVFQMUhzallPc0xzYnlDVkFuQXhEeVJyVk9uWVBvZnRQbkhKUXREdWxkdWlJTzJCS3NFV1diZHNuX2RNUmpPYlR3TTNlcFJUeHA0VDJXZjJmeTFDQkVTVnhxUjVrVlVyV3h0M2dQZF92VzFFdU4xZVk0cGhHdENhamJKN0FkMg?oc=5"
+  },
+  {
+   "ts": "2026-08-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
    "src": ""
   }
  ],
