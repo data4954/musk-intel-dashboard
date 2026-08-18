@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-18T06:47:28+08:00",
+  "generated_at": "2026-08-19T06:47:49+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-18",
+  "asof": "2026-08-19",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 339.3,
-    "chg": 2.54,
+    "price": 336.87,
+    "chg": 1.22,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-18",
+    "src": "Yahoo 2026-08-19",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 146.23,
-    "chg": 5.4,
+    "price": 143.34,
+    "chg": 7.54,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-18",
+    "src": "Yahoo 2026-08-19",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 64250.85,
-    "chg": 1.34,
-    "src": "Yahoo 2026-08-18",
+    "price": 64587.02,
+    "chg": 2.56,
+    "src": "Yahoo 2026-08-19",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0702,
-    "chg": 0.13,
-    "src": "Yahoo 2026-08-18",
+    "price": 0.07,
+    "chg": 0.01,
+    "src": "Yahoo 2026-08-19",
     "status": "green"
    }
   ],
@@ -223,6 +223,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-18",
      "c": 339.3
+    },
+    {
+     "d": "2026-08-19",
+     "c": 336.87
     }
    ],
    "SPCX": [
@@ -401,6 +405,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-18",
      "c": 146.23
+    },
+    {
+     "d": "2026-08-19",
+     "c": 143.34
     }
    ],
    "BTC-USD": [
@@ -579,6 +587,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-18",
      "c": 64250.85
+    },
+    {
+     "d": "2026-08-19",
+     "c": 64587.02
     }
    ],
    "DOGE-USD": [
@@ -757,6 +769,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-18",
      "c": 0.0702
+    },
+    {
+     "d": "2026-08-19",
+     "c": 0.07
     }
    ]
   }
@@ -14048,6 +14064,198 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OV2dtMWRLRllWZURfZzVodWxLbFliZFdsa09DS1dvcDZMQW8xVjRHT0VIRU5mUkVzZUYyN3g0N3VhU3VEVG9haUd0WUZfVV91VjlNRy02bkpkdWtRRUtIYVMycTRxQQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-7c0992bd122d",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文电话会：AI业务井喷 手握4550亿美元订单，推出“AI数据库”剑指万亿推理市场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12ZzU4NE8zOE5pQTFyNk5HbWVISDFOek8za2pXSy1aUTk0UlUyU09zWHNmV3BUZnVJSDlwaUU4dUlSYU90Sm5BNmJHNk15WHh5Yktz?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7e249ba73245",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81岁埃里森一日世界首富，娇妻是沈阳姑娘，跨越47年“爷孙恋”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XOEVtS19FR2lnc3BZa09HZzQwdTVvZ0JlVmxpY1dFX0wyODJjc2VWRnVzZ2Vpby1TWG1oVExPOUVSaHZrT2tiUW02NmZMVzN5Y0c1NDNsQk5pWkhyYUd1ZU1RRjY3ZW1RR0szZEVR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-68eed234f070",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫：英伟达5000亿融资计划潜藏\"暗GPU\"",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xRGZyVTVmM3BDcnZZV3BvNzk0RUhXXy1odmU1NEVoRTlZUmlja0VKMms3ekJpSnltRUVlQWJjTllLYXpQWnJjYXBzT0xCVTVI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dd8124016da9",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宮AI「沙皇」認了 美經濟離不開人工智慧 經不起走回頭路的代價",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jY293ektuR3ZxWnRWSUJyaFhPTFNfTk15VzByU2dySzBiaEVMTEVRMWk0TWl3YktsS1dnVGNMMkltOXZadzd6WnJTamR4Qk9jMUJSRTBTV1BsaURfNU1XMnNNeEc4NW5wRlHSAWdBVV95cUxOMUhWbldhNU91LUtwdmV0VHRkeUxZZG9zdjdHS2xRNzFlTmc4ZlljZjc1TTFORmhfV1F4LVVUSlFMVjUwRVlhcGc4Q0p4MTVUR2JyT0lQelVfM3JyWHpkdC1Pb2dZRE9N?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cf76fc3c6fbc",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "亿万富翁Peter Thiel披露持有Vista Energy约1%股权",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11OV9XRHBBMzJIYWwtem16bldvSWJwYm8tZmVPeDZBRkhUcnZHLXBRdkFJUWh5QWIySDJwemtkM1Z4MVFjelV0bGhxajBBSzVWbHN2VmZwcmxDQkZ3RmZHenQ1aG5Da2NVRGc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-69c5f7a5763e",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Vista Energy上涨5%：亿万富翁彼得・蒂尔入股这家阿根廷页岩油生产商",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRTZkdlRONmV3VFYxb3BCU051aFdHSnp5cVZpOUlRM1JPWmVMTTJ3OTU0SXZEUDN6Y1pySmhtd2I1ckxkWUJMcGJac0tLcnlPTzJnVUFsTFlILTUxNmZPSFZxSHpTaGFVSmQxSGhYTEVyLVlEN19yQXF2a003cHItQWdSOUo0V1gtaHpGUHVGc3F5Z0piSE83amkzLVNFV3QzQ1ZpcklfaUhNVVIwS3h2ZzVxQ2E3VHY1NElUSGwtTHRvNV9XamZkVGRuVzNjcUhUMDYwVGU4Y1htamJUdzlN?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e5df56f8efc8",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "司法部因在竞争性AI董事会任职问题调查Andreessen Horowitz",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1seGxZZU01Um9hLXhEZHpiUDN5dVVxeFBrMEZuR0Jkb2tsOU5NdlNLcmc2MzZEekZyaURmUnUyTlRkVTVnSTN6TTl1TkhNZExVWXJobUpSUGZ0QlRNbmhabWlwWTNxc3Ez?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d80526544ff7",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "《福布斯》：硅谷风投巨头转型记",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wVWFoY3RTM0Y1ZkYtbkxLUGR4MDhsRERxSVpkTWJYN1kwWEJOUFdVeHhMekQ1T0x3N3psbnFBaXl0UGZNVm5pZHgwaF9DcEFm?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-58fd0a52acd8",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：增持10.1万股英伟达股票，减持Roblox和AMD",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirANBVV95cUxPdUxyNi0xOGZsc1ZZU0RKaWpBSHZBb1BQaXF2aE1SMV9SRnZJSHR6NzgtS3poM0dCNmF0anNXd1pSSHpCeDQ0ZXlWam5DNktZV3JQVnU0Zkt1RFMyb2taZ2NMZE14akxFRlp4cEFCc05BcUZEOV8yT1hmbnNMcjNyc2N6ZWRpN3l3OGNkSVlJQlZMN1FuUzJqTHZiYWl4ZGdCM2kwRGxKSFdscmt4cjYxczZ5TVplbHVJQW8yVlhZY0lvUERRU2Y3Nk5hUkF3U2dqamlZMW53WmFpOWRENk5WOGt5UHJRcFlNQmFQMG9kOGVNbmNhd1oxVDlhNEQySXhZdWttYjVrOHp5WnV1YkNYbWZVOUg0a3ljVmJPQ3F4V1NYNkhIYVRlZE9HalE4WVVsUUUwQzhCRUpoWXNtNDRiaHBVTnNOMTJhNzFFVWYxa0lOTVRodHg1S3lRQ3RYMUNGUEJJeHFBTVM1bTd4dEt3a0hROXBjd0RLRkhhcTVOaHU5cEUtdm4zTzN1Nk83YnQzRTdPWlZQZzlHZDZzMkRTYlZ5QzdoQmtFSDNIdg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-107ee3c8b247",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood加码ETF押注，Solana瞄准突破83美元关口",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQay1vSExBRUxyZGZTZXlkZC1tX1RsY2lnQkZYa1dsaGJheDBjQm1IOEVLb3o3M1NCUllURFgwb3RTTlpITFFnSFNveHFMMjE3bmpJdElfTTA4WXNIdzU2RDd0cG05X3E0NjB3Qi1YRkxxR3ZpTzZTZFVfekRlVjJZSmgwX0RaTG16dlRGTjBocVE5bUtjZWhrUTl4TTk4RGN1OU9OWUo2S3NiNHFVcUNyTXZra1lzeUhmSXVibFBFdzAwUWlFeHZYbUdMenh6cXhpY2xtYS1qTTd2cGNvelR4RHVZQW81TlFYSEtlVlFsRWUxcngzV0ZoYmdR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-669173c862ac",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel创始人再度成为全球最赚钱对冲基金经理",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE95WFUwTXNDbWtpcGxiRHV1dGZXV3NMR2l5RXRTMXdURmVjLXEwYmZWa1BfbGNSemFvTFBsUU1pVVNkOVY5bnl3d1lLZnVJa0U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-770a5aa321db",
+   "type": "event",
+   "ts": "2026-08-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "对冲基金：小心AI概念股 黄金比美元更安全！｜附音频",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQcXZCWjFWU0Q1QmNhYURIMzMwUnBvN1NlN3ZFQUplcUhBZzlhNGRiS3FoLTdQREVzVTRhTlhCVW9fWjFTUVhQNlNVbkRTVHdnZ2JyNTltMV9xZkZGeUNBUGRneEJmeWhSWTd4aWVrdGgteW5jcFNBWkl6dWdNR1N0MFRnamw4aG9sdFM1NlVYU1BIZlBfa2hYT1V0aHo3djBZMHFrTGlHY2VfcnNmaXhERmk3SFB5eTlGbXpmSTZpbUVKRE1IaXNVNmJ1NUxMelVZcWIteUF5M0poZXJWaEpjMHNsMFI1b25JZ1FTSWZTMTUwNThTVk5YNUZHa0dlel9SLUpYMzZzUFdHTE1pV3Q3bk41UjM3a3R1RWdmZkEzSHhtMG1OQnVxU19EcW9aM0wtNnBiOU5uaFBtZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -14150,7 +14358,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2109 · xAI 227 在招（2026-08-18；Tesla 无免费接口）",
+     "v": "SpaceX 2132 · xAI 248 在招（2026-08-19；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -14730,7 +14938,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-18 06:47",
+  "last_run": "2026-08-19 06:47",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -14741,7 +14949,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 47,
+   "edgar": 48,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -14751,7 +14959,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 17-50",
-   "net": "2026-08-19T02:00:00Z",
+   "net": "2026-08-19T03:46:10Z",
    "status": "Go for Launch"
   },
   {
@@ -14776,14 +14984,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-11",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "因 SpaceX 新估值 马斯克财富飙升超过 6000 亿美元 - soundofhope.org",
-   "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ZaUVmeEFfTllVSnNMZjNZR0swZHFBQTVZZzcxQ29hRkc1T0JwQ3JNLWlPaEU0U0tIM09IYVhLemxYUzZFbTBPa0RHYzNEaVJQ?oc=5"
-  },
   {
    "ts": "2026-07-11",
    "rule": "R3",
@@ -15730,6 +15930,14 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-08-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-19",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
