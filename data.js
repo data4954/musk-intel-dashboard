@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-20T06:48:40+08:00",
+  "generated_at": "2026-08-21T06:52:34+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-20",
+  "asof": "2026-08-21",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 351.12,
-    "chg": 7.21,
+    "price": 345.13,
+    "chg": 1.52,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-20",
+    "src": "Yahoo 2026-08-21",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 139.65,
-    "chg": -4.45,
+    "price": 134.0,
+    "chg": -5.16,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-20",
+    "src": "Yahoo 2026-08-21",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 69099.06,
-    "chg": 9.64,
-    "src": "Yahoo 2026-08-20",
+    "price": 72791.51,
+    "chg": 15.88,
+    "src": "Yahoo 2026-08-21",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0746,
-    "chg": 7.32,
-    "src": "Yahoo 2026-08-20",
+    "price": 0.0796,
+    "chg": 14.5,
+    "src": "Yahoo 2026-08-21",
     "status": "green"
    }
   ],
@@ -231,6 +231,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-20",
      "c": 351.12
+    },
+    {
+     "d": "2026-08-21",
+     "c": 345.13
     }
    ],
    "SPCX": [
@@ -417,6 +421,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-20",
      "c": 139.65
+    },
+    {
+     "d": "2026-08-21",
+     "c": 134.0
     }
    ],
    "BTC-USD": [
@@ -603,6 +611,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-20",
      "c": 69099.06
+    },
+    {
+     "d": "2026-08-21",
+     "c": 72791.51
     }
    ],
    "DOGE-USD": [
@@ -789,6 +801,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-20",
      "c": 0.0746
+    },
+    {
+     "d": "2026-08-21",
+     "c": 0.0796
     }
    ]
   }
@@ -14480,6 +14496,216 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01eEVDek1uTDFJaEl1R3pXRzRaOUxScTkxWjNlT01reFZtOUVUMkNNRFYydzY0Z2xWQUg0aE1BRXNIanB5eWZiRERWVHduOGd3cDFoVF9scUFFRzMxRlRiX3prSWpvU2pxUHd4ZThpcnJBVnlhY2JZR0ZNM2cxblU?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-1ea02481f09f",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克IPO敲钟前讲话：原以为SpaceX成功概率不到10% - 人物 - Elon Musk",
+   "payload": {
+    "src": "cnBeta.COM",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VYnFUZXdENXJhZTU1STRJMG1tQld2bTNRWUlGeHM3eUJ5TG1rOWNPYzJKRUtrZy1KYkFDNG5HWjlUbzVnOWp6M1RXT3RxOEFKZk9pcmhzbDQ0MzFoblRTXw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-4d106343c14f",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "超越马斯克的世界首富，为什么是甲骨文的埃里森？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE4xc0l1aWZORG1HWHQyc3F2YkxHYTRyVTIxWGFkdmViNkZfWTAwMVlBLTVoMy1LWDl4c3MwNzdFOUhiem9jb2M2dktZUjZMeEQxanZINFo5SnlOSTY0a1NRQ3d6ajdZYnVkOHJsY05zTGhtUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-43a36552cf11",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文暴跌 创办人艾里森身家蒸发近250亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fa2RGU0N6SGEtcU1EUE8tWVNIM2tDdFhCVDNFUFppNVRMRG54X0R1dEZkdEJuWUxHZllPVXBVX19VTVNVX2VFR3J2bWlyZkJycEJEU0RleEk0NG0zLVg2azJn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e0b16f5ee24c",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宮AI官員：北京看穿美國心思 正拒買Nvidia H200晶片",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ0hsZTVpSWFwT2hIRXM5eTZNM2NfQ1lRd011S2ZZR0g1OUtlMUFWTlBVajBuQ09ITi1ZT3ZHN0dMUVNUejdDbWVtcC1zMExuY19faVVNREJyVHVtTXRGSk9Qakx1dm1jZFBQSjIxTkZibDNJTVRjOXJTWjhEZTN3X1I5ZmNzZGl20gFnQVVfeXFMT014VEtES2dVTUhibDBOd2t5dUhFSDAwMkNBUkVDVTJ1bHVKeVJmNnZzcXdtY0tCQmZTNzI2T0JnUF9lcjRZWWtkbWw2SFRubUZlMVFXal9LSEZlN2lweVFmVDV2U2N6bw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5941191d1e1c",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普签署行政命令支持加密货币，此前已发行个人“meme币”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GZkViMlVvRnVNMFVSaFBnVkZlWXF4bzlRdXFJaEs1NjFIelBna1hrWThXM29LVmJCemk5LXQ4Z3RpS2ZyLW9TQmhpMTdySU55OEE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3094186e4c6e",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "连低调的亚马逊 CEO 也对 Peter Thiel “喊话”了： 你可是在自掘坟墓",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE8ycHpVTGRDejhJTFpFZ2NTejdPOUtuVVhScGg3MC0tYWY1MU5rQ3RCY3RqY0k5X1UtRjY3LXI1WUlJZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f9e807a1d804",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "报道：共和党超级捐款人Peter Thiel不打算资助2024年候选人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNVjZ5MFJ6LVcwZWdNZ3VmTGxtcEJNc3owcDVRQ0lZTVVwUTk1UER3VDBKV0RBazlWTGhKclk1dTVnTXI2dkRvN2F3TXJVNkNERmJuSk5rSUhYOUZCbHlnTzh2VTNDeUVROTd2aVUxZmFLaVliUXg3Y3Yzb1hvTnNLamJVRFB5LXp0dWNJTFhZQ0ZYLV9CVkFaV25RUWtYbmNRUUg3blJKVWZrYkJpYkVlb0RRYTN4Y3lNeUROTWt6QUJZa1VqdlY5R1haVnNYRzkwOHRTVklGV2dlVUdYZXFhU01nTjNJenlGQldRTWo1VHg0OU1vdjZxd20wLWhkcDlFUk8zWUxEQXd2T2xIZjhKOXAxaXIwT0J0MWpBNnNJOUxUaExvNTVQQzBkUDROaGdLUEVnTEtBeHJvOW02MWRqbTNEWlBzMEk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5eaecdc01fc3",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z 联创 Marc Andreessen：我们像穿纸巾一样穿过了图灵测试 a16z 联合创始人 Marc Andreessen 近日在 Joe Rogan 播客中表示，图灵测试曾是 AI 领域 60 年的终极目标，但 ChatGPT 出现后，这个目标几乎是在无人察觉中就被完成了。 他说：「我们像穿纸巾一样穿",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9xMlFnbkh2dWYtZ3lFNEsyZHRxRjhuazVNd0NQQ2NwUU9HSldkeGZuUzhrY0pCOFBMYzQtc00tR1VsSlZnZzJfSHd6NDZDYUFVNW5wLTlEYWVtaEZ1SUgzaW9aUW4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ef435535a591",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "一边给白宫出主意，一边被司法部调查：a16z卷入反垄断风波",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUFlRN2wxajdDZ1c3cHk3SXRnbkZ0SlZDaHhuSGRpTHRET3U5SGZGb0RxM3dmOVJVTkFRcjcwZ1ByV003SWRvRVpHM2VNYmE2cjVyZXhEYnVHbVFFakp6LTN4VnBFcGZqbm1jQmxBQmdlQUp1TVRBS0tNS2pwbGFQbnRPaThuWk9waDN2Zw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cacb2e7ae4c0",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：买入100万股其新推出的收益型ETF（ARKY），减持Roblox",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVndyc2U2UjlWUGpkUGhvQVFkTjB3UUp3WENtalQ2YWlLTHVSQ3M3dlJhSFhlMDN0NmdvY3lSblg2Um9ieVJMWXlkNjVzLUlKSFgyM0lnRjBieE1SclBQUTE5MUliUHFDekVLLVc0TnlCNFkyVE9OWEltX3g0YlNsZU1LZEpJWUtfcUsyRHR6SUc3NFNBSXNDX1ZBT2NCTWZwODZTa0QtVUtuczNwUFVEcXZIOVc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-df9c9c83a977",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "视频｜「女版巴菲特」Cathie Wood：本轮存储芯片价格飙升更像是周期性的，而不是长期趋势",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9jZGE3OFFSVm5hQjJYdTlfMlQta1dzSFVGV05kRXNScmZKWW5TOGRGbjlsQTMxRnJXRmkya25DV2NGNjJwVG5na09QMDFTVHQ5TWZJWkFn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0990b6f962ec",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "640 亿美元对冲基金将提供加密货币交易| U.today发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Pam9hXzNSaW5fOURXNjlxdm9NOG5PN2REZDRNQ3lpQk5fZEZZMEtleF80akxlSW9yZVNPQnBod3ZJU0VPVS12VHZfeXBEVlJjc1otVVpubTE4TGpPR0NEdS1HUnJGSGM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2b1b55236465",
+   "type": "event",
+   "ts": "2026-08-21",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "对冲基金创办人以2.38亿美元 买下美国历来最贵豪宅",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfdzhHcUc4eEExY1dtNU92UVFFQkc1anBjNEMtQ1A2TnJKdWlIZm9tYWJ1NjFYRnJTZmJuTVFZV1dMdEJmNVM4bFFURUlZb1h6VUxkWFNjYlhMQXNIM2FSTVM5V3FTT2VkaHBwRg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -14582,7 +14808,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2151 · xAI 252 在招（2026-08-20；Tesla 无免费接口）",
+     "v": "SpaceX 2166 · xAI 258 在招（2026-08-21；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -15162,7 +15388,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-20 06:48",
+  "last_run": "2026-08-21 06:52",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -15173,7 +15399,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 49,
+   "edgar": 50,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -15182,13 +15408,8 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 17-50",
-   "net": "2026-08-19T04:01:07Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 10-39",
-   "net": "2026-08-20T15:19:00Z",
+   "net": "2026-08-21T15:14:16Z",
    "status": "Go for Launch"
   },
   {
@@ -15205,25 +15426,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Starlink Group 15-22",
    "net": "2026-08-25T09:42:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
+   "net": "2026-08-30T11:26:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX 史上最大 IPO 落幕，马斯克身家破万亿美元，比特币持仓曝光 - 区块周刊BlockWeeks",
-   "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5sMkMwekdxbWdwVE1MOXY1REgzT0Y5SEU5aDJEajNmanktYTIxZGh5UWJYYXllOVVNT19FSUlQRzRVYnhLRk13elFB?oc=5"
-  },
-  {
-   "ts": "2026-07-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克解散xAI，22万张GPU算力转给Anthropic：是退出模型竞争，还是改押“算力命门” - 虎嗅网",
-   "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGNDFvYkN4cUFqQzdCa0ZBaXVPMk1EZXBVd1ktZVBxc21TNkFnUXVjSEhVOEJ1bEluZGtZZ1NtYnV3RFRsNE5BNEtaZ0tfbG5hM1R3SQ?oc=5"
-  },
   {
    "ts": "2026-07-12",
    "rule": "R3",
@@ -16166,6 +16376,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-21",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克IPO敲钟前讲话：原以为SpaceX成功概率不到10% - 人物 - Elon Musk - cnBeta.COM",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VYnFUZXdENXJhZTU1STRJMG1tQld2bTNRWUlGeHM3eUJ5TG1rOWNPYzJKRUtrZy1KYkFDNG5HWjlUbzVnOWp6M1RXT3RxOEFKZk9pcmhzbDQ0MzFoblRTXw?oc=5"
+  },
+  {
+   "ts": "2026-08-21",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
    "src": ""
   }
  ],
