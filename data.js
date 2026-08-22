@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-22T06:48:10+08:00",
+  "generated_at": "2026-08-23T06:45:12+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-22",
+  "asof": "2026-08-23",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 362.86,
     "chg": 6.02,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-22",
+    "src": "Yahoo 2026-08-23",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -2.16,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-22",
+    "src": "Yahoo 2026-08-23",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 78409.33,
-    "chg": 21.55,
-    "src": "Yahoo 2026-08-22",
+    "price": 77072.99,
+    "chg": 19.16,
+    "src": "Yahoo 2026-08-23",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0936,
-    "chg": 33.01,
-    "src": "Yahoo 2026-08-22",
+    "price": 0.092,
+    "chg": 31.06,
+    "src": "Yahoo 2026-08-23",
     "status": "green"
    }
   ],
@@ -239,6 +239,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-22",
      "c": 362.86
+    },
+    {
+     "d": "2026-08-23",
+     "c": 362.86
     }
    ],
    "SPCX": [
@@ -432,6 +436,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-08-22",
+     "c": 136.97
+    },
+    {
+     "d": "2026-08-23",
      "c": 136.97
     }
    ],
@@ -627,6 +635,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-22",
      "c": 78409.33
+    },
+    {
+     "d": "2026-08-23",
+     "c": 77072.99
     }
    ],
    "DOGE-USD": [
@@ -821,6 +833,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-22",
      "c": 0.0936
+    },
+    {
+     "d": "2026-08-23",
+     "c": 0.092
     }
    ]
   }
@@ -14946,6 +14962,266 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5TdmtsWVI2MTFRd3ZuSFc0cTNDVnhKbXFlb3F1UkFBY2M1MUdpQlM0QXlXcHkxempLMGkwdjAtRExldlRUMHV0ZlU0djg4SDBVS0w5T29MajVsX2NKeDJrV1NlRGVidw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-36ddc5224b8d",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "龙虾量化带单(@Square-Creator-e925e010f548c)'s insights",
+   "payload": {
+    "src": "Binance",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03dDNHOVpiWmxmUmpGa2ZjeEp2aUlaY1BKZllsenh5VVhzQjF5ZkZVTmZxUUF1SklXUldHVDhSTGNUa0l6V1g2dkF4SnFmX19iTzNXU0EwNEVmSXJGbFNMcmQxWmluZjFN?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-fcad4749caca",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX上市｜马斯克身价破万亿美元 超越全球近半人口财富总和",
+   "payload": {
+    "src": "香港01",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipANBVV95cUxNNklqMG15Mm5XN1VCQ09OTkVnMUV1REowR2FoRUU2MkNRUENyNGczajJQdy13SnU4aVVkT1ROazJEc1pzVkRoTXNMV3phTEpaQk1zS0Q1Y3pkSlc2QlM2ZGUxQ3I2ZTRxcnVjWXdobE9BQjJjcUNrNHFMTl95ckNQaUExcXo5NlExSGZVMnUyZEdIYUhZT21nVVBjWXJHTFRubk5vQ0I0ZGR2U1lzZkZ4N2hBNVNpU1lpOHdvUUctN0N1alFpTUpYMmx4WGNudk0zdE9PRUQ1YVVHc0lkSVJRVVBDUGJORVNNZ0FBYVdRU19LZHRHbkRRSUZwWUliMTBoTWtCRVBmbmplUEYtWENKZWtRTDBRLWZFeWpQZkIwdzY2THBIeEFhamRMakQxOVM2ZV9TZE16dkhwbFZzMjU3RXhiZ0RxaFhTdjIzT0pxSHVDY2V1d1NrT1hQVDNRdUxhaXVtQWxtOTJ0alJ2VzQxWWxGaHlpakVwMlcxSm0xc3hjQ2FlbTVWX24xZkNXbVEzWDU2akZURl9CNnJNY0x2TzNiY1Y?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-77ebbc6bce63",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克加入AI大战，成立初创公司X.AI，与Open AI竞争",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYlZKQ0ZUOGtmQ2N5Q2YzTEJnTEd4TkpuREdSX1d5VEx2MlZPNFVuWHBHdmt6V2lUMkloRGx2WC1rYjFLZWFoc2FQVi1PNlJkemZ2cXpLazhXS0lyVU8xcnk0c2ZHMkxFQXY5NFNkenRIVmVlNUtuRDJpYUdZekFfOWxqSVo2bHQxZ2c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d3271c027696",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "在硅谷上天入地、为所欲为的马斯克，他的钱都是哪来的？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYT0pSNENOcVJNTGVnUkFVRnhwVU9TaGxnUVB5dlRhNWRYeEpYeFhkNGdwOWFZWGpwb3IxRmxTUXZVMmtvNG05VkRia2JyYklZWEJidmxOMA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a938224c4658",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "英国伦敦埃里森科技研究所1.2亿英镑总部规划获批",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9sUmh3bGR0VnVCV2IzSS1xMWRKMVlMMnZoQXpHaWh1VWxfLW9XVVplbjY0d01ybjIxNkJWblRGX0dqM1RPTDNvakplM1ZJanRmNE5WSGhSM1E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9df446a34450",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "前勇士球馆冠名商股价暴涨 甲骨文创始人一度登顶全球首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95a2FMeFdQdU1JMnkwTzU4dGliRnhVSV9OdWZxaFczeUZrRHo5UkJUNGh4am5Uc2xtVWk4bGlyTU0xRjdRUVRDbUZybUVTY2FPeDhZYWRB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3130e9bff2ea",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美国施压，马来西亚撤回部署华为芯片声明",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kV3ZCeGJnVWQybEdaT01TNUR6dDFaSHE3X2pxYXRyU3BxR2EzbUgxbGc4cWtndEh2TXdPUlZhcHBkaFp4bkNiZkE2YzhaaDZuUDVr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0a2f0a6630cf",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫加密货币峰会有哪些看点 都有谁参加？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iM1N2VFRyRWJDVDNSMnYtTFVLU2haelo5MlZkSFd4cjY3NndNU2tXYmpUQW4xblAyQ0pVZXBhQXM5WTROV0EyOUlMeDRuUzR6eWwzWGFn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7b9d10e8100f",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "顶级投资大佬Peter Thiel：如果英伟达能像谷歌一样垄断 现在还只是白菜价",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zdHRCbmhGeHBicURVRXktU2tQa3R0ZzQ5cS0wbndmRFdoMWJ6QVpzTExuQVJkMmVXXzV6UW9lWTI3SVdTNWNXWWU4UjBqOXJtNVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9caa97a1486c",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel支持的AI初创公司Cognition Labs寻求以20亿美元估值融资",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOLVRkSThac2NOT3dDN0c2RkRxOWI2U2dKSVUybUVMQXlGOTRIRUFSb0ptZW5oMTRKc3Y3ODdUY24zWUViM2hkY21FeUJKYmN5WmRTOFUyZkFGQ2VXOUs1LU1qTlpWdGFOUy11b1RJTkpHR0M4UFE5Y2FsaHluMFhKRm5NWlJZbHpibVB2Tkx3TGlka1ktQno3MlVmV0twNWo4bWFkMnEtbXoyQnhqU0s5RFc3R0dJUkpmT1dPYV90TS1DMzJLWUxWUmJsdVQ2ZGtHT1dJZlZHVzZYODVjbFZnaWtsaktYSkQteXZ0am1ENUdrODgwN0NMc2JQeVh6MFBBZVBlRThmd0hBWlVzTXMzc3ZFbzZNWnpORldEUTJMeFZ1a184STdvdTItUzZXcG1Xc2VLdmNmYWlyTVMzY0RQdg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4e603bcd8988",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "因为「Web3.0」，推特创始人被自己的投资人拉黑了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBiaFRyTENKX1VidmkyU3ZmUXBLbTU2TnBsRjZfeXFoZU1xUHVuS0N2NlA5bGxwdEpnNkxQclBwclg3V1BTVHNDcnVaU3Q2c0ZVQlYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dca7e8ccea02",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z联合创始人马克·安德森被任命为美联储人工智能工作组成员",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTTJSUmVLM1VKdm1yMzA0R0VxY2ZxNUJtRDJmaEpkRl9oWWpHUjl6bG1zaDROaWMtbzQ2empBcDlmVEVqTFNWSFg2dzhESmVJSGhIR1ZnUGpwMDJnSV8wUlVkdTdUSEhFZUhzWV9nQTJ2bnd6X1lGakJWcm01U2pFc0lfQTJIZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-de2d99abbd17",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood仍然认为$比特币(BTC.CC)$ 到2030年能达到$150万。 “年轻一代会更多地配置数...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNjdyS1p3WDZBcFpldW9NdTRxMzF2aWpLT0VUdmVyVVlKbE9VaC1QbjF1b2NEQ2s1MlJOTjFxS2d6TENHZl96QUpUTk9ObXRELWF6WjZmRUVQZF9faWVVbWZ1OHpiNTNaQ1RRNVB3RV9Bem5NcjhDOHNHZk91V1NJTEVPRHk3emd6TkgzOEpLN3JkbjlIZ19NbTNEcXZ4Z2o0RHdiVXlWcmxvdDhYRlBR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e16ebe8d6e53",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：准备迎接“大行情”，比特币仍看涨至150万美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qYTJWd2pscTdsWkgtbE56NS1wMDRpRXR0SlJUUkx5THMwbm82WFE5eGhJOWlkdVRaSW9oZkgyZko0QTBRRVMwUnN1T09XREY3VTFaeXhvb0R4SzZ3S2l1ZG05V2ZmNlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7dd71ee67820",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "从“AI股神”抄底的“带血筹码”，Citadel已卖掉80%！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEVm9ZdmRmTmNJUm05NTNGNVNUTGtnWkdIWVJ0d2F4c3o1bjE2cWZyVXNHejJtaEdRZlFyZktDcXFPeUg3QzBzNkR2QUE4NzVld3Br?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8ddb3f10be7e",
+   "type": "event",
+   "ts": "2026-08-23",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Ken Griffin 表示 Citadel 消除了 80% 的态势感知风险并创造了 40 亿美元的业务 - arch",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiiANBVV95cUxOX0FjcjA0TFkwUlBKTkZraEx4bjdRQlV3V2pqM0dMY3VQSWZzV0RkRG5wOUNFWlU1eC1nZDVmdjJDMmY0YVFBYVhiX3VxZFEyc1BScklZeU9Yb3JHdlBqNU5OZ2tlZnNpZEFxTVJRaHRRQVI3OU9SOW51UVFmZDJQTUQ1dTZGbXBmUWZBaXozQUtQVmFobXVyNVp0TXp1ZGVQTzkwMVRYUFFFekJ0X2FsZ0JLMUlfX21JdGp3RUdZVVNPQXM3Zl9hVEpDanVvSUhRWFF6eTFvZzBOTl9PME9fX3F0R2NweF9vR1pySFA0c1JUSTh3cGdVLTBDOWZxdVF0Q3dVcVM5UXRBTUNxak9DeG0zWU0yNy00WkVMSGFPX2NTUFI1VlVTVXdIX2xRdGVOMldaQnhaS1VFbXFEV0JEQWpoQUdiYnVZTVFHc2xnNXFZcUJabGFOSVVwLVVCRTlDZVd6Rkp5MVNETmVzWUF1YXdrTWpsSmdBSWJzdXZoR1J1eEtlV3A5Xw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -15048,7 +15324,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2176 · xAI 259 在招（2026-08-22；Tesla 无免费接口）",
+     "v": "SpaceX 2179 · xAI 259 在招（2026-08-23；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -15628,7 +15904,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-22 06:48",
+  "last_run": "2026-08-23 06:45",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -15639,7 +15915,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 51,
+   "edgar": 52,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -15648,14 +15924,9 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 10-39",
-   "net": "2026-08-21T15:14:22Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 15-20",
-   "net": "2026-08-22T07:25:09Z",
-   "status": "Go for Launch"
+   "net": "2026-08-22T07:25:16Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 10-49",
@@ -15671,33 +15942,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
    "net": "2026-08-30T11:26:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-23",
+   "net": "2026-09-01T08:01:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克确认Starmind名称|elon musk|spacex - 人工智能卫星星座 - 新浪网",
-   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aNkwtMVpIaXgwZEdQQ19Qd2Q4dGRNcWUzaW5hdVg2OXNTa1FvSGEyOVNlbkdlYmlzUElVU28wREdURTFmYXhTckhJUmxmYVE5ZEt6X0pOVUl4eE1vMk0zNzZUOA?oc=5"
-  },
-  {
-   "ts": "2026-07-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-14",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Subversive Capital 推出全新「Ex‑Elon」ETF，专为反马斯克投资者打造 - Hypebeast CN",
-   "src": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMTFONFBNM2ZMa2RLdHVYcW1wOU5WUXpEd1JRNC0wVVB2cUJvbVFoM1pHYzgxeHhkSEtZaVJwbURPZG5zVG5EQ2Frc3RhcGxlRS1Qa0Z1RUJfVEJONmR3Y1VqbGtja0xhajVEMUEzMHAyd0hzZWFDN0diQWREWF9yWEx1VVFUZmx3?oc=5"
-  },
   {
    "ts": "2026-07-14",
    "rule": "R3",
@@ -16628,6 +16880,30 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-08-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 14 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-23",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "龙虾量化带单(@Square-Creator-e925e010f548c)'s insights - Binance",
+   "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03dDNHOVpiWmxmUmpGa2ZjeEp2aUlaY1BKZllsenh5VVhzQjF5ZkZVTmZxUUF1SklXUldHVDhSTGNUa0l6V1g2dkF4SnFmX19iTzNXU0EwNEVmSXJGbFNMcmQxWmluZjFN?oc=5"
+  },
+  {
+   "ts": "2026-08-23",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX上市｜马斯克身价破万亿美元 超越全球近半人口财富总和 - 香港01",
+   "src": "https://news.google.com/rss/articles/CBMipANBVV95cUxNNklqMG15Mm5XN1VCQ09OTkVnMUV1REowR2FoRUU2MkNRUENyNGczajJQdy13SnU4aVVkT1ROazJEc1pzVkRoTXNMV3phTEpaQk1zS0Q1Y3pkSlc2QlM2ZGUxQ3I2ZTRxcnVjWXdobE9BQjJjcUNrNHFMTl95ckNQaUExcXo5NlExSGZVMnUyZEdIYUhZT21nVVBjWXJHTFRubk5vQ0I0ZGR2U1lzZkZ4N2hBNVNpU1lpOHdvUUctN0N1alFpTUpYMmx4WGNudk0zdE9PRUQ1YVVHc0lkSVJRVVBDUGJORVNNZ0FBYVdRU19LZHRHbkRRSUZwWUliMTBoTWtCRVBmbmplUEYtWENKZWtRTDBRLWZFeWpQZkIwdzY2THBIeEFhamRMakQxOVM2ZV9TZE16dkhwbFZzMjU3RXhiZ0RxaFhTdjIzT0pxSHVDY2V1d1NrT1hQVDNRdUxhaXVtQWxtOTJ0alJ2VzQxWWxGaHlpakVwMlcxSm0xc3hjQ2FlbTVWX24xZkNXbVEzWDU2akZURl9CNnJNY0x2TzNiY1Y?oc=5"
+  },
+  {
+   "ts": "2026-08-23",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
