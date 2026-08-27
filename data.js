@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-26T06:52:20+08:00",
+  "generated_at": "2026-08-27T11:25:16+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-26",
+  "asof": "2026-08-27",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 350.25,
-    "chg": 3.97,
+    "price": 345.82,
+    "chg": -1.51,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-26",
+    "src": "Yahoo 2026-08-27",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 137.95,
-    "chg": -3.76,
+    "price": 139.63,
+    "chg": -0.01,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-26",
+    "src": "Yahoo 2026-08-27",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 78883.19,
-    "chg": 0.7,
-    "src": "Yahoo 2026-08-26",
+    "price": 78915.0,
+    "chg": 1.49,
+    "src": "Yahoo 2026-08-27",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0868,
-    "chg": -5.29,
-    "src": "Yahoo 2026-08-26",
+    "price": 0.087,
+    "chg": -6.83,
+    "src": "Yahoo 2026-08-27",
     "status": "green"
    }
   ],
@@ -255,6 +255,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-26",
      "c": 350.25
+    },
+    {
+     "d": "2026-08-27",
+     "c": 345.82
     }
    ],
    "SPCX": [
@@ -465,6 +469,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-26",
      "c": 137.95
+    },
+    {
+     "d": "2026-08-27",
+     "c": 139.63
     }
    ],
    "BTC-USD": [
@@ -675,6 +683,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-26",
      "c": 78883.19
+    },
+    {
+     "d": "2026-08-27",
+     "c": 78915.0
     }
    ],
    "DOGE-USD": [
@@ -885,6 +897,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-26",
      "c": 0.0868
+    },
+    {
+     "d": "2026-08-27",
+     "c": 0.087
     }
    ]
   }
@@ -16006,7 +16022,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2174 · xAI 255 在招（2026-08-26；Tesla 无免费接口）",
+     "v": "SpaceX 2191 · xAI 247 在招（2026-08-27；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -16586,34 +16602,29 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-26 06:52",
+  "last_run": "2026-08-27 11:25",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
    "launchlib": "green",
-   "rss": "green",
+   "rss": "red",
    "greenhouse": "green",
    "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 55,
+   "edgar": 56,
    "launchlib": 0,
-   "rss": 0,
+   "rss": 1,
    "greenhouse": 0,
    "fec": 0
   }
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 10-49",
-   "net": "2026-08-25T09:33:38Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 15-22",
-   "net": "2026-08-26T09:34:48Z",
-   "status": "Go for Launch"
+   "net": "2026-08-26T09:35:11Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
@@ -16622,12 +16633,17 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-23",
-   "net": "2026-09-01T08:01:00Z",
+   "net": "2026-09-02T07:46:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-   "net": "2026-09-04T11:28:00Z",
+   "net": "2026-09-05T11:13:00Z",
+   "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Crew-13",
+   "net": "2026-09-12T22:34:00Z",
    "status": "Go for Launch"
   }
  ],
