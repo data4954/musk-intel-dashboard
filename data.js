@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-29T11:46:16+08:00",
+  "generated_at": "2026-08-30T08:29:29+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-29",
+  "asof": "2026-08-30",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 348.75,
     "chg": -3.89,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-29",
+    "src": "Yahoo 2026-08-30",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 3.31,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-29",
+    "src": "Yahoo 2026-08-30",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 77589.47,
-    "chg": -1.24,
-    "src": "Yahoo 2026-08-29",
+    "price": 78212.37,
+    "chg": -1.03,
+    "src": "Yahoo 2026-08-30",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0849,
-    "chg": -0.89,
-    "src": "Yahoo 2026-08-29",
+    "price": 0.0852,
+    "chg": -2.85,
+    "src": "Yahoo 2026-08-30",
     "status": "green"
    }
   ],
@@ -267,6 +267,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-29",
      "c": 348.75
+    },
+    {
+     "d": "2026-08-30",
+     "c": 348.75
     }
    ],
    "SPCX": [
@@ -488,6 +492,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-08-29",
+     "c": 141.5
+    },
+    {
+     "d": "2026-08-30",
      "c": 141.5
     }
    ],
@@ -711,6 +719,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-29",
      "c": 77589.47
+    },
+    {
+     "d": "2026-08-30",
+     "c": 78212.37
     }
    ],
    "DOGE-USD": [
@@ -933,6 +945,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-29",
      "c": 0.0849
+    },
+    {
+     "d": "2026-08-30",
+     "c": 0.0852
     }
    ]
   }
@@ -16388,6 +16404,200 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9kY05vQ0hMcEFpUzJPTVJzNWFDTHRGWnBWVmtBVmI1TVBMOWdiWGd0M3puQUNPd1RjT3loUmpZS0kzckVMbW5CeVhBUWJKSk5zU2h6eWZWOGN0RWs?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-b42dce7b45a8",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克预计SpaceX到2033年营收将达到$3.5万亿",
+   "payload": {
+    "src": "Moomoo",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb1BWX0k0UkFNN0NOZUNwRXNFNmJZY0xUZ2Z1SWtJZGI0aGswUE1kMWNZWkJkeHF5ekJWclBlUjJvR3VWRjI0WlBONFJBNUhvREpwa2JNY3hmZ3AtWXJTSEVBaGFvSXIyY2o0cXZfRTRuMnRCVkl3dW1WdGdQMVJSd3czdE8tMDFqczlmcTFkX2xocWU0X1p1SW85TEtZQzM3MkNB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-8f0fbde5638d",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克在2024年最后几天神秘捐赠1.12亿美元特斯拉股票",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5TdFF3TmpCVHhyc3AxTV8wODVHX0pRcnp2RC0xeV9kMGNDaW1GdkhyaTI1NkExVlRwMlJoWmVBVW1seXczeDBnX1FxbzA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-699ee618a5e1",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "派拉蒙加码1084亿美元收购华纳兄弟，埃里森提供404亿担保",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9lNU9oMmhlZkRrMnU2UGxqdzB1R3BkUjM1djNBZTNfcHhXOTVRXzZhdVZneWxzT1RHRlJFLVQtVGJHMDBhbkZmcG5TNnVJSzhDN240OXllOXJkcXpGVzFIWWU1MW5VRHk4MjJ5UkZB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ba473b8fa522",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文突然飙涨40%，市值大增超2万亿元！埃里森财富单日暴增近千亿美元，逼近全球首富马斯克！发生了什么？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pRFZJR1JtbW5HaXNyUkdXcDB4cHYwZWlGdlV5YnhJakhVY0JZTnM0LWxuZzdkN1lUNk5YWU53Z2FmRzBwclNFeFZlY1lmSzVUblZobXFsN1g2VTdSX1BNakFFMnFKQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4054a6ec0ca3",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "加密沙皇 David Sacks：《GENIUS 法案》推进数字美元与稳定币立法",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8xYXczbDRsNk41V2dDX0hVd09NVmVxcVVHSGZZSHpzQXRGVUtwWDU2aE13Yjd5LUoxX3pyRTMxWElLZnMyWUFhOHZWcllSMm1uQWs1VlY0Zw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6d7e2344ece4",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "川普任命 David Sacks 为首任“AI和加密货币沙皇”！从灰度持仓中，我们惊讶发现有几个这么好的标的竟然还没怎么涨！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9IQzl0M25nZ1pSOGFWMnBJVEZNUnZrY1NmWDhEalhLckRqWmhad2Q0NVk1OXJyQUFmU0VKekhaWkZjSWFmaUdaYjdHMzBTUU9hOVVJQzl4RlFiUW4yTVlSTG5HTQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d62895d1b71d",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "估值近300亿美元！OpenAI再获百亿美元融资，红杉资本、彼得·蒂尔等知名风投参投",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JLUlpTllFeXVZRWhTUmd0Wk1XcDVsMEZSN0VQcUFDNkl1T203Q0FNSGZLZEtjSVBqMlFuMnBsa3FGZnFPWXczV0RDRTZiRTlwczhzSWFYZ1hlV2lZUTBmQkxHVHAyZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ded96283a829",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "一场同性婚礼震动美国政治投资科技圈，新郎到底何方神圣？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBjSWxqRnFGVVFsSmVLbVVOUWN2bWVjR0F3bXE5enlSVzNKVFhRb1d5dXlodjVqVk03bWRRaE13cV9pMDFySXR3UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-77589ffa559c",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "预判技术对于金融市场的影响，从认识 Carlota Perez 开始",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxU3lMM2RqcUxxRkZOSWs2N3g0Z1k3eVNSdC0tRTNfdnYxaF9JMzNvVHhfMC1Wd2UtWUFJYzM2LXREb3Z6aklKbzd6Zk1ZNjBwUUNMVlZmMnI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-eaeed83e3243",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z 创始人访谈：一半的时间都在湖海庄园，帮助特朗普挑选下一届政府",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DazFIR1pUc1ZXOU5WS1l1OVBJQU14N0tVT0JCNk5lanZLaW1jQlFNWElpWjJNRE1MZ192TUpJTm96YnpIaUFWX2F1eWJSYWM2UldTVlpCRQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-15a40c3c8836",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "木头姐：AI是我们一生中仅此一次的投资机会",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVmE2emNucUxqVm45d3Z6VTctMnZkWXZXWk9tbHIwb1dDRVpJMWN4RElhZERsamVVOFl2cFVNSV9Ua3R0WmxoOHUxUjNKWkoyTHV0OThBek9XU1cyU3plbGVBT2w4OGw0MTZFN1dhWENHYVduRGI0cmVhbmp4R2ZDaWVJbTlRVUNwVzZ0eHRSX0dVYjZIX2t2eUNSSUZYUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b2e794fa76fc",
+   "type": "event",
+   "ts": "2026-08-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "迈克·泰森、Tether 首席执行官、Cathie Wood 等人将出席特朗普“最独家”加密货币会议",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQM1FqXzhDeHNyMVZvenJ1eDNCNnpoVk9CcUVwSmp2UVEyX2VkaDBhWTM3NGJuTmE0eVgtUVc2NEpyWl84NEt4MlpUQWlXcks5MEZmZ3pJa1J5OWx2cHlIbFFyRkpMRFJuek0xR0xXYi1fMlpadEljN21QVXBEZW9BcHdMYkM3TVBUS3hXUzB4b2dtdFM0OVJROFNqejQwTk1leXBkc0daSXBkS2g3Q0JuelhDb3hpWEVsbm9uRjRrSG1OTTFGNGFBdDAzZXYxaEVBSklzVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -16490,7 +16700,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2229 · xAI 254 在招（2026-08-29；Tesla 无免费接口）",
+     "v": "SpaceX 2229 · xAI 252 在招（2026-08-30；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -17070,7 +17280,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-29 11:46",
+  "last_run": "2026-08-30 08:29",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -17081,7 +17291,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 58,
+   "edgar": 59,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -17091,7 +17301,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-   "net": "2026-08-30T11:26:00Z",
+   "net": "2026-08-30T11:25:49Z",
    "status": "Go for Launch"
   },
   {
@@ -17116,22 +17326,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla shareholders approve Elon Musk's US$1 trillion pay package - IDNFinancials",
-   "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeVdpb0Z6dFZhM2xCaG1aOXFMR3g3bkZMNWFPSzNzdUpYVktfS1VpME1CbHZsYnNURy1sS3kyUlJEcDBnOThpdjluNVhDTWJndEV1THNjZTdCWTZtMU1MQ19LdFE0cndGdDZuTXFQQ1QxOTI5LTRGSklfZ01zb3dTRUlMX2N1UFRKUVVZWmJuLWpFZDIxeVdBdWk4Qlk5b01LbFkzYlpmbzRIZw?oc=5"
-  },
-  {
-   "ts": "2026-07-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "英特尔加入埃隆-马斯克（Elon Musk）高大上的 Terafab 计划 - Notebookcheck CN",
-   "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ic1M0NDZ6aG12TUZPSUlMcDh6Zm5rSEVXSE9aTm5nWkZQdlFZSHI2VVhDbmNFOUtlUk8xcFZqekVFOHp4bEpndVBtRXNmOFg0WXFxNGpKNnkxQkJKUFRGOUZBNV9GOXA5S0hmZHVMTjM3NWM?oc=5"
-  },
   {
    "ts": "2026-07-17",
    "rule": "R3",
@@ -18074,6 +18268,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-08-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克预计SpaceX到2033年营收将达到$3.5万亿 - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb1BWX0k0UkFNN0NOZUNwRXNFNmJZY0xUZ2Z1SWtJZGI0aGswUE1kMWNZWkJkeHF5ekJWclBlUjJvR3VWRjI0WlBONFJBNUhvREpwa2JNY3hmZ3AtWXJTSEVBaGFvSXIyY2o0cXZfRTRuMnRCVkl3dW1WdGdQMVJSd3czdE8tMDFqczlmcTFkX2xocWU0X1p1SW85TEtZQzM3MkNB?oc=5"
+  },
+  {
+   "ts": "2026-08-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
    "src": ""
   }
  ],
