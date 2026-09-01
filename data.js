@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-08-31T08:42:20+08:00",
+  "generated_at": "2026-09-01T09:20:15+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-08-31",
+  "asof": "2026-09-01",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 348.75,
-    "chg": -3.89,
+    "price": 367.95,
+    "chg": 5.44,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-08-31",
+    "src": "Yahoo 2026-09-01",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 141.5,
-    "chg": 3.31,
+    "price": 143.69,
+    "chg": 6.44,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-08-31",
+    "src": "Yahoo 2026-09-01",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 78046.98,
-    "chg": -2.75,
-    "src": "Yahoo 2026-08-31",
+    "price": 78596.59,
+    "chg": 0.98,
+    "src": "Yahoo 2026-09-01",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0826,
-    "chg": -7.35,
-    "src": "Yahoo 2026-08-31",
+    "price": 0.0829,
+    "chg": -2.72,
+    "src": "Yahoo 2026-09-01",
     "status": "green"
    }
   ],
@@ -275,6 +275,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-31",
      "c": 348.75
+    },
+    {
+     "d": "2026-09-01",
+     "c": 367.95
     }
    ],
    "SPCX": [
@@ -505,6 +509,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-31",
      "c": 141.5
+    },
+    {
+     "d": "2026-09-01",
+     "c": 143.69
     }
    ],
    "BTC-USD": [
@@ -735,6 +743,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-31",
      "c": 78046.98
+    },
+    {
+     "d": "2026-09-01",
+     "c": 78596.59
     }
    ],
    "DOGE-USD": [
@@ -965,6 +977,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-08-31",
      "c": 0.0826
+    },
+    {
+     "d": "2026-09-01",
+     "c": 0.0829
     }
    ]
   }
@@ -16790,6 +16806,216 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZUVMTVcxWGVZSVI1LU95UU1yd0RxNnVFb2FXY3lJdVEtZ0E0bUlSSHR1NGJXR1BWaDFkU0hZWHA0Y3FMamxVZ1ItM3g0ekFMOFdfVFVMclpaaExBU1Znb0JZOGN0dHVCTGdRekZCdEdHa21xb3l5THdKV0FtZVFKelBDdWNjbDc5dm9Sc2JvVlZBV1ROQUZVTy03MmZXNXFTRVhCOHl1eVJ2TDRaRzB2Q3BIMWdNTENh?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-94fe25c1cf6f",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk称SpaceX拟自建燃气轮机关键部件铸造产能，瞄准AI供电瓶颈",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZE84TUs4ZDV2OHVZckM0OGF5N0pMV2lfRFBuWktYQjBwZi1DYks3UjVUa1ZDWVViSW9kTnBuM2RrbmNnQklDTTE4MXE5YndEdjZ1cEpEWXh5MjNmT1R2aWNENW5YTmxmVlBMYXZHMW1BTDktWWc4WWpLazFCb3NTcWNHcGM3SnBWeHVJS0JFN1NWYnE3YjRXMEhqNWxGSGp3amJ2a1UxTG1iblREWE93Uw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-a51ce2230d9c",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克的父亲称他并不为首富儿子感到骄傲，更喜欢另一个儿子",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPTExsUkk1WjI3eGdKLWRvOFNKR1NSVkYtYS1VNWR3bG1TZEtZUXJvQm05WlhhYlVtTUQzV0VCMV9nOWtOMG9qaF9OTWFqajV0OFk0enV2SG81UHgwUWE2b3hwNnRFV0dWOWtlM3RsTXY2U1F4VndsVkFNSmQ2SHNEMWJ4bG9Edy1RbDJzcWRIX2NhMi1iQldoZUduRGxZcmVteUpfeTByc3hRZDlTdU5xUnV0WkhSQ1dPWHRyN1c0M2JxMmJ6TDdEOUFiWXVUYjc1UExoRE9rOHZmSjB2ZUFXampUdEJVVUVtSTAwOFVqWWVKZ1JyNnJpeFVjNElUMklLcDNhblZ0YldIaXRzN0hQd0tWN19LUzZkckkxV212V3hGRFFJMksyNTVibDNvUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0928127f3489",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "不以马斯克为傲 老爸：鼓励儿减肥",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNWnNvVEdYNURnN0lVN25qYmRDNnZRRGk5WFd2T0NMNVJWYmxaSUw0b21GeDRFNDJnVWJrYkFpNWFGTUl5azJ6R3psRmpTMTRqbXNPX01sQllXMnl0UjVaQl90VFJvR0pwcEQ2MW5rbk9XQ0I5bm5ITFdLV214QXNPXzdTZVNLeXVGQ3VPS3RDeXNfLWh0cmFlb1RFQ3kzaWNXeW5qVVFKTWg1ODFsZkU0eGdNdDdMeEk3YlQwYzcyTURwVUNDWWxJQ2doUlZ4NVdfY2JMVkxDWVB3UThudmxFeXotbDcyM2F1MllRTzFFeXNFYldmY0tmN3dKelN2eE1rUHd6Vkk1TQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1861beb2c18f",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文艾里森舊金山豪宅4500萬成交 成房市復甦指標",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVW5WNmpVZDZvdmFRMnhjZUFOYXBGdmI1YUhXdnBmdTY5OTRiaFhsQXI5b2p0eDNpVk9PbjBoLVJSU1BhR2JncTF0SGNrbENiMHM2YUhmVERnSDlZQ3B0SUZyMDdTVFZkLU1SaUJSMnlidTNoN015WHRsRU9SS0UyeTBkcGdtZ9IBZ0FVX3lxTE5JSU9IZnIyZnlSWFpnSzNBVzdURUszWTVkYmhvYVN4enV2bmo3S2Z5SVdKd0pzY1pwSkNrVGJ5NDczMTIxNGpQemh5YU5VTThQaVpjbTZJcXJOSEJhZGh1ZVpuQ1NWdWM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9076a204f1a8",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81岁沈阳女婿，“夜袭”马斯克",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBPWlRtRnl6bnBjWDZweVFPdDJaWUxKN0JTektXN2V1UDZhOFkxZXJHSDJiNmw2ZzBLYlllMHE1bUM5a1dfb25qcFFBUWhWMUZkTTJhb0h6TzF3ekw4eUh4Y0ZIdUptcGxPbjRwYWJn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-40aa4a0217f5",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "马斯克、黄仁勋、奥特曼将齐聚G20，美国拟推动AI监管“松绑”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jRS1URFVhSzdqa2pjWkVBRjUxX0FVTWR2MHRlOVFPZEJteXU2T2hVSGx0MDFUNHY0Q0RSR3ZYalNwdUFXdktfR1oyOXdVZ2M5VlMw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c7aded56fbc0",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "对 Deepseek 从赞叹到压制，硅谷为何一周内变脸",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBtN3VEazVlaW9nZGpfdzVmMi1aa0gyTDNkSjJudUg1WjFjNmVpcG5QRzJpZnhKTTFxNHo0ZlFPYXpTREdZcGgxQS1SNHZRSER1bTlHY2N4VQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a9f7c45a697f",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硬杠马斯克，Peter Thiel投资了一家比Neuralink更牛的脑机接口公司",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBHMUg3NkdYZDZfaWktR3ZWOHdxa3Myekpja21xNkZSN21NbnJ0TUp4UmZYYnVDNFZTVXlxRFMyX2hrQi0yZnQ2MA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-41a7882337e6",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel认为中国科技产业不值得投资，为什么？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbEEtWWMtaVNrWDdvWU14TlNHb0hVLXQ4VlkzbWNSVHBCUzA4ZVcyMFdnN0NPbWhLdkoyMGlfY3UzNW16Z3BKbkl3dTRKZTllWXNKcXdUSmktVVVYUlhOY0FVcUlXa09tTXRHc2ZhRnBuRzVkOTFubXFvTVdKYnJTYkNPVFR6VWtNaVlMcWZ3cXNKMzNVRndsQTJ5S25FdGppTDdLdTdpbw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c8611c02d6af",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z：一场“好莱坞” 式的胜利",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPZTc2U3luUHItR1ZpLU1YNm9aVzdpaGJmREhScS00alBFWHZxcUNSaGhJNXUydFJTXzVuajVvNGdvSDV1Tnd3U0xWbWVNQ1NzUkM4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3bfacecde997",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "跟踪Cathie Wood：增持英伟达和精准医疗，减持AMD",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRnFYX1JWRjF4LXJZdDdYREo5amNCdF94d3F3WTlXMjVJUWdjcEVJMm15YjRMdlNSX3NTdUpubTJYcW5aSy15WnV3UGo0TjE0aGljY2tPdHBReElqYVJZNHp2LXV0T3U4ZUlFVzFhVi04MnQ5MkJCN1pJVUw2dUtDSG5pTGtEaTBFcXNSSHptRnFjRXhLMVhFSG1SMS1PRkI5c2RBaGc2ZU9jMUxzZG5Ca2xLY29WZDQ3SUs5NHh4Znk0V0pmYm5v?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7686ae6c8e77",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Small-Caps, Bitcoin, and a Cathie Wood Buffer: 3 New ETFs -- Barrons.com",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVG1BUHBJVlRLYzRsWTNzeHQ1dV95M3J3ajlNYWJPdUZEbHE2NE54SHRkQmFjWWhmWUFiZmthQ3NWSFp5TmdjamxiejNhSTlFTnZSdm9oVnYwamI4NFJ0dzBxX203cXF1UEFvUktpVEhJRXhOMDRUUEtmaXFfQnQyY0U2Nm5OV2JLNnVaeTdRMzE3aF9xSlVfS00ySWs?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-04bfb0dc4c15",
+   "type": "event",
+   "ts": "2026-09-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "日赚超亿，Citadel证券为何这么会吸金?",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnQy1tRjRMT2x0dkFPRW9rMHhtbTN2bWdfSFlHRHBFR0xaeGN1aVVIdExZaFprcWRiSG5vSjV0aExyWWdoRUhTc0cyZ1kxZ0xpb2lj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -16892,7 +17118,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2237 · xAI 252 在招（2026-08-31；Tesla 无免费接口）",
+     "v": "SpaceX 2239 · xAI 253 在招（2026-09-01；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -17472,7 +17698,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-08-31 08:42",
+  "last_run": "2026-09-01 09:20",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -17483,7 +17709,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 60,
+   "edgar": 61,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -17491,11 +17717,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-   "net": "2026-08-30T11:26:04Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-23",
    "net": "2026-09-02T07:46:00Z",
@@ -17515,25 +17736,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | O3b mPower 11-13",
    "net": "2026-09-30T00:00:00Z",
    "status": "To Be Determined"
+  },
+  {
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
+   "net": "2026-09-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk会晤阿联酋BRIDGE峰会领导层，探讨媒体、科技与AI的未来，并获邀出席2025年首届BRIDGE峰会 - Business Wire",
-   "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00WUpzbWtSdXhGLVZabUFWNFBBaWZIekxMQzZjcFByYXJqT3NOQTU2ZDBaQ3VvOVI2Y21oQ3J0NEF1R0ctaV95c29sSVZNZ0doN1VTT0pTNFpPclo4YnNTWVFYbVRSOXhNbHlF?oc=5"
-  },
-  {
-   "ts": "2026-07-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 18 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-18",
    "rule": "R3",
@@ -18476,6 +18686,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-01",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk称SpaceX拟自建燃气轮机关键部件铸造产能，瞄准AI供电瓶颈 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZE84TUs4ZDV2OHVZckM0OGF5N0pMV2lfRFBuWktYQjBwZi1DYks3UjVUa1ZDWVViSW9kTnBuM2RrbmNnQklDTTE4MXE5YndEdjZ1cEpEWXh5MjNmT1R2aWNENW5YTmxmVlBMYXZHMW1BTDktWWc4WWpLazFCb3NTcWNHcGM3SnBWeHVJS0JFN1NWYnE3YjRXMEhqNWxGSGp3amJ2a1UxTG1iblREWE93Uw?oc=5"
+  },
+  {
+   "ts": "2026-09-01",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
    "src": ""
   }
  ],
