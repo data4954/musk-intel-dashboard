@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-01T09:20:15+08:00",
+  "generated_at": "2026-09-02T08:22:00+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-01",
+  "asof": "2026-09-02",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 367.95,
-    "chg": 5.44,
+    "price": 356.09,
+    "chg": 1.67,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-01",
+    "src": "Yahoo 2026-09-02",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 143.69,
-    "chg": 6.44,
+    "price": 142.23,
+    "chg": 3.1,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-01",
+    "src": "Yahoo 2026-09-02",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 78596.59,
-    "chg": 0.98,
-    "src": "Yahoo 2026-09-01",
+    "price": 77325.82,
+    "chg": -1.18,
+    "src": "Yahoo 2026-09-02",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0829,
-    "chg": -2.72,
-    "src": "Yahoo 2026-09-01",
+    "price": 0.0815,
+    "chg": -4.37,
+    "src": "Yahoo 2026-09-02",
     "status": "green"
    }
   ],
@@ -279,6 +279,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-01",
      "c": 367.95
+    },
+    {
+     "d": "2026-09-02",
+     "c": 356.09
     }
    ],
    "SPCX": [
@@ -513,6 +517,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-01",
      "c": 143.69
+    },
+    {
+     "d": "2026-09-02",
+     "c": 142.23
     }
    ],
    "BTC-USD": [
@@ -747,6 +755,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-01",
      "c": 78596.59
+    },
+    {
+     "d": "2026-09-02",
+     "c": 77325.82
     }
    ],
    "DOGE-USD": [
@@ -981,6 +993,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-01",
      "c": 0.0829
+    },
+    {
+     "d": "2026-09-02",
+     "c": 0.0815
     }
    ]
   }
@@ -17016,6 +17032,150 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnQy1tRjRMT2x0dkFPRW9rMHhtbTN2bWdfSFlHRHBFR0xaeGN1aVVIdExZaFprcWRiSG5vSjV0aExyWWdoRUhTc0cyZ1kxZ0xpb2lj?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-06ef04a7e0d8",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克再放大招：视频生成全球免费限时开放！付费用户又懵了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLRE13MFctUW10T3QwaEZCRTJiQmh4b2JFd0VTQzhhV0FlZVF1SXhoUkQzbUVOc2t0T183MGI5SlpPTjJ2TlNLcHNKVGF3ZFRYcHBMX1ZESURQcEl4a1E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b93e6e3ea79b",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "拉里·埃里森结束了辉煌的一年，甲骨文股票自互联网泡沫以来涨幅最大",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVTQ0bHZidkpMVFlqaTZ1dnhETXdoSlVCODljMDVXVkdiTnBlWGJTSGFtZ3pzRVMyUE1aNE94VlFSblRkMEdPWDNSREZHcmJQbnVTVEhGVEpwMXAyT1kxUk1fMTU0dHNqczUwaGg3WFBJZEMtWUxRcXc2aUQ2d3F3RmEwWTRhS3c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-27032c484552",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球第三富豪的新妻子，小47岁的中国留学生，拥有8亿别墅却很少在家",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fblJ2QnlPX3BjUHdlSjQ0TFRvb2U3SXNCZnRMaDFuUmJqaWk5TU55NDJvTm1IQk82YnFBdHJ3QTJ3RWplUEFTSUNFS1ZQMEh6T0MzUWN3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5b0327522f41",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普总统是创新者在华盛顿最得力的盟友。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYThzM2VtaHFfSWg0OU1NaVBLVWI3VGZ5MG5YWjdQaXNCYzMxRGxqeU1rZ3VjN0hTOE40UWhQYzBUcGVXOTNxcWFOOG5aOENWLU1rQk1weEllNklYUG8xenJKN0thX1NPbnRNT2NObVF2bEs1WjllbF9fVmdDcEllQ2ZkeUJaSmV6YWpRYk9nQ2hFRGo3S0tROFl6RGR6OHJOdEo2QXBVY09TYkJtcjBydmN4RU0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5d85227f7a2d",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "新教皇取名竟和AI有关？美国首任AI沙皇：AI四年内增长100万倍！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9KNlE5Q3EtMkt3R1dteS1FX1k2TkFkb29yS1lxbloyR2lKRnlvSExUM2c1SGtYSjNtR2Z4bDVpaXdTRkpaR3FmRg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3ec54891bc74",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "加密货币公司Bullish冲刺纽交所：Q1净亏3.5亿美元 Peter Thiel是股东",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkanNlcXRjMnNHcWZKeVBrd3RHcmdZc3RNRHc3bjhlbXhXZVNhQkt1WkF1UEY2Qm9nR3dHUjBjdjRPa2ZJTWFvMzc2R19zeXZfbGNwOG5IWnZfX3dDa0ZhcEs5dlJIbzZXUDFlUE5VWmNUTHBvRGh6V3ZDOU5Qdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-397510cec25f",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "特朗普马斯克“背后的男人”彼得·蒂尔最新发声，深谈失灵的系统以及如何务实的投资",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4xWnNmQ3d0em9ST1N4YlVURFMyUkZBNS00ZGV4RHdpNmtsOHFzRHlGTlNITDNiSDU2cjc5eUgyWWNORlhmZ1YwZGZ3Z2NxWTk4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4120c5be7cd4",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "跟踪Cathie Wood：增持超45万股，减持人工智能和基因组学持仓",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQVgzWVRPODBuX0lsV3FTU2VKRGhaRkJOR1ZJVVdzQnNqQzBvVFpZQTVDMnh3U3lJUXV5SUJDVVBldXdRaVlTLUxDQnd2VlFpaWRITzJQOGRuLUloMlppMnl1NlVIOVlOTFZrb3VlbUotR3NmTnJndmV6TnVhTkFrUTVXS3R6ZFlONG8tTjVvZ2dRY3lmblZEQ2ZUSXVQb3FNRldsMHpHd3dvZGlyc012NmRjVEZtSUt2V3c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-474b935f0a0c",
+   "type": "event",
+   "ts": "2026-09-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood has stayed incredibly bullish on Bitcoin. Her la",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1JNlphMHRLUXVaU2lvX29qQTF5amdhOFZaTTJLRjdZLWxMS0k1VDh5cTVyOWw3Y3dWNi1xNE5qM3U2TTNENFpiS3plaTZiMUFSOWNHb2xyTzhwbHIx?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -17118,7 +17278,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2239 · xAI 253 在招（2026-09-01；Tesla 无免费接口）",
+     "v": "SpaceX 2254 · xAI 251 在招（2026-09-02；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -17698,7 +17858,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-01 09:20",
+  "last_run": "2026-09-02 08:22",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -17709,7 +17869,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 61,
+   "edgar": 62,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -17719,13 +17879,18 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-23",
-   "net": "2026-09-02T07:46:00Z",
+   "net": "2026-09-02T08:18:09Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-24",
    "net": "2026-09-06T10:59:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | USSF-xxx (\"R-2\")",
+   "net": "2026-09-10T15:37:00Z",
+   "status": "To Be Confirmed"
   },
   {
    "name": "Falcon 9 Block 5 | Crew-13",
@@ -17736,30 +17901,9 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | O3b mPower 11-13",
    "net": "2026-09-30T00:00:00Z",
    "status": "To Be Determined"
-  },
-  {
-   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-09-30T00:00:00Z",
-   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克:SpaceX不缺钱 上市是为了这件事…… - e南洋",
-   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aMFNtZm9zUll6NmpPcy1VNUs1WHJRV1diMG1sRXQxbEtCTjFPSVZFWXVqRXdZb3FmMVBtWXMySVpnZnlGNmRuLWlvZEk0M2pmSTJqSUhURzNGNFBGeDdOYWNwVQ?oc=5"
-  },
-  {
-   "ts": "2026-07-18",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk：扩大Starlink V3规模，进军太空算力 - 36 Kr",
-   "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOUXBoQkpsMGNJVEc2UVZTcFl1UUxRMEhISDFFUU4tZ2dVTkZpRHJsd2JOVURxTEZxQUpTX3MxVllSOUREX0JuOC0zNjIxZw?oc=5"
-  },
   {
    "ts": "2026-07-18",
    "rule": "R3",
@@ -18702,6 +18846,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-02",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-02",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
