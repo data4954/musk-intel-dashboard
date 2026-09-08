@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-07T08:07:45+08:00",
+  "generated_at": "2026-09-08T08:34:14+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-07",
+  "asof": "2026-09-08",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 354.08,
     "chg": 1.53,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-07",
+    "src": "Yahoo 2026-09-08",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 4.56,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-07",
+    "src": "Yahoo 2026-09-08",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 80372.85,
-    "chg": -1.11,
-    "src": "Yahoo 2026-09-07",
+    "price": 79131.12,
+    "chg": -0.68,
+    "src": "Yahoo 2026-09-08",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
     "price": 0.091,
-    "chg": 3.7,
-    "src": "Yahoo 2026-09-07",
+    "chg": 7.26,
+    "src": "Yahoo 2026-09-08",
     "status": "green"
    }
   ],
@@ -303,6 +303,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-07",
      "c": 354.08
+    },
+    {
+     "d": "2026-09-08",
+     "c": 354.08
     }
    ],
    "SPCX": [
@@ -560,6 +564,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-07",
+     "c": 147.95
+    },
+    {
+     "d": "2026-09-08",
      "c": 147.95
     }
    ],
@@ -819,6 +827,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-07",
      "c": 80372.85
+    },
+    {
+     "d": "2026-09-08",
+     "c": 79131.12
     }
    ],
    "DOGE-USD": [
@@ -1076,6 +1088,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-07",
+     "c": 0.091
+    },
+    {
+     "d": "2026-09-08",
      "c": 0.091
     }
    ]
@@ -18312,6 +18328,200 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNRy15a05wM1lvRzRZMHhmUTZtczBSM2R6bVdGem1NYm9ld0JLUWVoY2w5cUhzcnRzWEgwRmZ3TXlBeUE4blQxdG5YTnFyTk1EN0xNUGU5X19IczVwUm5uMzNiU3p1VmtRMHFzWnZ3Nm5yT3Y2SUhSbWxQZXUzX2NZT2paeXQwbl9BaUZ6dXJ3T2xIU3QzSklTOU5TZDRzRUsyd0Nlb2VHY2p5T3JjVXVmdnV3azFtRUQyY2JaUXN1Q19WSXdaZkF4Mk0zU2RwUTQycWU5aTZQMlhTVVZxTkFYQ1dCbDROWHhLVkNSYlc1dUxHOVNzYlVEaDBtMW1KTHZ1SDlveV9zVUxLMmVvbnZwd0VfN2owVS1FMDJJ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-7a62476daac1",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk dice que Grok 4.7 será lanzado en 10 días y superará a todos los modelos",
+   "payload": {
+    "src": "CryptoRank",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yR2cyYkxsV0IyQWswd2I5NWJnd216cTJ6OWo2TWdFRGtYQzhGS2JwWmFVNUc4RnRiVnJqNWY0NElTdk5KUWYwT1NfRURTdXFjSy1OX2hreW1BT3U0b3N1d1RNSXZ6OTFULVBrb0ExenBHR2FBYUM2a3pySWpDNms?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-5ca96f9c27f4",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "有首富哥哥的困扰！马斯克胞妹抱怨：因姓氏租金秒涨5倍",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA1Zk1EMlVkVGhmWHFIc1c0UVQtWTZfTlRCY0JmR29hd1dGME9pdTF6MGI2RzlIa0VuRWFvU1EySnI3Rlpmc2tTLVB0NnBuU3FVYnc3dXJuUWszZ0Z1X3ZOSmZEUkYxeDg0MEhtY3k1MzNGT3FIRm9tQg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-eb8e15259ab0",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "马斯克成为有史以来首位个人财富达5000亿美元的人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBMR1NsYjlFQ2RmWDgyanJ0bGstNWJzZFF1cHdCdFRoTUtqaWxoaW9OX0gxa3JUcUN1ZFV6dmJkb09rdVNubTM0dDRVRlpqc3ZSa05Z?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-169bd08132ff",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "馬斯克薪酬官司逆轉 資產破7千億 創史上首例",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkRUVqZjJXcGpiZVRlbFJRYUNyaVBDN2dob0tMb1Q4TmlQUHRwZnN1Q05SRlNwZG50aEtqdFdyVjZ5aUdCVXc4VTRMMGFLUmgtbXBNUVhJQ1FQd29DWElld9IBZkFVX3lxTFBLNHBTOEEwNEFkaWp2ZGNXYldadEJ5WUpKS3E2dy1QMFFUTy1MWFpPX1RoT0FMSE5kYjVOQndkQTdiY01RVXhveWRQMFVpMlBsS0lOMFFYUUZRSmcwTzd0eDlObHNyUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1ab07f1868eb",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "或受“David Sacks看好0x协议”影响，ZRX短时上涨22%至0.8159美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Uam1wQWtOZlNhUkhaT2g2Z3JBenFEaDBTTk11VHdRbXdEQnhYTHNFeWxCQ0k5TlVsNm1jYUZqc1FBTEhVZG9LQTBNc1VHZGx6NW9uUkRVNlRtOXJSa3BRZnlBZGxyeXJSOFo4d3pabzlXTjNabkg0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8921565c5e41",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "“双货币时代”来了？美国债务每100天增加1万亿美元 比特币料迎来“井喷之年”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1oQl9VUldwdWtCdk9qZTdDWFdVdDdhMDFCeEprZXNLcjZaUDlPZnp6MlRjXzd3ZzIwSENiYXdYdTBaQ2RJeW9PZ2RfdFIzc3J1akc3YVZzTGZJemVJTmhRTVh0aXVteFZEbS15bFI4MTVYS1pKTUdZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-53fa489f668d",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "亿万富翁彼得·蒂尔三季度清仓英伟达537742股",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4TW5SVVN4RmJoTGxuWDYzQzNBNDdlWE55Yl93UlFwUjNKMlktdXlkaVotMTlMZFZQRGdISFdLQzJwWEp4TndOUTdlMDZ5ak1MbDYtNVNSSTBrcFVYVjNXYUdFMk5JTjIyNWhDeEljc1Etdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4998311def04",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "纠正假新闻周期：彼得·蒂尔持有Palantir，软银公司在人工智能领域承担更大风险",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObmVDNXQzcFZHVC1MR2NvSmdabFRIbTYtNWMwYV9Ma3dpM3liU21TaGtRWHp3U1FfUmpkT011aWV0SUx6YnFkaTFmbFc0TnMtOU13TU1rV3dzR05iQzc2TWpxVWc0N3BMd1VvYnJJbF82YkVibnFUT1Z1LWFDNE9GQ202WjBMU05VNm5iREhJTEY5Q0NnM25aZThUalVnazhqdWs5U0pDbmVydHVjaFJtV0JCQlFrODBNY2FFTW8xckx4TThC?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5a71d2ecbce9",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "扎克伯格、Airbnb背后的风投大佬a16z：传统风投正走向死亡？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1aeE03WTlMd21MSlltTjQ2d01kcDJ2a0piYUI0Qlo1Sk13NWpLRkpoTzZKN0FDS29YVloyd0ptMDhoaFJDUEVleFZxY0UwMjNzLVRvU0xUWkxEQ2xMbElxd2tVV0s4V1F3MlFRSjJfekQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c1f92176430d",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood解释为何方舟投资在2026年9月仍如此看好比特币： • 比特币与黄金的对比“前景可期……拐点已至” • 三大重大变革：技术/全球货币/新资产类别 • 兼具避险与风险资产属性 “我们认为比特币既是一种避险资产，也是一种风险资产。因此，在我们所看到的市场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUnZweFlkWnhxTnFmT3I1OC0wUTNlX1VDRy1Ob0kyWkxwRnNmT1NQdzZKUnZBdkFHY0J2NkxDcW1wMXJoVjQxQm9IVXpoQVE0ck95ZlVGTFRLMnctYjZhdk9OMnpLb1NlcnJTbjZLZUwza0hjSmpVWTlleXhwaDZNUlllb210VHdJaTE5Yi11bEs0ZHNaQjB4Zms1dm9kSVdnWXAzQWc0cldjM1hVcVdseFhEVTItQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c2fc3889199e",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：加仓基因编辑与精准医疗，减持Tempus AI和合成生物学",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORG1weDFVZ29Td05YQmNfVm93YWxWcmFvdnFtRmFDWlY0WVZHUVVuZHJZeGJsazBXWk5YNVFNVmFJQmFucGhRZ0cyS09FT2U3Q0o4Z3pzUG5QVFZncmtwaUlvQnJsSjFvQUhXVFpfSHlxeE95Uk1UTHBwQ2k2V1dfYjBCbkY4MEFTMy1nWU9oR0FmckJOMGtpOWpibTZnZWVTT29rNVBZUDg2c2lVZ2Z4akNnOThVbTBqOU4zbA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0b81f49d151f",
+   "type": "event",
+   "ts": "2026-09-08",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel Ken Griffin：趁年轻，多闯荡！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WSWxsMnZHcWpvZ1k2aWNzN0tpQ21BMkZ4MWhHV213akdIelo4S05LYkRCMGI0ai1iU3p4MXZzMzBGcHNJd1FXd0VXMWJxQVBw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -18414,7 +18624,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2335 · xAI 257 在招（2026-09-07；Tesla 无免费接口）",
+     "v": "SpaceX 2343 · xAI 257 在招（2026-09-08；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -18994,7 +19204,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-07 08:07",
+  "last_run": "2026-09-08 08:34",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -19005,7 +19215,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 67,
+   "edgar": 68,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -19013,11 +19223,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-   "net": "2026-09-06T14:26:54Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | USSF-153",
    "net": "2026-09-10T15:37:00Z",
@@ -19037,33 +19242,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
    "net": "2026-09-30T00:00:00Z",
    "status": "To Be Determined"
+  },
+  {
+   "name": "Starship | Flight 14",
+   "net": "2026-09-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Why Morningstar Thinks SpaceX Is Worth So Much Less Than Elon Musk Does -- WSJ -",
-   "src": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWWRacWt2UlVoci1vdUpHWG9qSWU5ZjZfX2NVT04zVktvblBoTkYxZHF0QURkaWhfQmhnYUQ0MzdJbWV1b3c3cWZ4NHdZem9BWnI3aDV6aHhJZFc4cnN4S1l2aWllc1J3aGFyc0VXQUxYS05MRXF2XzNXY2FxWHhRRGxGOVBvcWs4djZMZDE0VDRETDZwWU9ISFJiOS1ZbXgzTHJ5TDlxdGltVXRhUEhfV1dXZzhLcy1tLW03X050MEFCRHRnMnZiWF91d0JaRi1GRzF2cw?oc=5"
-  },
-  {
-   "ts": "2026-07-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 16 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-07-27",
    "rule": "R3",
@@ -19998,6 +20184,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk dice que Grok 4.7 será lanzado en 10 días y superará a todos los model",
+   "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yR2cyYkxsV0IyQWswd2I5NWJnd216cTJ6OWo2TWdFRGtYQzhGS2JwWmFVNUc4RnRiVnJqNWY0NElTdk5KUWYwT1NfRURTdXFjSy1OX2hreW1BT3U0b3N1d1RNSXZ6OTFULVBrb0ExenBHR2FBYUM2a3pySWpDNms?oc=5"
+  },
+  {
+   "ts": "2026-09-08",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
    "src": ""
   }
  ],
