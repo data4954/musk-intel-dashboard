@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-08T08:34:14+08:00",
+  "generated_at": "2026-09-09T08:23:58+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-08",
+  "asof": "2026-09-09",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 354.08,
-    "chg": 1.53,
+    "price": 368.16,
+    "chg": 0.06,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-08",
+    "src": "Yahoo 2026-09-09",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 147.95,
-    "chg": 4.56,
+    "price": 153.47,
+    "chg": 6.81,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-08",
+    "src": "Yahoo 2026-09-09",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 79131.12,
-    "chg": -0.68,
-    "src": "Yahoo 2026-09-08",
+    "price": 78655.0,
+    "chg": -1.46,
+    "src": "Yahoo 2026-09-09",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.091,
-    "chg": 7.26,
-    "src": "Yahoo 2026-09-08",
+    "price": 0.0906,
+    "chg": 1.03,
+    "src": "Yahoo 2026-09-09",
     "status": "green"
    }
   ],
@@ -307,6 +307,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-08",
      "c": 354.08
+    },
+    {
+     "d": "2026-09-09",
+     "c": 368.16
     }
    ],
    "SPCX": [
@@ -569,6 +573,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-08",
      "c": 147.95
+    },
+    {
+     "d": "2026-09-09",
+     "c": 153.47
     }
    ],
    "BTC-USD": [
@@ -831,6 +839,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-08",
      "c": 79131.12
+    },
+    {
+     "d": "2026-09-09",
+     "c": 78655.0
     }
    ],
    "DOGE-USD": [
@@ -1093,6 +1105,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-08",
      "c": 0.091
+    },
+    {
+     "d": "2026-09-09",
+     "c": 0.0906
     }
    ]
   }
@@ -18522,6 +18538,218 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WSWxsMnZHcWpvZ1k2aWNzN0tpQ21BMkZ4MWhHV213akdIelo4S05LYkRCMGI0ai1iU3p4MXZzMzBGcHNJd1FXd0VXMWJxQVBw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-709b0fe6393b",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克旗下价值 2 万亿美元的 SpaceX 帝国的十大股东名单已经揭晓。",
+   "payload": {
+    "src": "Vietnam.vn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMingFBVV95cUxPc0JvWDFfSmhvN2dXRVhwR0VwbXNZLXkyc3RSZ2ZaM0hYUWRjN0p3WTc3eGY1dEhwd1J4LVJ3eEJDcnI0dXBzaUVsS2l4RnJNcEtEcUc3TEM0SmU0QlRUcVZXdnhtdXh1MkhqYnFaZ1JFNDllU3FFckhYR1lTS2hKT2VST3JTN013d2FwdzRSVnh4akFXM21Vb0V4T1BmQQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-121a71cc331a",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Here's How Much Tesla Paid Elon Musk Last Year",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVVVBMGNleVd3eC1RREhKQkRDQ21ZaXNmMzZlYmExam10RWt3UWJ4cTYtQVFYX0Rsc1VhOTB3UExVMjgwT0RUSWQ4ZG9mRnBGYkhLRGlMMS1JQWJNVTUtSTBsV2dTSklxU181UERmWndteVNXTUo0OWZfRWhUeDNRRnliMklKZE9ZUEk3SA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-38196a32e9cd",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克被曝用亲信管理AI公司引发冲突、多位高管离职",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5YSHlEV2puaUw1QXRvLTJDOHJUdlFER2FrMDRLeGM0TnhjWENaQzViWnN5S2dKZ0lTd3pnSTRpVndFZ3hZN1ptR2FmZl8?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-93b11a744330",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "财报前瞻 | 被质疑为“AI泡沫的代言人”，埃里森本周能用甲骨文财报回应华尔街吗？ 港美股资讯",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9mREl1UWp0b0RVTFRhS3daTDh1WFlJSzRjNEVRU3NBb1pUVkI1X2lRTm5rck1uR0VtSEhHVGlDZXdWczZEWXNHMVdVV0RNOVp2a01fUFRDZVZzVWRuc01ybVR3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a2e61eb9208a",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Oracle 首席执行官 Larry Ellison 陷入新官司：吹过的牛，变成了砸自己脚的石头 - InfoQ",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9obUphcFVOTVVTa0tObmtjeWYtRUt6WkRzZEtUazR1bzQ1amU2bVJOUE9MUHdMaUxsOEZwMC11Mm1ZN1VxSGtJWmVrUmRRZ0dmOHdyZnFnVVlIZEJQQlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6131c93721c8",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "黄仁勋如何说服特朗普？ 神队友曝光，H20禁令松绑幕后大解密",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45dHNWbm1nemlYMXZQZG15VEM0YnVnNHAzajRnNC1pTXBTM2FPem0wNGk0eUlZOTZUbERic1JHUTNqNGpscUtJU3dxX01kX2ZIWk05TQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5c97166942eb",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Yammer创始人David Sacks重返创业圈，加入Zenefits任COO",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1YZnJZSjktUVMxd3Z4eWt1bkhrMTVhb0JCVWRmMl9DcVRXeUowQnJrM2FfRi1sMldhTzVoamwxWkQ5cDJJRTJkbTFR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cf181b5bb657",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "泳池筹款派对、加密货币和迷你特朗普：Peter Thiel离开Facebook后的生活- 富豪",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tLW1vVkZCSDlxbURiZVRPTlZodE1YVVVQQUMtbUxxMXpZRGxUUVk5QkYxTEtkT003N0NkMXhSOUNraFRnaDVLbWRQWlJ5MElpQ3lSN25yRFA3Zw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e12b53e45e7d",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "当彼得 蒂尔（Peter Thiel）遭遇“从1到N”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBIXzZjNS01bXhwTW5tNzJuSzRKZzd4MUlNcVo5N3E2SzV6QzNuNkxTVXJoNWNOeVRUR1MwM3hwRkhOUHdCUTZXVzE5TWRzVmlRdm5uWVU1NHFlYnlic1JWMGVNNA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5f499edce7e9",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "风险投资公司Andreessen Horowitz三年融资27亿美元背后的原因和故事",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ITl9WWVU1b1l1U0tKaGJFMHBvM0VrRzIzZUpCZEY1X2VfQ1JkSmtkUlZpRWxjMmN3c1V0OEpDSUlZOW1oM0pad1R3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3fe127a849b5",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "BlackRock（贝莱德）：知耻而后勇，奋起直追。投资家Ronald Stephen Baron（罗纳德·斯蒂芬·巴伦，犹太裔）在Tesla 这只票上已经赚60亿美元, 准备再拿十年。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQTktSTc3Z0xHMFpIQ2IzZl9ubDhUTGFSZlNteVpXQTBnVXhBWFhERDJwUnBjekJpU1QtMEhVUmI4LVV5eHNkSHNzRUdfZFVWeFJ0V0Zsb1hIXy1BU251ak80ZUpCaGlmSHQ3eUx1bHVjdkR1WjNMRHdnNWNZVUxnU0FnLV9UOWItTVdCUlVmTHB0eWVERmxhUUZvSGViQV9Sb3hyN3N4dlNwRkVpaXFDUGNSQmlFbDQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7d70f5dfa11c",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "视频｜「女版巴菲特」Cathie Wood：比特币开始跑赢黄金",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KeTZfN3VyTDktUTVueFQ4QnpZZGJIWHJfemRQNnMwbXVzMW5KMlFIc2NQVjVrRUtQa3g2R0twZndQQkZja05qNkhjOUxkRmxnME9rZU1n?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-da57725643d4",
+   "type": "event",
+   "ts": "2026-09-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood称随着AI采用推动就业，比特币正与黄金脱钩",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOUGxVeGRaRWFyWDNOWWhrMEZ5VXZZMWhMVFVFMWUyeFJFRi1qbW9vOGV4ZnR2STdJR0hBS1pZUGw0YksyMnVTUDNWbDVfR3RoZmR4QVE5SjFPREVpbVVNNGFBSURiMFZX?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -18624,7 +18852,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2343 · xAI 257 在招（2026-09-08；Tesla 无免费接口）",
+     "v": "SpaceX 2346 · xAI 253 在招（2026-09-09；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -19204,7 +19432,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-08 08:34",
+  "last_run": "2026-09-09 08:23",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -19215,7 +19443,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 68,
+   "edgar": 69,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -19234,54 +19462,22 @@ window.MUSKINTEL_DATA = {
    "status": "To Be Confirmed"
   },
   {
-   "name": "Falcon 9 Block 5 | Crew-13",
-   "net": "2026-09-30T00:00:00Z",
-   "status": "To Be Determined"
-  },
-  {
-   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-09-30T00:00:00Z",
-   "status": "To Be Determined"
-  },
-  {
    "name": "Starship | Flight 14",
+   "net": "2026-09-15T00:00:00Z",
+   "status": "To Be Determined"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-27",
+   "net": "2026-09-20T01:47:00Z",
+   "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Crew-13",
    "net": "2026-09-30T00:00:00Z",
    "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-27",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "现实冲击马斯克及特斯拉、SpaceX的拥趸 - 华尔街日报中文网",
-   "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUFXUFByUkZBUTJCSDJfVUpMclJ5OGpRNTFwaVRjMDJqaE50eVhCd0ZTRmZtQ0ZmYm9QS285RTY2Q19hQTN4YzVnclRHUmdfcHRkUWxiSlViVGVIQ0ZkRjRsUEZvOTFNN29tdjhUZE81eXNPam8yeHFsRjFEQnREbzUxanVVeDJXbkc3eldXajZoMW1wY3c?oc=5"
-  },
-  {
-   "ts": "2026-07-27",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "🔥🚀 Elon Musk 刚刚抛出的，可能不只是“太空数据中心”这么简单。 - Moomoo",
-   "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUjAxaEdSWnVtUnFHM2Z0azRzeE5BWDQyTWp2QkFuaFU0WHkwSkc1OGsyRDZ0SXFvZDRfR0wwNTU3dHNhMS1TRXFpVTNQb2d6SE9oYmw4dmNNUVBzODdZVldYS2RGLXc5VmVUdWtpYkV0SlRHakhSU0phUi1kVk9HZklLNHJKUFAtcGFaQll6TUI3Y1NRZUJFTHZDN1E0RGhueUpWb3NiRkE?oc=5"
-  },
-  {
-   "ts": "2026-07-27",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 18 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-28",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk 想在月球打造 AI 超級工廠 - Hypebeast CN",
-   "src": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRTBhNk1wdXhWaklXY1ZGUHVSN0gtNWttNzRSSTFNTUhQaGRVcXZXaWVrSDdxOVdIc2tRcDkwS1BQYWJJQjRCM2ZxUXFIWVpiZGRud1p5Rzd1RE1veDktckt5MGNEejAyWDVFbEJuZVF6SFQ5eFBBaThDaVprOXg2cm9GdWVnZ3pV?oc=5"
-  },
   {
    "ts": "2026-07-28",
    "rule": "R3",
@@ -20204,6 +20400,38 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-09-08",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克旗下价值 2 万亿美元的 SpaceX 帝国的十大股东名单已经揭晓。 - Vietnam.vn",
+   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc0JvWDFfSmhvN2dXRVhwR0VwbXNZLXkyc3RSZ2ZaM0hYUWRjN0p3WTc3eGY1dEhwd1J4LVJ3eEJDcnI0dXBzaUVsS2l4RnJNcEtEcUc3TEM0SmU0QlRUcVZXdnhtdXh1MkhqYnFaZ1JFNDllU3FFckhYR1lTS2hKT2VST3JTN013d2FwdzRSVnh4akFXM21Vb0V4T1BmQQ?oc=5"
+  },
+  {
+   "ts": "2026-09-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Here's How Much Tesla Paid Elon Musk Last Year - 富途牛牛",
+   "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVVVBMGNleVd3eC1RREhKQkRDQ21ZaXNmMzZlYmExam10RWt3UWJ4cTYtQVFYX0Rsc1VhOTB3UExVMjgwT0RUSWQ4ZG9mRnBGYkhLRGlMMS1JQWJNVTUtSTBsV2dTSklxU181UERmWndteVNXTUo0OWZfRWhUeDNRRnliMklKZE9ZUEk3SA?oc=5"
+  },
+  {
+   "ts": "2026-09-09",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-09",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
