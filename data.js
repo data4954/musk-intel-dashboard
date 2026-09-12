@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-11T08:18:27+08:00",
+  "generated_at": "2026-09-12T08:25:32+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-11",
+  "asof": "2026-09-12",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 363.56,
-    "chg": 1.83,
+    "price": 365.44,
+    "chg": -2.9,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-11",
+    "src": "Yahoo 2026-09-12",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.18,
-    "chg": 5.31,
+    "price": 151.21,
+    "chg": 0.98,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-11",
+    "src": "Yahoo 2026-09-12",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 76760.21,
-    "chg": -2.98,
-    "src": "Yahoo 2026-09-11",
+    "price": 77276.78,
+    "chg": -1.48,
+    "src": "Yahoo 2026-09-12",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0834,
-    "chg": -7.99,
-    "src": "Yahoo 2026-09-11",
+    "price": 0.0843,
+    "chg": -6.35,
+    "src": "Yahoo 2026-09-12",
     "status": "green"
    }
   ],
@@ -319,6 +319,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-11",
      "c": 363.56
+    },
+    {
+     "d": "2026-09-12",
+     "c": 365.44
     }
    ],
    "SPCX": [
@@ -593,6 +597,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-11",
      "c": 148.18
+    },
+    {
+     "d": "2026-09-12",
+     "c": 151.21
     }
    ],
    "BTC-USD": [
@@ -867,6 +875,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-11",
      "c": 76760.21
+    },
+    {
+     "d": "2026-09-12",
+     "c": 77276.78
     }
    ],
    "DOGE-USD": [
@@ -1141,6 +1153,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-11",
      "c": 0.0834
+    },
+    {
+     "d": "2026-09-12",
+     "c": 0.0843
     }
    ]
   }
@@ -19220,6 +19236,152 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2S2cwQVVIVURjbEpiNTZGeFRaOWFhQXJhVUJuTEpGOVZhM0NDQzJzNl9ZTlMtNnZiQ1ItUThRMFJBWEJUa0JyckpUalE3ZzRSQlI5WklRVkIzdw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-a46fe97fc75d",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk đáp trả Bernie Sanders về khối tài sản 900 tỷ USD của mình",
+   "payload": {
+    "src": "CryptoRank",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOVdmeEcwZ21PN2NNVHA1X245Z1pSOFZ0bXNNem5Mb2YyVFZZVXVMbDBTLUVOQ19CZFAzY05rWlg4aExwYnNydmFiakdFcHpBdzByekdaaHhYWXpVeWRlcV9FckxPOE9mTURKU1ZKNzhXYnhuQnZfYUxEUzNFdHFEakJB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-5a127e8a7a1f",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文財報優於預期 上調全年獲利預測",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE41SUlWTkxzX04yOXZsS2ZKeTVPODNUN2U1VmhabFktZG16cVZxaUVDSUdfNnpYM1JLVTVhM3BzRHFFYzNhdl9nRE43bzJlVkk4b3RWNHBVT0J5dklET3hDdmp4TGVQQdIBZkFVX3lxTE41SUlWTkxzX04yOXZsS2ZKeTVPODNUN2U1VmhabFktZG16cVZxaUVDSUdfNnpYM1JLVTVhM3BzRHFFYzNhdl9nRE43bzJlVkk4b3RWNHBVT0J5dklET3hDdmp4TGVQQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1e2cd47ee77e",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文(ORCL.N)：执行董事长拉里·埃里森于6月22日采用新的交易计划，该计划定于10",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUzkwdUdtUWUzcldCS2p5VmtLWWxtZURrZkI2LWpvYUZBNU1FVjVJVmFLYXhXUkt5WkpSRFV6Z2ZmM1dwbEd1UExoMmlQSUtLTmZzTFB1SGxvS3o3NGJ4cEp2YVBUdEtIMHFyS3p5M2hhWnl2WUkzcks0MVVidVMxalVfTkdhNHQ5eDV4cXRaQUlFU1YtYkp2eHdKMlhLVFZDRjg5UUR0dTk4UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fc2f4fb2e254",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宮科技顧問：Nvidia AI融資計畫 潛藏「暗GPU」風險",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcG9fR1I0RU0xYzFnc2dvQ0lxRmRQMWNEblIxRGY4Um9GX2R0NnlFdGFTSWIxbzJpemxmekl1WnY1QlJLRFdwWWpRa3NvZnBweXZqeW1oU2lkRGtUMmsxS2dvT1hUYjVwbTBraXZVX3ZpVDc4aUxhQzAxaHNsMU1UZWphTlRYUdIBZ0FVX3lxTFBBNm1RV2dpcFNhUmJEaVBWcXZMd0tZYUNENlo4YVdQQUllYW1LZWxOd3VDQTRnU2JRcmJma1RoQmZGNGt1VkYzWlhreXl1QnFDV1FIY2Y2WlMtMjhlREE5OFhlRko5b0E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-798b55792225",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "AI Regulation Showdown: Zuckerberg Wants Speed, Sanders Calls for a Pause",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNHctMGNfQkpZY0hUM1oxZklqNl9tV210cFhWcmd2XzEwbTE1S0RrQWNicVd2V1RpUU4xWHNEbkx4Wm81U0JVTTJBdTFuZ0gxMVpuV1ZGeXFhcmdzVEZwYVp1T0g5VmJJX3lhNDlYdEtIT21lbnVackZyR1BLSHVSRE92WGRyT2dWbHc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1c005e20e625",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Palantir崛起简史：站在政治与科技交汇点的硅谷异类",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84UVZjOUdzNHRnVFQwdjhRUUdCQVlFcDdORnE2U19NZ3FmVWJvZUh3WVdWdkJsUVRKN2g4dDJBZUNYdGZTYTNCUzczNmZBdnVsR0xYNA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-06ef9d477f8e",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "全面认识Peter Thiel，这个“明确的乐观主义者”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5hZHJ3S0pzNzA5dmdEX0U2ZjdUVThjUW9WUnVRVkxPZkx1SEJ6eEg3c3liX2tLTnVuWkxxVXpIR2ljLWlEQVZrRUln?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3bb8c73b042e",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "跟踪Cathie Wood：增持Meta和L3Harris，减持Strata Critical Medical",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVm1xdGZCNXFtWktOdUw4NENMQlNDTlZDZGNDZ0k0NkUyNmNZTlNzU2VLS0xTSjNfS2M2SkdJajctTm41Zm9JVWpFVXZqaHpWVjlrejVnaDROOWRfZzR4Z1RUN3hvUkxEMGZEa05NaEJpU2IxR3B4dEZTVG5sYUROUDdyMUtGU3A5ci02SjBqaHZJYmZob3lXSkk2LTllWFd1aUV0S2NJTmxPd3pKVDBONy03aXBoeHpvOV80djB0OA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-66f14ae40643",
+   "type": "event",
+   "ts": "2026-09-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：重仓押注Block和Coinbase，大幅减持Strata Critical Medical和Robinhood",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVBYakVKLWZsQkVKSGhJekJLbGJJa0oyc0N3VEpHRTJKdWxmaldveTZ4QXBmNHhSd05qRUNYR0tDeHBJZUdZV3M4UWRPcnhOek5DY3FpMDNQZ1hkUGhFSzN5TjJsaXlTOTJnVksxZjRRTUgyR1gtY214eUNMRTYyZTh6V0YyVFZwOTZpX2NiTkNaSTVhTEtzbkY2TFVBTVM5YmVCRkwtdTJ1STNmamwxM2pPeG9MOVlf?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -19322,7 +19484,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2383 · xAI 252 在招（2026-09-11；Tesla 无免费接口）",
+     "v": "SpaceX 2403 · xAI 254 在招（2026-09-12；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -19902,7 +20064,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-11 08:18",
+  "last_run": "2026-09-12 08:25",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -19913,7 +20075,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 71,
+   "edgar": 72,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -19921,11 +20083,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | USSF-153",
-   "net": "2026-09-10T15:42:30Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | O3b mPower 11-13",
    "net": "2026-09-13T18:49:00Z",
@@ -19938,40 +20095,21 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Starship | Flight 14",
-   "net": "2026-09-18T00:00:00Z",
-   "status": "To Be Determined"
+   "net": "2026-09-18T12:15:00Z",
+   "status": "To Be Confirmed"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-27",
    "net": "2026-09-20T01:47:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Crew-13",
+   "net": "2026-09-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-29",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 17 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk自称“前万亿富豪（Former Trillionaire）” CZ一句“pre-rich”引发热议 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPV2JJaDRkRzgybVhycTNVU21PM2lzaXlSdzlCZ3ZXQ1FGRFpMTExmMFpKbmRFbHltWVpOeTN6Uk9yNnV6VUlvRXZST2JyWE5vc0RJTklmN1R3cEl5aGdKejFCNVFORjNLUG51LV8tTTAtOFlKYXZ4U2ZBMTB6aWhPNUM1ZWQtc3QzZVNlZ04weTRpelBxTFNIdmxNeTZ6UQ?oc=5"
-  },
-  {
-   "ts": "2026-07-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk、Jensen Huang、Tim Cook：谁在特朗普总值一万亿美元的CEO访华代表团中 - The Business Times",
-   "src": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMUVySWJkUjgySUNySDRMLWd4M1ZrLU5JNkQ0XzJ1SThCZjhpczVQb0pQT1JwTU54VWpYT2RCOGVhaFpwRUloamdNdkpSNFhMdV9INlhkcXFVMFlvb2xjTFJqN24yT0dxNnczd2VnNEJLaGpjYXczY1hqQWRqTU1aeEZENFd0ZDB0RGlXT2U1czhWY1FxSWFxX1JyaVVWQzN0UkFrZlZvTDFaVURON2hIdlR6NUJrSnBXWmtVMGlfTEN0NmVRdDhFTDg1bmc4T0JZb0xsTUFR?oc=5"
-  },
   {
    "ts": "2026-07-30",
    "rule": "R3",
@@ -20906,6 +21044,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk đáp trả Bernie Sanders về khối tài sản 900 tỷ USD của mình - CryptoRan",
+   "src": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOVdmeEcwZ21PN2NNVHA1X245Z1pSOFZ0bXNNem5Mb2YyVFZZVXVMbDBTLUVOQ19CZFAzY05rWlg4aExwYnNydmFiakdFcHpBdzByekdaaHhYWXpVeWRlcV9FckxPOE9mTURKU1ZKNzhXYnhuQnZfYUxEUzNFdHFEakJB?oc=5"
+  },
+  {
+   "ts": "2026-09-12",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 8 条（明细见各人物卡）",
    "src": ""
   }
  ],
