@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-12T08:25:32+08:00",
+  "generated_at": "2026-09-13T08:05:40+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-12",
+  "asof": "2026-09-13",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 365.44,
     "chg": -2.9,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-12",
+    "src": "Yahoo 2026-09-13",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 0.98,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-12",
+    "src": "Yahoo 2026-09-13",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 77276.78,
-    "chg": -1.48,
-    "src": "Yahoo 2026-09-12",
+    "price": 77269.46,
+    "chg": -1.27,
+    "src": "Yahoo 2026-09-13",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0843,
-    "chg": -6.35,
-    "src": "Yahoo 2026-09-12",
+    "price": 0.0848,
+    "chg": -1.58,
+    "src": "Yahoo 2026-09-13",
     "status": "green"
    }
   ],
@@ -323,6 +323,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-12",
      "c": 365.44
+    },
+    {
+     "d": "2026-09-13",
+     "c": 365.44
     }
    ],
    "SPCX": [
@@ -600,6 +604,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-12",
+     "c": 151.21
+    },
+    {
+     "d": "2026-09-13",
      "c": 151.21
     }
    ],
@@ -879,6 +887,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-12",
      "c": 77276.78
+    },
+    {
+     "d": "2026-09-13",
+     "c": 77269.46
     }
    ],
    "DOGE-USD": [
@@ -1157,6 +1169,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-12",
      "c": 0.0843
+    },
+    {
+     "d": "2026-09-13",
+     "c": 0.0848
     }
    ]
   }
@@ -19382,6 +19398,188 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVBYakVKLWZsQkVKSGhJekJLbGJJa0oyc0N3VEpHRTJKdWxmaldveTZ4QXBmNHhSd05qRUNYR0tDeHBJZUdZV3M4UWRPcnhOek5DY3FpMDNQZ1hkUGhFSzN5TjJsaXlTOTJnVksxZjRRTUgyR1gtY214eUNMRTYyZTh6V0YyVFZwOTZpX2NiTkNaSTVhTEtzbkY2TFVBTVM5YmVCRkwtdTJ1STNmamwxM2pPeG9MOVlf?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d306281c49ce",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk praises China, encourages people to visit",
+   "payload": {
+    "src": "西部网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56eFQ2c2ZxRWlRTTFBeGIwYldQZ3IxblBFY3pMM3JoUUhMUFVoX1puU19fS1BreVNZNGpLcENMSUpFSmNJRW9uYy1XNUhJOWMxanA0MGduSEo5bmZGZ0hENXVJWGQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2cc98c3e3b24",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "与马斯克育有一子的网红因深度伪造图像起诉xAI",
+   "payload": {
+    "src": "华尔街日报中文网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0d6QU9mWl91MXp2XzNPM2FyNTVGVDF6ZkVKUWpPYzRaY0E0cXBjRkxjVWdHeDkxazJSa0JfaXQybXd2SldfdUdyck1MOFNuSm9fZlN0QUloZGhPMHo4UU11QjBjN0ExVm5YeWVCSV9XX0RHcnk2U01aZTNDZFVQUWl3SnJZQldHT19uZWNuVl9fQmZBckJDaTktWXJ1OS1yMUNpQWhkaXhRUQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6d5f80aa8bbf",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克再扩太空蓝图，SpaceX全资收购xAI，打造太空AI战略核心",
+   "payload": {
+    "src": "TradingKey",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTnQybURKekMtLWM0aW1kVGtjMmJVU1pLZTY3MmNHUDZVNElmTmlSS19xWFVPSEUzYmhPbS1vRzZhaXBGYkJVVXVrdEs0QTFLbWVRTnlWaU8yMVVrbE1xYjZiTnBwMlM5eFM0dDhVY2o0NEI5a1d4WlEwa1prbmZUd0IyaUVHeDBRNVdjMFUtZndBM0J5TlotekRuVm5acEFLZnFHd05kVC1aaXZzcEVGTVJXbmo1Q213S3c?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-ffebe543ff08",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Larry Ellison cancels plan to sell $7.5 billion in Oracle stock",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBTTExwSWtqQXFqVVFTODhfRV92OFFscjNxZ0tWZ1VnWWNyWEpJVTkxZE1aTUlJYUVNbFF0THhhMU9CeGhENkxnWDN3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-eb3cbca388d4",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文创始人Larry Ellison将出售5000万股股票- 阿视亚经济",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LRC1fMmVFTFhfcC1sZTJIaDNrbnNub2wxY2dRSGRmTkNJWE94Z1pzN3ZmZF8yZEZ6Rk5KYjJaVDBfU3pZOXVtXzg1STlQNUFtOWtGSUtOM0dZdURuZWxxb3J0VWk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-09a04784d0b7",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks ：在完成举报调查之前， Anthropic 的 IPO 应该暂停",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ETGF5S1VxalB5VTNaTEZVaUJNanpjNk53VzlkSTloSjRpWkw3d3lEenQ1NkpLb20yY091eUl1QW1mb3BzeTNNRUlsU3ZGQW84UmZQTnFhaTU4dw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6cfa03f020fe",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "了解特朗普的加密货币行政命令：比特币战略储备和美国数字资产储备",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5XQUhpUTBCaWIyVjdKaVVWZDBSTnJlQmNJTzFsWWlCMHVXNk5PVDJnNjlBT1ZMRUtoVDBaLVRjVEpLWHp2Vm8xTDZCVjNTSTBGZlNBQ18xcGhyTWU5YlJzcXhYYmstakFNbkZwRjlqai02YlVDUkNFc1E5N0dnZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9eccc5b999f5",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷大佬抢着投！给奶牛戴AI项圈：估值20亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUVHhIaXhWcGFUWFJNd1E2akFhQjB5U3BHdGk3R3RBUHNrcmJrejdLUWQ1bENaM0UzYmdfaW83Y1FZRmhXeVdBNw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6ff36d99ae34",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·泰尔称中国或将比特币用作对付美国的“金融武器”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONUd1SVBXclk2dlVaMEVkSFhLbzAxdzkzb09TR3c2cFFtdUNHOTN5bU5xbkM1enFuQldIb0xISnZDNEh5YjBJWDFOMWNBMHBZelhpcEVkaVIxWlJSd3NOWFFGeU5nRzNlWWVDcER5aGk1ejdWRENKa1pPOFVhQ0p6cUdmbzZGY0s2b2EwbDBqcm84Tjk5X3FtcVJFdW1pOERfLVRfWUdUYkhzSUdNZEl2QnlnaU9pWEhG0gG7AUFVX3lxTE9QVDd1YlNubEJyS2EtWm9hZzBJZEtaQjgyNlI4YXhTbmN1WjhiLVhCQkMxS3E1N2VpYWtyQ0Zna1hXTUxRLUh0eHhIcUJiWWc0X1Vjd3lQYnVpV29GWFo3cDJydEliWXA4TjdVbk4zOXNBMXhNWW4yc0pRdzdpeGdFX3VOYlFQNXNSS0kyN21nUHVVSjc5ZUpfQ3FlT2dtRUVNblFIQ2RpbW91RjJkNmlVZDIxRE0wZUdwTE0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b6cc179b50e4",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：重仓Circle与X-Energy，减持基因组学龙头",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONjJzZGE5Zk02NmgyYTNDLU5aME41UjNubVpiMTBBOUVPTWg3Tlp4cFoyMVZMMU9nY2xtdjZlU3NWREhCRlhXMWY4Q1hfVUFmM3Bma3NoLUdxTlRMVTFndjlaeHJfVnFNci12TWIxNVQ5S2VXQlRybTgtMUdMTWxWal8zeDYxYU1MejExdHQ1TVE0czFGNnd2a0ptekNUN3REVmhLRDRMT3ZMYk1uWllCelFIblZuZmVDcXJiZGFJMVI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-18a97982e0e4",
+   "type": "event",
+   "ts": "2026-09-13",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：重仓SpaceX与Kratos，减持AMD",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTRPOGRWY0QzMFdCN3BNOWNlZWlEMm15NWJNLUR1dUFiY3NDNVNmOTJHc01XNDRVOF8yRml0RXROQklob1dRY0xrUWkzUWNNY1gxenZGMjZpR1FpaVdLYkttTUlKbExpM2o0dnBRRUZsS1drc2ZseFRVc094Rl9iY2pHb0RIWGc1dkZFOW8wclBjUEFxTlE4ZF9pb3NSUVdQRDFYS3d5X2xZTDY1WlZacXBkWDFEaVBPTkNF?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -19484,7 +19682,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2403 · xAI 254 在招（2026-09-12；Tesla 无免费接口）",
+     "v": "SpaceX 2406 · xAI 255 在招（2026-09-13；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -20064,7 +20262,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-12 08:25",
+  "last_run": "2026-09-13 08:05",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -20075,7 +20273,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 72,
+   "edgar": 73,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -20110,46 +20308,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-07-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-07-31",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-01",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla and SpaceX Merger Speculation Heats Up and Elon Musk Tries to Cool It Off ",
-   "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSDQxTFpqTV84cjVoMlE2ZlVZaGc5ZUtmZEZHcnBHUWpMZmFtWjJzMnJmci00SWhEZ3k3LWxVOUtqMFJTa2hwdll6VEcwU0pCRGRCRVlUVGVNaWRzUVphOUdJWkVkNXBDUmIyRWtSNVRFenRZRWZYYWVHdVBXVEFhN3VnWTBaa2VTczFDNEVFaS1wUk1jVmlULXBBOGhpZGtFeHBQS05vdjM?oc=5"
-  },
-  {
-   "ts": "2026-08-01",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Gemini 与 xAI 合作推出 AI 个性化预测市场功能 - CryptoRank",
-   "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FaGxOdXRXUXIyN004Wm1IdjRCcGRwVlRmcXZ3alYyeUhZaEEwTEI1LWtvQTZVTDljY3VqVjc2Vy01T3lHa2tEaXlWd1BIWFlOLTdfTnVRbms?oc=5"
-  },
-  {
-   "ts": "2026-08-01",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla's Elon Musk Scales Down Optimus Production Plan and Robotaxi Expansion Tar",
-   "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE92N3Y2TmxkcW1OTHoxUE5MMEJFOUc1NVBaNnpiUzV4bHJIVHEta25aWnJCeDVvZU00TGdTVi1rVWFBdHpwRDU0Wl9VQlA?oc=5"
-  },
   {
    "ts": "2026-08-01",
    "rule": "R3",
@@ -21064,6 +21222,46 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-09-12",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 8 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-13",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk praises China, encourages people to visit - 西部网",
+   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56eFQ2c2ZxRWlRTTFBeGIwYldQZ3IxblBFY3pMM3JoUUhMUFVoX1puU19fS1BreVNZNGpLcENMSUpFSmNJRW9uYy1XNUhJOWMxanA0MGduSEo5bmZGZ0hENXVJWGQ?oc=5"
+  },
+  {
+   "ts": "2026-09-13",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - digitaltoday.co.kr",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-13",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "与马斯克育有一子的网红因深度伪造图像起诉xAI - 华尔街日报中文网",
+   "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0d6QU9mWl91MXp2XzNPM2FyNTVGVDF6ZkVKUWpPYzRaY0E0cXBjRkxjVWdHeDkxazJSa0JfaXQybXd2SldfdUdyck1MOFNuSm9fZlN0QUloZGhPMHo4UU11QjBjN0ExVm5YeWVCSV9XX0RHcnk2U01aZTNDZFVQUWl3SnJZQldHT19uZWNuVl9fQmZBckJDaTktWXJ1OS1yMUNpQWhkaXhRUQ?oc=5"
+  },
+  {
+   "ts": "2026-09-13",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克再扩太空蓝图，SpaceX全资收购xAI，打造太空AI战略核心 - TradingKey",
+   "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTnQybURKekMtLWM0aW1kVGtjMmJVU1pLZTY3MmNHUDZVNElmTmlSS19xWFVPSEUzYmhPbS1vRzZhaXBGYkJVVXVrdEs0QTFLbWVRTnlWaU8yMVVrbE1xYjZiTnBwMlM5eFM0dDhVY2o0NEI5a1d4WlEwa1prbmZUd0IyaUVHeDBRNVdjMFUtZndBM0J5TlotekRuVm5acEFLZnFHd05kVC1aaXZzcEVGTVJXbmo1Q213S3c?oc=5"
+  },
+  {
+   "ts": "2026-09-13",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
