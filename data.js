@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-13T08:05:40+08:00",
+  "generated_at": "2026-09-14T08:18:24+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-13",
+  "asof": "2026-09-14",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 365.44,
     "chg": -2.9,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-13",
+    "src": "Yahoo 2026-09-14",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 0.98,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-13",
+    "src": "Yahoo 2026-09-14",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 77269.46,
-    "chg": -1.27,
-    "src": "Yahoo 2026-09-13",
+    "price": 76804.23,
+    "chg": 0.31,
+    "src": "Yahoo 2026-09-14",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0848,
-    "chg": -1.58,
-    "src": "Yahoo 2026-09-13",
+    "price": 0.0825,
+    "chg": -0.54,
+    "src": "Yahoo 2026-09-14",
     "status": "green"
    }
   ],
@@ -327,6 +327,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-13",
      "c": 365.44
+    },
+    {
+     "d": "2026-09-14",
+     "c": 365.44
     }
    ],
    "SPCX": [
@@ -608,6 +612,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-13",
+     "c": 151.21
+    },
+    {
+     "d": "2026-09-14",
      "c": 151.21
     }
    ],
@@ -891,6 +899,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-13",
      "c": 77269.46
+    },
+    {
+     "d": "2026-09-14",
+     "c": 76804.23
     }
    ],
    "DOGE-USD": [
@@ -1173,6 +1185,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-13",
      "c": 0.0848
+    },
+    {
+     "d": "2026-09-14",
+     "c": 0.0825
     }
    ]
   }
@@ -19682,7 +19698,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2406 · xAI 255 在招（2026-09-13；Tesla 无免费接口）",
+     "v": "SpaceX 2414 · xAI 254 在招（2026-09-14；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -20262,20 +20278,20 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-13 08:05",
+  "last_run": "2026-09-14 08:18",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
    "launchlib": "green",
-   "rss": "green",
+   "rss": "red",
    "greenhouse": "green",
    "fec": "green"
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 73,
+   "edgar": 74,
    "launchlib": 0,
-   "rss": 0,
+   "rss": 1,
    "greenhouse": 0,
    "fec": 0
   }
@@ -20284,7 +20300,7 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | O3b mPower 11-13",
    "net": "2026-09-13T18:49:00Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-259",
