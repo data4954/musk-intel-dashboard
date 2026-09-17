@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-16T08:36:21+08:00",
+  "generated_at": "2026-09-17T08:43:57+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-16",
+  "asof": "2026-09-17",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 356.58,
-    "chg": -3.15,
+    "price": 358.08,
+    "chg": -2.65,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-16",
+    "src": "Yahoo 2026-09-17",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 143.49,
-    "chg": -6.5,
+    "price": 150.88,
+    "chg": 2.26,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-16",
+    "src": "Yahoo 2026-09-17",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 75788.63,
-    "chg": -1.92,
-    "src": "Yahoo 2026-09-16",
+    "price": 76391.01,
+    "chg": -0.58,
+    "src": "Yahoo 2026-09-17",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0801,
-    "chg": -5.6,
-    "src": "Yahoo 2026-09-16",
+    "price": 0.0809,
+    "chg": -1.81,
+    "src": "Yahoo 2026-09-17",
     "status": "green"
    }
   ],
@@ -339,6 +339,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-16",
      "c": 356.58
+    },
+    {
+     "d": "2026-09-17",
+     "c": 358.08
     }
    ],
    "SPCX": [
@@ -633,6 +637,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-16",
      "c": 143.49
+    },
+    {
+     "d": "2026-09-17",
+     "c": 150.88
     }
    ],
    "BTC-USD": [
@@ -927,6 +935,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-16",
      "c": 75788.63
+    },
+    {
+     "d": "2026-09-17",
+     "c": 76391.01
     }
    ],
    "DOGE-USD": [
@@ -1221,6 +1233,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-16",
      "c": 0.0801
+    },
+    {
+     "d": "2026-09-17",
+     "c": 0.0809
     }
    ]
   }
@@ -20170,6 +20186,216 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVEJRN0dUcTdtY2Q0X3VERTJBaVJZWXRJZDlMMDJaLV85SWpFVjY5aVBtN3Z5d1RlLTV6TnBkdEpsRHNfZVRhZVB0eTFuZzUzM05felU3Vk1NLXJtbm5IcWdQTHFUc1V1SmlrMXRHNlhtZng1TUctbjY1YkVFWUFRZnlKalRvLVh1QUZfaGJHYw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-8f4f16297afc",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Cathie Wood：SpaceX 估值 1.75 万亿美元或仍具投资价值",
+   "payload": {
+    "src": "CryptoRank",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1lcHZqNERqZ29ydWZ6ZEF1NGtjd0VhSm1MUmRuQkF0MUZaYjc2ZjhLcGFLUEdKV1BDNldTWEwwNkdjbzVrMlJTWDZENFhGbmp4U2xsQ1J4WUE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-7c6a84f05c38",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克旗下xAI据悉进行深入谈判 拟以2300亿美元估值融资150亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeVU5Tm1hd3RKSVo4dTg2SndsbW9CeThqSDFsUzdSZVFYQ0UxNERLUVNiZkh1dEVTYmRIS3c2THNfc2o1a1FCQ1hEcm5aaTFLRFVXSUQ1bEdGQVp0Z1JGZjZLZnFHR2tDY0ViRDY5bzZoN1Z6Sk5jQ0p0SFlkYWYwRVB4dUk1YTNXaEE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-468fc422c7e2",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克弟弟携3000架无人机惊艳梵蒂冈，重现杰作",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51Z2I5ZzNBUk5ReEZGZ2ZPOUp4Z3Z1bDctVzBnV3VnNHd5X1FCdzJ3MV83T2lBV1B1TmZRT3dvUkZsWXV2d3JDeTk1enZ3TDRJZzN5T2VWZFFlZWhmc2ppUGdRenpvUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ccbda31fa32b",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "价值约75亿美元：Oracle创始人埃里森取消5000万股出售计划",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1nc1VyRWJmNnRpZkJLcV9yT2lpczRuOTdNQUxNblhxekFSakNXekd4eHUzdThNdFQ2aVZTSmU2RFNXeTRHYTlOV1Z3NXI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7b37159f28f5",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "亿万富翁拉里·埃里森在人工智能时代退居幕后。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdDM1M3Z0SUJzQlBhN0F1TWN6cGxTamRlYUpmWHNKUkV5cjZ0bVRtRGhlTkg0NEhZYnh0RFM4cFJDbVhXNUZPR21nYUpPY2dXeTRVejFJaHkxX3llOTZheG9qTGRkZm9NX0VBcE9JVDlhNy1fWUczS3R5S3ZVV204N2RIYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ef08eaa2a135",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Altman、Dario都喊AI减速，特朗普科技顾问Sacks：真怕就自己停，别拉上全行业",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84VUdWUnFscERnRVFDaFlrSlFnYWhYN1FDcFRVQlVEY2tDUG5HSnViZmR1N05QMTB3YWFNblVWQXA1WjMtOUE3eUNwZkhFWXljUkRrbk9n?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bc897541634b",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "驳斥Anthropic放缓论 白宫顾问David Sacks：安全是基本责任、非讨价还价筹码",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWS1BVTloWUFrRWlGcXFkWURVeTRrYWlCRWZ6bXczUlgyeW9CSHBhUVRtZXBGcDBFTVRCaWFHODRQaHVveXR1TnBqUUdFbi1uY2p6X2JIZkxueTV4U3V1UjNfTjdUb2R6RUZnZEZsME9fdk1IMWp3bks5WEFNdTZKZ0w0U21KTUZhWkJTS1ZybktPZVhLb21YVmYtZmM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3cf080a7d6e6",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔只相信一种自由",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeldfZ2E0WF9kZEY1UkxmTHZuVjdYcGYzamNtck9mVUhKXzdESWtUWFo2STR6eUI4VU9OM080d1BhQUdSUVFxYWw2TjI3bFA0VTh1VDFIOE9zOGhSN1pqVzF5MVJnQmVyTHJTTWRYYzdSS1NxaHY5cGpoekcyQk11MGpWMmY2bU1DdF9LRWh1dw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6b903d3b2814",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "记者来鸿：新西兰—美国人心中的乌托邦？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UZjBoRDRFQ3ZaWE8tR3NzNEc5MzgxN19Oa2dzVUZEbGtUN2VYMk5hbWFvMVpaSk83MTVCeXNoTzUybEpxV0dMU0pBeGh6VElXMVRsZGpnVFRSQdIBX0FVX3lxTFB1TGRmZkk4NG9ERTJPQ1pqdEZKV2ZoeE44RHF0b0txbTlSSlQ3MGZJM09EbWo5NTdSZGdFNmlVdGprNkFTMnRNRVZMZ0xJdjhFd0YtaUx0TGliNlRnODNr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5d5973e356f9",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "Tesla CDR (CAD Hedged) (TSLA)讨论区- 股票评论- 股吧交流社区",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfakJ3TUlzb0RQT3ZGa3Fuc0h4WlloSFUxNHBzZFpZZWZwV2RxTzV6VHkzYktUUEVsdHlmaHVXMnBOTGlrdWstbU9xS2tqZzBRdUxtcm1kRW9DaVRRaGZLYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f8a1718d24cb",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：重仓押注SpaceX与核能公司X-Energy，基因组学投资组合再平衡",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObUtFUmZUQlVWMm5rY3VRNXR6cFR3ckdhV1lONFI3OWo4TFJVV0ZxQkpxdVg5M3AyU01UVWhQblVLQ19razNSS215SzZmc1FzNkVoLW5tazlTX29yNk5YdEFUUXFtTWdra2I4YW0xX3lVVGNQWW40V0E1SkFUWTFNcVI3bzV3WUxoMy1uVU9fR2dpaC12VzRlWThvVGZNN2c0dTZ4OWhVdVdkVHhOMWxiOW9QU0lhVkwwbkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-82729e2669af",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：“SpaceX IPO需求将一飞冲天”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ0FibHZBYzFUTWhhLU11VG5qbWZNaFRuVmtnOFdtcXdBYzZFVEZIQmV1YjEtY2d0N3JXV2tDakprYWRWZlVnbHVkb3ZwcnMzSENuS1JXUkstOG82YlhFbXQ1NG8yRk5pMFV4Zjh1aWxzOUpfc0NoWTRWQUR2amtYMkg0Z08yUnVQRWhpQlNFdjhpMjU0d0FjaGFyZjZfWm9qejNrOVQxVWV2YkZ2WWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-22b7537b5676",
+   "type": "event",
+   "ts": "2026-09-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Uniswap创始人声称Citadel是推动美国证券交易委员会（SEC）出台针对 DeFi规则的幕后推手。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9EX2VYM0FlYXV2d3d6QmMwYlFNeXczb3NfOTZ1M2FlSGFJT1J2REoxOWgzTGRaaDFtQlhzR0l2Wnd4Yy1PN2RSUWw3SUl0aXdyQnA3RFE4Y19GWDg3NXBOV0FXbFlKR2dBRlpQdFZaaERmS2VGTm1zag?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -20272,7 +20498,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2455 · xAI 259 在招（2026-09-16；Tesla 无免费接口）",
+     "v": "SpaceX 2464 · xAI 261 在招（2026-09-17；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -20852,7 +21078,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-16 08:36",
+  "last_run": "2026-09-17 08:43",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -20863,7 +21089,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 76,
+   "edgar": 77,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -20873,7 +21099,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | USSF-259",
-   "net": "2026-09-16T02:18:38Z",
+   "net": "2026-09-17T01:07:56Z",
    "status": "Go for Launch"
   },
   {
@@ -20882,46 +21108,22 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Starship | Flight 14",
+   "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
    "net": "2026-09-22T12:15:00Z",
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | USSF-xxx (\"R-3\")",
-   "net": "2026-09-27T11:42:00Z",
-   "status": "To Be Confirmed"
+   "name": "Falcon 9 Block 5 | USSF-385",
+   "net": "2026-09-26T11:56:00Z",
+   "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | Crew-13",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
    "net": "2026-09-30T00:00:00Z",
    "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克的SpaceX（SPCX）业绩领先，比特币（BTC）持有价值下跌5.4亿美元 - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQclZpWDlseFp4R3Y3X0FPZVVwY0RGRWN5OGdTMnBMNDRtT3dwQ2t3VEg0RUUzeS03RlVWbWdFd19Nd0FDTmVxZ2dzY09pMW9zQ0JlaWtCdDhJTTN4TkFha0tMUTZ3VzJpS1VnYmpud2lYNnNIZWRNNlhqQVdKeHE1MFprY3BlVlRjVVhlM1cxVnBQeUhsaldrYVd1S0FtWGxCMFV6eVpTN3NQdXZkeFdreTUxZ0E3UVBkbkxueUNLclN3RWY2R3c2ZEhsRVZZOTdrX2YzS2dSMGV1dw?oc=5"
-  },
-  {
-   "ts": "2026-08-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk 计划啟動 SpaceX 首次公開募股，估值或飆至 1.5 兆美元 - Hypebeast CN",
-   "src": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPM1BsZ3BqUnFvVkNTM2tvN3lMcjUyaFRlYzNGMTkwZ2lla1lrZ2RobFgtTk0yNEVkZ2dNYlFKTzlGVUVTRzdLVGRMeTlmdjRPVXhaclhkUUxjekpvSHpRNk0yekl6Q2s0RHI3STF3Ymt1VmN2Z2FRbHJjSU5rZGlJVGR3cnduRV9RcXNnWlFOZU0yQVkwZmRQWTRB?oc=5"
-  },
-  {
-   "ts": "2026-08-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX芯片采购大转向 Elon Musk舍超微全面采用NVIDIA - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tbFZwVVQwTmJwcGktSG9keUNnNFhPVFhNcWRSX1A0R1gya2Uwb2hhSUJkdlJ3bmc5ekNhN18wQjVoN0s0Z2o2dzlfaHBYWGpXZGFjOXdheXpTMUVVSUtKTlJ2b05IWTJJS3BaQXRhRHVYSkdNa1RsQlF3?oc=5"
-  },
   {
    "ts": "2026-08-06",
    "rule": "R3",
@@ -21852,6 +22054,30 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-09-16",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Cathie Wood：SpaceX 估值 1.75 万亿美元或仍具投资价值 - CryptoRank",
+   "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1lcHZqNERqZ29ydWZ6ZEF1NGtjd0VhSm1MUmRuQkF0MUZaYjc2ZjhLcGFLUEdKV1BDNldTWEwwNkdjbzVrMlJTWDZENFhGbmp4U2xsQ1J4WUE?oc=5"
+  },
+  {
+   "ts": "2026-09-17",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-17",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
