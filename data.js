@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-18T08:33:23+08:00",
+  "generated_at": "2026-09-19T08:27:27+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-18",
+  "asof": "2026-09-19",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 366.2,
-    "chg": 0.73,
+    "price": 364.27,
+    "chg": -0.32,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-18",
+    "src": "Yahoo 2026-09-19",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 154.81,
-    "chg": 4.47,
+    "price": 152.71,
+    "chg": 0.99,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-18",
+    "src": "Yahoo 2026-09-19",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 76374.1,
-    "chg": -2.29,
-    "src": "Yahoo 2026-09-18",
+    "price": 81065.87,
+    "chg": 7.21,
+    "src": "Yahoo 2026-09-19",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0815,
-    "chg": -2.56,
-    "src": "Yahoo 2026-09-18",
+    "price": 0.0877,
+    "chg": 9.53,
+    "src": "Yahoo 2026-09-19",
     "status": "green"
    }
   ],
@@ -347,6 +347,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-18",
      "c": 366.2
+    },
+    {
+     "d": "2026-09-19",
+     "c": 364.27
     }
    ],
    "SPCX": [
@@ -649,6 +653,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-18",
      "c": 154.81
+    },
+    {
+     "d": "2026-09-19",
+     "c": 152.71
     }
    ],
    "BTC-USD": [
@@ -951,6 +959,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-18",
      "c": 76374.1
+    },
+    {
+     "d": "2026-09-19",
+     "c": 81065.87
     }
    ],
    "DOGE-USD": [
@@ -1253,6 +1265,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-18",
      "c": 0.0815
+    },
+    {
+     "d": "2026-09-19",
+     "c": 0.0877
     }
    ]
   }
@@ -20656,6 +20672,184 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00ZmtjaFJCSGEwRnl0SUpONnVnWHNkLUM1X3hLTDNvWC0wbEszNkpyRFFXeG5CSEhpQndVeDRTQVh5Vl96cHQ4dXRKaXlldU5yMmtF?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-8a9113545962",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Neuralink 总裁 DJ Seo 刚刚透露，埃隆·马斯克（Elon Musk）即使在领导多家其他公司时",
+   "payload": {
+    "src": "手机新浪网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5rUE5rUG54dGZWZ0lYVG5CNjZTcGEtbU5BZXFhQl9wTTV2X2N3dXMzYkhwNURzbGRzbElZLS1jYTNzU0VGaC1FMmhFai1iUlR2NUc5UEhORHVVOHJ5elotRGtoTQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-017feb8adbe6",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克母亲：我有两个天才孩子，但埃隆我解释不了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KT1VGeUMzc2J3NGx2dWRVcnBZMC1kc1hOZ0dRa09oR1VpMm1WbHFYTjliQ0VuZXFGbl9IZ2tWbGE1ZXdmX1E3REp2NExOSlQyNWVvZkd3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e487df90f8ac",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "亿万富翁拉里·埃里森也面临着财务困境。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiekFVX3lxTE81em9VZ1RKaWdobFlhUVFhY0cwZmZfeWlHV1RZbkpBWWQ5NDBNV0Y1bEtkWUtWcmFDV2duOXBRYUN6em5iaVR3U3FkZUFSX1kyVVphMGR0TXFpX2NUZVd4WWtPZFl1YUdKQ21MNkVPd2RVVEttOUxRZl9n?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dd307d74c704",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "密歇根大学体育事务背后的超级金主：拉里·埃里森之妻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxPYzdCallnVThQeDdZSkd4eW5uX2V5ekZkZk1kVlRYUTBjLUJCampQaUl6ZzZHdkx2SmVONkRPTjdRdHpFSGxpZGNNYW15dXNWUE9mNVBYb2xYclM0cnRpbmh0SHZMSGJEX0tFclUyWUZVR2NwczF2cTE4R3JScnJ4UWZ4R1BZU1gwWkJTSndGYTZWaW1kLXZwdmsyVW82OTFCNVpZOUllTFR3ZDJXSEFCd2c1bkNvT2p6cXdhc2Q4czI0cVc3dThHdlJVdm9qYlNEa2tsbEx0d2UtRWJsOXVJc2ZzX21GTnZ4YklHcUhHOXdET2xOZGJ4S0M3Y2FVNGJUX0JMNjk3ODRlT3BNd0otdzdNcmR0U2lDUmVaUWJUTmRTaFh3Rzlsc1hHQXpBT2stR0dPVXFNVE5DaXItY1VTbFp2Q29wT3AtNTQwTFJDVmlGc0NoTG1XUVgwelZzSlZyRDFLeQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f9a8dc2c652b",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "動機不純？AI巨頭齊喊延緩研發…前白宮AI沙皇：要做就做 別裝了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc2RpRVBaV1RRU1lPMWNKQlFmUE9SaGN1b0FLaTBob3lzNjdGdUo1cnZQOW9BNGxTSWs5anNETmhFeEd3ejNDM2hkcU1mZ2JwclJiZlNjR0l4SmYzeFFzRzBISmV3WWxKVkxDa3JSb2lrOXE2ZGNBWDVPNXVheTQ1MjZNaDNSQdIBZ0FVX3lxTFBoTUxSUkZ2MzgzN3ZON2M2TUkzOUNzeWVZSmJMRW9lRGN1UGhBc09BY0J0QW1yNHVMekRZSnNyZFBJNmMtVzlwVEZKYWpzUTdvd3FualN2OHFBaGloQVRYSWlDejJtX0k?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-233e3bb40887",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫科技顾问抨击美AI巨头：你们自己得保证产品安全别老想着靠政府- AI 人工智能",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lbzdWNlNGY2h6eXZzRG5COHZIbnlCRDF5TVk1YmU0eks2Y2RtUFY5dXI1ZWlrX3JEOW1CY1FxUGhhVExEblJZZVFmYjR1MFptMm84aXJ2RGdEaGFjZ3N5ZQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c821cff4b914",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "How Peter Thiel built PayPal into a $1.5B company",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAxTl9vQTZBdUUwM29KbkxmRVg5STVwbU8xS1FRTjNEWjJ4eXFCcnRFcDQyMVdyVVZRSl9wOHZ0Q1ZNQWxiOGFLVzlVeVdINVFKN1JIME5CcGJyM203QmlNb2x5c205UTVhTzlfZUExeHkydUFPaGlGc1JMR2MxZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-000da77b5734",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "万斯喊话“硅谷教父”彼得·蒂尔：共和党需要你的资金火力",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB5cjNBZmszSEJvWUUyeVZMRTVkQTQ3RzJ6a1QtWHJ4TFNiUHhsRi1ab3FyWG5JZ3NMdTBIR0pibG10N1VRR1E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b8e55d8006e2",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "硅谷顶级风投 a16z 创始人：我们为什么转而支持特朗普？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBMdk9oakFoNkoxcnVpQU1zcHVlLVF4d0hQTEMxSkhUcTJySXNsNldrT2lrN2FwSGdVX1lvc2VhMmZTZ0dhczVQVV9kalFhUUJRU193Yw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-945a65100ea4",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：大幅增持CoreWeave，减持Brera Holdings",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRHNFZjZzSDBWWWhzWmttbkdMYWROQUVuNXZqTEdfcGE1Yjc3ZHhnTEEtWDR0MnlMSHJzaW1IVjJsZ3JReHIwVmNCdFR5T3hnQmJuRXdnQVRuRUNFSlZvbkdQN2FnQ3lYcjdZZTdrU1lUS1NfZzdCLVpQMGhGRlAxZjJ3dlMwQ05UVDA4dWx0ZmNuVkZxSW9RZ0RqcDd0cHB4T1VyaHotRHNYNWs4YjNRWUZUWXFHZnNwTUVNMkFCVFQxMnZBVmhB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1d607c83b195",
+   "type": "event",
+   "ts": "2026-09-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "凯茜·伍德力挺“放缓AI”倡议，同时称“人类灭绝”警告荒唐",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxQenJmYWxyMVRYYkx5c3I2NGlEUjhrMm1FU08tQnprUk5BeTJMRTZNTjF3Q21HYzRpczBMcXI3MnBya2lpTEZKM0t3eUw2V2FVWnhiTDdiSkxzc05KM243N0ExQl9hVm9CdmtoaUFsYWFnRmZ1eUQzY2NZVTRuckd4OWw5dUp0Q3UxM2lrbXh5X3VJQ3htTUUxN21QQm9KZVBEVVE5LTNDR3Y1Tkl2YzItWXAybTJXM0dndXpPV0lLNlVfRjdRenQzS2kxZS1NMUx0LU82amFmTng3OHNZbHl6TkJoQ1h2d0syQTVDczRoTi00S09xd1RCeUJtUkVYNW5rN3pucHRZZnVjYXlHeVBtSUFhWEJPWWdUU0YyUjdfOGdXanBMSEtQMjBWVFFLa2NJLWlGZHdUcWx5eWI0azBiWlhVTS1kU2M4QnJNRHZRZkxTUHNvVVNzNEh1S1NKQVVSdldrTUF1aVRyeHRQZWc0TkJZeFowZ1BkVkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -20758,7 +20952,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2493 · xAI 266 在招（2026-09-18；Tesla 无免费接口）",
+     "v": "SpaceX 2499 · xAI 264 在招（2026-09-19；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -21338,7 +21532,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-18 08:33",
+  "last_run": "2026-09-19 08:27",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -21349,7 +21543,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 78,
+   "edgar": 79,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -21357,11 +21551,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | USSF-259",
-   "net": "2026-09-17T01:07:56Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-27",
    "net": "2026-09-20T01:47:00Z",
@@ -21378,36 +21567,17 @@ window.MUSKINTEL_DATA = {
    "status": "To Be Confirmed"
   },
   {
-   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-09-30T00:00:00Z",
+   "name": "Falcon 9 Block 5 | Crew-13",
+   "net": "2026-10-01T15:10:06Z",
+   "status": "To Be Confirmed"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+   "net": "2026-10-31T00:00:00Z",
    "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla分拆中国业务传闻再起 SpaceX整合恐冲击股东利益？ - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR0M3ZXIwNU9EWkY5eHFRblNNczB4ZVZBb0dPd2R0Tm5wQlVJZG9sNG1rN25QbEdVeXkzZGludmJYVHgzSU1MT29fV3hNU2tUT1R0MWFObHp5eklqeVVZWXliTEMzQ0o2N21DWHJEc3FHUEdfbC1WY0Y1VkZ0N1J6dlFNYnFYZEUybGtqUXprOXRQM05OS2tObWRISQ?oc=5"
-  },
-  {
-   "ts": "2026-08-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "剑指万亿市值：马斯克拟合并SpaceX与xAI，构建太空AI算力网络 - tech.ifeng.com",
-   "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RRThlbmZndnhXQW91UlJ1NnJWczM5WkN3dUtwT3BScjl6WWZ0azZadngzZkJja2Mwa3FSMWJGejhMUHVOTXFrQ0JoNWI?oc=5"
-  },
-  {
-   "ts": "2026-08-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-08",
    "rule": "R4",
@@ -22342,6 +22512,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-19",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Neuralink 总裁 DJ Seo 刚刚透露，埃隆·马斯克（Elon Musk）即使在领导多家其他公司时 - 手机新浪网",
+   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5rUE5rUG54dGZWZ0lYVG5CNjZTcGEtbU5BZXFhQl9wTTV2X2N3dXMzYkhwNURzbGRzbElZLS1jYTNzU0VGaC1FMmhFai1iUlR2NUc5UEhORHVVOHJ5elotRGtoTQ?oc=5"
+  },
+  {
+   "ts": "2026-09-19",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-19",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
