@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-19T08:27:27+08:00",
+  "generated_at": "2026-09-20T08:12:07+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-19",
+  "asof": "2026-09-20",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 364.27,
     "chg": -0.32,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-19",
+    "src": "Yahoo 2026-09-20",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 0.99,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-19",
+    "src": "Yahoo 2026-09-20",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81065.87,
-    "chg": 7.21,
-    "src": "Yahoo 2026-09-19",
+    "price": 81249.15,
+    "chg": 6.7,
+    "src": "Yahoo 2026-09-20",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0877,
-    "chg": 9.53,
-    "src": "Yahoo 2026-09-19",
+    "price": 0.0876,
+    "chg": 8.31,
+    "src": "Yahoo 2026-09-20",
     "status": "green"
    }
   ],
@@ -351,6 +351,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-19",
      "c": 364.27
+    },
+    {
+     "d": "2026-09-20",
+     "c": 364.27
     }
    ],
    "SPCX": [
@@ -656,6 +660,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-19",
+     "c": 152.71
+    },
+    {
+     "d": "2026-09-20",
      "c": 152.71
     }
    ],
@@ -963,6 +971,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-19",
      "c": 81065.87
+    },
+    {
+     "d": "2026-09-20",
+     "c": 81249.15
     }
    ],
    "DOGE-USD": [
@@ -1269,6 +1281,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-19",
      "c": 0.0877
+    },
+    {
+     "d": "2026-09-20",
+     "c": 0.0876
     }
    ]
   }
@@ -20850,6 +20866,150 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxQenJmYWxyMVRYYkx5c3I2NGlEUjhrMm1FU08tQnprUk5BeTJMRTZNTjF3Q21HYzRpczBMcXI3MnBya2lpTEZKM0t3eUw2V2FVWnhiTDdiSkxzc05KM243N0ExQl9hVm9CdmtoaUFsYWFnRmZ1eUQzY2NZVTRuckd4OWw5dUp0Q3UxM2lrbXh5X3VJQ3htTUUxN21QQm9KZVBEVVE5LTNDR3Y1Tkl2YzItWXAybTJXM0dndXpPV0lLNlVfRjdRenQzS2kxZS1NMUx0LU82amFmTng3OHNZbHl6TkJoQ1h2d0syQTVDczRoTi00S09xd1RCeUJtUkVYNW5rN3pucHRZZnVjYXlHeVBtSUFhWEJPWWdUU0YyUjdfOGdXanBMSEtQMjBWVFFLa2NJLWlGZHdUcWx5eWI0azBiWlhVTS1kU2M4QnJNRHZRZkxTUHNvVVNzNEh1S1NKQVVSdldrTUF1aVRyeHRQZWc0TkJZeFowZ1BkVkE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-5a793489dc86",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "拉里·埃里森取消出售$75亿甲骨文股票的计划",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdDVZeXZVaU1zNkpjVExXa1dFd3NKRXNrYjM5dHpzNHNKLXhOTHNtSmsxWk9iYmxyaU1SMHFmcDI2b0d6eUJMbEd0OVlYc0lwUXh3TnMyU3BNcDV5aDRtUnJFODZsTC0yZVhPalFLUmJ3S3FGVWtWdlhoSVh5UmxySEV1WFBjLVNJeTNnVVZfTGxiUUJfNWdwVWVOMkVkZzJha0RneFp1S1ZzRUk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c4f4bbb967c8",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文創辦人艾里森取消售股計畫 持股價值75億美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWFc3UmtYREN1ZW1faEh1OFh6VGJFZU5FR3B1T2ZaMnM4bmhiWU13bjNkUUZMemZjUUVuYnVoaF9ZdkdmQllyRjdYTUlNR1VpOWxXYzV3RVA2Szg2SThOakZqd2hwcmdhVkNOdVRiUnZDb1pkU0l4ZFFqQ1QtSGhha2dZcmdqUdIBZ0FVX3lxTE96MUtPR0RvdVpYbi13d0tNOFRZbU91M1ZJRTFhdHd3Y1JWazcwYURkU3hpWDQ0TWFRZ3FtajZjQVBkd2I5X1JDcnlhNkhlYWY4MkcyRGEyUldHMW1UUjZXWmw1SF9MN1U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1382c273f05b",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "杨安泽呼吁为前沿 AI 系统设置杀毒开关与责任规则",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9zN3VoWnF5bnFmY0NnQktNRGdZeXFUSUNBY04tT1gySEt2RDV4MWpPREhWczlwZmdsczgyMVBvckVRZjh2THhYYzhTaE80cmxrOThLVWpRYWE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1b1f1f8ef69c",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "昨夜今晨重要资讯（9月13日-9月14日）",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5DLU4tai1wREhFTHFBM0NkNHBURVF2VUE2cy12VENybV83V2lNZm9sdGlyRFZsWElFZUVFZFpQcTBYbGdvZzhXd1B6Z2NLTkFFYmZkOXJ2dWJnNUpDckc2YlZDSWhKbm8?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-39ae5ebbf612",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷投资“教父”抛售全部英伟达股份，套现近1亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBhU3ZURjh2ZnRwdGZOSlZQUHRjYVhkRGdCYVlCU0ZGVWVwcENBNlQxOU9nSG5rSzc0S1dteDdJWUlSeHZXU2NGU0V6VmJHdUR1Q0tYZkVncG5XMW9nQTJDMDNkczFNZlFQMTRNdGprOGFiT01uM2RpaA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4687470beb49",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "为什么彼得·蒂尔(Peter Thiel)不投资前Google员工离职创业的公司？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE93djN6WThuV2pjQjhvdEEwXzdpbnIwek1wR0hCa1pidEFxTkVBcVBBVVlBbVZ5TGJzaS1IemdlQm9nQUJaWWF3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b70994d0603b",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Warsh 邀请华尔街知名人士和学者加入工作组",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNWXR3QnZiQnRpWDdLYUx5SGNaak5aUkpqU054ZW1iUVNXcW1qMUlSeTBweUgxQlhuZEpSWWNoUFRrRWxKelVNYnhRNGpIOWlaREF6X0wxdUZjTXdBVmJTcTQxT3B4d2hvR0ZFMVFENXNCWDF2ci1rWXNIMXZheEtMWVpBUnYydmFWRmFGX1BpRXI2bEEwQm9KVlRHeVlMMm9xeUh3cGNEeWxpTWlEYmxHZjV5dlpKeW9lZ29iZTJhVWdhRmRDLTNWMjU4ZG1IaFhyb2d0TkJZa29CRDVKbmhLNGpDSnI2YjdZaGVOWjJmVGRsaEFIekVZQnlwUFhrbGVMekxfV1V2VW94V0FXOUZxZlpJS3JrVktwWnNkLXo1NjJsNElSUm9qOTZxcw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0349089d73ba",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：加仓CoreWeave和Circle，减持10x Genomics",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa3hldHVYdUgtWnEyZmJ3RXd2MnNsaGpJb1ZJZ0U5Mm1GNmNpS1ZpMldDRGd4MjJVMmhLb3ZZRnduUERpY29TbHhnWXl5Zl9nYW8ybjBqZTJiZGVabWVDaG4zc182MWplZGFFSmRYcnNSYWF1Y0FsbDl2c2hQWmFsSkZoVllTRWozbTItNmV4QXc4NnRwaklzTVZDd19HdzBCSVpuZm1hU0NsMENtN0U1UnhRMW5ta2xJSWpFdnJn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b98d9db9f05a",
+   "type": "event",
+   "ts": "2026-09-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：逢低买入英伟达，10x Genomics大涨后获利了结",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSlFyMzZGYXJfUXFobnYtQkR6RmtKSnB4RllpZ3JZQ0VmdENEeEtEcjlJNXlGRlBEOXJiWE9ZRk9rM19CVGZWaHNXOUw0SzQ0WGM2cGVWRTc0cmhkVVhjcElPeDJjUExEbXhremtjYnU0Uk1NWnRZU1lXYm9HQWlzN2szVlU3cUo4S1p2cnlZY1c2RU1JUm9abWFoTlVFd0hiYUl5RlJnT2xFUGZYOVJBRzlFMm90TU0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -20952,7 +21112,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2499 · xAI 264 在招（2026-09-19；Tesla 无免费接口）",
+     "v": "SpaceX 2505 · xAI 264 在招（2026-09-20；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -21532,7 +21692,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-19 08:27",
+  "last_run": "2026-09-20 08:12",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -21543,7 +21703,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 79,
+   "edgar": 80,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -21567,33 +21727,17 @@ window.MUSKINTEL_DATA = {
    "status": "To Be Confirmed"
   },
   {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-25",
+   "net": "2026-09-30T14:00:00Z",
+   "status": "Go for Launch"
+  },
+  {
    "name": "Falcon 9 Block 5 | Crew-13",
    "net": "2026-10-01T15:10:06Z",
    "status": "To Be Confirmed"
-  },
-  {
-   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "net": "2026-10-31T00:00:00Z",
-   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-08",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank - Moomoo",
-   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcTJ5bjE4VXAyUGQxQWU4QU0zQmhrcHpnS2cxaFRXRW1Ua0szMnJoU284bWlnclpfNUxIRkJiM2ozMFF3TEI4NnZtRTVNdzZaSHF5TG9WSFptSG5uU3lMaUd1aUNfMHdhb01TbVpyLXY5cDdTZU1nNWFmem91VDQ4LVZ3VGI4ME9yQWUzdGdtYnQyWFhpUW9aVExMUzhGZw?oc=5"
-  },
-  {
-   "ts": "2026-08-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-09",
    "rule": "R4",
@@ -22536,6 +22680,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-20",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
