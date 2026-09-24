@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-23T08:47:31+08:00",
+  "generated_at": "2026-09-24T08:39:31+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-23",
+  "asof": "2026-09-24",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 378.9,
-    "chg": 6.26,
+    "price": 380.12,
+    "chg": 6.16,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-23",
+    "src": "Yahoo 2026-09-24",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 154.72,
-    "chg": 7.83,
+    "price": 148.36,
+    "chg": -1.67,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-23",
+    "src": "Yahoo 2026-09-24",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 86487.71,
-    "chg": 6.47,
-    "src": "Yahoo 2026-09-23",
+    "price": 84311.21,
+    "chg": 3.9,
+    "src": "Yahoo 2026-09-24",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.1007,
-    "chg": 14.84,
-    "src": "Yahoo 2026-09-23",
+    "price": 0.0931,
+    "chg": 6.69,
+    "src": "Yahoo 2026-09-24",
     "status": "green"
    }
   ],
@@ -367,6 +367,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-23",
      "c": 378.9
+    },
+    {
+     "d": "2026-09-24",
+     "c": 380.12
     }
    ],
    "SPCX": [
@@ -689,6 +693,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-23",
      "c": 154.72
+    },
+    {
+     "d": "2026-09-24",
+     "c": 148.36
     }
    ],
    "BTC-USD": [
@@ -1011,6 +1019,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-23",
      "c": 86487.71
+    },
+    {
+     "d": "2026-09-24",
+     "c": 84311.21
     }
    ],
    "DOGE-USD": [
@@ -1333,6 +1345,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-23",
      "c": 0.1007
+    },
+    {
+     "d": "2026-09-24",
+     "c": 0.0931
     }
    ]
   }
@@ -21638,6 +21654,186 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ibUFMZ2tCQjNzTFZ4NHBsVGtaQXM0aGszNm9ZTms2TnFxTFFFdGVZR1RCVmp3Q1ZJdF9TUEZBSlAwYWNLVlEtV1V4Uk9meHpUZlhr?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-a5aa79df781d",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "【漫图秒懂】Elon Musk留整并伏笔 Tesla、SpaceX面临中美监管难题",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSEI0VDRFNEhzeXJrcHF6bkh4dmdFamVhLTgydTdMMGZFV2Z2ZE8zb3JSRUNROVQ0c1NIWTc5bzlGal9vSVJEX3JwV3J1MGd2OGpLYkRFc1diOGw4ZWZrQTJtUVM2bE5yME9UU1lYTEpsNnA5akI5OVdkWDdFNkl0VE1FV05rdFpvS3R1X19yN2JDWXpWdkpJMDJyakg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-660cdb2deeaa",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX上市创纪录 诺奖得主克鲁曼：马斯克“庞氏骗局”终将崩盘",
+   "payload": {
+    "src": "香港01",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMimwNBVV95cUxPYkdIOVF2bHd0TlNjZXZQYTVwSXJ3TDdReDVjcFNOZlNkanU3NVRCdlFsb1g1UnJ0YlU2dll5QnFmLWF1Q3Z3UUJpNzVHTi1IRHZTdGQ0cjk4dDBYUElOUk8wUkd0UXRkaHFDQ1Z3Tmc4M1lFc0dfOWdWdTBfWHNycThpNkRpa0NUaEljM3l0SHl1eWFaQXVzNjY2WGI0b1JTN292RDE1eDVPNV9CSm42UUxzd0xfc1B6YW0yNS1NY3N0Y0hmVjkwdnhDTnNIQVluLVA5Q0o2eGVmR0tTRGhVcDdZVzV3Wm1KLTZHV2Jjal93QWtMai1NemVRRVJjcVh5TGVTSF9XRENoVTh5UTgtWXNPSVQtUHBJSkVIc0VHbXBfeHl4bk9jc3h0cGYtd1VkM2RJZ0tuak1STXppNUFMV2dMZVNrRlAtM25MUjZTeUh5UC1IM0hGdlRZOFQ2SlZ2dm05SzlfbVRXMmt0cmNSaVR2ZEQzcUlyVXhxa0lXS3poN0FUaHB0Yk1PVVJQdTVCSWNzOHBUWU9VY00?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-841219a98cfb",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "又杠上了！美国证监会深入调查马斯克及其兄弟售股事件",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NOWpPQko0ZVZ6UDBBUEdKenZpYV8yOVB6QlNVRVd4VWdWbGtWQVFHUWJ4NGE2RV9CWWdBaTRERXJRa0V1UllPbVZWUndQYkgzd2dJ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3c62737b8dba",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "艾里森突然罕见要套现75亿甲骨文正为AI大烧钱",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90M185ekFZMkJTQWtFamF0RWtTVmlXOVNQTENCMmI4RzAweE1iMjNZT21sQmpqNC10dHFHenVrbXhsZjc2TlhsMklQTGNteWF6?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f5f1f75880fa",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Larry Ellison 简谈 Oracle 生成式 AI 策略",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNW5LczEtX3lBbTRvdVhhVXBSaktQV1JpQi1DOW9NdlAydzVTMS03ek4tc3Y4Y0tlajBMTEpGOHZwcUUxTTMxT2lVRlpGX3lsaFlkbTRUb1pzN3VDRElQTkxKWWloVDVrRGFfN0NEU3ZjTHlEQzRNWHE5dXZCN1lUOVZMUmVDTGlWWnNNMWdGdjBoZklI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ac822fd70d4e",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫官员：中国拒绝英伟达H200晶片",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5icER4bkZiQjhqN3dMM2k0N1VzVzVnMlRUS3I0Vk5KTjNmVU10MnctbWZjYl9DYnZXd282TWp4Qkp2MTVTaVVZbTY0X3FkQl9HUjJ3LXNsd1gtTU1ENUF3UHpYTUxmVlJfemJuVW1lYw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1921d3ab500f",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "黄仁勋再谈AI危险论：很多预测都是编的，中国会成为全球开源重要力量",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKNEU4WHpkVlhRalNZSFpxVS1CUFplLXR2aG9wRFljYkpySGhRT2ptSF95NGljVWYyY0RlQUhMdDZWcXZVYjRVNDg5NVlrQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-760fda66ae9a",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "美国著名创业投资家彼得·蒂尔为清华学子讲授课程",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Pai1jRlZuNTdTQXg3MXVtczk2UzlJMFhEdU02Yld0dU4wNzRrbjlGYmVXUDdBVHpfbnc1Y1JqcHF4Yzlzdlc4NF9UemRTdFk5Ylh2QjB4NzlsaGc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-06b921305098",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "NYT爆料：Palantir帮助美国政府编制个人信息数据库",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA1YThxZTctaEg3SFIzaVVuMEdLNmJDQWhTQVFnZ3JmR2c3dVJ2dUpINHNiZTV3dWVpX3R6MGdXNzk2U1dlenlRZnU0enpGamF4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-92716bc402c4",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "猎象者的嗅觉：a16z 用 20 亿押注Web3 的下一个黎明| Odaily星球日报发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5aFRzbGo2cEhpSk9tLTNGS184QUlpNFphY3ZLT1ZmbGFhalRSamM1QXFRRVVUMXF2dkhHVjc1N01tVnNhaER6RGk2alJscExNa3gxOG9KLW9waU96US1Ed3ZQQjBOTEgx?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f6a4fb8c2d84",
+   "type": "event",
+   "ts": "2026-09-24",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：当前技术革命对全球经济和股市的影响将超过工业革命",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hU3pLcEFtbDlkbWNlYlBCY3hsVzJXVFczanJJbUVXcGhkTzdKSW5lRlNGWWs4QU5FQkVlYTJmSVU0bUwtdGRDYVUzbjlNZGdZUmJmNGYtdVBTUDNrTUVxZDhTRTc1b3M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -21740,7 +21936,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2544 · xAI 278 在招（2026-09-23；Tesla 无免费接口）",
+     "v": "SpaceX 2565 · xAI 276 在招（2026-09-24；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22320,7 +22516,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-23 08:47",
+  "last_run": "2026-09-24 08:39",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -22331,7 +22527,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 83,
+   "edgar": 84,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -22366,38 +22562,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-11",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk揭SpaceX三大战略 打造通讯、AI与太空基建新帝国 - gb-www.digitimes.com.tw",
-   "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE04WUt5Ymt1OXNIYWpqYVpJZVhvek1KZkhkNXN1VEJQdGVPTXZpLWZybVNKdFBUNUhNLXVfZ2gzV1dwQmY2Y243WFN3dFlSUEZBbTJhQ1Uwa3NMT29SZl9qSjBiekFYUS1ZeUJ6N0E1VQ?oc=5"
-  },
-  {
-   "ts": "2026-08-11",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank - Moomoo",
-   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcTJ5bjE4VXAyUGQxQWU4QU0zQmhrcHpnS2cxaFRXRW1Ua0szMnJoU284bWlnclpfNUxIRkJiM2ozMFF3TEI4NnZtRTVNdzZaSHF5TG9WSFptSG5uU3lMaUd1aUNfMHdhb01TbVpyLXY5cDdTZU1nNWFmem91VDQ4LVZ3VGI4ME9yQWUzdGdtYnQyWFhpUW9aVExMUzhGZw?oc=5"
-  },
-  {
-   "ts": "2026-08-11",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Tesla无人驾驶梦撞上现实铁壁 Elon Musk也低头？ - gb-www.digitimes.com.tw",
-   "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2JjN0lWUmtNQlFuSldTc19GT0xjVWo2WlNPOVVsejNWLXNRWGp5VC05Q3ByV3QtRjAyTGlFd243LUw3WERIUWZSOVBlX281UldJZktNbEhPaGNVcE5sRG1HWm5yNTlKOEFFdmhPWHZPTDNZWXBtX2t0QmhEY25DWjBZTUZKRmdDdS1GQ0NRZkhRT3JmSkRGQXJrRkpOc0JxM0FTSE43bEZoREtRalQ4OVV0dw?oc=5"
-  },
-  {
-   "ts": "2026-08-11",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-12",
    "rule": "R3",
@@ -23324,6 +23488,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "【漫图秒懂】Elon Musk留整并伏笔 Tesla、SpaceX面临中美监管难题 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSEI0VDRFNEhzeXJrcHF6bkh4dmdFamVhLTgydTdMMGZFV2Z2ZE8zb3JSRUNROVQ0c1NIWTc5bzlGal9vSVJEX3JwV3J1MGd2OGpLYkRFc1diOGw4ZWZrQTJtUVM2bE5yME9UU1lYTEpsNnA5akI5OVdkWDdFNkl0VE1FV05rdFpvS3R1X19yN2JDWXpWdkpJMDJyakg?oc=5"
+  },
+  {
+   "ts": "2026-09-24",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX上市创纪录 诺奖得主克鲁曼：马斯克“庞氏骗局”终将崩盘 - 香港01",
+   "src": "https://news.google.com/rss/articles/CBMimwNBVV95cUxPYkdIOVF2bHd0TlNjZXZQYTVwSXJ3TDdReDVjcFNOZlNkanU3NVRCdlFsb1g1UnJ0YlU2dll5QnFmLWF1Q3Z3UUJpNzVHTi1IRHZTdGQ0cjk4dDBYUElOUk8wUkd0UXRkaHFDQ1Z3Tmc4M1lFc0dfOWdWdTBfWHNycThpNkRpa0NUaEljM3l0SHl1eWFaQXVzNjY2WGI0b1JTN292RDE1eDVPNV9CSm42UUxzd0xfc1B6YW0yNS1NY3N0Y0hmVjkwdnhDTnNIQVluLVA5Q0o2eGVmR0tTRGhVcDdZVzV3Wm1KLTZHV2Jjal93QWtMai1NemVRRVJjcVh5TGVTSF9XRENoVTh5UTgtWXNPSVQtUHBJSkVIc0VHbXBfeHl4bk9jc3h0cGYtd1VkM2RJZ0tuak1STXppNUFMV2dMZVNrRlAtM25MUjZTeUh5UC1IM0hGdlRZOFQ2SlZ2dm05SzlfbVRXMmt0cmNSaVR2ZEQzcUlyVXhxa0lXS3poN0FUaHB0Yk1PVVJQdTVCSWNzOHBUWU9VY00?oc=5"
+  },
+  {
+   "ts": "2026-09-24",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
