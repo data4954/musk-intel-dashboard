@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-24T08:39:31+08:00",
+  "generated_at": "2026-09-25T08:38:46+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-24",
+  "asof": "2026-09-25",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 380.12,
-    "chg": 6.16,
+    "price": 377.94,
+    "chg": 3.21,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-24",
+    "src": "Yahoo 2026-09-25",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.36,
-    "chg": -1.67,
+    "price": 148.03,
+    "chg": -4.38,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-24",
+    "src": "Yahoo 2026-09-25",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 84311.21,
-    "chg": 3.9,
-    "src": "Yahoo 2026-09-24",
+    "price": 84590.49,
+    "chg": -2.32,
+    "src": "Yahoo 2026-09-25",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0931,
-    "chg": 6.69,
-    "src": "Yahoo 2026-09-24",
+    "price": 0.0962,
+    "chg": -3.48,
+    "src": "Yahoo 2026-09-25",
     "status": "green"
    }
   ],
@@ -371,6 +371,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-24",
      "c": 380.12
+    },
+    {
+     "d": "2026-09-25",
+     "c": 377.94
     }
    ],
    "SPCX": [
@@ -697,6 +701,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-24",
      "c": 148.36
+    },
+    {
+     "d": "2026-09-25",
+     "c": 148.03
     }
    ],
    "BTC-USD": [
@@ -1023,6 +1031,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-24",
      "c": 84311.21
+    },
+    {
+     "d": "2026-09-25",
+     "c": 84590.49
     }
    ],
    "DOGE-USD": [
@@ -1349,6 +1361,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-24",
      "c": 0.0931
+    },
+    {
+     "d": "2026-09-25",
+     "c": 0.0962
     }
    ]
   }
@@ -21834,6 +21850,184 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hU3pLcEFtbDlkbWNlYlBCY3hsVzJXVFczanJJbUVXcGhkTzdKSW5lRlNGWWs4QU5FQkVlYTJmSVU0bUwtdGRDYVUzbjlNZGdZUmJmNGYtdVBTUDNrTUVxZDhTRTc1b3M?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-04ea9c60c9cc",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "比 Model Y 更小更便宜！ Tesla 平价新车曝光",
+   "payload": {
+    "src": "MyWheels 车天地",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNX1F3RTU5RW91aGV6TmZ6NDI2M19WLU4xSGJWVXBkNVY3bHpMWFprZGEyTC1KTEttYlR4Yl9aOTI3MTRYcDZDd1ZvM1k3c3AyNzJhRUNNRnNraGFQbXJVb1BSMTIzdzl5OXY0cHZfTUhMWUxnbmxtOXVNMGdnVWYxdEVoemtZWkxMak9EM2M5T2NsN1hEcjNPdmlLMVpKNkdjY3dubnJDemw4eVI1VnJjb3lPWGFiSTNnWko4TGdaSHRKVFhWREZ4Tkhqem9KWkZzQ0NJSDZSdWdfTFdFNUJEMU02c1k1S1VuaVJyMWRpR1lYZmI5V1E?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-e8a980d2428b",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克旗下Neuralink拟融资5亿美元 估值或升至90亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNV0pybERYeGdZVWtNT2xfSTU0Y216eEFkckxYYXBBWUFvOVRrbUdEOWNBdkw5ZHhTNlNRcTF4OVZJb2JvaG9ZT0pXaHZBZVljWnFLSE4xeVpCWENaSExTUEtha1gxSXNYbm5ZQmdERExrTG5pb0RlNDhBLTRQNUNvd1lfQW9JY3pNUU10N1lFYmlZeHEwQ2tqRWNKSjhQTzJjVDJqNU9ueTB0VU5rQmc5Qkg2eDZXZDNrbU5KT1ZfYjFCQlpPcFRqdDhUSVlZMDE2YkNMTmRnQnNTTlZORUhXR1R0QU1uVzZlMmxuZmV4ZTFCUDg1SnZqX1ZJdGsyRm1PRUhGd0phRDJsbXkzTGgyeEJTWURvbnhiZko0NXdkcXpiYnlOR05WakUxRUNCQl9nUWRlR0NIWlJqOFBHMUlBYy1yTy1md01fNlFjYlJrSXhQRXhJdl9jMjFDcXRqeThlbmc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-eb60ffa5f7de",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "减持公告还可以这么发？马斯克Twitter发问“为了纳税，出售10%特斯拉可行否？”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RdjZGTnh5RnVjY180YWF5VUw5eEdybm1QYm9hSlZUMDFsdkw5TWZzVV9jUlpjUm9BdzlEb2JfckEzLVRKUmZZdTR5NjMyam9JaDVB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6bb7c55e7c02",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "马斯克连续五年蝉联美国首富，另有14位富豪，身家超过1000亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYms0QThCRUVsSHhPbThZVHpnU0NQejQ3TUQtZ3M0dUJHeE9RV3ZqdXRlcnJXYzN2Zk41d0pzX1NTV1ZOTC10VG01aG1OZHdNTVc4R2JNQVZMX25VUzV5dncydjdrTjA4LTllbVM4a0ZuVVBTSjNtek5LRXQtczV2a3BKaV8wS21xS2pWRQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4ebf6fbabe51",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "81 岁老板一边狂赚 1000 亿成全球首富，一边公司大裁员！老员工自嘲：“我们被 GPU 替代了” - InfoQ",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jS0pyREJVWFVkUm8xR1VsU1BHaHduQjdZRWQ1b2lZekc0WFNwaldnZG51aFNNRnNFZU95Mmp3MDZsQTRZWXJqSnhwZWloMlR5UlZpTjBmZlU0YmZZUFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-96e85875c80d",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Kimi K3火爆全球 官方回应两点质疑 美国却坐不住了：必须封杀！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE14a1VOa0F5LUdEM0NpSzJ0djJjbEhuMk50UjVmQmNXaTVtWEZUQm1mNnRDUUxfNjlnWmxPVlhkOEZIQnBGWm02bWUzc2lHTHhqa3Jz?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f9ed135fd07d",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Bitcoin 2025大会首日：加密市场发生了哪些转变？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PZmNWYS1vcEg2SnZURGpKWF8tUlFObzl0YXMzeU00aERmUnNnT3J0STNmSTMwWnBvOUFfUFF4aVRxWHluREh0RlRJMmZPajIwSkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bcf97924447e",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Founders Fund 等美国 VC 近期密集赴华考察 AI 企业",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aSlR1UzZpX2xwZndqY2JqbXplRk5IUDJuLVpnTlNXWXVHWDBoOHdnNVlhQ1ZUWXJqS2ZISkV0MEpadzk5TWw4QTZ6b1l4bEpNQnV4d0gxVmwxLWZZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dd7907126ff0",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "a16z出资3500万美元在旧金山创办Horowitz Andreessen Academy，硅谷重新定义‘好学生’标准",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4ySEFNMzhIV0FvVl80bmRlM3prNDVCdDlfZGhRbzdoc3RxY2RNY1JNN2lmWXN1UnUxeGpsTXd1cVJqSGlZOGUzclJwMmF2NXp5bVdpUA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a51bbca18b6c",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "硅谷名人斥资4200万美元办学院：不发学位，想培养AI时代创业者",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51bW40b3hRTEZlbnh3Y3JucHNlb2lNM2w1N1FRbGxRbU5Td2wzaV84YVZwcVhlN0Y0dTNCTE9qa1BKOFJFcEItU25hT296c25uS1ZRcVpwdzhjOGtq?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4b84994635d4",
+   "type": "event",
+   "ts": "2026-09-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood的 ARK 与 Securitize 合作，将持有OpenAI 和 Anthropic 股份的创业公司基金代币化",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdUhqVlF4VkM5Qmd2bGd2Q3B2b0ZhTGtmX2xKbTdNNVcwNnZSWllhVXdVRVJMbENEWVVBME1pSmhoTHNLMHdnMnBNbGJ4Tld0TXN2M2VIWmgxbExHWTQ0Sm1MZnNkRTBBaC1hdGwzelAwSEViek9lbmVtSmZ6VHV4OWtrU0pTQ3VSQTI1V3JqYVVSdUhsQW90OHNGQ0JfSjZMcGxHbmpsc1dwWm5W?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -21936,7 +22130,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2565 · xAI 276 在招（2026-09-24；Tesla 无免费接口）",
+     "v": "SpaceX 2583 · xAI 276 在招（2026-09-25；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22516,7 +22710,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-24 08:39",
+  "last_run": "2026-09-25 08:38",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -22527,7 +22721,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 84,
+   "edgar": 85,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -22556,36 +22750,12 @@ window.MUSKINTEL_DATA = {
    "status": "To Be Confirmed"
   },
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-   "net": "2026-10-10T16:00:00Z",
+   "name": "Falcon Heavy | NROL-97",
+   "net": "2026-10-02T03:53:00Z",
    "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "突发！600 亿美元！马斯克收购 Cursor - 新浪财经",
-   "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE02TEJUSVFMT185SVRraDZsYlp1X05UUjl6M3AtbENnUDY2SURWYk1aVERMZTcwR2pZM0VnblFxOWVuZ1YwSlRGYzl4WXpXTlNLRDlrQ2pzZHZJeFhRV3RJcmtJanFOc0NGbENRQTVaZkppN0VQdmc?oc=5"
-  },
-  {
-   "ts": "2026-08-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Musk：“SpaceX人工智能营收下月将超过所有现有业务” - 아시아경제",
-   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4RlBkbGpyODFjUVpORHRNZEU3T2F6MVhMY0NPdzBOTUxyNHF1a1BhTkk2aS16VVo3WDRFWVVXSERacjktaTh5cmI1TTRoXzN3ZXdWU0ZVc2hPMU12OC13NUNWMlU?oc=5"
-  },
   {
    "ts": "2026-08-13",
    "rule": "R3",
@@ -23520,6 +23690,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 9 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-25",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "比 Model Y 更小更便宜！ Tesla 平价新车曝光 - MyWheels 车天地",
+   "src": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNX1F3RTU5RW91aGV6TmZ6NDI2M19WLU4xSGJWVXBkNVY3bHpMWFprZGEyTC1KTEttYlR4Yl9aOTI3MTRYcDZDd1ZvM1k3c3AyNzJhRUNNRnNraGFQbXJVb1BSMTIzdzl5OXY0cHZfTUhMWUxnbmxtOXVNMGdnVWYxdEVoemtZWkxMak9EM2M5T2NsN1hEcjNPdmlLMVpKNkdjY3dubnJDemw4eVI1VnJjb3lPWGFiSTNnWko4TGdaSHRKVFhWREZ4Tkhqem9KWkZzQ0NJSDZSdWdfTFdFNUJEMU02c1k1S1VuaVJyMWRpR1lYZmI5V1E?oc=5"
+  },
+  {
+   "ts": "2026-09-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
