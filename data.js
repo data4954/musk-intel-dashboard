@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-25T08:38:46+08:00",
+  "generated_at": "2026-09-26T08:44:22+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-25",
+  "asof": "2026-09-26",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 377.94,
-    "chg": 3.21,
+    "price": 372.11,
+    "chg": 2.15,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-25",
+    "src": "Yahoo 2026-09-26",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.03,
-    "chg": -4.38,
+    "price": 148.68,
+    "chg": -2.64,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-25",
+    "src": "Yahoo 2026-09-26",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 84590.49,
-    "chg": -2.32,
-    "src": "Yahoo 2026-09-25",
+    "price": 83891.06,
+    "chg": -2.65,
+    "src": "Yahoo 2026-09-26",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0962,
-    "chg": -3.48,
-    "src": "Yahoo 2026-09-25",
+    "price": 0.0985,
+    "chg": -1.88,
+    "src": "Yahoo 2026-09-26",
     "status": "green"
    }
   ],
@@ -375,6 +375,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-25",
      "c": 377.94
+    },
+    {
+     "d": "2026-09-26",
+     "c": 372.11
     }
    ],
    "SPCX": [
@@ -705,6 +709,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-25",
      "c": 148.03
+    },
+    {
+     "d": "2026-09-26",
+     "c": 148.68
     }
    ],
    "BTC-USD": [
@@ -1035,6 +1043,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-25",
      "c": 84590.49
+    },
+    {
+     "d": "2026-09-26",
+     "c": 83891.06
     }
    ],
    "DOGE-USD": [
@@ -1365,6 +1377,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-25",
      "c": 0.0962
+    },
+    {
+     "d": "2026-09-26",
+     "c": 0.0985
     }
    ]
   }
@@ -22028,6 +22044,170 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdUhqVlF4VkM5Qmd2bGd2Q3B2b0ZhTGtmX2xKbTdNNVcwNnZSWllhVXdVRVJMbENEWVVBME1pSmhoTHNLMHdnMnBNbGJ4Tld0TXN2M2VIWmgxbExHWTQ0Sm1MZnNkRTBBaC1hdGwzelAwSEViek9lbmVtSmZ6VHV4OWtrU0pTQ3VSQTI1V3JqYVVSdUhsQW90OHNGQ0JfSjZMcGxHbmpsc1dwWm5W?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d4f0705cd05f",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla与SpaceX若合并，Elon Musk薪酬方案或陷“只看市值”争议",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLTlKdDNxVmNVaUNNWk5MV1BHdG5TNEk3MllUbzI5Rkg1dEhQVkJ2cnBjNkNJamR0M1dPQWl3enh4dU1ISlN4Z0I5WmZ1WW9zSHFnOVZISUNJWTYtUHpUYUdqMVRvRS05UmNFSU1BOXhhcGUzVUxEMlVRLS1hOEdRMTRMWDFuVFBYcmlLZmZqd2ZyX1dmcXFOaENWU3F6bk1McUVsYzFB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-9b72d6712b08",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX或重燃IPO讨论：即使上市，Elon Musk仍料掌握85%表决权",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeUZDdGNEaUVVLTVLTFRaMmlzcC1FbmI5NVdjbEFhaFQxa05jSjdfYVFsb1docVZaazdsQ1lDMWtwb1Z3M0sxeTdUWmNOalFTRHNWS3N0NHpBNjExTjNNcUg3Mmx0Wi1tT2RKLTRlRlI3QkIwcFowTG9OdmVxRXh4ekRHVnFrTTUtMFpaR3I4ZGxkSl90d2RCQw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-aa0b3e0f540d",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "特斯拉股东怒控“内线交易” 要马斯克不法所得应全吐出来",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNNkN0dUNzM0dKVFNIbjY0NVBOM2xGVzg2QWlVY0FBODVYcW5pX0hYamd5SGszUWNnNG5EZVhHQVVvUjNETE9uMWM3US1wRnlpV2tRc0pvTlpwRnNCTVlIT3poRnhYRFZtclM1UjE5QmdjcjBjMDRZSEJJYTNrV0pZVXVKbHNNZ1VVQnBBODQtaERHSnVHZ3hSM2k5SlQ4YTFfZmswMFBsZG1oSm44cnNuaVcwcF9RNkZpcmgxdmlyd1pnY2hUR0NiZmZpcGN1Qjg4d292bjk5QnVSNzJYMWdjM2xQLU5fSTJ1MGE5MGUtUTRKelI5eG42c1J5MnkyeWg1RnhqNVVXVEtSSm5TeEpOWFdqZEZ4eW44SzRkclo1VGZ0ZnFUbmZFR2gxV1JkNlZBU2Y2c2pFb1U3dU1qYVIyZ0dmSQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2a1bbd0d2617",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Ellison追加质押价值$92亿的甲骨文股票作为抵押品",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQREFEVGxtZVJ6eGlWXzgtRkRlbHFka3BNckFzN3FuLWZpSTA1dm9sc0cyZDYzUnNKQ0JWQTRtSFJLRnloN0x4d3JTbWVyYXdPamdGd193SnJwRkU2MnBVZFBrcWFqVDNxNDAtZXIyY1hOSExGR25ZWlNCeVhhaU11Y19jbUg3U2FZR2NjQkVYOXBiVVlsNWhycFFkeHlnSFVWeUp3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-286096b7a71c",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文联合创始人Larry Ellison超越马斯克，成为全球首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yYTdwWWVBTDRERDIyajRwUVNCcUJ4MnZoekRGNzFhSEx4eGgxbFFMR281ejczQVlzRXM5Sk1RWTd4MFEzc2FERVY0ekNtRFk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1e5b91049e7e",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "“推·马之战”再升级：马斯克的硅谷密友圈，推特挨个恶心了一遍",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIN29veW1JODRRNzNQdmVBZGxoOUlZM2VUeHA5T2FPcDE5VnB4bWR1bk44Y1pqeDJWZUU3N0VWTllNdmxtc091Tg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f31018076c21",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "从高中生到博士级别！ OpenAI曾提前剧透 o1模型“三大飞跃”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YN3I3a1VDN2E3MzdjeEVBa0prYjdDTlpibGNrc29oT2NBby1NM0hYcEFXSm5URW02VXM2M0NLUTA4STRkcHlhOVB1ZS02eC1RSlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-43a30a97a486",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷和国会山构建反华联盟",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxPcXk1eG1HUldVODlWdnFITkh4dHpyc0lsYzFxSUdTc1pzRDhrMW45T2trcGpzb1dBM29OWWdicUw4aVpoLWlHVG0xS0h6RUVleV9uOXRucnNTVnEydHN3dTJ3UEdIckdMbnJrVG82Y0wwWE5qaTRvWU9Ddi1KZWxtWjBYY0NENVJpa05fcmt0WEtfXzRPYndGMkU0OFkzV2VFSEZrdHF6ejY3TW42TlNmY2JHdTg0SFZfcmc5YlVxRExqMVNiLUVfMU1ZeGRrRzhVZERKV1J3MGVuVXJyZF9HOW9kQnJOR2Q3VTNDWHU0ZEc2dEtsU1VPbFY5WGpQNGZxaXpKUmRtcEFuLUtWS0x6SHB6ZjF5SWtYemlPQVE0bmlLQjMwamxKRHJKQ21RYWRaZmJ1M0NNOWkyQ1gzaDBMbmNOckd4NGE2NlEtV1RkTHNqQklfOEJkYURrN1VqVFY2anpfdE1Hc3ZRdmE0UU54QW8wcWFfa29GUFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7e0343a84999",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷与五角大楼的“联姻”：“技术鹰派”如何重塑美国对华战略",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAxSjlMVlBOcW1WeENOUTFiblBkaURIWWZNd2kwVGxSV2JJNlVwUkFQYzE5OTdsYTI1emZIWlFyWm1GbW01dndGcldSaFNwdkdmNnlNUjBBem1Xc3cyMzU0d1k2MXlQdnVlOGppM0RoaENGQnVpajczcFYwVnQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8075b3a7af2e",
+   "type": "event",
+   "ts": "2026-09-26",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "美联储重磅改革！Warsh 召集 AI、加密和全球金融大佬重审货币政策",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE13TGdVeTczUUVEUC1VeFhVUEREbDM0dGFPanlRX2xRY0d0dW9ucVVWU2Z1bkhQR3p4SFRxeXk5VFFENzdnRExJVm5n?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -22130,7 +22310,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2583 · xAI 276 在招（2026-09-25；Tesla 无免费接口）",
+     "v": "SpaceX 2590 · xAI 276 在招（2026-09-26；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22710,7 +22890,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-25 08:38",
+  "last_run": "2026-09-26 08:44",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -22721,7 +22901,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 85,
+   "edgar": 86,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -22731,7 +22911,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | USSF-385",
-   "net": "2026-09-26T11:56:00Z",
+   "net": "2026-09-26T14:00:54Z",
    "status": "Go for Launch"
   },
   {
@@ -22746,8 +22926,8 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-   "net": "2026-10-01T18:08:00Z",
-   "status": "To Be Confirmed"
+   "net": "2026-10-01T18:18:00Z",
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon Heavy | NROL-97",
@@ -22756,38 +22936,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Musk旗下xAI起诉制定深度伪造防治法的明尼苏达州政府- 阿视亚经济 - 아시아경제",
-   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SMDM3VmNkQ2dmT3FObWdJVjcwaTEtaWdqekdUOGtwVEk2Mi0yQ1pwbFJxWW5FRHdOQ3pRbUloV2RwYlFiZGxPTm9zRmF1WkFZdHFTZGJCYWdsMjdwTEJZYTBmLXM?oc=5"
-  },
-  {
-   "ts": "2026-08-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 15 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-14",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-15",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "报告：Elon Musk 2025年薪酬相当于Tesla员工平均工资252万倍 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZFZoYmRCaGtVeVpQaU5pUkdXdnJ2SHVJSGY0b3MzcS16ejF3SXRzdmF4RkVvcm1vellfdm9nRzJmRmNza2pIM01zN0Z2cmRyUk5pWXBBd25ENzdwWUFGUmc3Ny01WWR1RDFvTEpWaXE4T2ZFQm9IdVkzLUZQSmNqS3VJN3BDdDN2NDVUZnlSMVVYSGxJa1VjZzhtS3hZdE1ybW5mTUNUdw?oc=5"
-  },
   {
    "ts": "2026-08-15",
    "rule": "R3",
@@ -23714,6 +23862,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-26",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-26",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla与SpaceX若合并，Elon Musk薪酬方案或陷“只看市值”争议 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLTlKdDNxVmNVaUNNWk5MV1BHdG5TNEk3MllUbzI5Rkg1dEhQVkJ2cnBjNkNJamR0M1dPQWl3enh4dU1ISlN4Z0I5WmZ1WW9zSHFnOVZISUNJWTYtUHpUYUdqMVRvRS05UmNFSU1BOXhhcGUzVUxEMlVRLS1hOEdRMTRMWDFuVFBYcmlLZmZqd2ZyX1dmcXFOaENWU3F6bk1McUVsYzFB?oc=5"
+  },
+  {
+   "ts": "2026-09-26",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX或重燃IPO讨论：即使上市，Elon Musk仍料掌握85%表决权 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeUZDdGNEaUVVLTVLTFRaMmlzcC1FbmI5NVdjbEFhaFQxa05jSjdfYVFsb1docVZaazdsQ1lDMWtwb1Z3M0sxeTdUWmNOalFTRHNWS3N0NHpBNjExTjNNcUg3Mmx0Wi1tT2RKLTRlRlI3QkIwcFowTG9OdmVxRXh4ekRHVnFrTTUtMFpaR3I4ZGxkSl90d2RCQw?oc=5"
+  },
+  {
+   "ts": "2026-09-26",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 8 条（明细见各人物卡）",
    "src": ""
   }
  ],
