@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-26T08:44:22+08:00",
+  "generated_at": "2026-09-27T08:44:38+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-26",
+  "asof": "2026-09-27",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 372.11,
     "chg": 2.15,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-26",
+    "src": "Yahoo 2026-09-27",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -2.64,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-26",
+    "src": "Yahoo 2026-09-27",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83891.06,
-    "chg": -2.65,
-    "src": "Yahoo 2026-09-26",
+    "price": 84326.1,
+    "chg": -0.07,
+    "src": "Yahoo 2026-09-27",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0985,
-    "chg": -1.88,
-    "src": "Yahoo 2026-09-26",
+    "price": 0.0965,
+    "chg": 4.1,
+    "src": "Yahoo 2026-09-27",
     "status": "green"
    }
   ],
@@ -379,6 +379,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-26",
      "c": 372.11
+    },
+    {
+     "d": "2026-09-27",
+     "c": 372.11
     }
    ],
    "SPCX": [
@@ -712,6 +716,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-09-26",
+     "c": 148.68
+    },
+    {
+     "d": "2026-09-27",
      "c": 148.68
     }
    ],
@@ -1047,6 +1055,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-26",
      "c": 83891.06
+    },
+    {
+     "d": "2026-09-27",
+     "c": 84326.1
     }
    ],
    "DOGE-USD": [
@@ -1381,6 +1393,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-26",
      "c": 0.0985
+    },
+    {
+     "d": "2026-09-27",
+     "c": 0.0965
     }
    ]
   }
@@ -22208,6 +22224,166 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE13TGdVeTczUUVEUC1VeFhVUEREbDM0dGFPanlRX2xRY0d0dW9ucVVWU2Z1bkhQR3p4SFRxeXk5VFFENzdnRExJVm5n?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-01e56c853177",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克“友妻门”猛料:与谷歌创始人前妻一起吸毒..",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MZUhsTE9SWVlZRFU1RzBKNDd1OFBvWjhNNVFjY3k5a3l0Ty14WUdpRmo3ckQ5Z3pHLXV1WUZrcjl0am5IOVdQS2RXc3JhckVDS1dJbExCR3Y4S2FVeGfSAWNBVV95cUxPdFM4TVAxZ1ZMTUxLemU0Z2hxNl9JUnBSZ0dkT2NydXM3SUQ4b1R2MGZFU0FVSE9tVEZVWUI4dGpkbUhnektLWGZTaTBYdy15dTM3akZyNVFWLTFrMEJJb1pENUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3133ee884ee6",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "从天空到好莱坞，揭秘甲骨文埃里森父子的媒体帝国豪赌- 人物",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40aEpTa0pGelkwdEtpWXRxbkk3aXAzWmFBSEVMTDJXX1ctSS1ndVI3Q1pRQ2RZamM0V0V6NzZEWnNhc3hxaFVuNnJSc3AzaS1uQ095aGNUazFwYm1NWV83Mi13?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ff0b11b50195",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "33岁沈阳女留学生情定80岁全球第五富豪，甲骨文老板的第五任娇妻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RSi05R3BibDlZN3NQTGhGaVExb25ZdlRDU1gwSUhnTjhmYmotUERPbnVrNVJpNDJBZV9CelBlNnhYbUdySml5WUstVnU2UjdJUnhUalJiU1pMUXlaak1pcE5QdUFPWUk3cFoyTERB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e61c815be190",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks：加密货币是“未来产业”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xckZNLUFxRGt0Z1JERjNTNGhTWGI1ZXRqZENRZjd2bmhRbl9vQ1FFWWgyaG15RUJVbDM2NXpOYkd4cGRES2xZWE00NElXaG1XblJncUJwc1ZDRC1TS3ZFbTFHWVVsZ9IBa0FVX3lxTE9KbTZncW11dWg1UWxkWGc4b0xPN1VZQlVDbzZQdmR1d1BoTWtlZnR3Tzg2ZzBOa0RwUC1sdGJlTDZQSU10MFhMYW5nWjQ4TXpjT2xUcDJVRzRLSGZMRnh4Ni10SUR0eTc4VmlB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f1884fedb907",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "川普顾问质疑AI恐慌遭操弄 国会追查外国影响",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03djFLNlBWZmxqdWlGekN5U0xHUG5Od2lWVlNJU3pqRmJMazFGNEtCeWJXdk1IRmd5RWdaMWhuTUZDeThmVU80N2xGeDNLejgtd0daSHl2Zmk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bfded34364dc",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "警惕美国AI巨头“减速论”或对开源模型构成绞杀",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0RUFydEdnMUZVVVd2dklSb1pOald0MUp3eHZkRDl3bkViUkFnTzdaYklHN2hMMzd4MHUzaWI3TE54emptZkN4Q05RZ2g4cExYSHhOTXFLaHZDZjhYbW5EbVp4RllBRDFVTkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bfc3f77d0d8a",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "我对谷爱凌是服气的（此处省略另外100个buff），但被斯坦福这份报纸给笑死了。它说谷爱凌是中国特色的女性主义也就罢了（这个点就很胡扯但配图笑死）， 对斯坦福和硅谷精英文化的嘲讽还是有意思的。铺陈了谷在斯坦福假装上学，物理系不认她但东亚研究系认她之",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lY1A4bEVhVk90dFl5SVF6QzNQRWlxRzZNS1pVNDVqZ1BYX0hoRXY2bzEwZ3lhSm5SelBDeU1ROEsyYmd2M0otTzUxYkJUajJBUmlyblhOVHIyWXhpZW9MR3lYSQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-06838cb0a380",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "女性媒体网络Glam Media收购社交网站开发平台Ning，收购价约为2亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4yWGVrdzA5ODhUX0dmR1M5dV9pcEV4cTQ5eVJEVXBjMGllVklRVWlnY3VwNmZvSFFEdmtnUDRHYllKaEFDWUVTUjJ3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a4b790148770",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Palantir Stock Rises 5% Intraday on a Boost From Cathie Wood and Donald Trump",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOEJFMmhJT0g0Q0tpd2ltSEFiSWwxbUExZjhyRHY3dDZSZjV4V3R5dzVKVVpyYzhqcnd0WkV5QjBGX1R6dWROU1R6RzRscWlrcnh4NnpBWGttMnBKTFZFMHVZLUNQZ19DQjRYN0hEeVVPRlItUDdrcEE3bUozRFExWXkxbEZGV2llUlg0M0RHVnpGS1F0cHVaOWl3cjgyN3Q5c1lj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8bcb609b988b",
+   "type": "event",
+   "ts": "2026-09-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Ken Griffin says Citadel unwound 80% of Situational Awareness risk, made $4B worth of trades - arch",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBvSm1EVWJ0aEprbUp5dEpQLWpLTzVKU2dSbjZNNC1ES2Y4WGtZZ09PcWV0cnBadEFsTmNyQVVCbzZvQ2hJQjQ0Wk9TUWg3WFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -22310,7 +22486,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2590 · xAI 276 在招（2026-09-26；Tesla 无免费接口）",
+     "v": "SpaceX 2595 · xAI 276 在招（2026-09-27；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22890,7 +23066,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-26 08:44",
+  "last_run": "2026-09-27 08:44",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -22901,7 +23077,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 86,
+   "edgar": 87,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -22912,12 +23088,12 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | USSF-385",
    "net": "2026-09-26T14:00:54Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
    "net": "2026-09-28T12:15:00Z",
-   "status": "To Be Confirmed"
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Crew-13",
@@ -22936,22 +23112,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-15",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk拼2027年xAI算力增 年营收上看5,000亿美元 - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUd2ZnlSMW4zVncwRGxTRG5pRGhtdTV6WmxrU2lBQmR6amhXU2RXeFdBTmJSVjJGTnNoODdLQTl5SU53Y3ItZFpYOHpLYTdvbjRWbmlpNFVkbDFKeUxXdWROXzJncVBnTXNmNEhrLWxMVjBHaG9RTnZxbmdHNEhSWVBCME4wUS04M3BFMmVwYnV3WC1JdzNWcHBfRHM?oc=5"
-  },
-  {
-   "ts": "2026-08-15",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-16",
    "rule": "R3",
@@ -23894,6 +24054,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 8 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-27",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
+  },
+  {
+   "ts": "2026-09-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
