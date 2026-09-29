@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-28T08:59:06+08:00",
+  "generated_at": "2026-09-29T10:07:52+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-28",
+  "asof": "2026-09-29",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 372.11,
-    "chg": 2.15,
+    "price": 357.45,
+    "chg": -4.76,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-28",
+    "src": "Yahoo 2026-09-29",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.68,
-    "chg": -2.64,
+    "price": 145.47,
+    "chg": -4.2,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-28",
+    "src": "Yahoo 2026-09-29",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 84145.07,
-    "chg": -0.28,
-    "src": "Yahoo 2026-09-28",
+    "price": 82984.7,
+    "chg": -1.25,
+    "src": "Yahoo 2026-09-29",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0966,
-    "chg": 0.93,
-    "src": "Yahoo 2026-09-28",
+    "price": 0.0924,
+    "chg": -6.63,
+    "src": "Yahoo 2026-09-29",
     "status": "green"
    }
   ],
@@ -387,6 +387,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-28",
      "c": 372.11
+    },
+    {
+     "d": "2026-09-29",
+     "c": 357.45
     }
    ],
    "SPCX": [
@@ -729,6 +733,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-28",
      "c": 148.68
+    },
+    {
+     "d": "2026-09-29",
+     "c": 145.47
     }
    ],
    "BTC-USD": [
@@ -1071,6 +1079,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-28",
      "c": 84145.07
+    },
+    {
+     "d": "2026-09-29",
+     "c": 82984.7
     }
    ],
    "DOGE-USD": [
@@ -1413,6 +1425,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-28",
      "c": 0.0966
+    },
+    {
+     "d": "2026-09-29",
+     "c": 0.0924
     }
    ]
   }
@@ -22564,6 +22580,150 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNcWhaMjlaTnlxQmpjajhEWUQxNEc4aXFsMWpQSWFVdDhiR0l5RVEzSi1aVHdCVkhwcHdFQWdLU3QydWEzTkZ2NENwdzl2S3F4cUVHUmRfZnBMSFFxZUx6RzdVU3pSZDRXQTl0bW5acEZBOEdOVHJnYll5WGdlSEpVMTRtRE94Q1ZLZXc3b3VNSmg1LXhaeVhpb2NPa3JhaHRuc3gyNU1uWlVPSDlJLXh5eDdnVzFiNWVTRnRkOHZZU3VhQjhDT1I5X1ktTXBxOU1nUm4xZThlSWh2RkRQMWVheUYzTFc5a01MdXY2QnR0aWZvSmRaNGpwZlFoNmZCQmV4OFNBRGRRZFN2WnhDd081SldWcjVxRFY1bGtITEszQTM?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-43af9bb16dcc",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "“钢铁侠”是怎样炼成的？马斯克的跨界传奇人生",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9BZ3RVM2NCX29lWGJmSVdIYV9EM2pLYU9MeXdURU1yYlhhaVF0bVF3SkxFOWkzR0tCVGNwTWRpQmZuOXUza0lfVlhZTnZFbk94?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-38b063a2bbdd",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "美股讯号 | 埃里森增持甲骨文股票作贷款抵押，助力派拉蒙收购交易 ｜#美股资讯# #甲骨文# #并购消息#",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc3ZxbTJuTkVXdkNxam0yajd2LTRkYUl2dnJSZUVxbWs5d3VCa0tENDdlbV9Sa1BiMnBXVUExZklXc2duTl9hcjQyMGx1b2FtQWVkRkN3bHFhdlRhd0NhSlRndDRTN2NGYnBNM2djWkk1VDBRQVpYYUV4aDBZWEc4VldTVFBMamt2WWZhTg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-934886754d55",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "结婚6次的大佬，75亿美元股票又不卖了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8td0FPTS1TQXcwRl8tQ3hzODYwamNKSTRyamZPNXpkRHlWa2cyak5qZ3lEVmJzMU9NRlExQ1dpNlZIN2hWT1dzb2JLcUt1VE9abmxZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-630295b539d6",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普承诺的战略比特币储备来了！罚没性存储不及预期，或以不增加纳税人负担的方式获取更多比特币",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tVzUwclQ0WWcwcFAtek1ublpIMkJ0a0NfaC01VDZPQmV5WkFMdFJfWDhqS2JTa2RKODU0YS1mUmhmdFdPU21DcFhkV3VINWJ6cENOZnE0NlBLN0RmbXFaZXQ5QlRLUdIBa0FVX3lxTE9BcFpFdU5sR09yWlFzaDVDZUd0dzhiNXVQaU1Da0sxV19ZUldkT1hUV2x0c1Q0OGQzUjdTREZPUkRNdWwxek1rRzl5VzJNcnN6QXBhZ2swSTdMNFZzUHVnYkpHNVQzUXVQbW80?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1faafeef6983",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普将于3月7日在白宫举行首届加密峰会",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0tQjdYd0lER0hlQzV6azVoZTVJdGpTbnU0TnVVNWszWG1EUU5DTWlKVGtwa0ZFMy1wSGYtY3dpNC1pSENDcHQ1Q0loTGZRdmPSAUJBVV95cUxNRjlRc3hWX2lhZkFwSUd3NGNHRU5sVXVOcVFwdUwzd1VaSVJvcWpFM3pDX1J6eU5oVngzR1g0LXFzZkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f448607ec095",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "亿万富翁Peter Thiel间接入局以太坊，披露持有BMNR部分股份",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS3RuOU1DSGZ6ZkktNjFrMXB2MjVudmhHbldHTmRYc0t3WFZOanNKY1FBMkp1N05vZkhpX005djVxRE8yb0hRWVJtMjNJZVBoYzRvWXVIYWRqMjk2dTFSZDd5RXhkQmVFdnNsOFBtdmladkp0SjF6S0pUVktGYTNONDBMcTNQVEoxSl85M3h2TVdyWnhGMVJ0ZDlDWWFpS3BOZzU2MDBCV0hQRzBwUnhoeGNfNG5Qdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab7c9d07aa9a",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "深度丨福山对话彼得蒂尔：关于经济不平等、政府效率、技术进步和全球化",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB3THAtekFQR09kSUJpOElIX3B1eW5VZmhaU1dxNG5DQWFVZ2Mya2lMVmItZEljYjQ0TlRwRElGYU5wMEdJX19iZTNSS3UtYlFIYVdBVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-18700f881a9b",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：押注XE和SPCX，减持Genius Sports",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGRVM3pnbUpkd08tQUJnQ2JEWmJvdW1sN0Qwc3BWRWRzZGxYNFpBa3htRmVXTFpvU3JCTDZKM2hYc3pJeTJOS1UzYjRraVNxWEllUjF0ODIyRzJTdTBwa3hYN2ZlTzhlbUJsUUV2OTJfenFYN0g5SVVZcVkyaENZNzF3VE5Od21LZ2FmaHZDQXlGajgxQmJXNmowU1BweWdnSU90TDh6aFBFN0gtSGdFQ1pOTF9Ib28?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e5cee3493546",
+   "type": "event",
+   "ts": "2026-09-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Crypto.com 获得 Citadel Securities 4 亿美元投资，估值达 200 亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQajdDSEVac3k2YTU5MXprYTlSOTVRLWRCYklDcHdvYzBjdldzS0l4U3pOTWRZQ0hfcXpQUG1wWXNLbzFPUGNFaUhuRWt2N2dFSUZOZW84VEJfallWZHZmc1J3MzVtX0sxeTNCLWFDOFEyMlpZSmkxR3o2YjZpMXVybkFER2V2SENDSEFaYVUwWDlvc1daWnBaX3BZSERlTmkzNDhHSlVHcXRvcmpNVVZlaEM2QmpIR24yVDBTbl9NanhBUHc4WVBCVGw3VjZweGs1LVZR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -22666,7 +22826,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2595 · xAI 276 在招（2026-09-28；Tesla 无免费接口）",
+     "v": "SpaceX 2597 · xAI 289 在招（2026-09-29；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22770,7 +22930,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天 $466,599／4笔，最新 2026-06-30（A:FEC）",
+     "v": "近90天无申报记录（截至 2026-09-29，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -23246,7 +23406,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-28 08:59",
+  "last_run": "2026-09-29 10:07",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -23257,7 +23417,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 88,
+   "edgar": 89,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -23267,8 +23427,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
-   "net": "2026-09-28T12:15:00Z",
-   "status": "Go for Launch"
+   "net": "2026-09-28T12:48:59Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Crew-13",
@@ -23292,14 +23452,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX 新闻：最接近 SpaceX 交易方式的是加密货币交易所上的交易，目前下跌了 27% - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcG1jbi0yeURLQW9RSDlMT3MtSTgwUmJ6Ynl0Y09XdTZSRVM1eWlhN0lxdVFQMUhzallPc0xzYnlDVkFuQXhEeVJyVk9uWVBvZnRQbkhKUXREdWxkdWlJTzJCS3NFV1diZHNuX2RNUmpPYlR3TTNlcFJUeHA0VDJXZjJmeTFDQkVTVnhxUjVrVlVyV3h0M2dQZF92VzFFdU4xZVk0cGhHdENhamJKN0FkMg?oc=5"
-  },
   {
    "ts": "2026-08-17",
    "rule": "R3",
@@ -24250,6 +24402,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 8 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
