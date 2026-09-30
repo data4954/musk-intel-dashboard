@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-29T10:07:52+08:00",
+  "generated_at": "2026-09-30T09:22:50+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-29",
+  "asof": "2026-09-30",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 357.45,
-    "chg": -4.76,
+    "price": 352.84,
+    "chg": -6.88,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-29",
+    "src": "Yahoo 2026-09-30",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 145.47,
-    "chg": -4.2,
+    "price": 149.24,
+    "chg": -3.54,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-29",
+    "src": "Yahoo 2026-09-30",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 82984.7,
-    "chg": -1.25,
-    "src": "Yahoo 2026-09-29",
+    "price": 83384.89,
+    "chg": -1.21,
+    "src": "Yahoo 2026-09-30",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0924,
-    "chg": -6.63,
-    "src": "Yahoo 2026-09-29",
+    "price": 0.094,
+    "chg": -2.82,
+    "src": "Yahoo 2026-09-30",
     "status": "green"
    }
   ],
@@ -391,6 +391,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-29",
      "c": 357.45
+    },
+    {
+     "d": "2026-09-30",
+     "c": 352.84
     }
    ],
    "SPCX": [
@@ -737,6 +741,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-29",
      "c": 145.47
+    },
+    {
+     "d": "2026-09-30",
+     "c": 149.24
     }
    ],
    "BTC-USD": [
@@ -1083,6 +1091,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-29",
      "c": 82984.7
+    },
+    {
+     "d": "2026-09-30",
+     "c": 83384.89
     }
    ],
    "DOGE-USD": [
@@ -1429,6 +1441,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-29",
      "c": 0.0924
+    },
+    {
+     "d": "2026-09-30",
+     "c": 0.094
     }
    ]
   }
@@ -22724,6 +22740,236 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQajdDSEVac3k2YTU5MXprYTlSOTVRLWRCYklDcHdvYzBjdldzS0l4U3pOTWRZQ0hfcXpQUG1wWXNLbzFPUGNFaUhuRWt2N2dFSUZOZW84VEJfallWZHZmc1J3MzVtX0sxeTNCLWFDOFEyMlpZSmkxR3o2YjZpMXVybkFER2V2SENDSEFaYVUwWDlvc1daWnBaX3BZSERlTmkzNDhHSlVHcXRvcmpNVVZlaEM2QmpIR24yVDBTbl9NanhBUHc4WVBCVGw3VjZweGs1LVZR?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-a56ce8661a60",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·穆斯克如何构建特斯拉,SpaceX,和xAI:他亿万-多拉尔帝国背后的策略:由球面透视获得的专家观点",
+   "payload": {
+    "src": "Spherical Insights",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUEtDYkZXbFNSd0dZb2laRmhUbVpDUTRkUVhSZFU2eVZ3U0NBblNHSlhXenlzMXJIelY2cFJVc3pWUkNFcWRqYV9Vbk44cmhnUmtSTXhqcmhRQXltYk1Zb0pyYkYzS0xRdnNDMmxsd2lrR0ZWdF9wNHlRNm9YdWw1YzJDeVpOV29TclVCbmItZ3VtM0N3bHBkVzYxRTI4Unh1WFMtNDQzeDRBQ1U4dTJBMndGLVQ5WVRHU090ZFR6YlpYV2pJN19mQQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-1d7632e95a24",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX IPO 令 Elon Musk 成為全球首位「兆美元富豪」",
+   "payload": {
+    "src": "Hypebeast CN",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSlFfSzh6M1ViblFSUXhQd1B3UmtNcV83NE1FekQzTVJ6dUR2NV9TWmtEMEJkRWUxNXp4RUI4R3Rydy1MSlF1VVhHZW9QcThtVjhGYWI5X3F3Vjk2Sk9WZFF6VnVYWG03SUU5eG1kb1JkWjhTQ1E2ZkhyamNYSjVfYTBidG9JUQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-f544b5e0a42c",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX“星舰”第14次试飞首次完成轨道飞行，部署26颗Starlink V3卫星",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNHZqREprTlhWdUw0ZGdOU2s1emZJLUFXUDRBTmlnMnBpQzQzRjVZNmxjcWJiTFdfU2ZHXzd6LVBEZThYc1RYRkt4VWVETXNkbEMyeFJTM3YwSkd5MmJPMlZUNnp4Nl9ERWZlbEZ0RzdCUWtfVGVMMkZIcHMtcWpaOXF0cWdoQjc1Y3NkR2JaUi12c3JtajBhME5nZ3NmM0tI?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-fd19d38fe670",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克 : WSJ揭密:马斯克操控\"宝宝军团\"母亲 软硬兼施…",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTE42OUdVRjdpRDZCNDg1QTBSZ2Rjb0xWWXJ0NF9oM0RKRHNxdUpybElJeWUyVUZEc2NRQWR1NW1aX1k1SF8wZzRWLVd3aTh6cTBMSlRJUV96UUxyZXVxNFhWYTlmOVg2YnNjbXQ5VXNiaVVhb2V1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-93e87b6deab6",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "杠上了！美国SEC就最近马斯克及其弟弟卖股票事情展开调查",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NNHk4RlhTdUNSQXdjRmZQYVd0N29HVTdHSjZjZFVINVA4VTNYY1lqeGs2ZjRvZ2xOb2dfTlBIeDNoMzBUdzBoR00tUkcyTGFlWk9J?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ad51995c278f",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克弟弟： 我们两兄弟都不痴迷于财富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZeUgzMU1hRnJiX1BhSkotb0pvQnk0TmlQOG9YbXRrdFEwM2U3SlgzMmd6UlQ3cUU3NmIxTTNzT1dMMVRjSU5LdFpEdC1LTkZFVGFJZF9Daw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-363c71038855",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文創辦人埃里森砸千萬 買8套房給員工住",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lZ2hYRTNIdUpOMk9iN1JTcmt4QlgtVnBOMHEzMWtndkFZZmVCdTJqWnFqRENfeGFXQXFPczEtXzhWTUFRYVNvTDRQTjl0NTJYcE5pWnJ6Qjh2elVvaE9vNdIBZkFVX3lxTFBydEFqNEI4RV9ObWV0UGs3SGRFSUN2MW1ERE9iRVlHeWxzUGZPbGVON1N6T05LQXZxb2ZTNVJ0ZklYNnFKcUpaTlRCejVva195UV9JVW9Nb0E4eXZsYzJYQVlvNDRjQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-428721452e3b",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "一探拉里·埃里森为家教等员工买下八套房产的封闭式社区",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9IWjdMdG9qR1UwWEFMeElWYU16R0pGRlEwZVRHc3FnZEtwOHpmb3hyamZfaFI2MHVzZ1l2TVdZMGdnR2h5V0JuajZMSUlscUtDYlA0M2NkUlF4QnU5NjdNWGs5Q1hxV3otbG1DanRWRXZsVGZqcWw5MllpY3F0UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b89ec89551b3",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "唯有特朗普总统，才能召集那些研发芯片、数据中心以及超智能前沿模型的顶尖企业的所有掌门人。这场新的工业革命已创造了百万个新增就业岗位，并正推动一场规模超过铁路、运河与电网总和的基础设施建设浪潮。我有幸亲历这一历史时刻：这些前沿实验室企业的领",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxNUzlhZFJIWkswOVRnUVBsa3dsa1JQV0FIRFZLVndQNkR6UXN6VEx0dHNWTnhNMUphUUhETkR3bkFad2NhbHdtZnN6Wl9GU2hKckRkLUJlaVFaeG00RDBpYktiTkQyc2NYME1iSGVkZVphb21nVVJBRk01Y2ZxTVBCa2N3Q0dIRUtoVnQwTXdvWlhTYUE2Nm5lSnpRZ21JSXBnVjE0MkM5Mjlnd29fMlI3SXM2T3c0QTNpc2x3Z2FjUGQ3Z3c3YU0tbExDbDlhYjVxNUx4LVNBYU5YOHBha0p2UEgyeWd2QkVRMzNxelliY2NDeXRzV1NNWjNYeExhYm1EREJmWmpBMGtkczZXRXhFNFpRUldRRWZ6aEp4bUhQNi1GNkVvYXp1OHpwTEJENDN4ZENEMVQ1OTBrNEpqdDhBaUQ3Z3FCYlUxSTNJaWdNLXlSSmY5d3lnMEdMSWxlaXZ1Q1dUZHMxMG5rdkhva2ZQX19XRDgzc18xUHN3S254YlZBR0lYZkY2aXBuRVNBdDZ4dWNNaC1UU1VqbnpGUVpmck9GTDJUUHdjaVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f3c5c158e988",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "硅谷最聪明那群人的「终极推演」：2026，我们应该「All-In」什么？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5DMXBoQWI3clBqcVNHLUp1SnFjaUZRNmhaMnlzU0N2cFNWNko2MV9qYXBiaGwxNzRKQ2hwaDNUZ1c5WG9Hbi1laVFTckxReU9kaThGaQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5617d4422c79",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Billionaire Peter Thiel Is Behind the $130 Million Purchase of Casa Encantada -- WSJ",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVzVHd1lONEF2NDJSWUt3UnE5QVA0Y18wRDRCZ2s2bGdJUnJzanlCT1RzemNYazJuQzdIMk1zNU5IcHVTejQ3LTRDcG93RUJUMFlnbGdtMWt4aUVJN2pOT0llWmlnUVZURW8ySmllanVDRWVuNDdUVDB4MjY3Z2JnTElsMkc1TWpCcDUyOUF2REloZ3BCSnlMWjcwNklFSzh1dFg4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9a1fb9dbe389",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "亿万富豪彼得·蒂尔新置顶级物业：1.3亿美元的洛杉矶著名庄园",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMigANBVV95cUxPQUZTUzA4OENIWG9yOUN4bmxtOHJ3TV84Yk5RNDA0SjVldUVNWUFrQjlLaDFPZjlMZkNmVkEwaXZ5eXRXaHNFMzNvZldvTkV3dUxnZjUyckxzUl8wcmRrZnd4ZUE0TXVNLXVscHNYNk1UY01KRTFabEtTMDBlTHE1M3U4ZDNnWkhIYmR6WEQ4M1A0Tm1rWVpGZURqWWlTR3NZMDh5R3lUd2o4QThuMkxnZ1hhdDA2MEstbGpLRGxxRGNGS0c0a3BZZ19jazZKWFFlZ21FNkMwMVZBUDRLRWdaZ3BvNlAxMmJGYUpuTXkxazA4WG1VMEFGLVVqd2IzamwyVTFQMmZZLVFMVG5ZcnhiQ09pVURoUkNfNjloVDRSekdlanc3N2lZamd3QXhmUU91dTRPRnF3MHVJQnk1XzZZQnFCaEhJVEtORklmQWhhQ3JZWnBJT0p0NnkzVHpwbE9OMjhYYWZOVUF2SFJLY0FwVjB1RnRSXzE0OW1sNnlFWFg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5c9525802244",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood: Starship Is “Off the Charts” as SpaceX Readies Next Week’s Launch",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcmU4Nk4zUmsya2NJVldER2VQNTV2SGZTcG80bXJnTjJMR2todVNSZ2tqMFdfUkVTNTg0RnRxVGo3TTJ4bjEtNDhHdkN4TVpydFFMZmF1NUpPZUtOdkpiaG1mOWlsVFo5UGZWVEZZTEkxdVkxckFoMlFRS28zbVg5R1NoTEtwYkc2TEVXQVYzSEkwUnc4TFhqR1ROamEyc051Q2ZxQ24yWQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1278a61f380b",
+   "type": "event",
+   "ts": "2026-09-30",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Ark Invest逆势抄底SpaceX，木头姐为何看好马斯克的“轨道算力帝国”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbDEtY0ktdHAzU0xldW9HZnBYTnVkY2haQXdnSHVtWVNlcHNERFNOS05MbXRFSHFFOGFGVmxYckxSU3BkejQtQWUyN2RPelRfME9vN0ZmLTlaa01zSWVrRk9KTFBpeW9BZjVzWkhsUjlRNVk4RzZabDJ3c1ExaGwxQWxLLUpteU80VUdyeUlMaXMxdHpCVTF4YjdOMEZRcGRFM29CWV9Sbzl2OWxEM2VRQm9EWUVpRTJScVFtZTVkNGlEMk03aUpMUnVrMjQ4c0RfeFphR18zQ1AwRkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -22826,7 +23072,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2597 · xAI 289 在招（2026-09-29；Tesla 无免费接口）",
+     "v": "SpaceX 2610 · xAI 292 在招（2026-09-30；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -22930,7 +23176,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-09-29，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-09-30，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -23406,7 +23652,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-29 10:07",
+  "last_run": "2026-09-30 09:22",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -23417,7 +23663,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 89,
+   "edgar": 90,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -23425,11 +23671,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
-   "net": "2026-09-28T12:48:59Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Crew-13",
    "net": "2026-10-01T15:10:06Z",
@@ -23449,41 +23690,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
    "net": "2026-10-05T08:06:00Z",
    "status": "To Be Confirmed"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-25",
+   "net": "2026-10-10T16:00:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk高调独采NVIDIA GPU 为何超微还入股SpaceX？ - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdk9kWmFndlBDRzFSQmI0MFFaV2VYSnhyRWlnUUJ5bmdnaWNWVUFzdWV4NURkV2ZzU2NQRUNwOHNVT2h3VWZEUFlGZ1pCZThGTmUzMFRqaUZXZXhLZ21mcU9kQ1Q0NC1GUU82Sl94elN1YVp2NnRtdld0aFZZenItcXBLdjg5dG5ZQndkSVh2SFhpTmtQRDRBQ2l5dGk?oc=5"
-  },
-  {
-   "ts": "2026-08-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Waymo开呛Tesla！ LiDAR与AI自驾路线技术正面开战 - MyWheels 车天地",
-   "src": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5ycVlHN2F5QUM4ZzJzcE5EdW9TY2NVNWNJZWhuQ1RqSlFtRlQtTWs0Y3BJb1R3dkhlem16UlNLaklFZw?oc=5"
-  },
-  {
-   "ts": "2026-08-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla AI5芯片最新进展总结 - 电子工程专辑",
-   "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9DTFFZXzN6WDJPVTBOY0h4Y01fc05pTDlTckowYzVxazBRdXVocHZfem1JVFBWZ082djBRREpPaklCZjdWUUlUTl82WjV2R0dSYUpz?oc=5"
-  },
   {
    "ts": "2026-08-18",
    "rule": "R3",
@@ -24410,6 +24624,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 9 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-09-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·穆斯克如何构建特斯拉,SpaceX,和xAI:他亿万-多拉尔帝国背后的策略:由球面透视获得的专家观点 - Spherical Insights",
+   "src": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUEtDYkZXbFNSd0dZb2laRmhUbVpDUTRkUVhSZFU2eVZ3U0NBblNHSlhXenlzMXJIelY2cFJVc3pWUkNFcWRqYV9Vbk44cmhnUmtSTXhqcmhRQXltYk1Zb0pyYkYzS0xRdnNDMmxsd2lrR0ZWdF9wNHlRNm9YdWw1YzJDeVpOV29TclVCbmItZ3VtM0N3bHBkVzYxRTI4Unh1WFMtNDQzeDRBQ1U4dTJBMndGLVQ5WVRHU090ZFR6YlpYV2pJN19mQQ?oc=5"
+  },
+  {
+   "ts": "2026-09-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX IPO 令 Elon Musk 成為全球首位「兆美元富豪」 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSlFfSzh6M1ViblFSUXhQd1B3UmtNcV83NE1FekQzTVJ6dUR2NV9TWmtEMEJkRWUxNXp4RUI4R3Rydy1MSlF1VVhHZW9QcThtVjhGYWI5X3F3Vjk2Sk9WZFF6VnVYWG03SUU5eG1kb1JkWjhTQ1E2ZkhyamNYSjVfYTBidG9JUQ?oc=5"
+  },
+  {
+   "ts": "2026-09-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX“星舰”第14次试飞首次完成轨道飞行，部署26颗Starlink V3卫星 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNHZqREprTlhWdUw0ZGdOU2s1emZJLUFXUDRBTmlnMnBpQzQzRjVZNmxjcWJiTFdfU2ZHXzd6LVBEZThYc1RYRkt4VWVETXNkbEMyeFJTM3YwSkd5MmJPMlZUNnp4Nl9ERWZlbEZ0RzdCUWtfVGVMMkZIcHMtcWpaOXF0cWdoQjc1Y3NkR2JaUi12c3JtajBhME5nZ3NmM0tI?oc=5"
+  },
+  {
+   "ts": "2026-09-30",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
    "src": ""
   }
  ],
