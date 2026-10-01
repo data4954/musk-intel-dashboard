@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-09-30T09:22:50+08:00",
+  "generated_at": "2026-10-01T09:22:53+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-09-30",
+  "asof": "2026-10-01",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 352.84,
-    "chg": -6.88,
+    "price": 354.81,
+    "chg": -6.66,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-09-30",
+    "src": "Yahoo 2026-10-01",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 149.24,
-    "chg": -3.54,
+    "price": 150.86,
+    "chg": 1.69,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-09-30",
+    "src": "Yahoo 2026-10-01",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83384.89,
-    "chg": -1.21,
-    "src": "Yahoo 2026-09-30",
+    "price": 83579.6,
+    "chg": -1.04,
+    "src": "Yahoo 2026-10-01",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.094,
-    "chg": -2.82,
-    "src": "Yahoo 2026-09-30",
+    "price": 0.0952,
+    "chg": -1.92,
+    "src": "Yahoo 2026-10-01",
     "status": "green"
    }
   ],
@@ -395,6 +395,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-30",
      "c": 352.84
+    },
+    {
+     "d": "2026-10-01",
+     "c": 354.81
     }
    ],
    "SPCX": [
@@ -745,6 +749,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-30",
      "c": 149.24
+    },
+    {
+     "d": "2026-10-01",
+     "c": 150.86
     }
    ],
    "BTC-USD": [
@@ -1095,6 +1103,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-30",
      "c": 83384.89
+    },
+    {
+     "d": "2026-10-01",
+     "c": 83579.6
     }
    ],
    "DOGE-USD": [
@@ -1445,6 +1457,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-09-30",
      "c": 0.094
+    },
+    {
+     "d": "2026-10-01",
+     "c": 0.0952
     }
    ]
   }
@@ -22970,6 +22986,166 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbDEtY0ktdHAzU0xldW9HZnBYTnVkY2haQXdnSHVtWVNlcHNERFNOS05MbXRFSHFFOGFGVmxYckxSU3BkejQtQWUyN2RPelRfME9vN0ZmLTlaa01zSWVrRk9KTFBpeW9BZjVzWkhsUjlRNVk4RzZabDJ3c1ExaGwxQWxLLUpteU80VUdyeUlMaXMxdHpCVTF4YjdOMEZRcGRFM29CWV9Sbzl2OWxEM2VRQm9EWUVpRTJScVFtZTVkNGlEMk03aUpMUnVrMjQ4c0RfeFphR18zQ1AwRkE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-3f4c4340a1ee",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "SEC调查马斯克兄弟：哥哥推特做市，弟弟内幕交易？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZbE1XV0pQYUtiSkE5ejloUEZfN2p4dVJrQkl1ZnVHVUIzaWtxWjRJbnliT09PRW5CN2wzSDZiQ1dsUXRhS2hmYjlJQkc3UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a33f09b492f5",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克核心圈豪掷重金，只为它",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB6NTE2NGdfcjFweksyeDYwVFJ4Ml8ySFFjUXo5azlQWnA4VVl3dUZxdGd4NFNwbEc0a2N2S2FBZzludlZVTVZEbm80azdNQ3dEdlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d85d3dcedee5",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文創辦人艾利森砸千萬在佛州買8豪宅 竟是給部屬住",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsS0xMWkpJSUQ0SFJiLTViQWIzTmhUUE9od0c1WUF6Skgta1Nqdm1SdlYwOUlJZWZMeHhIQkd1eFRhRnMzUzlMNDhvSy1mQVhCRGhfN0JQX3d2bS1YQjdmZVB2cVNPTmY3UWfSAWdBVV95cUxNS3lyYjNpTkYzc1Y3TVFHZ1E2NFhkNmU5dUJjbVlSNjVVNkV3SWhreEtjcGhoUHp5dUFpS2VMeERPZkdUOFRxN3Z3MFZwNjhmWWlzbzFOTFV6N3pmRGZrbG8tX1JiazZj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bac7d452d8c7",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "并购华纳兄弟 传派拉蒙考虑邀马斯克参股",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1EZ1pRdFhKRUtCa2xESmc1b1YyZnRlT1pycUl2eElNT1VJcEFLM1ZLNi1UM0lkdkZRMjhHTkJXa1VhLS1KQ1pua2ZCUGFnUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1c88c973383b",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "当民主党人主张暂停或实施暂停令时，他们清楚这将重创美国经济。但既然这是特朗普时期的经济，他们对此并不在意。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQlVIbTFscExNOUw5NUIwcGFCSHZzTWo0N2ZTeWRVcGg0QUEzR0ZET3BqTHNwNG9TaHRKSFdFb2tORW9RbTh4OV9CWUVoZjBGNXZSQ2VzdU5vQWl0TUFLQldwbkZ1SVV2blNwbi1wZzBINUtmdVctckJZaGNkSkVGeUsyYjNTRzhLOVB3NHlSdEVYTnBOWl80VmthUk5RZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1fd40ccecfe6",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks：一切技术都在为 AI 代理铺路，这将是史上最大技术浪潮",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4ydmYxWGlLX2xNSC1HNmJIelFWMWprM0xYX1d1RGdQS2FSNHVUNkdDSl9TMnhtMmlPUGRXX1R5aWhzRW01LUUzWG8tVU02QXZONzBRZVV2bGk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-00d8eaa5f595",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "突发！英伟达又遭清仓，这次是曾与特朗普关系密切的亿万富翁、硅谷“风投教父”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBcG9fMHFLeHBoM3l1M0FUa1BNdnFweXZQMm9sdHZPbER6TzlaQmFWRVhDX3dZWXVMcE5FdXJQSHhrdTZNeUpteDZFVjc0UkozaUJZeXZOMzRDQXoxUkxJT3duVU9CQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f1b6ff339d15",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "前纽交所总裁带领Bullish冲刺纽交所：手握2.4万枚比特币，估值超40亿美元，路演PPT曝光",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xQ2ZMRXJVYnNWMG5KVW9XVDhqamZWczFRTk9lZGcyRGtzQm5VVDhpaDE5QkpVSmx0WlkxMTdzZXNWbE9NX09JOHFUY0VFdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2f31007e0473",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "网景浏览器之父Marc Andreessen是如何看待硅谷这个神奇之地的",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBqZ2ZrSDlPRTd4VkNRM25KQWtQSG1RTHZ0ZnhjeEVTMVhzN0J5Y2s4azdPTlZfbWpBaXB2cHJ5RVptTmcyUWRVS3p3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a5e8933b90d9",
+   "type": "event",
+   "ts": "2026-10-01",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：已将预测市场平台Kalshi纳入ETF投资策略",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LYWpsdHVhOWNwZUtiVFBlT1VMd0dneERRMkJZSGNhblI5RVVQM01pdUpUb0g2RU44RWR4Wmc2RGROV1RPajZTSE9XYm1JaXJ1bldfVlZlS0trY2k2R1BzM054YkdhZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -23072,7 +23248,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2610 · xAI 292 在招（2026-09-30；Tesla 无免费接口）",
+     "v": "SpaceX 2602 · xAI 296 在招（2026-10-01；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -23176,7 +23352,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-09-30，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-01，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -23652,7 +23828,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-09-30 09:22",
+  "last_run": "2026-10-01 09:22",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -23663,7 +23839,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 90,
+   "edgar": 91,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -23688,24 +23864,16 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-05T08:06:00Z",
-   "status": "To Be Confirmed"
+   "net": "2026-10-05T08:16:00Z",
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-   "net": "2026-10-10T16:00:00Z",
+   "net": "2026-10-10T23:00:00Z",
    "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-19",
    "rule": "R3",
@@ -24656,6 +24824,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-01",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
