@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-01T09:22:53+08:00",
+  "generated_at": "2026-10-02T09:44:30+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-01",
+  "asof": "2026-10-02",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 354.81,
-    "chg": -6.66,
+    "price": 354.11,
+    "chg": -6.31,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-01",
+    "src": "Yahoo 2026-10-02",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 150.86,
-    "chg": 1.69,
+    "price": 148.07,
+    "chg": 0.03,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-01",
+    "src": "Yahoo 2026-10-02",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83579.6,
-    "chg": -1.04,
-    "src": "Yahoo 2026-10-01",
+    "price": 84543.97,
+    "chg": 1.25,
+    "src": "Yahoo 2026-10-02",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0952,
-    "chg": -1.92,
-    "src": "Yahoo 2026-10-01",
+    "price": 0.0933,
+    "chg": -0.66,
+    "src": "Yahoo 2026-10-02",
     "status": "green"
    }
   ],
@@ -399,6 +399,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-01",
      "c": 354.81
+    },
+    {
+     "d": "2026-10-02",
+     "c": 354.11
     }
    ],
    "SPCX": [
@@ -753,6 +757,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-01",
      "c": 150.86
+    },
+    {
+     "d": "2026-10-02",
+     "c": 148.07
     }
    ],
    "BTC-USD": [
@@ -1107,6 +1115,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-01",
      "c": 83579.6
+    },
+    {
+     "d": "2026-10-02",
+     "c": 84543.97
     }
    ],
    "DOGE-USD": [
@@ -1461,6 +1473,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-01",
      "c": 0.0952
+    },
+    {
+     "d": "2026-10-02",
+     "c": 0.0933
     }
    ]
   }
@@ -23146,6 +23162,200 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LYWpsdHVhOWNwZUtiVFBlT1VMd0dneERRMkJZSGNhblI5RVVQM01pdUpUb0g2RU44RWR4Wmc2RGROV1RPajZTSE9XYm1JaXJ1bldfVlZlS0trY2k2R1BzM054YkdhZw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-0e3234cc3266",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：AI或催生“普遍高收入”，10至20年后的退休储蓄可能失去意义",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSk5DLVJtSDlPdmVJU0lFeTdMNld6WEVMNHBmbDJiZTdxclhpMVpmdjBpcm9qZWVFVXFfVXczVDVrU0o3aEJxVjhhOEtGNlU5TS1yb2lydkJ3U1Y4YjNRRUxpa2NvS0Y2UDlIbmFaTW16THl6dm1xSFhwV04weVJaMmN1SEdVWXhWeUZ2M2NMdmdDcVFhYjBUcXZCVk1CMkFEclRjOHZERkpPd2hUT055eVdpRndfdW1B?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-d6630dade735",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文创办人砸千万买佛州8豪宅提供部属居住| 美国综合| 美国 | 世界新闻网",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4weWJodmhwVGI3cXhSYzgyTjVjbm5wX1BrUkFjLWRlMEs0QjRoSjZPRzFnQ0hUbE9US3kwLTVyNGtwN2tXcFNzaEdGTHF0b1hCcjlEenpwQmNGTUwzXzFVOGFWSDZLOUtRZVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dcce1c49cd70",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "妹子们，整吧，整容改变命运。身价2000亿美元的甲骨文老板Larry Ellison，也喜欢中式九零后整容脸。这是他的华...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBOeWxWMGxYaENTcnRZOFZBS19aQnc4NGJvRS1ndTVEV1NHUlYwMjlMY0JzdDFXS2xqYXI2bjROelRTQ2VEbGJHWU9lS3JoaTNG?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8f71f82e2c5d",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普签署比特币战略储备行政令，为什么市场反而大跌了？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5MVEhrX2gtS21vQXZyQVFmblJvdl81RkhDNmFiWGRIOFd4Zmk5TlRPT2hucndHQjY4S2NNcW1mckxCcXNNbG92SHRPd1FWVjJMZXVZbQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0e96b89e5b08",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "新加坡30亿新元洗钱案涉案人系加密CEX幕后主脑，曾利用加密货币洗钱",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mR3QtbktRNVU2b0Q4M1ExWThwSjVlM0Q2M01sRnpueTdXWmlIdzBhazlPNzh0NzZ0ajg2ZWZqN3VIOWFCNldFZFZUcFFnTkZPS1FJTHV3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-986aa9abd57e",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "清仓AI的大佬，杀回来了！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5RM3NuU0dqeFJkM0tTMUNQN05meEs4MWxZZVpEUHdpdUJMSjEtMjhxbmh3SzNWSzhEYnotR1FrR0h3dGh4Y0N4T2l1Y2F4OVZ6djVv?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e1ed4ab66da8",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "从比特币核心到特朗普内阁：起底 Epstein、Peter Thiel 与普京的加密权力网",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5sOGlGcFNxbTVXblFWNENCT2U4RGNRV2hhMHlWLWR2TjBFaXhIQk9jaDhSd0tzOEZ2c2tHS0laUTFWV2xSTjlkWHhQbXptejBwczVnXw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-67f40d8da3ba",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "全球最强 AI 大学诞生，山姆奥特曼当讲师，黄仁勋、纳德拉排队站台",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwdEZSSjZDS0toRzlYeXd0VmZ1ZnplZVdwc2JFMjFHRVc0YjdBODNpelpHSll3NmlJQjNPelhFcVBmd01MTG1kb3d5c1V3UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-945e996c9529",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "为迟到的每分钟付费10美元，还有什么？Andreessen Horowitz谈投资哲学和商业模式等",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBGaFJ4QllEZEFvMUNNOS1JTkl6NnBacjIzU3BPRW5aaFJhZlF0VHNMNXRwemlfZC1QcEZ3MnVFZk9uZm5hT2pUeVV3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cecbb369e9ca",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "AI, Innovation And Investing Through Volatility | Cathie Wood, ARK Invest Alex Lyon (7atZeiophe)",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5OUJicElkM1h5VHE5aXVMMkl1WFplbEs0T1ZjUzFBQ1V3NFI2d3ctNUFzTnlOOXNmbmVhZERnUzdhZGVtYXV4OFlKd1RDaWI4TUl1c1JVZHVaMVRHU0VWSmgybE4zdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3beb567119c7",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood旗下ARK基金出售谷歌股票，买入Meta Platforms 提供者 Investing.com",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tblVMSF9qdlFlT2VRT3lFaFdiT0xVYXNNeGhrVDJUT2hMVFBlMS1keGZ3TFdwUFRuM2lnYjB4UmJXVTFaNm43eEw2YXBlY3QzWlpwODIzNkUtUUxSaW9vXzlTZWlhMEhEM0lqVWRaMXk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4ccc8df58025",
+   "type": "event",
+   "ts": "2026-10-02",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "《华尔街日报》(WSJ)30日(当地时间)报道称，美国对冲基金Citadel的创始人兼首席执行官(CEO)肯•格里芬将向卡内基•梅隆大学(CMU)捐赠30亿美元(约4万亿韩元)。 这是美国高等教育历史..",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2Sm9mcndxX1FrR2xkUlF4czRYb3djZ2lkSTh4aWJHRGZ2eUFZX1lnRmctNm5VRkVWOXJhRXR1bG5oYkUxdXJ2ZjZGQW9VeW8?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -23248,7 +23458,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2602 · xAI 296 在招（2026-10-01；Tesla 无免费接口）",
+     "v": "SpaceX 2635 · xAI 297 在招（2026-10-02；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -23352,7 +23562,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-01，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-02，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -23828,7 +24038,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-01 09:22",
+  "last_run": "2026-10-02 09:44",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -23839,7 +24049,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 91,
+   "edgar": 92,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -23850,12 +24060,12 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Crew-13",
    "net": "2026-10-01T15:10:06Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-   "net": "2026-10-01T18:18:00Z",
-   "status": "Go for Launch"
+   "net": "2026-10-01T18:32:00Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon Heavy | NROL-97",
@@ -23864,7 +24074,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-05T08:16:00Z",
+   "net": "2026-10-05T08:17:00Z",
    "status": "Go for Launch"
   },
   {
@@ -23874,22 +24084,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-19",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-20",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-21",
    "rule": "R3",
@@ -24832,6 +25026,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-02",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：AI或催生“普遍高收入”，10至20年后的退休储蓄可能失去意义 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSk5DLVJtSDlPdmVJU0lFeTdMNld6WEVMNHBmbDJiZTdxclhpMVpmdjBpcm9qZWVFVXFfVXczVDVrU0o3aEJxVjhhOEtGNlU5TS1yb2lydkJ3U1Y4YjNRRUxpa2NvS0Y2UDlIbmFaTW16THl6dm1xSFhwV04weVJaMmN1SEdVWXhWeUZ2M2NMdmdDcVFhYjBUcXZCVk1CMkFEclRjOHZERkpPd2hUT055eVdpRndfdW1B?oc=5"
+  },
+  {
+   "ts": "2026-10-02",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
    "src": ""
   }
  ],
