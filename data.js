@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-02T09:44:30+08:00",
+  "generated_at": "2026-10-03T09:16:06+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-02",
+  "asof": "2026-10-03",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 354.11,
-    "chg": -6.31,
+    "price": 370.59,
+    "chg": -0.41,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-02",
+    "src": "Yahoo 2026-10-03",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.07,
-    "chg": 0.03,
+    "price": 158.96,
+    "chg": 6.91,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-02",
+    "src": "Yahoo 2026-10-03",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 84543.97,
-    "chg": 1.25,
-    "src": "Yahoo 2026-10-02",
+    "price": 84673.23,
+    "chg": 1.26,
+    "src": "Yahoo 2026-10-03",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0933,
-    "chg": -0.66,
-    "src": "Yahoo 2026-10-02",
+    "price": 0.0935,
+    "chg": -0.42,
+    "src": "Yahoo 2026-10-03",
     "status": "green"
    }
   ],
@@ -403,6 +403,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-02",
      "c": 354.11
+    },
+    {
+     "d": "2026-10-03",
+     "c": 370.59
     }
    ],
    "SPCX": [
@@ -761,6 +765,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-02",
      "c": 148.07
+    },
+    {
+     "d": "2026-10-03",
+     "c": 158.96
     }
    ],
    "BTC-USD": [
@@ -1119,6 +1127,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-02",
      "c": 84543.97
+    },
+    {
+     "d": "2026-10-03",
+     "c": 84673.23
     }
    ],
    "DOGE-USD": [
@@ -1477,6 +1489,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-02",
      "c": 0.0933
+    },
+    {
+     "d": "2026-10-03",
+     "c": 0.0935
     }
    ]
   }
@@ -23356,6 +23372,186 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2Sm9mcndxX1FrR2xkUlF4czRYb3djZ2lkSTh4aWJHRGZ2eUFZX1lnRmctNm5VRkVWOXJhRXR1bG5oYkUxdXJ2ZjZGQW9VeW8?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-c27dbb3f85df",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla大砍AI5、AI6存储器规格 Elon Musk力保Optimus量产",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiekFVX3lxTE9QVVBVN081US10SDZTTzFMR1FOZVdrQm5FT3V6Nnpua18yQnZFTFZEMk1LQmMxYWdveUtnSzFpQmtzbnZMRThQWEUyRzQtbHBMQlJ4dklQTm9WX21JdFVZMHA4RWZvMU85dlZnMFVacmc3djRuUXhZcF93?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-cb51d80ab6ad",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX为何要收购xAI？ 马斯克内部信全文曝光",
+   "payload": {
+    "src": "凤凰网科技",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CUVJiX1RqVk0xVzBnaEwyYXR3Tm5RQkpoUXlWblJNQlUzZVFrTDFaZEluMGpmaF8zdk9qSzBsNFB1SXFubEVfTU9KaVI?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-c099c557fd4f",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "埃里森的“缺席”与“现身”：一笔未公开巨款如何串起甲骨文、派拉蒙与白宫？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBPOENSX2M2Ty1SVzl5bUtJWlBRQUNvZmVQZnVBSF9QdmY2SFF1alVhRWwwTjkxLU1CTkZxZE1PQ3hHZXNiVDlxM2JTNTI?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dda23c06281b",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁硅谷大佬恋上33岁小邓文迪！为东北妹子壕掷千金，比马斯克还会玩....",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85b2tEdHZ4UnllemszQm5WZ2xjVWZtTHQwVFdFMXRCWW5OX1NoUDZMN2tjVVRWNDZSXzF2VXMyR0hGbVBROEN0RFVtQXdMRTlzdUpUVDZlQVNVbTRZVWVxRHdYa2Rvd1VNeFl3VWdjemFWYzB1bW1IRw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-64ca3be80e6d",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "加密早报：David Sacks 卸任白宫 AI 与加密主管，月之暗面考虑在港上市",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5laHdzb09jZmk0TTBGTFRqYVhXM3gtTC1JUEpMakdhQ1Z6MEI2V0dqTnNuTUtKTXNITDA5a1hzZ29EYzhEb0VBNGhsZjViQ1RkcVVNeg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-51266853f87b",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普据称将任命新“AI沙皇”：国家情报总监接棒硅谷大佬，AI政策重心转向安全管控",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xVlVFanh5cnFQUXIwTG1zNFJGTnFXNDNvQXhCTndlSFVuVnlkNDF5cGFFU2c5eDVNbGh5MF9fWDdaaGVjbTVIU3VzZTZCdUV1Zm5B?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a8f31841519c",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "55岁“硅谷风投教父”彼得·蒂尔，卷入男模坠亡案，两人的关系不是秘密",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0SU1NeTM3QjZuMXRaY1duTXF4NTMxYWdrVEZka0JjNFZxWE8tOGd6TWZhRXpSUjM0cUNkQVplLU1uWEoyRWp0UGNpQTJIdno5Y05hVGR3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-14d25ff9a880",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "资本大鳄彼得·蒂尔和其同性恋男友完婚了！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfcjlwZ01NZkxWQnM2MUVnWnlrTmY1bGgxU0JZMlhjSkVFWTZHMTlmaWM5WVN1d0FjUkJWLWprek1va3U0VkxTeXctcUh2bEh2?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-32b9bfd31589",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "AI impact on private markets has been 'much bigger' than in public: Cathie Wood",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81OVFuNXV2alFPa1JlQUZScVdaclZnTFp2aWcwUlZBZkJVXzRlZll1QWRfanEzNHJZc3BKUEhSYkZaSm1RU0tYenRwWThjZHhQR3U0WGpFd1ozRTA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1b712191ed7b",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "OKX 创始人徐明星与 Cathie Wood 指责币安在十月闪崩后侵蚀市场信任",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxNZlhabV9jSWhzUlRXWW9vTk5nZFNmYUhSWnZJTnpNTkdHUmFDODhiM1o5MkM0M0RHZVNIazVWYm1TcEdPSWFrZERIbVlLWk5VSWVWTERlTURQaWlidnh0dVFQYV85OUgtdlFRMC1sdFRzYjFibWUzOGJzSWpBbEpZYkdheFZja0lOYU1BQTR0SEdRS2dfbnpCQXlsTEMwWjFfdnRIcmdHVlNzUGxMMjlDSFNxMXBYSHFWWEFpTHRtdVRHUkY1cFhFN3NRcTY4MnBQOGJJWjJqTS1rNFpLMkVVUXdZN21HTnJZTy1BM184Y1kwR0U4eWx5a1pGQlIxMy1IOXk2VUFoXzJtZC1rTGpBZDYzVFNZQ0wwdEE2RGpZeU53dE41dXZxY01tN1JwZ0p1TUlWUXlwM0F1QlI0VGE0YUlqWGNrcVJiTEpaM1ZYRmpPT3NDNDdqbHBPd2xnTVBLb1hGTmFuNktseVU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b48ba8b692f9",
+   "type": "event",
+   "ts": "2026-10-03",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "抄底Situational Awareness后，Citadel旗舰基金单月急涨6%",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5aNUp5aVRhOWVhTS1tZnlyQjR1Q0FXQXZmT29WY1NLVEtRRXBxMkRpc1BBN1RiUTV2a2JDdkw1cW1oOWxGY0tvZGtBcE4zd2hZQkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -23458,7 +23654,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2635 · xAI 297 在招（2026-10-02；Tesla 无免费接口）",
+     "v": "SpaceX 2649 · xAI 301 在招（2026-10-03；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -23562,7 +23758,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-02，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-03，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -24038,7 +24234,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-02 09:44",
+  "last_run": "2026-10-03 09:16",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -24049,7 +24245,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 92,
+   "edgar": 93,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -24058,19 +24254,9 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Crew-13",
-   "net": "2026-10-01T15:10:06Z",
-   "status": "Launch Successful"
-  },
-  {
-   "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-   "net": "2026-10-01T18:32:00Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon Heavy | NROL-97",
-   "net": "2026-10-02T03:53:00Z",
-   "status": "Go for Launch"
+   "net": "2026-10-02T03:54:00Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
@@ -24081,33 +24267,19 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Starlink Group 15-25",
    "net": "2026-10-10T23:00:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
+   "net": "2026-10-13T10:33:44Z",
+   "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+   "net": "2026-10-31T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-21",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克IPO敲钟前讲话：原以为SpaceX成功概率不到10% - 人物 - Elon Musk - cnBeta.COM",
-   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VYnFUZXdENXJhZTU1STRJMG1tQld2bTNRWUlGeHM3eUJ5TG1rOWNPYzJKRUtrZy1KYkFDNG5HWjlUbzVnOWp6M1RXT3RxOEFKZk9pcmhzbDQ0MzFoblRTXw?oc=5"
-  },
-  {
-   "ts": "2026-08-21",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-22",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-08-23",
    "rule": "R3",
@@ -25042,6 +25214,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-03",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla大砍AI5、AI6存储器规格 Elon Musk力保Optimus量产 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9QVVBVN081US10SDZTTzFMR1FOZVdrQm5FT3V6Nnpua18yQnZFTFZEMk1LQmMxYWdveUtnSzFpQmtzbnZMRThQWEUyRzQtbHBMQlJ4dklQTm9WX21JdFVZMHA4RWZvMU85dlZnMFVacmc3djRuUXhZcF93?oc=5"
+  },
+  {
+   "ts": "2026-10-03",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX为何要收购xAI？ 马斯克内部信全文曝光 - 凤凰网科技",
+   "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CUVJiX1RqVk0xVzBnaEwyYXR3Tm5RQkpoUXlWblJNQlUzZVFrTDFaZEluMGpmaF8zdk9qSzBsNFB1SXFubEVfTU9KaVI?oc=5"
+  },
+  {
+   "ts": "2026-10-03",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
