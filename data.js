@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-04T09:45:10+08:00",
+  "generated_at": "2026-10-05T09:04:47+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-04",
+  "asof": "2026-10-05",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 370.59,
     "chg": -0.41,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-04",
+    "src": "Yahoo 2026-10-05",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 6.91,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-04",
+    "src": "Yahoo 2026-10-05",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 84767.4,
-    "chg": 1.45,
-    "src": "Yahoo 2026-10-04",
+    "price": 86577.87,
+    "chg": 2.03,
+    "src": "Yahoo 2026-10-05",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0927,
-    "chg": -1.83,
-    "src": "Yahoo 2026-10-04",
+    "price": 0.0963,
+    "chg": 2.08,
+    "src": "Yahoo 2026-10-05",
     "status": "green"
    }
   ],
@@ -411,6 +411,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-04",
      "c": 370.59
+    },
+    {
+     "d": "2026-10-05",
+     "c": 370.59
     }
    ],
    "SPCX": [
@@ -776,6 +780,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-04",
+     "c": 158.96
+    },
+    {
+     "d": "2026-10-05",
      "c": 158.96
     }
    ],
@@ -1143,6 +1151,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-04",
      "c": 84767.4
+    },
+    {
+     "d": "2026-10-05",
+     "c": 86577.87
     }
    ],
    "DOGE-USD": [
@@ -1509,6 +1521,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-04",
      "c": 0.0927
+    },
+    {
+     "d": "2026-10-05",
+     "c": 0.0963
     }
    ]
   }
@@ -23760,6 +23776,220 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQnZwcUJvaUlIeHVpVGJnRWdQbTFkVHc4Wm9HWmZqZXMyQnBvN2FlbTUxZlBXbjhBeGhQZEZZZFZjelY2Z2liLUR5WG1rNy1TR09ZYjFaMWpveTVpdDBJRjIxWFVkSU9NUVFaOGIwTkFVUXQwMjZvbHJYSzhEN0l0bktJNFBlMDI2X211WS1kY1k3LUloY3hHTk54WTZTMXBuMzJOc180Sy1xMDdwTEFid1NnTlZFckNxLVExVkxGaVhMUHRxbFBNQ1FB?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-75029d519676",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 2012年演讲再受关注：现代技术若回到300年前“会被处以火刑”",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi7AFBVV95cUxObXBXYU9VWnY2V2dvcEhBSnhrQV9GR1VaeGdTcVM5Q2RqQ2F6RUhiSmtEd2xITGhYU1UwTmdJenQ1Z012NmNsb3k2T3RiN0RFb3BBODdLVnY4VWhWdGcxclpEbUg1RXE2bk4yWVEzVXFQUFUzOENzaTMtdVdBeE1kU3ZzcjJ2R2JsOFg0LVVZS29lRUdreVBqYUxmekdmcTh0RzFNa0JUNGMtMGNqZG1QVnVFN3JDV3VGTGxSR0U1blF1ODVHUHpiNk5icEpwSGNkdkYtOEs1WHRLLXc0SDB2Ukp0NUlfUUpIWmZ4Sg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-fbfa4d28c3b6",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX计划在纳斯达克上市，与Tesla合并猜测再起",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcG82aHNISUhNMkpYSUROMUJCdkszSDhxNVdFYWZIMEUxM250aGF5T2xWYWN4aTJWLU9iSldfTmZ6WVh0Yk5zc2ZVbkNpcFZwclBqeTBfU1M4T2dfRks1em5uaWp1bW51VXJVbmlmRy1Zc3lnd2I1SGNvYkZOX1VjTkxDcDF5NTUtemk2cGJhZUpSME1WSGdQaEZVejFFYVJwRDBwZ05FNA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-9639b14d3926",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Gwynne Shotwell谈SpaceX与Tesla合并可能：或可减轻Musk负担",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVHJrNHE1QWxFQXVoTWRBaDNLY3BDTVQ5eU43QzFoYWV6MVJhbVptVHRvaDlhcG41Q0hETXBOcjdZRWtsb1dMNndJTVhVVy13blBDLUpOWjF0NzRUSHl6UVVBS2RRREQtWXdKMHpweVB0dG1raVo1Q2YxaW1wWS1vSjZOSEFDVGR5MGlCUDRJLWx5dk9wWDhnNHVhc2daNzFSLXVzV0ExRXdRUzAzUldZSXlfaw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-4a0a9e697922",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "花36亿就为一艘船，揭秘科技大佬们的豪华游艇",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LUU5zejBRZ1FyWUpnQTlaQUFTNFNMak9KVE9NbVFaU0ZCUnpYOC1Bb25mWEd1TzY5WTZ6NElnaVlKM2ljVlZFdWVnRk15dw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e5675419baf5",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文竞购TikTok背后：它为何受特朗普青睐？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Zbno1bDZhak1nSDNpZVBkb3p6enBTN3NzM2RMX1hWd0h5cVhNOTZtM21adlQ5RjlBTW1UdjlrWFdTamc2dkotWVA2Z3hlaG5TZFZaNnFMbHRQQ0lsbXZPbWpzOEt5R0FYZENDTWxwVjM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b50b2885a35b",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普因祸得福？马斯克、阿克曼等大佬表态力挺，网络捐款也暴增！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9weHMtX01IeEUtTThxbkZaeDBxM2NjdFB4TXdqRXdvR09Tel9sWmtnQWlxcmoya2tGMldReWJxZGxZVllrcERBVEl0dVhUM3VKaXdpS2U2UGEzMkJhNmEtdGhBUXIzOG1sQml6bUt1clY5Q1g5Nm56RA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a0d460578916",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "纽约智库晤郑丽文美聚焦对中「硬吓阻」 | 美中台关系| 台湾 | 世界新闻网",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZzQ4ckVsaktEM052TlZjaFNNdlczaHhMdEdIb3ZfRVByWjhsRTNoU09ZTFJOd3ZteGNLQ2c3LWNtVVEtalNhdEhpTm1NcUdnSG9WYS1XcWtKUXE1RWlWdWFTRU0wTjduN0cxOXMwQ2ViaWVVdGVvcDJIZFg1Vm5GZmN3b0k0Zw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-054d9c40f487",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel对话李开复 连鸡汤味都没闻到",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5CN2g1S2dMWTlwcU1kTnVsNFNCQ19KV3d4bDdhbDlWSThhYU9oYk5EZXJUS0dOU0c5ckRUSFozN2pLRUZOTVVUSU9Bb2s?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ac17d5445f78",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔悄然「控盘」BitMine，PayPal教父押注以太坊| 律动BlockBeats发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lcTFnSWZoVW90QzB6OE5mOS0zS2Q3RkZVSHFjcDNmY2hFNTNBYW5ZR25NX3ROSTI4TG1fc014U3BpQjNuVzZnOWFSaVlteTFjQWhMY3E4emhXaDhOTGpQdGxTVTFmWjA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9783efa0405b",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "“SpaceX是人类在地球之外‘未来经济’的基石”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV21OT3M0X0FxbFJiLWE3Z0FkbHAtblh4OC1BeGZCbWxRbDRHZ0ROVW5uMjVrNndlVDc1SlZ4dUs5LXBRdld2a3FTMFJXUVhFVXpoQ0h4eUg5VmI4MTBhM3duRUlESEFjNHVmTUtXbWNaNHpvVm0tWUUzeWlzWDV1VXMxb2NEU1ZJU3B1N05wSQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-05abdb6ed0e9",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "DeepSeek获四大国产GPU力挺！给全世界上了重要一课",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1SeHNCWHBQVUNueDZRdElXVmVEMDZZM005RFQ5eU1sREdtZXN3YmpWbC1VbzRrS2taU1VCeTNMM3RpTGVxNVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8d3d6ddf2c08",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：投资者应关注 AI 代理的资金流向",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5WRk5MM0lGaW54MFpqSEZkTGduNmdHVXZGRkNvTktmTG9TOWZ4Vy1wZUFad1FvVXVNWjV5UzZOb3JPd19sTUpMenFiYUxrdE9Ib3k0bnc1RGNjZXRk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b3d52d641960",
+   "type": "event",
+   "ts": "2026-10-05",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：美债收益率处于历史中位，AI推理成本大幅下降",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfT0VacXVrblAwYmNGaGd0ak5WaGZVNVM4cE9jM01ienVvcWRpZ0taQ01qY1VFVGNvRGxmNVFlVXAwUDVuN3dwX3Z4cEtPdFhoNERXTC1QMkRDZU9ONXlObkU5Yi1FQ2s?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -23862,7 +24092,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2643 · xAI 301 在招（2026-10-04；Tesla 无免费接口）",
+     "v": "SpaceX 2644 · xAI 301 在招（2026-10-05；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -23966,7 +24196,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-04，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-05，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -24442,7 +24672,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-04 09:45",
+  "last_run": "2026-10-05 09:04",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -24453,7 +24683,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 94,
+   "edgar": 95,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -24463,7 +24693,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-05T08:17:00Z",
+   "net": "2026-10-05T08:17:21Z",
    "status": "Go for Launch"
   },
   {
@@ -24483,43 +24713,11 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-   "net": "2026-12-31T00:00:00Z",
+   "net": "2026-11-30T00:00:00Z",
    "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-23",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "苹果突然找上了马斯克 - 万维读者网",
-   "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SVmlTMWZjb2kxMzl3LUtFZmoyZDdFUTdud3Z3YndmVUo2MWRnZ2NPZ1BCR1FfVzc0TGhwYmF6OFNGLVZJSmFYSnR6Q1hNaVcwa0pza0ttT3NvYmNEbFVTcU9R?oc=5"
-  },
-  {
-   "ts": "2026-08-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 14 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-25",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk praises China as inbound foreign tourism rises by 20% - sanqin.com",
-   "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oSW4tcXNPMG1odXN2T0dwRS10Q0JwU3hZTk1qTFlTazdmdTROTTFYVm9tZG1rcnNoZVJlLVlMOHgxcEFWUVB3OWlIdHZBMXd5QjhBZEZiYWo3c1VsNWlMN0pxY3JZZy1oczhOXzBsQnY?oc=5"
-  },
   {
    "ts": "2026-08-25",
    "rule": "R3",
@@ -25446,6 +25644,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-05",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 2012年演讲再受关注：现代技术若回到300年前“会被处以火刑” - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxObXBXYU9VWnY2V2dvcEhBSnhrQV9GR1VaeGdTcVM5Q2RqQ2F6RUhiSmtEd2xITGhYU1UwTmdJenQ1Z012NmNsb3k2T3RiN0RFb3BBODdLVnY4VWhWdGcxclpEbUg1RXE2bk4yWVEzVXFQUFUzOENzaTMtdVdBeE1kU3ZzcjJ2R2JsOFg0LVVZS29lRUdreVBqYUxmekdmcTh0RzFNa0JUNGMtMGNqZG1QVnVFN3JDV3VGTGxSR0U1blF1ODVHUHpiNk5icEpwSGNkdkYtOEs1WHRLLXc0SDB2Ukp0NUlfUUpIWmZ4Sg?oc=5"
+  },
+  {
+   "ts": "2026-10-05",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX计划在纳斯达克上市，与Tesla合并猜测再起 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcG82aHNISUhNMkpYSUROMUJCdkszSDhxNVdFYWZIMEUxM250aGF5T2xWYWN4aTJWLU9iSldfTmZ6WVh0Yk5zc2ZVbkNpcFZwclBqeTBfU1M4T2dfRks1em5uaWp1bW51VXJVbmlmRy1Zc3lnd2I1SGNvYkZOX1VjTkxDcDF5NTUtemk2cGJhZUpSME1WSGdQaEZVejFFYVJwRDBwZ05FNA?oc=5"
+  },
+  {
+   "ts": "2026-10-05",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Gwynne Shotwell谈SpaceX与Tesla合并可能：或可减轻Musk负担 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVHJrNHE1QWxFQXVoTWRBaDNLY3BDTVQ5eU43QzFoYWV6MVJhbVptVHRvaDlhcG41Q0hETXBOcjdZRWtsb1dMNndJTVhVVy13blBDLUpOWjF0NzRUSHl6UVVBS2RRREQtWXdKMHpweVB0dG1raVo1Q2YxaW1wWS1vSjZOSEFDVGR5MGlCUDRJLWx5dk9wWDhnNHVhc2daNzFSLXVzV0ExRXdRUzAzUldZSXlfaw?oc=5"
+  },
+  {
+   "ts": "2026-10-05",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
