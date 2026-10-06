@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-05T09:04:47+08:00",
+  "generated_at": "2026-10-06T10:22:04+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-05",
+  "asof": "2026-10-06",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 370.59,
-    "chg": -0.41,
+    "price": 378.73,
+    "chg": 5.95,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-05",
+    "src": "Yahoo 2026-10-06",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 158.96,
-    "chg": 6.91,
+    "price": 171.09,
+    "chg": 17.61,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-05",
+    "src": "Yahoo 2026-10-06",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 86577.87,
-    "chg": 2.03,
-    "src": "Yahoo 2026-10-05",
+    "price": 85575.46,
+    "chg": 1.28,
+    "src": "Yahoo 2026-10-06",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0963,
-    "chg": 2.08,
-    "src": "Yahoo 2026-10-05",
+    "price": 0.0948,
+    "chg": 1.95,
+    "src": "Yahoo 2026-10-06",
     "status": "green"
    }
   ],
@@ -415,6 +415,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-05",
      "c": 370.59
+    },
+    {
+     "d": "2026-10-06",
+     "c": 378.73
     }
    ],
    "SPCX": [
@@ -785,6 +789,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-05",
      "c": 158.96
+    },
+    {
+     "d": "2026-10-06",
+     "c": 171.09
     }
    ],
    "BTC-USD": [
@@ -1155,6 +1163,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-05",
      "c": 86577.87
+    },
+    {
+     "d": "2026-10-06",
+     "c": 85575.46
     }
    ],
    "DOGE-USD": [
@@ -1525,6 +1537,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-05",
      "c": 0.0963
+    },
+    {
+     "d": "2026-10-06",
+     "c": 0.0948
     }
    ]
   }
@@ -23990,6 +24006,218 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfT0VacXVrblAwYmNGaGd0ak5WaGZVNVM4cE9jM01ienVvcWRpZ0taQ01qY1VFVGNvRGxmNVFlVXAwUDVuN3dwX3Z4cEtPdFhoNERXTC1QMkRDZU9ONXlObkU5Yi1FQ2s?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-27a2e9cc52ab",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk拟将SpaceXAI更名为SpaceXSI 呼应美国政府改用“SI”表述",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS1NlcmFEYl9OUzMtVkhnVjcxTG0wZ3o0eXhkWnVXSmVQbnJtZVRZUm1YMDYzbXoyZEVTSU5HdEg3QnNMZWg0MDhUU2l5cWphQU1DS2RubldQanY0aUpHczFkQkNPNy1hVEE1aW40cG9KdUx6bElhNUk0Z292ajVZTURwd05GdXdKWFJBSVN5VDdqR3A3bXRXQ09LakNOMnA5cGt4cGdUNzhtQWhnU2tV?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-fcfc2cb29df2",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 曾拟并OpenAI入Tesla 遭创办团队婉拒",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2tELW14YzZ4dmlPYUt4bDV5TXZ3d29PM3VZY1VsQmRWWTRvUTVaRmhXVnhLNFRqYVo4MFVMR2xoQzNOcDk3M19sS1hSd2lyLWVvbkZBUU1hNEpFY2l3SVVhWUVkdmItMlpqYjAtUl91MWRVVEJYazlxTXZGLVdudzFyQ20walgtNGx0Yl9wOA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-ade8d7c12fe0",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克问应否卖10% Tesla Twitter民调赞成者领先",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQWVM2RlhNaUh1TU0tR3AyQXJSbk9wdUhlNlA3Snp3VzJXeW1VeEJYb0lqWWlaaWJST2h3U3RsQUdWX01FR2FBSWkyQ3Q0LTRJTUtTZ3g5N0Q1WlhxdFVPQ0JqZ0dJOXJZdkozUlpvektSMlRtUjRjRXJGcUlkMkx3ZDNzenhZQXM0cXI3cU5VNEVva0hIN1E5dHgyZHBTd2xIRjNTOHkwYnRSV2dEbXZXbElRVENsX2dZeWlFbVJkVjk2SUlES09ySXNVd0VRUzlGOXVvckFtVlpYWmluY3dhcXBKTkE4MEFGeDZrUWlCSzlibGIwWTFNcE5rWWc3YVd5bXhqeWRfSGhtUFU5WHpoZVFSOExDTG1tOExOckR3UEpSU2tuZWRR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-702a50c351f5",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁的全球顶级富豪又结婚了！33岁的华裔妻子啥来头？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42M2l1b0oxTk0yY0ZpV1BSSmhLS085SkxHc2Z5N1YwMGJNd0VSN3NVR1YtcUNBRzhUTHJjaV9lbUZXenhkOWhEeGI1dHJDMk9OQ3dITVZR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f4459b2fc6c0",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "不是马斯克 81岁科企老板成今年最具话题科技大佬 牵动政商两界",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNdHh0RTJjUllGU0cxNmVRaDNwLU1ZbUx4aGRZTWh6dVdzcVQ0VnAzT3Q1MW5PeWxTVUNuZktDY0c0MElsbDNWdEs2cFltVmFSa2pxVnp2QXZOQ1liVEJvTUFQSHh5RWk2ZnZuVl9xNTdXMEdPUHNoRlM3RGxENlI1TzBKSGV4WG9WOGF0QkpkNzdWdTVwYkV3ZC1VWFNPQjItczBzOGNWZ29aQnRBbkplaGhnWUlhSWNyUVN5V1JINE5qV0VxUjlNQVFQZkpfUmZGZWJrMElRT0IwNVlMMUxsYnBuYjlDTmROVFFuVWloeTdzQWRqanNUWHcta1RPcFJQak9DRDFKeHlWRFpsOFN2Q1lYdGtTVXZVcWowaFJUOTFobDN5VHBUenZ6SkVEUTUyMlBZcE5sTzh0Smt2LVV6MWR1eEd5eXpvSEY0ZXRQYlNuRmgzazJTMHRvWHd1Y1FMN0E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-94ad3fa671cb",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "刚刚，Dario紧急抛出AI全球共管计划！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WY2QzdXBldmhBNzdDQjY5Wkt2SkphbGwzUWRQbzRoSm1YUGpQUXVFTVNWMERpX2dLSUVGN1VyaEFQX1BTZDU0aTFCVjRySWVTUDhn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-350099dda9b9",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "All In 最新播客｜OpenAI 与 Anthropic 的 IPO 对决：万亿估值、价格战与中国开源转向",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xOWNrcEhiMzQycnZid2NMaU5pcThJbnduTjg1V3ZGXzhXWV9GMHlJQndmV05EaUR5MlV1OXVxWkU5TDJOc1llUHlBTGtIcktsR0VYaA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-857ec6b28a68",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel：技术停滞五十年，AI是文明自救的最后机会",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE42QXBsZHJFd2NpWGtwdmx1QnlsamN2QmtPY0U5eUVNYUFsMk1nbHFoMzVMRndCenlmNER3WWpIVUtfdWxRc0RCREVNajNFUUdqaldTZ3pOVEhPRkhRQk1B?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5724e7ca0a1c",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel评AI末日论，听完后我彻底醒了…",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aS0o1bTFDQ0RNczFqZkthWHBNOFZsOTA2RzN1aVAzakdZTTZJYUlUMjl5RkhzaUFESF80WHZBbkRxaExIOFVtT3ZlWmtzZ0dJTldjMFUxcWJuZlh2?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b212e26036da",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "风险投资公司a16z创办一所新型学校：面向高中生毕业生，学成可直通科技公司",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1pWFNVaE1VOVp2SGRHSXQzVTNHcTRoeWgyd2U3dTJDLXhaU0NfYzU3NDVZVzhLSnRHQ0MwOWsxb0RsS00tMEp5WGNMa2lOQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0df283ebe855",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z：不想当媒体的VC不是好爱豆",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5vNmYxQ3lwWEoxaHU4V2xkSlVOR0txM1hGSGJPODFIVU1XUTdqMEs0TUxEUW56c3lkQ2tJY2FCaWU4MjdNNkktby13?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fb48fcc76de1",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "凯瑟琳·伍德（Cathie Wood）9月28日投资动向！增持SOLQ.U，无减持操作",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUlNxMW5iR2ltWWh4NVpzVnRnZ2lpSmxtb1dLem5BYVk0V3BJd1FoaGI3UDV1YnJzbTJLbS04MHg4aU92eEtZOUdPOWptTmNoWnQ4Vjd5d0JTZFNOdmZtQkZrSlYtaGxFVE81aDRiLXQweklGeERGY0kyWDk2a0R6ZXd6WEwtU1BKa1hSVXJqZjRSaC1PVkpldEtEdzJ0UTFKU3BFMUFMcnpiTDc1dWp0LVVGY2ZRaVh0OEpsQkdVZGZYZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8d8b281d09da",
+   "type": "event",
+   "ts": "2026-10-06",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood当选总统！！！！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZU9xRFJEZ0cxZ3FfZWFZdXZ5S2tjWjdUU2xzMGFTeUFRME5hamJVaEVZOGE4OG9rMWd0QndnbTZrTjduZUpHejNXNGVhUmZGQXpSQUtHYWhmV0NJeG5YOFE4MGpsYk95YzB0U0hNYUpkQXAyMWt3V29Edm1EQU5sX2VlSG1DMXBmUkNj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -24092,7 +24320,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2644 · xAI 301 在招（2026-10-05；Tesla 无免费接口）",
+     "v": "SpaceX 2664 · xAI 302 在招（2026-10-06；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -24196,7 +24424,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-05，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-06，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -24672,7 +24900,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-05 09:04",
+  "last_run": "2026-10-06 10:22",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -24683,7 +24911,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 95,
+   "edgar": 96,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -24693,7 +24921,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-05T08:17:21Z",
+   "net": "2026-10-08T07:54:00Z",
    "status": "Go for Launch"
   },
   {
@@ -24707,41 +24935,17 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "net": "2026-10-31T00:00:00Z",
-   "status": "To Be Determined"
+   "name": "Falcon 9 Block 5 | USSF-xxx (\"TH-2\")",
+   "net": "2026-10-15T23:44:00Z",
+   "status": "To Be Confirmed"
   },
   {
-   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-   "net": "2026-11-30T00:00:00Z",
+   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+   "net": "2026-10-31T00:00:00Z",
    "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-25",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX拟上市筹资逾300亿美元 料成史上最大IPO - 联合早报",
-   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBleDU1VXBYQ3JwUXNxajIxamEyR0h4b3FiMDB4cUNkTUhxVlNsWXJsMGYyNkJPOGZYN0lkODRabnh1dFlSOVJyT0l4Y184RTdtdEhqTmxnNW9RN3VWN1I2bXE0QXdoSVlzRFc2TW9B?oc=5"
-  },
-  {
-   "ts": "2026-08-25",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "特朗普在SpaceX投资高达50,000美元，与马斯克的关系进一步加深 - Informat.ro",
-   "src": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRlBoRXdjTWc1VlE1aWdCeVlCeHUyUEtsNENtNlpvQ0pvblo3OXlfMHpGNlpQR2lLbURWX2twamFYQ3hramxhRTcxdU95ZlEwYkY4SVNPbDZOLTBhbE1XTDNybHAwMGFJOUYzb3BVSkhBdlB1cmV2U0VNU2NMZlVlZnFFb095N2VIUGM1eHZsOWVwUWVaLTFzRGJlSTFOOHJLalVZMFZxLWZtb1ZBZXpheWhmOXl5OE83WFYzazBwel9ObVJBOE5Db3Zn?oc=5"
-  },
   {
    "ts": "2026-08-26",
    "rule": "R3",
@@ -25676,6 +25880,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk拟将SpaceXAI更名为SpaceXSI 呼应美国政府改用“SI”表述 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS1NlcmFEYl9OUzMtVkhnVjcxTG0wZ3o0eXhkWnVXSmVQbnJtZVRZUm1YMDYzbXoyZEVTSU5HdEg3QnNMZWg0MDhUU2l5cWphQU1DS2RubldQanY0aUpHczFkQkNPNy1hVEE1aW40cG9KdUx6bElhNUk0Z292ajVZTURwd05GdXdKWFJBSVN5VDdqR3A3bXRXQ09LakNOMnA5cGt4cGdUNzhtQWhnU2tV?oc=5"
+  },
+  {
+   "ts": "2026-10-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 曾拟并OpenAI入Tesla 遭创办团队婉拒 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2tELW14YzZ4dmlPYUt4bDV5TXZ3d29PM3VZY1VsQmRWWTRvUTVaRmhXVnhLNFRqYVo4MFVMR2xoQzNOcDk3M19sS1hSd2lyLWVvbkZBUU1hNEpFY2l3SVVhWUVkdmItMlpqYjAtUl91MWRVVEJYazlxTXZGLVdudzFyQ20walgtNGx0Yl9wOA?oc=5"
+  },
+  {
+   "ts": "2026-10-06",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 11 条（明细见各人物卡）",
    "src": ""
   }
  ],
