@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-06T10:22:04+08:00",
+  "generated_at": "2026-10-07T09:41:37+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-06",
+  "asof": "2026-10-07",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 378.73,
-    "chg": 5.95,
+    "price": 380.68,
+    "chg": 7.89,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-06",
+    "src": "Yahoo 2026-10-07",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 171.09,
-    "chg": 17.61,
+    "price": 171.92,
+    "chg": 15.2,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-06",
+    "src": "Yahoo 2026-10-07",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 85575.46,
-    "chg": 1.28,
-    "src": "Yahoo 2026-10-06",
+    "price": 85250.88,
+    "chg": 0.57,
+    "src": "Yahoo 2026-10-07",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0948,
-    "chg": 1.95,
-    "src": "Yahoo 2026-10-06",
+    "price": 0.0934,
+    "chg": 0.6,
+    "src": "Yahoo 2026-10-07",
     "status": "green"
    }
   ],
@@ -419,6 +419,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-06",
      "c": 378.73
+    },
+    {
+     "d": "2026-10-07",
+     "c": 380.68
     }
    ],
    "SPCX": [
@@ -793,6 +797,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-06",
      "c": 171.09
+    },
+    {
+     "d": "2026-10-07",
+     "c": 171.92
     }
    ],
    "BTC-USD": [
@@ -1167,6 +1175,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-06",
      "c": 85575.46
+    },
+    {
+     "d": "2026-10-07",
+     "c": 85250.88
     }
    ],
    "DOGE-USD": [
@@ -1541,6 +1553,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-06",
      "c": 0.0948
+    },
+    {
+     "d": "2026-10-07",
+     "c": 0.0934
     }
    ]
   }
@@ -24218,6 +24234,234 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZU9xRFJEZ0cxZ3FfZWFZdXZ5S2tjWjdUU2xzMGFTeUFRME5hamJVaEVZOGE4OG9rMWd0QndnbTZrTjduZUpHejNXNGVhUmZGQXpSQUtHYWhmV0NJeG5YOFE4MGpsYk95YzB0U0hNYUpkQXAyMWt3V29Edm1EQU5sX2VlSG1DMXBmUkNj?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-e4dfe54084b0",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX特斯拉股价回升 马斯克身家重返万亿美元",
+   "payload": {
+    "src": "联合早报",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QQlBNQjRSSnoxU3hrQ1R6elEtYVVNRTdreWRpZmF6b1JqbnBIZXk1Sk5Pd3RLSnlKZnpBdnJWMGhQdVFyZkE3Y1JnSzcxaURNcHBuN05VU3dVbC1fWFhpZnp6ZHFWMjdPUzYta0l3?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-763fc6d8168a",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Starlink成SpaceX“现金牛”：营收占比超六成",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZExjT0J4ZzB3WllIN0hzN0tORXY0U3FFd3lJeUtrYmp3Y3VYcnhBbzBZT29KYm9CYkpiSV9PMDZ1Tmp6REVYWllyc1VkbXBVNU5mQkZKZFNpZC10YkkySjM4Q1dzRE9ZOVJwVURKd1YxMmVjWUxYanFXUFhITmg5WG9DLU5PdmJuaDViWVltWmt6MEVkSFZxX0JUREFlcTdVWktjM09KUUZnN2JOaXdwWEhJbFg?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-dabf6589a7bd",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克的“另类”慈善：2024年捐款创纪录 但大部分捐给了“自己” - 人物 - Elon Musk",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXV2NFcDhoR3hXUFg3UWU4RHRDTWttU1o4QzJsWEtUQXEyRjdSaldEdVZIUlppT0VnZXVHVFNaYkw3ZndyVzhHb1ZhQ1RuQkV5QUlBTGxJZ3B1ek13UHhFOQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f68324b6c0ed",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球首富，换人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXZnd0clJSWjlaLTNldC1UUm4xU3c3WGNNVExzR3ZCNXV0Wkt1dXNTcVNLTUE2cWtNUE81Sk5qZFdESzNMemg2OHhoSVQ3UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4f7a45e4067f",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "被短暂超越后，马斯克重回世界首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uT1lORE1jNDc5YVR0TVFDd2xJNjBXSjhtU0VJck1TQjFkRWRha0Jwemo3Qm9hbVJpVFNrVEVDZXQ0NWF2b2ZFVkxrWUh5MDAwSHJKakhHT2x1ODJ4ckdj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-160cea4ed5fc",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "All-In解读AI下一阶段：模型趋同，价值开始向工作流上移",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfZlJqbmVsRDhhUE5lSEs3T19TNUtETG1EYkdHejZkRzhxU3lhcl94YWx6YzNnTDhpTjZWOWgxU0RmQ1hFajhxdTh1MzNaa2dQelhj?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dd8440ad8364",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宮掀AI監管內鬥 黃仁勳等巨頭「直接找川普」促少干預",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbG5tRldQaHBuYy1mOGVxVlJxV2xVdTBFVWpaT1VSMGVtQ0E4czBBa2o5TVJQbUkyZ1k4UDB6OGhOVDdqVWdGSlppT0dMRENSRUNIejNlRm50OUdnZWVJVTh5MWxlWFdHWVNBcy1DZzlmbWJDVGlCN2QzT1hnaHdJZjZHQzM0UdIBZ0FVX3lxTE9TR3l2SUtoYXE5ZlRvUHZySUlOeE54clYycDVCUkNkSXc5ZmpsSlN1RGl1SHJRanl0czNqQkp5RGhRd2tUbVBUdlFmYUpRU3FoMWlkeDY5VGNBeHRsSU9KMTl2YmNJcE0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-65da56bb525c",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "分析Palantir Technologies 联合创始人：每个人的背景和价值",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9CbklmU0ltbnRuWTE1R2J4clhBa3JrVUowTElMMy03QUs2QmdYWEd6Q1ZJeEpVWnVKbjR4ZUlIbzRoU2Z1d3Zlc0Fzd3BDdmJD?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4db3280831f1",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "没想到你居然是这样的 Peter Thiel……",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE90ZWJQT29jdXNSUzdoSWMtMFJTYXEtSGFEa2x1dk84aW9OZW1kRnl3WGRYU01JS0g5bThyblQybW9nVi13VElTaUhJMHA5OW9JY1I2M0EzR0hldUVCdi1BdjV4WUNCWFZYTFg4aGRoNkc5QQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-377057caa32b",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "顶级VC创办大学 争抢18岁优质高中生生源",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zcXFvd3QtdWlkVTN4SHRmazNTQmdUTVpLcjRsS19WdlVVcExOZHVmcUhQNTkyRHM3MTFpc00wREhzWU1qa2tycExyc2JrSk5TcjlN?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cad7377347a9",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "浏览器之父买下美国第二贵豪宅，网友留下贫穷的泪水",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50eHNOT1FBNEVlRVVWZEdFMkI2eUwxWkdUbnlQazdRa1VJblBMd0U4c0FjdVV1X0FuRW9SRFRSTmtBZjB4RzBvYmdqYzk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-191492d785e7",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：AI成本暴跌或引发生产率革命，经济可能迎来“良性通缩”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1uRlB0WUdTYUJ6Nkp0am96NWxZWHJ6dlpBTXlvdzNiNTBld1VEdk1idFRTNGxxY1JWcU02OGkyX09NcEwwam1mVFdhamJwaFcyZnFwUk9OMm1pcnNqZzJXZk45aThzUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5dbf1cc56ab3",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood Says the Dollar Could Surge — Here’s What Investors Should Watch",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWHBldTI3UFlzdUw5S0ZnR0N6QzV5YnM0OWQ2YXVhTmdDV2JTOEdzRGVqallDejVNMUg2NjFnZl8zblB4OVU2ZzdTQmFvVExOVWdZaDJ2MFJZT3RpNTZDd2hXLVRTVEVaY1phN1dDWF90VlNNUURuT2JZa2M1M00yQmNiNmdLM010RkREd25vT0YyUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-35e9cb99c2ed",
+   "type": "event",
+   "ts": "2026-10-07",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "遭课豪宅税 亿万富豪转向迈阿密捐30亿",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pY2NKeFJjSmQ0cnhPZVBUTVY1bVpMalZXOFVCNXBYTGtaSlVqbWdrZ196Nm1PLUNvRExlbk5Yb0hvbGYtMkx4T2JQanc1bnpMM2tSLTdWMzdPSGx4ZWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -24320,7 +24564,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2664 · xAI 302 在招（2026-10-06；Tesla 无免费接口）",
+     "v": "SpaceX 2672 · xAI 306 在招（2026-10-07；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -24424,7 +24668,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-06，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-07，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -24900,7 +25144,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-06 10:22",
+  "last_run": "2026-10-07 09:41",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -24911,7 +25155,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 96,
+   "edgar": 97,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -24946,30 +25190,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Musk：“搭载人工智能的SpaceX卫星将于2027年第四季度首次发射” - 아시아경제",
-   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Fb1NEaVM5NzY5eHBJbHc0RG50ZzNEWmFGLTVRcXRUaGVxOWhWMThScHFnRzNUazVycHRYd2lZcjhRZnk1ZzliaDdScHVERmJiYVRaRDhmanZvTU1Ub2xVMUZXaW4?oc=5"
-  },
-  {
-   "ts": "2026-08-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-28",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla力推自研芯片 Elon Musk喊AI5效能胜NVIDIA且成本更低 - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeS11bnIwV1pyRE03T0llV0VDT2RFSlZBZzdfZnBUZ2ZPV2hHc0YyeTJEaTR4c2JIRUswek5sU1Q4SlRZcEgwVWxxX19YNXI2blFhNHR6SXlCUFVjRURCSjhJc2Vvano3RHB2eFROTlY5d1h5ZGZ0VDM4akE0X3JCelBnNmNGM1k0TDRUYjB0UGVrSGtVUGdNdHR0c1pkOFJmaXFSRFNCUQ?oc=5"
-  },
   {
    "ts": "2026-08-28",
    "rule": "R3",
@@ -25904,6 +26124,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX特斯拉股价回升 马斯克身家重返万亿美元 - 联合早报",
+   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QQlBNQjRSSnoxU3hrQ1R6elEtYVVNRTdreWRpZmF6b1JqbnBIZXk1Sk5Pd3RLSnlKZnpBdnJWMGhQdVFyZkE3Y1JnSzcxaURNcHBuN05VU3dVbC1fWFhpZnp6ZHFWMjdPUzYta0l3?oc=5"
+  },
+  {
+   "ts": "2026-10-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Starlink成SpaceX“现金牛”：营收占比超六成 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZExjT0J4ZzB3WllIN0hzN0tORXY0U3FFd3lJeUtrYmp3Y3VYcnhBbzBZT29KYm9CYkpiSV9PMDZ1Tmp6REVYWllyc1VkbXBVNU5mQkZKZFNpZC10YkkySjM4Q1dzRE9ZOVJwVURKd1YxMmVjWUxYanFXUFhITmg5WG9DLU5PdmJuaDViWVltWmt6MEVkSFZxX0JUREFlcTdVWktjM09KUUZnN2JOaXdwWEhJbFg?oc=5"
+  },
+  {
+   "ts": "2026-10-07",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 12 条（明细见各人物卡）",
    "src": ""
   }
  ],
