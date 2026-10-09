@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-08T10:09:06+08:00",
+  "generated_at": "2026-10-09T10:21:34+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-08",
+  "asof": "2026-10-09",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 377.81,
-    "chg": 6.48,
+    "price": 375.0,
+    "chg": 5.9,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-08",
+    "src": "Yahoo 2026-10-09",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 167.6,
-    "chg": 11.1,
+    "price": 160.57,
+    "chg": 8.44,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-08",
+    "src": "Yahoo 2026-10-09",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83008.48,
-    "chg": -4.01,
-    "src": "Yahoo 2026-10-08",
+    "price": 81910.22,
+    "chg": -4.52,
+    "src": "Yahoo 2026-10-09",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.089,
-    "chg": -7.17,
-    "src": "Yahoo 2026-10-08",
+    "price": 0.0846,
+    "chg": -11.38,
+    "src": "Yahoo 2026-10-09",
     "status": "green"
    }
   ],
@@ -427,6 +427,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-08",
      "c": 377.81
+    },
+    {
+     "d": "2026-10-09",
+     "c": 375.0
     }
    ],
    "SPCX": [
@@ -809,6 +813,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-08",
      "c": 167.6
+    },
+    {
+     "d": "2026-10-09",
+     "c": 160.57
     }
    ],
    "BTC-USD": [
@@ -1191,6 +1199,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-08",
      "c": 83008.48
+    },
+    {
+     "d": "2026-10-09",
+     "c": 81910.22
     }
    ],
    "DOGE-USD": [
@@ -1573,6 +1585,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-08",
      "c": 0.089
+    },
+    {
+     "d": "2026-10-09",
+     "c": 0.0846
     }
    ]
   }
@@ -24688,6 +24704,184 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9EaEp6M2kwWnZDVjNWN1FKMFhzb25wd3VhYmdYV1pUYlFPdWJTYzd5ZXMyYlZDUTVCazlHZ21IMVJOWXpmWHd0MTMwU1gxWl9ObEM4LWVzMEpaOWRqWVlFWTlPd1I?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-be4e8ba14cba",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克：得克萨斯州Terafab工厂将由Tesla与SpaceX自建自营，否认TSMC接手传闻",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQal93RUJiSFVJR3BoLVk4QXBCTERELUFiYVdzWGpjWWI1V0ktelJKOWM2WU1MZHRhaktIakN6RWhqQTk5T1hXNXdqdWZEeHMwSjVpRW1hTGJHOFRubEZGM0txVHdxMWw3Z2FDbGN2Q29TN3dfQWFLb2Z0UkNjbVd0UXQxSndYRmxwdi1mNDY5bF9VckhWS1JxZENfNEEydUlPV0J4elRwMUNRVjZraWxYWHAzb3dJSWpUNHBfRjhBWnc3dzdRdXhxRHRzWUc?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-171605246cfa",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "豪掷695亿收购华纳 甲骨文创办人家族成大金主",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNbXl6ZVRaWXFhM2VJYll2eVZucEp6bmVwajlncDNJa3NwdEtQaDI4QzJvOVRaSmxmcFYyRTZaTDk4U3RkU2owRUM4U0ZiNGZMWVVNVjNvLTl2cGpNMTh0VW03b3o1NFJvbXZpSFR3NkVDWnpnTHVwSFdJbnEzclNXOFd5cGZ3S0dBMFE5dFNjR3VPR0s0M2FiSHAxT0hsY2xVOHZ2c3RoMC1sWGFaYzN3Z0g0ZF9ZOWxjVm9EVlBmb29kMXd3QUVqVEQ5aEoweWFSYUFkODFIVDY5NmdBVFNvNE5hb1JHdnlxUXpWTmNNQ2JDVUJwX29HeGlfTUNJRnY4Ui1ad3FKTXA2dUZSUTVoNWtTcExsZXBNeGVNMzZMcFJhWDZiR3lhUm5heEF0NGVtaW5sdXI0NGNIQVlILWxVUEtBNi1RUVdr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-34269c312b61",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文股价暴涨超40%！创始人财富单日狂增近7000亿元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY19ob1preDdlODdSNHQyRXI0NVljSlJ0cnhJTmlFc3pqTDdPeWMtZ1p0dDZPTTJBcExwRjZZN2ItNF9sSEZobXdUX1oxS2NYYldLZExIeW5rR3RudDBpWFJmVndjOXFkYndqcUpDUWFXZ2xNdlNfS0F4Vzh0LVpscFlXV2RDMnBjc0Y2SHhuMA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5d8ac9143434",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普可能的下一任人工智能专员杰伊·克莱顿，曾在美国证券交易委员会开启了加密货币的监管执法之路",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdHQ4Wjh5QUFnY1VuQlk1cXk1dDNIS3B4SllwUEdPWHZ3NTNXOVpPTGdOU3pHTjZ3UExvVEk5LWFMUExaNW5vOEMyNVNnU3cydEJVcFpPN2lIWk0xN2hEb0RwRkpnS0QzbDlGU0FkUjVKUU12Y21MTW9DUEx2YllCc0NwUzY2bWNKX0xKeHBtdnd1SDFBWEp6QXp5T0g5UzRNczNfaHk5UGZBUExwekZMOXc2ckczYkQ5SFZkNXZzU0hkRWR4enlaa29HZENPd1I5WGc0OQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-35816711815d",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "特朗普急电黄仁勋：AI威胁论“是个骗局”“机器人不会接管世界”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9va1dHb29fSTlRX3N5OWdzY1hBcWVVLVBnSVh6S0ZjM3BVYkhoelZtaEt6aHZ1ZXhUVXYxMTJsQ0p0eHk2VGJCVmZxOEdZMjVERnNB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-739ab3f6f674",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "与彼得•蒂尔聊聊“从0到1”和“从1到N”的那点事",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBsclJhaFpBcFRfRHVBWHVPeXlieG5qZWczY2llVlNTM2ZFY2d3WmdMZXhfb0VZNmo1RlFxUUJpTFpId2Rfc3ZZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cda288b3a863",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "YC创业课之Peter Thiel：追求垄断的创业者才能成功",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE52U0lzSlhGWkFSU1o0TC1KdHhPVFoycl9KenNRaUtsZjljWHZjaG5uTWlKdGZRd2YzdlNyOWtWQVlwU2FPLUw5WEh3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2c8ad18a8762",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z crypto，加密投资金手指是如何炼成的？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjbjFLWm1kWkdYQVVmV1RTNGxWMHg2Zk9IcHZJNkFkVjhzV3pyZVlFUmtWa0J2bWZxLUFuRkdiSENHN3JSbmw2RFN0aEkxMkJUd0FpZ0g2OU9UWGJH?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9a81c13357ae",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "美中期选举 捐款最多20富豪中16人给共和党",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1VG93M2dwdDliTTJDMWh4ek1MLUt6aUxYZDlTbGdKa0xfaU9kQjRaY2piT0I3UnVZR0U4X1ZXaXBEcXRzQldsS0lMWHJPc3lCeFlNTzJFV2lnd0M0clE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bb3496ce53cc",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood又出来说话了。 这次她讲美债收益率其实处在历史... | OKX Orbit",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YUmJqU1VubnJLaTU4aHhJOFE0dnhzb2xJanRCU3pRQXZYZjkzeWUzbVFjUENiMjRiU0ZYT3N6WmNvQTZFZGlEcklPZkxqdXhOcG9CTFI3Ny1DaDhvc2I2SXRNNmg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9c2f2d46b0df",
+   "type": "event",
+   "ts": "2026-10-09",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：AI创新最被低估的领域是医疗保健",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10RzBhUXV0SWpqbElIMnltUFBHVU5hcmdTczhoaE9pVXRiQk56Zm53QlFpa1dUTG1vY3F4U2JkR3RmV0MyS0lPUElzc3lONC1yN0pYdURmNA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -24790,7 +24984,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2683 · xAI 307 在招（2026-10-08；Tesla 无免费接口）",
+     "v": "SpaceX 2693 · xAI 309 在招（2026-10-09；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -24894,7 +25088,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-08，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-09，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -25370,7 +25564,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-08 10:09",
+  "last_run": "2026-10-09 10:21",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -25381,7 +25575,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 98,
+   "edgar": 99,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -25396,7 +25590,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-   "net": "2026-10-11T23:00:00Z",
+   "net": "2026-10-12T23:00:00Z",
    "status": "Go for Launch"
   },
   {
@@ -25405,9 +25599,9 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | USSF-xxx (\"TH-2\")",
+   "name": "Falcon 9 Block 5 | USSF-481",
    "net": "2026-10-15T23:44:00Z",
-   "status": "To Be Confirmed"
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
@@ -25416,22 +25610,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-29",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克预计SpaceX到2033年营收将达到$3.5万亿 - Moomoo",
-   "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb1BWX0k0UkFNN0NOZUNwRXNFNmJZY0xUZ2Z1SWtJZGI0aGswUE1kMWNZWkJkeHF5ekJWclBlUjJvR3VWRjI0WlBONFJBNUhvREpwa2JNY3hmZ3AtWXJTSEVBaGFvSXIyY2o0cXZfRTRuMnRCVkl3dW1WdGdQMVJSd3czdE8tMDFqczlmcTFkX2xocWU0X1p1SW85TEtZQzM3MkNB?oc=5"
-  },
   {
    "ts": "2026-08-30",
    "rule": "R3",
@@ -26374,6 +26552,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 12 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克：得克萨斯州Terafab工厂将由Tesla与SpaceX自建自营，否认TSMC接手传闻 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQal93RUJiSFVJR3BoLVk4QXBCTERELUFiYVdzWGpjWWI1V0ktelJKOWM2WU1MZHRhaktIakN6RWhqQTk5T1hXNXdqdWZEeHMwSjVpRW1hTGJHOFRubEZGM0txVHdxMWw3Z2FDbGN2Q29TN3dfQWFLb2Z0UkNjbVd0UXQxSndYRmxwdi1mNDY5bF9VckhWS1JxZENfNEEydUlPV0J4elRwMUNRVjZraWxYWHAzb3dJSWpUNHBfRjhBWnc3dzdRdXhxRHRzWUc?oc=5"
+  },
+  {
+   "ts": "2026-10-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
