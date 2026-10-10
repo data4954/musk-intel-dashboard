@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-09T10:21:34+08:00",
+  "generated_at": "2026-10-10T09:50:11+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-09",
+  "asof": "2026-10-10",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 375.0,
-    "chg": 5.9,
+    "price": 382.7,
+    "chg": 3.27,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-09",
+    "src": "Yahoo 2026-10-10",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 160.57,
-    "chg": 8.44,
+    "price": 162.57,
+    "chg": 2.27,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-09",
+    "src": "Yahoo 2026-10-10",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81910.22,
-    "chg": -4.52,
-    "src": "Yahoo 2026-10-09",
+    "price": 82643.61,
+    "chg": -3.41,
+    "src": "Yahoo 2026-10-10",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0846,
-    "chg": -11.38,
-    "src": "Yahoo 2026-10-09",
+    "price": 0.0861,
+    "chg": -8.11,
+    "src": "Yahoo 2026-10-10",
     "status": "green"
    }
   ],
@@ -431,6 +431,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-09",
      "c": 375.0
+    },
+    {
+     "d": "2026-10-10",
+     "c": 382.7
     }
    ],
    "SPCX": [
@@ -817,6 +821,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-09",
      "c": 160.57
+    },
+    {
+     "d": "2026-10-10",
+     "c": 162.57
     }
    ],
    "BTC-USD": [
@@ -1203,6 +1211,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-09",
      "c": 81910.22
+    },
+    {
+     "d": "2026-10-10",
+     "c": 82643.61
     }
    ],
    "DOGE-USD": [
@@ -1589,6 +1601,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-09",
      "c": 0.0846
+    },
+    {
+     "d": "2026-10-10",
+     "c": 0.0861
     }
    ]
   }
@@ -24882,6 +24898,203 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10RzBhUXV0SWpqbElIMnltUFBHVU5hcmdTczhoaE9pVXRiQk56Zm53QlFpa1dUTG1vY3F4U2JkR3RmV0MyS0lPUElzc3lONC1yN0pYdURmNA?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-16a517742f91",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla Stock Rises as Elon Musk Asserts Control Over Terafab Chip Project -- Barrons.com",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNVhPNG50VEtKRUxIaEhLM2gxUnpUM2FXenhDTktGOVNmc2xkV0hZVHFkUll4UjVFSDlzazdQQWh4c2s2dVlQUHhpLVZ0WmhZcmEwZ2stTEwwOVlDYW56bHRNOUxObWdhcGk2V3ZueTNnZjg5bGprQVJvMnB6a0d1cXpIRWROeGFYYXZJcHlZU0NDeFYzY3BoQV9lRHd1aEw2?oc=5",
+     "https://news.google.com/rss/articles/CBMilwFBVV95cUxQY0ZCNUloU2dwdUhkNzVZVTEtUlZNLUx4d0JHb181dWNjZ2dJSE9SdXVRazlhYlkxUy1CcFZoSFREVzYxREV1cmVCVzVweXI3V1ZRc0VDdjVzNzY5bENTQm1oZzNNU215bnVaSXk2Rkg0ZV9UQy1XajFBYkhHTERIRHpfNm1aNW1MeE53Z1JlNnJVMXhiQ2Vj?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-e8cadbb052f7",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Why Intel Is Teaming With Elon Musk on an Ambitious Chipmaking Venture",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa0U2aG9kQy1LN1RUNjdpTXlJWllfbTM5NW15NDBHbjYtTEFYaWZ6REwtRGQyYzVOWWlMOGpEYTlDWmpLMFAyUzNmaVg2Nl9UV1N3bzFfb0o0bDU0bWp5RFpUWDViVFVyeG9MejdkWkVIUGZ1TmFOREh0VXZjNVVZbHZfV0ZxRHN1aDVLZmI1Y3JDelE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-bd26aa80fab9",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "这大概就是马斯克家最硬核的家庭教育…",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94TnFSZVdvb2lDRXNObjJFSW9FZEl5eElBV2VROUZWTE4weGx5M2Q5bUdpb1FNZVJaUUpZWHNWZmNHWkdaQ1NGQ01LcWFzRHJLS0t3eFUxdlcxQ25kTHYtOFhLYTFjNFNYOXJHMUNxWk1CQ3M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6c78b1d7ad0d",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文的AI账本同时做两道减法：裁员13%落地、创始人取消逾75亿美元减持计划",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4Sk45Tkd5ZlBSN1dNc1dfS2p2MVV4bFhOR3podS1YdHFmNC1WYk5CNng2bElxTV84R1RoTlIwcWpUOXVSa29mTHZsdWh1ZncyeEJR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1578aa99f9b3",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "黄仁勋赞马斯克完成超人挑战：xAI花19天建成超级计算机",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9mcXRNX1VIWmd0cjktUVlkMjB5V3JXLUxRNTRVTFQyNk0xVHlPNWZQNmwzQjZtSlBrejJvSzMwcWV1eTY0cXc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-54688fa5e53f",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "习近平即将抵达华盛顿，美国学者、政客怎么看？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HTmt6WjhhdjVPM29ZdE5YVHpEVWpocVA1OEZBVG00QlpvZUNHSGthd1JVYjBLQ2xKWTJBNTVhWnJ2ejhRbGNNcUxUUDZKMWhlaEI3ZzJZcVZURHdSWWE3NEFPNG4tYjDSAWxBVV95cUxNel91VjZtaTRYSXZzQ1ZQSG5IOTdRa0ZzVlhXNUktM0NuVWNQVzdROTZQZmdmY2tUU1ptVVlRMkVUMTkzRnlpenZYaVR0azJaVGxPOW1VR1hMajhreWNYcE9aZ2I0Ry1HNlRIUEE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ec0806201c6d",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "蔡崇信All-in峰会访谈：运营NBA球队、阿里巴巴战略与中美AI竞争",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTMVJkb3FMLU05bGZHOF8xb1J3amJsRjFtUzRzRlBueUFySDR0UDI2WC1kNnJYV2trWmNwUzZfQnVsbHd4U3Y4cU5zczZ6OFA4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1a157c334a5e",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "马斯克扎克伯格背后的“教父”彼得·蒂尔：从0-1打造商业帝国的7条法则",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObTU5U3lob1ZZSGRfWDVFTGxZUW9JUHpGbGlJU01iR3dURVFyaEVrMjRtOGZJUm82bVlJWmFjZEtuN2NzbEFpWllNZTBYTTJ1OFBYRmFvR3UwX0UtNFRGeVZ1dklaZm1HVFpwYlZVa2diYmNHai1jOHhOcXBVTnVYRjQtWDM3Uk1z?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a709276b0dc3",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "创业者该不该参与“同质化竞争”？看看硅谷两位“大人物”Paul Graham与Peter Thiel的交锋",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yZUJBM2JSbzVxUU9MX1dzN0lnQUE0Zk9SeTJSU2pyQl9Qb2g1VUdHWkdDakRsTEJ6Yk9rODhQOEhfLU9YTU5kUjZYSjhacWQ2UnZOZlpTS1ZNX3Vfa1dWaTln?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-43512a13da1d",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "特斯拉下一个 10 倍机会？Cathie Wood：RoboTaxi 将吞掉 90% 的公司价值！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xUDMxeTB2dGp5djM0MEl0VUNrSDNGQnQzZlVLdnU2RmdvMGRER0U4SklKNjRJbFVLVVFlNjZrMVEtdzZiS2JlT3QydHdlcURYeUtoUVJ3MkxGZ3Ey?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-189a65f4e8a6",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "SpaceX两日累飙四成 Cathie Wood旗下ARK狂扫330万股 月内料获纳入多个指数",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNT2hNQVhYSjlLQWh0VlJEcWlPc3JJTE1RcTNadnNMNDkzM0FKcE9aV3Z4V3h0Y1RPLWg3Y2ZfYjNIVVZjSDhybWdjZlRPTW1XWkxsMW9pVWg5SnpKTE1DU05McWNKZkJ2NFE2NU1yLWNHbkJCdEpUQnNMS0dMbi1VOG5iaEh2ZkZ3ME5UUjZEcndEZ1ljandWT2ZqRnJtaW55ZzdtRlRDVnBPSHpWckQ2eVJIWHptdGc0aVlQN09wM0FpcE9xNWRWTU56dGFoZVBzV09kRmtlMEswWWg0NjhiTWNEUzkxamMwVjRRM2k5MmYtNzFSaFJuYmQ0LXg5XzN2N04zZ1R4R1B2TGVWNmtmYzJHZW9rbUoyRkhrX2NBTkVfNklBZkNjTXR1VFBXbmlFOFZCbnpvb3dHd1ptTU1PQlBwZENMc0tyZWJNQ2JGdU5wREo2N2swZWJFRHdSU1V2dTJuckRkcFVvMng3MUMxakhrLWRtdUJWU1pSd2JwWnk3UW0tMWZ3M3RXSFVWSExpR093T01R?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-aca7db3ac280",
+   "type": "event",
+   "ts": "2026-10-10",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Mana以11亿美元向Griffin出售Wynwood土地，为卡内基梅隆迈阿密校区提供资金 - 新闻和统计",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS2pKcmRWOWRTUVNJR0w5YnVQZGlBR1BfcWlxWGlSaEViRU80TllKOUllZU1QZVBNb3dEMGpGQTZWRDl1YUZYY1JMVktlbThkY2h5aTd6bUhkQ1Q2U0ZkNVVxYkJHWjJvRXZLcldjdlBydGQ3dEpjZWlzNHJrMXVFV1g4RWlDUWF0cjRkNWRrdVJnaEpBQ280cEl4azNoUmVveGoyMmtHRUxRbVB2MW5xYjB0ZklVd3kydjBzSDlTT3U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -24984,7 +25197,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2693 · xAI 309 在招（2026-10-09；Tesla 无免费接口）",
+     "v": "SpaceX 2727 · xAI 305 在招（2026-10-10；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -25088,7 +25301,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-09，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-10，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -25564,7 +25777,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-09 10:21",
+  "last_run": "2026-10-10 09:50",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -25575,7 +25788,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 99,
+   "edgar": 100,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -25585,7 +25798,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-10T07:29:00Z",
+   "net": "2026-10-10T07:39:44Z",
    "status": "Go for Launch"
   },
   {
@@ -25610,30 +25823,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-08-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 11 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-08-31",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 11 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-01",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk称SpaceX拟自建燃气轮机关键部件铸造产能，瞄准AI供电瓶颈 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZE84TUs4ZDV2OHVZckM0OGF5N0pMV2lfRFBuWktYQjBwZi1DYks3UjVUa1ZDWVViSW9kTnBuM2RrbmNnQklDTTE4MXE5YndEdjZ1cEpEWXh5MjNmT1R2aWNENW5YTmxmVlBMYXZHMW1BTDktWWc4WWpLazFCb3NTcWNHcGM3SnBWeHVJS0JFN1NWYnE3YjRXMEhqNWxGSGp3amJ2a1UxTG1iblREWE93Uw?oc=5"
-  },
   {
    "ts": "2026-09-01",
    "rule": "R3",
@@ -26564,6 +26753,30 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-10-09",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-10",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla Stock Rises as Elon Musk Asserts Control Over Terafab Chip Project -- Barr",
+   "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNVhPNG50VEtKRUxIaEhLM2gxUnpUM2FXenhDTktGOVNmc2xkV0hZVHFkUll4UjVFSDlzazdQQWh4c2s2dVlQUHhpLVZ0WmhZcmEwZ2stTEwwOVlDYW56bHRNOUxObWdhcGk2V3ZueTNnZjg5bGprQVJvMnB6a0d1cXpIRWROeGFYYXZJcHlZU0NDeFYzY3BoQV9lRHd1aEw2?oc=5"
+  },
+  {
+   "ts": "2026-10-10",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Why Intel Is Teaming With Elon Musk on an Ambitious Chipmaking Venture - 富途牛牛",
+   "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa0U2aG9kQy1LN1RUNjdpTXlJWllfbTM5NW15NDBHbjYtTEFYaWZ6REwtRGQyYzVOWWlMOGpEYTlDWmpLMFAyUzNmaVg2Nl9UV1N3bzFfb0o0bDU0bWp5RFpUWDViVFVyeG9MejdkWkVIUGZ1TmFOREh0VXZjNVVZbHZfV0ZxRHN1aDVLZmI1Y3JDelE?oc=5"
+  },
+  {
+   "ts": "2026-10-10",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
