@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-10T09:50:11+08:00",
+  "generated_at": "2026-10-11T09:05:37+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-10",
+  "asof": "2026-10-11",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 382.7,
     "chg": 3.27,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-10",
+    "src": "Yahoo 2026-10-11",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 2.27,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-10",
+    "src": "Yahoo 2026-10-11",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 82643.61,
-    "chg": -3.41,
-    "src": "Yahoo 2026-10-10",
+    "price": 82890.36,
+    "chg": -0.46,
+    "src": "Yahoo 2026-10-11",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0861,
-    "chg": -8.11,
-    "src": "Yahoo 2026-10-10",
+    "price": 0.0856,
+    "chg": -3.79,
+    "src": "Yahoo 2026-10-11",
     "status": "green"
    }
   ],
@@ -435,6 +435,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-10",
      "c": 382.7
+    },
+    {
+     "d": "2026-10-11",
+     "c": 382.7
     }
    ],
    "SPCX": [
@@ -824,6 +828,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-10",
+     "c": 162.57
+    },
+    {
+     "d": "2026-10-11",
      "c": 162.57
     }
    ],
@@ -1215,6 +1223,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-10",
      "c": 82643.61
+    },
+    {
+     "d": "2026-10-11",
+     "c": 82890.36
     }
    ],
    "DOGE-USD": [
@@ -1605,6 +1617,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-10",
      "c": 0.0861
+    },
+    {
+     "d": "2026-10-11",
+     "c": 0.0856
     }
    ]
   }
@@ -25095,6 +25111,150 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS2pKcmRWOWRTUVNJR0w5YnVQZGlBR1BfcWlxWGlSaEViRU80TllKOUllZU1QZVBNb3dEMGpGQTZWRDl1YUZYY1JMVktlbThkY2h5aTd6bUhkQ1Q2U0ZkNVVxYkJHWjJvRXZLcldjdlBydGQ3dEpjZWlzNHJrMXVFV1g4RWlDUWF0cjRkNWRrdVJnaEpBQ280cEl4azNoUmVveGoyMmtHRUxRbVB2MW5xYjB0ZklVd3kydjBzSDlTT3U?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-8517da4bf388",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "Once Musk makes a move, the world’s wealth is at hand! How did Musk’s pet Floki become the new king of MeMe?",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9tc0Y2XzctTk1jYnhMR00tTDRjSXgzRk81TjkzU0x4bks1OE5hMklNUVhkNlViWHV5NEdqNFhsNndHa3Iwc2o2a0xydWpXQ0JSUkM0XzF5QTBpelU3T3pPOUhR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9385ee3a7f3e",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "走进甲骨文老板的家办：全球第二富，身价1.4万亿，狂买豪宅",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9NTG1SaDNENWVYa1VlVUlKc1kxNGwyeV9mbE9DMHppeXFBUHJzc0JnTXlTYnkyLWxSWEVHRWw3aTV4b1RwTXNBSw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e47d9570b8eb",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "33岁中国女留学生嫁全球第五富豪，甘愿当第6任妻子，男方已80岁",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9seGh5Y1U4QU5tNWcyNXZKd19IVWNEeEt0VlNaUkt1amU4ZWRiTEM2QTBJWGNsaDhwby1weUtJNzFxYXNKT0xpYlhOWEI5cGNPZ281ZTln?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a5297cf16439",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫将支持废除拜登政府的“DeFi 经纪人规则”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYM2Q3akZsTTRoNmdVZ0FDckJGTlBqT1BPT1VMS1l2eGdkd2RwaHc4Q2FBeDFIVjl2ZEsxSTlibEhzMUc5WmE4RVFSNHRwOGtnYTJiSXpxM3E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2e9a004b7aa4",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美学者揭习近平“不战而夺台”策略 特朗普恐成北京工具人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiREFVX3lxTE95ckhSUDc1OFVrMnZCT0RlSTJlWVdYVTlxcGM3Z0wtWTNKTGdocjhnN0IxNk5yMUlnbVJtNllTUmdDRnQt?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fadcc25dc411",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "同性恋亿万富翁彼得·蒂尔如今成了“自封神学家”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPaUhieURyRU1UU2FocmY2d2x6NlNrMng1OTI2czVRWWVpNDdYSGFSbHNQU2Q4X2pEZXlHUnNIVFNLeGhOdkJYSnZoZlM5SlV4RV9UMFkyX3V5SVdyd01lSmU4bFp3SlhjRzk2ek9XWXdjaDdPMjUyUU1jNWc2YXFlMXQ0cTQ0S2VodXFWc3l0Q0E0SWUwSUxaUWtMTzUxRnJCUFpvTDNHQ29tMktNd0w2dUN2TktyRzFuaHRSTFp0dFB1alJBM01DN0FLYTVhQjh4WGJJei1sVExabmlrVEdwNGV2NjNENnppUFBtXy1kUGZoUklLOHJ5Zlg0YUtkTGRkeTFyM1FSTHZ2UE1NVW5RV1RJa1FjN2xGZ24wR1lWVjlIMlNlWEZlLXFYR3Q3a3hyX1RQaWdNNFpScHVFRGtsdzdR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-698b1fc02682",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔：Facebook第一笔投资的秘密",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE84QmdCNXhPUXctRDdxSHJZS2Nad2lxTEJVOXRhYjVjc3drV0hua00tYjRtMFVudWEyVllUWjNLTEktLXg3aTg4TlAwRE1zSkVHN0VF?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4642ffbbd47d",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z创始人深度对谈：AI无泡沫，中美真正对决在机器人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4dWRtVFVBcHA4ZWZPbklqdy1HZTZkbWxBLWVBb2VWc1c4R2w3SnFXdkhtcWRyeWY2UWFUWlUyako1M0tCY3JERVpQYzJiRjVlQllB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9005fe554c9c",
+   "type": "event",
+   "ts": "2026-10-11",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "对话 a16z 联创 Marc Andreessen：一个 AI Bot 是如何通过 GOAT，变成加密百万富翁的？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAtWXBvdjJoRndkajBZTERVWUk4QWIwNGVfVS1naXdwSGs4S2s5UFRoSF9UV0JBRGwxSEVVR2xlVWVHeXZxT3dlbS01NDk0OEdldGZqLWJ3ZUNnYmxt?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -25197,7 +25357,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2727 · xAI 305 在招（2026-10-10；Tesla 无免费接口）",
+     "v": "SpaceX 2725 · xAI 305 在招（2026-10-11；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -25301,7 +25461,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-10，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-11，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -25777,7 +25937,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-10 09:50",
+  "last_run": "2026-10-11 09:05",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -25788,7 +25948,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 100,
+   "edgar": 101,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -25799,7 +25959,7 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
    "net": "2026-10-10T07:39:44Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-25",
@@ -25823,14 +25983,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-01",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-09-02",
    "rule": "R4",
@@ -26781,6 +26933,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-11",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
