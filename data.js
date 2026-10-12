@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-11T09:05:37+08:00",
+  "generated_at": "2026-10-12T09:28:24+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-11",
+  "asof": "2026-10-12",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 382.7,
     "chg": 3.27,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-11",
+    "src": "Yahoo 2026-10-12",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 2.27,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-11",
+    "src": "Yahoo 2026-10-12",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 82890.36,
-    "chg": -0.46,
-    "src": "Yahoo 2026-10-11",
+    "price": 83680.1,
+    "chg": 2.45,
+    "src": "Yahoo 2026-10-12",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0856,
-    "chg": -3.79,
-    "src": "Yahoo 2026-10-11",
+    "price": 0.0866,
+    "chg": 3.06,
+    "src": "Yahoo 2026-10-12",
     "status": "green"
    }
   ],
@@ -439,6 +439,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-11",
      "c": 382.7
+    },
+    {
+     "d": "2026-10-12",
+     "c": 382.7
     }
    ],
    "SPCX": [
@@ -832,6 +836,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-11",
+     "c": 162.57
+    },
+    {
+     "d": "2026-10-12",
      "c": 162.57
     }
    ],
@@ -1227,6 +1235,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-11",
      "c": 82890.36
+    },
+    {
+     "d": "2026-10-12",
+     "c": 83680.1
     }
    ],
    "DOGE-USD": [
@@ -1621,6 +1633,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-11",
      "c": 0.0856
+    },
+    {
+     "d": "2026-10-12",
+     "c": 0.0866
     }
    ]
   }
@@ -25255,6 +25271,150 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAtWXBvdjJoRndkajBZTERVWUk4QWIwNGVfVS1naXdwSGs4S2s5UFRoSF9UV0JBRGwxSEVVR2xlVWVHeXZxT3dlbS01NDk0OEdldGZqLWJ3ZUNnYmxt?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-038a83af5099",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "让一部分人先看到未来",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5yd1lONnRqb3BwREVxY21hZjVVSXgwRGk4WkNZc1NNZ2NEakhHQjFCWnFXaEJTUFB6UGJHbzNEWHVtSGxDbjBfUjZNVHhGZHVVN0NXRlNpSFM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0737a06f813f",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球第四大富豪用科技改造农业的失败尝试",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDk3Q1QzLXo4b1MxQno2ZGxuTXdON19ESFNMbFgzakg5TkFPUEcwLUw4NlMwa21mVXVZVjlfSERKMXRWc1pCQk1OU1JEVG9BRW5EVHZhNDJLRThCX3NIbEFwM0VKVF9FVEh6U281TE93NkNseHJRVVhkQlJyT2Z0S0lHNlM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1cd624d51479",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁甲骨文创始人娶33岁华人妻子！他跟比尔盖茨一生较劲，买豪宅像买菜！",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5hRXBsM1JBa0lIdzdxRWh0eWNpWUJFaG40c0staENCekUxaWFVc1lCSU83MmEtQko3Vy1Gei02M2g2RlpkWXFQSXBLRWViZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4406ba515208",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "“牢牢记住这张照片。50年后，它将出现在历史书中。David Sacks 称之为“超级智能时代的布雷顿森林”。” ​",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aQVUwQUVhZzdYRXRwTjc2bk40NXFzV1J6YXVydmpVdDlFZ25OM3dUNVYtV2lrX3djZ2VEX20wbUpnX2FZLTJQeVN1REV2clVSYzBiYVJWcENYQ2ZsVlF1S19GUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-703f7fe9d864",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "研究报告：美国未能有效对抗中国的地缘政治崛起",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQUFpaWd0YkxSTmpZajlwVklIQkxIVDduRGRkbU44RUl0amtKZGpERDFwQWVMNl8xNkJXOF9sR3lkX1RZUTFBc09GdVhycFhNYk1mbWtmdUlzSFlnZkZlR3dZOGxfVjZpUXBQNXRVc3l4VXhJdklPRGFydGhjZzNFUjJ0M2c0Qk0zc1pWMdIBjwFBVV95cUxOdzNJZHY5RG5vN0tKakdWd09PaFpEeDNhc0tSc3lXcTRBSjdyTUpnZGowaWFuZGxTUWJ0VzZFbVZsa2VCa09JdkJBcUpoaU5oOGpCRGpmTHFWYnFOX0lNNkJqX09ReXB0aHZlc1JxTmpLbG5YUW9wU2pnZm1wbnUyNUhqdU1jNngybW4xTFBaaw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-913ae3e53a32",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "外交关系委员会：彼得·蒂尔以技术、资本和政治行动嘲弄了福山的“历史终结论”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xTGVfNGw0TGQ0SDlXUXlocEFrYThCZDNxTW91YjJmVTJTRm1oN1MwYzlZZ0N6SlhobjlOT3FzVkY2THBQT0w5T1B0ZVZUNS1URklMU3Fuc3E1UQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9caa9fa8d234",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "爱泼斯坦档案持续披露：马斯克、Peter Thiel和班农被提及|埃隆·马斯克|Twitter|特朗普|民主党|文件",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbFVQbW8waFcxd0tiSGItX09NTlhDWlQtTnpQWFVUYWdEeXhDdTRlbVRHd0tuS2xkUGdkY1FBMkRmSlp6ZjM3QVMxZVA1amprOC1zVWd3Y2ZXUGYtV25GeFU1UGs2dFU5dHZYODYwZ2pYdEVTUnJKVEc1YkxEbTREVHVsNm5FTmJTRTJiUmlLY1V1a1BuN3ZKenFiOUdBeFNmUmdr?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b8e9d54e779c",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "中美突发！英国金融时报：美国风险投资巨头正洽谈投资TikTok 以剥离中国所有权",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRVAySjNnZnFaRTdqQkV3ckRFdlBFRkRSUDZPY0hQR1V6X0hRcmQwcXFKak5uTk1OQV8ycmlLWE14a21JWW5wZDJlOHlxV1BGZV9hMkZLVUo2bVRDMWxSTmR1QXI2VWJ4OWxVN1RTVGQyNDNmenJzMVJoVl9FWGduX2Vsbw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e3e1072c1755",
+   "type": "event",
+   "ts": "2026-10-12",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "随着 NFT 市场整合的继续，OpenSea 考虑被收购",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qQkNWYVc4YVNKUUFlSm5YSHA0REpaTnBrODQwdVZrSC1wVm10d3hWa19sVm9Wd2lfZWVrX0tybk5NemVYemdlR0FzSzVJbEN1OVJNaVpkNVpWYjVyaEl1MTIxRFZEdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -25357,7 +25517,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2725 · xAI 305 在招（2026-10-11；Tesla 无免费接口）",
+     "v": "SpaceX 2725 · xAI 305 在招（2026-10-12；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -25461,7 +25621,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-11，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-12，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -25937,7 +26097,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-11 09:05",
+  "last_run": "2026-10-12 09:28",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -25948,7 +26108,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 101,
+   "edgar": 102,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -25957,13 +26117,8 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-   "net": "2026-10-10T07:39:44Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-   "net": "2026-10-12T23:00:00Z",
+   "net": "2026-10-13T00:11:47Z",
    "status": "Go for Launch"
   },
   {
@@ -25980,17 +26135,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
    "net": "2026-10-31T00:00:00Z",
    "status": "To Be Determined"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+   "net": "2026-11-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-02",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
   {
    "ts": "2026-09-02",
    "rule": "R3",
@@ -26937,6 +27089,14 @@ window.MUSKINTEL_DATA = {
   },
   {
    "ts": "2026-10-11",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-12",
    "rule": "R3",
    "action": "入库",
    "ev": "C",
