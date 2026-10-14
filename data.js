@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-13T11:05:37+08:00",
+  "generated_at": "2026-10-14T09:18:11+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-13",
+  "asof": "2026-10-14",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 378.03,
-    "chg": -0.18,
+    "price": 375.23,
+    "chg": -1.43,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-13",
+    "src": "Yahoo 2026-10-14",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 163.42,
-    "chg": -4.48,
+    "price": 156.54,
+    "chg": -8.95,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-13",
+    "src": "Yahoo 2026-10-14",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 82784.61,
-    "chg": 0.29,
-    "src": "Yahoo 2026-10-13",
+    "price": 83210.02,
+    "chg": 0.36,
+    "src": "Yahoo 2026-10-14",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0835,
-    "chg": -2.14,
-    "src": "Yahoo 2026-10-13",
+    "price": 0.0843,
+    "chg": -1.59,
+    "src": "Yahoo 2026-10-14",
     "status": "green"
    }
   ],
@@ -447,6 +447,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-13",
      "c": 378.03
+    },
+    {
+     "d": "2026-10-14",
+     "c": 375.23
     }
    ],
    "SPCX": [
@@ -849,6 +853,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-13",
      "c": 163.42
+    },
+    {
+     "d": "2026-10-14",
+     "c": 156.54
     }
    ],
    "BTC-USD": [
@@ -1251,6 +1259,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-13",
      "c": 82784.61
+    },
+    {
+     "d": "2026-10-14",
+     "c": 83210.02
     }
    ],
    "DOGE-USD": [
@@ -1653,6 +1665,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-13",
      "c": 0.0835
+    },
+    {
+     "d": "2026-10-14",
+     "c": 0.0843
     }
    ]
   }
@@ -25661,6 +25677,134 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB3Z2dlUFBCa0JreHNacHlwWm1QQkltallKaGNwU1c0QTYyRmRNeElCYXNVdlFERmhSZHRMUEhPeldRWjJKRnJqenVuR1Y0MzJtcVBR?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "PNEWS-9d4b89ed9e05",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "彭博2025科技富豪:疯狂更胜马斯克 一日首富埃里森最受瞩目",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9TNDFKQUFzTkFXMzRQVHlnM0t4czRqUnNwSUhEMG8zVnFKMTBIczFhU3ZjRTBSSTZnLWZkcDIzOGQ2RG9EM21reE9YbU1JMkdTclpsREFOdmg3UUQ0OC1JeUhlNA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-abde8a62983c",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "80岁甲骨文创始人的华裔妻意外被曝光，比富豪小了47岁，是第五任",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUdm5pQnExQnRGREI4ZmxSYVI2X3FydFVfQ3FTdnlGMG1KeFFZQTFxS3R1ZXdHb0xwRi1iWWM1cHkyRHFkY2YxY1hGWTFNVTBHZVdKTHB3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c087bb17828f",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks重申：阻止自身模型被蒸馏的最佳主体是企业而非政府",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rQllTVGZQczdma21pRzJKZGFtSmcwb0JaNTBRSHpHZ1RfeGJVR1pYMGZGS1ZKemtkRWRRMjBIeFEyTkZjWDVhTG43ZTFMcGFNSGVvUzVuMERiM0FHV2FINzZDVEpCZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-67f9b47c968d",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "阿里巴巴蔡崇信激辩“白宫 AI 沙皇”：AI 应用中国进展显著，AI 没有赢家通吃",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NSUptaW5oYWpXRDlMZlV0aS03RFNQTk1ma0VFTUVmeWpnRklpUmUxNmxFajJOMzRxOXM1SXZjZkRoNVgybFAzSllQWkRWaDVybzgyNXV0c19QM2F0YWNUT0JuYnRoZk1NaFpodXBXdndMc0RRTXA5NHVGZXpLbDA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ba5ef8e549bc",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Vitalik公开质疑Peter Thiel的“非密码朋克”立场背后是科技思想的派系之争",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM2c3SGxHMm84NGU4V0tXTHMzamZUajh2T2ptZFBQVlZMdG5aTkVSSHVlWElscGtISXlJTXIzTXh5cFFGRHBmT2ZlSDA1YnZfT0M4Um1jY0VRTjE4d2kzbDlQWjN1Nm9xZDJxS1RrOG1zazcyM2RzTlZLYlcycnYybEZjTWFpd1A4a3lMR1RlY0hXNktIemE4RDZTWQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-052964314f63",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "当万斯崛起时：PayPal 黑帮如何改变了美国政治",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VckFwV0xacUNCdkJnS0NYQlV6UkhiWHJBcXB1d0UzZk9zQWxKcWJmYU0wamJIREg1NXd5cjVYT0tYdFN0RU9LbDVvUkRSVEZSa1NSUw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ea26b7d3e7a0",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood警告记忆体周期「凶猛」 中国扩产恐加剧波动 仍对AI前景乐观",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMioANBVV95cUxNSlEzdmtYcjVLaXpMdnFfZ1BPa1VTdll6dGpDTXVORGNValhPZWh5M0hKa2tYMmU5SEc3VEtIcWtGblJOMlI5OUJqblRlSkt1OXJOLThOc3FrZ0JWX1FlcDRJVkRjRnFXM2JIM29aZjlwLW5hQndUOHhyYy1XZlZJUDNTRWlmQjdXZTdtYUVoZ1RIamRlR3JHRzRXd3F4MEs0NGdlWEpUU2RJbjItd19VcjJJekxZYnh4VGoweHJQTHRhOGRYUFR1cV9RWFJLaGtTcXRLaXpPRWhtQ0ZjbVJRRmlfRVA0SmVRbms3RVNkaFBVMXVaWmJqWl9mR2xFTnk3YmFkVG5ZOGhaZFV3cnYzNUlGZkthcXFiY2tKU2pHdG4xM3draVBDM2d4eFY4TFhQbUh4aWFEc0YyWGE1UU91al9kaHZWdDZJLVNFa1RCYmRwcVpNSnpidGZVbUxVLU9ISDMzYkoxamxWSmhJdW5SWUw4SmJGdWtoZGcyemlBeVJuUElkbFdvbGhOeHlyRFRDT0hOVElveWRPWmpNdGZFXw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-006a675005d0",
+   "type": "event",
+   "ts": "2026-10-14",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "追踪Cathie Wood：买入Cerebras财报后的回调，继续减持Palantir",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZWN0WmlHaWc5bTZJZk9qRHlvODhSbThDcE5nVVVUWDVmUHREMzFPM3pTSmxybEc4Mi1YUDNCV3ktMnhhOWVRVlpoVWRDOVp4aVNRTjlRS0poRzEyYUN3MTNCNUlTTncyajlockVrbDVYUmFoTUlXZnVfUVdGWmZQREZEM21HZUZmamY2Wm5ER1lVRlJFRVNqS2drT3ZhWkUtZ3cweUh6TmNWOUduajhVMl94ZWRBUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -25763,7 +25907,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2741 · xAI 307 在招（2026-10-13；Tesla 无免费接口）",
+     "v": "SpaceX 2742 · xAI 304 在招（2026-10-14；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -25867,7 +26011,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-13，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-14，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -26343,7 +26487,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-13 11:05",
+  "last_run": "2026-10-14 09:18",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -26354,7 +26498,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 103,
+   "edgar": 104,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -26363,14 +26507,9 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-   "net": "2026-10-13T00:28:11Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
    "net": "2026-10-13T10:33:44Z",
-   "status": "Go for Launch"
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-481",
@@ -26380,23 +26519,20 @@ window.MUSKINTEL_DATA = {
   {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
    "net": "2026-10-19T10:30:00Z",
-   "status": "To Be Confirmed"
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-15",
    "net": "2026-10-20T22:14:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-16",
+   "net": "2026-10-24T05:29:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-04",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
   {
    "ts": "2026-09-04",
    "rule": "R3",
@@ -27347,6 +27483,14 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 11 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-14",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 8 条（明细见各人物卡）",
    "src": ""
   }
  ],
