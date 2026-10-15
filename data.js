@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-14T09:18:11+08:00",
+  "generated_at": "2026-10-15T08:40:03+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-14",
+  "asof": "2026-10-15",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 375.23,
-    "chg": -1.43,
+    "price": 367.16,
+    "chg": -2.82,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-14",
+    "src": "Yahoo 2026-10-15",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 156.54,
-    "chg": -8.95,
+    "price": 152.16,
+    "chg": -9.21,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-14",
+    "src": "Yahoo 2026-10-15",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83210.02,
-    "chg": 0.36,
-    "src": "Yahoo 2026-10-14",
+    "price": 81520.83,
+    "chg": -2.58,
+    "src": "Yahoo 2026-10-15",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0843,
-    "chg": -1.59,
-    "src": "Yahoo 2026-10-14",
+    "price": 0.0817,
+    "chg": -5.84,
+    "src": "Yahoo 2026-10-15",
     "status": "green"
    }
   ],
@@ -451,6 +451,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-14",
      "c": 375.23
+    },
+    {
+     "d": "2026-10-15",
+     "c": 367.16
     }
    ],
    "SPCX": [
@@ -857,6 +861,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-14",
      "c": 156.54
+    },
+    {
+     "d": "2026-10-15",
+     "c": 152.16
     }
    ],
    "BTC-USD": [
@@ -1263,6 +1271,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-14",
      "c": 83210.02
+    },
+    {
+     "d": "2026-10-15",
+     "c": 81520.83
     }
    ],
    "DOGE-USD": [
@@ -1669,6 +1681,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-14",
      "c": 0.0843
+    },
+    {
+     "d": "2026-10-15",
+     "c": 0.0817
     }
    ]
   }
@@ -25805,6 +25821,184 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZWN0WmlHaWc5bTZJZk9qRHlvODhSbThDcE5nVVVUWDVmUHREMzFPM3pTSmxybEc4Mi1YUDNCV3ktMnhhOWVRVlpoVWRDOVp4aVNRTjlRS0poRzEyYUN3MTNCNUlTTncyajlockVrbDVYUmFoTUlXZnVfUVdGWmZQREZEM21HZUZmamY2Wm5ER1lVRlJFRVNqS2drT3ZhWkUtZ3cweUh6TmNWOUduajhVMl94ZWRBUQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-0fb49cd046cd",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla Roadster发布活动改至10月15日 2017年亮相至今仍未交付",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNDNqUnN3VThpZUtrV1liTmpPOFBfMzQwdEl2SV9HbnBfUUdsT3E0OTRLZDlBYVN5UF8wVHdOcnctRVJrSjhTWUdQVnMtM2hVdE4za0xoZExLcmdrRWp6em44R09vR0xFR3haX0RvWmF1MlhnRzJJMGtPaHNXbU5Ba0VBR1RiV0lIaTB2dGtQRnk0TzhFQWlPeTdUWXpFNHBwVktJR2pPZjhZTW1sMjR3U0V4bktfYjl0NkFVX2lZZGE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-19369fbc23b7",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "“给你534亿韩元，替我保密”……女网红公开秘密协议，Musk否认",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zQk10QUZneTZpMi1nQnU4cXJTamxLV1UwYlM3bGlnQlAtdkQwbnROSTkzNkNGSVhSWUF3QVBoUXp0X0hIVnZrSWlzWGZYelNOOUFVMkNLVUJvVmR6ZjhyVElGaU8wdjhLd2hhZEVxWHdZYTFK?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab2b1e99ed97",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克家族出了9位创业家 冒险精神代代相传",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5IdzNFSjhFVXpwZHgyTzJsRnZ3RXBCUXloaGVkVWpvaGxEeWd5OXY1QWkzN0picWVIZEVYd19SOUhvVVhTdnhDUzZjSi1lMF9HeUxPT2VvYUNleE52RU9tMQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-db988ba99ded",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "要买CNN的是特朗普势力？编辑部越来越慌了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RaGRNRWs3eFNSY1dFNFlsaEtWNmQyWmwzbWY0RnZHMkxNeTJXZUd0eDRvbzJjaHN4YVdBR09sdGpMZmduQlFibjJPSmctYTFabVhVLWNyMGI0SkljSmVwcGtpN1VFNENYQlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a1621710b958",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "单日最大财富增长纪录诞生！甲骨文埃里森超越马斯克成全球首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QaHp5aTBSSG96eWV6bXBFNTlPUUVlSnNFVzdqSEs3WGlub2JzVGFaZURMUHdmM2xHTEZFbzg5M0dGSEg1VHpvWkMtQTFVRVpNanllNGlxLW4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5d28d331b022",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "David Sacks批评Anthropic夸大小模型安全威胁，称企业专用小模型正冲击闭源AI商业模式",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10MDlGOGs1UHVXeHhaMUpuX0RDYWoyX1RjZUZCMjB0d1F5OWtsUEctZDlRTTFuZjRDVHU1bk9fOGh1enNTUGZxNUJaSmhkMkw4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-91690cd766a4",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "AI巨头喊放慢，是在跟美国政府讨价还价硅谷知名投资人David Sacks在采访中谈到，当前前沿AI市场已形成Anthropic与OpenAI的“双寡头”格局，两家公司在市场份额、收入增长和模型能力上都领先，他认为，AI企业应主动将产品安全、可靠性和可预测性放在首位，这是",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MQWJWTERHa0Y5OHA2bl9Vd2lIX0xsV283UnRNbHYtZkIwRklWT0Jua0ctNEp0YUljSmVLM2VENHhmSzk1bEVXYWdFcUgzZHJ1VjV4Y2lR?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-03f5005233f1",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "风投大佬彼得蒂尔：马斯克是“负面榜样” 因为太强",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOEgzWHE4VVpkQ0dxWVpHaldyTXlOX0Z0N1A5MUJrUW5OdVV2X0ZKRzZ6X1lDaFhLbXNKZDMycm1nN1liTldraTFmZ1pmMG5UdTVWekhNcHE4RHZIZ0dBcE9JTG9ENzB3c2pUaGxSTlBGcG56U2k4STRZbGJMUmhlMUNkeTNCOGdIUUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9a7b6cf5b213",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷精英膜拜哲学家尼克·兰德，其加速主义理论影响科技界",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aOXdwd1o3RG5HSjh0QjhzSmRlVjkyU1ExSGVWalJPWURVNkJQcU5lSm9oM3VjOWxEdlJlNGZuRVhXWGUzS3hENGhlMk16emp2ZFlyQg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e96da87360c6",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：ARK Venture Fund已通过Securitize实现链上化",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jMk1IZkZMZjBPcEFyNHd2N3A0RkNBSWZtWHJxYWdDb21JQzdDdm1CVkNDX0VZVnhDaWlacTZVRS1YZG43RUpMMnAtYVZXelI3VTVv?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7c5fa5c9121b",
+   "type": "event",
+   "ts": "2026-10-15",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood：关注 AI Agent 资金流向或成技术趋势指标",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRE1lSVp2a19LaFYzYk9Wekx2WFNoa01OdzBtejRmOERDRko4aEFxQlVMU3BGMzR0VHJaUjhvZ1FzQjlFbDRmQ2pENjNjalptTjhBcVZNeGpOdnVSQjRuM0hTY0RaVjlBVUV4WnJxSFlGR0dlYVBkWi1OTThtdVh3dVVMTmdkcTJKd2drTjJoM1pZaDZRTGtmMUtFWHlyWEI5T2RGSkVGOFo0ZVV0LXdta0oxVEtvUFktU2VRdzhlX2NaZ1ozX21mbjZ5V2x0X3hLMmI0STlRZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -25907,7 +26101,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2742 · xAI 304 在招（2026-10-14；Tesla 无免费接口）",
+     "v": "SpaceX 2746 · xAI 302 在招（2026-10-15；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26011,7 +26205,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-14，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-15，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -26487,7 +26681,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-14 09:18",
+  "last_run": "2026-10-15 08:40",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -26498,7 +26692,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 104,
+   "edgar": 105,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -26506,11 +26700,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
-   "net": "2026-10-13T10:33:44Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | USSF-481",
    "net": "2026-10-15T23:44:00Z",
@@ -26530,25 +26719,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
    "net": "2026-10-24T05:29:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+   "net": "2026-11-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Anthropic 签约 Elon Musk 的 SpaceX，承揽 Colossus 1 计算任务，备战六月首次公开募股 - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcmJhQ3V6NXlYaDNZSWNYbGZIeWdyekx6VVNpTnN0QldIYW12UTl3a2JqbDA2VlEyTXFDQ0RERjhaRUpVaHBWejNtdnNxUEF1bnlRRWJ3N1ByY2FNd2VaNmFWWXduLVA2ZEphWllCX1JoWTVuZXZBWE1Jd3RlU25iYkNxZVAwZTZMNnhuVU5tNjVvVENPWVhUMkc2VXgzZXUtN08zbENXelhwYWFmR2RuMDJueEtmdEVKY1lv?oc=5"
-  },
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "特斯拉停产两款传奇车型，改建产线生产人形机器人 - 麻省理工科技评论",
-   "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sOE5lNUFVakx3YVR5clBpQ09qMlZ3V1Q3VG5iZnlVekZzaVRjd25PaEVLUUdCd1hfQTlHbFFTclVIZUptcWZFSS1FYnpoQ2RlUkE?oc=5"
-  },
   {
    "ts": "2026-09-04",
    "rule": "R3",
@@ -27491,6 +27669,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 8 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla Roadster发布活动改至10月15日 2017年亮相至今仍未交付 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNDNqUnN3VThpZUtrV1liTmpPOFBfMzQwdEl2SV9HbnBfUUdsT3E0OTRLZDlBYVN5UF8wVHdOcnctRVJrSjhTWUdQVnMtM2hVdE4za0xoZExLcmdrRWp6em44R09vR0xFR3haX0RvWmF1MlhnRzJJMGtPaHNXbU5Ba0VBR1RiV0lIaTB2dGtQRnk0TzhFQWlPeTdUWXpFNHBwVktJR2pPZjhZTW1sMjR3U0V4bktfYjl0NkFVX2lZZGE?oc=5"
+  },
+  {
+   "ts": "2026-10-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
