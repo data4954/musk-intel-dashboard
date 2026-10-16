@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-15T08:40:03+08:00",
+  "generated_at": "2026-10-16T08:31:28+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-15",
+  "asof": "2026-10-16",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 367.16,
-    "chg": -2.82,
+    "price": 362.44,
+    "chg": -3.35,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-15",
+    "src": "Yahoo 2026-10-16",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 152.16,
-    "chg": -9.21,
+    "price": 148.62,
+    "chg": -7.44,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-15",
+    "src": "Yahoo 2026-10-16",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81520.83,
-    "chg": -2.58,
-    "src": "Yahoo 2026-10-15",
+    "price": 82346.89,
+    "chg": 0.71,
+    "src": "Yahoo 2026-10-16",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0817,
-    "chg": -5.84,
-    "src": "Yahoo 2026-10-15",
+    "price": 0.0811,
+    "chg": -1.26,
+    "src": "Yahoo 2026-10-16",
     "status": "green"
    }
   ],
@@ -455,6 +455,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-15",
      "c": 367.16
+    },
+    {
+     "d": "2026-10-16",
+     "c": 362.44
     }
    ],
    "SPCX": [
@@ -865,6 +869,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-15",
      "c": 152.16
+    },
+    {
+     "d": "2026-10-16",
+     "c": 148.62
     }
    ],
    "BTC-USD": [
@@ -1275,6 +1283,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-15",
      "c": 81520.83
+    },
+    {
+     "d": "2026-10-16",
+     "c": 82346.89
     }
    ],
    "DOGE-USD": [
@@ -1685,6 +1697,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-15",
      "c": 0.0817
+    },
+    {
+     "d": "2026-10-16",
+     "c": 0.0811
     }
    ]
   }
@@ -25999,6 +26015,172 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRE1lSVp2a19LaFYzYk9Wekx2WFNoa01OdzBtejRmOERDRko4aEFxQlVMU3BGMzR0VHJaUjhvZ1FzQjlFbDRmQ2pENjNjalptTjhBcVZNeGpOdnVSQjRuM0hTY0RaVjlBVUV4WnJxSFlGR0dlYVBkWi1OTThtdVh3dVVMTmdkcTJKd2drTjJoM1pZaDZRTGtmMUtFWHlyWEI5T2RGSkVGOFo0ZVV0LXdta0oxVEtvUFktU2VRdzhlX2NaZ1ozX21mbjZ5V2x0X3hLMmI0STlRZw?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-5b3002da7307",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX Starlink限速冲击乌军 Elon Musk称军用通讯限制由美方决定",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1ZENHRiQTA3eE1oeW9ZWUsxaURvZHRPZmt1Z3R2UUxaSE5IWF9QMURzbTMwYUxhR2U1VEk0LWQwTXFKVm9jTXhpbkpLbkd2azVzbmdudUYwMnJjRThJY2hrS00wdkYxVWgzOHZzdEJJZDZwX1VkeHJjZUM2VUFqazEzaDdqU2d4NS1NSmlZMnlJVTJDSFJfSmNOS3FieUk4LWRIUE5OOA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-242c26ed89b1",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克的SpaceX公司可能会改变美国人购买iPhone的方式。",
+   "payload": {
+    "src": "Vietnam.vn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdDE1MlhhaWh3RzZsOXFkcTlMd3luM2U0SXpqeXFfSzFDejNfYm1PMHE5V2d3UkNWN2dfbXpFY184NjJtX0tqbFFhbTVUeHVhTTRxcnd0eG5XS19fY0pMY3l1VDhfY201QkpfT1lRaGQxZFVJcXVkc3FJZEgxZ2QtVGpkVFp1Rm83OG9xeW1UbDNoeDhl?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-da546664e718",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk又有新idea！未来可以坐在Tesla里面玩PlayStation和Xbox！",
+   "payload": {
+    "src": "Moretify",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZlhYNWFpRi1GNTNSdVppNFVhYi15MjFfbkhpQVNDN2tETXUyZ21heEtqN1FTSW1FSWFReXYyNDlKT3JoWGhjWGhJcHhlSGNlQ0cwRWRXdHVUb3JJb1FSNmZQcVQwVHl2alo1UEU5S3Z4Vl9UZG12QVhkSTFYVjVwY1g5bjYyNHVMTzlwbk90VjBxY3hhUGpQRVNwR0VibjBHRTRGd3Q0bGNtN2RkWHNyVktwRnF6S21KVDlNQTA5TmRYa1c1aUo5Q1JCb1pUX0pTRU10MFlLdTlrMWV2cHlNdjlmaw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-600bf650fd0f",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文(ORCL)股票9月17日开盘上涨3.40%：投资者必看的核心信息",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd1hlVUE0RkFxekxfd1prX3ZqNEdZWDFXVjdPd2ZtMF9INUYzWDNjYmI2U3BvNFlTclZrNXVhdUtuV3ZMQUQxNE9QZy1zZG9QTmEwcjdPdG5MQnoyTU9jWXN2MXZsTUdqX1g2NGxjSXBKdlVoamFWQ0JDUFJqallJcEdvZ2dHZkozM2lsN3VMQUI2VGFZdXc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-8e8011f22098",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "37 年 CEO，Larry Ellison 最令人惊讶的时刻",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9FaVcwOGpTcV9xa19LS2YxYTVDX2pJSmttS1hMenRTd3kzdE1pQmFXVnlVR2RPVDk3TEIzNW5fUlpUdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-60c07e6f61c2",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "众多大咖和政府高管出席，一文速览比特币 2025首日精彩内容",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uejA0MjNXTk5RSDlZQllaSkVYVWtCLWJ0bjJuSkoyS2s3WUthZV95eGVkWHc2NWw4MXEyRnZfX0J0b0ZSX3hCVXlXTEF4a1JKU1czWTBXM2pBZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-79ae1cf8e9f1",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "马斯克：苏联解体后，为何北约没有解散？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Val9yMFNiUll3dE9mak1FZHdOby1zZVZLeTFxNmFpaGdlV19QaVJaMHEtZjZIZGlla3RycVhtRmhpTmhyWUx4aEMzd25TTVFHVlZnRjVFeWJRT2o1NThmcHFtbWlySVRaN0E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7ac39336aaaa",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "洛豪宅曾喊2.5億 法拍砍半以1.3億成交 神秘買家曝光",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXdyaUNLbkg3S3UtNGhHNkowcHJlbEhzWnNkNlF4ZVVjVXdET1MxQ0lOMHBLdXhWRTZXUzBCaF90Q3N3akg2dWFTQWxaOGE0enJDT3NScVVTVHBZWkFobkpEY2hnUVBXUmNraXJfenJOQUhKTVF0MVJHelBaUXFpM3E0M2M3UdIBZ0FVX3lxTFBYODR5YWxNZHBfTllzMnJCbXJmMHctcXk2ZVZUZXVqRTBzbU1vS1lSM2NMUnJmTng4NG1Idzkta1NtYmE1TVVzeDh5aE02MkFyY096MW1LdzdmUEpRSWpna2RtZkZoTkU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c3ee3320ab6c",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔支持的“海上飘浮城市”，到底长什么样？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5pemdJZ05Xa3VueU1tRl9ZOWthYUlRUFZrdDd0R3A3cXVzdURQMlBfQU92OHJZNTYtTnAwb0E5SDRmZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ab430ccfb4f1",
+   "type": "event",
+   "ts": "2026-10-16",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "何一：Cathie Wood不是币安用户，币安不服务美国人和美国主体",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5dHYyOF9tMzgyWW0xM1FMb0owcDVQSlFoRFd3dmEwSllBejZaeFdzbW9PMDdnaWJaOFpPSFR4WlNHOGkwN19pZG1NSDA2VEZBMzR6SndFcExzZlZPYVhZOGdpUFFEUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -26101,7 +26283,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2746 · xAI 302 在招（2026-10-15；Tesla 无免费接口）",
+     "v": "SpaceX 2751 · xAI 304 在招（2026-10-16；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26205,7 +26387,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-15，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-16，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -26681,7 +26863,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-15 08:40",
+  "last_run": "2026-10-16 08:31",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -26692,7 +26874,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 105,
+   "edgar": 106,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -26702,8 +26884,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | USSF-481",
-   "net": "2026-10-15T23:44:00Z",
-   "status": "Go for Launch"
+   "net": "2026-10-16T00:01:05Z",
+   "status": "Launch in Flight"
   },
   {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
@@ -26727,38 +26909,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX首次公开募股的争夺为代币化股票带来了早期教训 - CoinDesk",
-   "src": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPanZsQkZ4NHpfemtONENJOEtYZXRtMWxnTjEtQVQwclo1OGZ1MGVxVUNMVTc1UFplSEhvajZKWW1xUlB2bkJSX21lcEVueWh3SHFTa2t5LVNlT3c1VHlMYUlSNzZiS2tpNzJxWHU4R2lpOTY0N2VjLVFaLXVWMExoZ0RWWDFCNnZwdmZfNWx3ZlJCX2xjQjM4VGJZZmN2QXprTDQyNDA2WlNKS3lFakJRcFJKTEFGRkdwbG5aUFI5MzBzWWM?oc=5"
-  },
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla Stock Falls as Elon Musk Loses California Court Battle Against Sam Altman ",
-   "src": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQm5tcTBCemJjN3BKWnRGdFl3VktFendSTmRrajM4MFY4Y29HOXp2V0NhNC1CYk5YT2pNUFJ5VkVFSmNobkRkaENaUW5leEJzNTQ3eFBONkxUOXlYMXFhZTI2dUxzUEgxUHdaOTJIOUIwUnFyYkhxYzYxRkhHZEh4NURJQVJKX05iTy1XU3dBbFRrRVhwN3RfSWtvd3dTN3V0d3BZMU94TFM2WnpKSGhmQkF3VHZnZEo0NGlBb21yZG0xN29wZjF0THh3?oc=5"
-  },
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX突破2.5万亿美元超越加密市场，SPCX股价还会上涨吗？ - TradingKey",
-   "src": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSTNtQTlQNkFpN0hFSG5tNlN0WHZSYU0tTmtYSGRSWG9SZ2NFc3lGcGQ0aTZjeU0tRDBtNU1MUXJFN3VUVzlZeDQ5MTJaTEFoUW1qdGtoOWFnbVlZZjdIc0RUZ010SFZUazFVNEhGNm4zNS0yam84OWVTQVlHcDItcHFqVE5sM3hyOWkxMWtEeURZR0xDZVJWR09oMU9wakRhcUVNMUdUcExmYl8wSFNzM2h0ZTZIOC1kUEJFeWFNVlFJeEsxcy0zU0NvT28yU3hG?oc=5"
-  },
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX与xAI合并 Elon Musk“超级公司”大计摩拳擦掌｜新闻背后 - 香港01",
-   "src": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxQOWstVjAzY3oyUFlldFF4RXdtWEo2R2p5RE1FSW1QV3RQeUdMSjR1WlpsYm5seXB0ZUJGVUxQX2hKMjhrR1BtNW9OZ3pCaklYUHc1YUxUY2hwdWJRXzUtT05rdEV1cEd4SnluS2JZbE13WU9CUmJWT2Vab2pYbVB0dzhPLXp2ZDZuWWZHOExxUTJJd1pEdU1LSThMeWgzNmUxbHhmOXlYMG96UFBPMXpEV2VtOEZjbHZYSFY5TmYzMHFMbThqMnMzVXktdWlEd3BodENPT1dISXdUYUhMUlJjbER2YXdOMzNhckRZT3hOQ3I2VURxVVFlNUJmYVdMOThHT1VQZ3BQUDR1QmlpZlRvQU84Ukt4SlFRLVVyaGZDSUV0eWxlcWhkZjJnSHRTLTlkQnN5amhWMDNtQVZVWGxTWHpXdUFMRndfUmM0LVpXNWluSElJNEFDRndoMHlIVmtoSHBj?oc=5"
-  },
   {
    "ts": "2026-09-04",
    "rule": "R3",
@@ -27685,6 +27835,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-16",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX Starlink限速冲击乌军 Elon Musk称军用通讯限制由美方决定 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1ZENHRiQTA3eE1oeW9ZWUsxaURvZHRPZmt1Z3R2UUxaSE5IWF9QMURzbTMwYUxhR2U1VEk0LWQwTXFKVm9jTXhpbkpLbkd2azVzbmdudUYwMnJjRThJY2hrS00wdkYxVWgzOHZzdEJJZDZwX1VkeHJjZUM2VUFqazEzaDdqU2d4NS1NSmlZMnlJVTJDSFJfSmNOS3FieUk4LWRIUE5OOA?oc=5"
+  },
+  {
+   "ts": "2026-10-16",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克的SpaceX公司可能会改变美国人购买iPhone的方式。 - Vietnam.vn",
+   "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdDE1MlhhaWh3RzZsOXFkcTlMd3luM2U0SXpqeXFfSzFDejNfYm1PMHE5V2d3UkNWN2dfbXpFY184NjJtX0tqbFFhbTVUeHVhTTRxcnd0eG5XS19fY0pMY3l1VDhfY201QkpfT1lRaGQxZFVJcXVkc3FJZEgxZ2QtVGpkVFp1Rm83OG9xeW1UbDNoeDhl?oc=5"
+  },
+  {
+   "ts": "2026-10-16",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk又有新idea！未来可以坐在Tesla里面玩PlayStation和Xbox！ - Moretify",
+   "src": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZlhYNWFpRi1GNTNSdVppNFVhYi15MjFfbkhpQVNDN2tETXUyZ21heEtqN1FTSW1FSWFReXYyNDlKT3JoWGhjWGhJcHhlSGNlQ0cwRWRXdHVUb3JJb1FSNmZQcVQwVHl2alo1UEU5S3Z4Vl9UZG12QVhkSTFYVjVwY1g5bjYyNHVMTzlwbk90VjBxY3hhUGpQRVNwR0VibjBHRTRGd3Q0bGNtN2RkWHNyVktwRnF6S21KVDlNQTA5TmRYa1c1aUo5Q1JCb1pUX0pTRU10MFlLdTlrMWV2cHlNdjlmaw?oc=5"
+  },
+  {
+   "ts": "2026-10-16",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 7 条（明细见各人物卡）",
    "src": ""
   }
  ],
