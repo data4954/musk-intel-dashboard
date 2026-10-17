@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-16T08:31:28+08:00",
+  "generated_at": "2026-10-17T08:38:49+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-16",
+  "asof": "2026-10-17",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 362.44,
-    "chg": -3.35,
+    "price": 354.72,
+    "chg": -7.31,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-16",
+    "src": "Yahoo 2026-10-17",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.62,
-    "chg": -7.44,
+    "price": 146.03,
+    "chg": -10.17,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-16",
+    "src": "Yahoo 2026-10-17",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 82346.89,
-    "chg": 0.71,
-    "src": "Yahoo 2026-10-16",
+    "price": 81519.06,
+    "chg": -1.9,
+    "src": "Yahoo 2026-10-17",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0811,
-    "chg": -1.26,
-    "src": "Yahoo 2026-10-16",
+    "price": 0.0806,
+    "chg": -4.32,
+    "src": "Yahoo 2026-10-17",
     "status": "green"
    }
   ],
@@ -459,6 +459,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-16",
      "c": 362.44
+    },
+    {
+     "d": "2026-10-17",
+     "c": 354.72
     }
    ],
    "SPCX": [
@@ -873,6 +877,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-16",
      "c": 148.62
+    },
+    {
+     "d": "2026-10-17",
+     "c": 146.03
     }
    ],
    "BTC-USD": [
@@ -1287,6 +1295,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-16",
      "c": 82346.89
+    },
+    {
+     "d": "2026-10-17",
+     "c": 81519.06
     }
    ],
    "DOGE-USD": [
@@ -1701,6 +1713,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-16",
      "c": 0.0811
+    },
+    {
+     "d": "2026-10-17",
+     "c": 0.0806
     }
    ]
   }
@@ -26181,6 +26197,202 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5dHYyOF9tMzgyWW0xM1FMb0owcDVQSlFoRFd3dmEwSllBejZaeFdzbW9PMDdnaWJaOFpPSFR4WlNHOGkwN19pZG1NSDA2VEZBMzR6SndFcExzZlZPYVhZOGdpUFFEUQ?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-74609fd785fd",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "道路？全新 Tesla Roadster 根本不需要",
+   "payload": {
+    "src": "HYPEBEAST",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdExpSkNWN19fTlc3cDRWVURsYlhjSlg3dlM0SXdpM1hMazhKQUFFbHBWU0FfZy1PX0p5OWZkazRrSnh1aGtkcFBKanhNaDFoeW53dHBKdWhTbDRJRERsSnlsSFRlMG1EWTR2eVIxcElSNzhqY2RIZE11Qi11aW1uTkRUanlRczAwTGoweTRBd0dLSEFsbU9KZW1EQXV5cE10?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-355eb5d1eae8",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla发布新一代Roadster 现场上演跨越并排停放车辆的跳跃",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVNEcDFDT0Q1SjM5YXlMUUx0enZvYmQ2eUpGY1RUM1hwaGlfaEMtZXNENEdCdWRxXzF6TDRCQkdObkhmNEJtMEZJd25mSUlaUDZnS2lLMGpEQndBdmYwb2RtVl9WX2ZNWUptVW1HSHJESllOYzFJZmdVWVpNN2FJUEVyeTdfaS1RLWRDdFJEbVozTS03N0o4S3BuQU5FREY2dlZEM045Q1MyYlU5TktyZFR5MVFZZw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-7d4d3a400daf",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:birchall"
+   ],
+   "title": "马斯克被曝提出530亿韩元封口费，马斯克全盘否认: 国际 : 财经日报",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TeHgtaE5tLUw5RTlkMXpmRzZRSkhra3ZqZ2FRamk3S3RDRE1KcldnZjZlVlUyMHZsMGFfWVNZUW5IaTRnUnljVWIwV1dfd2dCUWRjTnlpRlF0b0VER01sNHFn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-994180465028",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "马斯克父亲：不以首富儿子为傲",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ySjJ3eE9aLXRtLWkxSkpuZHZQMjJvdHVVc1FYTHB1Tnh0SE52em9WWnpLaTRKenhrZ1BUWFVVUjZ1dURQNTJuLXFvRm0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3a9d68a64526",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "五段婚姻，浪子不老：81岁首富Larry Ellison的狂野人生| MarsBit News发布于币安广场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTQm8yZ2pHaGlCVEJBaFlGb2p1Y1hmZVh1OFlhNzFmY002X3NHSjdUSnByUzdvRVdYbWpnc2l2WHBuY1dCOW9zY3ZvOWJ0MC14OUVQV3pDLUprRVh2VmdOR3p0RndIdlE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-90f8df56c94d",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "刚刚！全球首富换人！现任妻子为中国姑娘|埃隆·马斯克|甲骨文公司|拉里·埃里森|软件ETF|Piper Sandler",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvRVNsc0dGTm1Hc3YtTXNkQWhSYWozUXN6M1psWWRmektudERiQ0ZfSjlta2JYT1hXeWxNNW9kVzFhcUtjYkxiVnI1NUVnd1dneDUyNDdWdUJ5dEFiODFCZXhIMEJBUzZTTk8wdm5OX19ha0hhRko3Tg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3725f7d360c6",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "加密政策推手退出白宫，谁来接管美国加密议程？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PdW1hMWZFWDVaaE95ZjhtS3Q5Y2YyM2RiNWJOZWlvYTkzMzlsRjF4OHpSZTVOdURfNGFmU1hIQlEtQy1BQzZ5SDM1QVlzbEw5SEdEbThISk5TTkU?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a0559a21f155",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫加密主管Patrick Witt 卸任：市场结构法案仍卡在参议院，他是今年第三位离开白宫的加密要员",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aak91dFYxdnM0MVcwU0puRGVBenhCQlhtTkFLZUItSmduU0ZtcjlSQlA2QlFkbEpleWY5VnpZcW5ZMUxsWEhISFRvY0p1SmhyZ2xmbw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6c11523aef11",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷科技精英如何掀起美国文化革命",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QVG5MWkV5YU1hVE1qcWhpdk5SNHEzd1NHcnp2NEhfQnN4eUlrVUR6TlBfOXlTT1ZwRU9vb2xFMmRnTGdQakNmY1hOa1FiVHV2cnlqV0M5NkFoMFBhelVvTTZWQmxqWmpFNDkzMzB2b2w?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0528a3bebb38",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel推荐的书：勒内·吉拉尔《自世界建立之日起便隐藏的事物》（Things Hidden Since t...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DNHNsa3FqUmZ0akRBcHN6SWFaNUZuallKR3RxaDVQYXhDMGdIbVRPNy1VMGl3NHhhOGloclVKR0pmeGROY04xcG9qdEIxN0N0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-88c720303bc1",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z合伙人Marc Andreessen称AI让人变成“吸血鬼”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QU094VGtENlNqMUliazhvVldNWE9ka29WM0NBMUhKaWJGLVJyR3pubjhXbVIxbVRCREVXTVFXWU1RNXRSeDZ6dlpTT2dfS0hBZm1KUXh5N2FjT3MtSXlmNXprR2NkbFVnVTBKcG5IRDFUeUdm?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-acecd5a8bf84",
+   "type": "event",
+   "ts": "2026-10-17",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel低价接盘AI基金股票，加密行业再次输给Ken Griffin -区块周刊BlockWeeks",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQbFRoMHhXcThhbTQ0bV9IeDVvTmY0ZUNRZE1mVHFQU1NjU1JIVlo5N29NNEpXMUhraElDaEVWcXlrOGVkckdYT2ctRE94emcycWFOR202cVJUWGZRbzFPZEJRMVRJWlhISmxBNEdHT0UwZXhmX0NZbHhiUnBsVUdZbWdvLWN2c29SZVh2Y3FlOVNsMTB0NW9rMWIyak1FVmVOckVycndzZFBQMTNsR0VDRFNUYl9wOHV5YlFCMTdoNVkxVXh6TkJMLUFka0NyOXVkamhLSHo4SWNxbjdRYVBzckI4ZjZNbGpUQVNoMWZydVY1WHYxUDJmZXV3N3JzZGJhbnUtNVJWX3owSl9EVlBUZS1MRmdhMUlMRFoxbDg2M0lvR3VoV1FpUGNQUGUzTDZFTmMyOFVaTF93YVVmczBUdG1JZDlzRlloLXZJWXZYM0VLQkdRTXE2NjMtSDdZZUIzaEI5VA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -26283,7 +26495,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2751 · xAI 304 在招（2026-10-16；Tesla 无免费接口）",
+     "v": "SpaceX 2772 · xAI 305 在招（2026-10-17；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26387,7 +26599,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-16，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-17，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -26863,7 +27075,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-16 08:31",
+  "last_run": "2026-10-17 08:38",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -26874,7 +27086,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 106,
+   "edgar": 107,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -26882,11 +27094,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | USSF-481",
-   "net": "2026-10-16T00:01:05Z",
-   "status": "Launch in Flight"
-  },
   {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
    "net": "2026-10-19T10:30:00Z",
@@ -26906,33 +27113,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
    "net": "2026-11-30T00:00:00Z",
    "status": "To Be Determined"
+  },
+  {
+   "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
+   "net": "2026-12-31T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-04",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-05",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-05",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-09-06",
    "rule": "R4",
@@ -27867,6 +28055,30 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 7 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "道路？全新 Tesla Roadster 根本不需要 - HYPEBEAST",
+   "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdExpSkNWN19fTlc3cDRWVURsYlhjSlg3dlM0SXdpM1hMazhKQUFFbHBWU0FfZy1PX0p5OWZkazRrSnh1aGtkcFBKanhNaDFoeW53dHBKdWhTbDRJRERsSnlsSFRlMG1EWTR2eVIxcElSNzhqY2RIZE11Qi11aW1uTkRUanlRczAwTGoweTRBd0dLSEFsbU9KZW1EQXV5cE10?oc=5"
+  },
+  {
+   "ts": "2026-10-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla发布新一代Roadster 现场上演跨越并排停放车辆的跳跃 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVNEcDFDT0Q1SjM5YXlMUUx0enZvYmQ2eUpGY1RUM1hwaGlfaEMtZXNENEdCdWRxXzF6TDRCQkdObkhmNEJtMEZJd25mSUlaUDZnS2lLMGpEQndBdmYwb2RtVl9WX2ZNWUptVW1HSHJESllOYzFJZmdVWVpNN2FJUEVyeTdfaS1RLWRDdFJEbVozTS03N0o4S3BuQU5FREY2dlZEM045Q1MyYlU5TktyZFR5MVFZZw?oc=5"
+  },
+  {
+   "ts": "2026-10-17",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
