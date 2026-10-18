@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-17T08:38:49+08:00",
+  "generated_at": "2026-10-18T08:07:20+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-17",
+  "asof": "2026-10-18",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 354.72,
     "chg": -7.31,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-17",
+    "src": "Yahoo 2026-10-18",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -10.17,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-17",
+    "src": "Yahoo 2026-10-18",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81519.06,
-    "chg": -1.9,
-    "src": "Yahoo 2026-10-17",
+    "price": 81300.0,
+    "chg": -0.32,
+    "src": "Yahoo 2026-10-18",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0806,
-    "chg": -4.32,
-    "src": "Yahoo 2026-10-17",
+    "price": 0.0791,
+    "chg": -3.13,
+    "src": "Yahoo 2026-10-18",
     "status": "green"
    }
   ],
@@ -463,6 +463,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-17",
      "c": 354.72
+    },
+    {
+     "d": "2026-10-18",
+     "c": 354.72
     }
    ],
    "SPCX": [
@@ -880,6 +884,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-17",
+     "c": 146.03
+    },
+    {
+     "d": "2026-10-18",
      "c": 146.03
     }
    ],
@@ -1299,6 +1307,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-17",
      "c": 81519.06
+    },
+    {
+     "d": "2026-10-18",
+     "c": 81300.0
     }
    ],
    "DOGE-USD": [
@@ -1717,6 +1729,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-17",
      "c": 0.0806
+    },
+    {
+     "d": "2026-10-18",
+     "c": 0.0791
     }
    ]
   }
@@ -26393,6 +26409,222 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQbFRoMHhXcThhbTQ0bV9IeDVvTmY0ZUNRZE1mVHFQU1NjU1JIVlo5N29NNEpXMUhraElDaEVWcXlrOGVkckdYT2ctRE94emcycWFOR202cVJUWGZRbzFPZEJRMVRJWlhISmxBNEdHT0UwZXhmX0NZbHhiUnBsVUdZbWdvLWN2c29SZVh2Y3FlOVNsMTB0NW9rMWIyak1FVmVOckVycndzZFBQMTNsR0VDRFNUYl9wOHV5YlFCMTdoNVkxVXh6TkJMLUFka0NyOXVkamhLSHo4SWNxbjdRYVBzckI4ZjZNbGpUQVNoMWZydVY1WHYxUDJmZXV3N3JzZGJhbnUtNVJWX3owSl9EVlBUZS1MRmdhMUlMRFoxbDg2M0lvR3VoV1FpUGNQUGUzTDZFTmMyOFVaTF93YVVmczBUdG1JZDlzRlloLXZJWXZYM0VLQkdRTXE2NjMtSDdZZUIzaEI5VA?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-362b015e59ac",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "巴克莱押注 12 月特斯拉与 SpaceX合并！预测市场却仅给19%概率 港美股资讯",
+   "payload": {
+    "src": "hstong.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBEZW1yS1RoVlBGdGZzOFc4UXNleWljT1V6VTRFcnRiTk1odUZYUkFrYVdwdFZmMXJqNEZWTWdmYnV2eVlXZ2ZPS0pZWEF1MXhHRjhhazhZU0pFM0JHNlI2UFhn?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-0c3ce21d3103",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "特斯拉新款Roadster推迟近十年后“起飞”",
+   "payload": {
+    "src": "华尔街日报中文网",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfM1kzTHh3Qm5WQVNiX19ZWVdweklnVDQ5dkdraFpwOU5HTVFzMDNDcXR2WGJpc2VKTzdUcFJfcm5ZSEN4TDNrdEZjMXRicnBZamhBWWlNMFE2b3huWXVSQVdYenZMcXRQVVlyUThn?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-dfc6e3af94e1",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克豪言：不懂造芯片，也要让特斯拉和SpaceX超越所有芯片制造商",
+   "payload": {
+    "src": "Yellow.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMisANBVV95cUxQb1JJM1pxa3ZiM0tyNmYtdHdBSWFCTzVCLW1PS0lwTFBTZmRmRGZDTWZnczlhM2dRS0NUS21IYlU3TGxtZm1jX1dNUDFpV056MGo0SmVKS1dMU1NERzdpRWtqbW9EU1ZadW1RbUJuY2xzZ3c0M1VsdmEzNVlzUmRCbXBEdkRpaHctUlJ5dXZueVQ4djZRSkc2V2Mxc1lYX2FDV3hSTnBsbHExVjA2YnFwMjlGMGN5QzU1MlZqR244MU9tUndwSUh0bE53YW5MRUptQVA2aFluOFlBcGdaUWpaOG92djRxMDMwUUloTnljeVpmUlB0SF80VjdYR0t2N3hfWlItT1NTQVJaSTlsR21DOGlkMmNWYTlJc05fT1htUUVGRFhGYlA4RWVRYWphcWF1VW5ubXhIc2JQVTR0VDVqX1JibjZPZHJ6VkNCcG9DUWlDMGNTSlVqUGxScF90bzVBdDZ5OU9WMWZUd0hDLURYREV1SERDVnBoVFE2Mm11NUV1Sm9KRjFhdmZndkxxRmg2aUFsek1JZVlHeGFLTXNYRExOLXhqYVBIcWlhak5VSG8?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-8b478c6cfec5",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla称新一代Roadster将于2028年量产，再陷跳票质疑",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipAFBVV95cUxQX25HQzFiUnRtS0FYUE5panFlaTdwdlpsUEhUdWt3Wm10NzFsV0ZPVHdxSW84bW1kdFFxMlluOFh3cld3SlFZWlhTdlJkRHVSUzlRamVYc3p2bGt6U3dIVFVvWGs0OE9LejQ1UWpfZ0tZSFN5QjNhNzhmYmIzNElsT1VZYWtXVFp6V0QwcmRZNUhRSk91T1lOUFpDUXhubnJwenFUNA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-5f8813a6cfae",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "被甲骨文联合创始人埃里森短暂超越后，马斯克重新成为世界首富",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94dFAzOGFnX1lBMS1JNGV0ajA4UUFULTBuZ3cxM0sybTcxWWIxMXI5Z3NwczhFeGJoNC1KaHhXOXE4UHBwVFpneXRhLVdqWlIwaVkwZkZfWWRNQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1ecfdc27fa73",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文股价暴涨背后",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoaWRwX1k4YjFwVjdUV29Ra3VTVlpwdzlfWnRPWm16bV9FM0FqUUVMRlRrbWNpcV9TMkxDVDYySlltbWNzUnp6NE00MlUza19ueFhwQWRn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-733c1e2ef969",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "大衛‧薩克斯將任總統科技顧問委員會聯合主席",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jTUVDTm5YbnhsdVc0dVB5MlIwMzJvYjVhZllQT2x5NVVISnRzZ3dpV1BWZldWbXVvTm1CcFEtS2Y1SkE3cktvVFFWX2NFaU5IaUx6VkZ3ZDZKcldXZUxCZdIBZkFVX3lxTE43Mmp3YWNTS3BLS0JpVF90N3g1VklxT0dIWXdhVGh0S2ROS1hvblRGLXN6bzRuREh5WExhQlFuTUp2enB4dEstNUVTYmpxZkUwMWlpSnZiWHRUU3ZSS0dZRGlxUkdGdw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6281ea008a91",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "华府消息|白宫内部对AI议题存在较大争议",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Cd2lLakFrMXk2VkR0WGRhX0FneVBGTDJ1TVQ0aVFKekgyM2NYTjdzWXFzc1BKRUFjU1hYWDBNUXBqY3lCanpqcWthLWdZNVVGVnpvdHVB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-fd62e5d76efa",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "ATAI Life Sciences上市：市值30亿美元 Peter Thiel是股东",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9yUjJSM21KMU9nZk9ENVdkaXhYNE1VM1RMdXZFalJaYkVIOUlrLU56dEpwMDh0SWNUci1kc0dZU2JCZGV4enZJV2RUN2NtZk1V?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-948b80807f14",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel 的“20 Under 20”少年创业者计划又开始申请了——慢着，你梦想成为下一个乔布斯之前，先看看这些话",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBfMkh4ajllVGZvSDRQSG92bU9iejNTLUljSmdhRzVwS0VES2ZxdnJFOVJrZElqR1BoSHg5Z2RYMV8zblQ4RFNPYTdRNTNGT0hzYldjZ0o4Tzd6T1lqVXlrZmI2REplTkF5YlFYMlJqSQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d47446eaa8c5",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Coinbase董事Marc Andreessen出售约390万美元公司股票 提供者 Investing.com",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5fQjVpblUzYVYtNmZnLVRkSVhDV1BYellvektUUG1HUEt6ZkhjeHVwWEt2SEtXc1l4V3Q2WFVPNERPbjV5STQybHk1ak9CVXZFNmJJVTk5V0F2cjAzOGJjc211TU4wUE5adUVDcl9vanRub21WYlNQbzlOOA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6dd88b5e18a1",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "亿万富翁 Ron Baron：15 年后收入需翻倍才能维持购买力",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHdXlFSGh3R0dNdFdDTUI3RmIyM29kM2NJbWZhSmpXRzZxZXhzRW1DekszR2VmQXE3TldkWVFBYUY5MEwwaWZXcWc4ZWE0aUxiQ1hjUll4N0VlenhPZXR3QzYyMTZ6TUw2WTdiRGNwaGdkSFc0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b268d2aa2650",
+   "type": "event",
+   "ts": "2026-10-18",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "Ron Baron称4.5%高收益储蓄账户税后通胀后为亏损交易",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjRzVfeHE5ampwbk9sb3hsY1JJbG1DTE1NQWVsaHllV0Jua19ZcW1yU3lYUHc2SFItdDdncmY0eVZyeUNjNXFURlBFSE9kZ2p0TGRPZl9CbVBEa2hCaWZEQzc4YWZtOGVKNVR1ZVlLaml5SkJ4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -26495,7 +26727,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2772 · xAI 305 在招（2026-10-17；Tesla 无免费接口）",
+     "v": "SpaceX 2764 · xAI 304 在招（2026-10-18；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26599,7 +26831,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-17，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-18，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -27075,7 +27307,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-17 08:38",
+  "last_run": "2026-10-18 08:07",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -27086,7 +27318,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 107,
+   "edgar": 108,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -27121,46 +27353,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-06",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX拟以600亿美元取得AI编程公司Cursor收购权 - 联合早报",
-   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04Qk1MeTVCMjNUTEtMZmE2djdtc00yNE1lLUQ0N0NXN2I2OXlJUEdoTHFXUkJvTHhzU3h5ZTAwRWVxMTA2eVQxdkZaZGNMRlhMSkQ2SVl6bGpXU3pQdG0yd19rQTNJTGhHQzNoejR3?oc=5"
-  },
-  {
-   "ts": "2026-09-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-07",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-09-08",
    "rule": "R3",
@@ -28079,6 +28271,46 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 10 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "巴克莱押注 12 月特斯拉与 SpaceX合并！预测市场却仅给19%概率 港美股资讯 - hstong.com",
+   "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBEZW1yS1RoVlBGdGZzOFc4UXNleWljT1V6VTRFcnRiTk1odUZYUkFrYVdwdFZmMXJqNEZWTWdmYnV2eVlXZ2ZPS0pZWEF1MXhHRjhhazhZU0pFM0JHNlI2UFhn?oc=5"
+  },
+  {
+   "ts": "2026-10-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "特斯拉新款Roadster推迟近十年后“起飞” - 华尔街日报中文网",
+   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfM1kzTHh3Qm5WQVNiX19ZWVdweklnVDQ5dkdraFpwOU5HTVFzMDNDcXR2WGJpc2VKTzdUcFJfcm5ZSEN4TDNrdEZjMXRicnBZamhBWWlNMFE2b3huWXVSQVdYenZMcXRQVVlyUThn?oc=5"
+  },
+  {
+   "ts": "2026-10-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克豪言：不懂造芯片，也要让特斯拉和SpaceX超越所有芯片制造商 - Yellow.com",
+   "src": "https://news.google.com/rss/articles/CBMisANBVV95cUxQb1JJM1pxa3ZiM0tyNmYtdHdBSWFCTzVCLW1PS0lwTFBTZmRmRGZDTWZnczlhM2dRS0NUS21IYlU3TGxtZm1jX1dNUDFpV056MGo0SmVKS1dMU1NERzdpRWtqbW9EU1ZadW1RbUJuY2xzZ3c0M1VsdmEzNVlzUmRCbXBEdkRpaHctUlJ5dXZueVQ4djZRSkc2V2Mxc1lYX2FDV3hSTnBsbHExVjA2YnFwMjlGMGN5QzU1MlZqR244MU9tUndwSUh0bE53YW5MRUptQVA2aFluOFlBcGdaUWpaOG92djRxMDMwUUloTnljeVpmUlB0SF80VjdYR0t2N3hfWlItT1NTQVJaSTlsR21DOGlkMmNWYTlJc05fT1htUUVGRFhGYlA4RWVRYWphcWF1VW5ubXhIc2JQVTR0VDVqX1JibjZPZHJ6VkNCcG9DUWlDMGNTSlVqUGxScF90bzVBdDZ5OU9WMWZUd0hDLURYREV1SERDVnBoVFE2Mm11NUV1Sm9KRjFhdmZndkxxRmg2aUFsek1JZVlHeGFLTXNYRExOLXhqYVBIcWlhak5VSG8?oc=5"
+  },
+  {
+   "ts": "2026-10-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla称新一代Roadster将于2028年量产，再陷跳票质疑 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQX25HQzFiUnRtS0FYUE5panFlaTdwdlpsUEhUdWt3Wm10NzFsV0ZPVHdxSW84bW1kdFFxMlluOFh3cld3SlFZWlhTdlJkRHVSUzlRamVYc3p2bGt6U3dIVFVvWGs0OE9LejQ1UWpfZ0tZSFN5QjNhNzhmYmIzNElsT1VZYWtXVFp6V0QwcmRZNUhRSk91T1lOUFpDUXhubnJwenFUNA?oc=5"
+  },
+  {
+   "ts": "2026-10-18",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
