@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-18T08:07:20+08:00",
+  "generated_at": "2026-10-19T08:19:17+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-18",
+  "asof": "2026-10-19",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 354.72,
     "chg": -7.31,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-18",
+    "src": "Yahoo 2026-10-19",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": -10.17,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-18",
+    "src": "Yahoo 2026-10-19",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81300.0,
-    "chg": -0.32,
-    "src": "Yahoo 2026-10-18",
+    "price": 81946.97,
+    "chg": -0.24,
+    "src": "Yahoo 2026-10-19",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
     "price": 0.0791,
-    "chg": -3.13,
-    "src": "Yahoo 2026-10-18",
+    "chg": -2.46,
+    "src": "Yahoo 2026-10-19",
     "status": "green"
    }
   ],
@@ -467,6 +467,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-18",
      "c": 354.72
+    },
+    {
+     "d": "2026-10-19",
+     "c": 354.72
     }
    ],
    "SPCX": [
@@ -888,6 +892,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-18",
+     "c": 146.03
+    },
+    {
+     "d": "2026-10-19",
      "c": 146.03
     }
    ],
@@ -1311,6 +1319,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-18",
      "c": 81300.0
+    },
+    {
+     "d": "2026-10-19",
+     "c": 81946.97
     }
    ],
    "DOGE-USD": [
@@ -1732,6 +1744,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-18",
+     "c": 0.0791
+    },
+    {
+     "d": "2026-10-19",
      "c": 0.0791
     }
    ]
@@ -26625,6 +26641,152 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjRzVfeHE5ampwbk9sb3hsY1JJbG1DTE1NQWVsaHllV0Jua19ZcW1yU3lYUHc2SFItdDdncmY0eVZyeUNjNXFURlBFSE9kZ2p0TGRPZl9CbVBEa2hCaWZEQzc4YWZtOGVKNVR1ZVlLaml5SkJ4?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-87df89ce67cc",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla Roadster会飞吗?新车发布,0-60 mph仅0.81秒,可跳跃翻转",
+   "payload": {
+    "src": "Pasquale Pillitteri",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOW4xRUhPaUNTam5ZZ0JHSGRXSmdjbXp2M2Fhd2s2d21kSmE0dVk1TGtLNi1NNWFHa1JrWUwyMmt2M25XdnFqRnZyX25xQ3VBdjZqb21KY1pVX1E4RlU3YTRDeXBZbTlZTld3ci0zNmNHZng4TUpMWDNnejdyRHJJcVVRR0FPd3pCOXRDcGZ5bXEtdVB3LWxNRzR1V21GaXFTUEpVT0NXRUV6MW8?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-dafbc37bde4c",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "TikTok永久封锁了宣传伊隆·马斯克纪录片帐户",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBkQ1BzVHB2OGl6dVo3RXBEckF1MndTVG1GWVB3ck9hUm44azk1b1lzUHVuRERMZS0xbHhKQ19Pa2doZ9IBQkFVX3lxTFBkQ1BzVHB2OGl6dVo3RXBEckF1MndTVG1GWVB3ck9hUm44azk1b1lzUHVuRERMZS0xbHhKQ19Pa2doZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2fab3b90483f",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球第二富豪掌控派拉蒙， 特朗普又赢了",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1EYTd3ZTRxd0l1Yy03Y3lnczRkY255WDNUZmJQeS1aYkRmOGdFZDdyQ3REQ3RqT3haQlBQNlhLbFJ4eGV3ZzN3NDE5X2s3SWozbnc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-363f376d545f",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "24H热门币种与要闻｜David Sacks：加密市场结构法案拟于明年1月交参议院审议修订；哈塞特：最新CPI报告好得令人吃惊 美联储有很大的降息空间（12月19日）",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9TbnVoVFZCUzR4aFdsWVE1anVfaFVIMnl2TnBYaS1MTmhMMVNTcUdaNXgxY21DSXVTM3dlQXpGUHlrclVTc1AyWTFrZktzX1E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-caae3fe3ad84",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "AI泡沫破了吗？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1aTnAzeXJ5bXROWlJkMFJ5M1NSbXZwRGhTcldNdnMySTc2YlJmeHl1UlJieDhPT29jRGNwd2ZpRG15VU5HYS05ZVFKYUxaRWlYandn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f50c4448e863",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel calls out Google for appearing to choose China over US military",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IWTVtRmd0WjVzX3M3TEJNU2lndlBfdktCQ2hBUkZQVXhCZUJLTmhPcVRMWXBESHdCd0JOSzdNX3ZqWTFzVUcxdks5ampCQmlFa1phaVp3MUZqWUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-9e2ce68fef06",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel的初创公司Palantir驾驭AI浪潮，获得14%的利润",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sSlhYS3M2aUY3c1R3UjZBYWo3OFlpSGdqLTBuM2Yzcm9ZWFJXNWVrVV9RbDk4bFh1X1hfckN1aW9RcmY2bWN4UDVhUHNLdzBQTVE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4266a0378502",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "对话 a16z 联创：AI 带来的技术进步与监管博弈下的美国未来",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1oT0F0X1Y0V014SHdlNHdUSzZyR0l2VXVMSHhaeUdJUGk0THlQdGlaN0lGNUhZUnpTMFVIM29RLWNnX3dFaXVvTk5SaXg0cFpPcDBtbw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bf50e7209123",
+   "type": "event",
+   "ts": "2026-10-19",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "今非昔比",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcnF3MElpWkpHNmx5QlB3LV9RQ2drNDJmTWcwRWF2cUFrZDZYMmZERDdpMnZ6TTNlazhtdmZxZ0IwNnkxaDBGY21LXzcyV2IzczQtb29vXzRNWEIzUXFUNUlpbHlSMjh3QXFRS294dkZNbGNmNUtqcFphVFY1c3huOFhqaW1yU2ZUcTFCMTFZWU4?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -26727,7 +26889,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2764 · xAI 304 在招（2026-10-18；Tesla 无免费接口）",
+     "v": "SpaceX 2767 · xAI 304 在招（2026-10-19；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26831,7 +26993,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-18，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-19，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -27307,7 +27469,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-18 08:07",
+  "last_run": "2026-10-19 08:19",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -27318,7 +27480,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 108,
+   "edgar": 109,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -27353,22 +27515,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk dice que Grok 4.7 será lanzado en 10 días y superará a todos los model",
-   "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yR2cyYkxsV0IyQWswd2I5NWJnd216cTJ6OWo2TWdFRGtYQzhGS2JwWmFVNUc4RnRiVnJqNWY0NElTdk5KUWYwT1NfRURTdXFjSy1OX2hreW1BT3U0b3N1d1RNSXZ6OTFULVBrb0ExenBHR2FBYUM2a3pySWpDNms?oc=5"
-  },
-  {
-   "ts": "2026-09-08",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
   {
    "ts": "2026-09-08",
    "rule": "R3",
@@ -28311,6 +28457,22 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 9 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-19",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla Roadster会飞吗?新车发布,0-60 mph仅0.81秒,可跳跃翻转 - Pasquale Pillitteri",
+   "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOW4xRUhPaUNTam5ZZ0JHSGRXSmdjbXp2M2Fhd2s2d21kSmE0dVk1TGtLNi1NNWFHa1JrWUwyMmt2M25XdnFqRnZyX25xQ3VBdjZqb21KY1pVX1E4RlU3YTRDeXBZbTlZTld3ci0zNmNHZng4TUpMWDNnejdyRHJJcVVRR0FPd3pCOXRDcGZ5bXEtdVB3LWxNRzR1V21GaXFTUEpVT0NXRUV6MW8?oc=5"
+  },
+  {
+   "ts": "2026-10-19",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 8 条（明细见各人物卡）",
    "src": ""
   }
  ],
