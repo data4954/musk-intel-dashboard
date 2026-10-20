@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-19T08:19:17+08:00",
+  "generated_at": "2026-10-20T09:07:46+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-19",
+  "asof": "2026-10-20",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 354.72,
-    "chg": -7.31,
+    "price": 368.06,
+    "chg": -2.64,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-19",
+    "src": "Yahoo 2026-10-20",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 146.03,
-    "chg": -10.17,
+    "price": 147.96,
+    "chg": -9.46,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-19",
+    "src": "Yahoo 2026-10-20",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 81946.97,
-    "chg": -0.24,
-    "src": "Yahoo 2026-10-19",
+    "price": 81415.24,
+    "chg": -0.1,
+    "src": "Yahoo 2026-10-20",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0791,
-    "chg": -2.46,
-    "src": "Yahoo 2026-10-19",
+    "price": 0.0789,
+    "chg": -2.35,
+    "src": "Yahoo 2026-10-20",
     "status": "green"
    }
   ],
@@ -471,6 +471,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-19",
      "c": 354.72
+    },
+    {
+     "d": "2026-10-20",
+     "c": 368.06
     }
    ],
    "SPCX": [
@@ -897,6 +901,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-19",
      "c": 146.03
+    },
+    {
+     "d": "2026-10-20",
+     "c": 147.96
     }
    ],
    "BTC-USD": [
@@ -1323,6 +1331,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-19",
      "c": 81946.97
+    },
+    {
+     "d": "2026-10-20",
+     "c": 81415.24
     }
    ],
    "DOGE-USD": [
@@ -1749,6 +1761,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-19",
      "c": 0.0791
+    },
+    {
+     "d": "2026-10-20",
+     "c": 0.0789
     }
    ]
   }
@@ -26787,6 +26803,156 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcnF3MElpWkpHNmx5QlB3LV9RQ2drNDJmTWcwRWF2cUFrZDZYMmZERDdpMnZ6TTNlazhtdmZxZ0IwNnkxaDBGY21LXzcyV2IzczQtb29vXzRNWEIzUXFUNUlpbHlSMjh3QXFRS294dkZNbGNmNUtqcFphVFY1c3huOFhqaW1yU2ZUcTFCMTFZWU4?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d1dda45354ac",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克（Elon Musk）刚刚揭示了SpaceX的真实面貌",
+   "payload": {
+    "src": "财富号",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1YzR0dGx2TXR0dW1Pc19FdnJOay13RVpFTVVLNnVBNHRtRHRPbUZnelZDMGZlbU4wLS02aDZOY3pmajNIQnlVZWhKdTdPd3hKZnVqSGFaN3BwMWVWalNoWDYtRTV4cUxmZTNR?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-a4ceaf5ff4bf",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：“给美国所有孩子每人一股SpaceX股票”",
+   "payload": {
+    "src": "아시아경제",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wZUFRckpwUk95amdoTzVWM3JjVEFObjZxREdIcUJjZEdzSXlDbEh6aGpOVzFSNGtxZG1oNTlYRFVyV1JBSU5XT0toUC1kdUNaaDRIZExfaFctNVNwVGRINGFqaDE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-5f688d47aa47",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk称计划明年向美国18岁以下人群每人赠送1股SpaceX股票",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ3ZTTldCLWh6Tm5LdUN4T1lsRTcxckZGajRrdGtWcHpvaEdtYi16am5mNGtlVzZFcFNLNFlBSGdTYWJqSGdEVmVLSWl6ZTdEaXFHUm02c2FUbXk1MGV5VE05VzRCU043RTk4RlVBeDJTbVMxX3JabE1PRzA3UXNua0xRQjlLeTI0dUo0Xy1SQ0hYcFpwUnlfS3FkamREandxLTZoTGE3RU5XTlVGc0E?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-054cd69509df",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球第二富豪艾利森修改對「捐獻誓約」承諾",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBId3JVcnNjeTRGOEotS0cxZTBtTkY5TnF2SjVnYTNtWllib2FJS253b25UVFF3bmxMY3ZYMW1GeUZ2Ty1ZbFFnNUtqRjI2RGduYzg5YWh0d2RIZFcxY1RDedIBZkFVX3lxTE1tX3NkeGllUnBESFFRbzFSZVBReW5zMGFzeEE3ei1rTURUWG04MnZYUnFfVlE3UkFKMmFCTnlVUk5FWFF0aTcwYnZiT2ZNc1N0UVdjWG5McE1rcHZXMG1tQ3BIaENhUQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bcc03d43b371",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "全球首富换人了！现任妻子为中国姑娘",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBQT3otcUNaOThtaEtzRnJDRk5ZQWx1M1RtckVIWlFfZ0FYQ3p4QlhnV2U3TWlNRlREdG80VF9FLVhqRnhTc05BbDltY1BYUTlTRTFHeEtjVXZUd0lzMjhGTGpoUmNUUXJvMi04Ykl2andQUmM2a0NZUA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-77d33ee060e9",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫加密委员：四个人 14 个月，全部离场",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZdkVaeWtPdXZKOG1KMk1NNkJ6SmFBWVBRcGgzWlJHSE91Q0xLdzJXd0RlaC1CaFBoZWVlNXk5Tk5waGpDem9mUVo4NjhnejlvYWRZUA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d35b4fe6057e",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "AI泡沫破了吗？|AI投资|云计算|加密货币|大模型|天使投资人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgRBVV95cUxNdXNVR0pMQlUtbjV5SU9mU3VES3JSbEVoTk5MSXlSQ2x3a1RaS2Z0R0FDWXp0R050N285c21hMEhvbU0taEM2d250VXJYOFNRUVcxVzFSN2M3RTVVRmdnUE85YkpiMkFTN1lDNURod2RtX1ZGWDZWZXFHYWZUdTcyRmFEMjNVM3h3aUwxb0JOUVdFLWFnNkhaT05mMmhKWGFvbVA4NllDYzRJaFhFa0RxcWlySF9TaEQyZ1ZzcC02anpuS2JXQmtrU3lScUozTnRUZENvWlctQW9QdkIzcV85VzQ2bE5ORVBwLU1aRWFfcEpkZVZYQ0o1Um9IYTdUUUtIeUluWmdieUxiS2h4alFVXzBpS1lYd0MzVkxJZVI4Vzd0V2hTMWVyQkhzRHZkNEZ6dmRWM3RmYlRPZk0wdXJVeGdZNFdFOUpWOG9LTE1acVlpSVg2b0N2c3pIM3VNV0d3Wm42REsxVmxkR2pMUGNLeU5EVlNxRF9oN1BGTmtZcUFXT2dvbXE4bktYVFlReWFjTGxNRDYxR0JSalMxRmYyMVBrNUtVLVVmaWJoZ0NndENYeFVFYUNBRDZHQVpZNmZzejVua2xIMnQxdjdVUGtuNFV2M0JkZWpvS3JQUF8tRGhobzEtajVaT1pEbHAwVjVxV3FhOE0zMktCM21lbUVidGpyb2p0MGhqS2M2bUZ2bGRwb0F4NDYyeVM0ckg1RkcyNFZ0ZjNMQzU5elRaa1E?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5a8d270a009c",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "马斯克、小扎人设崩塌？爱泼斯坦合影流出，300万绝密文件撕开真相|硅谷|晚宴|盖茨|档案",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBFS2Zpbk1oVlB0QUtrVFVoUzNxaHJGRnhQY3JXeWZUQmFqSS1UZm9ZMEdIRGR4SlFMVU5ENGE1SzNWWWlhRzJPUkFRNlVIWi1Qak80S3JISGFwUkhXRFNvYlF0OHY0QkNsOWJhT1pIUnR3T1JONW1taQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0619ea90e42e",
+   "type": "event",
+   "ts": "2026-10-20",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "加州擬徵淨資產5%富人稅 逼億萬富豪搬家？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOXlWYkR1bWxVQXpjbUVISlpUREpzQ2xQMzRFZ0w0MGhZTVlITm5LdVBCQlMzVGlNSXFQZVFVRjRUMHlLYnRRNFozNW9YVTBmS2laSGpERkhEd1ZwNDZHVnItY2FJUDFNblJvWUotMjBFWVNkNThrZUlXZFB4RmVocW5DRWppQdIBZ0FVX3lxTFBSa0o2TFFIQmRLdldvaHJFaDZIRnZObnZPNldGRUVJcTVFQVBmLTJqcXFoZUU2T1dMRXBPc0cweXZ6d0hDNmcxZ2gtVzZleTZaa2hKanJodHpQTkVPMGdXb3ItWThVYXc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -26889,7 +27055,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2767 · xAI 304 在招（2026-10-19；Tesla 无免费接口）",
+     "v": "SpaceX 2773 · xAI 307 在招（2026-10-20；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -26993,7 +27159,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-19，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-20，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -27469,7 +27635,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-19 08:19",
+  "last_run": "2026-10-20 09:07",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -27480,7 +27646,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 109,
+   "edgar": 110,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -27490,12 +27656,12 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "net": "2026-10-19T10:30:00Z",
+   "net": "2026-10-20T10:30:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-   "net": "2026-10-20T22:14:00Z",
+   "net": "2026-10-20T23:09:23Z",
    "status": "Go for Launch"
   },
   {
@@ -27504,49 +27670,17 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-   "net": "2026-11-30T00:00:00Z",
-   "status": "To Be Determined"
+   "name": "Falcon 9 Block 5 | Starlink Group 15-18",
+   "net": "2026-10-28T04:31:00Z",
+   "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
-   "net": "2026-12-31T00:00:00Z",
-   "status": "To Be Determined"
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "net": "2026-11-01T05:11:00Z",
+   "status": "Go for Launch"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-08",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 11 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克旗下价值 2 万亿美元的 SpaceX 帝国的十大股东名单已经揭晓。 - Vietnam.vn",
-   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc0JvWDFfSmhvN2dXRVhwR0VwbXNZLXkyc3RSZ2ZaM0hYUWRjN0p3WTc3eGY1dEhwd1J4LVJ3eEJDcnI0dXBzaUVsS2l4RnJNcEtEcUc3TEM0SmU0QlRUcVZXdnhtdXh1MkhqYnFaZ1JFNDllU3FFckhYR1lTS2hKT2VST3JTN013d2FwdzRSVnh4akFXM21Vb0V4T1BmQQ?oc=5"
-  },
-  {
-   "ts": "2026-09-09",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Here's How Much Tesla Paid Elon Musk Last Year - 富途牛牛",
-   "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVVVBMGNleVd3eC1RREhKQkRDQ21ZaXNmMzZlYmExam10RWt3UWJ4cTYtQVFYX0Rsc1VhOTB3UExVMjgwT0RUSWQ4ZG9mRnBGYkhLRGlMMS1JQWJNVTUtSTBsV2dTSklxU181UERmWndteVNXTUo0OWZfRWhUeDNRRnliMklKZE9ZUEk3SA?oc=5"
-  },
-  {
-   "ts": "2026-09-09",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
   {
    "ts": "2026-09-09",
    "rule": "R3",
@@ -28473,6 +28607,38 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 8 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克（Elon Musk）刚刚揭示了SpaceX的真实面貌 - 财富号",
+   "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1YzR0dGx2TXR0dW1Pc19FdnJOay13RVpFTVVLNnVBNHRtRHRPbUZnelZDMGZlbU4wLS02aDZOY3pmajNIQnlVZWhKdTdPd3hKZnVqSGFaN3BwMWVWalNoWDYtRTV4cUxmZTNR?oc=5"
+  },
+  {
+   "ts": "2026-10-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：“给美国所有孩子每人一股SpaceX股票” - 아시아경제",
+   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wZUFRckpwUk95amdoTzVWM3JjVEFObjZxREdIcUJjZEdzSXlDbEh6aGpOVzFSNGtxZG1oNTlYRFVyV1JBSU5XT0toUC1kdUNaaDRIZExfaFctNVNwVGRINGFqaDE?oc=5"
+  },
+  {
+   "ts": "2026-10-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk称计划明年向美国18岁以下人群每人赠送1股SpaceX股票 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ3ZTTldCLWh6Tm5LdUN4T1lsRTcxckZGajRrdGtWcHpvaEdtYi16am5mNGtlVzZFcFNLNFlBSGdTYWJqSGdEVmVLSWl6ZTdEaXFHUm02c2FUbXk1MGV5VE05VzRCU043RTk4RlVBeDJTbVMxX3JabE1PRzA3UXNua0xRQjlLeTI0dUo0Xy1SQ0hYcFpwUnlfS3FkamREandxLTZoTGE3RU5XTlVGc0E?oc=5"
+  },
+  {
+   "ts": "2026-10-20",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 6 条（明细见各人物卡）",
    "src": ""
   }
  ],
