@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-21T08:43:02+08:00",
+  "generated_at": "2026-10-22T08:46:13+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-21",
+  "asof": "2026-10-22",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 373.71,
-    "chg": -0.41,
+    "price": 386.47,
+    "chg": 5.26,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-21",
+    "src": "Yahoo 2026-10-22",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 147.79,
-    "chg": -5.59,
+    "price": 159.31,
+    "chg": 4.7,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-21",
+    "src": "Yahoo 2026-10-22",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 83029.34,
-    "chg": 2.02,
-    "src": "Yahoo 2026-10-21",
+    "price": 84273.39,
+    "chg": 2.75,
+    "src": "Yahoo 2026-10-22",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.082,
-    "chg": 3.52,
-    "src": "Yahoo 2026-10-21",
+    "price": 0.0821,
+    "chg": 3.47,
+    "src": "Yahoo 2026-10-22",
     "status": "green"
    }
   ],
@@ -479,6 +479,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-21",
      "c": 373.71
+    },
+    {
+     "d": "2026-10-22",
+     "c": 386.47
     }
    ],
    "SPCX": [
@@ -913,6 +917,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-21",
      "c": 147.79
+    },
+    {
+     "d": "2026-10-22",
+     "c": 159.31
     }
    ],
    "BTC-USD": [
@@ -1347,6 +1355,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-21",
      "c": 83029.34
+    },
+    {
+     "d": "2026-10-22",
+     "c": 84273.39
     }
    ],
    "DOGE-USD": [
@@ -1781,6 +1793,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-21",
      "c": 0.082
+    },
+    {
+     "d": "2026-10-22",
+     "c": 0.0821
     }
    ]
   }
@@ -27190,6 +27206,274 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA2MkpGUTJTdFJadGVYQWhEVjFuZ05RbjBYYlZMMUNSNmw5YTNTWUZaQjZKUnhKR3AySk9UYWpsSnF2SXg4UUpPWTRn?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d819c503e0a6",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克表示，SpaceX与特斯拉正在探讨合并；卫星公司股价大涨",
+   "payload": {
+    "src": "Moomoo",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb3lRam1pUFA0ODFXZkEyMWY2TE5fd0dMSlNnODM2SldnaHRleWdOWV9LNktOM1NhVkJRTUpBbW40S1duNnEwcWVURzZ4bEV3SUFvSk5sVzltVnEzVk9tQTlaR1djZjZKMjhuSlNxeHJjaEpCaF9YakgtdDVqWXFpR2ZTZUJjdDdLR2VvRjZRX3pmS3FRQUhRMGg2MDlONXZsSlFDN19PcXlNajFya3Y5dGNuZw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-e6d1258dd04a",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk称SpaceX与Tesla正探索合并 卫星公司股价急升",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTE9vT3BhZVFGVkVaaUJKR3VNc3BMSE1XSGVYNnZQenhfMTE5UVNPQVV2dnYtMFc1VXRrb2xNTEc0eFAyaU5rUkw5RW9oV3Z5U04xQVhCVzQyeXdEd3Y1QXZvMVk2RTFtRlVRc2s1MHFWU2QwSVZSZ3EtbFdhcVpXMDdLTGFNZmdjUk1pSTRGUG1HRk84OEthQzZB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-5f2031a2b526",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克确认SpaceX与特斯拉的合并谈判，股价应声上涨",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMivAFBVV95cUxORVRvZkRvZFBwY3JrUjZ4d2sxRm0wdlo3cmgxZ3hST0NFZFY0Ym1MQ0xZRGt0RVNsckRobmZlQm5STFBjUHVnY2xLMEx2RFN2LU1oLTItSE91dWRzQld2TklDbm0zNm15SnRaSkxNRzlkdFliSHJkMUxSd2NPbDdsS1JLMTExbXJYNHd1X1VoOEN3V3FjS2p6ZzNwcnB1UV9EX2dEVEYtcHliY3EteDNmc1pISjIzTzE4MEhkOQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-63ce60fe636f",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX与Tesla合并构想浮现 Elon Musk欲串起芯片、算力到太空通讯",
+   "payload": {
+    "src": "DIGITIMES",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQkd3ckRuMTNfZmF3QVB4aUpQMjdJRTFhNWJkcEJyQ0s4SUZBX094MjZCNXNDWTJ4S3BZUnpJMmtCal9YSUJCR3R1VUR0MC1rQzJ4RENhR09RWHNuaHZyOHVIYUVyTkFOZHdfMzYyZXRvY0VXWFNHdGNKcUl6SVNxamx2MVBiR0RVUDNveVo5RGZwNDZnN3QwU2lVZnU?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6cef1adbcf01",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Why Elon Musk Wants SpaceX and Tesla to Merge -- WSJ",
+   "payload": {
+    "src": "Moomoo",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY3RpOUtsUjJ1Z3g1ejhLLW54WEVEUEF0NloyMWQ5N2J1RWxGNUhsYzRvS0dtTEpRaVl0NnJzVHBPNU80U21XRWphVmpCMUV4am5MSDJnTDBnX19sc3pTc0lBWXh4WE5YOC1wWVdpakxiRnQ2TU8yMDlQamdXSHRrbkN2d3JQdWZRT1M1RUwxc2ptUkI0RXBza1A0OHR2UDA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-a061fed37e18",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan's Automotive News",
+   "payload": {
+    "src": "未知媒体",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-3a3c103c26d0",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "亿万富翁大举举债 为儿子收购华纳兄弟提供资金",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSHFrcXFhbnlNYkYzR2NNY2lpVVk4ZGFWb3RhS3UyanE4R3hhWHJYX00xaGY2X3Ric2x5TGZDMFpLMXZpcDV2ZldUbDNsNFFsbGZad1VObDhUVWJWNFBrQTNZWTFzVGJUbUFxaFRTYm1nX0xEYVp6dzhNNG9PWHEwbVVnUDhIM0oyTW9JdkNiQ2o4bEtHTUlnTllfTmNqbkc2RmlTbHhyV0h0dw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a68fcfdc4255",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "市场传闻：甲骨文主席拉里·埃里森借入数十亿美元为儿子收购华纳兄弟探索公司融资",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONHBPcEJQTXNTMXpXc3FQVTVBSFU2NUtmWHZXQmw2T3U3ZmgtMmxSQUFfRmpaYURmaXJtUFptZDd0YUU1QTlVbGZNZ1JjSGZCV0FoRzhDT1VfWFVnWDJlakhHUXphWldMYTlqSFJmZVVNVmZmREJtVEFZc1BDXy1SVFVZLTBGeFdORDktb1JXcE9KWlBlN2FZNWE2SUY4S1U1bmpmYmQ5cFJPX0V2RVFyNlh2WQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-4ff85299f20d",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "If half of what AI leaders are saying is true, it’s scary stuff: David Asman",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5USTlGeDdKZ3RnX3JpZUZfc1pCYXVDRVdmczNRQ3V0ZEczcXUzQXdFLUFvS1R3RDhvdWpibkxyTkQ2N2p3VDJqYXFBLXBINldrVVFPLTBWWlZpX3M?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-bebbf7c9b63f",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Former White House 'AI czar' warns of emerging AI ‘cyber weapons’",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvQS00dHByYWY4dGxSa0hrQWloMGE3QlluMEhpSnU3NXVqSFRDWGJnZGoyZ0FTQWhYazRaUkFHWExGc3NTZ1BzT1lwTWtFQXQwZTQtUi1Oa2dXZTg?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-31cebe15963c",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Palantir联合创始人彼得·蒂尔买入Vista Energy股份；盘前股价上涨",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVm5LcEZfdGxjYUJwalhRbDJ3SkJlb2ZQZE1Xd2xZdE10NmdfeThGUFAtT3BWTXVMbEQzN19XamphRHVRTWdKMU0wZzQweV9XVFc0TE0xMlpTaTBSTGpIeldGTGpXeWtxRFkwMDZ2MXFqbE5VMVlwYl85TUxEVkg5NkdnUWJ3d2k4bEtzUm1BXzdXb0ZORTVnY2pmOHBQN3VsRXZHM251bktiaUtzWVhNNVNLamZRSUc0Uzk3Z01ZbktYUFlRbUVGNEZQTFU1MHdJVHNmWTN0WQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-cc9844170f11",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "特朗普政府针对中国的AI战略负责人是谁？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOVEyMTFBeG5KTkpjVXFveXc5V2tNN0dDakg4S09hWktFdDJSTE85VElyeWZzRlZPelJLLUR1OVAzLXh4U3lTODRjZ1dUQ1FBSWNkeWk5enhuZU1qLTJGZHhiWF9VME8xYUpEQkNJV1BPQkF5N0lsOW9Ob2RNYTFlMzlhZWx0QWpHdUE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-d693e18e17a1",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "Cathie Wood买入一只股票410万美元、卖出另一只530万美元：Oklo与Palantir怎么选",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBUWFd4RVV4UEVxSkJvQUNmQWN1VGtOdjdocGxKaDl4dnBlRWZxbmRnVFpYNUNlU2lZVmZiNmR4OFRoWTd0ejZSbmJKUTJFbGx0RkE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ada39ae6bd5f",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:wood"
+   ],
+   "title": "特斯拉财报即将出炉！木头姐疯狂看涨：五年后最高涨至5000美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObWFaYk1Ka2xwZ3lYV0hBUmQtZjRnX25iNzNwbVRXQzVRWmtxdDNYYnpOOVl5RXBHaXQtLXJaU1ltaGd4aVdmaE9kaGN3X3l6ZWo2c0ZiNERuVmlLeHllTks0THBRVVJRVlc2dG1YU3lJc0Ytc1ViYmk5N2ZVSmJ1TkxzN1RudUF1d1VnaUxiNDNjM0s2N1dGTDA1VDZJYTB0MGVyaHBvaFhvTHVZ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-ba4ccb94d52f",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Ken Griffin详解“AI大跌”：算力类似航空，“边际定价”、“折旧期限”与“企业预算”三大陷阱",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YcDBoYklack1Id1ZTTW1oU2xlcjJiTm9JU3VhczlQUUcwV3RtZjRVQWlpaHA0WG0wQmNFbmJCNHBwcVRTY3V1MWxhQVREaHFPSlJz?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-2a01b54b7a5f",
+   "type": "event",
+   "ts": "2026-10-22",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "AI“几乎可以肯定”处于泡沫中？Citadel创始人突然敲响警钟，贝莱德、德银却唱反调",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb0o5c2pnYkp6dHd1enowdGlPU0JKbWpyd2dZNGZuM3RrQWIxMXp2UU85dkZ0S0NERGhjSGlTQ0N0VmZXOGMzYl9ROHJDVVJHNG5CbWdZYXlXeDJ4bmF1Y25hSmdMNlV0Tm5YRjZoN1JRYS1VR2Z3TWxfSHR2ckFFRF9LUmNRd0U?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -27292,7 +27576,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2779 · xAI 303 在招（2026-10-21；Tesla 无免费接口）",
+     "v": "SpaceX 2782 · xAI 300 在招（2026-10-22；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -27396,7 +27680,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-21，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-22，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -27872,7 +28156,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-21 08:43",
+  "last_run": "2026-10-22 08:46",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -27883,7 +28167,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 111,
+   "edgar": 112,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -27892,18 +28176,13 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "net": "2026-10-20T11:04:00Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-   "net": "2026-10-21T21:59:00Z",
+   "net": "2026-10-22T21:45:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
-   "net": "2026-10-24T05:29:00Z",
+   "net": "2026-10-25T05:14:00Z",
    "status": "Go for Launch"
   },
   {
@@ -27915,65 +28194,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | NROL-195",
    "net": "2026-11-05T22:34:00Z",
    "status": "To Be Confirmed"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "net": "2026-11-10T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-11",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk đáp trả Bernie Sanders về khối tài sản 900 tỷ USD của mình - CryptoRan",
-   "src": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOVdmeEcwZ21PN2NNVHA1X245Z1pSOFZ0bXNNem5Mb2YyVFZZVXVMbDBTLUVOQ19CZFAzY05rWlg4aExwYnNydmFiakdFcHpBdzByekdaaHhYWXpVeWRlcV9FckxPOE9mTURKU1ZKNzhXYnhuQnZfYUxEUzNFdHFEakJB?oc=5"
-  },
-  {
-   "ts": "2026-09-12",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-12",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 8 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk praises China, encourages people to visit - 西部网",
-   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56eFQ2c2ZxRWlRTTFBeGIwYldQZ3IxblBFY3pMM3JoUUhMUFVoX1puU19fS1BreVNZNGpLcENMSUpFSmNJRW9uYy1XNUhJOWMxanA0MGduSEo5bmZGZ0hENXVJWGQ?oc=5"
-  },
-  {
-   "ts": "2026-09-13",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - digitaltoday.co.kr",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "与马斯克育有一子的网红因深度伪造图像起诉xAI - 华尔街日报中文网",
-   "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN0d6QU9mWl91MXp2XzNPM2FyNTVGVDF6ZkVKUWpPYzRaY0E0cXBjRkxjVWdHeDkxazJSa0JfaXQybXd2SldfdUdyck1MOFNuSm9fZlN0QUloZGhPMHo4UU11QjBjN0ExVm5YeWVCSV9XX0RHcnk2U01aZTNDZFVQUWl3SnJZQldHT19uZWNuVl9fQmZBckJDaTktWXJ1OS1yMUNpQWhkaXhRUQ?oc=5"
-  },
   {
    "ts": "2026-09-13",
    "rule": "R3",
@@ -28876,6 +29104,62 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 7 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克表示，SpaceX与特斯拉正在探讨合并；卫星公司股价大涨 - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb3lRam1pUFA0ODFXZkEyMWY2TE5fd0dMSlNnODM2SldnaHRleWdOWV9LNktOM1NhVkJRTUpBbW40S1duNnEwcWVURzZ4bEV3SUFvSk5sVzltVnEzVk9tQTlaR1djZjZKMjhuSlNxeHJjaEpCaF9YakgtdDVqWXFpR2ZTZUJjdDdLR2VvRjZRX3pmS3FRQUhRMGg2MDlONXZsSlFDN19PcXlNajFya3Y5dGNuZw?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk称SpaceX与Tesla正探索合并 卫星公司股价急升 - 富途牛牛",
+   "src": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTE9vT3BhZVFGVkVaaUJKR3VNc3BMSE1XSGVYNnZQenhfMTE5UVNPQVV2dnYtMFc1VXRrb2xNTEc0eFAyaU5rUkw5RW9oV3Z5U04xQVhCVzQyeXdEd3Y1QXZvMVk2RTFtRlVRc2s1MHFWU2QwSVZSZ3EtbFdhcVpXMDdLTGFNZmdjUk1pSTRGUG1HRk84OEthQzZB?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克确认SpaceX与特斯拉的合并谈判，股价应声上涨 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORVRvZkRvZFBwY3JrUjZ4d2sxRm0wdlo3cmgxZ3hST0NFZFY0Ym1MQ0xZRGt0RVNsckRobmZlQm5STFBjUHVnY2xLMEx2RFN2LU1oLTItSE91dWRzQld2TklDbm0zNm15SnRaSkxNRzlkdFliSHJkMUxSd2NPbDdsS1JLMTExbXJYNHd1X1VoOEN3V3FjS2p6ZzNwcnB1UV9EX2dEVEYtcHliY3EteDNmc1pISjIzTzE4MEhkOQ?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX与Tesla合并构想浮现 Elon Musk欲串起芯片、算力到太空通讯 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQkd3ckRuMTNfZmF3QVB4aUpQMjdJRTFhNWJkcEJyQ0s4SUZBX094MjZCNXNDWTJ4S3BZUnpJMmtCal9YSUJCR3R1VUR0MC1rQzJ4RENhR09RWHNuaHZyOHVIYUVyTkFOZHdfMzYyZXRvY0VXWFNHdGNKcUl6SVNxamx2MVBiR0RVUDNveVo5RGZwNDZnN3QwU2lVZnU?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Why Elon Musk Wants SpaceX and Tesla to Merge -- WSJ - Moomoo",
+   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY3RpOUtsUjJ1Z3g1ejhLLW54WEVEUEF0NloyMWQ5N2J1RWxGNUhsYzRvS0dtTEpRaVl0NnJzVHBPNU80U21XRWphVmpCMUV4am5MSDJnTDBnX19sc3pTc0lBWXh4WE5YOC1wWVdpakxiRnQ2TU8yMDlQamdXSHRrbkN2d3JQdWZRT1M1RUwxc2ptUkI0RXBza1A0OHR2UDA?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan's Automotive N",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-22",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 10 条（明细见各人物卡）",
    "src": ""
   }
  ],
