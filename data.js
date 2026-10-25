@@ -3,12 +3,12 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-24T08:53:09+08:00",
+  "generated_at": "2026-10-25T08:25:35+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-24",
+  "asof": "2026-10-25",
   "quotes": [
    {
     "sym": "TSLA",
@@ -16,7 +16,7 @@ window.MUSKINTEL_DATA = {
     "price": 372.22,
     "chg": 4.93,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-24",
+    "src": "Yahoo 2026-10-25",
     "status": "green"
    },
    {
@@ -26,23 +26,23 @@ window.MUSKINTEL_DATA = {
     "chg": 1.0,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-24",
+    "src": "Yahoo 2026-10-25",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 80628.04,
-    "chg": -2.79,
-    "src": "Yahoo 2026-10-24",
+    "price": 80694.69,
+    "chg": -3.95,
+    "src": "Yahoo 2026-10-25",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0783,
-    "chg": -4.25,
-    "src": "Yahoo 2026-10-24",
+    "price": 0.0775,
+    "chg": -5.31,
+    "src": "Yahoo 2026-10-25",
     "status": "green"
    }
   ],
@@ -491,6 +491,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-24",
      "c": 372.22
+    },
+    {
+     "d": "2026-10-25",
+     "c": 372.22
     }
    ],
    "SPCX": [
@@ -936,6 +940,10 @@ window.MUSKINTEL_DATA = {
     },
     {
      "d": "2026-10-24",
+     "c": 147.49
+    },
+    {
+     "d": "2026-10-25",
      "c": 147.49
     }
    ],
@@ -1383,6 +1391,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-24",
      "c": 80628.04
+    },
+    {
+     "d": "2026-10-25",
+     "c": 80694.69
     }
    ],
    "DOGE-USD": [
@@ -1829,6 +1841,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-24",
      "c": 0.0783
+    },
+    {
+     "d": "2026-10-25",
+     "c": 0.0775
     }
    ]
   }
@@ -28091,6 +28107,258 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMi4wNBVV95cUxNY2o1a0wxd28tME5LWEx3MGJmd2ctbTZLMFFsVkJrUTdVdTlaamVLQXhNcnVsenFOUzIzSklqXzk3OVdubF9CMXJMNWpIdTI3amlweks0dDd5RklhMHVlZU5NdzZzSVhiN3RqMlpVV096NzJ1bmxval9QeE9wN0VLSkRTZzh0UFZpc2R2ZlN1TUt0WnJyOHVsUUdHZ3VRQ0IwWWhqeEJhX2lFeWZGcGt0Y3hCTmxUTDl2RHl3T2lDY09CREZ6amdJcUZvaEREQ19qOXJTb2lERXpzYnhtSkpDMW91QnRUUGdwY01jZHY2cUdGdDhOZmh4WnJHTk5SanNPMjNETzZIcnE5UndHMktxcTJlajdXRkwtcjBFVXZPTnFjdGJRNVBSM1E0dGhoRnZWeWRVVHlaUkdmcjZKejFiYlRLN0t4V3p0ejlGM285REV3ZjkxRFVGU3ZBckJlTDBOakt6czRLa2o1Y3RNV21WS0ppWFNtTERKb0ZsYWUzeklqSTVfRmdkQjNwQl9aODEwSnl5cEwwVjJEakpIZ3llYlhxVVJwYVkzRTdiUGJxYXE5VEZ4TjhXV1dwaEpzbTJobTRRSkJicGl4VG1FNHI3NU1aQnhndWtGck9iRy1tMzZHbmc?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-d5f02f0b8812",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla：汽车利润暴跌后，Musk更热衷于畅谈机器人",
+   "payload": {
+    "src": "VISION mobility",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbUEyRGl4dEM4THhja011enYzdGJjSEt4MEd1ZzdXSEFnYnJfazIzallyT194eXJ1aDZQblRVSHFwQmNOY2NzSmd3aFgzb1FsdTI2NzhUQ2xILXZQXzN5RDEtdmxGYTQxZVpIWEpYVlNXQUx0RjJuT0xvQlRoaGF0VmtuMkdHMHItc1B3V2tzSGlkOUVJaTVtNVFiazI4dXI3bEI4eEt2NjA?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-c5045b557366",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：“SpaceX与特斯拉研究合并”(更新)",
+   "payload": {
+    "src": "아시아경제",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBTC1zczdsdmtTaFI2eXBBTWhENU9WSG9XVkd5Y2JNTUdnYmJFUjAzVFpDdUt3MzZETjVmdUJtc3EzVjBiM296SDNvUFhDRnV3MV9WZlR3SVp3QWQxVWtWMFA4M0s?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-38068830facc",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：若自动驾驶获准自由运营，Tesla有望承接全球逾半数客运出行里程",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMixwFBVV95cUxOc25sX2tKcGZKWkF5Y2dXQ0k3VzJZZkJLS2VwMlpOMnJmWGsySnl5VTFWVkRBZ1dvNkJWZ1BtMEdkQThhdzM0YUJKUVFIOEdlV1pjbzNzc0dLNGx5RUJsTHB0VF82VC1RNG5BaGZrNmx5T0JwdXlXUzB2N2hkcDl1c0JNc1lTaTRCM3F0VHlzSnhtaDN5M2ZMZXlobEV5c3lsUV9qNDQwTkdJZ2dYYlowaVJkVHN0ak5iZV9BU21hMVRUX0M2bmJr?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-7c8d3ddb30c6",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla称Optimus已启动生产，Elon Musk：将通过观察人类完成训练",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNFNXNVJNaFBFN0tNLV9sbExJd25FSHN3VHAtckxZa19oVHZURlNVc1RGbnY1a2FfQVdrQ1dZV0t5ZUF4NXNPN3dNR2tFU2k4Uy1FR1plck9IUkJiUkhfb1Y5aHBvN3J2czNtTWhpcEJFbEhCT0xkY3NPYzB1X2Z5ZkhFSEJDRktteHA2YXhuMTE3RkxmaWt3YnpLdnpIcE5zYzJXT0I0ZzFPNDRqTjNfbFlYMVVzQ2c4UzhrYw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-77d4c854bd80",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Musk表态支持SpaceX与Tesla合并，股东表决门槛与中国监管成焦点",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc0Rock12RXFoSzZMTk9IYjg3bXdpc29jRHhUMnN4VFk4ckV3SnY5SHJWQ0JWbUhfV0RiaGgwNzdoWTNQNzdYMWR0S3NDUjZxU1pVWVhQV09EN3BqNkRJakFxc0dTa08ydWpnNzAwWWpmSHhBOUxXYUpVM1ZmZ0VIemF5bUw1ME1GcEVpZjRudE85V2RMWWJkY1k0RDVfWW00NUlVY19zNzk4TXNlaFpiV19yQ3FDZmloalE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-bf0621cfe004",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "亿万富翁埃隆·马斯克承诺将SpaceX的股票赠送给每一个美国儿童。",
+   "payload": {
+    "src": "Vietnam.vn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMikgFBVV95cUxPckJaY0lLbmt3a3AzZHMxUHBMeDhUZ2swMzZEOWUxSzB1TzVoNklqLS1GWUV3aEhNNHJGbU9kU1JNT0cyTkktLUYtZFF3dFVMSTFOVXVaUm90TkVjU2hkN1V6NUZWaXJnb0lLclBpb1BKRV9neW42MUsyY3l6STBNUGRvVVdRZUJUejc0U01LZGRhQQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-9f3641b6fc32",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "埃隆·马斯克向Skydance注资10亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPM0l3dm5aX1pqVUhqczNRdXdyQ3I5OW9FekcyeXFfQ0tkcS00VzVfakZzdEoxd3BhNENDS25ja2lUOTVKa2o4R3hiMm4xdjZreXdiY194TUl3UWhqbHJ5WnVkWTNRVGtVM2ZBTkl6Y0xrWG8xcEo3VndnMnZza1BTMmhSLXJZZWdWWkxEeDR0QWpSY2pZUlNLaGxWeXpPUmhCWVdxTU8yOXdZcDZUSmtVR1UtdnNWd0RfaFhXRXc1dzhDOXhoeWFDMEZsd2pLRmxWS3Q3UzJMWXpLV2twc3k1aVl4dHhPZXNN?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-85adc854650c",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "消息称甲骨文加入竞购TikTok美国业务",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKcEltTDgzWno0WkJQX0JPM056bExlWWM5Qi0teEp2RE9RLWwxLTdCWkNQQ1BvVHhBZEQ2d1RHUzdGWVhmejBxbjhzanpSMzVwSGVv?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-f6f4dfbf334b",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "白宫AI监管分歧 黄仁勋等反对设监管机构",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9XTzhrLWhKbnNhNW9jajN0REd6YXdRaUlEdjN4dWRlbGRyYlVFNC1ESm5ZXzhrR1dnUjVtWEoyOTE1QXl1dHlmLUpjVQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3617c77a42dd",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "彼得·蒂尔称苹果在乔布斯之后未做新东西：规模而非创新",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBOZGJPZnMxeVczbnpOTUxQUmFWLW9CN3U3RmlmQzlHTWt3ZlFveFRnNFRINkx4WkthOEM2N1NnaFJ4TmFTRmJRT0NMSENLZU5fdFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e0b7091d5da2",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "把海浪变成电力的超大型圆柱发电机…连 Peter Thiel 也看好 [科技对谈]",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MRHVXRDUyYXZmR1h2ZDNwMG85OGlYLWVCaFI2UUJubFdfekIxckFCS19oWXg0RzBQeVc0WmlRWnE0UkFCQXdFTm1rdTZXUmx4OTdMR2xoS2pnN3RheUtKeG9NVE8?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-56839e70624f",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "a16z Crypto 解释为什么更名？创始人不再局限某一个孤立标签",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNakNmUlNvNURDNU02M3lYQXo1VkpCSE5hSjNOZWl0TEM5a3JlTHBsOXNLTVlNOWVjb1JFLThRM21KVVJqcVp2bXlmMkNrVWpJel93ODhrMUh5OGJpRTNmMEFGUWF2cDlwZXRCMkVoSkEyM3R3N01oRmZpc1VPckZ4MU5peTE3UWIxT1RYVjZsbFRUT3FMeUszZWRXLWduNF9XNmF1VQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-dc97365e5cfa",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "不要再说a16z放弃Crypto了，区块链早就是基建",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02bmlsRlJVdUtuVlVzXzBNSm9IM0Q5RHJyZExWTlBTRkk2ckg5ZHE0MFVEdEpiamU4VWdXN0RtdV9Od1NOYkNMcnNMN3NRLTJadHZJ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-afdf512a0fbe",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:baron"
+   ],
+   "title": "转：Tesla FSD V13经过两周拖延，终于发放内部使用。该版本经过视频数据全部重新AI训练，有大规模改进。未来V1...",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA4dkVSejgwOGE2c2szWk1aMjhPUWdWZjFwazJFZlJUMWJ0RGc2Zll4VERmN1Q5aHJudTFpYWZzQ0dxa244S3M4MnQ3NEM1WnM1?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-49582345a1e1",
+   "type": "event",
+   "ts": "2026-10-25",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "最帅的都在离婚！华尔街多个身家10亿大佬忙着分手",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aWldDazRpQ2xZeXZmVWxGYktkd3RtY211THd3VVBKY0tZQXI2MUExMmdmSkEwU2lJdEgtTThKOXVuUzVjaS00V1M0ZXM5Vi0wQ01pM0tRaWhUYXJOcEk0SXZCZmF4aXM?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -28193,7 +28461,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2816 · xAI 298 在招（2026-10-24；Tesla 无免费接口）",
+     "v": "SpaceX 2821 · xAI 298 在招（2026-10-25；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -28297,7 +28565,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-24，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-25，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -28773,7 +29041,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-24 08:53",
+  "last_run": "2026-10-25 08:25",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -28784,7 +29052,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 114,
+   "edgar": 115,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -28792,11 +29060,6 @@ window.MUSKINTEL_DATA = {
   }
  },
  "launches": [
-  {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-   "net": "2026-10-23T22:48:44Z",
-   "status": "Launch Successful"
-  },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
    "net": "2026-10-27T04:45:00Z",
@@ -28816,81 +29079,14 @@ window.MUSKINTEL_DATA = {
    "name": "Falcon 9 Block 5 | NROL-195",
    "net": "2026-11-05T22:34:00Z",
    "status": "To Be Confirmed"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+   "net": "2026-11-30T00:00:00Z",
+   "status": "To Be Determined"
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-17",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "马斯克暗示特斯拉合并SpaceX，传闻今晚可能落地，先别当已定... | OKX Orbit - OKX",
-   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3S2JidzBObjBwTjBsNTFNQ2VqVGRwRzNudnVDTTMybENVd3NsbnZiZW94a0MwSWZWNC1pS0V6eE1SV0tGS1FjNXZFQlkyR0pndi05czRVdlU3aFMxbEZxZA?oc=5"
-  },
-  {
-   "ts": "2026-09-18",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX估值达1.77万亿美元，Elon Musk“万亿美元身家”预期升温 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzBhc3I3Z3FJLTlERlpGcU5heVhiM1dnUDg1T2lTTzlFcEFZZGtMeGJaMm1Wdm9SMFZhZ29NVnlKM250NmN2VXBKdWIxN1NidmdVcjlHb2FwY2pqTGprUVdBWGR6enZHNzNHNUszYVc3TGp5ejc4TFpYRG5nSzRYYmh4LWVuNk8zVFU0aTNZdy1JMUNvSGQtUWZKRXQ3VlE1R0FVd0dfQUVGVVk?oc=5"
-  },
-  {
-   "ts": "2026-09-18",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 13 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-19",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Neuralink 总裁 DJ Seo 刚刚透露，埃隆·马斯克（Elon Musk）即使在领导多家其他公司时 - 手机新浪网",
-   "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5rUE5rUG54dGZWZ0lYVG5CNjZTcGEtbU5BZXFhQl9wTTV2X2N3dXMzYkhwNURzbGRzbElZLS1jYTNzU0VGaC1FMmhFai1iUlR2NUc5UEhORHVVOHJ5elotRGtoTQ?oc=5"
-  },
-  {
-   "ts": "2026-09-19",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-19",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-09-20",
    "rule": "R4",
@@ -29777,6 +29973,78 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 13 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla：汽车利润暴跌后，Musk更热衷于畅谈机器人 - VISION mobility",
+   "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbUEyRGl4dEM4THhja011enYzdGJjSEt4MEd1ZzdXSEFnYnJfazIzallyT194eXJ1aDZQblRVSHFwQmNOY2NzSmd3aFgzb1FsdTI2NzhUQ2xILXZQXzN5RDEtdmxGYTQxZVpIWEpYVlNXQUx0RjJuT0xvQlRoaGF0VmtuMkdHMHItc1B3V2tzSGlkOUVJaTVtNVFiazI4dXI3bEI4eEt2NjA?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：“SpaceX与特斯拉研究合并”(更新) - 아시아경제",
+   "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBTC1zczdsdmtTaFI2eXBBTWhENU9WSG9XVkd5Y2JNTUdnYmJFUjAzVFpDdUt3MzZETjVmdUJtc3EzVjBiM296SDNvUFhDRnV3MV9WZlR3SVp3QWQxVWtWMFA4M0s?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "巴克莱(BCS.US)押注 12 月特斯拉(TSLA.US)与 SpaceX(SPCX.US) 合并，预测市场仅给 19% 概率 - 证券之星",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mSG5pNlhzb1hkOXVKSnk3SGktWlBvRVJydUJsU0NaeFdHZ3VqYl92WGJ2Ty1ERjhYZHNTc1E5eXNuUzY1ZEhVaDUzOE9IaElCMnJxYUN3V0VQZjc0ZXdsZA?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：若自动驾驶获准自由运营，Tesla有望承接全球逾半数客运出行里程 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOc25sX2tKcGZKWkF5Y2dXQ0k3VzJZZkJLS2VwMlpOMnJmWGsySnl5VTFWVkRBZ1dvNkJWZ1BtMEdkQThhdzM0YUJKUVFIOEdlV1pjbzNzc0dLNGx5RUJsTHB0VF82VC1RNG5BaGZrNmx5T0JwdXlXUzB2N2hkcDl1c0JNc1lTaTRCM3F0VHlzSnhtaDN5M2ZMZXlobEV5c3lsUV9qNDQwTkdJZ2dYYlowaVJkVHN0ak5iZV9BU21hMVRUX0M2bmJr?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla称Optimus已启动生产，Elon Musk：将通过观察人类完成训练 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNFNXNVJNaFBFN0tNLV9sbExJd25FSHN3VHAtckxZa19oVHZURlNVc1RGbnY1a2FfQVdrQ1dZV0t5ZUF4NXNPN3dNR2tFU2k4Uy1FR1plck9IUkJiUkhfb1Y5aHBvN3J2czNtTWhpcEJFbEhCT0xkY3NPYzB1X2Z5ZkhFSEJDRktteHA2YXhuMTE3RkxmaWt3YnpLdnpIcE5zYzJXT0I0ZzFPNDRqTjNfbFlYMVVzQ2c4UzhrYw?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Musk表态支持SpaceX与Tesla合并，股东表决门槛与中国监管成焦点 - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc0Rock12RXFoSzZMTk9IYjg3bXdpc29jRHhUMnN4VFk4ckV3SnY5SHJWQ0JWbUhfV0RiaGgwNzdoWTNQNzdYMWR0S3NDUjZxU1pVWVhQV09EN3BqNkRJakFxc0dTa08ydWpnNzAwWWpmSHhBOUxXYUpVM1ZmZ0VIemF5bUw1ME1GcEVpZjRudE85V2RMWWJkY1k0RDVfWW00NUlVY19zNzk4TXNlaFpiV19yQ3FDZmloalE?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "亿万富翁埃隆·马斯克承诺将SpaceX的股票赠送给每一个美国儿童。 - Vietnam.vn",
+   "src": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPckJaY0lLbmt3a3AzZHMxUHBMeDhUZ2swMzZEOWUxSzB1TzVoNklqLS1GWUV3aEhNNHJGbU9kU1JNT0cyTkktLUYtZFF3dFVMSTFOVXVaUm90TkVjU2hkN1V6NUZWaXJnb0lLclBpb1BKRV9neW42MUsyY3l6STBNUGRvVVdRZUJUejc0U01LZGRhQQ?oc=5"
+  },
+  {
+   "ts": "2026-10-25",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 9 条（明细见各人物卡）",
    "src": ""
   }
  ],
