@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-26T08:30:38+08:00",
+  "generated_at": "2026-10-27T09:33:19+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-26",
+  "asof": "2026-10-27",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 372.22,
-    "chg": 4.93,
+    "price": 391.62,
+    "chg": 6.4,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-26",
+    "src": "Yahoo 2026-10-27",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 147.49,
-    "chg": 1.0,
+    "price": 146.9,
+    "chg": -0.72,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-26",
+    "src": "Yahoo 2026-10-27",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 80181.29,
-    "chg": -1.39,
-    "src": "Yahoo 2026-10-26",
+    "price": 80016.57,
+    "chg": -1.3,
+    "src": "Yahoo 2026-10-27",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.077,
-    "chg": -2.13,
-    "src": "Yahoo 2026-10-26",
+    "price": 0.0777,
+    "chg": -1.09,
+    "src": "Yahoo 2026-10-27",
     "status": "green"
    }
   ],
@@ -499,6 +499,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-26",
      "c": 372.22
+    },
+    {
+     "d": "2026-10-27",
+     "c": 391.62
     }
    ],
    "SPCX": [
@@ -953,6 +957,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-26",
      "c": 147.49
+    },
+    {
+     "d": "2026-10-27",
+     "c": 146.9
     }
    ],
    "BTC-USD": [
@@ -1407,6 +1415,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-26",
      "c": 80181.29
+    },
+    {
+     "d": "2026-10-27",
+     "c": 80016.57
     }
    ],
    "DOGE-USD": [
@@ -1861,6 +1873,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-26",
      "c": 0.077
+    },
+    {
+     "d": "2026-10-27",
+     "c": 0.0777
     }
    ]
   }
@@ -28509,6 +28525,156 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4zNi1hTW9NazhjalUyVG5nX3lreXVwSGtaNjZZNEhyeWFyNi14VHp1YmdlM0phRi0wdlVLaEk1SFlwR2toTndCbzI4bmE5QzVxdW92bg?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-aa553298c3a7",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 说：明年，我将把我的Spacex 股份中的一份送给美国每一个孩子。浙江是总舵赠礼中的第一份。转某博...",
+   "payload": {
+    "src": "雪球",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wdTlOY3NobUdJU1Q1TjZuNkpseW9DTl9XczNnZ2FoTFlSb1JUYWNMc050WDRUdjg0aVgzRnBndERsS29ic2Rlajg0Q2Y5dXZNUVAxak9n?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-5b2fd5b8fa04",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "马斯克公开唱空“新云”：200多家公司或迎淘汰潮，SpaceX明确不会收购",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNXZmbkNyNVBrcUdlNzU2UHF1dVFOWUFqQXZLaWVXbmRaQVpIQ0xoRGlqa2R2U3lOYTgzd2NyYU5YeXJFTDRsNkY2ay1ZTWwtVWx4RlNoVTNISm40MkV1N1QxbHpPX3puVGFyX016aUxmZkhkME9WdDNBcmlGR21xZzdrbmJvU1BFb1JQY2FwUmlPRjVqLUFkTmpjc1hKQm12cncxaW9B?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-06a4bee3097b",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk：SpaceX完成400亿美元债务融资，用于采购GPU",
+   "payload": {
+    "src": "디지털투데이",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRlFuRV9pMkl2ZlBZazNxS0M5RGcxXzNvS0RNeHA4eU1laHpRNlRoa0dJUlpDU202c3FFeXNBWDNHak1IdDR5U3NKXzNsUEplZE1FYk5oVzRNb3R3bHp0eXNmS0JsYnN1cDRwVzJEdVZUUy1ZeDJMU2oyVC1oMC1pVlg4OWV4X05PaWFTU0tLc180aGFjc0FETjItWTY?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-19e2fbc211cd",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文今年飙升超60%为科网泡沫以来最佳，创始人埃里森身家狂涨750亿美元",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3S0RGZC1SZWVFcFIwMFpydVNxVUxoNXE3cDVzdzJzek9HZm5vVDE5NFVMeW9VcVFIX19wZlpXRGVqQXdmTkQ0djJYZ2tBQzBDU1Rn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-05069c6f1402",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Vickey Schoreplum yi42(@Square-Creator-47bde0fb3c23f) ၏ သုံးသပ်ချက်များ",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWaHd1RTNBdFp0VE1ETllVS2RtdmJaNnczN0dmbExYVjQ1NVNKeUF3NTlNSTJONEkzNURrTTZjOFFoVjVLWkF3YmIyaldLOWI5S1lRU3FQci1SRXprdDZtODVfSmFua1BB?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e5006910359c",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Trump’s First AI Czar: “CoreWeave Can’t Go Bankrupt” Because AI Has “Enforced Scarcity”",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUDA4cm1ZVFNtUW5WQmF5aTVwN1FOcm9DaVlLWkpNbm9rcDhaZGN4TDhOMXN5YXJENGUtMkY1bkR5YWxmVURmcUFhMkpucDNTb2JBc2N3OGlBejBadjVPb0FpbUhVMUt2Y2dReHFVem9RNGhnc1VjeVhZTU9VOFg0cmNNb1c3aG9CRTVKRWF2Y3NzWWhQZDlBM2c1NnFGc2JWN0VEN0ZjbGdoSzBJTWc?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-b2ce167eee43",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel批评Apple：Steve Jobs去世后再无重大创新",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWTg3blFDSE54WmdERTF6YkJlVkZvR3EySDRyYWZjS3BFejhFbVhtVmVydkw1ekkwSG8wQkl4TDNLcDRLZTJNdk90OEpvSXN5emFTTW5Ibkh0aWd6cTFlNmdfSGg2MEUwQng4Qjc3SXdWaEpJNlU3Mjg5R0Z0clE5YkE5eUpRM0dvd1RfaDNJelBKZ1FpM2c?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-6789c4098971",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "硅谷的「下一个 PayPal 黑帮」，为什么成了华人打华人",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BNmpuU0hXUlFYVktTNGRoRHRVUktmUXN2Q0lOSHJzVlZscUJYRnhsTTN4RG5MQXJ0Qzl0a2o3UGwyRkVrYjlMazk2aTJsYWRQVzQ0?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-3e7c189d9cdd",
+   "type": "event",
+   "ts": "2026-10-27",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:andreessen"
+   ],
+   "title": "Marc Andreesen 其人其事（三）：世界上最早的云服务",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1qdHhIMl9ZdEZvNnFEcG1MS0xfTlVfOXVOUTZWX1BmYUhKcjVxcUpnQVFRdkZiaHdDQXJOQzNhenk?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -28611,7 +28777,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2816 · xAI 298 在招（2026-10-26；Tesla 无免费接口）",
+     "v": "SpaceX 2827 · xAI 307 在招（2026-10-27；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -28715,7 +28881,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-26，A:FEC）",
+     "v": "近90天无申报记录（截至 2026-10-27，A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -29191,7 +29357,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-26 08:30",
+  "last_run": "2026-10-27 09:33",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -29202,7 +29368,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 116,
+   "edgar": 117,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -29212,7 +29378,7 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
-   "net": "2026-10-27T04:45:00Z",
+   "net": "2026-10-27T05:46:37Z",
    "status": "Go for Launch"
   },
   {
@@ -29221,14 +29387,14 @@ window.MUSKINTEL_DATA = {
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
-   "net": "2026-11-05T05:14:00Z",
+   "name": "Falcon 9 Block 5 | USSF-432",
+   "net": "2026-11-02T01:56:00Z",
    "status": "Go for Launch"
   },
   {
-   "name": "Falcon 9 Block 5 | NROL-195",
-   "net": "2026-11-05T22:34:00Z",
-   "status": "To Be Confirmed"
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "net": "2026-11-05T05:14:00Z",
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
@@ -29237,54 +29403,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-22",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla CEO Elon Musk Set to Become World's First Trillionaire, CNBC Reports - Moo",
-   "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOGFjcUtkNU9uVC1zNXlCRDB5c1RPS1VhRHFabkJzM3JKN0RQSlpmNXh1bnBnbnY3aHhEcVJ1ZmNnWXpUR09SNVBRenZIZ3NrN0RrcTlCR284bFA4VWJCb0ZMVldrb2txVko2a29LTWVUWXdpaXlWNlZ3aEozckhicHNKTm4wQWtqbjREd05OeERZOEE?oc=5"
-  },
-  {
-   "ts": "2026-09-22",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-23",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-23",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "【漫图秒懂】Elon Musk留整并伏笔 Tesla、SpaceX面临中美监管难题 - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSEI0VDRFNEhzeXJrcHF6bkh4dmdFamVhLTgydTdMMGZFV2Z2ZE8zb3JSRUNROVQ0c1NIWTc5bzlGal9vSVJEX3JwV3J1MGd2OGpLYkRFc1diOGw4ZWZrQTJtUVM2bE5yME9UU1lYTEpsNnA5akI5OVdkWDdFNkl0VE1FV05rdFpvS3R1X19yN2JDWXpWdkpJMDJyakg?oc=5"
-  },
-  {
-   "ts": "2026-09-24",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
   {
    "ts": "2026-09-24",
    "rule": "R3",
@@ -30195,6 +30313,54 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 5 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 说：明年，我将把我的Spacex 股份中的一份送给美国每一个孩子。浙江是总舵赠礼中的第一份。转某博... - 雪球",
+   "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wdTlOY3NobUdJU1Q1TjZuNkpseW9DTl9XczNnZ2FoTFlSb1JUYWNMc050WDRUdjg0aVgzRnBndERsS29ic2Rlajg0Q2Y5dXZNUVAxak9n?oc=5"
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "巴克莱(BCS.US)押注 12 月特斯拉(TSLA.US)与 SpaceX(SPCX.US) 合并，预测市场仅给 19% 概率 - 证券之星",
+   "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mSG5pNlhzb1hkOXVKSnk3SGktWlBvRVJydUJsU0NaeFdHZ3VqYl92WGJ2Ty1ERjhYZHNTc1E5eXNuUzY1ZEhVaDUzOE9IaElCMnJxYUN3V0VQZjc0ZXdsZA?oc=5"
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克公开唱空“新云”：200多家公司或迎淘汰潮，SpaceX明确不会收购 - 富途牛牛",
+   "src": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNXZmbkNyNVBrcUdlNzU2UHF1dVFOWUFqQXZLaWVXbmRaQVpIQ0xoRGlqa2R2U3lOYTgzd2NyYU5YeXJFTDRsNkY2ay1ZTWwtVWx4RlNoVTNISm40MkV1N1QxbHpPX3puVGFyX016aUxmZkhkME9WdDNBcmlGR21xZzdrbmJvU1BFb1JQY2FwUmlPRjVqLUFkTmpjc1hKQm12cncxaW9B?oc=5"
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk：SpaceX完成400亿美元债务融资，用于采购GPU - 디지털투데이",
+   "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRlFuRV9pMkl2ZlBZazNxS0M5RGcxXzNvS0RNeHA4eU1laHpRNlRoa0dJUlpDU202c3FFeXNBWDNHak1IdDR5U3NKXzNsUEplZE1FYk5oVzRNb3R3bHp0eXNmS0JsYnN1cDRwVzJEdVZUUy1ZeDJMU2oyVC1oMC1pVlg4OWV4X05PaWFTU0tLc180aGFjc0FETjItWTY?oc=5"
+  },
+  {
+   "ts": "2026-10-27",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 6 条（明细见各人物卡）",
    "src": ""
   }
  ],
