@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-27T09:33:19+08:00",
+  "generated_at": "2026-10-28T09:30:55+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-27",
+  "asof": "2026-10-28",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 391.62,
-    "chg": 6.4,
+    "price": 407.46,
+    "chg": 9.03,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-27",
+    "src": "Yahoo 2026-10-28",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 146.9,
-    "chg": -0.72,
+    "price": 148.58,
+    "chg": 0.53,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-27",
+    "src": "Yahoo 2026-10-28",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 80016.57,
-    "chg": -1.3,
-    "src": "Yahoo 2026-10-27",
+    "price": 80653.95,
+    "chg": -0.17,
+    "src": "Yahoo 2026-10-28",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0777,
-    "chg": -1.09,
-    "src": "Yahoo 2026-10-27",
+    "price": 0.0789,
+    "chg": 1.67,
+    "src": "Yahoo 2026-10-28",
     "status": "green"
    }
   ],
@@ -503,6 +503,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-27",
      "c": 391.62
+    },
+    {
+     "d": "2026-10-28",
+     "c": 407.46
     }
    ],
    "SPCX": [
@@ -961,6 +965,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-27",
      "c": 146.9
+    },
+    {
+     "d": "2026-10-28",
+     "c": 148.58
     }
    ],
    "BTC-USD": [
@@ -1419,6 +1427,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-27",
      "c": 80016.57
+    },
+    {
+     "d": "2026-10-28",
+     "c": 80653.95
     }
    ],
    "DOGE-USD": [
@@ -1877,6 +1889,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-27",
      "c": 0.0777
+    },
+    {
+     "d": "2026-10-28",
+     "c": 0.0789
     }
    ]
   }
@@ -28675,6 +28691,194 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1qdHhIMl9ZdEZvNnFEcG1MS0xfTlVfOXVOUTZWX1BmYUhKcjVxcUpnQVFRdkZiaHdDQXJOQzNhenk?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-a9a001c8a569",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "埃隆·马斯克对人工智能新云发出警告",
+   "payload": {
+    "src": "CoinDesk",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaC04NWZqZnhmTUxYOTMtb0tXdlBUdkZveTRyLURYUFNWQVJieHVPQWtiUlhvRDk2ZkRNLWc5TzlZWHJ5RVVCcGYxbXZMbG1QWmFuS3BqN3NQSHBDN1J1bVhaYVIwQW9DSHhnS01pYllsdGhSRG5JS1JMUjl5Qkg2SXhOSUtiMDhaWVNfb0hZMy02clhNaFcxZjFSQ0dLMDhQUnNJMm0wOWk5dGFwRl8wS3hKX0JXWHFjS3h5NGVlYlF4clVSQndGMWVxX0pxdExPOEE?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-619f578191e8",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "YYForce 祝贺 Tesla 及 Elon Musk 启动 Optimus 人形机器人量产",
+   "payload": {
+    "src": "GlobeNewswire",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPMHBJTDlYelh5MkVvamVScEJNckxjallGZHJHTTN3a19GQ1pRVE5UcHZLUUVvRm5fd0x0OUNqY2xtbVNJYXNWZ3Y4U2Z3WjBjMmVxSW5kXzA3R2FLaVEtZFFpdXpuVTUtU2R1enVzWDR0VWZ2QXhhYWFad0NJbWxSRDJLbUZjZ0NRLUFTemtUcG4xaUpqNXVrZjBYcHk2ZWlxVkN0MVFfLVRXWi1mRDZOWlFQbGc1eUJ1SVVReExMVWtuc3c2T0g1TlhGSlFvOWNaemFOWGpIal9VQTNSaWlUdXVPdl83TkhyVUFuQXktT1d5WVlMNkVIWElTX3dTTXF6bjB6dHZUOTBjS3E2b0NEdDdwVmJZVzBPS2V1dllsNXJYY1VVZ1NkdHdYTm9KWGtTaGM5R2lZU01FUldjcF9LT0NB?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-c474a0a0013c",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 宣佈 Tesla Model Y「七人座」版本即將正式投產",
+   "payload": {
+    "src": "hypebeast.cn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNGN3X0lUUUNWdGJoa2lTenktWlZLT0FqSW1aSTNGanNJWkdnWHk5a1loa1VwRnFWRXF4T0dKbXZ1d29kc21zaDVJLWxma3YxUXN3alhIYnMzOHgzSW1pQkxtOVlCT1NaMVlISW5odC1nVHRtUXhVWDN2XzNjTU1iNEprWWtHdEpOWkdWMlMzUDR4NW9v?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-9b27f696314d",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "為何 Tesla Cybertruck 會拖着 Elon Musk 迷因巨型雕塑？",
+   "payload": {
+    "src": "hypebeast.cn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JTVI3MjNsV2MxZzItMFVmS19UOUhwcXhMT0hoak9ST3h4SmdmeElzYTRTNWFpaXhjbmtUZ1JEaWtjWWh1bXZ4TUVBZl9pR29sNE1RUklZaHplNnRJRXFjQjJlMnJtOFBhWEJ5MHpxZWtNajEzZjBhWlJ5WWU0QQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-6311d778e61c",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Tesla falters, Elon Musk to reduce role at White House",
+   "payload": {
+    "src": "IDNFinancials",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMingFBVV95cUxNVE4yRU9vUnNYNzl3NzdRZEp4cGo0eExBMmVHTGRUV0UydEVSN2dyN0tZY3M0SmhwR1UwY2c1dHBvbWxXSkFNSDBhQU1SX05icnAwLWFmclVMbU5TRFhpUDMxNEpXTEpLeF9WTjlXcm5TbkJ0ZkNBWkl6WUdHVHRGVmtOZ1BsbXY5Q281Q1lHLV9SVjdYMFh0cE1WZy1Mdw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-4daee22a3cc7",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "近賞 Elon Musk 专属定制 Air Jordan 1「Tesla」",
+   "payload": {
+    "src": "HYPEBEAST",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1d0ZCUC1mQXpEVVNCakdWMEJfUXhRZEY1djlXdFhJeXpOQjlUV1BRZUpSbGg5MGhoZ3FLYVhBeDlZbkJwTHh6OU1iV28xcUxJQlRJY2dtaW05WjNwMGRKVmhDU0xCMzQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-37f26a52b6ce",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "Billionaire Takes on Significant Debt to Fund Son's Acquisition of Warner Bros.",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdGJuTy1qY3BvZDc3bWNwVVN6MDZnT0NtaC11ZFhEMTk4cDJMcWFuRUQ2aUo3eHhDNDc5V1VrS1J5dkVlYlFnT0Z6N1ZPSkk0a0tWMUVoN0pMZl9BQm9VazhiTTE3b2dfQlgzUGRkMG11aTMwLXFsWG9QbFNzNFBYOHlYSjFxa1VlRVlKMkFhOERNRmV6WWlLemhJQm1WcHFEbUJ1bEk5R2wwQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-0902b89010c8",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "甲骨文(ORCL.N)董事长拉里·埃里森取消了出售甲骨文股票的计划；埃利森没有其他出售计划。",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYy16cU5jRGZlZU83VEYybWVPRjhrMW1VYjgxTjkzaTk0V0JPV0hyMFpoLXNlcUxKbjdKdTBJbG05ckhkU3YwbnhDRjNadklFenBnaHU4MWhZTUNBdG82Z3Q3Q2g3aUZ1TG83Wm9XMTVLdnBKVXU4b3BkZU9DZkx5X1NrbzJpUkF0cUVMek82eW1uSWM1XzFGMEdVOGRveEFm?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-5a3a0deda253",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "美中台海红线在哪里? 华盛顿政策圈激辩战略模糊VS.战略清晰",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRWVmWmhCQXVpVGFoYXRjY0h2bW94TENKUVF3QzQ0Yjg2amRDQTV4eVl6N2hCdWtlUHV4Z3gxX2RpdDBaOXpGN0JVYzl4ODZNNUQ2Uk1SY1V4WG9wd3ZvdUJBX2o0LTl6ZFFRSE5xZXRNZHl5cDdMS0JOdWtFZWw3Q1pKS0s3MUF5R0FJZGRGLUZoWkpCbi00TzQyUmgzY3lMUFpBRDUxUmxCOUVJNUVvakRSd0J0S2V0bmpHVjdFMG9SclllcUZmVEV5em4tMzlsNXhUUFBjd2Nvbm0xQV9RQWNLaVdlSllqcEkwVmNR0gHwAUFVX3lxTFBqaGo4MjU1eEM3QlZXeUIyQWR4WTVYLUFLSExVeXQ5Q3p0SllBTFV6WHp6MXRqdDZ6cWdMQVRmX1R6cFhURHl4a0RiVTFlMUFQMEVyVTM3RXNEU01xWldNZ0VBSFc3Nkp1VThtR1JSSVdVRVoydW9melNTRGFKN3lyX0k4TnNzYkMycnVqZHViblZKREVyVWhXSm9mQ1MzVlNtcTZJQjF4bG5IWG9vVHBNVldRXzhkWGdnLTFWaEhrOGg4Y1ROQXZMMlZKTjhqWEt2OElKUF9tWW5Oblpkc3ExajZidkJGVnlaRXk0Zk9ZZw?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-7b2b39a4ce1a",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "播客笔记｜对话 Peter Thiel：AI 毁灭人类是个伪命题，借恐慌建立垄断才是真末日",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5vQkVocGFBVjlCVnNrTFJkTkh1WjJvZlVMVnpfSTVjcWpleEt3SUtwSDRDZDJacldTTzdTT01iN3MtZ0NzTnBoYXM0QQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-c8d50a19f60b",
+   "type": "event",
+   "ts": "2026-10-28",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "最危险的不是文科，AI先淘汰数学天才",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uU0Uyd3Zya0tVZ00yQldoTHZlelcydXRwLURUdzY4ekhJQW45QjRaejFISTVta3V5aVI2WWtucnRjX1JyRU1LY0c5SGpRNmNtUFE?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -28777,7 +28981,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2827 · xAI 307 在招（2026-10-27；Tesla 无免费接口）",
+     "v": "SpaceX 2834 · xAI 308 在招（2026-10-28；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -28881,7 +29085,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天无申报记录（截至 2026-10-27，A:FEC）",
+     "v": "近90天 $20,000,000／1笔，最新 2026-09-04（A:FEC）",
      "st": "green",
      "src": "FEC API·每日自动(试点)",
      "feeds": [
@@ -29357,7 +29561,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-27 09:33",
+  "last_run": "2026-10-28 09:30",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -29368,7 +29572,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 117,
+   "edgar": 118,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -29378,8 +29582,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
-   "net": "2026-10-27T05:46:37Z",
-   "status": "Go for Launch"
+   "net": "2026-10-27T07:25:51Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-18",
@@ -29393,7 +29597,7 @@ window.MUSKINTEL_DATA = {
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-21",
-   "net": "2026-11-05T05:14:00Z",
+   "net": "2026-11-05T02:35:00Z",
    "status": "Go for Launch"
   },
   {
@@ -29403,78 +29607,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX上市创纪录 诺奖得主克鲁曼：马斯克“庞氏骗局”终将崩盘 - 香港01",
-   "src": "https://news.google.com/rss/articles/CBMimwNBVV95cUxPYkdIOVF2bHd0TlNjZXZQYTVwSXJ3TDdReDVjcFNOZlNkanU3NVRCdlFsb1g1UnJ0YlU2dll5QnFmLWF1Q3Z3UUJpNzVHTi1IRHZTdGQ0cjk4dDBYUElOUk8wUkd0UXRkaHFDQ1Z3Tmc4M1lFc0dfOWdWdTBfWHNycThpNkRpa0NUaEljM3l0SHl1eWFaQXVzNjY2WGI0b1JTN292RDE1eDVPNV9CSm42UUxzd0xfc1B6YW0yNS1NY3N0Y0hmVjkwdnhDTnNIQVluLVA5Q0o2eGVmR0tTRGhVcDdZVzV3Wm1KLTZHV2Jjal93QWtMai1NemVRRVJjcVh5TGVTSF9XRENoVTh5UTgtWXNPSVQtUHBJSkVIc0VHbXBfeHl4bk9jc3h0cGYtd1VkM2RJZ0tuak1STXppNUFMV2dMZVNrRlAtM25MUjZTeUh5UC1IM0hGdlRZOFQ2SlZ2dm05SzlfbVRXMmt0cmNSaVR2ZEQzcUlyVXhxa0lXS3poN0FUaHB0Yk1PVVJQdTVCSWNzOHBUWU9VY00?oc=5"
-  },
-  {
-   "ts": "2026-09-24",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 9 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-25",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-25",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "比 Model Y 更小更便宜！ Tesla 平价新车曝光 - MyWheels 车天地",
-   "src": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNX1F3RTU5RW91aGV6TmZ6NDI2M19WLU4xSGJWVXBkNVY3bHpMWFprZGEyTC1KTEttYlR4Yl9aOTI3MTRYcDZDd1ZvM1k3c3AyNzJhRUNNRnNraGFQbXJVb1BSMTIzdzl5OXY0cHZfTUhMWUxnbmxtOXVNMGdnVWYxdEVoemtZWkxMak9EM2M5T2NsN1hEcjNPdmlLMVpKNkdjY3dubnJDemw4eVI1VnJjb3lPWGFiSTNnWko4TGdaSHRKVFhWREZ4Tkhqem9KWkZzQ0NJSDZSdWdfTFdFNUJEMU02c1k1S1VuaVJyMWRpR1lYZmI5V1E?oc=5"
-  },
-  {
-   "ts": "2026-09-25",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-26",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla与SpaceX若合并，Elon Musk薪酬方案或陷“只看市值”争议 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLTlKdDNxVmNVaUNNWk5MV1BHdG5TNEk3MllUbzI5Rkg1dEhQVkJ2cnBjNkNJamR0M1dPQWl3enh4dU1ISlN4Z0I5WmZ1WW9zSHFnOVZISUNJWTYtUHpUYUdqMVRvRS05UmNFSU1BOXhhcGUzVUxEMlVRLS1hOEdRMTRMWDFuVFBYcmlLZmZqd2ZyX1dmcXFOaENWU3F6bk1McUVsYzFB?oc=5"
-  },
-  {
-   "ts": "2026-09-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX或重燃IPO讨论：即使上市，Elon Musk仍料掌握85%表决权 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeUZDdGNEaUVVLTVLTFRaMmlzcC1FbmI5NVdjbEFhaFQxa05jSjdfYVFsb1docVZaazdsQ1lDMWtwb1Z3M0sxeTdUWmNOalFTRHNWS3N0NHpBNjExTjNNcUg3Mmx0Wi1tT2RKLTRlRlI3QkIwcFowTG9OdmVxRXh4ekRHVnFrTTUtMFpaR3I4ZGxkSl90d2RCQw?oc=5"
-  },
-  {
-   "ts": "2026-09-26",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 8 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-09-27",
    "rule": "R4",
@@ -30361,6 +30493,78 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 6 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "埃隆·马斯克对人工智能新云发出警告 - CoinDesk",
+   "src": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaC04NWZqZnhmTUxYOTMtb0tXdlBUdkZveTRyLURYUFNWQVJieHVPQWtiUlhvRDk2ZkRNLWc5TzlZWHJ5RVVCcGYxbXZMbG1QWmFuS3BqN3NQSHBDN1J1bVhaYVIwQW9DSHhnS01pYllsdGhSRG5JS1JMUjl5Qkg2SXhOSUtiMDhaWVNfb0hZMy02clhNaFcxZjFSQ0dLMDhQUnNJMm0wOWk5dGFwRl8wS3hKX0JXWHFjS3h5NGVlYlF4clVSQndGMWVxX0pxdExPOEE?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "YYForce 祝贺 Tesla 及 Elon Musk 启动 Optimus 人形机器人量产 - GlobeNewswire",
+   "src": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPMHBJTDlYelh5MkVvamVScEJNckxjallGZHJHTTN3a19GQ1pRVE5UcHZLUUVvRm5fd0x0OUNqY2xtbVNJYXNWZ3Y4U2Z3WjBjMmVxSW5kXzA3R2FLaVEtZFFpdXpuVTUtU2R1enVzWDR0VWZ2QXhhYWFad0NJbWxSRDJLbUZjZ0NRLUFTemtUcG4xaUpqNXVrZjBYcHk2ZWlxVkN0MVFfLVRXWi1mRDZOWlFQbGc1eUJ1SVVReExMVWtuc3c2T0g1TlhGSlFvOWNaemFOWGpIal9VQTNSaWlUdXVPdl83TkhyVUFuQXktT1d5WVlMNkVIWElTX3dTTXF6bjB6dHZUOTBjS3E2b0NEdDdwVmJZVzBPS2V1dllsNXJYY1VVZ1NkdHdYTm9KWGtTaGM5R2lZU01FUldjcF9LT0NB?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "传Elon Musk砸10亿美元入股Skydance 联手甲骨文创始人之子再扩媒体帝国 - DIGITIMES",
+   "src": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNFBZWU5GRy1ER3NCMjFZUWYxRTNTdlM2YWc5b2dNRDlPY1dVQmJyXy03S01ZVk83dlJsTnlUZlNlZ1NkRGhabThBb1NoYzBpVVhkbHA0T3dKcFpwYlhjQmk4WWxjbmhHcF9XVUpScTMxMEdBNHdrNklVaDhRUjNNSzNENWNBaF9sTlRzUFJZQklETkQ0cjlsMFNDak5QMThJanJOYnZtZ0FVRmtDLUFQcXFUbzdnbVJxSUNod1VYV1VCbzJ1SGRR?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 宣佈 Tesla Model Y「七人座」版本即將正式投產 - hypebeast.cn",
+   "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNGN3X0lUUUNWdGJoa2lTenktWlZLT0FqSW1aSTNGanNJWkdnWHk5a1loa1VwRnFWRXF4T0dKbXZ1d29kc21zaDVJLWxma3YxUXN3alhIYnMzOHgzSW1pQkxtOVlCT1NaMVlISW5odC1nVHRtUXhVWDN2XzNjTU1iNEprWWtHdEpOWkdWMlMzUDR4NW9v?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "為何 Tesla Cybertruck 會拖着 Elon Musk 迷因巨型雕塑？ - hypebeast.cn",
+   "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JTVI3MjNsV2MxZzItMFVmS19UOUhwcXhMT0hoak9ST3h4SmdmeElzYTRTNWFpaXhjbmtUZ1JEaWtjWWh1bXZ4TUVBZl9pR29sNE1RUklZaHplNnRJRXFjQjJlMnJtOFBhWEJ5MHpxZWtNajEzZjBhWlJ5WWU0QQ?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Tesla falters, Elon Musk to reduce role at White House - IDNFinancials",
+   "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVE4yRU9vUnNYNzl3NzdRZEp4cGo0eExBMmVHTGRUV0UydEVSN2dyN0tZY3M0SmhwR1UwY2c1dHBvbWxXSkFNSDBhQU1SX05icnAwLWFmclVMbU5TRFhpUDMxNEpXTEpLeF9WTjlXcm5TbkJ0ZkNBWkl6WUdHVHRGVmtOZ1BsbXY5Q281Q1lHLV9SVjdYMFh0cE1WZy1Mdw?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "近賞 Elon Musk 专属定制 Air Jordan 1「Tesla」 - HYPEBEAST",
+   "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1d0ZCUC1mQXpEVVNCakdWMEJfUXhRZEY1djlXdFhJeXpOQjlUV1BRZUpSbGg5MGhoZ3FLYVhBeDlZbkJwTHh6OU1iV28xcUxJQlRJY2dtaW05WjNwMGRKVmhDU0xCMzQ?oc=5"
+  },
+  {
+   "ts": "2026-10-28",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 5 条（明细见各人物卡）",
    "src": ""
   }
  ],
