@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-28T09:30:55+08:00",
+  "generated_at": "2026-10-29T09:53:04+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）"
  },
  "market": {
-  "asof": "2026-10-28",
+  "asof": "2026-10-29",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 407.46,
-    "chg": 9.03,
+    "price": 404.22,
+    "chg": 4.59,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-28",
+    "src": "Yahoo 2026-10-29",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 148.58,
-    "chg": 0.53,
+    "price": 145.23,
+    "chg": -8.84,
     "mcap": "≈$2.6T",
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-28",
+    "src": "Yahoo 2026-10-29",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 80653.95,
-    "chg": -0.17,
-    "src": "Yahoo 2026-10-28",
+    "price": 80030.51,
+    "chg": 0.01,
+    "src": "Yahoo 2026-10-29",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0789,
-    "chg": 1.67,
-    "src": "Yahoo 2026-10-28",
+    "price": 0.0783,
+    "chg": 1.9,
+    "src": "Yahoo 2026-10-29",
     "status": "green"
    }
   ],
@@ -507,6 +507,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-28",
      "c": 407.46
+    },
+    {
+     "d": "2026-10-29",
+     "c": 404.22
     }
    ],
    "SPCX": [
@@ -969,6 +973,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-28",
      "c": 148.58
+    },
+    {
+     "d": "2026-10-29",
+     "c": 145.23
     }
    ],
    "BTC-USD": [
@@ -1431,6 +1439,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-28",
      "c": 80653.95
+    },
+    {
+     "d": "2026-10-29",
+     "c": 80030.51
     }
    ],
    "DOGE-USD": [
@@ -1893,6 +1905,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-28",
      "c": 0.0789
+    },
+    {
+     "d": "2026-10-29",
+     "c": 0.0783
     }
    ]
   }
@@ -28879,6 +28895,226 @@ window.MUSKINTEL_DATA = {
     "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uU0Uyd3Zya0tVZ00yQldoTHZlelcydXRwLURUdzY4ekhJQW45QjRaejFISTVta3V5aVI2WWtucnRjX1JyRU1LY0c5SGpRNmNtUFE?oc=5",
     "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
    }
+  },
+  {
+   "id": "NEWS-2618088b22b2",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "SpaceX CEO Elon Musk Just Gave Telecoms Some Great News -- Barrons.com",
+   "payload": {
+    "src": "富途牛牛",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXNpZV9waS1aY2ZwSDJGRUdaMVY1RnBNTDAzWDUteHN3N2gySTRvaloyY0tLMEdIaElHQ2ZFMG5Cd2FydWlmRktXRTBiaEhreks0eno4Snp2UmVMWGl0bFRfZzhwYTZVc2ktNi1ia18wV2JpbF92Y2puMFpMNzE0M0UwLUlsekozOHJuZm9wM3Uzd3RnaW8yODhvYw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-bdcf231f7f55",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 宣佈 Tesla「全自動駕駛」功能價格調漲",
+   "payload": {
+    "src": "Hypebeast CN",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeDNVOVBVcTNrdnJodGhxbTZIUlVFdVk4Njk1Ty1ia0RPWnVxQXk4SnhWLXFza1JxamloUUgtRU5XRGlHVXV4R1RnaWZUVWFHMnJfWEZnc041UDNKYUdJM1NxbFhJdVdsTE1BMXdhdGpsaEhpRzgwX3ZTeG9UQ1pZeW5Xb1pjbzJuZ2d0MVJFUQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-9a756136964f",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk 宣稱 Tesla 僱員不在乎學歷",
+   "payload": {
+    "src": "hypebeast.cn",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zdnJVT00wR1VRSW1KRno5elRyN3dXM1cxSWFld2JYa1NJVXNHQ21hZFUxRVN6YXJ3TkxxS2REZk5BYWlRT2JReHhYZGlKM1J4NXdxREctOFhYQTlQY3BTUHJCRFRONkhod2NNWExadlc2bjdURnFxRVN1WEhadw?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-7e9415950cf0",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Schwope: \"Kann Elon Musk auch Geld verdienen?\"",
+   "payload": {
+    "src": "DW.com",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHNQRURJelVPWGZCUm5nY0VyQnFnSld1WGFfLWFRWjFrYU5zQmJhQTJhRkFlTHZKdHpSdXQ2ZjNNZlhrd1BFaDE0RzIyZ2dpT0JuSkhTMjVsaDdjSHNfWk1xR0ZiRHR3azVKNl8xNFlCcjlCSGFGckkyR2J3NjhUSDlReVVlN1lMTEdfbGo2NGhOOXJVTzBtaURYX050b2ExVm15ZV9BZWxRSUhVcmFvbFMtOVQzOGNwZnk0MzFvaHJKUdIBwgFBVV95cUxOZDA1ZkFmRmlYWUhiNm04ZnFEZFNkdzNsTnRsMnoya3l0YmhRVU1mb3Q0RXF2TkVDRElNRmpUMXB2SkNGZDJEeUtELXNrQlRHMlpiOVJWQlJDajl0X1lZelRFeU00MmtXWWtJcktYdHprbmFoX0NzY3NUMGV1cGhkUXZESHExR2ZJOXVNTFVfdmY5a3JWb09JbW8wZmE2WGJOWUtfVmotS0ZidFR0b2VscWZ6ejZaOEYtVXhmS3hvMTFSQQ?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-2625f6838dde",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "Elon Musk visits planned Tesla factory near Berlin",
+   "payload": {
+    "src": "deutschland.de",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMilwFBVV95cUxORDUzejE1dWk2UWcxS2FWT3ZzX0FpSjNqSERCN0d3bEU1SVBQSTF3SVN5SlNFWVhXYzRwRzM3RWE0YVJ3dG1JNTk0V1ltYjlmWFZkNkVPRWFYWldsNDNaV1U5al9FWVlWdDRHcFd6bGhQbzRkb21hVEk5VjBoOTZxMjZmbWJ0a3ZkdTlxd0NwSnRCYnY4cldj?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "NEWS-cab8a5d308e0",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news"
+   ],
+   "title": "等了 13 年，Elon Musk 终于拿到了 tesla.com 的域名",
+   "payload": {
+    "src": "品玩",
+    "srcs": [
+     "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBTQ2ZVYVEzMm9UOXFHbkxnaUZOLWVYUGgzd3hjT2VHczRZSGQ1VzhQTXRpTU82SE43NklQUTJWQUxJUmVZb3dz?oc=5"
+    ],
+    "note": "R3 单源未交叉，C 级默认不进结论"
+   }
+  },
+  {
+   "id": "PNEWS-d48ac5e6a23a",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:kimbal"
+   ],
+   "title": "SpaceX正式登陆纳斯达克，马斯克远程敲钟",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNOVBvV1dtRVhLM1pURkxqUDhWY1hFV0RraEktanJKcjI4LTVKYkQ2Smd0dzYxXzJxNVBvTHFtTFNQaDdtZFNreUVTclhiQWlDLWNUSHF3?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-a310be1c10dd",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:ellison"
+   ],
+   "title": "乔布斯生前的最好朋友，创造了一家5000亿美金市值的科技巨头",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBxQXhSNUVpMW1paHpOZEdFMFU1a0Z3X3ZpQUVZTzhQNVZoZ2cxMTB4WDhXeXlQNUxVeTFVemtLdHUyUG84bUtOaHZYbHRwaHVP?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-84985d0db3a9",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "OpenAI safety leader quits over 'broken' company culture",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdUtROS1mUDZzdms2enZsRzFBX0lrWmlVY09VNWhXR1NXcjJCc01DQ3Q5bWdET25Xd3BJZmV5ZlpNYlBsdURnSVNCay05MDdzUDhDU2RxSDNYOEZMZmdPY2pZSGx6c3pKRGx3QzBNS1hUYkJsbE1TUE93Z0c3T0NKbF85MlUwQQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-e3fe31bb087d",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:sacks"
+   ],
+   "title": "Trump拟设“AI Force”，美国财长Scott Bessent被传为下一任“AI沙皇”热门人选",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc3ZPVVlKbzBJMjFYSjU0TU9SM0x5T0gyQy03YjZDcE5IZ3ctSzJiTGtCRDMwcUkyb1RNRmNBdnhic2MyNW5nSE8zS0ZjQW05NDNESHZ0NTlnb3BldDRReTdmc1NTNjVWNFhQRGxETkpBX25KYnFzRXg1N0x3X1VkYkpSTE8xdnpsLU9tV2ZDd2ZGT3hTUEtQSHMyMXFLSU5WeEprdkdIZHRhdDNrd3B1YkhvYTdxWl9VUEh3NXp2b2N0VTdMblpIRXAyYXh2d0Jh?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-14a5bcbb1a37",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "亿万富翁 Peter Thiel 离开硅谷",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oVHJHNjI0ZUFhWUliVnVTRGh3Y0hIQjA0QTdqT0kwNHlBRjVzWFZHTmV3dzZFZ25QTlp1VjlWbFBEV1BwZFFBcjNyX0JHbDAyVmxoT3VCYV9mc0dFQkJ6M1Q3ZUpNaGZkVzVHOQ?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-72ec71cf8fe4",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:thiel"
+   ],
+   "title": "Peter Thiel：一起来看看这些打算从名校辍学创业的人都是什么背景？",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE16eU52c3dwMDhkdWVrRHlmWjBZZi00MUlFd3hONnI2VWRVX0FSZXdEY1JWSGZhNlR1dGFwVjV2cjhSU1VfcEtGczNn?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
+  },
+  {
+   "id": "PNEWS-1bb8e2031bab",
+   "type": "event",
+   "ts": "2026-10-29",
+   "ev": "C",
+   "scope": "1y",
+   "tags": [
+    "news",
+    "person:griffin"
+   ],
+   "title": "Citadel boss Ken Griffin: Cash is safe, but it’s not our culture",
+   "payload": {
+    "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUmZyVUd0VzhCZDdvN0NkQWRGVnlnalJsT3hLcUtrTzEzVVpCTVBmVEJPYXBja21NczVJZm1PTUE5bTlOVEZmTnI4N1FBN1Z0cUFTeUNjb1h6WUNsc1FUUjdiRkNHdjhKVE9STzM1c2gwSUdmVzVXRGRQcDluUFpKbEFLcHB0MDlXNmllNUNtVEtMd2RxX1VuWFZLc3BhNjEyQWZwX1FabVA?oc=5",
+    "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"
+   }
   }
  ],
  "countdowns": [
@@ -28981,7 +29217,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2834 · xAI 308 在招（2026-10-28；Tesla 无免费接口）",
+     "v": "SpaceX 2847 · xAI 304 在招（2026-10-29；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每日自动",
      "feeds": [
@@ -29561,7 +29797,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-28 09:30",
+  "last_run": "2026-10-29 09:53",
   "sources": {
    "yahoo": "green",
    "edgar": "fused",
@@ -29572,7 +29808,7 @@ window.MUSKINTEL_DATA = {
   },
   "fail_counts": {
    "yahoo": 0,
-   "edgar": 118,
+   "edgar": 119,
    "launchlib": 0,
    "rss": 0,
    "greenhouse": 0,
@@ -29581,24 +29817,24 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | Starlink Group 15-16",
-   "net": "2026-10-27T07:25:51Z",
-   "status": "Launch Successful"
-  },
-  {
    "name": "Falcon 9 Block 5 | Starlink Group 15-18",
-   "net": "2026-10-30T04:02:00Z",
+   "net": "2026-10-31T03:48:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-432",
-   "net": "2026-11-02T01:56:00Z",
+   "net": "2026-11-03T01:42:00Z",
    "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-21",
-   "net": "2026-11-05T02:35:00Z",
+   "net": "2026-11-06T02:21:00Z",
    "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | USSF-xxx (\"R-5\")",
+   "net": "2026-11-10T03:03:00Z",
+   "status": "To Be Confirmed"
   },
   {
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
@@ -29607,78 +29843,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-09-27",
-   "rule": "R4",
-   "action": "跳过(账本已有同题)",
-   "ev": "-",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-27",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-28",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk称Tesla FSD将新增避让坑洞功能 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTAyNWxRS3J2S1E1ZjRrcXA4M1BoZlZPNVQ3dlNQcTVoOTR6MjVIOF9UbWV0bEViS0xrSzZMWGxjR2tjNi1vNk82NXdZYXJRRDNZOUN1eERxa3daUkJpYUJyVmZ3S1RpSmM3QW5MalVpTmVGYkc1MVlIdUNtbFprcWtnTVF0NERtYWdqeENTa2VyVXV2ZUhoYU9QOE9hVGs?oc=5"
-  },
-  {
-   "ts": "2026-09-28",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX纳斯达克上市首日涨19%，Elon Musk净资产约达1.1万亿美元 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY1JISWFDZjBiWWIyb0Z1R19hQ3hEeU9wNkFQdjJac01vY21BTWJFNWRxYmJhOXFRS3VTNTQ0MVZRZWlkX015QktPSDlaTDJjcnF2TUxiRWEtMk1GalE0WW0wY1ZRQ25EV2Q0SlBxUEhlNENvMTd4eURxbTJWOHhSbHZoTU4zel9QOUlRVXJsbm54bmdHZy1nTW9pY1dNOTdmSXFuZmMzTTQyMzZBdm45bDRUbHFvZzBLMEs5bnNOY29oUQ?oc=5"
-  },
-  {
-   "ts": "2026-09-28",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 8 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-29",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 9 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-09-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·穆斯克如何构建特斯拉,SpaceX,和xAI:他亿万-多拉尔帝国背后的策略:由球面透视获得的专家观点 - Spherical Insights",
-   "src": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUEtDYkZXbFNSd0dZb2laRmhUbVpDUTRkUVhSZFU2eVZ3U0NBblNHSlhXenlzMXJIelY2cFJVc3pWUkNFcWRqYV9Vbk44cmhnUmtSTXhqcmhRQXltYk1Zb0pyYkYzS0xRdnNDMmxsd2lrR0ZWdF9wNHlRNm9YdWw1YzJDeVpOV29TclVCbmItZ3VtM0N3bHBkVzYxRTI4Unh1WFMtNDQzeDRBQ1U4dTJBMndGLVQ5WVRHU090ZFR6YlpYV2pJN19mQQ?oc=5"
-  },
-  {
-   "ts": "2026-09-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX IPO 令 Elon Musk 成為全球首位「兆美元富豪」 - Hypebeast CN",
-   "src": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSlFfSzh6M1ViblFSUXhQd1B3UmtNcV83NE1FekQzTVJ6dUR2NV9TWmtEMEJkRWUxNXp4RUI4R3Rydy1MSlF1VVhHZW9QcThtVjhGYWI5X3F3Vjk2Sk9WZFF6VnVYWG03SUU5eG1kb1JkWjhTQ1E2ZkhyamNYSjVfYTBidG9JUQ?oc=5"
-  },
-  {
-   "ts": "2026-09-30",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX“星舰”第14次试飞首次完成轨道飞行，部署26颗Starlink V3卫星 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNHZqREprTlhWdUw0ZGdOU2s1emZJLUFXUDRBTmlnMnBpQzQzRjVZNmxjcWJiTFdfU2ZHXzd6LVBEZThYc1RYRkt4VWVETXNkbEMyeFJTM3YwSkd5MmJPMlZUNnp4Nl9ERWZlbEZ0RzdCUWtfVGVMMkZIcHMtcWpaOXF0cWdoQjc1Y3NkR2JaUi12c3JtajBhME5nZ3NmM0tI?oc=5"
-  },
   {
    "ts": "2026-09-30",
    "rule": "R3",
@@ -30565,6 +30729,78 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 5 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "SpaceX CEO Elon Musk Just Gave Telecoms Some Great News -- Barrons.com - 富途牛牛",
+   "src": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXNpZV9waS1aY2ZwSDJGRUdaMVY1RnBNTDAzWDUteHN3N2gySTRvaloyY0tLMEdIaElHQ2ZFMG5Cd2FydWlmRktXRTBiaEhreks0eno4Snp2UmVMWGl0bFRfZzhwYTZVc2ktNi1ia18wV2JpbF92Y2puMFpMNzE0M0UwLUlsekozOHJuZm9wM3Uzd3RnaW8yODhvYw?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Market Chatter: Tesla CEO Elon Musk Set to Become World's First Trillionaire - 富",
+   "src": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRTE1aDlzMk5rLWxHdUVvRG5IZmhxaXV6NzBVM1BQSzhZQy01bk80WXJBUFh6aXFweXktV29odG13V0E2elJGc2FpMjZpLVZlaDdDajJlcEVuMTZzVlkyR0FwemNobGUtVWNzREhNc0R1SWxhM2xrS0N5TGNPVHoyT3lob0VPZEp2SElzYkRlRWJQZmk0UDZvNlVIRQ?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 宣佈 Tesla「全自動駕駛」功能價格調漲 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeDNVOVBVcTNrdnJodGhxbTZIUlVFdVk4Njk1Ty1ia0RPWnVxQXk4SnhWLXFza1JxamloUUgtRU5XRGlHVXV4R1RnaWZUVWFHMnJfWEZnc041UDNKYUdJM1NxbFhJdVdsTE1BMXdhdGpsaEhpRzgwX3ZTeG9UQ1pZeW5Xb1pjbzJuZ2d0MVJFUQ?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk 宣稱 Tesla 僱員不在乎學歷 - hypebeast.cn",
+   "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zdnJVT00wR1VRSW1KRno5elRyN3dXM1cxSWFld2JYa1NJVXNHQ21hZFUxRVN6YXJ3TkxxS2REZk5BYWlRT2JReHhYZGlKM1J4NXdxREctOFhYQTlQY3BTUHJCRFRONkhod2NNWExadlc2bjdURnFxRVN1WEhadw?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Schwope: \"Kann Elon Musk auch Geld verdienen?\" - DW.com",
+   "src": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHNQRURJelVPWGZCUm5nY0VyQnFnSld1WGFfLWFRWjFrYU5zQmJhQTJhRkFlTHZKdHpSdXQ2ZjNNZlhrd1BFaDE0RzIyZ2dpT0JuSkhTMjVsaDdjSHNfWk1xR0ZiRHR3azVKNl8xNFlCcjlCSGFGckkyR2J3NjhUSDlReVVlN1lMTEdfbGo2NGhOOXJVTzBtaURYX050b2ExVm15ZV9BZWxRSUhVcmFvbFMtOVQzOGNwZnk0MzFvaHJKUdIBwgFBVV95cUxOZDA1ZkFmRmlYWUhiNm04ZnFEZFNkdzNsTnRsMnoya3l0YmhRVU1mb3Q0RXF2TkVDRElNRmpUMXB2SkNGZDJEeUtELXNrQlRHMlpiOVJWQlJDajl0X1lZelRFeU00MmtXWWtJcktYdHprbmFoX0NzY3NUMGV1cGhkUXZESHExR2ZJOXVNTFVfdmY5a3JWb09JbW8wZmE2WGJOWUtfVmotS0ZidFR0b2VscWZ6ejZaOEYtVXhmS3hvMTFSQQ?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk visits planned Tesla factory near Berlin - deutschland.de",
+   "src": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORDUzejE1dWk2UWcxS2FWT3ZzX0FpSjNqSERCN0d3bEU1SVBQSTF3SVN5SlNFWVhXYzRwRzM3RWE0YVJ3dG1JNTk0V1ltYjlmWFZkNkVPRWFYWldsNDNaV1U5al9FWVlWdDRHcFd6bGhQbzRkb21hVEk5VjBoOTZxMjZmbWJ0a3ZkdTlxd0NwSnRCYnY4cldj?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "等了 13 年，Elon Musk 终于拿到了 tesla.com 的域名 - 品玩",
+   "src": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBTQ2ZVYVEzMm9UOXFHbkxnaUZOLWVYUGgzd3hjT2VHczRZSGQ1VzhQTXRpTU82SE43NklQUTJWQUxJUmVZb3dz?oc=5"
+  },
+  {
+   "ts": "2026-10-29",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 7 条（明细见各人物卡）",
    "src": ""
   }
  ],
