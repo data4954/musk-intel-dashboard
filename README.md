@@ -1,4 +1,4 @@
-# Axiomake · 器象量化研究所
+# Axiomake · 墨拆量化研究所
 
 **An auto-verifying evidence ledger + first-principles analysis terminal + AI analyst judgment layer — for a *simulated* 2026 Musk universe (TSLA / SpaceX).**
 

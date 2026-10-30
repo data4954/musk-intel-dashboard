@@ -1,4 +1,4 @@
-# Axiomake · 器象量化研究所 — 项目交接（Claude Code 请先读本文件）
+# Axiomake · 墨拆量化研究所 — 项目交接（Claude Code 请先读本文件）
 
 ## 一句话
 马斯克系资产（TSLA / SPCX）的**自动核实证据账本 + 第一性原理分析台 + AI 分析师判断层**。
