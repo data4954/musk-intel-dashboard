@@ -2,12 +2,12 @@
 
 ## 一句话
 马斯克系资产（TSLA / SPCX）的**自动核实证据账本 + 第一性原理分析台 + AI 分析师判断层**。
-纯静态站（GitHub Pages），Actions 每周日 06:30（北京时间）自动抓数据、按规则核实入库、生成研报、自动发布。
+纯静态站（Cloudflare Pages），Actions 每周日 06:30（北京时间）自动抓数据、按规则核实入库、生成研报、自动发布。
 **无后端、无构建步骤。全站数据为构建情景（2026 推演），非现实数据——免责声明已声明此点，不可删。**
 
 ## 运行 / 预览 / 部署
 - 本地预览：仓库根目录 `python -m http.server 8000`（或 8777）→ 浏览器打开。改完刷新即见；浏览器常缓存 data.js，用 `fetch('data.js',{cache:'reload'})` 或硬刷新。
-- 部署：`git push` 到 `main` → Pages 自动发布 → https://data4954.github.io/musk-intel-dashboard/ （仓库 About 已指向它）。
+- 部署：`git push` 到 `main` → Cloudflare Pages（项目 musk-intel-dashboard，连 GitHub 自动构建，构建命令只拷 index.html/data.js/reports.js/assets/reports 到 dist）自动发布 → https://musk.deeplove.edu.kg （备用 https://musk-intel-dashboard.pages.dev ）。仓库 2026-10-30 起为私有，旧 github.io 地址已停用。
 - 自动化：`.github/workflows/update.yml` 每周六 UTC 22:30（北京周日 06:30）跑 update.py + report.py 并自动 commit+push。**本地改动要尽快 push**，否则与机器人提交分叉；分叉时账本按 id 做并集合并（只追加纪律，双方零丢失），不可硬覆盖。
 - 改完必做：`node --check data.js`；index.html 的大 `<script>` 抽出跑 `node --check`；改 report.py 跑 `python -m py_compile`。
 - **编辑大文件用 Python re 脚本**（本仓库中文多、CRLF/LF 混合，PowerShell here-string 匹配常失败）。
@@ -57,7 +57,7 @@
 3. 旧 Vercel 部署（musk-intel-dashboard.vercel.app）已失效，属用户 Vercel 账号，可自行删除。
 
 ## 已知状态
-- Pages 偶被关：仓库 Settings→Pages → Deploy from a branch → main /(root)。
+- 发布出问题：去 Cloudflare 后台 Workers 和 Pages → musk-intel-dashboard → 部署 看构建日志。新增网页要用的文件时，记得同步改构建命令。
 - EDGAR 对 GitHub IP 间歇 403 → 熔断进报告头警示，成功一次自动复位，属预期。
 - git 凭据已存于本机凭据管理器（push 可用）；GitHub API 操作可经 `git credential fill` 取令牌（仅限用户明确要求的仓库操作）。
 - index.html 行尾 CRLF/LF 混合——用 Python re 编辑，勿用 PS here-string 精确匹配。

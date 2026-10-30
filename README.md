@@ -4,7 +4,7 @@
 
 > ⚠️ **Everything on this site is a constructed scenario (2026 simulation).** SPCX going public, xAI merging into SpaceX — none of it happened in reality. The *pipeline* is real; the *world* is fiction. Think of it as a flight simulator for investment research. Not investment advice.
 
-**Live site:** https://data4954.github.io/musk-intel-dashboard/ *(content in Chinese — browser translate works fine; the charts speak for themselves)*
+**Live site:** https://musk.deeplove.edu.kg/ *(content in Chinese — browser translate works fine; the charts speak for themselves)*
 
 ---
 
@@ -14,7 +14,7 @@ Every Sunday at 06:30 (UTC+8), with zero human involvement:
 
 ```
 8 public sources          rules R1–R6              single data file         static site
-(quotes · SEC · launches  ──────────────►  grade &  ──────────────►  9 views + treemaps +   ──► GitHub Pages
+(quotes · SEC · launches  ──────────────►  grade &  ──────────────►  9 views + treemaps +   ──► Cloudflare Pages
  jobs · FEC · news)          scrape           ingest    data.js ledger      network graphs
                                                             │
                                                             ▼
@@ -71,7 +71,7 @@ index.html                  the whole site (views in Views = {...})
 data.js                     single source of truth (append-only ledger + all analysis data)
 scripts/update.py           weekly scrape + verify + ingest (rules R1–R6 in header)
 scripts/report.py           report generator (+ auto-injects the judgment layer)
-.github/workflows/update.yml  weekly (Sun 06:30 UTC+8) cron → auto-commit → Pages
+.github/workflows/update.yml  weekly (Sun 06:30 UTC+8) cron → auto-commit → Cloudflare Pages
 reports/                    generated research reports archive
 CLAUDE.md                   handover doc for AI collaboration sessions (in Chinese)
 ```
