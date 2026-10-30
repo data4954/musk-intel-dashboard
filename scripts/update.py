@@ -10,6 +10,9 @@
   R4  账本只追加、不覆盖；与最近 60 天账本条目做标题相似度去重
   R5  自动入库一律不填 impact（影响评分是分析判断，机器不越权）
   R6  源失败 → 沿用旧值并标注陈旧；连续 3 次失败熔断，写进周报头条
+  R7  C 级降噪：入库前繁简归一去重；单源新闻须来自白名单媒体，人物通道须与马斯克系相关；
+      每轮 C 级封顶 C_RUN_CAP 条。C 级写入 archive/ledger_c.jsonl（只追加，留存备审计，
+      不进 data.js、不发布），data.js 账本只存 A/B
 """
 import json, re, os, time, hashlib, urllib.request, urllib.error, urllib.parse
 from datetime import datetime, timezone, timedelta
@@ -26,6 +29,24 @@ LOG  = os.path.join(ROOT, "诊断日志.txt")
 UA   = {"User-Agent": "Axiomake Research data90677@gmail.com"}   # SEC 要求 "名称 邮箱" 格式的声明式 UA
 MAXB = 15 * 1024 * 1024
 NEWS_RUN_CAP = 30         # 每次运行（每周一次）新闻入库上限，控噪
+C_RUN_CAP    = 15         # R7 每次运行 C 级入库总上限
+PERSON_CAP   = 2          # R7 人物通道每人每次上限
+ARCHIVE_C    = os.path.join(ROOT, "archive", "ledger_c.jsonl")
+# R7 单源新闻媒体白名单（子串匹配媒体名；白名单外的单源新闻不入库，只在审计计数）
+OUTLET_WHITELIST = ("华尔街日报", "联合早报", "BBC", "DW", "德国之声", "美国之音", "纽约时报", "金融时报",
+    "FT中文", "路透", "Reuters", "彭博", "Bloomberg", "CNBC", "日经", "南华早报", "Business Times",
+    "财新", "第一财经", "一财", "证券时报", "中国证券报", "上海证券报", "21世纪经济报道", "经济观察报",
+    "界面", "澎湃", "新浪财经", "华尔街见闻", "36氪", "虎嗅", "钛媒体", "IT之家", "cnBeta", "麻省理工科技评论",
+    "DIGITIMES", "TechCrunch", "The Verge", "Electrek", "Teslarati", "Business Wire")
+# R7 马斯克系相关性关键词（人物通道标题须命中其一）
+MUSK_KW = re.compile(r"马斯克|Musk|特斯拉|Tesla|SpaceX|星链|Starlink|xAI|Grok|Neuralink|Optimus|Robotaxi|"
+                     r"FSD|Cybertruck|Boring|DOGE|X\.com|推特|Twitter|Kimbal", re.I)
+
+try:
+    from zhconv import convert as _zh            # 繁→简归一（workflow 里 pip install zhconv）
+    def to_simp(t): return _zh(t, "zh-cn")
+except ImportError:                              # 未安装时退化为不转换，去重变弱但不中断
+    def to_simp(t): return t
 DEDUP_WINDOW_D = 60       # 去重回看窗口（天）
 SIM_THRESHOLD  = 0.40     # 标题字符二元组 Jaccard 相似度阈值（启发式）
 # 诚实边界: 中文媒体对同一事件措辞差异大（如"兆美元富豪"vs"万亿富翁"），
@@ -54,7 +75,7 @@ def get(url, timeout=20, tries=2):
 # ---------- 相似度（中文友好：字符二元组 Jaccard） ----------
 def norm_title(t):
     t = re.sub(r"\s*[-–—|·]\s*[^-–—|·]{2,20}$", "", t)      # 去掉尾部媒体名
-    t = re.sub(r"[\s\W_]+", "", t.lower())
+    t = re.sub(r"[\s\W_]+", "", to_simp(t).lower())
     return t
 
 def bigrams(s):
@@ -77,9 +98,18 @@ def main():
     health = {}
     fails  = D.get("health", {}).get("fail_counts", {})
     audit  = []          # 本轮审计记录，前端展示
-    ledger_ids    = {r["id"] for r in D["ledger"]}
-    recent_titles = [r["title"] for r in D["ledger"]
-                     if r.get("ts", "") >= (NOW - timedelta(days=DEDUP_WINDOW_D)).strftime("%Y-%m-%d")]
+    # R7 C 级归档：读入既有归档供去重；迁移遗留在 data.js 里的 C 级（只搬不删）
+    archive_c = []
+    if os.path.exists(ARCHIVE_C):
+        archive_c = [json.loads(x) for x in open(ARCHIVE_C, encoding="utf-8") if x.strip()]
+    legacy_c = [r for r in D["ledger"] if r.get("ev") == "C"]
+    D["ledger"] = [r for r in D["ledger"] if r.get("ev") != "C"]
+    c_new = list(legacy_c)                      # 本轮待追加到归档的 C 级
+    c_dropped = 0                               # R7 白名单/相关性/限量丢弃计数
+    since_dedup = (NOW - timedelta(days=DEDUP_WINDOW_D)).strftime("%Y-%m-%d")
+    ledger_ids    = {r["id"] for r in D["ledger"]} | {r["id"] for r in archive_c + legacy_c}
+    recent_titles = [r["title"] for r in D["ledger"] + archive_c + legacy_c if r.get("ts", "") >= since_dedup]
+    c_quota = [C_RUN_CAP]
 
     def bump(src_key, ok):
         health[src_key] = "green" if ok else "red"
@@ -191,7 +221,9 @@ def main():
             outlets = {x["outlet"] for x in c}
             multi = len(outlets) >= 2
             ev = "B" if multi else "C"
-            D["ledger"].append({
+            if not multi and (c_quota[0] <= 0 or not any(w.lower() in rep["outlet"].lower() for w in OUTLET_WHITELIST)):
+                c_dropped += 1; continue                                       # R7 白名单外/超限
+            (D["ledger"] if multi else c_new).append({
                 "id": rid, "type": "event", "ts": ASOF, "ev": ev, "scope": "1y", "tags": ["news"],
                 "title": re.sub(r"\s*[-–—]\s*[^-–—]{2,25}$", "", rep["title"]),
                 "payload": {"src": "; ".join(sorted(outlets)),
@@ -199,6 +231,7 @@ def main():
                             "note": (f"R2 多源交叉自动定 B（{len(outlets)} 家媒体同报）" if multi
                                      else "R3 单源未交叉，C 级默认不进结论")}})
             ledger_ids.add(rid); recent_titles.append(rep["title"]); n_in += 1
+            if not multi: c_quota[0] -= 1
             audit.append({"ts": ASOF, "rule": "R2" if multi else "R3", "action": "入库", "ev": ev,
                           "title": rep["title"][:80], "src": rep["link"]})
         bump("rss", True)
@@ -220,20 +253,25 @@ def main():
         if not t: continue
         n_this = 0
         for mm in re.finditer(r"<item><title>(.*?)</title><link>(.*?)</link>", t):
-            if n_this >= 5: break                                  # 每人每次（每周）上限5条，控噪
+            if n_this >= PERSON_CAP or c_quota[0] <= 0: break          # R7 每人每次上限 + 全轮 C 级上限
             title = re.sub(r"<!\[CDATA\[|\]\]>", "", mm.group(1)).strip()
+            if not MUSK_KW.search(to_simp(title)):                 # R7 与马斯克系无关 → 不入库
+                c_dropped += 1; continue
             rid = "PNEWS-" + hashlib.md5((pid + norm_title(title)).encode()).hexdigest()[:12]
             if rid in ledger_ids: continue
             if any(sim(title, x) >= SIM_THRESHOLD for x in recent_titles): continue
-            D["ledger"].append({"id": rid, "type": "event", "ts": ASOF, "ev": "C", "scope": "1y",
+            c_new.append({"id": rid, "type": "event", "ts": ASOF, "ev": "C", "scope": "1y",
                 "tags": ["news", "person:" + pid],
                 "title": re.sub(r"\s*[-–—]\s*[^-–—]{2,25}$", "", title),
                 "payload": {"src": mm.group(2), "note": "人物通道自动抓取（R3 单源 C 级，不进结论）"}})
-            ledger_ids.add(rid); recent_titles.append(title); n_this += 1; p_in += 1
+            ledger_ids.add(rid); recent_titles.append(title); n_this += 1; p_in += 1; c_quota[0] -= 1
     if p_in:
         log(f"人物动态: 新入库 {p_in} 条（C级，按人物tag挂卡）")
         audit.append({"ts": ASOF, "rule": "R3", "action": "入库", "ev": "C",
-                      "title": f"人物动态通道 {p_in} 条（明细见各人物卡）", "src": ""})
+                      "title": f"人物动态通道 {p_in} 条（C 级归档，不上站）", "src": ""})
+    if c_dropped:
+        audit.append({"ts": ASOF, "rule": "R7", "action": "降噪丢弃", "ev": "C",
+                      "title": f"白名单外/与马斯克系无关/超限 {c_dropped} 条未入库", "src": ""})
 
     # ---------- 先行引擎自动项 ----------
     def set_leading(key_sub, v, st):
@@ -309,18 +347,23 @@ def main():
     D["audit"] = (D.get("audit", []) + audit)[-120:]           # 审计留痕，封顶120条
     D["health"] = {"last_run": STAMP, "sources": health, "fail_counts": fails}
     D.pop("pending_queue", None)                               # 全自动模式：待审队列退役
+    D["meta"]["c_archive_count"] = len(archive_c) + len(c_new)  # 前端只显示 C 级条数
 
     out = ("// Axiomake 数据文件 —— 由 GitHub Actions scripts/update.py 维护，请勿手动编辑\n"
-           "// 编码: UTF-8 | 模式版本: 2 | 账本模型: 只追加不覆盖 | 全自动核实规则 R1-R6 见 update.py 头注\n"
+           "// 编码: UTF-8 | 模式版本: 2 | 账本模型: 只追加不覆盖 | 全自动核实规则 R1-R7 见 update.py 头注\n"
            "window.MUSKINTEL_DATA = " + json.dumps(D, ensure_ascii=False, indent=1) + ";\n")
     json.loads(re.search(r"=\s*(\{.*\});", out, re.S).group(1))     # 检1 可解析
     assert D.get("ledger") and D.get("entities")                     # 检2 必填
     data = out.encode("utf-8")                                       # 检3 编码
     if len(data) > MAXB:                                             # 检4 体积
         log("错误: 超过15MB预算，本次丢弃。建议: 年度归档分片"); return 1
+    if c_new:                                                        # R7 C 级只追加进归档
+        os.makedirs(os.path.dirname(ARCHIVE_C), exist_ok=True)
+        with open(ARCHIVE_C, "a", encoding="utf-8", newline="\n") as f:
+            f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in c_new)
     open(NEW, "wb").write(data)
     os.replace(NEW, DATA)                                            # 原子替换（历史版本由 git 承担）
-    log(f"更新成功。账本 {len(D['ledger'])} 条，本轮审计 {len(audit)} 条")
+    log(f"更新成功。账本 A/B {len(D['ledger'])} 条，C 级归档 {D['meta']['c_archive_count']} 条（本轮 +{len(c_new)}），本轮审计 {len(audit)} 条")
     return 0
 
 if __name__ == "__main__":

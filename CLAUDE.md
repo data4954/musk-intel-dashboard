@@ -15,14 +15,16 @@
 ## 文件地图
 - `index.html` — 全站单文件（内联 CSS + JS）。视图在 `Views = {...}`，导航序 `const NAVS`，渲染入口 `render(id)`，工具 `esc/evChip/daysTo/allLedger/renderCall/mdToHtml`。
 - `data.js` — 唯一数据源 `window.MUSKINTEL_DATA`。update.py 整体 JSON 重写但**保留未知键**（analyst_calls 安全）。
-- `scripts/update.py` — 每周抓取+核实入库（规则 R1-R6 见文件头）。
+- `scripts/update.py` — 每周抓取+核实入库（规则 R1-R7 见文件头；R7 = C 级降噪：白名单/相关性/繁简去重/限量）。
+- `archive/ledger_c.jsonl` — C 级归档（只追加、不发布、不进 data.js）；`data.js` 账本只存 A/B，`meta.c_archive_count` 记条数。
+- `docs/维护清单.md`（人工项周期与发布注意，原趋势报告页底清单）、`docs/判断层重审.md`（定时重审方案与提示词）。
 - `scripts/report.py` — 研报生成器。结构：摘要→核心变化→分板块判定（3.2/3.3 为表格）→风险→数据附录→**六、分析师判读（自动读 analyst_calls 注入，非留白）**。无 C 级未核实区。
 - `reports/` + `reports.js` — 研报归档与前端零请求加载。
 
 ## data.js 关键结构
-- `ledger[]` 事件账本（**只追加**）；`audit[]` 审计留痕；`market{quotes,series}`；`health{sources}`。
+- `ledger[]` 事件账本（**只追加**，只含 A/B；C 级在 archive/ledger_c.jsonl）；`audit[]` 审计留痕；`market{quotes,series}`；`health{sources}`。
 - `analyst_calls[]` **分析师判断层**（站的灵魂）：每条七件套 = title/thesis（可证伪主论点）/ chain[]（推理链）/ inversion（隐含定价反解）/ bull+bull_hold（多空对辩）/ falsifiers[]（带日期证伪条件）/ evidence[]（挂 A/B 级依据），外加 scale/conviction/review_by/written/topic。前端 `renderCall()` 渲染，**复核到期自动标红**。
-- `scissors[]` 剪刀差、`teardowns[]` 解剖台、`supply[]` 8 层供应链、`techtree[]` 六技术线（供应链第一性五步框架）、`political{...}`、`persons[]+person_edges[]`、`entities[]+edges[]`、`valuation`、`countdowns[]`。
+- `scissors[]` 剪刀差、`teardowns[]` 解剖台、`supply[]` 8 层供应链、`techtree[]` 六技术线（供应链第一性五步框架）、`political{...}`、`persons[]+person_edges[]`、`entities[]+edges[]`、`valuation`（tsla.anchor_mid 为估值解剖条的数值锚）、`countdowns[]`（带 key：midterm/fsd_cn/…，前端按 key 读；已过显示「已过·结果未核」，过 45 天自动不展示）。
 
 ## 硬纪律（代码即纪律，不可违反）
 1. **不编造**：查不到写"未核"。判断层是唯一例外通道——但必须显式标注"构建情景推演·非机器核实"+挂 A/B 依据+带证伪条件（双层分离：机器层零观点，判断层可原创）。
@@ -42,7 +44,7 @@
 - 布局：主次靠字号/色/留白；卡片双列消右侧空白；信息密集处用表格；说明文字并入卡内不独占大块。
 
 ## 页面架构（NAVS 顺序即阅读逻辑：结构→人→政治→基本面→长期→信号→定价→判断）
-纵览（系统定位三合一卡+判定快照+主脉络+按行业分组时间线）→ 关系图谱（发散图+结构板+连带谱+传导链）→ 人物网络（发散图+档案面板）→ 政治地缘（二元事件卡置顶+周期+资本存量+传导矩阵）→ 物理供需（约束态热力图+剪刀差+解剖台双列+成本地板）→ 技术树（TRL 条形+六线供应链第一性解剖）→ 先行引擎（8层流程条+紧缺度热力图+信号扫描+Optimus三信号+逐线详情）→ 市场资本（估值解剖条+决策卡）→ 趋势报告（浅暖报告头+阅读逻辑说明+**判断层4卡**+机器研报+数据维护清单）。
+首页（纵览与趋势报告合并：系统定位+判定快照+**判断层卡**+主脉络+机器研报+按行业分组时间线）→ 关系图谱（发散图+结构板+连带谱+传导链）→ 人物网络（发散图+档案面板）→ 政治地缘（二元事件卡置顶+周期+资本存量+传导矩阵）→ 物理供需（约束态热力图+剪刀差+解剖台双列+成本地板）→ 技术树（TRL 条形+六线供应链第一性解剖）→ 先行引擎（8层流程条+紧缺度热力图+信号扫描+Optimus三信号+逐线详情）→ 市场资本（估值解剖条+决策卡）。纪律/证据分级说明只在页脚免责声明与审计区各留一处，各页不再重复。
 `decide`（决策档案）已从导航隐藏，代码与 localStorage 功能保留，可随时恢复。
 
 ## 协作纪律 — 极重要
@@ -53,7 +55,7 @@
 
 ## 待办与观察点
 1. **判断层复核**：4 条判断最近到期 2026-11-04（中期选举次日），到期站上自动标红，需重写或续期。
-2. 人工项按维护清单（趋势报告页底）事件驱动更新，最长月度。
+2. 人工项按 docs/维护清单.md 事件驱动更新，最长月度（07-06 后未更新，已超期）。
 3. 旧 Vercel 部署（musk-intel-dashboard.vercel.app）已失效，属用户 Vercel 账号，可自行删除。
 
 ## 已知状态

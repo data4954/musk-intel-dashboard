@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  issues: write            # 失败时开 Issue 通知（GitHub 会邮件提醒仓库所有者）
 
 concurrency:
   group: update
@@ -26,6 +27,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: 安装依赖（繁简归一去重）
+        run: pip install zhconv==1.4.3
 
       - name: 抓取 + 自动核实入库
         run: python scripts/update.py
@@ -42,3 +46,10 @@ jobs:
           git add -A
           git diff --cached --quiet || git commit -m "auto: 数据更新与报告 $(date -u +%F)"
           git push
+
+      - name: 失败通知
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "自动更新失败 $(date -u +%F)" --body "每周自动更新运行失败，网站数据本次未刷新。运行日志：$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
