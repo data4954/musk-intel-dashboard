@@ -25,7 +25,7 @@ NEW  = os.path.join(ROOT, "data_new.js")
 LOG  = os.path.join(ROOT, "诊断日志.txt")
 UA   = {"User-Agent": "Axiomake-Research/1.0 (non-profit personal use; contact: data4954@users.noreply.github.com)"}
 MAXB = 15 * 1024 * 1024
-NEWS_DAILY_CAP = 6        # 每日新闻入库上限，控噪
+NEWS_RUN_CAP = 30         # 每次运行（每周一次）新闻入库上限，控噪
 DEDUP_WINDOW_D = 60       # 去重回看窗口（天）
 SIM_THRESHOLD  = 0.40     # 标题字符二元组 Jaccard 相似度阈值（启发式）
 # 诚实边界: 中文媒体对同一事件措辞差异大（如"兆美元富豪"vs"万亿富翁"），
@@ -180,7 +180,7 @@ def main():
                 clusters.append([it])
         n_in = 0
         for c in clusters:
-            if n_in >= NEWS_DAILY_CAP: break
+            if n_in >= NEWS_RUN_CAP: break
             rep = c[0]
             rid = "NEWS-" + hashlib.md5(norm_title(rep["title"]).encode()).hexdigest()[:12]
             if rid in ledger_ids: continue
@@ -202,7 +202,7 @@ def main():
             audit.append({"ts": ASOF, "rule": "R2" if multi else "R3", "action": "入库", "ev": ev,
                           "title": rep["title"][:80], "src": rep["link"]})
         bump("rss", True)
-        log(f"新闻: {len(items)} 条原始 → {len(clusters)} 簇 → 入库 {n_in} 条（上限{NEWS_DAILY_CAP}）")
+        log(f"新闻: {len(items)} 条原始 → {len(clusters)} 簇 → 入库 {n_in} 条（上限{NEWS_RUN_CAP}）")
     else:
         bump("rss", False)
 
@@ -220,7 +220,7 @@ def main():
         if not t: continue
         n_this = 0
         for mm in re.finditer(r"<item><title>(.*?)</title><link>(.*?)</link>", t):
-            if n_this >= 2: break                                  # 每人每日上限2条，控噪
+            if n_this >= 5: break                                  # 每人每次（每周）上限5条，控噪
             title = re.sub(r"<!\[CDATA\[|\]\]>", "", mm.group(1)).strip()
             rid = "PNEWS-" + hashlib.md5((pid + norm_title(title)).encode()).hexdigest()[:12]
             if rid in ledger_ids: continue

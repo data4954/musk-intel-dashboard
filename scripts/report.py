@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Axiomake 研报生成器 v2（付费研报规格 · 判语=状态机+机制模板，不虚构新观点）
-周报(周日)/月报(1日)/季报(1,4,7,10月1日)/年报(1月1日)；FORCE_REPORT 补发
+周报(周日)/月报(每月首个周日)/季报(1,4,7,10月首个周日)/年报(1月首个周日)；FORCE_REPORT 补发
 结构: 执行摘要 → 核心变化与判定修正 → 分板块判定 → 风险提示 → 未核实区 → 数据附录 → 分析师判读(人工栏)
 纪律: A/B 进结论, C 隔离; 判语全部由已入库判定+当期状态拼装, 模板出处可溯; 熔断进头条
 """
@@ -186,7 +186,7 @@ def due_kinds():
                 "quarterly":[("季报",92)],"yearly":[("年报",365)]}.get(force,[])
     kinds = []
     if NOW.weekday()==6: kinds.append(("周报",7))
-    if NOW.day==1:
+    if NOW.day<=7 and NOW.weekday()==6:   # 每周日跑一次，月初第一个周日出月/季/年报
         kinds.append(("月报",31))
         if NOW.month in (1,4,7,10): kinds.append(("季报",92))
         if NOW.month==1: kinds.append(("年报",365))

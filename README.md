@@ -10,7 +10,7 @@
 
 ## What it does
 
-Every morning at 06:30 (UTC+8), with zero human involvement:
+Every Sunday at 06:30 (UTC+8), with zero human involvement:
 
 ```
 8 public sources          rules R1–R6              single data file         static site
@@ -22,7 +22,7 @@ Every morning at 06:30 (UTC+8), with zero human involvement:
                                               + AI analyst judgment layer
 ```
 
-- **Scrape** — GitHub Actions runs `scripts/update.py` daily: market quotes, SEC Form 4 filings, rocket launch schedules, hiring feeds, FEC political donations, news.
+- **Scrape** — GitHub Actions runs `scripts/update.py` weekly: market quotes, SEC Form 4 filings, rocket launch schedules, hiring feeds, FEC political donations, news.
 - **Grade** — every item gets an evidence grade on ingest:
 
   | Grade | Meaning | Treatment |
@@ -69,9 +69,9 @@ Division of labor that emerged:
 ```
 index.html                  the whole site (views in Views = {...})
 data.js                     single source of truth (append-only ledger + all analysis data)
-scripts/update.py           daily scrape + verify + ingest (rules R1–R6 in header)
+scripts/update.py           weekly scrape + verify + ingest (rules R1–R6 in header)
 scripts/report.py           report generator (+ auto-injects the judgment layer)
-.github/workflows/update.yml  daily 06:30 UTC+8 cron → auto-commit → Pages
+.github/workflows/update.yml  weekly (Sun 06:30 UTC+8) cron → auto-commit → Pages
 reports/                    generated research reports archive
 CLAUDE.md                   handover doc for AI collaboration sessions (in Chinese)
 ```

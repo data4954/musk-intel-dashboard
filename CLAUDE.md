@@ -2,20 +2,20 @@
 
 ## 一句话
 马斯克系资产（TSLA / SPCX）的**自动核实证据账本 + 第一性原理分析台 + AI 分析师判断层**。
-纯静态站（GitHub Pages），Actions 每日 06:30（北京时间）自动抓数据、按规则核实入库、生成研报、自动发布。
+纯静态站（GitHub Pages），Actions 每周日 06:30（北京时间）自动抓数据、按规则核实入库、生成研报、自动发布。
 **无后端、无构建步骤。全站数据为构建情景（2026 推演），非现实数据——免责声明已声明此点，不可删。**
 
 ## 运行 / 预览 / 部署
 - 本地预览：仓库根目录 `python -m http.server 8000`（或 8777）→ 浏览器打开。改完刷新即见；浏览器常缓存 data.js，用 `fetch('data.js',{cache:'reload'})` 或硬刷新。
 - 部署：`git push` 到 `main` → Pages 自动发布 → https://data4954.github.io/musk-intel-dashboard/ （仓库 About 已指向它）。
-- 自动化：`.github/workflows/update.yml` 每日 UTC 22:30（北京 06:30）跑 update.py + report.py 并自动 commit+push。**本地改动要尽快 push**，否则与机器人提交分叉；分叉时账本按 id 做并集合并（只追加纪律，双方零丢失），不可硬覆盖。
+- 自动化：`.github/workflows/update.yml` 每周六 UTC 22:30（北京周日 06:30）跑 update.py + report.py 并自动 commit+push。**本地改动要尽快 push**，否则与机器人提交分叉；分叉时账本按 id 做并集合并（只追加纪律，双方零丢失），不可硬覆盖。
 - 改完必做：`node --check data.js`；index.html 的大 `<script>` 抽出跑 `node --check`；改 report.py 跑 `python -m py_compile`。
 - **编辑大文件用 Python re 脚本**（本仓库中文多、CRLF/LF 混合，PowerShell here-string 匹配常失败）。
 
 ## 文件地图
 - `index.html` — 全站单文件（内联 CSS + JS）。视图在 `Views = {...}`，导航序 `const NAVS`，渲染入口 `render(id)`，工具 `esc/evChip/daysTo/allLedger/renderCall/mdToHtml`。
 - `data.js` — 唯一数据源 `window.MUSKINTEL_DATA`。update.py 整体 JSON 重写但**保留未知键**（analyst_calls 安全）。
-- `scripts/update.py` — 每日抓取+核实入库（规则 R1-R6 见文件头）。
+- `scripts/update.py` — 每周抓取+核实入库（规则 R1-R6 见文件头）。
 - `scripts/report.py` — 研报生成器。结构：摘要→核心变化→分板块判定（3.2/3.3 为表格）→风险→数据附录→**六、分析师判读（自动读 analyst_calls 注入，非留白）**。无 C 级未核实区。
 - `reports/` + `reports.js` — 研报归档与前端零请求加载。
 
@@ -30,7 +30,7 @@
 3. **尺度/适用期标注**：结论有有效期；判断卡过期自动标红"暂停引用"。
 4. **机器不越权**：自动入库不打影响分；机器报告判语=已入库判定×当期状态。
 5. **破坏性变更先确认**；账本冲突用 id 并集合并。
-6. **更新节奏**：自动项每日 06:30；人工项事件驱动、**最长月度，无季度档、无周几制**。
+6. **更新节奏**：自动项每周日 06:30；人工项事件驱动、**最长月度，无季度档、无周几制**。
 
 ## UI 设计系统（已定型，改动须整体一致）
 - **暖色系（Claude 风）**：底 `#f6f4ef`、面板 `#fffdf9`、墨字 `#2b2721`、accent 陶土 `#c15f3c`（链接/眉标/焦点/当前态）。语义色全部降饱和：绿 `#3e8a68`、红 `#c0554a`、琥珀 `#b07a2e`、蓝 `#5570bd`（证据B/SPCX）、紫 `#7263b5`、玫瑰 `#b06a8b`。**禁止纯色/高对比色/纯黑色块**（深色只允许小点与细线）。
