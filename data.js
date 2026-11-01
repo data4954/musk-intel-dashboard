@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-10-31T01:37:22+08:00",
+  "generated_at": "2026-11-01T09:21:10+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）",
-  "c_archive_count": 1660
+  "c_archive_count": 1664
  },
  "market": {
-  "asof": "2026-10-31",
+  "asof": "2026-11-01",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 398.3,
-    "chg": 7.01,
+    "price": 399.81,
+    "chg": 7.41,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-10-31",
+    "src": "Yahoo 2026-11-01",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 136.29,
-    "chg": -7.59,
+    "price": 134.72,
+    "chg": -8.66,
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-10-31",
+    "src": "Yahoo 2026-11-01",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 77032.9,
-    "chg": -3.72,
-    "src": "Yahoo 2026-10-31",
+    "price": 77562.8,
+    "chg": -4.56,
+    "src": "Yahoo 2026-11-01",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0756,
-    "chg": -2.6,
-    "src": "Yahoo 2026-10-31",
+    "price": 0.0757,
+    "chg": -4.97,
+    "src": "Yahoo 2026-11-01",
     "status": "green"
    }
   ],
@@ -519,6 +519,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-31",
      "c": 398.3
+    },
+    {
+     "d": "2026-11-01",
+     "c": 399.81
     }
    ],
    "SPCX": [
@@ -993,6 +997,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-31",
      "c": 136.29
+    },
+    {
+     "d": "2026-11-01",
+     "c": 134.72
     }
    ],
    "BTC-USD": [
@@ -1467,6 +1475,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-31",
      "c": 77032.9
+    },
+    {
+     "d": "2026-11-01",
+     "c": 77562.8
     }
    ],
    "DOGE-USD": [
@@ -1941,6 +1953,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-10-31",
      "c": 0.0756
+    },
+    {
+     "d": "2026-11-01",
+     "c": 0.0757
     }
    ]
   }
@@ -2625,7 +2641,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2857 · xAI 305 在招（2026-10-31；Tesla 无免费接口）",
+     "v": "SpaceX 2874 · xAI 308 在招（2026-11-01；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每周自动",
      "feeds": [
@@ -3208,7 +3224,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-10-31 01:37",
+  "last_run": "2026-11-01 09:21",
   "sources": {
    "yahoo": "green",
    "edgar": "green",
@@ -3229,8 +3245,8 @@ window.MUSKINTEL_DATA = {
  "launches": [
   {
    "name": "Falcon 9 Block 5 | Starlink Group 15-18",
-   "net": "2026-10-31T04:02:22Z",
-   "status": "Go for Launch"
+   "net": "2026-10-31T04:04:34Z",
+   "status": "Launch Successful"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-432",
@@ -3254,46 +3270,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-10-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk 曾拟并OpenAI入Tesla 遭创办团队婉拒 - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2tELW14YzZ4dmlPYUt4bDV5TXZ3d29PM3VZY1VsQmRWWTRvUTVaRmhXVnhLNFRqYVo4MFVMR2xoQzNOcDk3M19sS1hSd2lyLWVvbkZBUU1hNEpFY2l3SVVhWUVkdmItMlpqYjAtUl91MWRVVEJYazlxTXZGLVdudzFyQ20walgtNGx0Yl9wOA?oc=5"
-  },
-  {
-   "ts": "2026-10-06",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 11 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-10-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX特斯拉股价回升 马斯克身家重返万亿美元 - 联合早报",
-   "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QQlBNQjRSSnoxU3hrQ1R6elEtYVVNRTdreWRpZmF6b1JqbnBIZXk1Sk5Pd3RLSnlKZnpBdnJWMGhQdVFyZkE3Y1JnSzcxaURNcHBuN05VU3dVbC1fWFhpZnp6ZHFWMjdPUzYta0l3?oc=5"
-  },
-  {
-   "ts": "2026-10-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Starlink成SpaceX“现金牛”：营收占比超六成 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZExjT0J4ZzB3WllIN0hzN0tORXY0U3FFd3lJeUtrYmp3Y3VYcnhBbzBZT29KYm9CYkpiSV9PMDZ1Tmp6REVYWllyc1VkbXBVNU5mQkZKZFNpZC10YkkySjM4Q1dzRE9ZOVJwVURKd1YxMmVjWUxYanFXUFhITmg5WG9DLU5PdmJuaDViWVltWmt6MEVkSFZxX0JUREFlcTdVWktjM09KUUZnN2JOaXdwWEhJbFg?oc=5"
-  },
-  {
-   "ts": "2026-10-07",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 12 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-10-08",
    "rule": "R3",
@@ -4212,6 +4188,46 @@ window.MUSKINTEL_DATA = {
    "action": "入库",
    "ev": "C",
    "title": "人物动态通道 18 条（明细见各人物卡）",
+   "src": ""
+  },
+  {
+   "ts": "2026-11-01",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk 宣布向全美兒童派發 SpaceX 股份，總值高達 105 億美元 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkRuLTNnaGxJbUtEUEcwaS1MNzhUbGJyT0hOREM0NzJtcU93SXI1X09VelFpdHZHNEh2WFlTZFExOXFKMkFOZEc4NXJXQVpMMHlFQm0tSnFvTnFRRERSNjJzeHJwSXo0eXNJYjJYVzJGeHBHUjRNbUctbHFUT1ZwWmtjT1k3TS1jcTdyajYtRVdRRHJid0I1ZGh2M0dXZzBGN1N6VzlkVjBZN3VoRW1fOF92RQ?oc=5"
+  },
+  {
+   "ts": "2026-11-01",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Tesla 与 SpaceX 酝酿合并！掌舵人Elon Musk 证实在讨论- Paul Tan 汽车资讯网 - Paul Tan",
+   "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tQ1ZuUExvREtzQ29BQUZEU2VxWnR1SzI2Qjd3SjV5eTkzdmxZbjJzWDV2TVBxYWlmZDF4RjlSeV9Mb0pYR015ZUVDNU9uWFBHc0VlWWVNSmV6b29veEJJZHY1eHpvUUtSOGFqWkpycmprYjBUNkxzaUJGUQ?oc=5"
+  },
+  {
+   "ts": "2026-11-01",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Market Chatter: Tesla CEO Elon Musk Set to Become World's First Trillionaire - 富",
+   "src": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRTE1aDlzMk5rLWxHdUVvRG5IZmhxaXV6NzBVM1BQSzhZQy01bk80WXJBUFh6aXFweXktV29odG13V0E2elJGc2FpMjZpLVZlaDdDajJlcEVuMTZzVlkyR0FwemNobGUtVWNzREhNc0R1SWxhM2xrS0N5TGNPVHoyT3lob0VPZEp2SElzYkRlRWJQZmk0UDZvNlVIRQ?oc=5"
+  },
+  {
+   "ts": "2026-11-01",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 4 条（C 级归档，不上站）",
+   "src": ""
+  },
+  {
+   "ts": "2026-11-01",
+   "rule": "R7",
+   "action": "降噪丢弃",
+   "ev": "C",
+   "title": "白名单外/与马斯克系无关/超限 309 条未入库",
    "src": ""
   }
  ],

@@ -12,12 +12,11 @@
   "promises": {
    "P001": "物理紧张",
    "P002": "物理不可行(现有供应链)",
-   "P003": "已兑现(反向)",
-   "P004": "物理紧张"
+   "P003": "已兑现(反向)"
   },
   "health": {
    "yahoo": "green",
-   "edgar": "fused",
+   "edgar": "green",
    "launchlib": "green",
    "rss": "green",
    "greenhouse": "green",
@@ -38,18 +37,17 @@
   "promises": {
    "P001": "物理紧张",
    "P002": "物理不可行(现有供应链)",
-   "P003": "已兑现(反向)",
-   "P004": "物理紧张"
+   "P003": "已兑现(反向)"
   },
   "health": {
    "yahoo": "green",
-   "edgar": "fused",
+   "edgar": "green",
    "launchlib": "green",
    "rss": "green",
    "greenhouse": "green",
    "fec": "green"
   },
-  "ab_count_30d": 0
+  "ab_count_30d": 2
  },
  "季报": {
   "scissors": {

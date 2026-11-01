@@ -1,5 +1,17 @@
 [
  {
+  "type": "月报",
+  "date": "2026-11-01",
+  "path": "reports/2026/Axiomake_月报_2026-11-01.md",
+  "title": "Axiomake 月报 2026-11-01"
+ },
+ {
+  "type": "周报",
+  "date": "2026-11-01",
+  "path": "reports/2026/Axiomake_周报_2026-11-01.md",
+  "title": "Axiomake 周报 2026-11-01"
+ },
+ {
   "type": "周报",
   "date": "2026-10-25",
   "path": "reports/2026/Axiomake_周报_2026-10-25.md",
