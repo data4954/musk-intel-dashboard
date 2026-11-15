@@ -3,46 +3,46 @@
 window.MUSKINTEL_DATA = {
  "meta": {
   "schema_version": 2,
-  "generated_at": "2026-11-08T09:42:04+08:00",
+  "generated_at": "2026-11-15T10:02:08+08:00",
   "generator": "GitHub Actions · scripts/update.py",
   "note": "种子数据校准至2026-07-05；v2起由GitHub Actions全自动核实入库（规则R1-R6见scripts/update.py）",
-  "c_archive_count": 1671
+  "c_archive_count": 1679
  },
  "market": {
-  "asof": "2026-11-08",
+  "asof": "2026-11-15",
   "quotes": [
    {
     "sym": "TSLA",
     "name": "Tesla",
-    "price": 358.22,
-    "chg": -10.4,
+    "price": 390.22,
+    "chg": 8.93,
     "mcap": "≈$1.26T",
-    "src": "Yahoo 2026-11-08",
+    "src": "Yahoo 2026-11-15",
     "status": "green"
    },
    {
     "sym": "SPCX",
     "name": "SpaceX(含xAI)",
-    "price": 134.27,
-    "chg": -0.33,
+    "price": 139.11,
+    "chg": 3.6,
     "note": "2026-06-12 IPO 发行价≈$135",
-    "src": "Yahoo 2026-11-08",
+    "src": "Yahoo 2026-11-15",
     "status": "green"
    },
    {
     "sym": "BTC-USD",
     "name": "Bitcoin",
-    "price": 75683.3,
-    "chg": -5.87,
-    "src": "Yahoo 2026-11-08",
+    "price": 62569.42,
+    "chg": -15.41,
+    "src": "Yahoo 2026-11-15",
     "status": "green"
    },
    {
     "sym": "DOGE-USD",
     "name": "Dogecoin",
-    "price": 0.0712,
-    "chg": -7.46,
-    "src": "Yahoo 2026-11-08",
+    "price": 0.056,
+    "chg": -17.04,
+    "src": "Yahoo 2026-11-15",
     "status": "green"
    }
   ],
@@ -527,6 +527,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-11-08",
      "c": 358.22
+    },
+    {
+     "d": "2026-11-15",
+     "c": 390.22
     }
    ],
    "SPCX": [
@@ -1009,6 +1013,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-11-08",
      "c": 134.27
+    },
+    {
+     "d": "2026-11-15",
+     "c": 139.11
     }
    ],
    "BTC-USD": [
@@ -1491,6 +1499,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-11-08",
      "c": 75683.3
+    },
+    {
+     "d": "2026-11-15",
+     "c": 62569.42
     }
    ],
    "DOGE-USD": [
@@ -1973,6 +1985,10 @@ window.MUSKINTEL_DATA = {
     {
      "d": "2026-11-08",
      "c": 0.0712
+    },
+    {
+     "d": "2026-11-15",
+     "c": 0.056
     }
    ]
   }
@@ -2657,7 +2673,7 @@ window.MUSKINTEL_DATA = {
    "items": [
     {
      "k": "招聘岗位计数(按公司×职能)",
-     "v": "SpaceX 2899 · xAI 303 在招（2026-11-08；Tesla 无免费接口）",
+     "v": "SpaceX 2756 · xAI 296 在招（2026-11-15；Tesla 无免费接口）",
      "st": "green",
      "src": "Greenhouse API·每周自动",
      "feeds": [
@@ -2761,7 +2777,7 @@ window.MUSKINTEL_DATA = {
     },
     {
      "k": "FEC捐款流向",
-     "v": "近90天 $30,000,000／2笔，最新 2026-09-04（A:FEC）",
+     "v": "近90天 $263,466,369／15笔，最新 2026-09-30（A:FEC）",
      "st": "green",
      "src": "FEC API·每周自动(试点)",
      "feeds": [
@@ -3240,7 +3256,7 @@ window.MUSKINTEL_DATA = {
   }
  },
  "health": {
-  "last_run": "2026-11-08 09:42",
+  "last_run": "2026-11-15 10:02",
   "sources": {
    "yahoo": "green",
    "edgar": "green",
@@ -3260,23 +3276,23 @@ window.MUSKINTEL_DATA = {
  },
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | USSF-627",
-   "net": "2026-11-10T03:03:00Z",
-   "status": "Go for Launch"
-  },
-  {
    "name": "Falcon 9 Block 5 | USSF-317",
-   "net": "2026-11-13T04:23:00Z",
+   "net": "2026-11-18T03:14:00Z",
    "status": "Go for Launch"
   },
   {
-   "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
-   "net": "2026-11-13T22:45:00Z",
-   "status": "To Be Confirmed"
+   "name": "Falcon 9 Block 5 | NROL-136",
+   "net": "2026-11-21T12:30:00Z",
+   "status": "Go for Launch"
+  },
+  {
+   "name": "Falcon 9 Block 5 | USSF-266",
+   "net": "2026-11-23T16:04:00Z",
+   "status": "Go for Launch"
   },
   {
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-   "net": "2026-11-29T15:49:00Z",
+   "net": "2026-11-29T15:47:00Z",
    "status": "Go for Launch"
   },
   {
@@ -3286,94 +3302,6 @@ window.MUSKINTEL_DATA = {
   }
  ],
  "audit": [
-  {
-   "ts": "2026-10-13",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 11 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-10-14",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 8 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-10-15",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla Roadster发布活动改至10月15日 2017年亮相至今仍未交付 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNDNqUnN3VThpZUtrV1liTmpPOFBfMzQwdEl2SV9HbnBfUUdsT3E0OTRLZDlBYVN5UF8wVHdOcnctRVJrSjhTWUdQVnMtM2hVdE4za0xoZExLcmdrRWp6em44R09vR0xFR3haX0RvWmF1MlhnRzJJMGtPaHNXbU5Ba0VBR1RiV0lIaTB2dGtQRnk0TzhFQWlPeTdUWXpFNHBwVktJR2pPZjhZTW1sMjR3U0V4bktfYjl0NkFVX2lZZGE?oc=5"
-  },
-  {
-   "ts": "2026-10-15",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-10-16",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "SpaceX Starlink限速冲击乌军 Elon Musk称军用通讯限制由美方决定 - DIGITIMES",
-   "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1ZENHRiQTA3eE1oeW9ZWUsxaURvZHRPZmt1Z3R2UUxaSE5IWF9QMURzbTMwYUxhR2U1VEk0LWQwTXFKVm9jTXhpbkpLbkd2azVzbmdudUYwMnJjRThJY2hrS00wdkYxVWgzOHZzdEJJZDZwX1VkeHJjZUM2VUFqazEzaDdqU2d4NS1NSmlZMnlJVTJDSFJfSmNOS3FieUk4LWRIUE5OOA?oc=5"
-  },
-  {
-   "ts": "2026-10-16",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "埃隆·马斯克的SpaceX公司可能会改变美国人购买iPhone的方式。 - Vietnam.vn",
-   "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdDE1MlhhaWh3RzZsOXFkcTlMd3luM2U0SXpqeXFfSzFDejNfYm1PMHE5V2d3UkNWN2dfbXpFY184NjJtX0tqbFFhbTVUeHVhTTRxcnd0eG5XS19fY0pMY3l1VDhfY201QkpfT1lRaGQxZFVJcXVkc3FJZEgxZ2QtVGpkVFp1Rm83OG9xeW1UbDNoeDhl?oc=5"
-  },
-  {
-   "ts": "2026-10-16",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Elon Musk又有新idea！未来可以坐在Tesla里面玩PlayStation和Xbox！ - Moretify",
-   "src": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZlhYNWFpRi1GNTNSdVppNFVhYi15MjFfbkhpQVNDN2tETXUyZ21heEtqN1FTSW1FSWFReXYyNDlKT3JoWGhjWGhJcHhlSGNlQ0cwRWRXdHVUb3JJb1FSNmZQcVQwVHl2alo1UEU5S3Z4Vl9UZG12QVhkSTFYVjVwY1g5bjYyNHVMTzlwbk90VjBxY3hhUGpQRVNwR0VibjBHRTRGd3Q0bGNtN2RkWHNyVktwRnF6S21KVDlNQTA5TmRYa1c1aUo5Q1JCb1pUX0pTRU10MFlLdTlrMWV2cHlNdjlmaw?oc=5"
-  },
-  {
-   "ts": "2026-10-16",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 7 条（明细见各人物卡）",
-   "src": ""
-  },
-  {
-   "ts": "2026-10-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "道路？全新 Tesla Roadster 根本不需要 - HYPEBEAST",
-   "src": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdExpSkNWN19fTlc3cDRWVURsYlhjSlg3dlM0SXdpM1hMazhKQUFFbHBWU0FfZy1PX0p5OWZkazRrSnh1aGtkcFBKanhNaDFoeW53dHBKdWhTbDRJRERsSnlsSFRlMG1EWTR2eVIxcElSNzhqY2RIZE11Qi11aW1uTkRUanlRczAwTGoweTRBd0dLSEFsbU9KZW1EQXV5cE10?oc=5"
-  },
-  {
-   "ts": "2026-10-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "Tesla发布新一代Roadster 现场上演跨越并排停放车辆的跳跃 - 디지털투데이",
-   "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVNEcDFDT0Q1SjM5YXlMUUx0enZvYmQ2eUpGY1RUM1hwaGlfaEMtZXNENEdCdWRxXzF6TDRCQkdObkhmNEJtMEZJd25mSUlaUDZnS2lLMGpEQndBdmYwb2RtVl9WX2ZNWUptVW1HSHJESllOYzFJZmdVWVpNN2FJUEVyeTdfaS1RLWRDdFJEbVozTS03N0o4S3BuQU5FREY2dlZEM045Q1MyYlU5TktyZFR5MVFZZw?oc=5"
-  },
-  {
-   "ts": "2026-10-17",
-   "rule": "R3",
-   "action": "入库",
-   "ev": "C",
-   "title": "人物动态通道 10 条（明细见各人物卡）",
-   "src": ""
-  },
   {
    "ts": "2026-10-18",
    "rule": "R3",
@@ -4244,6 +4172,94 @@ window.MUSKINTEL_DATA = {
    "action": "降噪丢弃",
    "ev": "C",
    "title": "白名单外/与马斯克系无关/超限 170 条未入库",
+   "src": ""
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk 宣佈 Tesla Model Y「七人座」版本即將正式投產 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNGN3X0lUUUNWdGJoa2lTenktWlZLT0FqSW1aSTNGanNJWkdnWHk5a1loa1VwRnFWRXF4T0dKbXZ1d29kc21zaDVJLWxma3YxUXN3alhIYnMzOHgzSW1pQkxtOVlCT1NaMVlISW5odC1nVHRtUXhVWDN2XzNjTU1iNEprWWtHdEpOWkdWMlMzUDR4NW9v?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk用100000个H100，打造全球最强集群 - 华尔街见闻",
+   "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5uMW5tR3ZHNmV3dkhQUkF6VXMtWEJvYVZzOHJ4aVVIbzRjODhhd2hoS0FqQXhVMzZBakswTUJSeTA4R1ZVS28xbFVLb2pYZUdnR3pV?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "為何 Tesla Cybertruck 會拖着 Elon Musk 迷因巨型雕塑？ - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JTVI3MjNsV2MxZzItMFVmS19UOUhwcXhMT0hoak9ST3h4SmdmeElzYTRTNWFpaXhjbmtUZ1JEaWtjWWh1bXZ4TUVBZl9pR29sNE1RUklZaHplNnRJRXFjQjJlMnJtOFBhWEJ5MHpxZWtNajEzZjBhWlJ5WWU0QQ?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "马斯克公司Neuralink的“人脑晶片”植入一年后，瘫痪病人过得怎么样？ - BBC",
+   "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5wUnVSaUtfRlgydjN3MDUxSEVqb2dPN1FvQ3hxSXliOW1JOElWUjlrX2g1cmVtb1Y0NzkyMUd0YVBncmc4cG9pME5CbFFkS2VGeEpiRnBEWENwQjJWWXdIRzllZVpQUdIBa0FVX3lxTE9JQ2lRcTNhYnNJT2x6LXdaWjU4QUNONzNGSWxvZU0xdS1RRWE2dlV3QjJJWmJ4bElDNW1zVlpIY2E5X3Rld1JxT0FCUGlNa19UYUJIemMzVXpnUG1DTHIzVlllT0RIUUdrdE8w?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk 證實最新一代 Tesla Roadster 車型極致加速數據 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeTdROXp2UUstdXFvQUlGaHE0SkFnVFprblVDS0RobTdhTmVpMzBDS090TWhHS3JWTE5hYnYtREtnaGQtZlVnYlptUF9rMzFaLUtnUnF2cnRlcFZPTVpJTFFEaUM5cGxXZDVYcWRmdFVSY1NJMklOUkY3enEwS0NrUDJTWTd2cFpRUF9teU54MnkxUW1QMDN1d0hJd211dHdSbThFTTJWNGUyWU5IZ0c3dw?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "Elon Musk的Tesla不仅自己打造了电动汽车，连ERP系统也完全要用自己开发的 - 36氪",
+   "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1JVG1adEdkME0wVGNpN2ZsT3B4aUFSRU56bmxpb3ZxdXo1MDdLa1BwQnZvVkFNeFRGNTg3Wnkxa0RDRmVmT1d3Qnhn?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk 宣佈 Tesla「全自動駕駛」功能價格調漲 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeDNVOVBVcTNrdnJodGhxbTZIUlVFdVk4Njk1Ty1ia0RPWnVxQXk4SnhWLXFza1JxamloUUgtRU5XRGlHVXV4R1RnaWZUVWFHMnJfWEZnc041UDNKYUdJM1NxbFhJdVdsTE1BMXdhdGpsaEhpRzgwX3ZTeG9UQ1pZeW5Xb1pjbzJuZ2d0MVJFUQ?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R4",
+   "action": "跳过(账本已有同题)",
+   "ev": "-",
+   "title": "Elon Musk 宣稱 Tesla 僱員不在乎學歷 - Hypebeast CN",
+   "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zdnJVT00wR1VRSW1KRno5elRyN3dXM1cxSWFld2JYa1NJVXNHQ21hZFUxRVN6YXJ3TkxxS2REZk5BYWlRT2JReHhYZGlKM1J4NXdxREctOFhYQTlQY3BTUHJCRFRONkhod2NNWExadlc2bjdURnFxRVN1WEhadw?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "马斯克出售部分特拉斯股票 套现11亿美元 - DW.com",
+   "src": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOUUJJSjEtZUp3aEF6SWVvdklSVUlzVmlHaUN4T3ZxSl9hUFlUenpHc3FxWkxtWnZQQUR3akZQcV9acmJLYVBVRHhSYTZhYlpPbldabG1RZjF0eG02THNZbXVBSFZaa0tmWWZMWUpkUlpoM1liNzh4RDVJME96c1doRFpYRWI0U3NxaTBtR2tXLWEwQ2RhcFNFT0tGQ0dSVS14WnE2ZFJEUEtUZ1lOSjQ3OC0wbTh6QWw1cjk0cGlWZ0lJNTBxakpMVkViZVZXVEhfaVRYS0o5SGg5SGdwVTVhLXhRTHB2WDJMVXhiRDlfcWxJVFdUQi1lZ3ZIeXZwR0JoemdaT3NXa2trOG1BMVlLWVd5WUc0LUR60gGYAkFVX3lxTE1Cc3F2MmdBRG1VV1dlYnVXeFgtcTVEcExpWHVaMkFzMkl0NzZBVnBmbEZWWEpKLTZyRXhkeDQ1bHJGR01GaXk0Nks4b1NLMm9NdE55Zm1PZzlCZzBRMjQyR0N4VXZzdy1oNmhsWXBUczdPV3U5aXhBVzhpZEU2ZC1PdnFCN1BBTDFnWlh5dXU5d293TzhRSUwwTWFLMFhoaFhmRGotaHFBZ3hGMmp2ZlRGZ0lQZ1hLVzR4dHFxVGNVci1vcU9DX252RmVmU1dZQ2hoelN2X09rLVMtdUdHT011RklqQWpHMTR3cEd6ZWZ6UG5CMW1nWDF3NkFlenFFQjR4cG0xaVFvalVmQ09fOVdSdEZ0UU1DUXQ?oc=5"
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R3",
+   "action": "入库",
+   "ev": "C",
+   "title": "人物动态通道 5 条（C 级归档，不上站）",
+   "src": ""
+  },
+  {
+   "ts": "2026-11-15",
+   "rule": "R7",
+   "action": "降噪丢弃",
+   "ev": "C",
+   "title": "白名单外/与马斯克系无关/超限 182 条未入库",
    "src": ""
   }
  ],
